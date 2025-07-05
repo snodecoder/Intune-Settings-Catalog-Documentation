@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Intune Settings Catalog</title>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script>
+    window.$docsify = {
+      loadSidebar: false,
+      search: 'auto',
+      noEmoji: true
+    }
+  </script>
+  <style>
+    body { font-family: sans-serif; margin: 2em; }
+    input { width: 100%; padding: 0.5em; font-size: 1em; }
+    pre { background: #f0f0f0; padding: 1em; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Intune Settings Catalog</h1>
+  <input type="text" id="searchInput" placeholder="Zoek een setting...">
+  <div id="results"></div>
+
+  <script>
+    let settings = [];
+    fetch('intune_settings.json')
+      .then(res => res.json())
+      .then(data => {
+        settings = data;
+        render(settings);
+      });
+
+    const input = document.getElementById('searchInput');
+    input.addEventListener('input', () => {
+      const q = input.value.toLowerCase();
+      const filtered = Object.fromEntries(Object.entries(settings)
+        .map(([cat, items]) => [
+          cat,
+          items.filter(s => s.name.toLowerCase().includes(q) || s.description?.toLowerCase().includes(q))
+        ])
+        .filter(([_, items]) => items.length > 0));
+      render(filtered);
+    });
+
+    function render(data) {
+      const container = document.getElementById('results');
+      container.innerHTML = '';
+      for (const [category, items] of Object.entries(data)) {
+        const catEl = document.createElement('h2');
+        catEl.textContent = category;
+        container.appendChild(catEl);
+        for (const s of items) {
+          const el = document.createElement('pre');
+          el.textContent = JSON.stringify(s, null, 2);
+          container.appendChild(el);
+        }
+      }
+    }
+  </script>
+</body>
+</html>
