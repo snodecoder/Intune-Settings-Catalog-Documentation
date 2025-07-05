@@ -37,7 +37,7 @@
     let settings = [];
     let filtered = [];
     let currentPage = 1;
-    const pageSize = 20;
+    let pageSize = 20;
     let currentPlatform = '';
 
     // Helper to update dropdown options
@@ -209,9 +209,62 @@
           keyTd.style.fontWeight = 'bold';
           keyTd.style.width = '200px';
           const valTd = document.createElement('td');
-          if (typeof v === 'object' && v !== null) {
-            valTd.textContent = JSON.stringify(v, null, 2);
-            valTd.style.fontFamily = 'monospace';
+          if (Array.isArray(v) && v.length && typeof v[0] === 'object') {
+            // Nested table for array of objects
+            const nestedTable = document.createElement('table');
+            nestedTable.style.width = '100%';
+            nestedTable.style.background = '#fff';
+            nestedTable.style.border = '1px solid #ddd';
+            // Table header
+            const nestedHead = document.createElement('tr');
+            Object.keys(v[0]).forEach(nk => {
+              const nth = document.createElement('th');
+              nth.textContent = nk;
+              nth.style.fontWeight = 'bold';
+              nth.style.background = '#f3f3f3';
+              nestedHead.appendChild(nth);
+            });
+            nestedTable.appendChild(nestedHead);
+            // Table rows
+            v.forEach(obj => {
+              const ntr = document.createElement('tr');
+              Object.values(obj).forEach(val => {
+                const ntd = document.createElement('td');
+                if (typeof val === 'object' && val !== null) {
+                  ntd.textContent = JSON.stringify(val, null, 2);
+                  ntd.style.fontFamily = 'monospace';
+                } else {
+                  ntd.textContent = val;
+                }
+                ntr.appendChild(ntd);
+              });
+              nestedTable.appendChild(ntr);
+            });
+            valTd.appendChild(nestedTable);
+          } else if (typeof v === 'object' && v !== null) {
+            // Nested table for object
+            const nestedTable = document.createElement('table');
+            nestedTable.style.width = '100%';
+            nestedTable.style.background = '#fff';
+            nestedTable.style.border = '1px solid #ddd';
+            Object.entries(v).forEach(([nk, nv]) => {
+              const ntr = document.createElement('tr');
+              const ntdk = document.createElement('td');
+              ntdk.textContent = nk;
+              ntdk.style.fontWeight = 'bold';
+              ntdk.style.width = '150px';
+              const ntdv = document.createElement('td');
+              if (typeof nv === 'object' && nv !== null) {
+                ntdv.textContent = JSON.stringify(nv, null, 2);
+                ntdv.style.fontFamily = 'monospace';
+              } else {
+                ntdv.textContent = nv;
+              }
+              ntr.appendChild(ntdk);
+              ntr.appendChild(ntdv);
+              nestedTable.appendChild(ntr);
+            });
+            valTd.appendChild(nestedTable);
           } else {
             valTd.textContent = v;
           }
@@ -228,17 +281,60 @@
       // Pagination controls
       const pag = document.getElementById('pagination');
       pag.innerHTML = '';
-      if (totalPages > 1) {
-        for (let i = 1; i <= totalPages; i++) {
-          const btn = document.createElement('button');
-          btn.textContent = i;
-          if (i === currentPage) btn.disabled = true;
-          btn.addEventListener('click', () => {
-            currentPage = i;
-            render();
-          });
-          pag.appendChild(btn);
+      // Page size selector
+      const pageSizeLabel = document.createElement('label');
+      pageSizeLabel.textContent = 'Page size: ';
+      const pageSizeSelect = document.createElement('select');
+      [10, 20, 50, 100].forEach(size => {
+        const opt = document.createElement('option');
+        opt.value = size;
+        opt.textContent = size;
+        if (size === pageSize) opt.selected = true;
+        pageSizeSelect.appendChild(opt);
+      });
+      pageSizeSelect.onchange = function() {
+        pageSize = parseInt(this.value);
+        currentPage = 1;
+        render();
+      };
+      pageSizeLabel.appendChild(pageSizeSelect);
+      pag.appendChild(pageSizeLabel);
+      // Prev button
+      const prevBtn = document.createElement('button');
+      prevBtn.textContent = 'Previous';
+      prevBtn.disabled = currentPage === 1;
+      prevBtn.onclick = function() {
+        if (currentPage > 1) {
+          currentPage--;
+          render();
         }
+      };
+      pag.appendChild(prevBtn);
+      // Page info
+      const pageInfo = document.createElement('span');
+      pageInfo.textContent = ` Page ${currentPage} of ${totalPages} `;
+      pag.appendChild(pageInfo);
+      // Next button
+      const nextBtn = document.createElement('button');
+      nextBtn.textContent = 'Next';
+      nextBtn.disabled = currentPage === totalPages;
+      nextBtn.onclick = function() {
+        if (currentPage < totalPages) {
+          currentPage++;
+          render();
+        }
+      };
+      pag.appendChild(nextBtn);
+      // Page number buttons
+      for (let i = 1; i <= totalPages; i++) {
+        const btn = document.createElement('button');
+        btn.textContent = i;
+        if (i === currentPage) btn.disabled = true;
+        btn.addEventListener('click', () => {
+          currentPage = i;
+          render();
+        });
+        pag.appendChild(btn);
       }
     }
   </script>
