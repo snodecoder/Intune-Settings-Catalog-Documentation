@@ -1,0 +1,41 @@
+[
+  {
+    "settingId": "apple_customprofile_profile",
+    "settingName": "Profile",
+    "settingDescription": "A admin uploaded profile to install.",
+    "categoryId": "ddb64e9d-34b9-44f4-9980-a6623f14e445",
+    "categoryName": "Declarative Device Management (DDM)",
+    "keywords": [
+      "Custom Profile"
+    ],
+    "baseUri": "",
+    "offsetUri": "AppleCustomProfile/Profile",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "visionOS,tvOS",
+      "deviceMode": "none",
+      "technologies": "appleRemoteManagement"
+    },
+    "options": [],
+    "referredSettingInformationList": [
+      {
+        "settingDefinitionId": "apple_customprofile_profile_referred_setting"
+      }
+    ],
+    "accessTypes": "none",
+    "version": "638869171349860765",
+    "helpText": null,
+    "name": "Apple_CustomProfile_Profile",
+    "rootDefinitionId": "apple_customprofile_profile",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  }
+]

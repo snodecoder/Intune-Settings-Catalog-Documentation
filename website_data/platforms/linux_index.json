@@ -1,0 +1,648 @@
+[
+  {
+    "settingId": "com.apple.managedclient.preferences_exclusionsmergepolicy",
+    "settingName": "Exclusions merge",
+    "settingDescription": "Specify the merge policy for exclusions. This can be a combination of administrator-defined and user-defined exclusions (merge) or only administrator-defined exclusions (admin_only). This setting can be used to restrict local users from defining their own exclusions.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_passivemode",
+    "settingName": "Enable passive mode (deprecated)",
+    "settingDescription": "Whether the antivirus engine runs in passive mode or not.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine",
+    "settingName": "Enforcement level",
+    "settingDescription": "Antivirus engine enforcement mode",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_exclusions_item_extension",
+    "settingName": "File extension",
+    "settingDescription": null,
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_enabled",
+    "settingName": "Enable / disable cloud delivered protection",
+    "settingDescription": "Whether cloud delivered protection is enabled on the device or not. To improve the security of your services, we recommend keeping this feature turned on.",
+    "keywords": [
+      "Microsoft Defender - Cloud delivered protection preferences",
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_edr_tags",
+    "settingName": "Device tags",
+    "settingDescription": null,
+    "keywords": [
+      " EDR preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_enforcementlevel",
+    "settingName": "Enforcement Level",
+    "settingDescription": "Specifies the enforcement preference of antivirus engine. Real-time: Real-time protection (scan files as they're modified) is enabled. On-demand: Files are scanned only on demand and real-time protection is turned off. Passive: Runs the antivirus engine in passive mode.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_behaviormonitoring",
+    "settingName": "Enable behavior monitoring",
+    "settingDescription": "Whether the antivirus engine runs behavior monitoring and blocking or not.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_maximumondemandscanthreads",
+    "settingName": "maximum on demand scan threads",
+    "settingDescription": "Specify the maximum number of number of threads used to perform the on demand scan.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scanresultsretentiondays",
+    "settingName": "Scan results retention",
+    "settingDescription": "Specify the number of days that results are retained in the scan history on the device. Old scan results are removed from the history. Old quarantined files that are also removed from the disk.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_passivemode",
+    "settingName": "Enable passive mode (deprecated)",
+    "settingDescription": "Whether the antivirus engine runs in passive mode or not.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_exclusions_item_extension",
+    "settingName": "File extension",
+    "settingDescription": null,
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_exclusions_item_name",
+    "settingName": "File name",
+    "settingDescription": "Process name, either or full path or file name, wildcards supported",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_cloudservice_cloudblocklevel",
+    "settingName": "Configure cloud block level",
+    "settingDescription": "Determines how aggressive Defender for Endpoint is in blocking and scanning suspicious files.",
+    "keywords": [
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_exclusionsettings_exclusions_item_path",
+    "settingName": "Path",
+    "settingDescription": "Path to exclude, wildcards are NOT supported",
+    "keywords": [
+      "Exclusion Settings"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_scanresultsretentiondays",
+    "settingName": "Scan results retention",
+    "settingDescription": "Specify the number of days that results are retained in the scan history on the device. Old scan results are removed from the history. Old quarantined files that are also removed from the disk.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_allowedthreats",
+    "settingName": "Allowed threats",
+    "settingDescription": "List of threats (identified by their name) that are not blocked by the product and are instead allowed to run.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_scanarchives",
+    "settingName": "Scanning inside archive files",
+    "settingDescription": "If true, Defender will unpack archives and scan files inside them. Otherwise archive content will be skipped, that will improve scanning performance.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_threattypesettings_item_key",
+    "settingName": "Threat type",
+    "settingDescription": "Type of the threat for which the behavior is configured.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_threattypesettingsmergepolicy",
+    "settingName": "Threat type settings merge",
+    "settingDescription": "Specify the merge policy for threat type settings. This can be a combination of administrator-defined and user-defined settings (merge) or only administrator-defined settings (admin_only). This setting can be used to restrict local users from defining their own settings for different threat types.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_threattypesettings_item_value",
+    "settingName": "Action to take",
+    "settingDescription": "Action to take when coming across a threat of the type specified in the preceding section.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_enablefilehashcomputation",
+    "settingName": "Enable file hash computation",
+    "settingDescription": "Enables or disables file hash computation feature. When this feature is enabled Windows defender will compute hashes for files it scans. This will help in improving the accuracy of Custom Indicator matches. However, enabling Enable file hash computation may impact device performance.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_scanafterdefinitionupdate",
+    "settingName": "Run a scan after definitions are updated",
+    "settingDescription": "Specifies whether to start a process scan after new security intelligence updates are downloaded on the device. Enabling this setting will trigger an antivirus scan on the running processes of the device.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_edr_tags_item_value",
+    "settingName": "Value of tag",
+    "settingDescription": "Only one value per tag type can be set. Type of tags are unique, and should not be repeated in the same configuration profile.",
+    "keywords": [
+      " EDR preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_unmonitoredfilesystems",
+    "settingName": "Unmonitored Filesystems",
+    "settingDescription": "List of filesystems (identified by their name) to be unmonitored/excluded from Real Time Protection(RTP).",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_threattypesettingsmergepolicy",
+    "settingName": "Threat type settings merge",
+    "settingDescription": "Specify the merge policy for threat type settings. This can be a combination of administrator-defined and user-defined settings (merge) or only administrator-defined settings (admin_only). This setting can be used to restrict local users from defining their own settings for different threat types.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_disallowedthreatactions",
+    "settingName": "Disallowed threat actions",
+    "settingDescription": "Restricts the actions that the local user of a device can take when threats are detected. The actions included in this list are not displayed in the user interface.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_exclusions_item_path",
+    "settingName": "Path",
+    "settingDescription": "Path to exclude, wildcards are supported",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_exclusionsettings_exclusions_item_name",
+    "settingName": "Process name",
+    "settingDescription": "Process name, either or full path or file name, wildcards NOT supported",
+    "keywords": [
+      "Exclusion Settings"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_exclusionsettings_exclusions",
+    "settingName": "Global Exclusions",
+    "settingDescription": "Global exclusions apply to both Antivirus and Endpoint detection and response to exclude at a much lower level closer to sensors. Usage: Tackling performance issues. Risk: Significantly risks protection",
+    "keywords": [
+      "Exclusion Settings"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_threattypesettings",
+    "settingName": "Threat type settings",
+    "settingDescription": "The threatTypeSettings preference in the antivirus engine is used to control how certain threat types are handled by the product.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_exclusions_item_isdirectory",
+    "settingName": "Directory (selected) or file (not selected)",
+    "settingDescription": "Directory if selected, or file if not selected",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_exclusions_item_$type",
+    "settingName": "Type",
+    "settingDescription": null,
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disallowedthreatactions",
+    "settingName": "Disallowed threat actions",
+    "settingDescription": "Restricts the actions that the local user of a device can take when threats are detected. The actions included in this list are not displayed in the user interface.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_diagnosticlevel",
+    "settingName": "Diagnostic collection level",
+    "settingDescription": "Diagnostic data is used to keep Microsoft Defender ATP secure and up-to-date, detect, diagnose and fix problems, and also make product improvements. This setting determines the level of diagnostics sent by the product to Microsoft.",
+    "keywords": [
+      "Microsoft Defender - Cloud delivered protection preferences",
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_edr_tags_item_key",
+    "settingName": "Type of tag",
+    "settingDescription": "Specify a tag name and its value. The GROUP tag, tags the device with the specified value. The tag is reflected in the portal under the device page and can be used for filtering and grouping devices.",
+    "keywords": [
+      " EDR preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_allowedthreats",
+    "settingName": "Allowed threats",
+    "settingDescription": "List of threats (identified by their name) that are not blocked by the product and are instead allowed to run.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_exclusionsmergepolicy",
+    "settingName": "Exclusions merge",
+    "settingDescription": "Specify the merge policy for exclusions. This can be a combination of administrator-defined and user-defined exclusions (merge) or only administrator-defined exclusions (admin_only). This setting can be used to restrict local users from defining their own exclusions.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_threattypesettings",
+    "settingName": "Threat type settings",
+    "settingDescription": "The threatTypeSettings preference in the antivirus engine is used to control how certain threat types are handled by the product.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_exclusions_item_isdirectory",
+    "settingName": "Is directory",
+    "settingDescription": "Directory if selected, or file if not selected",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_threattypesettings_item_key",
+    "settingName": "Threat type",
+    "settingDescription": "Type of the threat for which the behavior is configured.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scanhistorymaximumitems",
+    "settingName": "Scan history size",
+    "settingDescription": "Specify the maximum number of entries to keep in the scan history. Entries include all on-demand scans performed in the past and all antivirus detections.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_exclusions",
+    "settingName": "Scan exclusions",
+    "settingDescription": "Entities that have been excluded from the scan. Exclusions can be specified by full paths, extensions, or file names.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_enablefilehashcomputation",
+    "settingName": "Enable file hash computation",
+    "settingDescription": "Whether the antivirus engine computes hashes for the files it scans or not.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scanarchives",
+    "settingName": "Enable scanning of archives",
+    "settingDescription": "Specifies whether to scan archives during on-demand antivirus scans.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_cloudservice_enabled",
+    "settingName": "Enable cloud delivered protection",
+    "settingDescription": "Provides increased, faster protection with access to the latest protection data in the cloud. Works best with automatic sample submission turned on",
+    "keywords": [
+      "Microsoft Defender - Cloud delivered protection preferences",
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_cloudservice_automaticdefinitionupdateenabled",
+    "settingName": "Automatic security intelligence updates",
+    "settingDescription": "Determines whether security intelligence updates are installed automatically:",
+    "keywords": [
+      "Microsoft Defender - Cloud delivered protection preferences",
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_cloudservice_automaticsamplesubmissionconsent",
+    "settingName": "Enable automatic sample submissions",
+    "settingDescription": "Sends sample files to Microsoft to help protect device users and your organization from potential threats",
+    "keywords": [
+      "Microsoft Defender - Cloud delivered protection preferences",
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_exclusions",
+    "settingName": "Scan exclusions",
+    "settingDescription": "Entities that have been excluded from the scan. Exclusions can be specified by full paths, extensions, or file names.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_enablerealtimeprotection",
+    "settingName": "Enable real-time protection (deprecated)",
+    "settingDescription": "Whether real-time protection (scan files as they are accessed) is enabled or not.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_exclusions_item_name",
+    "settingName": "Name",
+    "settingDescription": "Process name, either or full path or file name, wildcards supported",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_exclusions_item_path",
+    "settingName": "Path",
+    "settingDescription": "Path to exclude, wildcards are supported",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_maximumondemandscanthreads",
+    "settingName": "Degree of parallelism for on-demand scans",
+    "settingDescription": "Specifies the degree of parallelism for on-demand scans. This corresponds to the number of threads used to perform the scan and impacts the CPU usage, as well as the duration of the on-demand scan.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_scanhistorymaximumitems",
+    "settingName": "Scan history size",
+    "settingDescription": "Specify the maximum number of entries to keep in the scan history. Entries include all on-demand scans performed in the past and all antivirus detections.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_cloudblocklevel",
+    "settingName": "Cloud Block Level",
+    "settingDescription": "Determines how aggressive Defender for Endpoint will be in blocking and scanning suspicious files.",
+    "keywords": [
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_automaticdefinitionupdateenabled",
+    "settingName": "Automatic security intelligence updates",
+    "settingDescription": "Determines whether security intelligence updates are installed automatically:",
+    "keywords": [
+      "Microsoft Defender - Cloud delivered protection preferences",
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_automaticsamplesubmission",
+    "settingName": "Enable / disable automatic sample submissions",
+    "settingDescription": "Determines whether suspicious samples (that are likely to contain threats) are sent to Microsoft. You are prompted if the submitted file is likely to contain personal information.",
+    "keywords": [
+      "Microsoft Defender - Cloud delivered protection preferences",
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_enforcementlevel",
+    "settingName": "Enforcement level",
+    "settingDescription": "Specifies if network protection is disabled, in audit mode, or enforced",
+    "keywords": [
+      "Microsoft Defender - Network protection",
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_exclusions_item_$type",
+    "settingName": "Type",
+    "settingDescription": null,
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_nonexecmountpolicy",
+    "settingName": "non execute mount mute",
+    "settingDescription": "Specifies the behavior of RTP on mount point marked as nonexec. ",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_enablerealtimeprotection",
+    "settingName": "Enable real-time protection (deprecated)",
+    "settingDescription": "Locates and stops malware from installing or running on your device. You can turn off this setting for a short time before it turns back on automatically.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_threattypesettings_item_value",
+    "settingName": "Action to take",
+    "settingDescription": "Action to take when coming across a threat of the type specified in the preceding section.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scanafterdefinitionupdate",
+    "settingName": "Enable scanning after definition update",
+    "settingDescription": "Specifies whether to start a process scan after new security intelligence updates are downloaded on the device.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_cloudservice_diagnosticlevel",
+    "settingName": "Diagnostic data collection level",
+    "settingDescription": "We encourage you to share your diagnostic and usage data with us to help improve Microsoft products and services.",
+    "keywords": [
+      "Microsoft Defender - Cloud delivered protection preferences",
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_exclusionsettings_exclusions_item_$type",
+    "settingName": "Type",
+    "settingDescription": null,
+    "keywords": [
+      "Exclusion Settings"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_exclusionsettings_exclusions_item_isdirectory",
+    "settingName": "Is directory",
+    "settingDescription": "Directory if selected, or file if not selected",
+    "keywords": [
+      "Exclusion Settings"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_networkprotection_enforcementlevel",
+    "settingName": "Enforcement Level",
+    "settingDescription": "Specifies if network protection is disabled, in audit mode, or enforced",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  }
+]
