@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - index.html
-      - intune_settings.json
+      - website_data/**
   workflow_dispatch:
 
 jobs:
@@ -22,18 +22,22 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v5
 
       - name: Copy site content
         run: |
           mkdir public
           cp index.html public/
-          cp intune_settings.json public/
+          if [ -d "website_data" ]; then
+            cp -r website_data public/
+          else
+            echo "Warning: website_data directory not found"
+          fi
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
