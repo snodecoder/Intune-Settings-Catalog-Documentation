@@ -27,7 +27,17 @@ def fetch_graph_data(url, token):
         url = result.get("@odata.nextLink")
     return data
 
+def ensure_dir(path):
+    if not os.path.exists(path):
+        os.makedirs(path)
+
 def main():
+    # Output folder structure
+    base_dir = "website_data"
+    platforms_dir = os.path.join(base_dir, "platforms")
+    ensure_dir(base_dir)
+    ensure_dir(platforms_dir)
+
     token = get_access_token()
 
     config_settings = fetch_graph_data("https://graph.microsoft.com/beta/deviceManagement/configurationSettings", token)
@@ -38,15 +48,15 @@ def main():
 
     categories = fetch_graph_data("https://graph.microsoft.com/beta/deviceManagement/configurationCategories", token)
     print(f"Fetched {len(categories)} configuration categories.")
-    with open("configurationSettings.json", "w", encoding="utf-8") as f:
+
+    with open(os.path.join(base_dir, "configurationSettings.json"), "w", encoding="utf-8") as f:
         json.dump(config_settings, f, indent=2, ensure_ascii=False)
 
-    with open("settingDefinitions.json", "w", encoding="utf-8") as f:
+    with open(os.path.join(base_dir, "settingDefinitions.json"), "w", encoding="utf-8") as f:
         json.dump(setting_defs, f, indent=2, ensure_ascii=False)
 
-    with open("configurationCategories.json", "w", encoding="utf-8") as f:
+    with open(os.path.join(base_dir, "configurationCategories.json"), "w", encoding="utf-8") as f:
         json.dump(categories, f, indent=2, ensure_ascii=False)
-
 
     # Build lookup maps for categories and definitions
     def_map = {d.get("id"): d for d in setting_defs if "id" in d}
@@ -61,13 +71,10 @@ def main():
     platform_indexes = {}
 
     for s in config_settings:
-        # Find the setting definition by id (if available)
         setting_def = def_map.get(s.get("settingDefinitionId")) if s.get("settingDefinitionId") else None
-        # Find the category and root category
         cat = cat_map.get(s.get("categoryId"))
         root_id = cat["rootCategoryId"] if cat and "rootCategoryId" in cat else None
         root_name = root_cat_map.get(root_id, "Uncategorized")
-        # Get platform(s) from category
         platforms = cat.get("platforms", "Unknown").split(",") if cat else ["Unknown"]
         platforms = [p.strip().lower() for p in platforms if p.strip()]
         for p in platforms:
@@ -75,7 +82,6 @@ def main():
         categories_set.add(root_name)
         for kw in s.get("keywords", []):
             keywords_set.add(kw)
-        # Merge all relevant properties from the configuration setting
         item = {
             "settingId": s.get("id"),
             "settingName": s.get("displayName"),
@@ -98,14 +104,12 @@ def main():
             "helpText": s.get("helpText"),
             "name": s.get("name"),
             "rootDefinitionId": s.get("rootDefinitionId"),
-            # Supplement with definition fields if available
             "settingDefinitionId": s.get("settingDefinitionId"),
             "definitionDescription": setting_def.get("description") if setting_def else None,
             "dataType": setting_def.get("dataType") if setting_def else s.get("dataType"),
             "valueOptions": setting_def.get("options") if setting_def and "options" in setting_def else s.get("options", []),
             "dependencies": setting_def.get("dependencies") if setting_def and "dependencies" in setting_def else s.get("dependencies", []),
         }
-        # Add to each platform's list
         for p in platforms:
             if p not in platform_settings:
                 platform_settings[p] = []
@@ -113,10 +117,9 @@ def main():
 
     # Write per-platform settings files and search indexes
     for p, items in platform_settings.items():
-        fname = f"{p}.json"
+        fname = os.path.join(platforms_dir, f"{p}.json")
         with open(fname, "w", encoding="utf-8") as f:
             json.dump(items, f, indent=2, ensure_ascii=False)
-        # Create a search index (id, name, description, keywords, categoryName)
         index = [
             {
                 "settingId": i["settingId"],
@@ -127,20 +130,16 @@ def main():
             }
             for i in items
         ]
-        with open(f"{p}_index.json", "w", encoding="utf-8") as f:
+        with open(os.path.join(platforms_dir, f"{p}_index.json"), "w", encoding="utf-8") as f:
             json.dump(index, f, indent=2, ensure_ascii=False)
 
     # Write metadata files
-    with open("platforms.json", "w", encoding="utf-8") as f:
+    with open(os.path.join(base_dir, "platforms.json"), "w", encoding="utf-8") as f:
         json.dump(sorted(list(platforms_set)), f, indent=2, ensure_ascii=False)
-    with open("categories.json", "w", encoding="utf-8") as f:
+    with open(os.path.join(base_dir, "categories.json"), "w", encoding="utf-8") as f:
         json.dump(sorted(list(categories_set)), f, indent=2, ensure_ascii=False)
-    with open("keywords.json", "w", encoding="utf-8") as f:
+    with open(os.path.join(base_dir, "keywords.json"), "w", encoding="utf-8") as f:
         json.dump(sorted(list(keywords_set)), f, indent=2, ensure_ascii=False)
-
-    # Optionally, remove the old intune_settings.json
-    # if os.path.exists("intune_settings.json"):
-    #     os.remove("intune_settings.json")
 
 if __name__ == "__main__":
     main()

@@ -9,6 +9,10 @@
     pre { background: #f0f0f0; padding: 1em; border-radius: 8px; }
     .pagination { margin: 1em 0; }
     .pagination button { margin: 0 0.2em; }
+    table { width: 100%; border-collapse: collapse; margin: 1em 0; }
+    th, td { padding: 0.75em; text-align: left; border-bottom: 1px solid #ccc; }
+    th { background: #f9f9f9; }
+    tr.details-row { display: none; }
   </style>
 </head>
 <body>
@@ -36,36 +40,33 @@
     const pageSize = 20;
     let currentPlatform = '';
 
+    // Helper to update dropdown options
+    function updateDropdown(sel, options, placeholder) {
+      sel.innerHTML = '';
+      const opt = document.createElement('option');
+      opt.value = '';
+      opt.textContent = placeholder;
+      sel.appendChild(opt);
+      options.forEach(v => {
+        const o = document.createElement('option');
+        o.value = v;
+        o.textContent = v;
+        sel.appendChild(o);
+      });
+    }
+
     // Load metadata
-    fetch('platforms.json').then(res => res.json()).then(data => {
+    fetch('website_data/platforms.json').then(res => res.json()).then(data => {
       platforms = data;
-      const sel = document.getElementById('platformSelect');
-      platforms.forEach(p => {
-        const opt = document.createElement('option');
-        opt.value = p;
-        opt.textContent = p;
-        sel.appendChild(opt);
-      });
+      updateDropdown(document.getElementById('platformSelect'), platforms, 'Select platform...');
     });
-    fetch('categories.json').then(res => res.json()).then(data => {
+    fetch('website_data/categories.json').then(res => res.json()).then(data => {
       categories = data;
-      const sel = document.getElementById('categorySelect');
-      categories.forEach(c => {
-        const opt = document.createElement('option');
-        opt.value = c;
-        opt.textContent = c;
-        sel.appendChild(opt);
-      });
+      updateDropdown(document.getElementById('categorySelect'), categories, 'All categories');
     });
-    fetch('keywords.json').then(res => res.json()).then(data => {
+    fetch('website_data/keywords.json').then(res => res.json()).then(data => {
       keywords = data;
-      const sel = document.getElementById('keywordSelect');
-      keywords.forEach(k => {
-        const opt = document.createElement('option');
-        opt.value = k;
-        opt.textContent = k;
-        sel.appendChild(opt);
-      });
+      updateDropdown(document.getElementById('keywordSelect'), keywords, 'All keywords');
     });
 
     // Event listeners
@@ -75,18 +76,36 @@
         index = [];
         settings = [];
         filtered = [];
+        updateDropdown(document.getElementById('categorySelect'), categories, 'All categories');
+        updateDropdown(document.getElementById('keywordSelect'), keywords, 'All keywords');
         render();
         return;
       }
       // Load index and settings for selected platform
       [index, settings] = await Promise.all([
-        fetch(`${currentPlatform}_index.json`).then(res => res.json()),
-        fetch(`${currentPlatform}.json`).then(res => res.json())
+        fetch(`website_data/platforms/${currentPlatform}_index.json`).then(res => res.json()),
+        fetch(`website_data/platforms/${currentPlatform}.json`).then(res => res.json())
       ]);
+      // Extract available categories and keywords for this platform
+      const cats = Array.from(new Set(index.map(i => i.categoryName).filter(Boolean))).sort();
+      const kws = Array.from(new Set(index.flatMap(i => i.keywords || [])).values()).sort();
+      updateDropdown(document.getElementById('categorySelect'), cats, 'All categories');
+      updateDropdown(document.getElementById('keywordSelect'), kws, 'All keywords');
       currentPage = 1;
       filterAndRender();
     });
-    document.getElementById('categorySelect').addEventListener('change', filterAndRender);
+    document.getElementById('categorySelect').addEventListener('change', function() {
+      // When category changes, update keywords for this platform+category
+      const cat = this.value;
+      let kws = [];
+      if (cat) {
+        kws = Array.from(new Set(index.filter(i => i.categoryName === cat).flatMap(i => i.keywords || []))).sort();
+      } else {
+        kws = Array.from(new Set(index.flatMap(i => i.keywords || []))).sort();
+      }
+      updateDropdown(document.getElementById('keywordSelect'), kws, 'All keywords');
+      filterAndRender();
+    });
     document.getElementById('keywordSelect').addEventListener('change', filterAndRender);
     document.getElementById('searchInput').addEventListener('input', filterAndRender);
 
@@ -125,13 +144,87 @@
       const start = (currentPage - 1) * pageSize;
       const end = start + pageSize;
       const pageItems = filtered.slice(start, end);
-      // Show results
-      for (const s of pageItems) {
-        const full = settings.find(x => x.settingId === s.settingId);
-        const el = document.createElement('pre');
-        el.textContent = JSON.stringify(full || s, null, 2);
-        container.appendChild(el);
-      }
+      // Table
+      const table = document.createElement('table');
+      table.style.width = '100%';
+      table.style.borderCollapse = 'collapse';
+      const thead = document.createElement('thead');
+      const headRow = document.createElement('tr');
+      ['Setting Name', 'Category', 'Keywords', ''].forEach(h => {
+        const th = document.createElement('th');
+        th.textContent = h;
+        th.style.textAlign = 'left';
+        th.style.borderBottom = '1px solid #ccc';
+        headRow.appendChild(th);
+      });
+      thead.appendChild(headRow);
+      table.appendChild(thead);
+      const tbody = document.createElement('tbody');
+      pageItems.forEach((s, idx) => {
+        const full = settings.find(x => x.settingId === s.settingId) || s;
+        const tr = document.createElement('tr');
+        // Setting Name
+        const tdName = document.createElement('td');
+        tdName.textContent = full.settingName || full.displayName || '';
+        tr.appendChild(tdName);
+        // Category
+        const tdCat = document.createElement('td');
+        tdCat.textContent = full.categoryName || '';
+        tr.appendChild(tdCat);
+        // Keywords
+        const tdKw = document.createElement('td');
+        tdKw.textContent = (full.keywords || []).join(', ');
+        tr.appendChild(tdKw);
+        // Expand button
+        const tdBtn = document.createElement('td');
+        const btn = document.createElement('button');
+        btn.textContent = 'Show details';
+        btn.style.cursor = 'pointer';
+        btn.onclick = function() {
+          if (detailsRow.style.display === 'none') {
+            detailsRow.style.display = '';
+            btn.textContent = 'Hide details';
+          } else {
+            detailsRow.style.display = 'none';
+            btn.textContent = 'Show details';
+          }
+        };
+        tdBtn.appendChild(btn);
+        tr.appendChild(tdBtn);
+        tbody.appendChild(tr);
+        // Details row (hidden by default)
+        const detailsRow = document.createElement('tr');
+        detailsRow.style.display = 'none';
+        const detailsTd = document.createElement('td');
+        detailsTd.colSpan = 4;
+        // Details as table
+        const detailsTable = document.createElement('table');
+        detailsTable.style.width = '100%';
+        detailsTable.style.background = '#f9f9f9';
+        detailsTable.style.border = '1px solid #eee';
+        Object.entries(full).forEach(([k, v]) => {
+          const row = document.createElement('tr');
+          const keyTd = document.createElement('td');
+          keyTd.textContent = k;
+          keyTd.style.fontWeight = 'bold';
+          keyTd.style.width = '200px';
+          const valTd = document.createElement('td');
+          if (typeof v === 'object' && v !== null) {
+            valTd.textContent = JSON.stringify(v, null, 2);
+            valTd.style.fontFamily = 'monospace';
+          } else {
+            valTd.textContent = v;
+          }
+          row.appendChild(keyTd);
+          row.appendChild(valTd);
+          detailsTable.appendChild(row);
+        });
+        detailsTd.appendChild(detailsTable);
+        detailsRow.appendChild(detailsTd);
+        tbody.appendChild(detailsRow);
+      });
+      table.appendChild(tbody);
+      container.appendChild(table);
       // Pagination controls
       const pag = document.getElementById('pagination');
       pag.innerHTML = '';
