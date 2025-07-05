@@ -10,6 +10,7 @@
       "enrollment",
       "Management settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/activateCellularData",
     "settingUsage": "configuration",
@@ -25,6 +26,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "regEx",
+      "inputValidationSchema": "^https?://",
+      "maximumLength": 0,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": "http://activation.carrier.net"
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "http://activation.carrier.net",
@@ -47,6 +62,7 @@
       "enrollment",
       "Management settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/authenticationMethod",
     "settingUsage": "configuration",
@@ -101,6 +117,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -162,6 +180,7 @@
       "enrollment",
       "Management settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/userAffinity",
     "settingUsage": "configuration",
@@ -254,6 +273,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -353,6 +374,7 @@
       "enrollment",
       "Management settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/maximumSecondsInactivityUntilUserLogsOut",
     "settingUsage": "configuration",
@@ -368,6 +390,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 14400,
+      "minimumValue": 0
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 0
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "Enter value",
@@ -392,6 +424,7 @@
       "change setting",
       "End User Overrides"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy/QuietTime",
     "offsetUri": "/AllowUserToChangeSetting",
     "settingUsage": "configuration",
@@ -437,6 +470,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "get",
     "version": "638869171349860765",
     "helpText": "",
@@ -488,6 +523,7 @@
       "endtime",
       "Range Settings"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy/QuietTime/RangeSettings",
     "offsetUri": "/EndTime",
     "settingUsage": "configuration",
@@ -504,6 +540,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "dateTime",
+      "inputValidationSchema": null,
+      "maximumLength": 1024,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "get",
     "version": "638869171349860765",
     "helpText": null,
@@ -527,6 +577,7 @@
       "Timeout",
       "Out-of-box experience settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/autopilot/DevicePreparation",
     "offsetUri": "/OobeSettings/Timeout",
     "settingUsage": "configuration",
@@ -549,6 +600,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 720,
+      "minimumValue": 15
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 60
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -572,6 +633,7 @@
       "AllowedPolicyIds",
       "Policies"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/autopilot/DevicePreparation",
     "offsetUri": "/AllowedPolicyIds",
     "settingUsage": "configuration",
@@ -594,6 +656,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 1000,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -617,6 +693,7 @@
       "Privilege Management",
       "Privilege Management Elevation Client Settings"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "PrivilegeManagement/ElevationClientSettings/DefaultElevationResponse",
     "settingUsage": "configuration",
@@ -707,6 +784,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -793,6 +872,7 @@
       "Privilege Management",
       "Privilege management elevation client settings"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "PrivilegeManagement/ElevationClientSettings/AllowElevationDetection",
     "settingUsage": "configuration",
@@ -859,6 +939,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "When set to Yes, applications that need elevated permissions to run will automatically be elevated (based on the rules you set). Otherwise, the system only evaluates requests through the right-click menu or if they are set for automatic elevation.",
@@ -920,6 +1002,9 @@
       "DeviceControl",
       "Device Control"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
+    ],
     "baseUri": "./device/vendor/msft/defender",
     "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
     "settingUsage": "configuration",
@@ -953,6 +1038,8 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -974,6 +1061,9 @@
       "Defender",
       "DeviceControl",
       "Device Control"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
     ],
     "baseUri": "./device/vendor/msft/defender",
     "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
@@ -1124,6 +1214,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -1262,6 +1354,9 @@
       "Windows Defender Application Guard",
       "Microsoft Defender Application Guard"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/WindowsDefenderApplicationGuard-csp/"
+    ],
     "baseUri": "./Device/Vendor/MSFT/WindowsDefenderApplicationGuard",
     "offsetUri": "/Settings/ClipboardSettings",
     "settingUsage": "configuration",
@@ -1387,6 +1482,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -1502,6 +1599,9 @@
       "Windows Defender Application Guard",
       "Microsoft Defender Application Guard"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/WindowsDefenderApplicationGuard-csp/"
+    ],
     "baseUri": "./Device/Vendor/MSFT/WindowsDefenderApplicationGuard",
     "offsetUri": "/Settings/SaveFilesToHost",
     "settingUsage": "configuration",
@@ -1581,6 +1681,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -1650,6 +1752,9 @@
       "WindowsDefenderApplicationGuard",
       "Microsoft Defender Application Guard"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/client-management/mdm/windowsdefenderapplicationguard-csp/"
+    ],
     "baseUri": "./Device/Vendor/MSFT/WindowsDefenderApplicationGuard",
     "offsetUri": "/InstallWindowsDefenderApplicationGuard",
     "settingUsage": "configuration",
@@ -1709,6 +1814,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "get,execute",
     "version": "638869171349860765",
     "helpText": "",
@@ -1758,6 +1865,9 @@
       "Allow Windows Defender Application Guard",
       "Windows Defender Application Guard",
       "Microsoft Defender Application Guard"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/WindowsDefenderApplicationGuard-csp/"
     ],
     "baseUri": "./Device/Vendor/MSFT/WindowsDefenderApplicationGuard",
     "offsetUri": "/Settings/AllowWindowsDefenderApplicationGuard",
@@ -1919,6 +2029,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -2068,6 +2180,9 @@
       "Administrator Account Name",
       "LAPS"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/LAPS-csp/"
+    ],
     "baseUri": "./Device/Vendor/MSFT/LAPS",
     "offsetUri": "/Policies/AdministratorAccountName",
     "settingUsage": "configuration",
@@ -2102,6 +2217,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 87516,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -2122,6 +2251,9 @@
     "keywords": [
       "AD Encrypted Password History Size",
       "LAPS"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/LAPS-csp/"
     ],
     "baseUri": "./Device/Vendor/MSFT/LAPS",
     "offsetUri": "/Policies/ADEncryptedPasswordHistorySize",
@@ -2157,6 +2289,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 12,
+      "minimumValue": 0
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 0
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -2177,6 +2319,9 @@
     "keywords": [
       "Password Age Days",
       "LAPS"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/LAPS-csp/"
     ],
     "baseUri": "./Device/Vendor/MSFT/LAPS",
     "offsetUri": "/Policies/PasswordAgeDays",
@@ -2212,6 +2357,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 365,
+      "minimumValue": 1
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 30
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -2232,6 +2387,9 @@
     "keywords": [
       "AD Password Encryption Enabled",
       "LAPS"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/LAPS-csp/"
     ],
     "baseUri": "./Device/Vendor/MSFT/LAPS",
     "offsetUri": "/Policies/ADPasswordEncryptionEnabled",
@@ -2306,6 +2464,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -2367,6 +2527,7 @@
       "Elevation",
       "Privilege Management"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/ChildProcessBehavior",
     "settingUsage": "configuration",
@@ -2452,6 +2613,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -2532,6 +2695,7 @@
       "Elevation",
       "Privilege Management"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/Name",
     "settingUsage": "configuration",
@@ -2559,6 +2723,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 1024,
+      "minimumLength": 3,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -2581,6 +2759,7 @@
       "Elevation",
       "Privilege Management"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/FileName",
     "settingUsage": "configuration",
@@ -2608,6 +2787,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "regEx",
+      "inputValidationSchema": "^$|^[^</*?\\\"\\\\>:|]+[*?]*\\.[a-zA-Z0-9]{2,4}$",
+      "maximumLength": 250,
+      "minimumLength": 3,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -2630,6 +2823,7 @@
       "Elevation",
       "Privilege Management"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/FilePath",
     "settingUsage": "configuration",
@@ -2657,6 +2851,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "regEx",
+      "inputValidationSchema": "^$|(([a-zA-Z]:)(\\\\\\w[ \\w\\.()!#$%&'()+-.]*[*?]?[ \\w\\.()!#$%&'()+-.]*|[!#$%&'()+-.]|[\\\\]?|\\\\%[ \\w\\.()]+%+)+|%[ \\w\\.()]+%(\\\\\\w[ \\w\\.()]*[*?]?[ \\w\\.()]*|[\\\\]?|\\\\%[ \\w\\.()]+%+)*)$",
+      "maximumLength": 254,
+      "minimumLength": 3,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -2679,6 +2887,7 @@
       "Elevation",
       "Privilege Management"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/ProductName",
     "settingUsage": "configuration",
@@ -2706,6 +2915,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 50,
+      "minimumLength": 3,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -2728,6 +2951,7 @@
       "enrollment",
       "Management settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/deviceNameTemplate",
     "settingUsage": "configuration",
@@ -2743,6 +2967,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "regEx",
+      "inputValidationSchema": "^[a-zA-Z0-9-._{}]*$",
+      "maximumLength": 63,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": "{{DEVICETYPE}}-{{SERIAL}}"
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "{{DEVICETYPE}}-{{SERIAL}}",
@@ -2765,6 +3003,7 @@
       "enrollment",
       "Management settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/lockedEnrollment",
     "settingUsage": "configuration",
@@ -2809,6 +3048,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -2860,6 +3101,7 @@
       "enrollment",
       "Management settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/maximumCachedUsers",
     "settingUsage": "configuration",
@@ -2875,6 +3117,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 100,
+      "minimumValue": 0
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 10
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -2897,6 +3149,7 @@
       "enrollment",
       "Management settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/modernAuth_awaitfinalconfiguration",
     "settingUsage": "configuration",
@@ -2951,6 +3204,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -3012,6 +3267,7 @@
       "enrollment",
       "Management settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/useraffinity_awaitfinalconfiguration",
     "settingUsage": "configuration",
@@ -3074,6 +3330,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -3143,6 +3401,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/appearance",
     "settingUsage": "configuration",
@@ -3187,6 +3446,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -3238,6 +3499,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/appleId",
     "settingUsage": "configuration",
@@ -3282,6 +3544,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -3333,6 +3597,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/applePay",
     "settingUsage": "configuration",
@@ -3377,6 +3642,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -3428,6 +3695,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/departmentPhone",
     "settingUsage": "configuration",
@@ -3443,6 +3711,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 50,
+      "minimumLength": 1,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "Appears to users on About Configuration screen",
@@ -3465,6 +3747,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/diagnosticsData",
     "settingUsage": "configuration",
@@ -3509,6 +3792,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -3560,6 +3845,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/iMessageFacetime",
     "settingUsage": "configuration",
@@ -3604,6 +3890,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -3655,6 +3943,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/Safety",
     "settingUsage": "configuration",
@@ -3699,6 +3988,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -3750,6 +4041,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/screenTime",
     "settingUsage": "configuration",
@@ -3794,6 +4086,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -3845,6 +4139,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/softwareUpdate",
     "settingUsage": "configuration",
@@ -3889,6 +4184,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -3940,6 +4237,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/termsAndConditions",
     "settingUsage": "configuration",
@@ -3984,6 +4282,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -4035,6 +4335,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/termsOfAddress",
     "settingUsage": "configuration",
@@ -4079,6 +4380,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -4130,6 +4433,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/voiceSelection",
     "settingUsage": "configuration",
@@ -4174,6 +4478,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -4225,6 +4531,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/watchMigration",
     "settingUsage": "configuration",
@@ -4269,6 +4576,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -4322,6 +4631,7 @@
       "Outlook",
       "Non-working time"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy/QuietTime",
     "offsetUri": "/MuteNotificationsClockedout",
     "settingUsage": "configuration",
@@ -4353,6 +4663,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "get",
     "version": "638869171349860765",
     "helpText": null,
@@ -4391,6 +4703,7 @@
       "CustomErrorMessage",
       "Out-of-box experience settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/autopilot/DevicePreparation",
     "offsetUri": "/OobeSettings/CustomErrorMessage",
     "settingUsage": "configuration",
@@ -4413,6 +4726,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 1000,
+      "minimumLength": 1,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": "Contact your organization’s support person for help."
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -4436,6 +4763,7 @@
       "Deployment mode",
       "Deployment settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/autopilot/DevicePreparation",
     "offsetUri": "/DeploymentSettings/DeploymentMode",
     "settingUsage": "configuration",
@@ -4473,6 +4801,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -4508,6 +4838,9 @@
     "keywords": [
       "Retries",
       "Linux Custom Configuration"
+    ],
+    "infoUrls": [
+      "https://go.microsoft.com/fwlink/?linkid=2218882"
     ],
     "baseUri": "com.microsoft.manage.LinuxMdm",
     "offsetUri": "CustomConfig/ExecutionRetries",
@@ -4581,6 +4914,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "get",
     "version": "638869171349860765",
     "helpText": null,
@@ -4662,6 +4997,7 @@
       "Privilege Management",
       "Privilege Management Elevation Client Settings"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/PrivilegeManagement/ElevationClientSettings/Validation",
     "settingUsage": "configuration",
@@ -4728,6 +5064,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -4787,6 +5125,9 @@
     "keywords": [
       "Application Control",
       "App Control for Business"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create"
     ],
     "baseUri": "./Vendor/MSFT/ApplicationControl/Policies",
     "offsetUri": "/{0}/Policy",
@@ -4858,6 +5199,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -4918,57 +5261,8 @@
       "Application Control",
       "App Control for Business"
     ],
-    "baseUri": "./Vendor/MSFT/ApplicationControl/Policies",
-    "offsetUri": "/{0}/Policy",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
-      "description": null,
-      "platform": "windows10",
-      "deviceMode": "none",
-      "technologies": "mdm",
-      "configurationServiceProviderVersion": null,
-      "maximumSupportedVersion": null,
-      "minimumSupportedVersion": "10.0.18362",
-      "windowsSkus": [
-        "windowsEnterprise",
-        "windowsProfessional",
-        "windowsHome",
-        "unknown",
-        "windowsEducation",
-        "windowsMultiSession",
-        "surfaceHub",
-        "iotEnterprise"
-      ],
-      "requiresAzureAd": false,
-      "requiredAzureAdTrustType": "none"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "638869171349860765",
-    "helpText": null,
-    "name": "Enter path of xml data",
-    "rootDefinitionId": "device_vendor_msft_policy_config_applicationcontrol_policies_{policyguid}_policiesoptions",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrol_built_in_controls",
-    "settingName": "App Control for Business Built In Controls",
-    "settingDescription": "App Control for Business Built In Controls",
-    "categoryId": "56b82fc9-c632-4c76-bb4f-dcf8757f003e",
-    "categoryName": "Uncategorized",
-    "keywords": [
-      "Application Control",
-      "App Control for Business"
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide"
     ],
     "baseUri": "./Vendor/MSFT/ApplicationControl/Policies",
     "offsetUri": "/{0}/Policy",
@@ -5001,6 +5295,79 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "xml",
+      "inputValidationSchema": "xmlns=\"urn:schemas-microsoft-com:sipolicy\"",
+      "maximumLength": 800000,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": [
+        "xml"
+      ]
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
+    "accessTypes": "add,delete,get,replace",
+    "version": "638869171349860765",
+    "helpText": null,
+    "name": "Enter path of xml data",
+    "rootDefinitionId": "device_vendor_msft_policy_config_applicationcontrol_policies_{policyguid}_policiesoptions",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationcontrol_built_in_controls",
+    "settingName": "App Control for Business Built In Controls",
+    "settingDescription": "App Control for Business Built In Controls",
+    "categoryId": "56b82fc9-c632-4c76-bb4f-dcf8757f003e",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "Application Control",
+      "App Control for Business"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/client-management/mdm/applicationcontrol-csp"
+    ],
+    "baseUri": "./Vendor/MSFT/ApplicationControl/Policies",
+    "offsetUri": "/{0}/Policy",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+      "description": null,
+      "platform": "windows10",
+      "deviceMode": "none",
+      "technologies": "mdm",
+      "configurationServiceProviderVersion": null,
+      "maximumSupportedVersion": null,
+      "minimumSupportedVersion": "10.0.18362",
+      "windowsSkus": [
+        "windowsEnterprise",
+        "windowsProfessional",
+        "windowsHome",
+        "unknown",
+        "windowsEducation",
+        "windowsMultiSession",
+        "surfaceHub",
+        "iotEnterprise"
+      ],
+      "requiresAzureAd": false,
+      "requiredAzureAdTrustType": "none"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -5021,6 +5388,9 @@
     "keywords": [
       "Application Control",
       "App Control for Business"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/client-management/mdm/applicationcontrol-csp"
     ],
     "baseUri": "./Vendor/MSFT/ApplicationControl/Policies",
     "offsetUri": "/{0}/Policy",
@@ -5092,6 +5462,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -5152,6 +5524,9 @@
       "Defender",
       "DeviceControl",
       "Device Control"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
     ],
     "baseUri": "./device/vendor/msft/defender",
     "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
@@ -5283,6 +5658,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -5402,6 +5779,9 @@
       "DeviceControl",
       "Device Control"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
+    ],
     "baseUri": "./device/vendor/msft/defender",
     "offsetUri": "/configuration/devicecontrol/policyrules/{0}",
     "settingUsage": "configuration",
@@ -5439,6 +5819,20 @@
         "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policygroups_{groupid}_groupdata"
       }
     ],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 1024,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -5461,6 +5855,9 @@
       "DeviceControl",
       "Device Control"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
+    ],
     "baseUri": "./device/vendor/msft/defender",
     "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
     "settingUsage": "configuration",
@@ -5494,6 +5891,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 1024,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -5516,60 +5927,8 @@
       "DeviceControl",
       "Device Control"
     ],
-    "baseUri": "./device/vendor/msft/defender",
-    "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
-      "description": null,
-      "platform": "windows10",
-      "deviceMode": "none",
-      "technologies": "mdm,microsoftSense",
-      "configurationServiceProviderVersion": "1.3",
-      "maximumSupportedVersion": null,
-      "minimumSupportedVersion": "10.0.18362",
-      "windowsSkus": [
-        "windowsEnterprise",
-        "windowsProfessional",
-        "windowsHome",
-        "unknown",
-        "windowsEducation",
-        "windowsMultiSession",
-        "surfaceHub",
-        "iotEnterprise",
-        "windowsCloudN",
-        "windows11SE"
-      ],
-      "requiresAzureAd": false,
-      "requiredAzureAdTrustType": "none"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "638869171349860765",
-    "helpText": "",
-    "name": "ruleid",
-    "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_excludedidlist",
-    "settingName": "Excluded Devices",
-    "settingDescription": "The group(s) that the policy will not be applied to.",
-    "categoryId": "5ed18ca1-36d1-4375-bfd6-fd67801c2659",
-    "categoryName": "Uncategorized",
-    "keywords": [
-      "Defender",
-      "DeviceControl",
-      "Device Control"
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
     ],
     "baseUri": "./device/vendor/msft/defender",
     "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
@@ -5604,6 +5963,68 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638869171349860765",
+    "helpText": "",
+    "name": "ruleid",
+    "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_excludedidlist",
+    "settingName": "Excluded Devices",
+    "settingDescription": "The group(s) that the policy will not be applied to.",
+    "categoryId": "5ed18ca1-36d1-4375-bfd6-fd67801c2659",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "Defender",
+      "DeviceControl",
+      "Device Control"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
+    ],
+    "baseUri": "./device/vendor/msft/defender",
+    "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+      "description": null,
+      "platform": "windows10",
+      "deviceMode": "none",
+      "technologies": "mdm,microsoftSense",
+      "configurationServiceProviderVersion": "1.3",
+      "maximumSupportedVersion": null,
+      "minimumSupportedVersion": "10.0.18362",
+      "windowsSkus": [
+        "windowsEnterprise",
+        "windowsProfessional",
+        "windowsHome",
+        "unknown",
+        "windowsEducation",
+        "windowsMultiSession",
+        "surfaceHub",
+        "iotEnterprise",
+        "windowsCloudN",
+        "windows11SE"
+      ],
+      "requiresAzureAd": false,
+      "requiredAzureAdTrustType": "none"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -5625,6 +6046,9 @@
       "Clipboard File Type",
       "Windows Defender Application Guard",
       "Microsoft Defender Application Guard"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/WindowsDefenderApplicationGuard-csp/"
     ],
     "baseUri": "./Device/Vendor/MSFT/WindowsDefenderApplicationGuard",
     "offsetUri": "/Settings/ClipboardFileType",
@@ -5728,6 +6152,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -5820,6 +6246,9 @@
       "Windows Defender Application Guard",
       "Microsoft Defender Application Guard"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/WindowsDefenderApplicationGuard-csp/"
+    ],
     "baseUri": "./Device/Vendor/MSFT/WindowsDefenderApplicationGuard",
     "offsetUri": "/Settings/CertificateThumbprints",
     "settingUsage": "configuration",
@@ -5852,6 +6281,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 87516,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -5872,6 +6315,9 @@
     "keywords": [
       "Automatic Account Management Target",
       "LAPS"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/LAPS-csp/"
     ],
     "baseUri": "./Device/Vendor/MSFT/LAPS",
     "offsetUri": "/Policies/AutomaticAccountManagementTarget",
@@ -5946,6 +6392,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -6005,6 +6453,9 @@
     "keywords": [
       "Automatic Account Management Enabled",
       "LAPS"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/LAPS-csp/"
     ],
     "baseUri": "./Device/Vendor/MSFT/LAPS",
     "offsetUri": "/Policies/AutomaticAccountManagementEnabled",
@@ -6086,6 +6537,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -6153,6 +6606,9 @@
       "Post Authentication Reset Delay",
       "LAPS"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/LAPS-csp/"
+    ],
     "baseUri": "./Device/Vendor/MSFT/LAPS",
     "offsetUri": "/Policies/PostAuthenticationResetDelay",
     "settingUsage": "configuration",
@@ -6187,6 +6643,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 24,
+      "minimumValue": 0
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 24
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -6207,6 +6673,9 @@
     "keywords": [
       "Password Age Days",
       "LAPS"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/LAPS-csp/"
     ],
     "baseUri": "./Device/Vendor/MSFT/LAPS",
     "offsetUri": "/Policies/PasswordAgeDays",
@@ -6242,6 +6711,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 365,
+      "minimumValue": 7
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 30
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -6262,6 +6741,9 @@
     "keywords": [
       "Automatic Account Management Randomize Name",
       "LAPS"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/LAPS-csp/"
     ],
     "baseUri": "./Device/Vendor/MSFT/LAPS",
     "offsetUri": "/Policies/AutomaticAccountManagementRandomizeName",
@@ -6336,6 +6818,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -6396,6 +6880,9 @@
       "Automatic Account Management Name Or Prefix",
       "LAPS"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/LAPS-csp/"
+    ],
     "baseUri": "./Device/Vendor/MSFT/LAPS",
     "offsetUri": "/Policies/AutomaticAccountManagementNameOrPrefix",
     "settingUsage": "configuration",
@@ -6430,6 +6917,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 87516,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -6451,6 +6952,9 @@
       "LocalUsersAndGroups",
       "Configure",
       "Local Users And Groups"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-localusersandgroups"
     ],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/Config/LocalUsersAndGroups/Configure",
@@ -6596,6 +7100,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -6733,6 +7239,9 @@
       "Configure",
       "Local Users And Groups"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-localusersandgroups"
+    ],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/Config/LocalUsersAndGroups/Configure",
     "settingUsage": "configuration",
@@ -6762,6 +7271,8 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -6783,6 +7294,9 @@
       "LocalUsersAndGroups",
       "Configure",
       "Local Users And Groups"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-localusersandgroups"
     ],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/Config/LocalUsersAndGroups/Configure",
@@ -6871,6 +7385,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -6951,6 +7467,9 @@
       "Configure",
       "Local Users And Groups"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-localusersandgroups"
+    ],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/Config/LocalUsersAndGroups/Configure",
     "settingUsage": "configuration",
@@ -7029,6 +7548,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -7100,6 +7621,7 @@
       "Elevation",
       "Privilege Management"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/CertificatePayloadWithReusableSetting",
     "settingUsage": "configuration",
@@ -7131,6 +7653,20 @@
         "settingDefinitionId": "device_vendor_msft_policy_privilegemanagement_reusablesettings_certificatefile"
       }
     ],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 800000,
+      "minimumLength": 15,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -7154,6 +7690,7 @@
       "Elevation",
       "Privilege Management"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/Arguments/ArgumentList",
     "settingUsage": "configuration",
@@ -7181,6 +7718,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 251,
+      "minimumLength": 1,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -7203,6 +7754,7 @@
       "Endpoint Privilege Management",
       "Privilege Management"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/PrivilegeManagement/ElevationRules/{0}",
     "settingUsage": "configuration",
@@ -7230,6 +7782,8 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -7252,6 +7806,7 @@
       "Elevation",
       "Privilege Management"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/AppliesTo",
     "settingUsage": "configuration",
@@ -7299,6 +7854,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -7341,6 +7898,7 @@
       "Elevation",
       "Privilege Management"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/Description",
     "settingUsage": "configuration",
@@ -7368,6 +7926,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 175032,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -7390,6 +7962,7 @@
       "Elevation",
       "Privilege Management"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/FileVersion",
     "settingUsage": "configuration",
@@ -7417,6 +7990,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "regEx",
+      "inputValidationSchema": "(^$|\\d+\\.\\d+\\.\\d+\\.\\d+)$",
+      "maximumLength": 30,
+      "minimumLength": 1,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -7439,6 +8026,7 @@
       "Elevation",
       "Privilege Management"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/CertificateType",
     "settingUsage": "configuration",
@@ -7513,6 +8101,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -7582,6 +8172,7 @@
       "Elevation",
       "Privilege Management"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/InternalName",
     "settingUsage": "configuration",
@@ -7609,6 +8200,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 50,
+      "minimumLength": 3,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -7631,6 +8236,7 @@
       "Elevation",
       "Privilege Management"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/CertificateFileUpload",
     "settingUsage": "configuration",
@@ -7658,6 +8264,22 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "base64",
+      "inputValidationSchema": null,
+      "maximumLength": 800000,
+      "minimumLength": 15,
+      "isSecret": false,
+      "fileTypes": [
+        "cer"
+      ]
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -7680,6 +8302,7 @@
       "enrollment",
       "Management settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/ade_awaitConfiguration_basic",
     "settingUsage": "configuration",
@@ -7724,6 +8347,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -7775,6 +8400,7 @@
       "enrollment",
       "Management settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/deviceNameTemplateChoices",
     "settingUsage": "configuration",
@@ -7824,6 +8450,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -7880,6 +8508,7 @@
       "enrollment",
       "Management settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/maximumSecondsInactivityUntilTemporarySessionLogsOut",
     "settingUsage": "configuration",
@@ -7895,6 +8524,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 14400,
+      "minimumValue": 0
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 0
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "Enter value",
@@ -7917,6 +8556,7 @@
       "enrollment",
       "Management settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/requireSharedIPadTemporarySessionOnly",
     "settingUsage": "configuration",
@@ -7989,6 +8629,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -8068,6 +8710,7 @@
       "enrollment",
       "Management settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/maximumSecondsAfterScreenLockBeofrePasswordIsRequired",
     "settingUsage": "configuration",
@@ -8083,6 +8726,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 14400,
+      "minimumValue": 0
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 0
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "Enter value",
@@ -8105,6 +8758,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/actionButton",
     "settingUsage": "configuration",
@@ -8149,6 +8803,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -8200,6 +8856,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/androidMigration",
     "settingUsage": "configuration",
@@ -8244,6 +8901,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -8295,6 +8954,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/getStarted",
     "settingUsage": "configuration",
@@ -8339,6 +8999,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -8390,6 +9052,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/Intelligence",
     "settingUsage": "configuration",
@@ -8434,6 +9097,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -8485,6 +9150,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/locationServices",
     "settingUsage": "configuration",
@@ -8529,6 +9195,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -8580,6 +9248,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/privacy",
     "settingUsage": "configuration",
@@ -8624,6 +9293,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -8675,6 +9346,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/restoreCompleted",
     "settingUsage": "configuration",
@@ -8719,6 +9391,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -8770,6 +9444,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/siri",
     "settingUsage": "configuration",
@@ -8814,6 +9489,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -8865,6 +9542,7 @@
       "starttime",
       "Range Settings"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy/QuietTime/RangeSettings",
     "offsetUri": "/StartTime",
     "settingUsage": "configuration",
@@ -8881,6 +9559,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "dateTime",
+      "inputValidationSchema": null,
+      "maximumLength": 1024,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "get",
     "version": "638869171349860765",
     "helpText": null,
@@ -8904,6 +9596,7 @@
       "AllowDiagnostics",
       "Out-of-box experience settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/autopilot/DevicePreparation",
     "offsetUri": "/OobeSettings/AllowDiagnostics",
     "settingUsage": "configuration",
@@ -8955,6 +9648,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "A link will be displayed for users to collect diagnostic logs if deployment fails.",
@@ -9007,6 +9702,7 @@
       "AllowedAppIds",
       "Apps"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/autopilot/DevicePreparation",
     "offsetUri": "/AllowedAppIds",
     "settingUsage": "configuration",
@@ -9029,6 +9725,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 1000,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -9052,6 +9762,7 @@
       "User account type",
       "Deployment settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/autopilot/DevicePreparation",
     "offsetUri": "/DeploymentSettings/AccountType",
     "settingUsage": "configuration",
@@ -9103,6 +9814,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -9154,6 +9867,7 @@
       "Device Preparation",
       "Deployment settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/autopilot/DevicePreparation",
     "offsetUri": "/DeploymentSettings/DeploymentType",
     "settingUsage": "configuration",
@@ -9191,6 +9905,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -9229,6 +9945,7 @@
       "Privilege Management",
       "Privilege Management Elevation Client Settings"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "PrivilegeManagement/ElevationClientSettings/ReportingScope",
     "settingUsage": "configuration",
@@ -9314,6 +10031,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -9395,6 +10114,7 @@
       "Privilege Management",
       "Privilege Management Elevation Client Settings"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "PrivilegeManagement/ElevationClientSettings/SendData",
     "settingUsage": "configuration",
@@ -9466,6 +10186,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -9532,6 +10254,9 @@
       "DeviceControl",
       "Device Control"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
+    ],
     "baseUri": "./device/vendor/msft/defender",
     "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
     "settingUsage": "configuration",
@@ -9565,6 +10290,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 1024,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -9586,6 +10325,9 @@
       "Defender",
       "DeviceControl",
       "Device Control"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
     ],
     "baseUri": "./device/vendor/msft/defender",
     "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
@@ -9620,6 +10362,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 1024,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -9641,6 +10397,9 @@
       "Defender",
       "DeviceControl",
       "Device Control"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
     ],
     "baseUri": "./device/vendor/msft/defender",
     "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
@@ -9675,6 +10434,8 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -9696,6 +10457,9 @@
       "Allow Persistence",
       "Windows Defender Application Guard",
       "Microsoft Defender Application Guard"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/WindowsDefenderApplicationGuard-csp/"
     ],
     "baseUri": "./Device/Vendor/MSFT/WindowsDefenderApplicationGuard",
     "offsetUri": "/Settings/AllowPersistence",
@@ -9776,6 +10540,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -9845,6 +10611,9 @@
       "WindowsDefenderApplicationGuard",
       "Microsoft Defender Application Guard"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/client-management/mdm/windowsdefenderapplicationguard-csp/"
+    ],
     "baseUri": "./Device/Vendor/MSFT/WindowsDefenderApplicationGuard",
     "offsetUri": "/PlatformStatus",
     "settingUsage": "configuration",
@@ -9876,6 +10645,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 2147483647,
+      "minimumValue": 0
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 0
+    },
     "accessTypes": "get",
     "version": "638869171349860765",
     "helpText": "",
@@ -9897,6 +10676,9 @@
       "Allow Virtual GPU",
       "Windows Defender Application Guard",
       "Microsoft Defender Application Guard"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/WindowsDefenderApplicationGuard-csp/"
     ],
     "baseUri": "./Device/Vendor/MSFT/WindowsDefenderApplicationGuard",
     "offsetUri": "/Settings/AllowVirtualGPU",
@@ -9977,6 +10759,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -10044,6 +10828,9 @@
     "keywords": [
       "Password Complexity",
       "LAPS"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/LAPS-csp/"
     ],
     "baseUri": "./Device/Vendor/MSFT/LAPS",
     "offsetUri": "/Policies/PasswordComplexity",
@@ -10207,6 +10994,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -10356,6 +11145,9 @@
       "AD Password Encryption Principal",
       "LAPS"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/LAPS-csp/"
+    ],
     "baseUri": "./Device/Vendor/MSFT/LAPS",
     "offsetUri": "/Policies/ADPasswordEncryptionPrincipal",
     "settingUsage": "configuration",
@@ -10390,6 +11182,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 87516,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -10410,6 +11216,9 @@
     "keywords": [
       "Backup Directory",
       "LAPS"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/LAPS-csp/"
     ],
     "baseUri": "./Device/Vendor/MSFT/LAPS",
     "offsetUri": "/Policies/BackupDirectory",
@@ -10514,6 +11323,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -10604,6 +11415,9 @@
       "Passphrase Length",
       "LAPS"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/LAPS-csp/"
+    ],
     "baseUri": "./Device/Vendor/MSFT/LAPS",
     "offsetUri": "/Policies/PassphraseLength",
     "settingUsage": "configuration",
@@ -10638,6 +11452,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 10,
+      "minimumValue": 3
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 6
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -10659,6 +11483,9 @@
       "LocalUsersAndGroups",
       "Configure",
       "Local Users And Groups"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-localusersandgroups"
     ],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/Config/LocalUsersAndGroups/Configure",
@@ -10689,6 +11516,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 1024,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -10711,6 +11552,7 @@
       "Elevation",
       "Privilege Management"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/FileHash",
     "settingUsage": "configuration",
@@ -10738,6 +11580,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "regEx",
+      "inputValidationSchema": "(^$|[A-Fa-f0-9]{64})$",
+      "maximumLength": 64,
+      "minimumLength": 64,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -10760,6 +11616,7 @@
       "Elevation",
       "Privilege Management"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/FileDescription",
     "settingUsage": "configuration",
@@ -10787,6 +11644,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 50,
+      "minimumLength": 3,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -10809,6 +11680,7 @@
       "enrollment",
       "Management settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/activateCellularDataChoices",
     "settingUsage": "configuration",
@@ -10858,6 +11730,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -10914,6 +11788,7 @@
       "enrollment",
       "Management settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/userAffinity_Basic",
     "settingUsage": "configuration",
@@ -10944,6 +11819,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -10981,6 +11858,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/department",
     "settingUsage": "configuration",
@@ -10996,6 +11874,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 125,
+      "minimumLength": 1,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "Appears to users on About Configuration screen",
@@ -11018,6 +11910,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/deviceMigration",
     "settingUsage": "configuration",
@@ -11062,6 +11955,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -11113,6 +12008,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/enableLockdownMode",
     "settingUsage": "configuration",
@@ -11157,6 +12053,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -11208,6 +12106,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/passcode",
     "settingUsage": "configuration",
@@ -11252,6 +12151,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -11303,6 +12204,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/restore",
     "settingUsage": "configuration",
@@ -11347,6 +12249,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -11398,6 +12302,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/simSetup",
     "settingUsage": "configuration",
@@ -11442,6 +12347,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -11493,6 +12400,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/touchFaceId",
     "settingUsage": "configuration",
@@ -11537,6 +12445,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -11588,6 +12498,7 @@
       "enrollment",
       "Setup Assistant"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/ade",
     "offsetUri": "/setupAssistant/softwareUpdateCompleted",
     "settingUsage": "configuration",
@@ -11632,6 +12543,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -11684,6 +12597,7 @@
       "AllowSkip",
       "Out-of-box experience settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/autopilot/DevicePreparation",
     "offsetUri": "/OobeSettings/AllowSkip",
     "settingUsage": "configuration",
@@ -11735,6 +12649,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -11787,6 +12703,7 @@
       "Join type",
       "Deployment settings"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/autopilot/DevicePreparation",
     "offsetUri": "/DeploymentSettings/JoinType",
     "settingUsage": "configuration",
@@ -11824,6 +12741,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -11860,6 +12779,7 @@
       "Block MDM enrollment",
       "enrollment"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/restriction",
     "offsetUri": "/Block_MDM_Enrollment",
     "settingUsage": "configuration",
@@ -11911,6 +12831,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -11963,6 +12885,7 @@
       "AllowedScriptIds",
       "Scripts"
     ],
+    "infoUrls": [],
     "baseUri": "./enrollment/autopilot/DevicePreparation",
     "offsetUri": "/AllowedScriptIds",
     "settingUsage": "configuration",
@@ -11985,6 +12908,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 1000,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -12007,6 +12944,9 @@
       "root",
       "user",
       "Linux Custom Configuration"
+    ],
+    "infoUrls": [
+      "https://go.microsoft.com/fwlink/?linkid=2218882"
     ],
     "baseUri": "com.microsoft.manage.LinuxMdm",
     "offsetUri": "CustomConfig/ExecutionContext",
@@ -12052,6 +12992,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "get",
     "version": "638869171349860765",
     "helpText": null,
@@ -12102,6 +13044,9 @@
       "Execution frequency",
       "frequency",
       "Linux Custom Configuration"
+    ],
+    "infoUrls": [
+      "https://go.microsoft.com/fwlink/?linkid=2218882"
     ],
     "baseUri": "com.microsoft.manage.LinuxMdm",
     "offsetUri": "CustomConfig/ExecutionFrequency",
@@ -12245,6 +13190,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "get",
     "version": "638869171349860765",
     "helpText": null,
@@ -12392,6 +13339,9 @@
     "keywords": [
       "Linux Custom Configuration"
     ],
+    "infoUrls": [
+      "https://go.microsoft.com/fwlink/?linkid=2218882"
+    ],
     "baseUri": "com.microsoft.manage.LinuxMdm",
     "offsetUri": "/CustomConfig/Script",
     "settingUsage": "configuration",
@@ -12407,6 +13357,22 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "bashScript",
+      "inputValidationSchema": null,
+      "maximumLength": 87516,
+      "minimumLength": 1,
+      "isSecret": false,
+      "fileTypes": [
+        "sh"
+      ]
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
     "accessTypes": "get",
     "version": "638869171349860765",
     "helpText": null,
@@ -12430,6 +13396,7 @@
       "Privilege Management",
       "Privilege Management Elevation Client Settings"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "PrivilegeManagement/ElevationClientSettings/EnableEPM",
     "settingUsage": "configuration",
@@ -12499,6 +13466,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -12561,6 +13530,9 @@
     "keywords": [
       "Application Control",
       "App Control for Business"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/client-management/mdm/applicationcontrol-csp"
     ],
     "baseUri": "./Vendor/MSFT/ApplicationControl/Policies",
     "offsetUri": "/{0}/Policy",
@@ -12632,6 +13604,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -12693,6 +13667,9 @@
       "DeviceControl",
       "Device Control"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
+    ],
     "baseUri": "./vendor/msft/defender",
     "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
     "settingUsage": "configuration",
@@ -12726,6 +13703,8 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -12747,6 +13726,9 @@
       "Defender",
       "DeviceControl",
       "Device Control"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
     ],
     "baseUri": "./device/vendor/msft/defender",
     "offsetUri": "/configuration/devicecontrol/policyrules/{0}",
@@ -12785,6 +13767,20 @@
         "settingDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policygroups_{groupid}_groupdata"
       }
     ],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 1024,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -12806,6 +13802,9 @@
       "Defender",
       "DeviceControl",
       "Device Control"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
     ],
     "baseUri": "./device/vendor/msft/defender",
     "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
@@ -12974,6 +13973,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -13130,6 +14131,9 @@
       "DeviceControl",
       "Device Control"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
+    ],
     "baseUri": "./device/vendor/msft/defender",
     "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
     "settingUsage": "configuration",
@@ -13163,6 +14167,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 1024,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -13184,6 +14202,9 @@
       "Defender",
       "DeviceControl",
       "Device Control"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
     ],
     "baseUri": "./device/vendor/msft/defender",
     "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
@@ -13218,6 +14239,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 1024,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -13239,6 +14274,9 @@
       "Printing Settings",
       "Windows Defender Application Guard",
       "Microsoft Defender Application Guard"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/WindowsDefenderApplicationGuard-csp/"
     ],
     "baseUri": "./Device/Vendor/MSFT/WindowsDefenderApplicationGuard",
     "offsetUri": "/Settings/PrintingSettings",
@@ -13389,6 +14427,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -13527,6 +14567,9 @@
       "WindowsDefenderApplicationGuard",
       "Microsoft Defender Application Guard"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/client-management/mdm/windowsdefenderapplicationguard-csp/"
+    ],
     "baseUri": "./Device/Vendor/MSFT/WindowsDefenderApplicationGuard",
     "offsetUri": "/Status",
     "settingUsage": "configuration",
@@ -13558,6 +14601,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 2147483647,
+      "minimumValue": 0
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 0
+    },
     "accessTypes": "get",
     "version": "638869171349860765",
     "helpText": "",
@@ -13579,6 +14632,9 @@
       "Allow Camera Microphone Redirection",
       "Windows Defender Application Guard",
       "Microsoft Defender Application Guard"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/WindowsDefenderApplicationGuard-csp/"
     ],
     "baseUri": "./Device/Vendor/MSFT/WindowsDefenderApplicationGuard",
     "offsetUri": "/Settings/AllowCameraMicrophoneRedirection",
@@ -13659,6 +14715,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -13728,6 +14786,9 @@
       "Windows Defender Application Guard",
       "Microsoft Defender Application Guard"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/WindowsDefenderApplicationGuard-csp/"
+    ],
     "baseUri": "./Device/Vendor/MSFT/WindowsDefenderApplicationGuard",
     "offsetUri": "/Audit/AuditApplicationGuard",
     "settingUsage": "configuration",
@@ -13789,6 +14850,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -13839,6 +14902,9 @@
       "Password Length",
       "LAPS"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/LAPS-csp/"
+    ],
     "baseUri": "./Device/Vendor/MSFT/LAPS",
     "offsetUri": "/Policies/PasswordLength",
     "settingUsage": "configuration",
@@ -13873,6 +14939,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 64,
+      "minimumValue": 8
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 14
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -13893,6 +14969,9 @@
     "keywords": [
       "Post Authentication Actions",
       "LAPS"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/LAPS-csp/"
     ],
     "baseUri": "./Device/Vendor/MSFT/LAPS",
     "offsetUri": "/Policies/PostAuthenticationActions",
@@ -13985,6 +15064,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -14063,6 +15144,9 @@
       "Password Expiration Protection Enabled",
       "LAPS"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/LAPS-csp/"
+    ],
     "baseUri": "./Device/Vendor/MSFT/LAPS",
     "offsetUri": "/Policies/PasswordExpirationProtectionEnabled",
     "settingUsage": "configuration",
@@ -14136,6 +15220,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -14195,6 +15281,9 @@
     "keywords": [
       "Automatic Account Management Enable Account",
       "LAPS"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/LAPS-csp/"
     ],
     "baseUri": "./Device/Vendor/MSFT/LAPS",
     "offsetUri": "/Policies/AutomaticAccountManagementEnableAccount",
@@ -14269,6 +15358,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -14330,6 +15421,9 @@
       "Configure",
       "Local Users And Groups"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-localusersandgroups"
+    ],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/Config/LocalUsersAndGroups/Configure",
     "settingUsage": "configuration",
@@ -14359,6 +15453,8 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -14381,6 +15477,7 @@
       "Elevation",
       "Privilege Management"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/RuleType",
     "settingUsage": "configuration",
@@ -14490,6 +15587,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -14595,6 +15694,7 @@
       "Rule type",
       "Privilege Management"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/AppliesTo/Validation",
     "settingUsage": "configuration",
@@ -14661,6 +15761,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -14722,6 +15824,7 @@
       "Elevation",
       "Privilege Management"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/Arguments",
     "settingUsage": "configuration",
@@ -14774,6 +15877,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -14821,6 +15926,7 @@
       "Elevation",
       "Privilege Management"
     ],
+    "infoUrls": [],
     "baseUri": "./Device/Vendor/MSFT/Policy",
     "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/SignatureSource",
     "settingUsage": "configuration",
@@ -14905,6 +16011,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,

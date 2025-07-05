@@ -8,6 +8,7 @@
     "keywords": [
       "Custom Profile"
     ],
+    "infoUrls": [],
     "baseUri": "",
     "offsetUri": "AppleCustomProfile/Profile",
     "settingUsage": "configuration",
@@ -27,6 +28,25 @@
         "settingDefinitionId": "apple_customprofile_profile_referred_setting"
       }
     ],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "base64",
+      "inputValidationSchema": null,
+      "maximumLength": 2147483647,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": [
+        "mobileconfig",
+        "plist",
+        "xml",
+        "txt"
+      ]
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,

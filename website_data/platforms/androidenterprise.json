@@ -11,6 +11,7 @@
       "Allow Debugging features",
       "General"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/securityAllowDebuggingFeaturesAosp/",
     "settingUsage": "configuration",
@@ -55,6 +56,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -113,6 +116,7 @@
       "Bluetooth control",
       "General"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/bluetoothBlocked/",
     "settingUsage": "configuration",
@@ -157,6 +161,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -210,6 +216,7 @@
       "Install apps from unknown sources",
       "General"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/appsBlockInstallFromUnknownSourcesAosp/",
     "settingUsage": "configuration",
@@ -254,6 +261,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -309,6 +318,7 @@
       "Block",
       "Device password"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/passwordPreviousPasswordCountToBlock/",
     "settingUsage": "configuration",
@@ -324,6 +334,12 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 24,
+      "minimumValue": 1
+    },
+    "defaultValue": null,
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "Enter a number (1-24)",
@@ -349,6 +365,7 @@
       "Characters",
       "Device password"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/passwordMinimumLowerCaseCharacters/",
     "settingUsage": "configuration",
@@ -364,6 +381,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 16,
+      "minimumValue": 1
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 1
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "Enter a number (1-16)",
@@ -389,6 +416,7 @@
       "Characters",
       "Device password"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/passwordMinimumUpperCaseCharacters/",
     "settingUsage": "configuration",
@@ -404,6 +432,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 16,
+      "minimumValue": 1
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 1
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "Enter a number (1-16)",
@@ -428,6 +466,7 @@
       "SignIn Failure Count Before Factory Reset",
       "Device password"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/passwordSignInFailureCountBeforeFactoryReset/",
     "settingUsage": "configuration",
@@ -443,6 +482,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 11,
+      "minimumValue": 4
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 11
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "Enter a number (4-11)",
@@ -466,6 +515,7 @@
       "Keyguard",
       "Device password"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/passwordBlockKeyguard/",
     "settingUsage": "configuration",
@@ -510,6 +560,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": null,
@@ -562,6 +614,7 @@
       "Camera Block",
       "General"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/cameraBlockedAosp/",
     "settingUsage": "configuration",
@@ -606,6 +659,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -659,6 +714,7 @@
       "Screen Capture Block",
       "General"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/screenCaptureBlockedAosp/",
     "settingUsage": "configuration",
@@ -703,6 +759,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -755,6 +813,7 @@
       "Bluetooth Configuration Aosp",
       "General"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/bluetoothBlockConfigurationAosp/",
     "settingUsage": "configuration",
@@ -799,6 +858,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -851,6 +912,7 @@
       "Wifi Configuration",
       "General"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/wifiBlockEditConfigurationsAosp/",
     "settingUsage": "configuration",
@@ -895,6 +957,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -947,6 +1011,7 @@
       "Factory reset Block",
       "General"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/factoryResetBlockedAosp/",
     "settingUsage": "configuration",
@@ -991,6 +1056,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -1043,6 +1110,7 @@
       "Password Length",
       "Device password"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/passwordMinimumLengthAosp/",
     "settingUsage": "configuration",
@@ -1058,6 +1126,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 16,
+      "minimumValue": 4
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 4
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "Enter a number (4-16)",
@@ -1081,6 +1159,7 @@
       "Screen Timeout",
       "Device password"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/passwordMinutesOfInactivityBeforeScreenTimeoutAosp/",
     "settingUsage": "configuration",
@@ -1167,6 +1246,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -1262,6 +1343,9 @@
       "Password required type",
       "Android Enterprise",
       "Device password"
+    ],
+    "infoUrls": [
+      "https://learn.microsoft.com/en-us/mem/intune/configuration/device-restrictions-android-for-work?WT.mc_id=Portal-fx#device-password"
     ],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/passwordRequiredType/",
@@ -1440,6 +1524,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -1626,6 +1712,9 @@
       "Password required type",
       "Device password"
     ],
+    "infoUrls": [
+      "https://learn.microsoft.com/en-us/mem/intune/configuration/device-restrictions-android-aosp#:~:text=Required%20password%20type"
+    ],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/passwordRequiredTypeAosp/",
     "settingUsage": "configuration",
@@ -1779,6 +1868,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -1940,6 +2031,7 @@
       "Bluetooth Block",
       "General"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/bluetoothBlockedAosp/",
     "settingUsage": "configuration",
@@ -1984,6 +2076,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -2036,6 +2130,7 @@
       "USB File Transfer",
       "General"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/storageBlockUsbFileTransferAosp/",
     "settingUsage": "configuration",
@@ -2080,6 +2175,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -2133,6 +2230,7 @@
       "SignIn Failure Count Before Factory Reset",
       "Device password"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/passwordSignInFailureCountBeforeFactoryResetAosp/",
     "settingUsage": "configuration",
@@ -2148,6 +2246,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 11,
+      "minimumValue": 4
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 11
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "Enter a number (4-11)",
@@ -2172,6 +2280,7 @@
       "Characters",
       "Device password"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/passwordMinimumSymbolCharacters/",
     "settingUsage": "configuration",
@@ -2187,6 +2296,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 16,
+      "minimumValue": 1
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 1
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "Enter a number (1-16)",
@@ -2210,6 +2329,7 @@
       "Unlock",
       "Device password"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/passwordRequireUnlock/",
     "settingUsage": "configuration",
@@ -2254,6 +2374,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -2306,6 +2428,7 @@
       "External Media Block",
       "General"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/storageBlockExternalMediaAosp/",
     "settingUsage": "configuration",
@@ -2350,6 +2473,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "",
@@ -2404,6 +2529,7 @@
       "Characters",
       "Device password"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/passwordMinimumNonLetterCharacters/",
     "settingUsage": "configuration",
@@ -2419,6 +2545,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 16,
+      "minimumValue": 1
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 1
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "Enter a number (1-16)",
@@ -2443,6 +2579,7 @@
       "Characters",
       "Device password"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/passwordMinimumNumericCharacters/",
     "settingUsage": "configuration",
@@ -2458,6 +2595,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 16,
+      "minimumValue": 1
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 1
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "Enter a number (1-16)",
@@ -2482,6 +2629,7 @@
       "Characters",
       "Device password"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/passwordMinimumLetterCharacters/",
     "settingUsage": "configuration",
@@ -2497,6 +2645,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 16,
+      "minimumValue": 1
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 1
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "Enter a number (1-16)",
@@ -2520,6 +2678,7 @@
       "Password Length",
       "Device password"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/passwordMinimumLength/",
     "settingUsage": "configuration",
@@ -2535,6 +2694,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 16,
+      "minimumValue": 4
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 4
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "Enter a number (4-16)",
@@ -2558,6 +2727,7 @@
       "Days",
       "Device password"
     ],
+    "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
     "offsetUri": "/passwordExpirationDays/",
     "settingUsage": "configuration",
@@ -2573,6 +2743,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 365,
+      "minimumValue": 1
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 41
+    },
     "accessTypes": "add,delete,get,replace",
     "version": "638869171349860765",
     "helpText": "Enter a number (1-365)",

@@ -9,6 +9,9 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#exclusion-merge-policy"
+    ],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
     "offsetUri": "exclusionsMergePolicy",
     "settingUsage": "configuration",
@@ -53,6 +56,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -103,6 +108,9 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#enable--disable-passive-mode"
+    ],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
     "offsetUri": "passiveMode",
     "settingUsage": "configuration",
@@ -147,6 +155,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -195,6 +205,9 @@
     "categoryName": "Microsoft Defender",
     "keywords": [
       "Antivirus engine"
+    ],
+    "infoUrls": [
+      "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-preferences#enforcement-level-for-antivirus-engine"
     ],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
     "offsetUri": "enforcementLevel",
@@ -254,6 +267,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -318,6 +333,7 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
     "offsetUri": "exclusions/[{0}]/extension",
     "settingUsage": "configuration",
@@ -333,6 +349,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 1032,
+      "minimumLength": 1,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -353,6 +383,9 @@
     "keywords": [
       "Microsoft Defender - Cloud delivered protection preferences",
       "Cloud delivered protection preferences"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#enable--disable-cloud-delivered-protection"
     ],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/cloudService",
     "offsetUri": "enabled",
@@ -398,6 +431,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -447,6 +482,9 @@
     "keywords": [
       " EDR preferences"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#add-tag-or-group-id-to-the-configuration-profile"
+    ],
     "baseUri": "PayloadContent/edr",
     "offsetUri": "tags",
     "settingUsage": "configuration",
@@ -462,6 +500,8 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -481,6 +521,9 @@
     "categoryName": "Microsoft Defender",
     "keywords": [
       "Antivirus engine"
+    ],
+    "infoUrls": [
+      "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/linux-preferences?view=o365-worldwide#enforcement-level-for-antivirus-engine"
     ],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "enforcementLevel",
@@ -540,6 +583,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -603,6 +648,9 @@
     "keywords": [
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/linux-preferences?view=o365-worldwide#enabledisable-behavior-monitoring"
+    ],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "behaviorMonitoring",
     "settingUsage": "configuration",
@@ -647,6 +695,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -696,6 +746,9 @@
     "keywords": [
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#maximum-number-of-items-in-the-antivirus-scan-history"
+    ],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "maximumOnDemandScanThreads",
     "settingUsage": "configuration",
@@ -711,6 +764,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 64,
+      "minimumValue": 1
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 2
+    },
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -732,6 +795,9 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#antivirus-scan-history-retention-in-days"
+    ],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "scanResultsRetentionDays",
     "settingUsage": "configuration",
@@ -747,6 +813,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 180,
+      "minimumValue": 1
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 90
+    },
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -767,6 +843,9 @@
     "keywords": [
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#enable--disable-passive-mode"
     ],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "passiveMode",
@@ -812,6 +891,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -862,6 +943,7 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "exclusions/[{0}]/extension",
     "settingUsage": "configuration",
@@ -877,6 +959,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 0,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -898,6 +994,7 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "exclusions/[{0}]/name",
     "settingUsage": "configuration",
@@ -913,6 +1010,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 0,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -932,6 +1043,9 @@
     "categoryName": "Microsoft Defender",
     "keywords": [
       "Cloud delivered protection preferences"
+    ],
+    "infoUrls": [
+      "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/linux-preferences?view=o365-worldwide#configure-cloud-block-level"
     ],
     "baseUri": "PayloadContent/cloudService",
     "offsetUri": "cloudBlockLevel",
@@ -1019,6 +1133,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -1110,6 +1226,7 @@
     "keywords": [
       "Exclusion Settings"
     ],
+    "infoUrls": [],
     "baseUri": "PayloadContent/exclusionSettings",
     "offsetUri": "exclusions/[{0}]/path",
     "settingUsage": "configuration",
@@ -1125,6 +1242,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 0,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -1146,6 +1277,9 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#antivirus-scan-history-retention-in-days"
+    ],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
     "offsetUri": "scanResultsRetentionDays",
     "settingUsage": "configuration",
@@ -1161,6 +1295,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 180,
+      "minimumValue": 1
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 90
+    },
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -1182,6 +1326,9 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#allowed-threats"
+    ],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
     "offsetUri": "allowedThreats",
     "settingUsage": "configuration",
@@ -1197,6 +1344,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 1032,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -1216,6 +1377,9 @@
     "categoryName": "Microsoft Defender",
     "keywords": [
       "Antivirus engine"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-preferences?view=o365-worldwide#scan-archives-on-demand-antivirus-scans-only"
     ],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
     "offsetUri": "scanArchives",
@@ -1261,6 +1425,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -1311,6 +1477,7 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
     "offsetUri": "threatTypeSettings/[{0}]/key",
     "settingUsage": "configuration",
@@ -1365,6 +1532,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -1425,6 +1594,9 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#threat-type-settings-merge-policy"
+    ],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
     "offsetUri": "threatTypeSettingsMergePolicy",
     "settingUsage": "configuration",
@@ -1469,6 +1641,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -1519,6 +1693,7 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
     "offsetUri": "threatTypeSettings/[{0}]/value",
     "settingUsage": "configuration",
@@ -1592,6 +1767,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -1670,6 +1847,9 @@
     "keywords": [
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-preferences?view=o365-worldwide#configure-file-hash-computation-feature"
+    ],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
     "offsetUri": "enableFileHashComputation",
     "settingUsage": "configuration",
@@ -1714,6 +1894,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -1763,6 +1945,9 @@
     "keywords": [
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-preferences?view=o365-worldwide#run-a-scan-after-definitions-are-updated"
+    ],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
     "offsetUri": "scanAfterDefinitionUpdate",
     "settingUsage": "configuration",
@@ -1807,6 +1992,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -1856,6 +2043,7 @@
     "keywords": [
       " EDR preferences"
     ],
+    "infoUrls": [],
     "baseUri": "PayloadContent/edr",
     "offsetUri": "tags/[{0}]/value",
     "settingUsage": "configuration",
@@ -1871,6 +2059,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 0,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -1891,6 +2093,9 @@
     "keywords": [
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/linux-preferences?view=o365-worldwide#unmonitor-filesystems"
+    ],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "unmonitoredFilesystems",
     "settingUsage": "configuration",
@@ -1906,6 +2111,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 0,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -1926,6 +2145,9 @@
     "keywords": [
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#threat-type-settings-merge-policy"
     ],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "threatTypeSettingsMergePolicy",
@@ -1971,6 +2193,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -2021,6 +2245,9 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#disallowed-threat-actions"
+    ],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "disallowedThreatActions",
     "settingUsage": "configuration",
@@ -2036,6 +2263,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 0,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -2057,6 +2298,7 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "exclusions/[{0}]/path",
     "settingUsage": "configuration",
@@ -2072,6 +2314,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 0,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -2092,6 +2348,7 @@
     "keywords": [
       "Exclusion Settings"
     ],
+    "infoUrls": [],
     "baseUri": "PayloadContent/exclusionSettings",
     "offsetUri": "exclusions/[{0}]/name",
     "settingUsage": "configuration",
@@ -2107,6 +2364,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 0,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -2127,6 +2398,9 @@
     "keywords": [
       "Exclusion Settings"
     ],
+    "infoUrls": [
+      "https://learn.microsoft.com/en-us/defender-endpoint/linux-preferences#exclusion-setting-preferences"
+    ],
     "baseUri": "PayloadContent/exclusionSettings",
     "offsetUri": "exclusions",
     "settingUsage": "configuration",
@@ -2142,6 +2416,8 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -2163,6 +2439,9 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#threat-type-settings"
+    ],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
     "offsetUri": "threatTypeSettings",
     "settingUsage": "configuration",
@@ -2178,6 +2457,8 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -2199,6 +2480,7 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
     "offsetUri": "exclusions/[{0}]/isDirectory",
     "settingUsage": "configuration",
@@ -2253,6 +2535,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -2313,6 +2597,7 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
     "offsetUri": "exclusions/[{0}]/$type",
     "settingUsage": "configuration",
@@ -2405,6 +2690,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -2503,6 +2790,9 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#disallowed-threat-actions"
+    ],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
     "offsetUri": "disallowedThreatActions",
     "settingUsage": "configuration",
@@ -2518,6 +2808,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 1032,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -2538,6 +2842,9 @@
     "keywords": [
       "Microsoft Defender - Cloud delivered protection preferences",
       "Cloud delivered protection preferences"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#diagnostic-collection-level"
     ],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/cloudService",
     "offsetUri": "diagnosticLevel",
@@ -2583,6 +2890,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -2632,6 +2941,7 @@
     "keywords": [
       " EDR preferences"
     ],
+    "infoUrls": [],
     "baseUri": "PayloadContent/edr",
     "offsetUri": "tags/[{0}]/key",
     "settingUsage": "configuration",
@@ -2667,6 +2977,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -2708,6 +3020,9 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/linux-preferences?view=o365-worldwide#allowed-threats"
+    ],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "allowedThreats",
     "settingUsage": "configuration",
@@ -2723,6 +3038,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 0,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -2743,6 +3072,9 @@
     "keywords": [
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#exclusion-merge-policy"
     ],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "exclusionsMergePolicy",
@@ -2788,6 +3120,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -2838,6 +3172,9 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#threat-type-settings"
+    ],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "threatTypeSettings",
     "settingUsage": "configuration",
@@ -2853,6 +3190,8 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -2874,6 +3213,7 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "exclusions/[{0}]/isDirectory",
     "settingUsage": "configuration",
@@ -2928,6 +3268,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -2988,6 +3330,7 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "threatTypeSettings/[{0}]/key",
     "settingUsage": "configuration",
@@ -3042,6 +3385,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -3102,6 +3447,9 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#maximum-number-of-items-in-the-antivirus-scan-history"
+    ],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "scanHistoryMaximumItems",
     "settingUsage": "configuration",
@@ -3117,6 +3465,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 15000,
+      "minimumValue": 5000
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 10000
+    },
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -3138,6 +3496,9 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#scan-exclusions"
+    ],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "exclusions",
     "settingUsage": "configuration",
@@ -3153,6 +3514,8 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -3172,6 +3535,9 @@
     "categoryName": "Microsoft Defender",
     "keywords": [
       "Antivirus engine"
+    ],
+    "infoUrls": [
+      "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/linux-preferences?view=o365-worldwide#configure-file-hash-computation-feature"
     ],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "enableFileHashComputation",
@@ -3217,6 +3583,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -3266,6 +3634,9 @@
     "keywords": [
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/linux-preferences?view=o365-worldwide#scan-archives-on-demand-antivirus-scans-only"
+    ],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "scanArchives",
     "settingUsage": "configuration",
@@ -3310,6 +3681,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -3360,6 +3733,9 @@
       "Microsoft Defender - Cloud delivered protection preferences",
       "Cloud delivered protection preferences"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#enable--disable-cloud-delivered-protection"
+    ],
     "baseUri": "PayloadContent/cloudService",
     "offsetUri": "enabled",
     "settingUsage": "configuration",
@@ -3404,6 +3780,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -3454,6 +3832,9 @@
       "Microsoft Defender - Cloud delivered protection preferences",
       "Cloud delivered protection preferences"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#enable--disable-automatic-security-intelligence-updates"
+    ],
     "baseUri": "PayloadContent/cloudService",
     "offsetUri": "automaticDefinitionUpdateEnabled",
     "settingUsage": "configuration",
@@ -3498,6 +3879,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -3547,6 +3930,9 @@
     "keywords": [
       "Microsoft Defender - Cloud delivered protection preferences",
       "Cloud delivered protection preferences"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#enable--disable-automatic-sample-submissions"
     ],
     "baseUri": "PayloadContent/cloudService",
     "offsetUri": "automaticSampleSubmissionConsent",
@@ -3606,6 +3992,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -3670,6 +4058,9 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#scan-exclusions"
+    ],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
     "offsetUri": "exclusions",
     "settingUsage": "configuration",
@@ -3685,6 +4076,8 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -3705,6 +4098,9 @@
     "keywords": [
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#enable--disable-real-time-protection"
     ],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
     "offsetUri": "enableRealTimeProtection",
@@ -3750,6 +4146,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -3800,6 +4198,7 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
     "offsetUri": "exclusions/[{0}]/name",
     "settingUsage": "configuration",
@@ -3815,6 +4214,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 1032,
+      "minimumLength": 1,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -3836,6 +4249,7 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
     "offsetUri": "exclusions/[{0}]/path",
     "settingUsage": "configuration",
@@ -3851,6 +4265,20 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 1032,
+      "minimumLength": 1,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -3871,6 +4299,9 @@
     "keywords": [
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-preferences?view=o365-worldwide#degree-of-parallelism-for-on-demand-scans"
+    ],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
     "offsetUri": "maximumOnDemandScanThreads",
     "settingUsage": "configuration",
@@ -3886,6 +4317,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 64,
+      "minimumValue": 1
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 2
+    },
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -3907,6 +4348,9 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#maximum-number-of-items-in-the-antivirus-scan-history"
+    ],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
     "offsetUri": "scanHistoryMaximumItems",
     "settingUsage": "configuration",
@@ -3922,6 +4366,16 @@
     },
     "options": [],
     "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 15000,
+      "minimumValue": 5000
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 10000
+    },
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -3941,6 +4395,9 @@
     "categoryName": "Microsoft Defender",
     "keywords": [
       "Cloud delivered protection preferences"
+    ],
+    "infoUrls": [
+      "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-preferences?view=o365-worldwide#configure-cloud-block-level"
     ],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/cloudService",
     "offsetUri": "cloudBlockLevel",
@@ -4028,6 +4485,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -4120,6 +4579,9 @@
       "Microsoft Defender - Cloud delivered protection preferences",
       "Cloud delivered protection preferences"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#enable--disable-automatic-security-intelligence-updates"
+    ],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/cloudService",
     "offsetUri": "automaticDefinitionUpdateEnabled",
     "settingUsage": "configuration",
@@ -4164,6 +4626,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -4214,6 +4678,9 @@
       "Microsoft Defender - Cloud delivered protection preferences",
       "Cloud delivered protection preferences"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#enable--disable-automatic-sample-submissions"
+    ],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/cloudService",
     "offsetUri": "automaticSampleSubmission",
     "settingUsage": "configuration",
@@ -4258,6 +4725,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -4308,6 +4777,7 @@
       "Microsoft Defender - Network protection",
       "Network protection"
     ],
+    "infoUrls": [],
     "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/networkProtection",
     "offsetUri": "enforcementLevel",
     "settingUsage": "configuration",
@@ -4366,6 +4836,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -4430,6 +4902,7 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "exclusions/[{0}]/$type",
     "settingUsage": "configuration",
@@ -4522,6 +4995,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -4619,6 +5094,9 @@
     "keywords": [
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/linux-preferences?view=o365-worldwide#muting-non-exec-mounts"
+    ],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "nonExecMountPolicy",
     "settingUsage": "configuration",
@@ -4663,6 +5141,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -4713,6 +5193,9 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#enable--disable-real-time-protection"
+    ],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "enableRealTimeProtection",
     "settingUsage": "configuration",
@@ -4757,6 +5240,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -4807,6 +5292,7 @@
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
+    "infoUrls": [],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "threatTypeSettings/[{0}]/value",
     "settingUsage": "configuration",
@@ -4880,6 +5366,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -4958,6 +5446,9 @@
     "keywords": [
       "Antivirus engine"
     ],
+    "infoUrls": [
+      "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/linux-preferences?view=o365-worldwide#run-a-scan-after-definitions-are-updated"
+    ],
     "baseUri": "PayloadContent/antivirusEngine",
     "offsetUri": "scanAfterDefinitionUpdate",
     "settingUsage": "configuration",
@@ -5002,6 +5493,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -5052,6 +5545,9 @@
       "Microsoft Defender - Cloud delivered protection preferences",
       "Cloud delivered protection preferences"
     ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#diagnostic-collection-level"
+    ],
     "baseUri": "PayloadContent/cloudService",
     "offsetUri": "diagnosticLevel",
     "settingUsage": "configuration",
@@ -5096,6 +5592,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -5145,6 +5643,7 @@
     "keywords": [
       "Exclusion Settings"
     ],
+    "infoUrls": [],
     "baseUri": "PayloadContent/exclusionSettings",
     "offsetUri": "exclusions/[{0}]/$type",
     "settingUsage": "configuration",
@@ -5213,6 +5712,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -5286,6 +5787,7 @@
     "keywords": [
       "Exclusion Settings"
     ],
+    "infoUrls": [],
     "baseUri": "PayloadContent/exclusionSettings",
     "offsetUri": "exclusions/[{0}]/isDirectory",
     "settingUsage": "configuration",
@@ -5340,6 +5842,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
@@ -5399,6 +5903,9 @@
     "keywords": [
       "Network protection"
     ],
+    "infoUrls": [
+      "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/network-protection-linux?view=o365-worldwide"
+    ],
     "baseUri": "PayloadContent/networkProtection",
     "offsetUri": "enforcementLevel",
     "settingUsage": "configuration",
@@ -5457,6 +5964,8 @@
       }
     ],
     "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
     "accessTypes": "none",
     "version": "638869171349860765",
     "helpText": null,
