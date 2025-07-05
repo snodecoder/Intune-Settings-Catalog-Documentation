@@ -3,57 +3,148 @@
 <head>
   <meta charset="UTF-8">
   <title>Intune Settings Catalog</title>
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script>
-    window.$docsify = {
-      loadSidebar: false,
-      search: 'auto',
-      noEmoji: true
-    }
-  </script>
   <style>
     body { font-family: sans-serif; margin: 2em; }
-    input { width: 100%; padding: 0.5em; font-size: 1em; }
+    input, select { width: 100%; padding: 0.5em; font-size: 1em; margin-bottom: 1em; }
     pre { background: #f0f0f0; padding: 1em; border-radius: 8px; }
+    .pagination { margin: 1em 0; }
+    .pagination button { margin: 0 0.2em; }
   </style>
 </head>
 <body>
   <h1>Intune Settings Catalog</h1>
-  <input type="text" id="searchInput" placeholder="Zoek een setting...">
+  <label for="platformSelect">Platform:</label>
+  <select id="platformSelect"><option value="">Select platform...</option></select>
+  <label for="categorySelect">Category:</label>
+  <select id="categorySelect"><option value="">All categories</option></select>
+  <label for="keywordSelect">Keyword:</label>
+  <select id="keywordSelect"><option value="">All keywords</option></select>
+  <input type="text" id="searchInput" placeholder="Search for a setting...">
   <div id="results"></div>
+  <div class="pagination" id="pagination"></div>
 
   <script>
+    // Metadata
+    let platforms = [];
+    let categories = [];
+    let keywords = [];
+    // Data
+    let index = [];
     let settings = [];
-    fetch('intune_settings.json')
-      .then(res => res.json())
-      .then(data => {
-        settings = data;
-        render(settings);
-      });
+    let filtered = [];
+    let currentPage = 1;
+    const pageSize = 20;
+    let currentPlatform = '';
 
-    const input = document.getElementById('searchInput');
-    input.addEventListener('input', () => {
-      const q = input.value.toLowerCase();
-      const filtered = Object.fromEntries(Object.entries(settings)
-        .map(([cat, items]) => [
-          cat,
-          items.filter(s => s.name.toLowerCase().includes(q) || s.description?.toLowerCase().includes(q))
-        ])
-        .filter(([_, items]) => items.length > 0));
-      render(filtered);
+    // Load metadata
+    fetch('platforms.json').then(res => res.json()).then(data => {
+      platforms = data;
+      const sel = document.getElementById('platformSelect');
+      platforms.forEach(p => {
+        const opt = document.createElement('option');
+        opt.value = p;
+        opt.textContent = p;
+        sel.appendChild(opt);
+      });
+    });
+    fetch('categories.json').then(res => res.json()).then(data => {
+      categories = data;
+      const sel = document.getElementById('categorySelect');
+      categories.forEach(c => {
+        const opt = document.createElement('option');
+        opt.value = c;
+        opt.textContent = c;
+        sel.appendChild(opt);
+      });
+    });
+    fetch('keywords.json').then(res => res.json()).then(data => {
+      keywords = data;
+      const sel = document.getElementById('keywordSelect');
+      keywords.forEach(k => {
+        const opt = document.createElement('option');
+        opt.value = k;
+        opt.textContent = k;
+        sel.appendChild(opt);
+      });
     });
 
-    function render(data) {
+    // Event listeners
+    document.getElementById('platformSelect').addEventListener('change', async function() {
+      currentPlatform = this.value;
+      if (!currentPlatform) {
+        index = [];
+        settings = [];
+        filtered = [];
+        render();
+        return;
+      }
+      // Load index and settings for selected platform
+      [index, settings] = await Promise.all([
+        fetch(`${currentPlatform}_index.json`).then(res => res.json()),
+        fetch(`${currentPlatform}.json`).then(res => res.json())
+      ]);
+      currentPage = 1;
+      filterAndRender();
+    });
+    document.getElementById('categorySelect').addEventListener('change', filterAndRender);
+    document.getElementById('keywordSelect').addEventListener('change', filterAndRender);
+    document.getElementById('searchInput').addEventListener('input', filterAndRender);
+
+    function filterAndRender() {
+      const q = document.getElementById('searchInput').value.toLowerCase();
+      const cat = document.getElementById('categorySelect').value;
+      const kw = document.getElementById('keywordSelect').value;
+      filtered = index.filter(s => {
+        let match = true;
+        if (q) {
+          match = (s.settingName && s.settingName.toLowerCase().includes(q)) ||
+                  (s.settingDescription && s.settingDescription.toLowerCase().includes(q));
+        }
+        if (match && cat) {
+          match = s.categoryName === cat;
+        }
+        if (match && kw) {
+          match = s.keywords && s.keywords.includes(kw);
+        }
+        return match;
+      });
+      currentPage = 1;
+      render();
+    }
+
+    function render() {
       const container = document.getElementById('results');
       container.innerHTML = '';
-      for (const [category, items] of Object.entries(data)) {
-        const catEl = document.createElement('h2');
-        catEl.textContent = category;
-        container.appendChild(catEl);
-        for (const s of items) {
-          const el = document.createElement('pre');
-          el.textContent = JSON.stringify(s, null, 2);
-          container.appendChild(el);
+      if (!filtered.length) {
+        container.textContent = 'No results.';
+        document.getElementById('pagination').innerHTML = '';
+        return;
+      }
+      // Pagination
+      const totalPages = Math.ceil(filtered.length / pageSize);
+      const start = (currentPage - 1) * pageSize;
+      const end = start + pageSize;
+      const pageItems = filtered.slice(start, end);
+      // Show results
+      for (const s of pageItems) {
+        const full = settings.find(x => x.settingId === s.settingId);
+        const el = document.createElement('pre');
+        el.textContent = JSON.stringify(full || s, null, 2);
+        container.appendChild(el);
+      }
+      // Pagination controls
+      const pag = document.getElementById('pagination');
+      pag.innerHTML = '';
+      if (totalPages > 1) {
+        for (let i = 1; i <= totalPages; i++) {
+          const btn = document.createElement('button');
+          btn.textContent = i;
+          if (i === currentPage) btn.disabled = true;
+          btn.addEventListener('click', () => {
+            currentPage = i;
+            render();
+          });
+          pag.appendChild(btn);
         }
       }
     }
