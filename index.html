@@ -261,20 +261,30 @@
         btn.textContent = 'Show details';
         btn.style.cursor = 'pointer';
         btn.onclick = function() {
-          const expandedDetailsRow = document.getElementById('details-expanded');
+          const expandedDetailsRow = document.getElementById('details-row-expanded');
+          const expandedBtn = document.getElementById('details-btn-expanded');
+          // If this button is already expanded, just collapse it
+          if (btn.id === 'details-btn-expanded') {
+            detailsRow.style.display = 'none';
+            detailsRow.id = '';
+            btn.textContent = 'Show details';
+            btn.id = '';
+            return;
+          }
+          // Collapse any previously expanded details
           if (expandedDetailsRow) {
-            // Collapse any previously expanded details
             expandedDetailsRow.style.display = 'none';
             expandedDetailsRow.id = '';
+            if (expandedBtn) {
+              expandedBtn.textContent = 'Show details';
+              expandedBtn.id = '';
+            }
           }
-          if (detailsRow.style.display === 'none') {
-            detailsRow.style.display = '';
-            detailsRow.id = 'details-expanded';
-            btn.textContent = 'Hide details';
-          } else {
-            detailsRow.style.display = 'none';
-            btn.textContent = 'Show details';
-          }
+          // Expand this row
+          detailsRow.style.display = '';
+          detailsRow.id = 'details-row-expanded';
+          btn.textContent = 'Hide details';
+          btn.id = 'details-btn-expanded';
         };
         tdBtn.appendChild(btn);
         tr.appendChild(tdBtn);
