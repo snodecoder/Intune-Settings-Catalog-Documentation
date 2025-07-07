@@ -2,6 +2,7 @@ import os
 import json
 import requests
 import msal
+import datetime
 
 def get_access_token():
     tenant_id = os.environ['TENANT_ID']
@@ -146,7 +147,6 @@ def main():
         json.dump(sorted(list(keywords_set)), f, indent=2, ensure_ascii=False)
 
     # Write last updated timestamp
-    from datetime import datetime
     with open(os.path.join(base_dir, "last_updated.txt"), "w", encoding="utf-8") as f:
         f.write(datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"))
 
