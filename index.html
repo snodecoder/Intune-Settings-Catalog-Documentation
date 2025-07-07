@@ -86,6 +86,11 @@
   <label for="keywordSelect">Keyword:</label>
   <select id="keywordSelect"><option value="">All keywords</option></select>
   <input type="text" id="searchInput" placeholder="Search for a setting...">
+  <label for="sortSelect">Sort by:</label>
+  <select id="sortSelect">
+    <option value="name-asc">Setting Name (A-Z)</option>
+    <option value="name-desc">Setting Name (Z-A)</option>
+  </select>
   <div id="results">
     <table>
       <thead>
@@ -188,11 +193,13 @@
     });
     document.getElementById('keywordSelect').addEventListener('change', filterAndRender);
     document.getElementById('searchInput').addEventListener('input', filterAndRender);
+    document.getElementById('sortSelect').addEventListener('change', filterAndRender);
 
     function filterAndRender() {
       const q = document.getElementById('searchInput').value.toLowerCase();
       const cat = document.getElementById('categorySelect').value;
       const kw = document.getElementById('keywordSelect').value;
+      const sort = document.getElementById('sortSelect').value;
       filtered = index.filter(s => {
         let match = true;
         if (q) {
@@ -207,6 +214,12 @@
         }
         return match;
       });
+      // Sort filtered results
+      if (sort === 'name-asc') {
+        filtered.sort((a, b) => (a.settingName || '').localeCompare(b.settingName || ''));
+      } else if (sort === 'name-desc') {
+        filtered.sort((a, b) => (b.settingName || '').localeCompare(a.settingName || ''));
+      }
       currentPage = 1;
       render();
     }
@@ -300,68 +313,109 @@
         detailsTable.style.background = '#f9f9f9';
         detailsTable.style.border = '1px solid #eee';
         Object.entries(full).forEach(([k, v]) => {
+          // Hide specific properties
+          const hiddenProps = ['valueOptions', 'rootDefinitionId', 'name', 'version', 'settingUsage', 'uxBehavior', 'visibility', 'categoryId', 'settingId', 'riskLevel', 'accessTypes', 'settingName', 'settingDescription', 'categoryName'];
+          if (hiddenProps.includes(k)) {
+            return;
+          }
+          // Always show settingName, otherwise skip empty values
+          if (k !== 'settingName' && (v === undefined || v === null || v === '' || (Array.isArray(v) && v.length === 0) || (typeof v === 'object' && v !== null && !Array.isArray(v) && Object.keys(v).length === 0))) {
+            return;
+          }
           const row = document.createElement('tr');
           const keyTd = document.createElement('td');
           keyTd.textContent = k;
           keyTd.style.fontWeight = 'bold';
           keyTd.style.width = '200px';
           const valTd = document.createElement('td');
-          if (Array.isArray(v) && v.length && typeof v[0] === 'object') {
-            // Nested table for array of objects
-            const nestedTable = document.createElement('table');
-            nestedTable.style.width = '100%';
-            nestedTable.style.background = '#fff';
-            nestedTable.style.border = '1px solid #ddd';
-            // Table header
-            const nestedHead = document.createElement('tr');
-            Object.keys(v[0]).forEach(nk => {
-              const nth = document.createElement('th');
-              nth.textContent = nk;
-              nth.style.fontWeight = 'bold';
-              nth.style.background = '#f3f3f3';
-              nestedHead.appendChild(nth);
-            });
-            nestedTable.appendChild(nestedHead);
-            // Table rows
-            v.forEach(obj => {
-              const ntr = document.createElement('tr');
-              Object.values(obj).forEach(val => {
-                const ntd = document.createElement('td');
-                if (typeof val === 'object' && val !== null) {
-                  ntd.textContent = JSON.stringify(val, null, 2);
-                  ntd.style.fontFamily = 'monospace';
-                } else {
-                  ntd.textContent = val;
-                }
-                ntr.appendChild(ntd);
-              });
-              nestedTable.appendChild(ntr);
-            });
-            valTd.appendChild(nestedTable);
-          } else if (typeof v === 'object' && v !== null) {
-            // Nested table for object
-            const nestedTable = document.createElement('table');
-            nestedTable.style.width = '100%';
-            nestedTable.style.background = '#fff';
-            nestedTable.style.border = '1px solid #ddd';
-            Object.entries(v).forEach(([nk, nv]) => {
-              const ntr = document.createElement('tr');
-              const ntdk = document.createElement('td');
-              ntdk.textContent = nk;
-              ntdk.style.fontWeight = 'bold';
-              ntdk.style.width = '150px';
-              const ntdv = document.createElement('td');
-              if (typeof nv === 'object' && nv !== null) {
-                ntdv.textContent = JSON.stringify(nv, null, 2);
-                ntdv.style.fontFamily = 'monospace';
-              } else {
-                ntdv.textContent = nv;
+          if (k === 'defaultOptionId' && v && Array.isArray(full.options)) {
+            // Correlate defaultOptionId with options.itemId and show displayName
+            const match = full.options.find(opt => opt.itemId === v);
+            if (match && match.displayName) {
+              valTd.textContent = match.displayName;
+            } else {
+              valTd.textContent = v;
+            }
+          } else if (k === 'infoUrls' && Array.isArray(v) && v.length) {
+            v.forEach(url => {
+              if (typeof url === 'string') {
+                const a = document.createElement('a');
+                a.href = url;
+                a.textContent = url;
+                a.target = '_blank';
+                a.rel = 'noopener noreferrer';
+                valTd.appendChild(a);
+                valTd.appendChild(document.createElement('br'));
               }
-              ntr.appendChild(ntdk);
-              ntr.appendChild(ntdv);
-              nestedTable.appendChild(ntr);
             });
-            valTd.appendChild(nestedTable);
+          } else if (k === 'keywords' && Array.isArray(v)) {
+            valTd.textContent = v.join(', ');
+          } else if (typeof v === 'object' && v !== null) {
+            if (k === 'applicability') {
+              // Show only specific properties in applicability
+              const props = ['platform', 'technologies', 'configurationServiceProviderVersion', 'minimumSupportedVersion', 'windowsSkus'];
+              const nestedTable = document.createElement('table');
+              nestedTable.style.width = '100%';
+              nestedTable.style.background = '#fff';
+              nestedTable.style.border = '1px solid #ddd';
+              props.forEach(prop => {
+                if (v[prop] !== undefined && v[prop] !== null && (prop !== 'windowsSkus' || (Array.isArray(v[prop]) && v[prop].length))) {
+                  const ntr = document.createElement('tr');
+                  const ntdk = document.createElement('td');
+                  ntdk.textContent = prop;
+                  ntdk.style.fontWeight = 'bold';
+                  ntdk.style.width = '150px';
+                  const ntdv = document.createElement('td');
+                  if (Array.isArray(v[prop])) {
+                    ntdv.textContent = v[prop].join(', ');
+                  } else {
+                    ntdv.textContent = v[prop];
+                  }
+                  ntr.appendChild(ntdk);
+                  ntr.appendChild(ntdv);
+                  nestedTable.appendChild(ntr);
+                }
+              });
+              valTd.appendChild(nestedTable);
+            } else if ((k === 'options' || k === 'valueOptions') && Array.isArray(v) && v.length && v[0] && typeof v[0] === 'object' && 'displayName' in v[0]) {
+              // Show only displayName for options/valueOptions
+              const nestedTable = document.createElement('table');
+              nestedTable.style.width = '100%';
+              nestedTable.style.background = '#fff';
+              nestedTable.style.border = '1px solid #ddd';
+              v.forEach(opt => {
+                const ntr = document.createElement('tr');
+                const ntd = document.createElement('td');
+                ntd.textContent = opt.displayName;
+                ntr.appendChild(ntd);
+                nestedTable.appendChild(ntr);
+              });
+              valTd.appendChild(nestedTable);
+            } else {
+              // Nested table for object
+              const nestedTable = document.createElement('table');
+              nestedTable.style.width = '100%';
+              nestedTable.style.background = '#fff';
+              nestedTable.style.border = '1px solid #ddd';
+              Object.entries(v).forEach(([nk, nv]) => {
+                const ntr = document.createElement('tr');
+                const ntdk = document.createElement('td');
+                ntdk.textContent = nk;
+                ntdk.style.fontWeight = 'bold';
+                ntdk.style.width = '150px';
+                const ntdv = document.createElement('td');
+                if (typeof nv === 'object' && nv !== null) {
+                  ntdv.textContent = JSON.stringify(nv, null, 2);
+                  ntdv.style.fontFamily = 'monospace';
+                } else {
+                  ntdv.textContent = nv;
+                }
+                ntr.appendChild(ntdk);
+                ntr.appendChild(ntdv);
+                nestedTable.appendChild(ntr);
+              });
+              valTd.appendChild(nestedTable);
+            }
           } else {
             valTd.textContent = v;
           }
