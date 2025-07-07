@@ -23,12 +23,7 @@
       width: 100%;
       padding: 0.5em;
       margin-bottom: 1em;
-    }
-
-    pre {
-      background: #f0f0f0;
-      padding: 1em;
-      border-radius: 8px;
+      box-sizing: border-box;
     }
 
     table {
@@ -86,7 +81,24 @@
   <label for="keywordSelect">Keyword:</label>
   <select id="keywordSelect"><option value="">All keywords</option></select>
   <input type="text" id="searchInput" placeholder="Search for a setting...">
-  <div id="results"></div>
+  <div id="results">
+    <table>
+      <thead>
+        <tr>
+          <th>Setting Name</th>
+          <th>Category</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody id="results-body">
+        <tr>
+          <td colspan="3" style="text-align:center; padding: 1em; color: #888;">
+            No settings found. Adjust filters to see results.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
   <div class="pagination" id="pagination"></div>
   <div id="lastUpdated"></div>
 
