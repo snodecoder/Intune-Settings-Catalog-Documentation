@@ -261,8 +261,15 @@
         btn.textContent = 'Show details';
         btn.style.cursor = 'pointer';
         btn.onclick = function() {
+          const expandedDetailsRow = document.getElementById('details-expanded');
+          if (expandedDetailsRow) {
+            // Collapse any previously expanded details
+            expandedDetailsRow.style.display = 'none';
+            expandedDetailsRow.id = '';
+          }
           if (detailsRow.style.display === 'none') {
             detailsRow.style.display = '';
+            detailsRow.id = 'details-expanded';
             btn.textContent = 'Hide details';
           } else {
             detailsRow.style.display = 'none';
