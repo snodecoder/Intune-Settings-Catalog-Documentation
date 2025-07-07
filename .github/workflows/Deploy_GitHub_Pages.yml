@@ -1,4 +1,4 @@
-name: Deploy GitHub Pages
+name: Deploy_GitHub_Pages
 
 on:
   push:
@@ -7,7 +7,11 @@ on:
     paths:
       - index.html
       - website_data/**
-  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - Fetch_Intune_Settings
+    types:
+      - completed
 
 jobs:
   deploy:

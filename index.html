@@ -26,6 +26,7 @@
   <input type="text" id="searchInput" placeholder="Search for a setting...">
   <div id="results"></div>
   <div class="pagination" id="pagination"></div>
+  <div id="lastUpdated" style="margin-top:10px;color:#888;font-size:0.9em;"></div>
 
   <script>
     // Metadata
@@ -326,17 +327,68 @@
       };
       pag.appendChild(nextBtn);
       // Page number buttons
-      for (let i = 1; i <= totalPages; i++) {
-        const btn = document.createElement('button');
-        btn.textContent = i;
-        if (i === currentPage) btn.disabled = true;
-        btn.addEventListener('click', () => {
-          currentPage = i;
+      if (totalPages <= 10) {
+        for (let i = 1; i <= totalPages; i++) {
+          const btn = document.createElement('button');
+          btn.textContent = i;
+          if (i === currentPage) btn.disabled = true;
+          btn.addEventListener('click', () => {
+            currentPage = i;
+            render();
+          });
+          pag.appendChild(btn);
+        }
+      } else {
+        // Show first page
+        const firstBtn = document.createElement('button');
+        firstBtn.textContent = '1';
+        if (currentPage === 1) firstBtn.disabled = true;
+        firstBtn.addEventListener('click', () => {
+          currentPage = 1;
           render();
         });
-        pag.appendChild(btn);
+        pag.appendChild(firstBtn);
+        // Ellipsis if needed
+        let start = Math.max(2, currentPage - 4);
+        let end = Math.min(totalPages - 1, currentPage + 5);
+        if (start > 2) {
+          const ellipsis = document.createElement('span');
+          ellipsis.textContent = ' ... ';
+          pag.appendChild(ellipsis);
+        }
+        for (let i = start; i <= end; i++) {
+          const btn = document.createElement('button');
+          btn.textContent = i;
+          if (i === currentPage) btn.disabled = true;
+          btn.addEventListener('click', () => {
+            currentPage = i;
+            render();
+          });
+          pag.appendChild(btn);
+        }
+        if (end < totalPages - 1) {
+          const ellipsis = document.createElement('span');
+          ellipsis.textContent = ' ... ';
+          pag.appendChild(ellipsis);
+        }
+        // Show last page
+        const lastBtn = document.createElement('button');
+        lastBtn.textContent = totalPages;
+        if (currentPage === totalPages) lastBtn.disabled = true;
+        lastBtn.addEventListener('click', () => {
+          currentPage = totalPages;
+          render();
+        });
+        pag.appendChild(lastBtn);
       }
     }
+
+    // Fetch last updated date
+    fetch('website_data/last_updated.txt')
+      .then(res => res.text())
+      .then(txt => {
+        document.getElementById('lastUpdated').textContent = 'Last updated: ' + txt;
+      });
   </script>
 </body>
 </html>

@@ -49,14 +49,15 @@ def main():
     categories = fetch_graph_data("https://graph.microsoft.com/beta/deviceManagement/configurationCategories", token)
     print(f"Fetched {len(categories)} configuration categories.")
 
-    with open(os.path.join(base_dir, "configurationSettings.json"), "w", encoding="utf-8") as f:
-        json.dump(config_settings, f, indent=2, ensure_ascii=False)
+    # DEBUG: Uncomment the following lines to save the raw data to files
+    # with open(os.path.join(base_dir, "configurationSettings.json"), "w", encoding="utf-8") as f:
+    #     json.dump(config_settings, f, indent=2, ensure_ascii=False)
 
-    with open(os.path.join(base_dir, "settingDefinitions.json"), "w", encoding="utf-8") as f:
-        json.dump(setting_defs, f, indent=2, ensure_ascii=False)
+    # with open(os.path.join(base_dir, "settingDefinitions.json"), "w", encoding="utf-8") as f:
+    #     json.dump(setting_defs, f, indent=2, ensure_ascii=False)
 
-    with open(os.path.join(base_dir, "configurationCategories.json"), "w", encoding="utf-8") as f:
-        json.dump(categories, f, indent=2, ensure_ascii=False)
+    # with open(os.path.join(base_dir, "configurationCategories.json"), "w", encoding="utf-8") as f:
+    #     json.dump(categories, f, indent=2, ensure_ascii=False)
 
     # Build lookup maps for categories and definitions
     def_map = {d.get("id"): d for d in setting_defs if "id" in d}
@@ -143,6 +144,11 @@ def main():
         json.dump(sorted(list(categories_set)), f, indent=2, ensure_ascii=False)
     with open(os.path.join(base_dir, "keywords.json"), "w", encoding="utf-8") as f:
         json.dump(sorted(list(keywords_set)), f, indent=2, ensure_ascii=False)
+
+    # Write last updated timestamp
+    from datetime import datetime
+    with open(os.path.join(base_dir, "last_updated.txt"), "w", encoding="utf-8") as f:
+        f.write(datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"))
 
 if __name__ == "__main__":
     main()
