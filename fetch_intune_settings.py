@@ -83,37 +83,14 @@ def main():
         categories_set.add(root_name)
         for kw in s.get("keywords", []):
             keywords_set.add(kw)
-        item = {
-            "settingId": s.get("id"),
-            "settingName": s.get("displayName"),
-            "settingDescription": s.get("description"),
-            "categoryId": s.get("categoryId"),
-            "categoryName": root_name,
-            "keywords": s.get("keywords", []),
-            "infoUrls": s.get("infoUrls", []),
-            "baseUri": s.get("baseUri"),
-            "offsetUri": s.get("offsetUri"),
-            "settingUsage": s.get("settingUsage"),
-            "uxBehavior": s.get("uxBehavior"),
-            "visibility": s.get("visibility"),
-            "riskLevel": s.get("riskLevel"),
-            "defaultOptionId": s.get("defaultOptionId"),
-            "applicability": s.get("applicability"),
-            "options": s.get("options", []),
-            "referredSettingInformationList": s.get("referredSettingInformationList", []),
-            "valueDefinition": s.get("valueDefinition", []),
-            "defaultValue": s.get("defaultValue", []),
-            "accessTypes": s.get("accessTypes"),
-            "version": s.get("version"),
-            "helpText": s.get("helpText"),
-            "name": s.get("name"),
-            "rootDefinitionId": s.get("rootDefinitionId"),
-            "settingDefinitionId": s.get("settingDefinitionId"),
-            "definitionDescription": setting_def.get("description") if setting_def else None,
-            "dataType": setting_def.get("dataType") if setting_def else s.get("dataType"),
-            "valueOptions": setting_def.get("options") if setting_def and "options" in setting_def else s.get("options", []),
-            "dependencies": setting_def.get("dependencies") if setting_def and "dependencies" in setting_def else s.get("dependencies", []),
-        }
+        # Merge all properties from s and setting_def, and add category info
+        item = {}
+        if setting_def:
+            item.update(setting_def)
+        item.update(s)
+        item["categoryId"] = s.get("categoryId")
+        item["categoryName"] = root_name
+        item["platforms"] = platforms
         for p in platforms:
             if p not in platform_settings:
                 platform_settings[p] = []
