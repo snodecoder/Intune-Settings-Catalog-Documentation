@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <title>Intune Settings Catalog</title>
   <style>
-    body { font-family: sans-serif; margin: 2em; }
-    input, select { width: 100%; padding: 0.5em; font-size: 1em; margin-bottom: 1em; }
+    body { font-family: sans-serif; margin: 2em; font-size: 16px !important;}
+    input, select { width: 100%; padding: 0.5em; margin-bottom: 1em; }
     pre { background: #f0f0f0; padding: 1em; border-radius: 8px; }
     .pagination { margin: 1em 0; }
     .pagination button { margin: 0 0.2em; }
@@ -151,7 +151,7 @@
       table.style.borderCollapse = 'collapse';
       const thead = document.createElement('thead');
       const headRow = document.createElement('tr');
-      ['Setting Name', 'Category', 'Keywords', ''].forEach(h => {
+      ['Setting Name', 'Category', 'Description', ''].forEach(h => {
         const th = document.createElement('th');
         th.textContent = h;
         th.style.textAlign = 'left';
@@ -172,10 +172,10 @@
         const tdCat = document.createElement('td');
         tdCat.textContent = full.categoryName || '';
         tr.appendChild(tdCat);
-        // Keywords
-        const tdKw = document.createElement('td');
-        tdKw.textContent = (full.keywords || []).join(', ');
-        tr.appendChild(tdKw);
+        // Description
+        const tdDesc = document.createElement('td');
+        tdDesc.textContent = full.settingDescription || '';
+        tr.appendChild(tdDesc);
         // Expand button
         const tdBtn = document.createElement('td');
         const btn = document.createElement('button');
