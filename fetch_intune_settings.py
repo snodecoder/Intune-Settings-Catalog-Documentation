@@ -83,7 +83,7 @@ def main():
         categories_set.add(root_name)
         for kw in s.get("keywords", []):
             keywords_set.add(kw)
-        item = {
+        item = {key: value for key, value in {
             "settingId": s.get("id"),
             "settingName": s.get("displayName"),
             "settingDescription": s.get("description"),
@@ -113,7 +113,7 @@ def main():
             "dataType": setting_def.get("dataType") if setting_def else s.get("dataType"),
             "valueOptions": setting_def.get("options") if setting_def and "options" in setting_def else s.get("options", []),
             "dependencies": setting_def.get("dependencies") if setting_def and "dependencies" in setting_def else s.get("dependencies", []),
-        }
+        }.items() if value}
         for p in platforms:
             if p not in platform_settings:
                 platform_settings[p] = []
