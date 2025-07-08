@@ -148,7 +148,7 @@ def main():
     # Write last updated timestamp
     from datetime import datetime
     with open(os.path.join(base_dir, "last_updated.txt"), "w", encoding="utf-8") as f:
-        f.write(datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"))
+        f.write(datetime.now().strftime("%Y-%m-%d %H:%M UTC"))
 
 if __name__ == "__main__":
     main()
