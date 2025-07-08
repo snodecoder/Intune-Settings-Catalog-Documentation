@@ -19,6 +19,9 @@ Visit: [https://snodecoder.github.io/Intune-Settings-Catalog-Documentation/](htt
 
 ![image](https://github.com/user-attachments/assets/47de35d3-ae85-4b67-845e-654655617279)
 
+## Contributing
+Contributions are welcome! If you find a bug, have a suggestion, or want to improve this project, please open an issue or submit a pull request. Your input helps make this project better for everyone. Thank you for your support!
+
 
 ## Local development
 - Run `fetch_intune_settings.py` to fetch and update the data (requires Azure credentials).
