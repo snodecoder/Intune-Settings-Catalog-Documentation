@@ -75,10 +75,37 @@
         font-size: 0.85rem;
       }
     }
+
+    /* --- DARK MODE STYLES --- */
+    body.dark-mode {
+      background: #181818;
+      color: #f5f5f5;
+    }
+    body.dark-mode table,
+    body.dark-mode th,
+    body.dark-mode td {
+      background: #222 !important;
+      color: #f5f5f5 !important;
+      border-color: #333 !important;
+    }
+    body.dark-mode input,
+    body.dark-mode select {
+      background: #242424;
+      color: #fff;
+      border: 1px solid #333;
+    }
+    body.dark-mode a { color: #81a1c1; }
+    body.dark-mode th { background: #242424; }
+    body.dark-mode .lastUpdated { color: #bbb; }
+    body.dark-mode button { background: #222; color: #f5f5f5; border: 1px solid #444; }
+    /* --- END DARK MODE STYLES --- */
   </style>
 </head>
 <body>
-  <h1>Intune Settings Catalog</h1>
+  <h1 style="display:inline">Intune Settings Catalog</h1>
+  <!-- DARK MODE TOGGLE BUTTON -->
+  <button id="dark-mode-toggle" style="margin-bottom:1em;float:right;"></button><br>
+  <!-- END DARK MODE TOGGLE BUTTON -->
   <label for="platformSelect">Platform:</label>
   <select id="platformSelect"><option value="">Select platform...</option></select>
   <label for="categorySelect">Category:</label>
@@ -539,6 +566,33 @@
       .then(txt => {
         document.getElementById('lastUpdated').textContent = 'Last updated: ' + txt;
       });
+
+    // --- DARK MODE TOGGLE LOGIC ---
+    (function() {
+      const btn = document.getElementById('dark-mode-toggle');
+      function updateBtn() {
+        btn.textContent = document.body.classList.contains('dark-mode') ?
+          'Disable Dark Mode' : 'Enable Dark Mode';
+      }
+      // On load, set mode from localStorage
+      if (localStorage.getItem('darkMode') === 'enabled') {
+        document.body.classList.add('dark-mode');
+      }
+      updateBtn();
+      btn.onclick = function() {
+        document.body.classList.toggle('dark-mode');
+        const inputElement = document.getElementById('searchInput');
+        if (document.body.classList.contains('dark-mode')) {
+          localStorage.setItem('darkMode', 'enabled');
+          inputElement.classList.add('dark-mode');
+        } else {
+          localStorage.setItem('darkMode', 'disabled');
+          inputElement.classList.remove('dark-mode');
+        }
+        updateBtn();
+      };
+    })();
+    // --- END DARK MODE TOGGLE LOGIC ---
   </script>
 <script data-goatcounter="https://snodecoder.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
