@@ -17,6 +17,9 @@ Visit: [https://snodecoder.github.io/Intune-Settings-Catalog-Documentation/](htt
 - The site is updated automatically with the latest data from Microsoft Graph.
 - **The GitHub Pages site is refreshed with the latest Intune data every week on Sunday night.**
 
+![image](https://github.com/user-attachments/assets/47de35d3-ae85-4b67-845e-654655617279)
+
+
 ## Local development
 - Run `fetch_intune_settings.py` to fetch and update the data (requires Azure credentials).
 - The static site is generated in the `website_data` folder and served via `index.html`.
