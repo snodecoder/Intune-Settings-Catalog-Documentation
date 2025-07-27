@@ -14,7 +14,7 @@
   {
     "settingId": "com.android.devicerestrictionpolicy.bluetoothblocked",
     "settingName": "Block Bluetooth",
-    "settingDescription": "If 'True', disables Bluetooth entirely on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow Bluetooth to be used. Available for fully managed, dedicated, and corporate-owned work profile devices (at work profile level). In comparison, Bluetooth configuration disables the user from making changes to the Bluetooth toggle. As a result, it might be either 'On' or 'Off' depending on the state of Bluetooth prior to applying a policy with Bluetooth configuration enabled.",
+    "settingDescription": "If 'True', disables Bluetooth entirely on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow Bluetooth to be used. Available for fully managed, dedicated, and corporate-owned work profile devices. In comparison, Bluetooth configuration disables the user from making changes to the Bluetooth toggle. As a result, it might be either 'On' or 'Off' depending on the state of Bluetooth prior to applying a policy with Bluetooth configuration enabled.",
     "keywords": [
       "Bluetooth",
       "Disable Bluetooth",
@@ -107,6 +107,20 @@
       "Block",
       "Keyguard",
       "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.securitycommoncriteriamodeenabled",
+    "settingName": "Require Common Criteria mode​",
+    "settingDescription": "If 'True', enables an elevated set of security standards on the device most often used in highly sensitive organizations, such as government establishments. If 'False', Intune doesn't change or update this setting. Available for fully managed, dedicated and corporate-owned work profile devices.",
+    "keywords": [
+      "Security",
+      "Common",
+      "Criteria",
+      "Mode",
+      "Enabled",
+      "System Security"
     ],
     "categoryName": "Device Restriction"
   },
@@ -219,6 +233,19 @@
       "Password type",
       "Password required type",
       "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.securityrequireverifyapps",
+    "settingName": "Require threat scan on apps",
+    "settingDescription": "If 'True', enables Google Play Protect to scan apps before and after they're installed. If it detects a threat, it might warn users to remove the app from the device. If 'False', Intune doesn't change or update this setting. By default, the OS might not enable or run Google Play Protect to scan apps. Available for fully managed, dedicated and corporate-owned work profile devices.",
+    "keywords": [
+      "Security",
+      "Require",
+      "Verify",
+      "Apps",
+      "System Security"
     ],
     "categoryName": "Device Restriction"
   },
