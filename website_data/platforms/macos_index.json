@@ -1,5 +1,90 @@
 [
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_prefetchwithserviceworkerenabled",
+    "settingName": "Allow SpeculationRules prefetch for ServiceWorker-controlled URLs",
+    "settingDescription": "Controls whether SpeculationRules prefetch requests are allowed for\r\nServiceWorker-controlled URLs.\r\n\r\nStarting with Microsoft Edge version 138,\r\nprefetch requests to ServiceWorker-controlled URLs are allowed by default when\r\nthe PrefetchServiceWorker feature is enabled.\r\n\r\nIf this policy is enabled or not configured, that default behavior is used.\r\n\r\nTo restore the legacy behavior from versions prior to 138, where prefetch requests\r\nto ServiceWorker-controlled URLs were blocked, set this policy to disabled.\r\n\r\nThis policy is intended to be temporary and will be removed in the future.",
+    "keywords": [
+      "PrefetchWithServiceWorkerEnabled",
+      "Allow SpeculationRules prefetch for ServiceWorker-controlled URLs",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_edgehistoryaisearchenabled",
+    "settingName": "Control access to AI-enhanced search in History",
+    "settingDescription": "This policy controls whether users can use AI-enhanced search in their browsing history in Microsoft Edge.\r\n\r\nWhen enabled or not configured, users can search using synonyms, natural language phrases, and minor spelling errors to find previously visited pages.\r\n\r\nWhen disabled, users can only perform exact match (verbatim) searches in their history.",
+    "keywords": [
+      "EdgeHistoryAISearchEnabled",
+      "Control access to AI-enhanced search in History",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_tls13earlydataenabled",
+    "settingName": "Control whether TLS 1.3 Early Data is enabled in Microsoft Edge (User)",
+    "settingDescription": "This policy controls whether TLS 1.3 Early Data is enabled in Microsoft Edge.\r\n\r\nTLS 1.3 Early Data is an extension that allows an HTTP request to be sent in parallel with the TLS handshake. When enabled and supported by the server, this can improve page load performance.\r\n\r\nEnabled – Microsoft Edge enables TLS 1.3 Early Data.\r\n\r\nDisabled – Microsoft Edge disables TLS 1.3 Early Data.\r\n\r\nNot configured – Microsoft Edge follows the default rollout process for TLS 1.3 Early Data.\r\n\r\nNOTE: When this feature is enabled, whether TLS 1.3 Early Data is used depends on server support. Most modern TLS servers and middleware can handle or reject Early Data without interrupting the connection. However, improperly implemented TLS stacks may cause connection failures. If such issues occur, contact the device or software vendor for a resolution.\r\n\r\nThis policy is temporary and intended to help test for compatibility issues. It may be removed in a future release once the feature is fully rolled out.",
+    "keywords": [
+      "TLS13EarlyDataEnabled",
+      "Control whether TLS 1.3 Early Data is enabled in Microsoft Edge",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_onsecurityevententerpriseconnector",
+    "settingName": "Configuration policy for Microsoft Edge for Business Reporting Connectors (User)",
+    "settingDescription": "Defines the Microsoft Edge for Business Reporting Connectors service settings that apply when a security event occurs in Microsoft Edge. These events include negative verdicts from Data Loss Prevention Connectors, password reuse, navigation to unsafe pages, and other security-sensitive actions.\r\n\r\nThe service_provider field specifies the reporting service provider. The enabled_event_names field lists the security events enabled for that provider.\r\n\r\nThis policy requires additional setup to take effect. For configuration guidance, see https://go.microsoft.com/fwlink/?linkid=2325446.\r\n\r\nExample value:\r\n\r\n[\r\n  {\r\n    \"enabled_event_names\": [\r\n      \"passwordChangedEvent\",\r\n      \"sensitiveDataEvent\"\r\n    ],\r\n    \"enabled_opt_in_events\": [\r\n      {\r\n        \"name\": \"loginEvent\",\r\n        \"url_patterns\": [\r\n          \"*\"\r\n        ]\r\n      },\r\n      {\r\n        \"name\": \"passwordBreachEvent\",\r\n        \"url_patterns\": [\r\n          \"example.com\",\r\n          \"other.example.com\"\r\n        ]\r\n      }\r\n    ],\r\n    \"service_provider\": \"microsoft\"\r\n  }\r\n]",
+    "keywords": [
+      "OnSecurityEventEnterpriseConnector",
+      "Configuration policy for Microsoft Edge for Business Reporting Connectors",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_onsecurityevententerpriseconnector_onsecurityevententerpriseconnector",
+    "settingName": "Configuration policy for Microsoft Edge for Business Reporting Connectors (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "OnSecurityEventEnterpriseConnector",
+      "Configuration policy for Microsoft Edge for Business Reporting Connectors",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~extensions_mandatoryextensionsforinprivatenavigation_mandatoryextensionsforinprivatenavigationdesc",
+    "settingName": "Specify extensions users must allow in order to navigate using InPrivate mode (User)",
+    "settingDescription": "",
+    "keywords": [
+      "MandatoryExtensionsForInPrivateNavigation",
+      "Specify extensions users must allow in order to navigate using InPrivate mode",
+      "\\Microsoft Edge\\Extensions",
+      "Microsoft Edge\\Extensions",
+      "Extensions"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_onsecurityevententerpriseconnector_onsecurityevententerpriseconnector",
+    "settingName": "Configuration policy for Microsoft Edge for Business Reporting Connectors (User)",
+    "settingDescription": "",
+    "keywords": [
+      "OnSecurityEventEnterpriseConnector",
+      "Configuration policy for Microsoft Edge for Business Reporting Connectors",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "extensionsettings_extensionsettings",
     "settingName": "com.apple.configuration.safari.extensions.settings",
     "settingDescription": "Synthetic Top Level Setting Group Collection",
@@ -1462,7 +1547,7 @@
   {
     "settingId": "settings_item_mdmoptions_mdmoptions_idlerebootallowed",
     "settingName": "Idle Reboot Allowed",
-    "settingDescription": "If true, device will automatically reboot while locked after several days of inactivity. This will be turned off by default upon enrollment on supervised devices.",
+    "settingDescription": "If `true`, the device automatically reboots while locked after several days of inactivity. This is set to `false` by default when a supervised device enrolls.",
     "keywords": [
       "MDM Options"
     ],
@@ -1489,7 +1574,7 @@
   {
     "settingId": "com.apple.screensaver.user_modulepath",
     "settingName": "Module Path",
-    "settingDescription": "A full path to the screen-saver module to use.",
+    "settingDescription": "A full path to the screen saver module to use.",
     "keywords": [
       "Screensaver User"
     ],
@@ -1589,7 +1674,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_systempolicyappdata",
     "settingName": "System Policy App Data",
-    "settingDescription": "Allows the application to access data of other apps.",
+    "settingDescription": "Specifies the policies for the app to access the data of other apps.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -1652,7 +1737,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways_item_authorization",
     "settingName": "Authorization",
-    "settingDescription": "The 'Authorization' key is an optional replacement for the 'Allowed' key, which has one of the following possible values:\n\n* 'Allow': Equivalent to a 'true' value for the 'Allowed' key\n* 'Deny': Equivalent to a 'false' value for the 'Allowed' key\n* 'AllowStandardUserToSetSystemService': Allows a standard (non-admin) user to configure the permissions for the specified app in the Privacy preferences for services that otherwise require admin authorization; only valid for the 'ListenEvent' and 'ScreenCapture' services\n\nEvery payload needs to include either 'Authorization' or 'Allowed', but not both.\nAvailable in macOS 11 and later.",
+    "settingDescription": "The `Authorization` key is an optional replacement for the `Allowed` key, which has one of the following possible values:\n\n- `Allow`: Equivalent to a `true` value for the `Allowed` key\n- `Deny`: Equivalent to a `false` value for the `Allowed` key\n- `AllowStandardUserToSetSystemService`: Allows a standard (non-admin) user to configure the permissions for the specified app in the Privacy preferences for services that otherwise require admin authorization; only valid for the `ListenEvent` and `ScreenCapture` services\n\n> Note:\n> Every payload needs to include either `Authorization` or `Allowed`, but not both.\n\nAvailable in macOS 11 and later.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -1814,7 +1899,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_photos",
     "settingName": "Photos",
-    "settingDescription": "The pictures managed by the Photos app in '~/Pictures/.photoslibrary'.",
+    "settingDescription": "The pictures managed by the Photos app in `~/Pictures/.photoslibrary`.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -1886,7 +1971,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_systempolicyappdata_item_staticcode",
     "settingName": "Static Code",
-    "settingDescription": "If 'true', statically validate the code requirement. Used only if the process invalidates its dynamic code signature.",
+    "settingDescription": "If `true`, statically validate the code requirement. Used only if the process invalidates its dynamic code signature.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -3175,7 +3260,7 @@
   {
     "settingId": "com.apple.applicationaccess_forceclassroomunpromptedscreenobservation",
     "settingName": "Force Classroom Unprompted Screen Observation",
-    "settingDescription": "If 'true' and 'ScreenObservationPermissionModificationAllowed' is also 'true' in the Education payload, a student enrolled in a managed course through the Classroom app automatically gives permission to that course teacher's requests to observe the student's screen without prompting the student. Requires a supervised device. Available in iOS 11 and later, and macOS 10.14.4 and later.",
+    "settingDescription": "If `true` and `ScreenObservationPermissionModificationAllowed` is also `true` in the Education payload, a student enrolled in a managed course through the Classroom app automatically gives permission to that course teacher's requests to observe the student's screen without prompting the student. Requires a supervised device. Available in iOS 11 and later, and macOS 10.14.4 and later.",
     "keywords": [
       "Restrictions"
     ],
@@ -3868,7 +3953,7 @@
   {
     "settingId": "passcode_failedattemptsresetinminutes",
     "settingName": "Failed Attempts Reset In Minutes",
-    "settingDescription": "The number of minutes before the login is reset after the maximum number of failed attempts. Also set the 'MaximumFailedAttempts' key for this to take effect.",
+    "settingDescription": "The number of minutes before the login is reset after the maximum number of failed attempts. Also set the `MaximumFailedAttempts` key for this to take effect.",
     "keywords": [
       "Passcode",
       "Declarative Device Management (DDM)\\Passcode"
@@ -3936,7 +4021,7 @@
   {
     "settingId": "com.apple.extensiblesso_platformsso_allowdeviceidentifiersinattestation",
     "settingName": "Allow Device Identifiers In Attestation",
-    "settingDescription": "If set to true, the device UDID and serial number will be included in Platform SSO attestations.",
+    "settingDescription": "If `true`, the system includes the device UDID and serial number in Platform SSO attestations.",
     "keywords": [
       "Extensible Single Sign On (SSO)"
     ],
@@ -4133,6 +4218,24 @@
     "categoryName": "User Experience"
   },
   {
+    "settingId": "safari_acceptcookies",
+    "settingName": "Accept Cookies",
+    "settingDescription": "The policy Safari uses for managing cookies:\n\n- `Never`: Safari always blocks cookies.\n- `CurrentWebsite`: Safari allows cookies only from the current website.\n- `VisitedWebsites`: Safari allows cookies only from visited websites.\n- `Always`: Safari always allows cookies.",
+    "keywords": [
+      "Safari Browser"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "safari_newtabstartpage_pagetype",
+    "settingName": "Page Type",
+    "settingDescription": "Sets the start page type in Safari:\n\n- `Start` - Safari uses the default start page. Safari disables the Homepage.\n- `Home` - Safari uses the page specified by `HomepageURL`, and Safari also sets that as the Homepage.\n- `Extension` - Safari uses the page specified by the Safari extension whose identifier is `ExtensionIdentifier`. Safari disables the Homepage.",
+    "keywords": [
+      "Safari Browser"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "softwareupdate_deferrals_majorperiodindays",
     "settingName": "Major Period In Days",
     "settingDescription": "Specifies the number of days to defer a major OS software update on the device. When set, software updates only appear after the specified delay, following the release of the software update.",
@@ -4179,7 +4282,7 @@
   },
   {
     "settingId": "softwareupdate_beta",
-    "settingName": "Beta",
+    "settingName": "Beta (Unsupported)",
     "settingDescription": "Configurations for controlling or specifying the beta programs associated with a device. Only applicable on Supervised devices with iOS 18+ and MacOS 15+",
     "keywords": [
       "Software Update Settings"
@@ -10703,6 +10806,81 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_builtinaiapisenabled",
+    "settingName": "Allow pages to use the built-in AI APIs. (User)",
+    "settingDescription": "Use this policy to control whether websites can access the built-in AI APIs, including the LanguageModel API, Summarization API, Writer API, and Rewriter API.\r\n\r\nEnable this policy to allow pages to use the APIs. If you don’t configure this policy, the APIs are still allowed.\r\n\r\nDisable this policy to block access to the APIs. The APIs will return an error when used.\r\n\r\nFor more information, see https://github.com/webmachinelearning/writing-assistance-apis/blob/main/README.md.",
+    "keywords": [
+      "BuiltInAIAPIsEnabled",
+      "Allow pages to use the built-in AI APIs.",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~extensions_mandatoryextensionsforinprivatenavigation",
+    "settingName": "Specify extensions users must allow in order to navigate using InPrivate mode",
+    "settingDescription": "This policy lets you specify a list of extension IDs that must be explicitly allowed by the user to run in InPrivate mode in order to enable InPrivate browsing.\r\n\r\nIf users do not allow all listed extensions to run in InPrivate mode, they will be unable to navigate using InPrivate.\r\n\r\nIf any extension in the list is not installed, InPrivate navigation is blocked.\r\n\r\nThis policy only applies when InPrivate mode is enabled. If InPrivate mode is disabled using the InPrivateModeAvailability policy, this policy has no effect.\r\n\r\nExample value:\r\n\r\nabcdefghijklmnopabcdefghijklmnop",
+    "keywords": [
+      "MandatoryExtensionsForInPrivateNavigation",
+      "Specify extensions users must allow in order to navigate using InPrivate mode",
+      "\\Microsoft Edge\\Extensions",
+      "Microsoft Edge\\Extensions",
+      "Extensions"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~extensions_mandatoryextensionsforinprivatenavigation",
+    "settingName": "Specify extensions users must allow in order to navigate using InPrivate mode (User)",
+    "settingDescription": "This policy lets you specify a list of extension IDs that must be explicitly allowed by the user to run in InPrivate mode in order to enable InPrivate browsing.\r\n\r\nIf users do not allow all listed extensions to run in InPrivate mode, they will be unable to navigate using InPrivate.\r\n\r\nIf any extension in the list is not installed, InPrivate navigation is blocked.\r\n\r\nThis policy only applies when InPrivate mode is enabled. If InPrivate mode is disabled using the InPrivateModeAvailability policy, this policy has no effect.\r\n\r\nExample value:\r\n\r\nabcdefghijklmnopabcdefghijklmnop",
+    "keywords": [
+      "MandatoryExtensionsForInPrivateNavigation",
+      "Specify extensions users must allow in order to navigate using InPrivate mode",
+      "\\Microsoft Edge\\Extensions",
+      "Microsoft Edge\\Extensions",
+      "Extensions"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~identity_edgeopenexternallinkswithappspecifiedprofile",
+    "settingName": "Prioritize App specified profile to open external links (User)",
+    "settingDescription": "This policy controls whether the profile specified by an app (such as Microsoft Teams or Outlook) is given priority when opening external links, instead of the profile selected in the Default profile for external links setting.\r\n\r\nPolicy behavior:\r\n1. Enabled or not configured: The app-specified profile is prioritized for opening external links. This behavior overrides the profile selected in settings, and the behavior defined by the EdgeDefaultProfileEnabled and EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled policies. If the app doesn't specify a profile, this policy has no effect.\r\n2. Disabled: The profile selected in settings—along with the EdgeDefaultProfileEnabled and EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled policies—will be used to determine which profile opens external links.\r\n\r\nNOTE:\r\nThis policy doesn't override user-defined preferences set through Automatic profile switching, including the Custom site switch setting located within it. If a user has configured specific sites to open in designated profiles, those preferences take precedence.",
+    "keywords": [
+      "EdgeOpenExternalLinksWithAppSpecifiedProfile",
+      "Prioritize App specified profile to open external links",
+      "\\Microsoft Edge\\Identity and sign-in",
+      "Microsoft Edge\\Identity and sign-in",
+      "Identity and sign-in"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_microsoft365copilotchaticonenabled",
+    "settingName": "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar",
+    "settingDescription": "For users in an Entra ID Microsoft Edge profile, this policy controls whether the Microsoft 365 Copilot Chat icon will be shown in the Microsoft Edge for Business toolbar for Microsoft 365 Copilot licensed and unlicensed users.\r\n\r\nThis policy only applies when users are accessing Copilot in the sidepane.\r\n\r\nIf the policy is enabled: Copilot will appear in the toolbar.\r\n\r\nIf the policy is disabled: Copilot will not appear in the toolbar.\r\n\r\nIf the policy is not configured: Otherwise, Copilot will show in the toolbar and users may enable or disable Copilot from showing by using the Show Copilot toggle in settings.\r\n\r\nWhen both this policy and 'HubsSidebarEnabled' (Show Hubs Sidebar) are configured, this policy takes precedence in determining whether Copilot appears in the toolbar. If this policy is not configured and 'HubsSidebarEnabled' is disabled, Copilot will remain hidden. In a future release, this policy will be the sole control for managing Copilot's visibility in the toolbar.",
+    "keywords": [
+      "Microsoft365CopilotChatIconEnabled",
+      "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_enableunsafeswiftshader",
+    "settingName": "Allow software WebGL fallback using SwiftShader (User)",
+    "settingDescription": "Controls whether SwiftShader is used as a fallback for WebGL when hardware GPU acceleration is not available.\r\n\r\nWhen enabled, Microsoft Edge will use SwiftShader to support WebGL on systems without GPU acceleration, such as headless environments or virtual machines.\r\n\r\nStarting in Microsoft Edge version 139, SwiftShader has been deprecated due to security concerns. As a result, WebGL context creation will fail in scenarios where SwiftShader would have been used. Enabling this policy allows organizations to temporarily defer the deprecation and continue using SwiftShader.\r\n\r\nIf you disable or do not configure this policy, WebGL context creation may fail on systems without hardware acceleration. This could cause web content relying on WebGL to function incorrectly if it does not handle context creation failures.\r\n\r\nNote: This is a temporary policy and will be removed in a future release.",
+    "keywords": [
+      "EnableUnsafeSwiftShader",
+      "Allow software WebGL fallback using SwiftShader",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_denieddomains",
     "settingName": "Denied Domains",
     "settingDescription": "Controls the domains and sub-domains the extension is not allowed to access. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
@@ -12265,7 +12443,7 @@
   {
     "settingId": "settings_item_mdmoptions_mdmoptions_promptusertoallowbootstraptokenforauthentication",
     "settingName": "Prompt User To Allow Bootstrap Token For Authentication",
-    "settingDescription": "If 'true', warn the user that they need to reboot into RecoveryOS and allow the MDM server to use the Bootstrap Token for authentication for certain sensitive operations; for example, enabling kernel extensions or installing certain types of software updates. Set this value to 'false' if your MDM server doesn't need to perform these operations. The value provided here overrides the value specified in MDM, and only applies when 'BootstrapTokenAllowedForAuthentication' is 'true' in the SecurityInfoResponse.SecurityInfo response. This value is available for Apple silicon in macOS 11 and later.",
+    "settingDescription": "If `true`, warn the user that they need to reboot into RecoveryOS and allow the MDM server to use the Bootstrap Token for authentication for certain sensitive operations; for example, enabling kernel extensions or installing certain types of software updates. Set this value to `false` if your MDM server doesn't need to perform these operations. The value provided here overrides the value specified in MDM, and only applies when `BootstrapTokenAllowedForAuthentication` is `true` in the `SecurityInfo` response. This value is available for Mac computers with Apple silicon in macOS 11 and later.",
     "keywords": [
       "MDM Options"
     ],
@@ -12274,7 +12452,7 @@
   {
     "settingId": "settings_item_mdmoptions_mdmoptions_activationlockallowedwhilesupervised",
     "settingName": "Activation Lock Allowed While Supervised",
-    "settingDescription": "If 'true', a supervised device registers itself with Activation Lock when the user enables Find My. This setting is available for supervised devices in iOS 7 and later, and macOS 10.15 and later.",
+    "settingDescription": "If `true`, a supervised device registers itself with Activation Lock when the user enables Find My. This setting is available for supervised devices in iOS 7 and later, and macOS 10.15 and later.",
     "keywords": [
       "MDM Options"
     ],
@@ -12283,7 +12461,7 @@
   {
     "settingId": "settings_item_bluetooth_enabled",
     "settingName": "Enabled",
-    "settingDescription": "If 'true', enable the Bluetooth setting. If 'false', disable the Bluetooth setting.",
+    "settingDescription": "If `true`, enable the Bluetooth setting. If `false`, disable the Bluetooth setting.",
     "keywords": [
       "Bluetooth"
     ],
@@ -13230,7 +13408,7 @@
   {
     "settingId": "com.apple.loginwindow_loginwindowtext",
     "settingName": "Login Window Text",
-    "settingDescription": "The text to display in the login window.",
+    "settingDescription": "The text to display in the Login Window.",
     "keywords": [
       "Login Window Behavior"
     ],
@@ -13890,6 +14068,15 @@
     "categoryName": "Restrictions"
   },
   {
+    "settingId": "com.apple.applicationaccess_deniediccidsforrcs",
+    "settingName": "Denied ICCIDs For RCS",
+    "settingDescription": "An array of strings representing ICCIDs of cellular plans. The device prevents use of any matching cellular networks with RCS messaging. The array must contain no more than 4 ICCID strings.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
     "settingId": "com.apple.applicationaccess_allowpasswordproximityrequests",
     "settingName": "Allow Password Proximity Requests",
     "settingDescription": "If false, disables requesting passwords from nearby devices. Requires a supervised device. Available in iOS 12 and later, and macOS 10.14 and later.",
@@ -13910,7 +14097,7 @@
   {
     "settingId": "com.apple.applicationaccess_allowvisualintelligencesummary",
     "settingName": "Allow Visual Intelligence Summary",
-    "settingDescription": "If 'false', the system disables visual intelligence summarization. Available in iOS 18.3 and later.",
+    "settingDescription": "If `false`, the system disables visual intelligence summarization. Available in iOS 18.3 and later.",
     "keywords": [
       "Restrictions"
     ],
@@ -13991,7 +14178,7 @@
   {
     "settingId": "com.apple.applicationaccess_allowsatelliteconnection",
     "settingName": "Allow Satellite Connection",
-    "settingDescription": "If 'false', the system prohibits the connection to and use of satellite services. Available in iOS 18.2 and later.",
+    "settingDescription": "If `false`, the system prohibits the connection to and use of satellite services. Available in iOS 18.2 and later.",
     "keywords": [
       "Restrictions"
     ],
@@ -14046,6 +14233,15 @@
     "settingId": "com.apple.applicationaccess_allowprintersharingmodification",
     "settingName": "Allow Printer Sharing Modification",
     "settingDescription": "If 'false', prevents modifying Printer Sharing setting in System Settings.\nAvailable in macOS 14 and later.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_deniediccidsforimessagefacetime",
+    "settingName": "Denied ICCIDs For iMessage And FaceTime",
+    "settingDescription": "An array of strings representing ICCIDs of cellular plans. The device prevents use of any matching cellular networks in iMessage and FaceTime. The array must contain no more than 4 ICCID strings.",
     "keywords": [
       "Restrictions"
     ],
@@ -14351,7 +14547,7 @@
   {
     "settingId": "com.apple.applicationaccess_allowvideoconferencingremotecontrol",
     "settingName": "Allow Video Conferencing Remote Control (Deprecated)",
-    "settingDescription": "When false, disables the ability for a remote FaceTime session to request control of the device.",
+    "settingDescription": "If `false`, disables the ability for a remote FaceTime session to request control of the device.",
     "keywords": [
       "Restrictions"
     ],
@@ -14603,7 +14799,7 @@
   {
     "settingId": "com.apple.mobiledevice.passwordpolicy_customregex",
     "settingName": "Custom Regex",
-    "settingDescription": "Specifies a regular expression, and its description, used to enforce password compliance. Use the simpler passcode restrictions whenever possible, and rely on regular expression matching only when necessary. Mistakes in regular expressions can lead to frustrating user experiences, such as unsatisfiable passcode policies, or policy descriptions that don't match the enforced policy.\nAvailable in macOS 14 and later.",
+    "settingDescription": "Specifies a regular expression, and its description, used to enforce password compliance. Use the simpler passcode restrictions whenever possible, and rely on regular expression matching only when necessary. Mistakes in regular expressions can lead to frustrating user experiences, such as unsatisfiable passcode policies, or policy descriptions that don't match the enforced policy.\n\nAvailable in macOS 14 and later.",
     "keywords": [
       "Passcode"
     ],
@@ -14710,7 +14906,7 @@
   },
   {
     "settingId": "com.apple.extensiblesso_extensiondata_allowsmartcard_kerberos",
-    "settingName": "allow Smart Card",
+    "settingName": "Allow Smart Card",
     "settingDescription": "If set to true, the user to switch the user interface to SmartCard mode. (macOS only)",
     "keywords": [
       "Extensible Single Sign On Kerberos"
@@ -14793,7 +14989,7 @@
   {
     "settingId": "passcode_changeatnextauth",
     "settingName": "Change At Next Auth",
-    "settingDescription": "If 'true', the system forces a password reset the next time the user tries to authenticate. If you set this key in a configuration in the system scope (device channel), the setting takes effect for all users, and admin authentication may fail until the admin user password is also reset.",
+    "settingDescription": "If `true`, the system forces a password reset the next time the user tries to authenticate. If you set this key in a configuration in the system scope (device channel), the setting takes effect for all users, and admin authentication may fail until the admin user password is also reset.",
     "keywords": [
       "Passcode",
       "Declarative Device Management (DDM)\\Passcode"
@@ -14803,7 +14999,7 @@
   {
     "settingId": "passcode_customregex_description",
     "settingName": "Description",
-    "settingDescription": "A dictionary with supported OS language IDs for the keys (such as 'en-US'), and values that represent a localized description of the policy that the regular expression enforces. Use the special 'default' key for languages that the dictionary doesn't contain.",
+    "settingDescription": "A dictionary with supported OS language IDs for the keys (such as `en-US`), and values that represent a localized description of the policy that the regular expression enforces. Use the special `default` key for languages that the dictionary doesn't contain.",
     "keywords": [
       "Passcode",
       "Declarative Device Management (DDM)\\Passcode"
@@ -14823,7 +15019,7 @@
   {
     "settingId": "passcode_requirealphanumericpasscode",
     "settingName": "Require Alphanumeric Passcode",
-    "settingDescription": "If 'true', the passcode needs to consist of at least one alphabetic character and at least one number.",
+    "settingDescription": "If `true`, the passcode needs to consist of at least one alphabetic character and at least one number.",
     "keywords": [
       "Passcode",
       "Declarative Device Management (DDM)\\Passcode"
@@ -15097,6 +15293,33 @@
     "categoryName": "User Experience"
   },
   {
+    "settingId": "safari_allowjavascript",
+    "settingName": "Allow Java Script",
+    "settingDescription": "If `false`, the system disables JavaScript in Safari.",
+    "keywords": [
+      "Safari Browser"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "safari_allowsummary",
+    "settingName": "Allow Summary",
+    "settingDescription": "If `false`, the system disables summarization of content in Safari.",
+    "keywords": [
+      "Safari Browser"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "safari_safari",
+    "settingName": "com.apple.configuration.safari.settings",
+    "settingDescription": "Synthetic Top Level Setting Group Collection",
+    "keywords": [
+      "Safari Browser"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "softwareupdate_deferrals_minorperiodindays",
     "settingName": "Minor Period In Days",
     "settingDescription": "Specifies the number of days to defer a minor OS software update on the device. It also defers major updates for iOS. When set, software updates only appear after the specified delay, following the release of the software update.",
@@ -15108,7 +15331,7 @@
   {
     "settingId": "softwareupdate_automaticactions_installosupdates",
     "settingName": "Install OS Updates",
-    "settingDescription": "Specifies whether automatic install of available OS updates can be controlled by the user:\n* \"Allowed\" - the user can enable or disable automatic installs.\n* \"AlwaysOn\" - automatic installs are always enabled.\n* \"AlwaysOff\" - automatic installs are always disabled.",
+    "settingDescription": "Specifies whether automatic install of available OS updates can be controlled by the user:\n* \"Allowed\" - the user can enable or disable automatic installs.\n* \"AlwaysOn\". - automatic installs are always enabled. This option requires automatic downloads to be turned on.\n* \"AlwaysOff\" - automatic installs are always disabled.",
     "keywords": [
       "Software Update Settings"
     ],
@@ -21849,6 +22072,67 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_edgehistoryaisearchenabled",
+    "settingName": "Control access to AI-enhanced search in History (User)",
+    "settingDescription": "This policy controls whether users can use AI-enhanced search in their browsing history in Microsoft Edge.\r\n\r\nWhen enabled or not configured, users can search using synonyms, natural language phrases, and minor spelling errors to find previously visited pages.\r\n\r\nWhen disabled, users can only perform exact match (verbatim) searches in their history.",
+    "keywords": [
+      "EdgeHistoryAISearchEnabled",
+      "Control access to AI-enhanced search in History",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_builtinaiapisenabled",
+    "settingName": "Allow pages to use the built-in AI APIs.",
+    "settingDescription": "Use this policy to control whether websites can access the built-in AI APIs, including the LanguageModel API, Summarization API, Writer API, and Rewriter API.\r\n\r\nEnable this policy to allow pages to use the APIs. If you don’t configure this policy, the APIs are still allowed.\r\n\r\nDisable this policy to block access to the APIs. The APIs will return an error when used.\r\n\r\nFor more information, see https://github.com/webmachinelearning/writing-assistance-apis/blob/main/README.md.",
+    "keywords": [
+      "BuiltInAIAPIsEnabled",
+      "Allow pages to use the built-in AI APIs.",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_onsecurityevententerpriseconnector",
+    "settingName": "Configuration policy for Microsoft Edge for Business Reporting Connectors",
+    "settingDescription": "Defines the Microsoft Edge for Business Reporting Connectors service settings that apply when a security event occurs in Microsoft Edge. These events include negative verdicts from Data Loss Prevention Connectors, password reuse, navigation to unsafe pages, and other security-sensitive actions.\r\n\r\nThe service_provider field specifies the reporting service provider. The enabled_event_names field lists the security events enabled for that provider.\r\n\r\nThis policy requires additional setup to take effect. For configuration guidance, see https://go.microsoft.com/fwlink/?linkid=2325446.\r\n\r\nExample value:\r\n\r\n[\r\n  {\r\n    \"enabled_event_names\": [\r\n      \"passwordChangedEvent\",\r\n      \"sensitiveDataEvent\"\r\n    ],\r\n    \"enabled_opt_in_events\": [\r\n      {\r\n        \"name\": \"loginEvent\",\r\n        \"url_patterns\": [\r\n          \"*\"\r\n        ]\r\n      },\r\n      {\r\n        \"name\": \"passwordBreachEvent\",\r\n        \"url_patterns\": [\r\n          \"example.com\",\r\n          \"other.example.com\"\r\n        ]\r\n      }\r\n    ],\r\n    \"service_provider\": \"microsoft\"\r\n  }\r\n]",
+    "keywords": [
+      "OnSecurityEventEnterpriseConnector",
+      "Configuration policy for Microsoft Edge for Business Reporting Connectors",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_enableunsafeswiftshader",
+    "settingName": "Allow software WebGL fallback using SwiftShader",
+    "settingDescription": "Controls whether SwiftShader is used as a fallback for WebGL when hardware GPU acceleration is not available.\r\n\r\nWhen enabled, Microsoft Edge will use SwiftShader to support WebGL on systems without GPU acceleration, such as headless environments or virtual machines.\r\n\r\nStarting in Microsoft Edge version 139, SwiftShader has been deprecated due to security concerns. As a result, WebGL context creation will fail in scenarios where SwiftShader would have been used. Enabling this policy allows organizations to temporarily defer the deprecation and continue using SwiftShader.\r\n\r\nIf you disable or do not configure this policy, WebGL context creation may fail on systems without hardware acceleration. This could cause web content relying on WebGL to function incorrectly if it does not handle context creation failures.\r\n\r\nNote: This is a temporary policy and will be removed in a future release.",
+    "keywords": [
+      "EnableUnsafeSwiftShader",
+      "Allow software WebGL fallback using SwiftShader",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~identity_edgeopenexternallinkswithappspecifiedprofile",
+    "settingName": "Prioritize App specified profile to open external links",
+    "settingDescription": "This policy controls whether the profile specified by an app (such as Microsoft Teams or Outlook) is given priority when opening external links, instead of the profile selected in the Default profile for external links setting.\r\n\r\nPolicy behavior:\r\n1. Enabled or not configured: The app-specified profile is prioritized for opening external links. This behavior overrides the profile selected in settings, and the behavior defined by the EdgeDefaultProfileEnabled and EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled policies. If the app doesn't specify a profile, this policy has no effect.\r\n2. Disabled: The profile selected in settings—along with the EdgeDefaultProfileEnabled and EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled policies—will be used to determine which profile opens external links.\r\n\r\nNOTE:\r\nThis policy doesn't override user-defined preferences set through Automatic profile switching, including the Custom site switch setting located within it. If a user has configured specific sites to open in designated profiles, those preferences take precedence.",
+    "keywords": [
+      "EdgeOpenExternalLinksWithAppSpecifiedProfile",
+      "Prioritize App specified profile to open external links",
+      "\\Microsoft Edge\\Identity and sign-in",
+      "Microsoft Edge\\Identity and sign-in",
+      "Identity and sign-in"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_alloweddomains",
     "settingName": "Allowed Domains",
     "settingDescription": "Controls the domains and sub-domains the extension is granted access to. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
@@ -24330,7 +24614,7 @@
   {
     "settingId": "enforcement_targetbuildversion",
     "settingName": "Target Build Version",
-    "settingDescription": "The target build version to update the device to by the appropriate time, for example, '20A242'. The system uses the build version for testing during seeding periods. The build version can include a supplemental version identifier, for example, '20A242a'. If the build version isn't consistent with the target OS version specified in the 'TargetOSVersion' key, the target OS version takes precedence.",
+    "settingDescription": "The target build version to update the device to by the appropriate time, for example, `20A242`. The system uses the build version for testing during seeding periods. The build version can include a supplemental version identifier, for example, `20A242a`. If the build version isn't consistent with the target OS version specified in the `TargetOSVersion` key, the target OS version takes precedence.",
     "keywords": [
       "Software Update"
     ],
@@ -24532,7 +24816,7 @@
   {
     "settingId": "com.apple.loginwindow_showinputmenu",
     "settingName": "Show Input Menu",
-    "settingDescription": "If 'true', the system shows the Input Menu in the login window.",
+    "settingDescription": "If `true`, the system shows the Input Menu in the Login Window.",
     "keywords": [
       "Login Window Behavior"
     ],
@@ -24782,7 +25066,7 @@
   {
     "settingId": "com.apple.domains_crosssitetrackingpreventionrelaxedapps",
     "settingName": "Cross Site Tracking Prevention Relaxed Apps",
-    "settingDescription": "An array of up to 10 strings representing app bundle-ids. Apps matching the bundle-ids listed here will have relaxed enforcement of cross-site tracking prevention for the domains listed in the 'CrossSiteTrackingPreventionRelaxedDomains' key.",
+    "settingDescription": "An array of up to 10 strings representing app bundle-ids. Apps matching the bundle-ids listed here have relaxed enforcement of cross-site tracking prevention for the domains listed in `CrossSiteTrackingPreventionRelaxedDomains`.\n\nAvailable in iOS 18 and later and macOS 15 and later.",
     "keywords": [
       "Domains"
     ],
@@ -25063,7 +25347,7 @@
   {
     "settingId": "com.apple.applicationaccess_allownotestranscriptionsummary",
     "settingName": "Allow Notes Transcription Summary",
-    "settingDescription": "If 'false', disables transcription summarization in Notes. Available in iOS 18.3 and later, and macOS 15.3 and later.",
+    "settingDescription": "If `false`, disables transcription summarization in Notes. Available in iOS 18.3 and later, and macOS 15.3 and later.",
     "keywords": [
       "Restrictions"
     ],
@@ -25234,7 +25518,7 @@
   {
     "settingId": "com.apple.applicationaccess_allowedexternalintelligenceworkspaceids",
     "settingName": "Allowed External Intelligence Workspace IDs",
-    "settingDescription": "An array of strings, but currently restricted to a single element. If present, Apple Intelligence only allows the given external integration workspace ID to be used, and requires a sign-in to make requests; the user will be required to sign in to integrations that support signing in. Multiple payloads combine using an intersect operation. This means the allowed set of workspace IDs can become the empty set if conflicting values are specified in multiple payloads.",
+    "settingDescription": "An array of strings, but currently restricted to a single element. If present, Apple Intelligence allows use of only the given external integration workspace ID, and requires a sign-in to make requests. The user is required to sign in to integrations that support signing in. Multiple payloads combine using an intersect operation. This means the allowed set of workspace IDs can become the empty set if multiple payloads specify conflicting values. Available in iOS 18.3 and later, macOS 15.3 and later, and visionOS 2.4 and later.",
     "keywords": [
       "Restrictions"
     ],
@@ -25442,6 +25726,15 @@
     "settingId": "com.apple.applicationaccess_allowmailprivacyprotection",
     "settingName": "Allow Mail Privacy Protection",
     "settingDescription": "If false, disables Mail Privacy Protection on the device. Available in iOS 15.2 and later.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowsafarihistoryclearing",
+    "settingName": "Allow Safari History Clearing",
+    "settingDescription": "If `false`, the system disables the ability to clear browsing history in Safari. Available in iOS 26 and later, macOS 26 and later, and visionOS 26 and later.",
     "keywords": [
       "Restrictions"
     ],
@@ -25799,6 +26092,15 @@
     "categoryName": "Authentication"
   },
   {
+    "settingId": "com.apple.extensiblesso_extensiondata_allowplatformssoauthfallback_kerberos",
+    "settingName": "Allow Platform SSO OAuth Fallback",
+    "settingDescription": "If `true` and `usePlatformSSOTGT` is `true`, the system allows the user to manually sign in. Available in macOS 13 and later.",
+    "keywords": [
+      "Extensible Single Sign On Kerberos"
+    ],
+    "categoryName": "Authentication"
+  },
+  {
     "settingId": "com.apple.extensiblesso_extensiondata_credentialusemode_kerberos",
     "settingName": "Credential Use Mode",
     "settingDescription": "This setting affects how the Kerberos Extension credential is used by other processes.",
@@ -25882,7 +26184,7 @@
   {
     "settingId": "passcode_customregex_description_generickey_keytobereplaced",
     "settingName": "Description",
-    "settingDescription": "A dictionary with supported OS language IDs for the keys (such as 'en-US'), and values that represent a localized description of the policy that the regular expression enforces. Use the special 'default' key for languages that the dictionary doesn't contain.",
+    "settingDescription": "A dictionary with supported OS language IDs for the keys (such as `en-US`), and values that represent a localized description of the policy that the regular expression enforces. Use the special `default` key for languages that the dictionary doesn't contain.",
     "keywords": [
       "Passcode",
       "Declarative Device Management (DDM)\\Passcode"
@@ -25912,7 +26214,7 @@
   {
     "settingId": "passcode_minimumcomplexcharacters",
     "settingName": "Minimum Complex Characters",
-    "settingDescription": "Specifies the minimum number of complex characters in the password. A complex character is a character other than a number or a letter, such as '&', '%', '$', and '#'.",
+    "settingDescription": "Specifies the minimum number of complex characters in the password. A complex character is a character other than a number or a letter, such as `&`, `%`, `$`, and `#`.",
     "keywords": [
       "Passcode",
       "Declarative Device Management (DDM)\\Passcode"
@@ -26117,7 +26419,7 @@
   {
     "settingId": "com.apple.fileproviderd_managementknownfoldersyncingallowlist",
     "settingName": "Management Known Folder Syncing Allow List",
-    "settingDescription": "An array of app identifiers for apps that are allowed to utilize File Provider extension desktop and documents synchronization. If present, and `ManagementAllowsKnownFolderSyncing` is set to `true`, the device allows only the apps in this list to use desktop and documents synchronization. This key is ignored if `ManagementAllowsKnownFolderSyncing` is set to `false`. This setting does not impact the ability for apps to utilize File Provider extension for volume access. The format of the app identifiers is \"Bundle.Identifier (TeamIdentifier)\".",
+    "settingDescription": "An array of strings representing the composed identifiers of apps. The device allows the corresponding apps to use File Provider extension desktop and documents synchronization. If present, and `ManagementAllowsKnownFolderSyncing` is set to `true`, the device allows only the apps in this list to use desktop and documents synchronization. This key is ignored if `ManagementAllowsKnownFolderSyncing` is set to `false`. This setting does not impact the ability for apps to use File Provider extension volume access. The format of the app identifiers is \"Bundle-ID (Team-ID)\", for example `com.example.app (ABCD1234)`.",
     "keywords": [
       "File Provider"
     ],
@@ -26286,8 +26588,53 @@
     "categoryName": "User Experience"
   },
   {
+    "settingId": "safari_newtabstartpage_extensionidentifier",
+    "settingName": "Extension Identifier",
+    "settingDescription": "The composed identifier of the extension that provides the start page. The required format is \"Identifier (TeamIdentifier)\", for example \"com.example.app (ABCD1234)\". Required when setting `PageType` to `Extension`.",
+    "keywords": [
+      "Safari Browser"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "safari_allowhistoryclearing",
+    "settingName": "Allow History Clearing",
+    "settingDescription": "If `false`, the system disables clearing history in Safari.",
+    "keywords": [
+      "Safari Browser"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "safari_allowpopups",
+    "settingName": "Allow Popups",
+    "settingDescription": "If `false`, the system disables popups in Safari.",
+    "keywords": [
+      "Safari Browser"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "safari_allowprivatebrowsing",
+    "settingName": "Allow Private Browsing",
+    "settingDescription": "If `false`, the system disables private browsing in Safari.",
+    "keywords": [
+      "Safari Browser"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "safari_newtabstartpage_homepageurl",
+    "settingName": "Homepage URL",
+    "settingDescription": "The URL of the homepage which needs to start with `https://` or `http://`. Required when setting `PageType` to `Home`.",
+    "keywords": [
+      "Safari Browser"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "softwareupdate_beta_programenrollment",
-    "settingName": "Program Enrollment",
+    "settingName": "Program Enrollment (Unsupported)",
     "settingDescription": "Specifies whether beta program enrollment can be controlled by the user in software update settings UI:\n* \"Allowed\" - the user can enroll in any applicable beta programs associated with their\n  logged in Apple ID. If the `OfferPrograms` key is present, then the programs listed in\n  that key are also presented to the user.\n* \"AlwaysOn\" - the beta programs specified by the organization are used, and the user\n  is not be able to enroll in a beta program using their logged in Apple ID. The device\n  is automatically enrolled into the beta program specified by the `RequireProgram` key if\n  it is present. Otherwise, the programs listed in the `OfferPrograms` key are\n  presented to the user to choose which to enroll with.\n* \"AlwaysOff\" - The device is not allowed to enroll in any beta programs. The device is\n  removed from any beta programs, if already enrolled.",
     "keywords": [
       "Software Update Settings"
@@ -26296,7 +26643,7 @@
   },
   {
     "settingId": "softwareupdate_beta_requireprogram",
-    "settingName": "Require Program",
+    "settingName": "Require Program (Unsupported)",
     "settingDescription": "The device automatically enrolls in this beta program. This key must only be present if the `ProgramEnrollment` key is set to `AlwaysOn`. The `OfferPrograms` key must not be present if this key is present.",
     "keywords": [
       "Software Update Settings"
@@ -32985,6 +33332,55 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_prefetchwithserviceworkerenabled",
+    "settingName": "Allow SpeculationRules prefetch for ServiceWorker-controlled URLs (User)",
+    "settingDescription": "Controls whether SpeculationRules prefetch requests are allowed for\r\nServiceWorker-controlled URLs.\r\n\r\nStarting with Microsoft Edge version 138,\r\nprefetch requests to ServiceWorker-controlled URLs are allowed by default when\r\nthe PrefetchServiceWorker feature is enabled.\r\n\r\nIf this policy is enabled or not configured, that default behavior is used.\r\n\r\nTo restore the legacy behavior from versions prior to 138, where prefetch requests\r\nto ServiceWorker-controlled URLs were blocked, set this policy to disabled.\r\n\r\nThis policy is intended to be temporary and will be removed in the future.",
+    "keywords": [
+      "PrefetchWithServiceWorkerEnabled",
+      "Allow SpeculationRules prefetch for ServiceWorker-controlled URLs",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_tls13earlydataenabled",
+    "settingName": "Control whether TLS 1.3 Early Data is enabled in Microsoft Edge",
+    "settingDescription": "This policy controls whether TLS 1.3 Early Data is enabled in Microsoft Edge.\r\n\r\nTLS 1.3 Early Data is an extension that allows an HTTP request to be sent in parallel with the TLS handshake. When enabled and supported by the server, this can improve page load performance.\r\n\r\nEnabled – Microsoft Edge enables TLS 1.3 Early Data.\r\n\r\nDisabled – Microsoft Edge disables TLS 1.3 Early Data.\r\n\r\nNot configured – Microsoft Edge follows the default rollout process for TLS 1.3 Early Data.\r\n\r\nNOTE: When this feature is enabled, whether TLS 1.3 Early Data is used depends on server support. Most modern TLS servers and middleware can handle or reject Early Data without interrupting the connection. However, improperly implemented TLS stacks may cause connection failures. If such issues occur, contact the device or software vendor for a resolution.\r\n\r\nThis policy is temporary and intended to help test for compatibility issues. It may be removed in a future release once the feature is fully rolled out.",
+    "keywords": [
+      "TLS13EarlyDataEnabled",
+      "Control whether TLS 1.3 Early Data is enabled in Microsoft Edge",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_microsoft365copilotchaticonenabled",
+    "settingName": "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar (User)",
+    "settingDescription": "For users in an Entra ID Microsoft Edge profile, this policy controls whether the Microsoft 365 Copilot Chat icon will be shown in the Microsoft Edge for Business toolbar for Microsoft 365 Copilot licensed and unlicensed users.\r\n\r\nThis policy only applies when users are accessing Copilot in the sidepane.\r\n\r\nIf the policy is enabled: Copilot will appear in the toolbar.\r\n\r\nIf the policy is disabled: Copilot will not appear in the toolbar.\r\n\r\nIf the policy is not configured: Otherwise, Copilot will show in the toolbar and users may enable or disable Copilot from showing by using the Show Copilot toggle in settings.\r\n\r\nWhen both this policy and 'HubsSidebarEnabled' (Show Hubs Sidebar) are configured, this policy takes precedence in determining whether Copilot appears in the toolbar. If this policy is not configured and 'HubsSidebarEnabled' is disabled, Copilot will remain hidden. In a future release, this policy will be the sole control for managing Copilot's visibility in the toolbar.",
+    "keywords": [
+      "Microsoft365CopilotChatIconEnabled",
+      "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~extensions_mandatoryextensionsforinprivatenavigation_mandatoryextensionsforinprivatenavigationdesc",
+    "settingName": "Specify extensions users must allow in order to navigate using InPrivate mode (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "MandatoryExtensionsForInPrivateNavigation",
+      "Specify extensions users must allow in order to navigate using InPrivate mode",
+      "\\Microsoft Edge\\Extensions",
+      "Microsoft Edge\\Extensions",
+      "Extensions"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "extensionsettings_managedextensions",
     "settingName": "Managed Extensions",
     "settingDescription": "Extensions being managed",
@@ -33186,7 +33582,7 @@
   },
   {
     "settingId": "com.apple.appstore_restrict-store-disable-app-adoption",
-    "settingName": "restrict-store-disable-app-adoption",
+    "settingName": "Restrict-store-disable-app-adoption",
     "settingDescription": "If true, disables app adoption by users. Available in macOS 10.10 and later.",
     "keywords": [
       "App Store"
@@ -34465,7 +34861,7 @@
   {
     "settingId": "settings_item_mdmoptions",
     "settingName": "MDM Options",
-    "settingDescription": "A dictionary that contains settings related to the MDM protocol. This setting doesn't support User Enrollment, and is available in iOS 7 and later, and macOS 10.15 and later.",
+    "settingDescription": "A dictionary that contains settings related to the MDM protocol. This setting doesn't support user enrollment. Available in iOS 7 and later, macOS 10.15 and later, and visionOS 2 and later.",
     "keywords": [
       "MDM Options"
     ],
@@ -34474,7 +34870,7 @@
   {
     "settingId": "settings_item_bluetooth",
     "settingName": "Bluetooth",
-    "settingDescription": "A dictionary that contains Bluetooth settings. This setting requires the Network Information access right, doesn't support User Enrollment, is only available on supervised devices, and is available in iOS 11.3 and later, and macOS 10.13.4 and later.",
+    "settingDescription": "A dictionary that contains Bluetooth settings. This setting requires the Network Information access right, doesn't support user enrollment, and is available only on supervised devices. Available in iOS 11.3 and later, and macOS 10.13.4 and later.",
     "keywords": [
       "Bluetooth"
     ],
@@ -34610,7 +35006,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways_item_aereceiveridentifiertype",
     "settingName": "AE Receiver Identifier Type",
-    "settingDescription": "The type of AEReceiverIdentifier value, either 'bundleID' or 'path'. This setting is required for AppleEvents service; not valid for other services.",
+    "settingDescription": "The type of AEReceiverIdentifier value, either `bundleID` or `path`. This setting is required for AppleEvents service; not valid for other services.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -34736,7 +35132,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways_item_allowed",
     "settingName": "Allowed",
-    "settingDescription": "If 'true', access is granted; otherwise, the process doesn't have access. The user isn't prompted and can't change this value.\nEvery payload needs to include either 'Authorization' or 'Allowed', but not both.",
+    "settingDescription": "If `true`, access is granted; otherwise, the process doesn't have access. The user isn't prompted and can't change this value.\n\n> Note:\n> Every payload needs to include either `Authorization` or `Allowed`, but not both.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -34781,7 +35177,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways_item_staticcode",
     "settingName": "Static Code",
-    "settingDescription": "If 'true', statically validate the code requirement. Used only if the process invalidates its dynamic code signature.",
+    "settingDescription": "If `true`, statically validate the code requirement. Used only if the process invalidates its dynamic code signature.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -36335,6 +36731,15 @@
     "categoryName": "Restrictions"
   },
   {
+    "settingId": "com.apple.applicationaccess_allowsafariprivatebrowsing",
+    "settingName": "Allow Safari Private Browsing",
+    "settingDescription": "If `false`, the system disables the ability to use private browsing in Safari. Available in iOS 26 and later, macOS 26 and later, and visionOS 26 and later.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
     "settingId": "com.apple.applicationaccess_enforcedfingerprinttimeout",
     "settingName": "Enforced Fingerprint Timeout",
     "settingDescription": "The value, in seconds, after which the fingerprint unlock will require a password to authenticate. The default value is 48 hours.",
@@ -36616,7 +37021,7 @@
   {
     "settingId": "com.apple.mobiledevice.passwordpolicy_customregex_passwordcontentdescription_generickey_keytobereplaced",
     "settingName": "Password Content Description",
-    "settingDescription": "Contains a dictionary of keys for supported OS language IDs (for example, “en-US”), and whose values represent a localized description of the policy enforced by the regular expression. Use the special 'default' key can for languages that aren't contained in the dictionary.",
+    "settingDescription": "Contains a dictionary of keys for supported OS language IDs (for example, \"en-US\"), and whose values represent a localized description of the policy enforced by the regular expression. Use the special `default` key can for languages that aren't contained in the dictionary.",
     "keywords": [
       "Passcode"
     ],
@@ -36643,7 +37048,7 @@
   {
     "settingId": "com.apple.mobiledevice.passwordpolicy_customregex_passwordcontentdescription",
     "settingName": "Password Content Description",
-    "settingDescription": "Contains a dictionary of keys for supported OS language IDs (for example, “en-US”), and whose values represent a localized description of the policy enforced by the regular expression. Use the special 'default' key can for languages that aren't contained in the dictionary.",
+    "settingDescription": "Contains a dictionary of keys for supported OS language IDs (for example, \"en-US\"), and whose values represent a localized description of the policy enforced by the regular expression. Use the special `default` key can for languages that aren't contained in the dictionary.",
     "keywords": [
       "Passcode"
     ],
@@ -36732,7 +37137,7 @@
   },
   {
     "settingId": "com.apple.extensiblesso_extensiondata_identityissuerautoselectfilter_kerberos",
-    "settingName": "identity Issuer Auto Select Filter",
+    "settingName": "Identity Issuer Auto Select Filter",
     "settingDescription": "A string with wildcards that can use used to filter the list of available SmartCards by issuer.  e.g  \"*My CA2*\".  If there is one remaining, it will be auto-selected.  If there more than one remaining, then the list is shorter.  (macOS only)",
     "keywords": [
       "Extensible Single Sign On Kerberos"
@@ -36750,7 +37155,7 @@
   },
   {
     "settingId": "com.apple.extensiblesso_extensiondata_startinsmartcardmode_kerberos",
-    "settingName": "start In Smart Card Mode",
+    "settingName": "Start In Smart Card Mode",
     "settingDescription": "If set to true, the user interface will start in SmartCard mode. (macOS only)",
     "keywords": [
       "Extensible Single Sign On Kerberos"
@@ -36795,7 +37200,7 @@
   },
   {
     "settingId": "com.apple.extensiblesso_extensiondata_allowpassword_kerberos",
-    "settingName": "allow Password",
+    "settingName": "Allow Password",
     "settingDescription": "If set to true, the user to switch the user interface to Password mode. (macOS only)",
     "keywords": [
       "Extensible Single Sign On Kerberos"
@@ -36948,7 +37353,7 @@
   {
     "settingId": "com.apple.extensiblesso_platformsso_authorizationgroups_generickey_keytobereplaced",
     "settingName": "Authorization Groups",
-    "settingDescription": "The pairing of Authorization Rights to group names. The system updates the Authorization Right to use the group when used.",
+    "settingDescription": "The pairing of Authorization Rights to group names. When using this, the system updates the Authorization Right to use the group.",
     "keywords": [
       "Extensible Single Sign On (SSO)"
     ],
@@ -37012,7 +37417,7 @@
   {
     "settingId": "com.apple.fileproviderd_managementallowsknownfoldersyncing",
     "settingName": "Management Allows Known Folder Syncing",
-    "settingDescription": "If 'false', the device prevents the File Provider extension using desktop and documents synchronization in any app. If 'true', the device allows File Provider extension desktop and documents synchronization. This does not impact the ability for apps to utilize the File Provider extension for file and folder syncing with remote storage.",
+    "settingDescription": "If `false`, the device prevents the File Provider extension from using desktop and documents synchronization in any app. This does not impact the ability for apps to utilize the File Provider extension for file and folder syncing with remote storage.",
     "keywords": [
       "File Provider"
     ],
@@ -37136,8 +37541,26 @@
     "categoryName": "User Experience"
   },
   {
+    "settingId": "safari_allowdisablingfraudwarning",
+    "settingName": "Allow Disabling Fraud Warning",
+    "settingDescription": "If `false`, the system forces fraud warnings on in Safari.",
+    "keywords": [
+      "Safari Browser"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "safari_newtabstartpage",
+    "settingName": "New Tab Start Page",
+    "settingDescription": "Sets the start page for new tabs in Safari.",
+    "keywords": [
+      "Safari Browser"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "softwareupdate_beta_offerprograms_item_token",
-    "settingName": "Token",
+    "settingName": "Token (Unsupported)",
     "settingDescription": "The Apple Business Manager or Apple School Manager seeding service token for the organization the MDM server is part of. This token is used to enroll the device in the corresponding beta program.",
     "keywords": [
       "Software Update Settings"
@@ -37146,7 +37569,7 @@
   },
   {
     "settingId": "softwareupdate_beta_offerprograms",
-    "settingName": "Beta (Unsupported)",
+    "settingName": "Offer Programs (Unsupported)",
     "settingDescription": "Configurations for controlling or specifying the beta programs associated with a device. Only applicable on Supervised devices with iOS 18+ and MacOS 15+",
     "keywords": [
       "Software Update Settings"
@@ -37210,7 +37633,7 @@
   {
     "settingId": "com.apple.webcontent-filter_hidedenylisturls",
     "settingName": "Hide Deny List UR Ls",
-    "settingDescription": "Hide the DenyListURLs in profiles UI in Settings > General > VPN & Device Management > profiles details.",
+    "settingDescription": "If `true`, the device hides the `DenyListURLs` item in the profiles that display in Settings > General > VPN & Device Management.",
     "keywords": [
       "Web Content Filter"
     ],

@@ -59,7 +59,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "",
     "name": "SecurityAllowDebuggingFeatures",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp",
@@ -164,7 +164,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": null,
     "name": "BluetoothBlocked",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.bluetoothblocked",
@@ -264,7 +264,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "",
     "name": "AppsBlockInstallFromUnknownSources",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.appsblockinstallfromunknownsourcesaosp",
@@ -296,6 +296,396 @@
           "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
           "settingValueTemplateReference": null,
           "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.personalprofileappsallowinstallfromunknownsources",
+    "settingName": "Allow users to enable app installation from unknown sources in the personal profile",
+    "settingDescription": "If 'True, allows users to install apps from unknown sources in the personal profile. It allows users to install apps from sources other than the Google Play Store. If 'False', Intune doesn't change or update this setting. By default, the OS might prevent users from installing apps from unknown sources in the personal profile. Available for corporate-owned work profile devices (at personal profile level).",
+    "categoryId": "990880db-3f64-4436-ab4a-d7d5181dfa5d",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Personal",
+      "Profile",
+      "Apps",
+      "Allow",
+      "Install",
+      "From",
+      "Unknown",
+      "Sources",
+      "Personal Profile"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/personalProfileAppsAllowInstallFromUnknownSources/",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.android.devicerestrictionpolicy.personalprofileappsallowinstallfromunknownsources_false",
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.personalprofileappsallowinstallfromunknownsources_true",
+        "description": "true",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.personalprofileappsallowinstallfromunknownsources_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638911389208139001",
+    "helpText": null,
+    "name": "PersonalProfileAppsAllowInstallFromUnknownSources",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.personalprofileappsallowinstallfromunknownsources",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.personalprofileappsallowinstallfromunknownsources_true",
+        "description": "true",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.personalprofileappsallowinstallfromunknownsources_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.appsallowinstallfromunknownsources",
+    "settingName": "Allow installation from unknown sources",
+    "settingDescription": "If 'True', allows users to turn on Unknown sources. This setting allows apps to install from unknown sources, including sources other than the Google Play Store. It allows users to side-load apps on the device using means other than the Google Play Store. If 'False', Intune doesn't change or update this setting. By default, the OS might prevent users from turning on Unknown sources. Available for fully managed, dedicated and corporate-owned work profile devices.",
+    "categoryId": "2257f7e1-3e88-4d4d-a666-437bbe42baca",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Apps",
+      "Allow",
+      "Install",
+      "From",
+      "Unknown",
+      "Sources",
+      "Applications"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/appsAllowInstallFromUnknownSources/",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.android.devicerestrictionpolicy.appsallowinstallfromunknownsources_false",
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.appsallowinstallfromunknownsources_true",
+        "description": "true",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.appsallowinstallfromunknownsources_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638911389208139001",
+    "helpText": null,
+    "name": "AppsAllowInstallFromUnknownSources",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.appsallowinstallfromunknownsources",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.appsallowinstallfromunknownsources_true",
+        "description": "true",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.appsallowinstallfromunknownsources_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.appsautoupdatepolicy",
+    "settingName": "App auto-updates (work profile-level)",
+    "settingDescription": "Define the auto update policy for requests for runtime permissions. Available for fully managed, dedicated and corporate-owned work profile (at work profile level) devices.",
+    "categoryId": "2257f7e1-3e88-4d4d-a666-437bbe42baca",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Apps",
+      "Auto",
+      "Update",
+      "Policy",
+      "Applications"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/AppsAutoUpdatePolicy/",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.android.devicerestrictionpolicy.appsautoupdatepolicy_notconfigured",
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.appsautoupdatepolicy_notconfigured",
+        "description": "Not configured; this value is ignored.",
+        "helpText": null,
+        "name": "notConfigured",
+        "displayName": "Not configured",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "APP_AUTO_UPDATE_POLICY_UNSPECIFIED"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.appsautoupdatepolicy_userchoice",
+        "description": "The user can control auto-updates.",
+        "helpText": null,
+        "name": "userChoice",
+        "displayName": "User choice",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "CHOICE_TO_THE_USER"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.appsautoupdatepolicy_never",
+        "description": "Apps are never auto-updated.",
+        "helpText": null,
+        "name": "never",
+        "displayName": "Never",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "NEVER"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.appsautoupdatepolicy_wifionly",
+        "description": "Apps are auto-updated over Wi-Fi only.",
+        "helpText": null,
+        "name": "wiFiOnly",
+        "displayName": "Wi-Fi only",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "WIFI_ONLY"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.appsautoupdatepolicy_always",
+        "description": "Apps are auto-updated at any time. Data charges may apply.",
+        "helpText": null,
+        "name": "always",
+        "displayName": "Always",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "ALWAYS"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638911389208139001",
+    "helpText": "",
+    "name": "AppsAutoUpdatePolicy",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.appsautoupdatepolicy",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.appsautoupdatepolicy_notconfigured",
+        "description": "Not configured; this value is ignored.",
+        "helpText": null,
+        "name": "notConfigured",
+        "displayName": "Not configured",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "APP_AUTO_UPDATE_POLICY_UNSPECIFIED"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.appsautoupdatepolicy_userchoice",
+        "description": "The user can control auto-updates.",
+        "helpText": null,
+        "name": "userChoice",
+        "displayName": "User choice",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "CHOICE_TO_THE_USER"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.appsautoupdatepolicy_never",
+        "description": "Apps are never auto-updated.",
+        "helpText": null,
+        "name": "never",
+        "displayName": "Never",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "NEVER"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.appsautoupdatepolicy_wifionly",
+        "description": "Apps are auto-updated over Wi-Fi only.",
+        "helpText": null,
+        "name": "wiFiOnly",
+        "displayName": "Wi-Fi only",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "WIFI_ONLY"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.appsautoupdatepolicy_always",
+        "description": "Apps are auto-updated at any time. Data charges may apply.",
+        "helpText": null,
+        "name": "always",
+        "displayName": "Always",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "ALWAYS"
         },
         "dependentOn": [],
         "dependedOnBy": []
@@ -341,7 +731,7 @@
     },
     "defaultValue": null,
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "Enter a number (1-24)",
     "name": "PasswordPreviousPasswordCountToBlock",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordpreviouspasswordcounttoblock",
@@ -392,7 +782,7 @@
       "value": 1
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "Enter a number (1-16)",
     "name": "PasswordMinimumLowerCaseCharacters",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
@@ -443,7 +833,7 @@
       "value": 1
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "Enter a number (1-16)",
     "name": "PasswordMinimumUpperCaseCharacters",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
@@ -493,7 +883,7 @@
       "value": 11
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "Enter a number (4-11)",
     "name": "PasswordSignInFailureCountBeforeFactoryReset",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordsigninfailurecountbeforefactoryreset",
@@ -563,7 +953,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": null,
     "name": "PasswordBlockKeyguard",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordblockkeyguard",
@@ -664,7 +1054,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": null,
     "name": "SecurityCommonCriteriaModeEnabled",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.securitycommoncriteriamodeenabled",
@@ -763,7 +1153,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "",
     "name": "CameraBlocked",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.camerablockedaosp",
@@ -863,7 +1253,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "",
     "name": "ScreenCaptureBlocked",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.screencaptureblockedaosp",
@@ -962,7 +1352,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "",
     "name": "BluetoothBlockConfiguration",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.bluetoothblockconfigurationaosp",
@@ -994,6 +1384,109 @@
           "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
           "settingValueTemplateReference": null,
           "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.enterprisedisplaynamevisibility",
+    "settingName": "Hide organization name",
+    "settingDescription": "If 'True', prevents the enterprise name from being displayed on the device (such as on the lock screen). If 'False', Intune doesn't change or update this setting. By default, the OS displays the enterprise name set during device setup. Available for fully managed and corporate-owned work profile devices.",
+    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Company",
+      "company name",
+      "organization name",
+      "organization",
+      "brand",
+      "label",
+      "hide organization name",
+      "General"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/enterpriseDisplayNameVisibility/",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.android.devicerestrictionpolicy.enterprisedisplaynamevisibility_false",
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.enterprisedisplaynamevisibility_false",
+        "description": "False",
+        "helpText": null,
+        "name": "ENTERPRISE_DISPLAY_NAME_VISIBLE",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "ENTERPRISE_DISPLAY_NAME_VISIBLE"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.enterprisedisplaynamevisibility_true",
+        "description": "True",
+        "helpText": null,
+        "name": "ENTERPRISE_DISPLAY_NAME_HIDDEN",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "ENTERPRISE_DISPLAY_NAME_HIDDEN"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638911389208139001",
+    "helpText": null,
+    "name": "EnterpriseDisplayNameVisibility",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.enterprisedisplaynamevisibility",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.enterprisedisplaynamevisibility_false",
+        "description": "False",
+        "helpText": null,
+        "name": "ENTERPRISE_DISPLAY_NAME_VISIBLE",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "ENTERPRISE_DISPLAY_NAME_VISIBLE"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.enterprisedisplaynamevisibility_true",
+        "description": "True",
+        "helpText": null,
+        "name": "ENTERPRISE_DISPLAY_NAME_HIDDEN",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "ENTERPRISE_DISPLAY_NAME_HIDDEN"
         },
         "dependentOn": [],
         "dependedOnBy": []
@@ -1061,7 +1554,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "",
     "name": "WifiBlockEditConfigurations",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurationsaosp",
@@ -1160,7 +1653,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "",
     "name": "FactoryResetBlocked",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.factoryresetblockedaosp",
@@ -1192,6 +1685,207 @@
           "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
           "settingValueTemplateReference": null,
           "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.personalprofilecamerablocked",
+    "settingName": "Block camera",
+    "settingDescription": "If 'True', prevents access to the camera during personal use. If 'False', Intune doesn't change or update this setting. By default, the OS might allow using the camera in the personal profile. Available for corporate-owned work profile devices (at personal profile level).",
+    "categoryId": "990880db-3f64-4436-ab4a-d7d5181dfa5d",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Personal",
+      "Profile",
+      "Camera",
+      "Blocked",
+      "Personal Profile"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/personalProfileCameraBlocked/",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.android.devicerestrictionpolicy.personalprofilecamerablocked_false",
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.personalprofilecamerablocked_true",
+        "description": "true",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.personalprofilecamerablocked_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638911389208139001",
+    "helpText": null,
+    "name": "PersonalProfileCameraBlocked",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.personalprofilecamerablocked",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.personalprofilecamerablocked_true",
+        "description": "true",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.personalprofilecamerablocked_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.personalprofilescreencaptureblocked",
+    "settingName": "Block screen capture",
+    "settingDescription": "If 'True', prevents screen captures during personal and work use. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to get screen captures or screenshots in the personal and work profile. Available for corporate-owned work profile devices (applies at both work and personal profile level).",
+    "categoryId": "990880db-3f64-4436-ab4a-d7d5181dfa5d",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Personal",
+      "Profile",
+      "Screen",
+      "Capture",
+      "Blocked",
+      "Personal Profile"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/personalProfileScreenCaptureBlocked/",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.android.devicerestrictionpolicy.personalprofilescreencaptureblocked_false",
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.personalprofilescreencaptureblocked_true",
+        "description": "true",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.personalprofilescreencaptureblocked_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638911389208139001",
+    "helpText": null,
+    "name": "PersonalProfileScreenCaptureBlocked",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.personalprofilescreencaptureblocked",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.personalprofilescreencaptureblocked_true",
+        "description": "true",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.personalprofilescreencaptureblocked_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
         },
         "dependentOn": [],
         "dependedOnBy": []
@@ -1238,7 +1932,7 @@
       "value": 4
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "Enter a number (4-16)",
     "name": "PasswordMinimumLength",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtypeaosp",
@@ -1350,7 +2044,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "",
     "name": "passwordMinutesOfInactivityBeforeScreenTimeout",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordminutesofinactivitybeforescreentimeoutaosp",
@@ -1628,7 +2322,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "",
     "name": "PasswordRequiredType",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
@@ -1972,7 +2666,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "",
     "name": "PasswordRequiredType",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtypeaosp",
@@ -2181,7 +2875,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": null,
     "name": "SecurityRequireVerifyApps",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.securityrequireverifyapps",
@@ -2280,7 +2974,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "",
     "name": "BluetoothBlocked",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.bluetoothblockedaosp",
@@ -2379,7 +3073,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "",
     "name": "StorageBlockUsbFileTransfer",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.storageblockusbfiletransferaosp",
@@ -2458,7 +3152,7 @@
       "value": 11
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "Enter a number (4-11)",
     "name": "PasswordSignInFailureCountBeforeFactoryReset",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordsigninfailurecountbeforefactoryresetaosp",
@@ -2508,7 +3202,7 @@
       "value": 1
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "Enter a number (1-16)",
     "name": "PasswordMinimumSymbolCharacters",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
@@ -2578,7 +3272,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "",
     "name": "PasswordRequireUnlock",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequireunlock",
@@ -2677,7 +3371,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "",
     "name": "StorageBlockExternalMedia",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.storageblockexternalmediaaosp",
@@ -2757,7 +3451,7 @@
       "value": 1
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "Enter a number (1-16)",
     "name": "PasswordMinimumNonLetterCharacters",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
@@ -2807,7 +3501,7 @@
       "value": 1
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "Enter a number (1-16)",
     "name": "PasswordMinimumNumericCharacters",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
@@ -2857,7 +3551,7 @@
       "value": 1
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "Enter a number (1-16)",
     "name": "PasswordMinimumLetterCharacters",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
@@ -2906,7 +3600,7 @@
       "value": 4
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "Enter a number (4-16)",
     "name": "PasswordMinimumLength",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
@@ -2955,7 +3649,7 @@
       "value": 41
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "638889060268539343",
+    "version": "638911389208139001",
     "helpText": "Enter a number (1-365)",
     "name": "PasswordExpirationDays",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordexpirationdays",

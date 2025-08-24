@@ -148,6 +148,22 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.enterprisedisplaynamevisibility",
+    "settingName": "Hide organization name",
+    "settingDescription": "If 'True', prevents the enterprise name from being displayed on the device (such as on the lock screen). If 'False', Intune doesn't change or update this setting. By default, the OS displays the enterprise name set during device setup. Available for fully managed and corporate-owned work profile devices.",
+    "keywords": [
+      "Company",
+      "company name",
+      "organization name",
+      "organization",
+      "brand",
+      "label",
+      "hide organization name",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurationsaosp",
     "settingName": "Block Wi-Fi setting changes",
     "settingDescription": "If 'True', prevents users from creating or changing any Wi-Fi configurations. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to change the Wi-Fi settings on the device.",
