@@ -1,90 +1,5 @@
 [
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_prefetchwithserviceworkerenabled",
-    "settingName": "Allow SpeculationRules prefetch for ServiceWorker-controlled URLs",
-    "settingDescription": "Controls whether SpeculationRules prefetch requests are allowed for\r\nServiceWorker-controlled URLs.\r\n\r\nStarting with Microsoft Edge version 138,\r\nprefetch requests to ServiceWorker-controlled URLs are allowed by default when\r\nthe PrefetchServiceWorker feature is enabled.\r\n\r\nIf this policy is enabled or not configured, that default behavior is used.\r\n\r\nTo restore the legacy behavior from versions prior to 138, where prefetch requests\r\nto ServiceWorker-controlled URLs were blocked, set this policy to disabled.\r\n\r\nThis policy is intended to be temporary and will be removed in the future.",
-    "keywords": [
-      "PrefetchWithServiceWorkerEnabled",
-      "Allow SpeculationRules prefetch for ServiceWorker-controlled URLs",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_edgehistoryaisearchenabled",
-    "settingName": "Control access to AI-enhanced search in History",
-    "settingDescription": "This policy controls whether users can use AI-enhanced search in their browsing history in Microsoft Edge.\r\n\r\nWhen enabled or not configured, users can search using synonyms, natural language phrases, and minor spelling errors to find previously visited pages.\r\n\r\nWhen disabled, users can only perform exact match (verbatim) searches in their history.",
-    "keywords": [
-      "EdgeHistoryAISearchEnabled",
-      "Control access to AI-enhanced search in History",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_tls13earlydataenabled",
-    "settingName": "Control whether TLS 1.3 Early Data is enabled in Microsoft Edge (User)",
-    "settingDescription": "This policy controls whether TLS 1.3 Early Data is enabled in Microsoft Edge.\r\n\r\nTLS 1.3 Early Data is an extension that allows an HTTP request to be sent in parallel with the TLS handshake. When enabled and supported by the server, this can improve page load performance.\r\n\r\nEnabled – Microsoft Edge enables TLS 1.3 Early Data.\r\n\r\nDisabled – Microsoft Edge disables TLS 1.3 Early Data.\r\n\r\nNot configured – Microsoft Edge follows the default rollout process for TLS 1.3 Early Data.\r\n\r\nNOTE: When this feature is enabled, whether TLS 1.3 Early Data is used depends on server support. Most modern TLS servers and middleware can handle or reject Early Data without interrupting the connection. However, improperly implemented TLS stacks may cause connection failures. If such issues occur, contact the device or software vendor for a resolution.\r\n\r\nThis policy is temporary and intended to help test for compatibility issues. It may be removed in a future release once the feature is fully rolled out.",
-    "keywords": [
-      "TLS13EarlyDataEnabled",
-      "Control whether TLS 1.3 Early Data is enabled in Microsoft Edge",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_onsecurityevententerpriseconnector",
-    "settingName": "Configuration policy for Microsoft Edge for Business Reporting Connectors (User)",
-    "settingDescription": "Defines the Microsoft Edge for Business Reporting Connectors service settings that apply when a security event occurs in Microsoft Edge. These events include negative verdicts from Data Loss Prevention Connectors, password reuse, navigation to unsafe pages, and other security-sensitive actions.\r\n\r\nThe service_provider field specifies the reporting service provider. The enabled_event_names field lists the security events enabled for that provider.\r\n\r\nThis policy requires additional setup to take effect. For configuration guidance, see https://go.microsoft.com/fwlink/?linkid=2325446.\r\n\r\nExample value:\r\n\r\n[\r\n  {\r\n    \"enabled_event_names\": [\r\n      \"passwordChangedEvent\",\r\n      \"sensitiveDataEvent\"\r\n    ],\r\n    \"enabled_opt_in_events\": [\r\n      {\r\n        \"name\": \"loginEvent\",\r\n        \"url_patterns\": [\r\n          \"*\"\r\n        ]\r\n      },\r\n      {\r\n        \"name\": \"passwordBreachEvent\",\r\n        \"url_patterns\": [\r\n          \"example.com\",\r\n          \"other.example.com\"\r\n        ]\r\n      }\r\n    ],\r\n    \"service_provider\": \"microsoft\"\r\n  }\r\n]",
-    "keywords": [
-      "OnSecurityEventEnterpriseConnector",
-      "Configuration policy for Microsoft Edge for Business Reporting Connectors",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_onsecurityevententerpriseconnector_onsecurityevententerpriseconnector",
-    "settingName": "Configuration policy for Microsoft Edge for Business Reporting Connectors (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "OnSecurityEventEnterpriseConnector",
-      "Configuration policy for Microsoft Edge for Business Reporting Connectors",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~extensions_mandatoryextensionsforinprivatenavigation_mandatoryextensionsforinprivatenavigationdesc",
-    "settingName": "Specify extensions users must allow in order to navigate using InPrivate mode (User)",
-    "settingDescription": "",
-    "keywords": [
-      "MandatoryExtensionsForInPrivateNavigation",
-      "Specify extensions users must allow in order to navigate using InPrivate mode",
-      "\\Microsoft Edge\\Extensions",
-      "Microsoft Edge\\Extensions",
-      "Extensions"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_onsecurityevententerpriseconnector_onsecurityevententerpriseconnector",
-    "settingName": "Configuration policy for Microsoft Edge for Business Reporting Connectors (User)",
-    "settingDescription": "",
-    "keywords": [
-      "OnSecurityEventEnterpriseConnector",
-      "Configuration policy for Microsoft Edge for Business Reporting Connectors",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "extensionsettings_extensionsettings",
     "settingName": "com.apple.configuration.safari.extensions.settings",
     "settingDescription": "Synthetic Top Level Setting Group Collection",
@@ -8320,6 +8235,91 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_prefetchwithserviceworkerenabled",
+    "settingName": "Allow SpeculationRules prefetch for ServiceWorker-controlled URLs",
+    "settingDescription": "Controls whether SpeculationRules prefetch requests are allowed for\r\nServiceWorker-controlled URLs.\r\n\r\nStarting with Microsoft Edge version 138,\r\nprefetch requests to ServiceWorker-controlled URLs are allowed by default when\r\nthe PrefetchServiceWorker feature is enabled.\r\n\r\nIf this policy is enabled or not configured, that default behavior is used.\r\n\r\nTo restore the legacy behavior from versions prior to 138, where prefetch requests\r\nto ServiceWorker-controlled URLs were blocked, set this policy to disabled.\r\n\r\nThis policy is intended to be temporary and will be removed in the future.",
+    "keywords": [
+      "PrefetchWithServiceWorkerEnabled",
+      "Allow SpeculationRules prefetch for ServiceWorker-controlled URLs",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_edgehistoryaisearchenabled",
+    "settingName": "Control access to AI-enhanced search in History",
+    "settingDescription": "This policy controls whether users can use AI-enhanced search in their browsing history in Microsoft Edge.\r\n\r\nWhen enabled or not configured, users can search using synonyms, natural language phrases, and minor spelling errors to find previously visited pages.\r\n\r\nWhen disabled, users can only perform exact match (verbatim) searches in their history.",
+    "keywords": [
+      "EdgeHistoryAISearchEnabled",
+      "Control access to AI-enhanced search in History",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_tls13earlydataenabled",
+    "settingName": "Control whether TLS 1.3 Early Data is enabled in Microsoft Edge (User)",
+    "settingDescription": "This policy controls whether TLS 1.3 Early Data is enabled in Microsoft Edge.\r\n\r\nTLS 1.3 Early Data is an extension that allows an HTTP request to be sent in parallel with the TLS handshake. When enabled and supported by the server, this can improve page load performance.\r\n\r\nEnabled – Microsoft Edge enables TLS 1.3 Early Data.\r\n\r\nDisabled – Microsoft Edge disables TLS 1.3 Early Data.\r\n\r\nNot configured – Microsoft Edge follows the default rollout process for TLS 1.3 Early Data.\r\n\r\nNOTE: When this feature is enabled, whether TLS 1.3 Early Data is used depends on server support. Most modern TLS servers and middleware can handle or reject Early Data without interrupting the connection. However, improperly implemented TLS stacks may cause connection failures. If such issues occur, contact the device or software vendor for a resolution.\r\n\r\nThis policy is temporary and intended to help test for compatibility issues. It may be removed in a future release once the feature is fully rolled out.",
+    "keywords": [
+      "TLS13EarlyDataEnabled",
+      "Control whether TLS 1.3 Early Data is enabled in Microsoft Edge",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_onsecurityevententerpriseconnector",
+    "settingName": "Configuration policy for Microsoft Edge for Business Reporting Connectors (User)",
+    "settingDescription": "Defines the Microsoft Edge for Business Reporting Connectors service settings that apply when a security event occurs in Microsoft Edge. These events include negative verdicts from Data Loss Prevention Connectors, password reuse, navigation to unsafe pages, and other security-sensitive actions.\r\n\r\nThe service_provider field specifies the reporting service provider. The enabled_event_names field lists the security events enabled for that provider.\r\n\r\nThis policy requires additional setup to take effect. For configuration guidance, see https://go.microsoft.com/fwlink/?linkid=2325446.\r\n\r\nExample value:\r\n\r\n[\r\n  {\r\n    \"enabled_event_names\": [\r\n      \"passwordChangedEvent\",\r\n      \"sensitiveDataEvent\"\r\n    ],\r\n    \"enabled_opt_in_events\": [\r\n      {\r\n        \"name\": \"loginEvent\",\r\n        \"url_patterns\": [\r\n          \"*\"\r\n        ]\r\n      },\r\n      {\r\n        \"name\": \"passwordBreachEvent\",\r\n        \"url_patterns\": [\r\n          \"example.com\",\r\n          \"other.example.com\"\r\n        ]\r\n      }\r\n    ],\r\n    \"service_provider\": \"microsoft\"\r\n  }\r\n]",
+    "keywords": [
+      "OnSecurityEventEnterpriseConnector",
+      "Configuration policy for Microsoft Edge for Business Reporting Connectors",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_onsecurityevententerpriseconnector_onsecurityevententerpriseconnector",
+    "settingName": "Configuration policy for Microsoft Edge for Business Reporting Connectors (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "OnSecurityEventEnterpriseConnector",
+      "Configuration policy for Microsoft Edge for Business Reporting Connectors",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~extensions_mandatoryextensionsforinprivatenavigation_mandatoryextensionsforinprivatenavigationdesc",
+    "settingName": "Specify extensions users must allow in order to navigate using InPrivate mode (User)",
+    "settingDescription": "",
+    "keywords": [
+      "MandatoryExtensionsForInPrivateNavigation",
+      "Specify extensions users must allow in order to navigate using InPrivate mode",
+      "\\Microsoft Edge\\Extensions",
+      "Microsoft Edge\\Extensions",
+      "Extensions"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_onsecurityevententerpriseconnector_onsecurityevententerpriseconnector",
+    "settingName": "Configuration policy for Microsoft Edge for Business Reporting Connectors (User)",
+    "settingDescription": "",
+    "keywords": [
+      "OnSecurityEventEnterpriseConnector",
+      "Configuration policy for Microsoft Edge for Business Reporting Connectors",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_gotointranetsiteforsinglewordentryinaddressbar",
     "settingName": "Force direct intranet site navigation instead of searching on single word entries in the Address Bar",
     "settingDescription": "If you enable this policy, the top auto-suggest result in the address bar suggestion list will navigate to intranet sites if the text entered in the address bar is a single word without punctuation.\r\n\r\nDefault navigation when typing a single word without punctuation will conduct a navigation to an intranet site matching the entered text.\r\n\r\nIf you enable this policy, the second auto-suggest result in the address bar suggestion list will conduct a web search exactly as it was entered, provided that this text is a single word without punctuation. The default search provider will be used unless a policy to prevent web search is also enabled.\r\n\r\nTwo effects of enabling this policy are:\r\n\r\nNavigation to sites in response to single word queries that would typically resolve to a history item will no longer happen. Instead, the browser will attempt navigate to internal sites that may not exist in an organization’s intranet. This will result in a 404 error.\r\n\r\nPopular, single-word search terms will require manual selection of search suggestions to properly conduct a search.",
@@ -10804,81 +10804,6 @@
       "Security"
     ],
     "categoryName": "Security"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_builtinaiapisenabled",
-    "settingName": "Allow pages to use the built-in AI APIs. (User)",
-    "settingDescription": "Use this policy to control whether websites can access the built-in AI APIs, including the LanguageModel API, Summarization API, Writer API, and Rewriter API.\r\n\r\nEnable this policy to allow pages to use the APIs. If you don’t configure this policy, the APIs are still allowed.\r\n\r\nDisable this policy to block access to the APIs. The APIs will return an error when used.\r\n\r\nFor more information, see https://github.com/webmachinelearning/writing-assistance-apis/blob/main/README.md.",
-    "keywords": [
-      "BuiltInAIAPIsEnabled",
-      "Allow pages to use the built-in AI APIs.",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~extensions_mandatoryextensionsforinprivatenavigation",
-    "settingName": "Specify extensions users must allow in order to navigate using InPrivate mode",
-    "settingDescription": "This policy lets you specify a list of extension IDs that must be explicitly allowed by the user to run in InPrivate mode in order to enable InPrivate browsing.\r\n\r\nIf users do not allow all listed extensions to run in InPrivate mode, they will be unable to navigate using InPrivate.\r\n\r\nIf any extension in the list is not installed, InPrivate navigation is blocked.\r\n\r\nThis policy only applies when InPrivate mode is enabled. If InPrivate mode is disabled using the InPrivateModeAvailability policy, this policy has no effect.\r\n\r\nExample value:\r\n\r\nabcdefghijklmnopabcdefghijklmnop",
-    "keywords": [
-      "MandatoryExtensionsForInPrivateNavigation",
-      "Specify extensions users must allow in order to navigate using InPrivate mode",
-      "\\Microsoft Edge\\Extensions",
-      "Microsoft Edge\\Extensions",
-      "Extensions"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~extensions_mandatoryextensionsforinprivatenavigation",
-    "settingName": "Specify extensions users must allow in order to navigate using InPrivate mode (User)",
-    "settingDescription": "This policy lets you specify a list of extension IDs that must be explicitly allowed by the user to run in InPrivate mode in order to enable InPrivate browsing.\r\n\r\nIf users do not allow all listed extensions to run in InPrivate mode, they will be unable to navigate using InPrivate.\r\n\r\nIf any extension in the list is not installed, InPrivate navigation is blocked.\r\n\r\nThis policy only applies when InPrivate mode is enabled. If InPrivate mode is disabled using the InPrivateModeAvailability policy, this policy has no effect.\r\n\r\nExample value:\r\n\r\nabcdefghijklmnopabcdefghijklmnop",
-    "keywords": [
-      "MandatoryExtensionsForInPrivateNavigation",
-      "Specify extensions users must allow in order to navigate using InPrivate mode",
-      "\\Microsoft Edge\\Extensions",
-      "Microsoft Edge\\Extensions",
-      "Extensions"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~identity_edgeopenexternallinkswithappspecifiedprofile",
-    "settingName": "Prioritize App specified profile to open external links (User)",
-    "settingDescription": "This policy controls whether the profile specified by an app (such as Microsoft Teams or Outlook) is given priority when opening external links, instead of the profile selected in the Default profile for external links setting.\r\n\r\nPolicy behavior:\r\n1. Enabled or not configured: The app-specified profile is prioritized for opening external links. This behavior overrides the profile selected in settings, and the behavior defined by the EdgeDefaultProfileEnabled and EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled policies. If the app doesn't specify a profile, this policy has no effect.\r\n2. Disabled: The profile selected in settings—along with the EdgeDefaultProfileEnabled and EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled policies—will be used to determine which profile opens external links.\r\n\r\nNOTE:\r\nThis policy doesn't override user-defined preferences set through Automatic profile switching, including the Custom site switch setting located within it. If a user has configured specific sites to open in designated profiles, those preferences take precedence.",
-    "keywords": [
-      "EdgeOpenExternalLinksWithAppSpecifiedProfile",
-      "Prioritize App specified profile to open external links",
-      "\\Microsoft Edge\\Identity and sign-in",
-      "Microsoft Edge\\Identity and sign-in",
-      "Identity and sign-in"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_microsoft365copilotchaticonenabled",
-    "settingName": "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar",
-    "settingDescription": "For users in an Entra ID Microsoft Edge profile, this policy controls whether the Microsoft 365 Copilot Chat icon will be shown in the Microsoft Edge for Business toolbar for Microsoft 365 Copilot licensed and unlicensed users.\r\n\r\nThis policy only applies when users are accessing Copilot in the sidepane.\r\n\r\nIf the policy is enabled: Copilot will appear in the toolbar.\r\n\r\nIf the policy is disabled: Copilot will not appear in the toolbar.\r\n\r\nIf the policy is not configured: Otherwise, Copilot will show in the toolbar and users may enable or disable Copilot from showing by using the Show Copilot toggle in settings.\r\n\r\nWhen both this policy and 'HubsSidebarEnabled' (Show Hubs Sidebar) are configured, this policy takes precedence in determining whether Copilot appears in the toolbar. If this policy is not configured and 'HubsSidebarEnabled' is disabled, Copilot will remain hidden. In a future release, this policy will be the sole control for managing Copilot's visibility in the toolbar.",
-    "keywords": [
-      "Microsoft365CopilotChatIconEnabled",
-      "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_enableunsafeswiftshader",
-    "settingName": "Allow software WebGL fallback using SwiftShader (User)",
-    "settingDescription": "Controls whether SwiftShader is used as a fallback for WebGL when hardware GPU acceleration is not available.\r\n\r\nWhen enabled, Microsoft Edge will use SwiftShader to support WebGL on systems without GPU acceleration, such as headless environments or virtual machines.\r\n\r\nStarting in Microsoft Edge version 139, SwiftShader has been deprecated due to security concerns. As a result, WebGL context creation will fail in scenarios where SwiftShader would have been used. Enabling this policy allows organizations to temporarily defer the deprecation and continue using SwiftShader.\r\n\r\nIf you disable or do not configure this policy, WebGL context creation may fail on systems without hardware acceleration. This could cause web content relying on WebGL to function incorrectly if it does not handle context creation failures.\r\n\r\nNote: This is a temporary policy and will be removed in a future release.",
-    "keywords": [
-      "EnableUnsafeSwiftShader",
-      "Allow software WebGL fallback using SwiftShader",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "extensionsettings_managedextensions_generickey_denieddomains",
@@ -19591,6 +19516,81 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_builtinaiapisenabled",
+    "settingName": "Allow pages to use the built-in AI APIs. (User)",
+    "settingDescription": "Use this policy to control whether websites can access the built-in AI APIs, including the LanguageModel API, Summarization API, Writer API, and Rewriter API.\r\n\r\nEnable this policy to allow pages to use the APIs. If you don’t configure this policy, the APIs are still allowed.\r\n\r\nDisable this policy to block access to the APIs. The APIs will return an error when used.\r\n\r\nFor more information, see https://github.com/webmachinelearning/writing-assistance-apis/blob/main/README.md.",
+    "keywords": [
+      "BuiltInAIAPIsEnabled",
+      "Allow pages to use the built-in AI APIs.",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~extensions_mandatoryextensionsforinprivatenavigation",
+    "settingName": "Specify extensions users must allow in order to navigate using InPrivate mode",
+    "settingDescription": "This policy lets you specify a list of extension IDs that must be explicitly allowed by the user to run in InPrivate mode in order to enable InPrivate browsing.\r\n\r\nIf users do not allow all listed extensions to run in InPrivate mode, they will be unable to navigate using InPrivate.\r\n\r\nIf any extension in the list is not installed, InPrivate navigation is blocked.\r\n\r\nThis policy only applies when InPrivate mode is enabled. If InPrivate mode is disabled using the InPrivateModeAvailability policy, this policy has no effect.\r\n\r\nExample value:\r\n\r\nabcdefghijklmnopabcdefghijklmnop",
+    "keywords": [
+      "MandatoryExtensionsForInPrivateNavigation",
+      "Specify extensions users must allow in order to navigate using InPrivate mode",
+      "\\Microsoft Edge\\Extensions",
+      "Microsoft Edge\\Extensions",
+      "Extensions"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~extensions_mandatoryextensionsforinprivatenavigation",
+    "settingName": "Specify extensions users must allow in order to navigate using InPrivate mode (User)",
+    "settingDescription": "This policy lets you specify a list of extension IDs that must be explicitly allowed by the user to run in InPrivate mode in order to enable InPrivate browsing.\r\n\r\nIf users do not allow all listed extensions to run in InPrivate mode, they will be unable to navigate using InPrivate.\r\n\r\nIf any extension in the list is not installed, InPrivate navigation is blocked.\r\n\r\nThis policy only applies when InPrivate mode is enabled. If InPrivate mode is disabled using the InPrivateModeAvailability policy, this policy has no effect.\r\n\r\nExample value:\r\n\r\nabcdefghijklmnopabcdefghijklmnop",
+    "keywords": [
+      "MandatoryExtensionsForInPrivateNavigation",
+      "Specify extensions users must allow in order to navigate using InPrivate mode",
+      "\\Microsoft Edge\\Extensions",
+      "Microsoft Edge\\Extensions",
+      "Extensions"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~identity_edgeopenexternallinkswithappspecifiedprofile",
+    "settingName": "Prioritize App specified profile to open external links (User)",
+    "settingDescription": "This policy controls whether the profile specified by an app (such as Microsoft Teams or Outlook) is given priority when opening external links, instead of the profile selected in the Default profile for external links setting.\r\n\r\nPolicy behavior:\r\n1. Enabled or not configured: The app-specified profile is prioritized for opening external links. This behavior overrides the profile selected in settings, and the behavior defined by the EdgeDefaultProfileEnabled and EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled policies. If the app doesn't specify a profile, this policy has no effect.\r\n2. Disabled: The profile selected in settings—along with the EdgeDefaultProfileEnabled and EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled policies—will be used to determine which profile opens external links.\r\n\r\nNOTE:\r\nThis policy doesn't override user-defined preferences set through Automatic profile switching, including the Custom site switch setting located within it. If a user has configured specific sites to open in designated profiles, those preferences take precedence.",
+    "keywords": [
+      "EdgeOpenExternalLinksWithAppSpecifiedProfile",
+      "Prioritize App specified profile to open external links",
+      "\\Microsoft Edge\\Identity and sign-in",
+      "Microsoft Edge\\Identity and sign-in",
+      "Identity and sign-in"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_microsoft365copilotchaticonenabled",
+    "settingName": "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar",
+    "settingDescription": "For users in an Entra ID Microsoft Edge profile, this policy controls whether the Microsoft 365 Copilot Chat icon will be shown in the Microsoft Edge for Business toolbar for Microsoft 365 Copilot licensed and unlicensed users.\r\n\r\nThis policy only applies when users are accessing Copilot in the sidepane.\r\n\r\nIf the policy is enabled: Copilot will appear in the toolbar.\r\n\r\nIf the policy is disabled: Copilot will not appear in the toolbar.\r\n\r\nIf the policy is not configured: Otherwise, Copilot will show in the toolbar and users may enable or disable Copilot from showing by using the Show Copilot toggle in settings.\r\n\r\nWhen both this policy and 'HubsSidebarEnabled' (Show Hubs Sidebar) are configured, this policy takes precedence in determining whether Copilot appears in the toolbar. If this policy is not configured and 'HubsSidebarEnabled' is disabled, Copilot will remain hidden. In a future release, this policy will be the sole control for managing Copilot's visibility in the toolbar.",
+    "keywords": [
+      "Microsoft365CopilotChatIconEnabled",
+      "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_enableunsafeswiftshader",
+    "settingName": "Allow software WebGL fallback using SwiftShader (User)",
+    "settingDescription": "Controls whether SwiftShader is used as a fallback for WebGL when hardware GPU acceleration is not available.\r\n\r\nWhen enabled, Microsoft Edge will use SwiftShader to support WebGL on systems without GPU acceleration, such as headless environments or virtual machines.\r\n\r\nStarting in Microsoft Edge version 139, SwiftShader has been deprecated due to security concerns. As a result, WebGL context creation will fail in scenarios where SwiftShader would have been used. Enabling this policy allows organizations to temporarily defer the deprecation and continue using SwiftShader.\r\n\r\nIf you disable or do not configure this policy, WebGL context creation may fail on systems without hardware acceleration. This could cause web content relying on WebGL to function incorrectly if it does not handle context creation failures.\r\n\r\nNote: This is a temporary policy and will be removed in a future release.",
+    "keywords": [
+      "EnableUnsafeSwiftShader",
+      "Allow software WebGL fallback using SwiftShader",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge~startup_restoreonstartup",
     "settingName": "Action to take on Microsoft Edge startup",
     "settingDescription": "Specify how Microsoft Edge behaves when it starts.\r\n\r\nIf you want a new tab to always open on startup, choose 'RestoreOnStartupIsNewTabPage'.\r\n\r\nIf you want to reopen URLs that were open the last time Microsoft Edge closed, choose 'RestoreOnStartupIsLastSession'. The browsing session will be restored as it was. Note that this option disables some settings that rely on sessions or that perform actions on exit (such as Clear browsing data on exit or session-only cookies).\r\n\r\nIf you want to open a specific set of URLs, choose 'RestoreOnStartupIsURLs'.\r\n\r\nStarting in Microsoft Edge version 125, if you want to reopen URLs that were open the last time Microsoft Edge closed and open a specific set of URLs, choose 'RestoreOnStartupIsLastSessionAndURLs'.\r\n\r\nDisabling this setting is the same as leaving it not configured. Users will be able to change it in Microsoft Edge.\r\n\r\nThis policy is only available on Windows instances that are joined to a Microsoft Active Directory domain, joined to Microsoft Azure Active Directory, or instances that enrolled for device management. On macOS, this policy is only available on instances that are managed via MDM or joined to a domain via MCX.\r\n\r\nPolicy options mapping:\r\n\r\n* RestoreOnStartupIsNewTabPage (5) = Open a new tab\r\n\r\n* RestoreOnStartupIsLastSession (1) = Restore the last session\r\n\r\n* RestoreOnStartupIsURLs (4) = Open a list of URLs\r\n\r\n* RestoreOnStartupIsLastSessionAndURLs (6) = Open a list of URLs and restore the last session\r\n\r\nUse the preceding information when configuring this policy.",
@@ -22070,67 +22070,6 @@
       "Security"
     ],
     "categoryName": "Security"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_edgehistoryaisearchenabled",
-    "settingName": "Control access to AI-enhanced search in History (User)",
-    "settingDescription": "This policy controls whether users can use AI-enhanced search in their browsing history in Microsoft Edge.\r\n\r\nWhen enabled or not configured, users can search using synonyms, natural language phrases, and minor spelling errors to find previously visited pages.\r\n\r\nWhen disabled, users can only perform exact match (verbatim) searches in their history.",
-    "keywords": [
-      "EdgeHistoryAISearchEnabled",
-      "Control access to AI-enhanced search in History",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_builtinaiapisenabled",
-    "settingName": "Allow pages to use the built-in AI APIs.",
-    "settingDescription": "Use this policy to control whether websites can access the built-in AI APIs, including the LanguageModel API, Summarization API, Writer API, and Rewriter API.\r\n\r\nEnable this policy to allow pages to use the APIs. If you don’t configure this policy, the APIs are still allowed.\r\n\r\nDisable this policy to block access to the APIs. The APIs will return an error when used.\r\n\r\nFor more information, see https://github.com/webmachinelearning/writing-assistance-apis/blob/main/README.md.",
-    "keywords": [
-      "BuiltInAIAPIsEnabled",
-      "Allow pages to use the built-in AI APIs.",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_onsecurityevententerpriseconnector",
-    "settingName": "Configuration policy for Microsoft Edge for Business Reporting Connectors",
-    "settingDescription": "Defines the Microsoft Edge for Business Reporting Connectors service settings that apply when a security event occurs in Microsoft Edge. These events include negative verdicts from Data Loss Prevention Connectors, password reuse, navigation to unsafe pages, and other security-sensitive actions.\r\n\r\nThe service_provider field specifies the reporting service provider. The enabled_event_names field lists the security events enabled for that provider.\r\n\r\nThis policy requires additional setup to take effect. For configuration guidance, see https://go.microsoft.com/fwlink/?linkid=2325446.\r\n\r\nExample value:\r\n\r\n[\r\n  {\r\n    \"enabled_event_names\": [\r\n      \"passwordChangedEvent\",\r\n      \"sensitiveDataEvent\"\r\n    ],\r\n    \"enabled_opt_in_events\": [\r\n      {\r\n        \"name\": \"loginEvent\",\r\n        \"url_patterns\": [\r\n          \"*\"\r\n        ]\r\n      },\r\n      {\r\n        \"name\": \"passwordBreachEvent\",\r\n        \"url_patterns\": [\r\n          \"example.com\",\r\n          \"other.example.com\"\r\n        ]\r\n      }\r\n    ],\r\n    \"service_provider\": \"microsoft\"\r\n  }\r\n]",
-    "keywords": [
-      "OnSecurityEventEnterpriseConnector",
-      "Configuration policy for Microsoft Edge for Business Reporting Connectors",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_enableunsafeswiftshader",
-    "settingName": "Allow software WebGL fallback using SwiftShader",
-    "settingDescription": "Controls whether SwiftShader is used as a fallback for WebGL when hardware GPU acceleration is not available.\r\n\r\nWhen enabled, Microsoft Edge will use SwiftShader to support WebGL on systems without GPU acceleration, such as headless environments or virtual machines.\r\n\r\nStarting in Microsoft Edge version 139, SwiftShader has been deprecated due to security concerns. As a result, WebGL context creation will fail in scenarios where SwiftShader would have been used. Enabling this policy allows organizations to temporarily defer the deprecation and continue using SwiftShader.\r\n\r\nIf you disable or do not configure this policy, WebGL context creation may fail on systems without hardware acceleration. This could cause web content relying on WebGL to function incorrectly if it does not handle context creation failures.\r\n\r\nNote: This is a temporary policy and will be removed in a future release.",
-    "keywords": [
-      "EnableUnsafeSwiftShader",
-      "Allow software WebGL fallback using SwiftShader",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~identity_edgeopenexternallinkswithappspecifiedprofile",
-    "settingName": "Prioritize App specified profile to open external links",
-    "settingDescription": "This policy controls whether the profile specified by an app (such as Microsoft Teams or Outlook) is given priority when opening external links, instead of the profile selected in the Default profile for external links setting.\r\n\r\nPolicy behavior:\r\n1. Enabled or not configured: The app-specified profile is prioritized for opening external links. This behavior overrides the profile selected in settings, and the behavior defined by the EdgeDefaultProfileEnabled and EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled policies. If the app doesn't specify a profile, this policy has no effect.\r\n2. Disabled: The profile selected in settings—along with the EdgeDefaultProfileEnabled and EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled policies—will be used to determine which profile opens external links.\r\n\r\nNOTE:\r\nThis policy doesn't override user-defined preferences set through Automatic profile switching, including the Custom site switch setting located within it. If a user has configured specific sites to open in designated profiles, those preferences take precedence.",
-    "keywords": [
-      "EdgeOpenExternalLinksWithAppSpecifiedProfile",
-      "Prioritize App specified profile to open external links",
-      "\\Microsoft Edge\\Identity and sign-in",
-      "Microsoft Edge\\Identity and sign-in",
-      "Identity and sign-in"
-    ],
-    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "extensionsettings_managedextensions_generickey_alloweddomains",
@@ -31006,6 +30945,67 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_edgehistoryaisearchenabled",
+    "settingName": "Control access to AI-enhanced search in History (User)",
+    "settingDescription": "This policy controls whether users can use AI-enhanced search in their browsing history in Microsoft Edge.\r\n\r\nWhen enabled or not configured, users can search using synonyms, natural language phrases, and minor spelling errors to find previously visited pages.\r\n\r\nWhen disabled, users can only perform exact match (verbatim) searches in their history.",
+    "keywords": [
+      "EdgeHistoryAISearchEnabled",
+      "Control access to AI-enhanced search in History",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_builtinaiapisenabled",
+    "settingName": "Allow pages to use the built-in AI APIs.",
+    "settingDescription": "Use this policy to control whether websites can access the built-in AI APIs, including the LanguageModel API, Summarization API, Writer API, and Rewriter API.\r\n\r\nEnable this policy to allow pages to use the APIs. If you don’t configure this policy, the APIs are still allowed.\r\n\r\nDisable this policy to block access to the APIs. The APIs will return an error when used.\r\n\r\nFor more information, see https://github.com/webmachinelearning/writing-assistance-apis/blob/main/README.md.",
+    "keywords": [
+      "BuiltInAIAPIsEnabled",
+      "Allow pages to use the built-in AI APIs.",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_onsecurityevententerpriseconnector",
+    "settingName": "Configuration policy for Microsoft Edge for Business Reporting Connectors",
+    "settingDescription": "Defines the Microsoft Edge for Business Reporting Connectors service settings that apply when a security event occurs in Microsoft Edge. These events include negative verdicts from Data Loss Prevention Connectors, password reuse, navigation to unsafe pages, and other security-sensitive actions.\r\n\r\nThe service_provider field specifies the reporting service provider. The enabled_event_names field lists the security events enabled for that provider.\r\n\r\nThis policy requires additional setup to take effect. For configuration guidance, see https://go.microsoft.com/fwlink/?linkid=2325446.\r\n\r\nExample value:\r\n\r\n[\r\n  {\r\n    \"enabled_event_names\": [\r\n      \"passwordChangedEvent\",\r\n      \"sensitiveDataEvent\"\r\n    ],\r\n    \"enabled_opt_in_events\": [\r\n      {\r\n        \"name\": \"loginEvent\",\r\n        \"url_patterns\": [\r\n          \"*\"\r\n        ]\r\n      },\r\n      {\r\n        \"name\": \"passwordBreachEvent\",\r\n        \"url_patterns\": [\r\n          \"example.com\",\r\n          \"other.example.com\"\r\n        ]\r\n      }\r\n    ],\r\n    \"service_provider\": \"microsoft\"\r\n  }\r\n]",
+    "keywords": [
+      "OnSecurityEventEnterpriseConnector",
+      "Configuration policy for Microsoft Edge for Business Reporting Connectors",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_enableunsafeswiftshader",
+    "settingName": "Allow software WebGL fallback using SwiftShader",
+    "settingDescription": "Controls whether SwiftShader is used as a fallback for WebGL when hardware GPU acceleration is not available.\r\n\r\nWhen enabled, Microsoft Edge will use SwiftShader to support WebGL on systems without GPU acceleration, such as headless environments or virtual machines.\r\n\r\nStarting in Microsoft Edge version 139, SwiftShader has been deprecated due to security concerns. As a result, WebGL context creation will fail in scenarios where SwiftShader would have been used. Enabling this policy allows organizations to temporarily defer the deprecation and continue using SwiftShader.\r\n\r\nIf you disable or do not configure this policy, WebGL context creation may fail on systems without hardware acceleration. This could cause web content relying on WebGL to function incorrectly if it does not handle context creation failures.\r\n\r\nNote: This is a temporary policy and will be removed in a future release.",
+    "keywords": [
+      "EnableUnsafeSwiftShader",
+      "Allow software WebGL fallback using SwiftShader",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~identity_edgeopenexternallinkswithappspecifiedprofile",
+    "settingName": "Prioritize App specified profile to open external links",
+    "settingDescription": "This policy controls whether the profile specified by an app (such as Microsoft Teams or Outlook) is given priority when opening external links, instead of the profile selected in the Default profile for external links setting.\r\n\r\nPolicy behavior:\r\n1. Enabled or not configured: The app-specified profile is prioritized for opening external links. This behavior overrides the profile selected in settings, and the behavior defined by the EdgeDefaultProfileEnabled and EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled policies. If the app doesn't specify a profile, this policy has no effect.\r\n2. Disabled: The profile selected in settings—along with the EdgeDefaultProfileEnabled and EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled policies—will be used to determine which profile opens external links.\r\n\r\nNOTE:\r\nThis policy doesn't override user-defined preferences set through Automatic profile switching, including the Custom site switch setting located within it. If a user has configured specific sites to open in designated profiles, those preferences take precedence.",
+    "keywords": [
+      "EdgeOpenExternalLinksWithAppSpecifiedProfile",
+      "Prioritize App specified profile to open external links",
+      "\\Microsoft Edge\\Identity and sign-in",
+      "Microsoft Edge\\Identity and sign-in",
+      "Identity and sign-in"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge~startup_restoreonstartup_restoreonstartup",
     "settingName": "Action to take on Microsoft Edge startup (Device)",
     "settingDescription": "",
@@ -33330,55 +33330,6 @@
       "Security"
     ],
     "categoryName": "Security"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_prefetchwithserviceworkerenabled",
-    "settingName": "Allow SpeculationRules prefetch for ServiceWorker-controlled URLs (User)",
-    "settingDescription": "Controls whether SpeculationRules prefetch requests are allowed for\r\nServiceWorker-controlled URLs.\r\n\r\nStarting with Microsoft Edge version 138,\r\nprefetch requests to ServiceWorker-controlled URLs are allowed by default when\r\nthe PrefetchServiceWorker feature is enabled.\r\n\r\nIf this policy is enabled or not configured, that default behavior is used.\r\n\r\nTo restore the legacy behavior from versions prior to 138, where prefetch requests\r\nto ServiceWorker-controlled URLs were blocked, set this policy to disabled.\r\n\r\nThis policy is intended to be temporary and will be removed in the future.",
-    "keywords": [
-      "PrefetchWithServiceWorkerEnabled",
-      "Allow SpeculationRules prefetch for ServiceWorker-controlled URLs",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_tls13earlydataenabled",
-    "settingName": "Control whether TLS 1.3 Early Data is enabled in Microsoft Edge",
-    "settingDescription": "This policy controls whether TLS 1.3 Early Data is enabled in Microsoft Edge.\r\n\r\nTLS 1.3 Early Data is an extension that allows an HTTP request to be sent in parallel with the TLS handshake. When enabled and supported by the server, this can improve page load performance.\r\n\r\nEnabled – Microsoft Edge enables TLS 1.3 Early Data.\r\n\r\nDisabled – Microsoft Edge disables TLS 1.3 Early Data.\r\n\r\nNot configured – Microsoft Edge follows the default rollout process for TLS 1.3 Early Data.\r\n\r\nNOTE: When this feature is enabled, whether TLS 1.3 Early Data is used depends on server support. Most modern TLS servers and middleware can handle or reject Early Data without interrupting the connection. However, improperly implemented TLS stacks may cause connection failures. If such issues occur, contact the device or software vendor for a resolution.\r\n\r\nThis policy is temporary and intended to help test for compatibility issues. It may be removed in a future release once the feature is fully rolled out.",
-    "keywords": [
-      "TLS13EarlyDataEnabled",
-      "Control whether TLS 1.3 Early Data is enabled in Microsoft Edge",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_microsoft365copilotchaticonenabled",
-    "settingName": "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar (User)",
-    "settingDescription": "For users in an Entra ID Microsoft Edge profile, this policy controls whether the Microsoft 365 Copilot Chat icon will be shown in the Microsoft Edge for Business toolbar for Microsoft 365 Copilot licensed and unlicensed users.\r\n\r\nThis policy only applies when users are accessing Copilot in the sidepane.\r\n\r\nIf the policy is enabled: Copilot will appear in the toolbar.\r\n\r\nIf the policy is disabled: Copilot will not appear in the toolbar.\r\n\r\nIf the policy is not configured: Otherwise, Copilot will show in the toolbar and users may enable or disable Copilot from showing by using the Show Copilot toggle in settings.\r\n\r\nWhen both this policy and 'HubsSidebarEnabled' (Show Hubs Sidebar) are configured, this policy takes precedence in determining whether Copilot appears in the toolbar. If this policy is not configured and 'HubsSidebarEnabled' is disabled, Copilot will remain hidden. In a future release, this policy will be the sole control for managing Copilot's visibility in the toolbar.",
-    "keywords": [
-      "Microsoft365CopilotChatIconEnabled",
-      "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~extensions_mandatoryextensionsforinprivatenavigation_mandatoryextensionsforinprivatenavigationdesc",
-    "settingName": "Specify extensions users must allow in order to navigate using InPrivate mode (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "MandatoryExtensionsForInPrivateNavigation",
-      "Specify extensions users must allow in order to navigate using InPrivate mode",
-      "\\Microsoft Edge\\Extensions",
-      "Microsoft Edge\\Extensions",
-      "Extensions"
-    ],
-    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "extensionsettings_managedextensions",
@@ -41911,6 +41862,55 @@
       "Configuration policy for bulk data entry for Microsoft Edge for Business Data Loss Prevention Connectors",
       "\\Microsoft Edge",
       "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_prefetchwithserviceworkerenabled",
+    "settingName": "Allow SpeculationRules prefetch for ServiceWorker-controlled URLs (User)",
+    "settingDescription": "Controls whether SpeculationRules prefetch requests are allowed for\r\nServiceWorker-controlled URLs.\r\n\r\nStarting with Microsoft Edge version 138,\r\nprefetch requests to ServiceWorker-controlled URLs are allowed by default when\r\nthe PrefetchServiceWorker feature is enabled.\r\n\r\nIf this policy is enabled or not configured, that default behavior is used.\r\n\r\nTo restore the legacy behavior from versions prior to 138, where prefetch requests\r\nto ServiceWorker-controlled URLs were blocked, set this policy to disabled.\r\n\r\nThis policy is intended to be temporary and will be removed in the future.",
+    "keywords": [
+      "PrefetchWithServiceWorkerEnabled",
+      "Allow SpeculationRules prefetch for ServiceWorker-controlled URLs",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_tls13earlydataenabled",
+    "settingName": "Control whether TLS 1.3 Early Data is enabled in Microsoft Edge",
+    "settingDescription": "This policy controls whether TLS 1.3 Early Data is enabled in Microsoft Edge.\r\n\r\nTLS 1.3 Early Data is an extension that allows an HTTP request to be sent in parallel with the TLS handshake. When enabled and supported by the server, this can improve page load performance.\r\n\r\nEnabled – Microsoft Edge enables TLS 1.3 Early Data.\r\n\r\nDisabled – Microsoft Edge disables TLS 1.3 Early Data.\r\n\r\nNot configured – Microsoft Edge follows the default rollout process for TLS 1.3 Early Data.\r\n\r\nNOTE: When this feature is enabled, whether TLS 1.3 Early Data is used depends on server support. Most modern TLS servers and middleware can handle or reject Early Data without interrupting the connection. However, improperly implemented TLS stacks may cause connection failures. If such issues occur, contact the device or software vendor for a resolution.\r\n\r\nThis policy is temporary and intended to help test for compatibility issues. It may be removed in a future release once the feature is fully rolled out.",
+    "keywords": [
+      "TLS13EarlyDataEnabled",
+      "Control whether TLS 1.3 Early Data is enabled in Microsoft Edge",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_microsoft365copilotchaticonenabled",
+    "settingName": "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar (User)",
+    "settingDescription": "For users in an Entra ID Microsoft Edge profile, this policy controls whether the Microsoft 365 Copilot Chat icon will be shown in the Microsoft Edge for Business toolbar for Microsoft 365 Copilot licensed and unlicensed users.\r\n\r\nThis policy only applies when users are accessing Copilot in the sidepane.\r\n\r\nIf the policy is enabled: Copilot will appear in the toolbar.\r\n\r\nIf the policy is disabled: Copilot will not appear in the toolbar.\r\n\r\nIf the policy is not configured: Otherwise, Copilot will show in the toolbar and users may enable or disable Copilot from showing by using the Show Copilot toggle in settings.\r\n\r\nWhen both this policy and 'HubsSidebarEnabled' (Show Hubs Sidebar) are configured, this policy takes precedence in determining whether Copilot appears in the toolbar. If this policy is not configured and 'HubsSidebarEnabled' is disabled, Copilot will remain hidden. In a future release, this policy will be the sole control for managing Copilot's visibility in the toolbar.",
+    "keywords": [
+      "Microsoft365CopilotChatIconEnabled",
+      "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~extensions_mandatoryextensionsforinprivatenavigation_mandatoryextensionsforinprivatenavigationdesc",
+    "settingName": "Specify extensions users must allow in order to navigate using InPrivate mode (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "MandatoryExtensionsForInPrivateNavigation",
+      "Specify extensions users must allow in order to navigate using InPrivate mode",
+      "\\Microsoft Edge\\Extensions",
+      "Microsoft Edge\\Extensions",
+      "Extensions"
     ],
     "categoryName": "Microsoft Edge"
   },

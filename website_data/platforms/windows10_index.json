@@ -1,192 +1,5 @@
 [
   {
-    "settingId": "user_vendor_msft_policy_config_excel16v9~policy~l_microsoftofficeexcel~l_exceloptions~l_security~l_trustcenter~l_fileblocksettings_l_excelfileblockexternallinks",
-    "settingName": "File Block includes external link files (User)",
-    "settingDescription": "This setting determines whether Trust Center settings for blocking load of potentially unsecure workbooks applies to those accessed by external links.\r\n\r\nIf you enable this policy setting, external links to workbooks that are blocked by File Block settings in Trust Center will not refresh. Attempts to create new links or refresh data from blocked workbooks may result in errors.\r\n\r\nIf you disable this policy setting, attempts to access external links data will not be subject to File Block settings in Trust Center.",
-    "keywords": [
-      "L_ExcelFileBlockExternalLinks",
-      "File Block includes external link files",
-      "\\Microsoft Excel 2016\\Excel Options\\Security\\Trust Center\\File Block Settings",
-      "Microsoft Excel 2016\\Excel Options\\Security\\Trust Center\\File Block Settings",
-      "File Block Settings"
-    ],
-    "categoryName": "Microsoft Excel 2016"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_prefetchwithserviceworkerenabled",
-    "settingName": "Allow SpeculationRules prefetch for ServiceWorker-controlled URLs",
-    "settingDescription": "Controls whether SpeculationRules prefetch requests are allowed for\r\nServiceWorker-controlled URLs.\r\n\r\nStarting with Microsoft Edge version 138,\r\nprefetch requests to ServiceWorker-controlled URLs are allowed by default when\r\nthe PrefetchServiceWorker feature is enabled.\r\n\r\nIf this policy is enabled or not configured, that default behavior is used.\r\n\r\nTo restore the legacy behavior from versions prior to 138, where prefetch requests\r\nto ServiceWorker-controlled URLs were blocked, set this policy to disabled.\r\n\r\nThis policy is intended to be temporary and will be removed in the future.",
-    "keywords": [
-      "PrefetchWithServiceWorkerEnabled",
-      "Allow SpeculationRules prefetch for ServiceWorker-controlled URLs",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge~network_localnetworkaccessrestrictionsenabled",
-    "settingName": "Specifies whether to block requests from public websites to devices on a user's local network. (deprecated)",
-    "settingDescription": "DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.\r\n\r\nLocal Network Access restrictions prevent public websites from making\r\nrequests to devices on a user's local network without explicit user permission.\r\n\r\nIf you enable this policy, Microsoft Edge will\r\nblock any request that would otherwise trigger a DevTools warning\r\ndue to Local Network Access checks.\r\nThese requests will be denied without prompting the user.\r\n\r\nIf you disable or don't configure this policy, Microsoft Edge will handle\r\nthese requests using the default behavior, which may include showing warnings in DevTools\r\nand allowing the request to proceed depending on the context.\r\n\r\nNote: This feature improves local network security by deprecating direct access to private IP addresses from public websites\r\nunless explicitly granted by the user.",
-    "keywords": [
-      "LocalNetworkAccessRestrictionsEnabled",
-      "Specifies whether to block requests from public websites to devices on a user's local network. (deprecated)",
-      "\\Microsoft Edge\\Network settings",
-      "Microsoft Edge\\Network settings",
-      "Network settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_edgehistoryaisearchenabled",
-    "settingName": "Control access to AI-enhanced search in History",
-    "settingDescription": "This policy controls whether users can use AI-enhanced search in their browsing history in Microsoft Edge.\r\n\r\nWhen enabled or not configured, users can search using synonyms, natural language phrases, and minor spelling errors to find previously visited pages.\r\n\r\nWhen disabled, users can only perform exact match (verbatim) searches in their history.",
-    "keywords": [
-      "EdgeHistoryAISearchEnabled",
-      "Control access to AI-enhanced search in History",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_recommended~identity_recommended_edgeopenexternallinkswithprimaryworkprofileenabled_recommended",
-    "settingName": "Use Primary Work Profile as default to open external links",
-    "settingDescription": "This policy controls whether Microsoft Edge uses the Primary Work Profile as the default profile when opening external links.\r\n1. On Windows, the Primary Work Profile refers to the profile signed in with the Entra ID account used to enroll the device.\r\n2. On macOS and Linux, the Primary Work Profile is the only profile signed in with an Entra ID account. If multiple profiles are signed in with Entra ID accounts, the Primary Work Profile setting does not apply.\r\n\r\nPolicy behavior:\r\n1. If enabled or not configured, Microsoft Edge will use the Primary Work Profile as the default for opening external links.\r\n2. If disabled, the last used profile becomes the default for opening external links.\r\n\r\nNote: This policy does not override the following scenarios:\r\n1. If the EdgeDefaultProfileEnabled policy is set, it takes precedence over this policy.\r\n2. External links opened from Outlook or Microsoft Teams may be configured to launch in a specific profile, which can override the Primary Work Profile setting.\r\n3. If the user sets a preference for \"Default profile for external links\" in Profile preferences, that setting will take effect.",
-    "keywords": [
-      "EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled_recommended",
-      "Use Primary Work Profile as default to open external links",
-      "\\Microsoft Edge - Default Settings (users can override)\\Identity and sign-in",
-      "Microsoft Edge - Default Settings (users can override)\\Identity and sign-in",
-      "Identity and sign-in"
-    ],
-    "categoryName": "Microsoft Edge - Default Settings (users can override)"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_tls13earlydataenabled",
-    "settingName": "Control whether TLS 1.3 Early Data is enabled in Microsoft Edge (User)",
-    "settingDescription": "This policy controls whether TLS 1.3 Early Data is enabled in Microsoft Edge.\r\n\r\nTLS 1.3 Early Data is an extension that allows an HTTP request to be sent in parallel with the TLS handshake. When enabled and supported by the server, this can improve page load performance.\r\n\r\nEnabled – Microsoft Edge enables TLS 1.3 Early Data.\r\n\r\nDisabled – Microsoft Edge disables TLS 1.3 Early Data.\r\n\r\nNot configured – Microsoft Edge follows the default rollout process for TLS 1.3 Early Data.\r\n\r\nNOTE: When this feature is enabled, whether TLS 1.3 Early Data is used depends on server support. Most modern TLS servers and middleware can handle or reject Early Data without interrupting the connection. However, improperly implemented TLS stacks may cause connection failures. If such issues occur, contact the device or software vendor for a resolution.\r\n\r\nThis policy is temporary and intended to help test for compatibility issues. It may be removed in a future release once the feature is fully rolled out.",
-    "keywords": [
-      "TLS13EarlyDataEnabled",
-      "Control whether TLS 1.3 Early Data is enabled in Microsoft Edge",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_onsecurityevententerpriseconnector",
-    "settingName": "Configuration policy for Microsoft Edge for Business Reporting Connectors (User)",
-    "settingDescription": "Defines the Microsoft Edge for Business Reporting Connectors service settings that apply when a security event occurs in Microsoft Edge. These events include negative verdicts from Data Loss Prevention Connectors, password reuse, navigation to unsafe pages, and other security-sensitive actions.\r\n\r\nThe service_provider field specifies the reporting service provider. The enabled_event_names field lists the security events enabled for that provider.\r\n\r\nThis policy requires additional setup to take effect. For configuration guidance, see https://go.microsoft.com/fwlink/?linkid=2325446.\r\n\r\nExample value:\r\n\r\n[\r\n  {\r\n    \"enabled_event_names\": [\r\n      \"passwordChangedEvent\",\r\n      \"sensitiveDataEvent\"\r\n    ],\r\n    \"enabled_opt_in_events\": [\r\n      {\r\n        \"name\": \"loginEvent\",\r\n        \"url_patterns\": [\r\n          \"*\"\r\n        ]\r\n      },\r\n      {\r\n        \"name\": \"passwordBreachEvent\",\r\n        \"url_patterns\": [\r\n          \"example.com\",\r\n          \"other.example.com\"\r\n        ]\r\n      }\r\n    ],\r\n    \"service_provider\": \"microsoft\"\r\n  }\r\n]",
-    "keywords": [
-      "OnSecurityEventEnterpriseConnector",
-      "Configuration policy for Microsoft Edge for Business Reporting Connectors",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_onsecurityevententerpriseconnector_onsecurityevententerpriseconnector",
-    "settingName": "Configuration policy for Microsoft Edge for Business Reporting Connectors (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "OnSecurityEventEnterpriseConnector",
-      "Configuration policy for Microsoft Edge for Business Reporting Connectors",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~extensions_mandatoryextensionsforinprivatenavigation_mandatoryextensionsforinprivatenavigationdesc",
-    "settingName": "Specify extensions users must allow in order to navigate using InPrivate mode (User)",
-    "settingDescription": "",
-    "keywords": [
-      "MandatoryExtensionsForInPrivateNavigation",
-      "Specify extensions users must allow in order to navigate using InPrivate mode",
-      "\\Microsoft Edge\\Extensions",
-      "Microsoft Edge\\Extensions",
-      "Extensions"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_recommended_microsoft365copilotchaticonenabled_recommended",
-    "settingName": "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar (User)",
-    "settingDescription": "For users in an Entra ID Microsoft Edge profile, this policy controls whether the Microsoft 365 Copilot Chat icon will be shown in the Microsoft Edge for Business toolbar for Microsoft 365 Copilot licensed and unlicensed users.\r\n\r\nThis policy only applies when users are accessing Copilot in the sidepane.\r\n\r\nIf the policy is enabled: Copilot will appear in the toolbar.\r\n\r\nIf the policy is disabled: Copilot will not appear in the toolbar.\r\n\r\nIf the policy is not configured: Otherwise, Copilot will show in the toolbar and users may enable or disable Copilot from showing by using the Show Copilot toggle in settings.\r\n\r\nWhen both this policy and 'HubsSidebarEnabled' (Show Hubs Sidebar) are configured, this policy takes precedence in determining whether Copilot appears in the toolbar. If this policy is not configured and 'HubsSidebarEnabled' is disabled, Copilot will remain hidden. In a future release, this policy will be the sole control for managing Copilot's visibility in the toolbar.",
-    "keywords": [
-      "Microsoft365CopilotChatIconEnabled_recommended",
-      "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar",
-      "\\Microsoft Edge - Default Settings (users can override)",
-      "Microsoft Edge - Default Settings (users can override)"
-    ],
-    "categoryName": "Microsoft Edge - Default Settings (users can override)"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_onsecurityevententerpriseconnector_onsecurityevententerpriseconnector",
-    "settingName": "Configuration policy for Microsoft Edge for Business Reporting Connectors (User)",
-    "settingDescription": "",
-    "keywords": [
-      "OnSecurityEventEnterpriseConnector",
-      "Configuration policy for Microsoft Edge for Business Reporting Connectors",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_office16v20~policy~l_microsoftofficesystem~l_miscellaneous437_l_cloudonlysaving",
-    "settingName": "Restrict saving on non-Cloud locations (User)",
-    "settingDescription": "This policy setting controls whether Word, Excel, and PowerPoint users can use non-cloud locations (local and network) to create new files.\r\n\r\nIf you enable this policy setting, users will only have Cloud Locations available to perform SaveAs and Save new files.\r\n\r\nIf you disable or don’t configure this policy setting, users can use any location (Cloud, Local, and Network) to perform SaveAs and Save new files.\r\n\r\nNote: This policy setting only applies to subscription versions of Office, such as Microsoft 365 Apps for Enterprise.",
-    "keywords": [
-      "L_CloudOnlySaving",
-      "Restrict saving on non-Cloud locations",
-      "\\Microsoft Office 2016\\Miscellaneous",
-      "Microsoft Office 2016\\Miscellaneous",
-      "Miscellaneous"
-    ],
-    "categoryName": "Microsoft Office 2016"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_onedrivengscv7~policy~onedrivengsc_sharedcontentdeleteconfirmation",
-    "settingName": "Prompt user to confirm when they delete shared content",
-    "settingDescription": "When local synced files are deleted, which multiple users have access, a dialog appears informing the user that other users will no longer have access to that content, and asking them to confirm the action before OneDrive propagates deletes online. After confirming, deletes of other shared content for a short period of time do not cause additional confirmations. Other content continues to sync.\r\n\r\nEnable this setting to prevent users from hiding the confirmation dialog. Each time the user deletes shared content, their confirmation is required before the item is deleted for everyone online.\r\n\r\nDisable this setting to not show the delete confirmation message. Deletes will immediately be made in the cloud.\r\n\r\nDo not configure this setting so users can choose to hide the warning, with the effects mentioned above.\r\n      ",
-    "keywords": [
-      "SharedContentDeleteConfirmation",
-      "Prompt user to confirm when they delete shared content",
-      "\\OneDrive",
-      "OneDrive"
-    ],
-    "categoryName": "OneDrive"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_onent16v7~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_onenotesensitivitylabels",
-    "settingName": "Enable OneNote Sensitivity Labels (User)",
-    "settingDescription": "This policy setting controls whether Purview Sensitivity Label capabilities can be enabled for OneNote Sections.\r\n\r\nIf you enable this policy, users can use supported Purview features, such as manual labeling, label removal, or default labels, to apply sensitivity labels to OneNote sections and help protect sensitive information. At this time, mandatory labels, auto labeling, and dynamic watermarking are not supported.\r\n\r\nIf you disable this policy, users won't be able to apply, change or remove Sensitivity Labels in OneNote Sections.\r\n\r\nIf you do not configure this policy setting, users won't be able to apply, change or remove Sensitivity Labels in OneNote Sections.",
-    "keywords": [
-      "L_OneNoteSensitivityLabels",
-      "Enable OneNote Sensitivity Labels",
-      "\\Microsoft OneNote 2016\\OneNote Options\\Other",
-      "Microsoft OneNote 2016\\OneNote Options\\Other",
-      "Other"
-    ],
-    "categoryName": "OneNote Options"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_word16v14~policy~l_microsoftofficeword~l_wordoptions~l_advanced~l_emailoptions_l_advancedtypographyoutlook",
-    "settingName": "Allow Advanced Typography features for Outlook (User)",
-    "settingDescription": "This policy setting sets the “Advanced Typography” options found under Outlook’s File tab | Outlook Options | Mail | Editor Options | Advanced | Advanced Typography.\r\n\r\nIf you enable or do not configure this policy setting, Advanced Typography features will be applied. This is the default behavior.\r\n\r\nIf you disable this policy setting, Advanced Typography features will not be applied.\r\n      ",
-    "keywords": [
-      "L_AdvancedTypographyOutlook",
-      "Allow Advanced Typography features for Outlook",
-      "\\Microsoft Word 2016\\Word Options\\Advanced\\E-mail Options",
-      "Microsoft Word 2016\\Word Options\\Advanced\\E-mail Options",
-      "E-mail Options"
-    ],
-    "categoryName": "Microsoft Word 2016"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchproviderencodings",
     "settingName": "Default search provider encodings",
     "settingDescription": "Specify the character encodings supported by the search provider. Encodings are code page names like UTF-8, GB2312, and ISO-8859-1. They are tried in the order provided.\n\nThis policy is optional. If not configured, the default, UTF-8, is used.\n\nThis policy is applied only if you enable the \"DefaultSearchProviderEnabled\" and \"DefaultSearchProviderSearchURL\" policies.\n\nStarting in Microsoft Edge 84, you can set this policy as a recommended policy. If the user has already set a default search provider, the default search provider configured by this recommended policy will not be added to the list of search providers the user can choose from. If this is the desired behavior, use the \"ManagedSearchEngines\" policy.",
@@ -21790,6 +21603,19 @@
     "categoryName": "Microsoft Excel 2016"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_excel16v9~policy~l_microsoftofficeexcel~l_exceloptions~l_security~l_trustcenter~l_fileblocksettings_l_excelfileblockexternallinks",
+    "settingName": "File Block includes external link files (User)",
+    "settingDescription": "This setting determines whether Trust Center settings for blocking load of potentially unsecure workbooks applies to those accessed by external links.\r\n\r\nIf you enable this policy setting, external links to workbooks that are blocked by File Block settings in Trust Center will not refresh. Attempts to create new links or refresh data from blocked workbooks may result in errors.\r\n\r\nIf you disable this policy setting, attempts to access external links data will not be subject to File Block settings in Trust Center.",
+    "keywords": [
+      "L_ExcelFileBlockExternalLinks",
+      "File Block includes external link files",
+      "\\Microsoft Excel 2016\\Excel Options\\Security\\Trust Center\\File Block Settings",
+      "Microsoft Excel 2016\\Excel Options\\Security\\Trust Center\\File Block Settings",
+      "File Block Settings"
+    ],
+    "categoryName": "Microsoft Excel 2016"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_experience_allowsimerrordialogpromptwhennosim",
     "settingName": "Allow SIM Error Dialog Prompt When No SIM",
     "settingDescription": "Allow SIM error diaglog prompts when no SIM is inserted.",
@@ -26809,6 +26635,129 @@
     "keywords": [
       "OnFileAttachedEnterpriseConnector",
       "Configuration policy for files attached for Microsoft Edge for Business Data Loss Prevention Connectors",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_prefetchwithserviceworkerenabled",
+    "settingName": "Allow SpeculationRules prefetch for ServiceWorker-controlled URLs",
+    "settingDescription": "Controls whether SpeculationRules prefetch requests are allowed for\r\nServiceWorker-controlled URLs.\r\n\r\nStarting with Microsoft Edge version 138,\r\nprefetch requests to ServiceWorker-controlled URLs are allowed by default when\r\nthe PrefetchServiceWorker feature is enabled.\r\n\r\nIf this policy is enabled or not configured, that default behavior is used.\r\n\r\nTo restore the legacy behavior from versions prior to 138, where prefetch requests\r\nto ServiceWorker-controlled URLs were blocked, set this policy to disabled.\r\n\r\nThis policy is intended to be temporary and will be removed in the future.",
+    "keywords": [
+      "PrefetchWithServiceWorkerEnabled",
+      "Allow SpeculationRules prefetch for ServiceWorker-controlled URLs",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge~network_localnetworkaccessrestrictionsenabled",
+    "settingName": "Specifies whether to block requests from public websites to devices on a user's local network. (deprecated)",
+    "settingDescription": "DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.\r\n\r\nLocal Network Access restrictions prevent public websites from making\r\nrequests to devices on a user's local network without explicit user permission.\r\n\r\nIf you enable this policy, Microsoft Edge will\r\nblock any request that would otherwise trigger a DevTools warning\r\ndue to Local Network Access checks.\r\nThese requests will be denied without prompting the user.\r\n\r\nIf you disable or don't configure this policy, Microsoft Edge will handle\r\nthese requests using the default behavior, which may include showing warnings in DevTools\r\nand allowing the request to proceed depending on the context.\r\n\r\nNote: This feature improves local network security by deprecating direct access to private IP addresses from public websites\r\nunless explicitly granted by the user.",
+    "keywords": [
+      "LocalNetworkAccessRestrictionsEnabled",
+      "Specifies whether to block requests from public websites to devices on a user's local network. (deprecated)",
+      "\\Microsoft Edge\\Network settings",
+      "Microsoft Edge\\Network settings",
+      "Network settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_edgehistoryaisearchenabled",
+    "settingName": "Control access to AI-enhanced search in History",
+    "settingDescription": "This policy controls whether users can use AI-enhanced search in their browsing history in Microsoft Edge.\r\n\r\nWhen enabled or not configured, users can search using synonyms, natural language phrases, and minor spelling errors to find previously visited pages.\r\n\r\nWhen disabled, users can only perform exact match (verbatim) searches in their history.",
+    "keywords": [
+      "EdgeHistoryAISearchEnabled",
+      "Control access to AI-enhanced search in History",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_recommended~identity_recommended_edgeopenexternallinkswithprimaryworkprofileenabled_recommended",
+    "settingName": "Use Primary Work Profile as default to open external links",
+    "settingDescription": "This policy controls whether Microsoft Edge uses the Primary Work Profile as the default profile when opening external links.\r\n1. On Windows, the Primary Work Profile refers to the profile signed in with the Entra ID account used to enroll the device.\r\n2. On macOS and Linux, the Primary Work Profile is the only profile signed in with an Entra ID account. If multiple profiles are signed in with Entra ID accounts, the Primary Work Profile setting does not apply.\r\n\r\nPolicy behavior:\r\n1. If enabled or not configured, Microsoft Edge will use the Primary Work Profile as the default for opening external links.\r\n2. If disabled, the last used profile becomes the default for opening external links.\r\n\r\nNote: This policy does not override the following scenarios:\r\n1. If the EdgeDefaultProfileEnabled policy is set, it takes precedence over this policy.\r\n2. External links opened from Outlook or Microsoft Teams may be configured to launch in a specific profile, which can override the Primary Work Profile setting.\r\n3. If the user sets a preference for \"Default profile for external links\" in Profile preferences, that setting will take effect.",
+    "keywords": [
+      "EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled_recommended",
+      "Use Primary Work Profile as default to open external links",
+      "\\Microsoft Edge - Default Settings (users can override)\\Identity and sign-in",
+      "Microsoft Edge - Default Settings (users can override)\\Identity and sign-in",
+      "Identity and sign-in"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_tls13earlydataenabled",
+    "settingName": "Control whether TLS 1.3 Early Data is enabled in Microsoft Edge (User)",
+    "settingDescription": "This policy controls whether TLS 1.3 Early Data is enabled in Microsoft Edge.\r\n\r\nTLS 1.3 Early Data is an extension that allows an HTTP request to be sent in parallel with the TLS handshake. When enabled and supported by the server, this can improve page load performance.\r\n\r\nEnabled – Microsoft Edge enables TLS 1.3 Early Data.\r\n\r\nDisabled – Microsoft Edge disables TLS 1.3 Early Data.\r\n\r\nNot configured – Microsoft Edge follows the default rollout process for TLS 1.3 Early Data.\r\n\r\nNOTE: When this feature is enabled, whether TLS 1.3 Early Data is used depends on server support. Most modern TLS servers and middleware can handle or reject Early Data without interrupting the connection. However, improperly implemented TLS stacks may cause connection failures. If such issues occur, contact the device or software vendor for a resolution.\r\n\r\nThis policy is temporary and intended to help test for compatibility issues. It may be removed in a future release once the feature is fully rolled out.",
+    "keywords": [
+      "TLS13EarlyDataEnabled",
+      "Control whether TLS 1.3 Early Data is enabled in Microsoft Edge",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_onsecurityevententerpriseconnector",
+    "settingName": "Configuration policy for Microsoft Edge for Business Reporting Connectors (User)",
+    "settingDescription": "Defines the Microsoft Edge for Business Reporting Connectors service settings that apply when a security event occurs in Microsoft Edge. These events include negative verdicts from Data Loss Prevention Connectors, password reuse, navigation to unsafe pages, and other security-sensitive actions.\r\n\r\nThe service_provider field specifies the reporting service provider. The enabled_event_names field lists the security events enabled for that provider.\r\n\r\nThis policy requires additional setup to take effect. For configuration guidance, see https://go.microsoft.com/fwlink/?linkid=2325446.\r\n\r\nExample value:\r\n\r\n[\r\n  {\r\n    \"enabled_event_names\": [\r\n      \"passwordChangedEvent\",\r\n      \"sensitiveDataEvent\"\r\n    ],\r\n    \"enabled_opt_in_events\": [\r\n      {\r\n        \"name\": \"loginEvent\",\r\n        \"url_patterns\": [\r\n          \"*\"\r\n        ]\r\n      },\r\n      {\r\n        \"name\": \"passwordBreachEvent\",\r\n        \"url_patterns\": [\r\n          \"example.com\",\r\n          \"other.example.com\"\r\n        ]\r\n      }\r\n    ],\r\n    \"service_provider\": \"microsoft\"\r\n  }\r\n]",
+    "keywords": [
+      "OnSecurityEventEnterpriseConnector",
+      "Configuration policy for Microsoft Edge for Business Reporting Connectors",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_onsecurityevententerpriseconnector_onsecurityevententerpriseconnector",
+    "settingName": "Configuration policy for Microsoft Edge for Business Reporting Connectors (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "OnSecurityEventEnterpriseConnector",
+      "Configuration policy for Microsoft Edge for Business Reporting Connectors",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~extensions_mandatoryextensionsforinprivatenavigation_mandatoryextensionsforinprivatenavigationdesc",
+    "settingName": "Specify extensions users must allow in order to navigate using InPrivate mode (User)",
+    "settingDescription": "",
+    "keywords": [
+      "MandatoryExtensionsForInPrivateNavigation",
+      "Specify extensions users must allow in order to navigate using InPrivate mode",
+      "\\Microsoft Edge\\Extensions",
+      "Microsoft Edge\\Extensions",
+      "Extensions"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_recommended_microsoft365copilotchaticonenabled_recommended",
+    "settingName": "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar (User)",
+    "settingDescription": "For users in an Entra ID Microsoft Edge profile, this policy controls whether the Microsoft 365 Copilot Chat icon will be shown in the Microsoft Edge for Business toolbar for Microsoft 365 Copilot licensed and unlicensed users.\r\n\r\nThis policy only applies when users are accessing Copilot in the sidepane.\r\n\r\nIf the policy is enabled: Copilot will appear in the toolbar.\r\n\r\nIf the policy is disabled: Copilot will not appear in the toolbar.\r\n\r\nIf the policy is not configured: Otherwise, Copilot will show in the toolbar and users may enable or disable Copilot from showing by using the Show Copilot toggle in settings.\r\n\r\nWhen both this policy and 'HubsSidebarEnabled' (Show Hubs Sidebar) are configured, this policy takes precedence in determining whether Copilot appears in the toolbar. If this policy is not configured and 'HubsSidebarEnabled' is disabled, Copilot will remain hidden. In a future release, this policy will be the sole control for managing Copilot's visibility in the toolbar.",
+    "keywords": [
+      "Microsoft365CopilotChatIconEnabled_recommended",
+      "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar",
+      "\\Microsoft Edge - Default Settings (users can override)",
+      "Microsoft Edge - Default Settings (users can override)"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_onsecurityevententerpriseconnector_onsecurityevententerpriseconnector",
+    "settingName": "Configuration policy for Microsoft Edge for Business Reporting Connectors (User)",
+    "settingDescription": "",
+    "keywords": [
+      "OnSecurityEventEnterpriseConnector",
+      "Configuration policy for Microsoft Edge for Business Reporting Connectors",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],
@@ -35972,6 +35921,19 @@
     "categoryName": "Microsoft Office 2016"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_office16v20~policy~l_microsoftofficesystem~l_miscellaneous437_l_cloudonlysaving",
+    "settingName": "Restrict saving on non-Cloud locations (User)",
+    "settingDescription": "This policy setting controls whether Word, Excel, and PowerPoint users can use non-cloud locations (local and network) to create new files.\r\n\r\nIf you enable this policy setting, users will only have Cloud Locations available to perform SaveAs and Save new files.\r\n\r\nIf you disable or don’t configure this policy setting, users can use any location (Cloud, Local, and Network) to perform SaveAs and Save new files.\r\n\r\nNote: This policy setting only applies to subscription versions of Office, such as Microsoft 365 Apps for Enterprise.",
+    "keywords": [
+      "L_CloudOnlySaving",
+      "Restrict saving on non-Cloud locations",
+      "\\Microsoft Office 2016\\Miscellaneous",
+      "Microsoft Office 2016\\Miscellaneous",
+      "Miscellaneous"
+    ],
+    "categoryName": "Microsoft Office 2016"
+  },
+  {
     "settingId": "user_vendor_msft_policy_config_office16v3~policy~l_microsoftofficesystem~l_globaloptions~l_customize_l_defaultuithemeuser_l_defaultuithemeenum",
     "settingName": "Theme: (User)",
     "settingDescription": "",
@@ -36527,6 +36489,18 @@
     "categoryName": "OneDrive"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_onedrivengscv7~policy~onedrivengsc_sharedcontentdeleteconfirmation",
+    "settingName": "Prompt user to confirm when they delete shared content",
+    "settingDescription": "When local synced files are deleted, which multiple users have access, a dialog appears informing the user that other users will no longer have access to that content, and asking them to confirm the action before OneDrive propagates deletes online. After confirming, deletes of other shared content for a short period of time do not cause additional confirmations. Other content continues to sync.\r\n\r\nEnable this setting to prevent users from hiding the confirmation dialog. Each time the user deletes shared content, their confirmation is required before the item is deleted for everyone online.\r\n\r\nDisable this setting to not show the delete confirmation message. Deletes will immediately be made in the cloud.\r\n\r\nDo not configure this setting so users can choose to hide the warning, with the effects mentioned above.\r\n      ",
+    "keywords": [
+      "SharedContentDeleteConfirmation",
+      "Prompt user to confirm when they delete shared content",
+      "\\OneDrive",
+      "OneDrive"
+    ],
+    "categoryName": "OneDrive"
+  },
+  {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_save_l_percentageofunuseddiskspacetoallowinsections",
     "settingName": "Percentage of unused disk space to allow in sections (User)",
     "settingDescription": "Sets the value in the option ''Percentage of unused space to allow in sections without optimizing''.",
@@ -36952,6 +36926,19 @@
       "\\Microsoft OneNote 2016\\OneNote Options\\Editing",
       "Microsoft OneNote 2016\\OneNote Options\\Editing",
       "Editing"
+    ],
+    "categoryName": "OneNote Options"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_onent16v7~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_onenotesensitivitylabels",
+    "settingName": "Enable OneNote Sensitivity Labels (User)",
+    "settingDescription": "This policy setting controls whether Purview Sensitivity Label capabilities can be enabled for OneNote Sections.\r\n\r\nIf you enable this policy, users can use supported Purview features, such as manual labeling, label removal, or default labels, to apply sensitivity labels to OneNote sections and help protect sensitive information. At this time, mandatory labels, auto labeling, and dynamic watermarking are not supported.\r\n\r\nIf you disable this policy, users won't be able to apply, change or remove Sensitivity Labels in OneNote Sections.\r\n\r\nIf you do not configure this policy setting, users won't be able to apply, change or remove Sensitivity Labels in OneNote Sections.",
+    "keywords": [
+      "L_OneNoteSensitivityLabels",
+      "Enable OneNote Sensitivity Labels",
+      "\\Microsoft OneNote 2016\\OneNote Options\\Other",
+      "Microsoft OneNote 2016\\OneNote Options\\Other",
+      "Other"
     ],
     "categoryName": "OneNote Options"
   },
@@ -44205,6 +44192,19 @@
     "categoryName": "Wireless Display"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_word16v14~policy~l_microsoftofficeword~l_wordoptions~l_advanced~l_emailoptions_l_advancedtypographyoutlook",
+    "settingName": "Allow Advanced Typography features for Outlook (User)",
+    "settingDescription": "This policy setting sets the “Advanced Typography” options found under Outlook’s File tab | Outlook Options | Mail | Editor Options | Advanced | Advanced Typography.\r\n\r\nIf you enable or do not configure this policy setting, Advanced Typography features will be applied. This is the default behavior.\r\n\r\nIf you disable this policy setting, Advanced Typography features will not be applied.\r\n      ",
+    "keywords": [
+      "L_AdvancedTypographyOutlook",
+      "Allow Advanced Typography features for Outlook",
+      "\\Microsoft Word 2016\\Word Options\\Advanced\\E-mail Options",
+      "Microsoft Word 2016\\Word Options\\Advanced\\E-mail Options",
+      "E-mail Options"
+    ],
+    "categoryName": "Microsoft Word 2016"
+  },
+  {
     "settingId": "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_miscellaneous178_l_listofmanagedaddins_l_listofmanagedaddins2_value",
     "settingName": "Value",
     "settingDescription": "",
@@ -45811,182 +45811,6 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_settingssync_disablelanguagesettingsync",
-    "settingName": "Do not sync language preferences settings",
-    "settingDescription": "\r\n        Prevent the \"language preferences\" group from syncing to and from this PC. This turns off and disables the \"languages preferences\" group on the \"Windows backup\" settings page in PC settings.\r\n\r\nIf you enable this policy setting, the \"language preferences\" group will not be synced.\r\n\r\nUse the option \"Allow users to turn language preferences syncing on\" so that syncing is turned off by default but not disabled.\r\n\r\nIf you do not set or disable this setting, syncing of the \"language preferences\" group is on by default and configurable by the user.\r\n      ",
-    "keywords": [
-      "DisableLanguageSettingSync",
-      "Do not sync language preferences settings",
-      "\\Windows Components\\Sync your settings",
-      "Administrative Templates\\Windows Components\\Sync your settings",
-      "Sync your settings"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_settingssync_disablelanguagesettingsync_checkbox_useroverride",
-    "settingName": "Allow users to turn \"language preferences\" syncing on. (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "DisableLanguageSettingSync",
-      "Do not sync language preferences settings",
-      "\\Windows Components\\Sync your settings",
-      "Administrative Templates\\Windows Components\\Sync your settings",
-      "Sync your settings"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_excel16v10~policy~l_microsoftofficeexcel~l_exceloptions~l_advanced_l_excelforcesupportforunicodesurrogates",
-    "settingName": "Force support for Unicode surrogates in Excel 2021 and Excel 2024 (User)",
-    "settingDescription": "Warning: this setting alters how your app calculates LEN, MID, SEARCH, FIND and REPLACE and forces files to Compatibility Version 2. When these workbooks are shared, users may see different calculation results. This setting only applies to non-subscription Excel 2021 and Excel 2024.\r\n \r\nIf you enable this policy setting, when any workbook is opened in non-subscription Excel 2021 or Excel 2024, it will automatically be set to Compatibility Version 2. This will cause LEN, MID, SEARCH, FIND and REPLACE functions to calculate differently in those workbooks.\r\n \r\nIf you disable or do not configure this policy setting, the Compatibility Version will not be automatically set when a file is opened in any version of non-subscription Excel 2021 and Excel 2024 (this setting never affects other versions).",
-    "keywords": [
-      "L_ExcelForceSupportForUnicodeSurrogates",
-      "Force support for Unicode surrogates in Excel 2021 and Excel 2024",
-      "\\Microsoft Excel 2016\\Excel Options\\Advanced",
-      "Microsoft Excel 2016\\Excel Options\\Advanced",
-      "Advanced"
-    ],
-    "categoryName": "Microsoft Excel 2016"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_builtinaiapisenabled",
-    "settingName": "Allow pages to use the built-in AI APIs. (User)",
-    "settingDescription": "Use this policy to control whether websites can access the built-in AI APIs, including the LanguageModel API, Summarization API, Writer API, and Rewriter API.\r\n\r\nEnable this policy to allow pages to use the APIs. If you don’t configure this policy, the APIs are still allowed.\r\n\r\nDisable this policy to block access to the APIs. The APIs will return an error when used.\r\n\r\nFor more information, see https://github.com/webmachinelearning/writing-assistance-apis/blob/main/README.md.",
-    "keywords": [
-      "BuiltInAIAPIsEnabled",
-      "Allow pages to use the built-in AI APIs.",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_recommended_microsoft365copilotchaticonenabled_recommended",
-    "settingName": "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar",
-    "settingDescription": "For users in an Entra ID Microsoft Edge profile, this policy controls whether the Microsoft 365 Copilot Chat icon will be shown in the Microsoft Edge for Business toolbar for Microsoft 365 Copilot licensed and unlicensed users.\r\n\r\nThis policy only applies when users are accessing Copilot in the sidepane.\r\n\r\nIf the policy is enabled: Copilot will appear in the toolbar.\r\n\r\nIf the policy is disabled: Copilot will not appear in the toolbar.\r\n\r\nIf the policy is not configured: Otherwise, Copilot will show in the toolbar and users may enable or disable Copilot from showing by using the Show Copilot toggle in settings.\r\n\r\nWhen both this policy and 'HubsSidebarEnabled' (Show Hubs Sidebar) are configured, this policy takes precedence in determining whether Copilot appears in the toolbar. If this policy is not configured and 'HubsSidebarEnabled' is disabled, Copilot will remain hidden. In a future release, this policy will be the sole control for managing Copilot's visibility in the toolbar.",
-    "keywords": [
-      "Microsoft365CopilotChatIconEnabled_recommended",
-      "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar",
-      "\\Microsoft Edge - Default Settings (users can override)",
-      "Microsoft Edge - Default Settings (users can override)"
-    ],
-    "categoryName": "Microsoft Edge - Default Settings (users can override)"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~extensions_mandatoryextensionsforinprivatenavigation",
-    "settingName": "Specify extensions users must allow in order to navigate using InPrivate mode",
-    "settingDescription": "This policy lets you specify a list of extension IDs that must be explicitly allowed by the user to run in InPrivate mode in order to enable InPrivate browsing.\r\n\r\nIf users do not allow all listed extensions to run in InPrivate mode, they will be unable to navigate using InPrivate.\r\n\r\nIf any extension in the list is not installed, InPrivate navigation is blocked.\r\n\r\nThis policy only applies when InPrivate mode is enabled. If InPrivate mode is disabled using the InPrivateModeAvailability policy, this policy has no effect.\r\n\r\nExample value:\r\n\r\nabcdefghijklmnopabcdefghijklmnop",
-    "keywords": [
-      "MandatoryExtensionsForInPrivateNavigation",
-      "Specify extensions users must allow in order to navigate using InPrivate mode",
-      "\\Microsoft Edge\\Extensions",
-      "Microsoft Edge\\Extensions",
-      "Extensions"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~extensions_mandatoryextensionsforinprivatenavigation",
-    "settingName": "Specify extensions users must allow in order to navigate using InPrivate mode (User)",
-    "settingDescription": "This policy lets you specify a list of extension IDs that must be explicitly allowed by the user to run in InPrivate mode in order to enable InPrivate browsing.\r\n\r\nIf users do not allow all listed extensions to run in InPrivate mode, they will be unable to navigate using InPrivate.\r\n\r\nIf any extension in the list is not installed, InPrivate navigation is blocked.\r\n\r\nThis policy only applies when InPrivate mode is enabled. If InPrivate mode is disabled using the InPrivateModeAvailability policy, this policy has no effect.\r\n\r\nExample value:\r\n\r\nabcdefghijklmnopabcdefghijklmnop",
-    "keywords": [
-      "MandatoryExtensionsForInPrivateNavigation",
-      "Specify extensions users must allow in order to navigate using InPrivate mode",
-      "\\Microsoft Edge\\Extensions",
-      "Microsoft Edge\\Extensions",
-      "Extensions"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~identity_edgeopenexternallinkswithappspecifiedprofile",
-    "settingName": "Prioritize App specified profile to open external links (User)",
-    "settingDescription": "This policy controls whether the profile specified by an app (such as Microsoft Teams or Outlook) is given priority when opening external links, instead of the profile selected in the Default profile for external links setting.\r\n\r\nPolicy behavior:\r\n1. Enabled or not configured: The app-specified profile is prioritized for opening external links. This behavior overrides the profile selected in settings, and the behavior defined by the EdgeDefaultProfileEnabled and EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled policies. If the app doesn't specify a profile, this policy has no effect.\r\n2. Disabled: The profile selected in settings—along with the EdgeDefaultProfileEnabled and EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled policies—will be used to determine which profile opens external links.\r\n\r\nNOTE:\r\nThis policy doesn't override user-defined preferences set through Automatic profile switching, including the Custom site switch setting located within it. If a user has configured specific sites to open in designated profiles, those preferences take precedence.",
-    "keywords": [
-      "EdgeOpenExternalLinksWithAppSpecifiedProfile",
-      "Prioritize App specified profile to open external links",
-      "\\Microsoft Edge\\Identity and sign-in",
-      "Microsoft Edge\\Identity and sign-in",
-      "Identity and sign-in"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_microsoft365copilotchaticonenabled",
-    "settingName": "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar",
-    "settingDescription": "For users in an Entra ID Microsoft Edge profile, this policy controls whether the Microsoft 365 Copilot Chat icon will be shown in the Microsoft Edge for Business toolbar for Microsoft 365 Copilot licensed and unlicensed users.\r\n\r\nThis policy only applies when users are accessing Copilot in the sidepane.\r\n\r\nIf the policy is enabled: Copilot will appear in the toolbar.\r\n\r\nIf the policy is disabled: Copilot will not appear in the toolbar.\r\n\r\nIf the policy is not configured: Otherwise, Copilot will show in the toolbar and users may enable or disable Copilot from showing by using the Show Copilot toggle in settings.\r\n\r\nWhen both this policy and 'HubsSidebarEnabled' (Show Hubs Sidebar) are configured, this policy takes precedence in determining whether Copilot appears in the toolbar. If this policy is not configured and 'HubsSidebarEnabled' is disabled, Copilot will remain hidden. In a future release, this policy will be the sole control for managing Copilot's visibility in the toolbar.",
-    "keywords": [
-      "Microsoft365CopilotChatIconEnabled",
-      "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_enableunsafeswiftshader",
-    "settingName": "Allow software WebGL fallback using SwiftShader (User)",
-    "settingDescription": "Controls whether SwiftShader is used as a fallback for WebGL when hardware GPU acceleration is not available.\r\n\r\nWhen enabled, Microsoft Edge will use SwiftShader to support WebGL on systems without GPU acceleration, such as headless environments or virtual machines.\r\n\r\nStarting in Microsoft Edge version 139, SwiftShader has been deprecated due to security concerns. As a result, WebGL context creation will fail in scenarios where SwiftShader would have been used. Enabling this policy allows organizations to temporarily defer the deprecation and continue using SwiftShader.\r\n\r\nIf you disable or do not configure this policy, WebGL context creation may fail on systems without hardware acceleration. This could cause web content relying on WebGL to function incorrectly if it does not handle context creation failures.\r\n\r\nNote: This is a temporary policy and will be removed in a future release.",
-    "keywords": [
-      "EnableUnsafeSwiftShader",
-      "Allow software WebGL fallback using SwiftShader",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_office16v19~policy~l_microsoftofficesystem~l_privacy~l_trustcenter_l_acceptalleulas",
-    "settingName": "Accept all EULAs (User)",
-    "settingDescription": "By default, users are required to accept a EULA upon activating an Office license. By setting this policy, all EULAs will be automatically accepted machine-wide and no prompts will be shown.",
-    "keywords": [
-      "L_AcceptAllEulas",
-      "Accept all EULAs",
-      "\\Microsoft Office 2016\\Privacy\\Trust Center",
-      "Microsoft Office 2016\\Privacy\\Trust Center",
-      "Trust Center"
-    ],
-    "categoryName": "Microsoft Office 2016"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_onedrivengscv7~policy~onedrivengsc_disablenewaccountdetection",
-    "settingName": "Disable a toast and activity center message to encourage a user to sign in OneDrive using an existing credential that is made available to Microsoft applications",
-    "settingDescription": "If admins enable this setting (value 1), the user won't see the toast and the activity center message about new accounts that can be used to sign-in with OneDrive.\r\n\r\nIf admins disable (value 0) or do not configure this setting, the user will see the toast and the activity center message when OneDrive detects a new account on the device.\r\n      ",
-    "keywords": [
-      "DisableNewAccountDetection",
-      "Disable a toast and activity center message to encourage a user to sign in OneDrive using an existing credential that is made available to Microsoft applications",
-      "\\OneDrive",
-      "OneDrive"
-    ],
-    "categoryName": "OneDrive"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_word16v13~policy~l_microsoftofficeword~l_wordoptions~l_optionsgeneral_l_startupboostoption",
-    "settingName": "Allow Startup Boost feature (User)",
-    "settingDescription": "This policy setting configures the \"Startup Boost\" checkbox found under File tab | Options | General. Startup Boost improves Word's boot time by prewarming the app on user login.\r\n\r\nIf you enable or do not configure this policy, users will be able to use the Startup Boost feature. The Startup Boost checkbox will be enabled and checked by default.\r\n\r\nIf you disable this policy setting, the Startup Boost feature will not be available. The Startup Boost checkbox will be disabled and unchecked.\r\n\r\nNote: This policy setting only applies to subscription versions of Office, such as Microsoft 365 Apps for enterprise.\r\n      ",
-    "keywords": [
-      "L_StartupBoostOption",
-      "Allow Startup Boost feature",
-      "\\Microsoft Word 2016\\Word Options\\General",
-      "Microsoft Word 2016\\Word Options\\General",
-      "General"
-    ],
-    "categoryName": "Microsoft Word 2016"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_word16v13~policy~l_microsoftofficeword_l_showesignribbon",
-    "settingName": "Allow the use of SharePoint eSignature for Microsoft Word (User)",
-    "settingDescription": "This policy setting allows you to control whether users can request eSignatures directly from Word in tenants that have enabled Microsoft's native eSignature service.\r\n\r\nIf you enable this policy setting, users can request eSignatures from within Word. This policy setting applies only to subscription versions of Word.\r\n\r\nIf you disable this policy setting, users cannot request eSignatures from within Word.\r\n\r\nIf you don't configure this policy setting, users cannot request eSignatures from within Word.",
-    "keywords": [
-      "L_ShowESignRibbon",
-      "Allow the use of SharePoint eSignature for Microsoft Word",
-      "\\Microsoft Word 2016",
-      "Microsoft Word 2016"
-    ],
-    "categoryName": "Microsoft Word 2016"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.newtabpagelocation_recommended",
@@ -58205,6 +58029,32 @@
     "categoryName": "Administrative Templates"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_settingssync_disablelanguagesettingsync",
+    "settingName": "Do not sync language preferences settings",
+    "settingDescription": "\r\n        Prevent the \"language preferences\" group from syncing to and from this PC. This turns off and disables the \"languages preferences\" group on the \"Windows backup\" settings page in PC settings.\r\n\r\nIf you enable this policy setting, the \"language preferences\" group will not be synced.\r\n\r\nUse the option \"Allow users to turn language preferences syncing on\" so that syncing is turned off by default but not disabled.\r\n\r\nIf you do not set or disable this setting, syncing of the \"language preferences\" group is on by default and configurable by the user.\r\n      ",
+    "keywords": [
+      "DisableLanguageSettingSync",
+      "Do not sync language preferences settings",
+      "\\Windows Components\\Sync your settings",
+      "Administrative Templates\\Windows Components\\Sync your settings",
+      "Sync your settings"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_settingssync_disablelanguagesettingsync_checkbox_useroverride",
+    "settingName": "Allow users to turn \"language preferences\" syncing on. (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "DisableLanguageSettingSync",
+      "Do not sync language preferences settings",
+      "\\Windows Components\\Sync your settings",
+      "Administrative Templates\\Windows Components\\Sync your settings",
+      "Sync your settings"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_admx_eventlog_channel_log_retention_4",
     "settingName": "Control Event Log behavior when the log file reaches its maximum size",
     "settingDescription": "This policy setting controls Event Log behavior when the log file reaches its maximum size.\r\n\r\nIf you enable this policy setting and a log file reaches its maximum size, new events are not written to the log and are lost.\r\n\r\nIf you disable or do not configure this policy setting and a log file reaches its maximum size, new events overwrite old events.\r\n\r\nNote: Old events may or may not be retained according to the \"Backup log automatically when full\" policy setting.\r\n ",
@@ -65641,6 +65491,19 @@
     "categoryName": "eSIM"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_excel16v10~policy~l_microsoftofficeexcel~l_exceloptions~l_advanced_l_excelforcesupportforunicodesurrogates",
+    "settingName": "Force support for Unicode surrogates in Excel 2021 and Excel 2024 (User)",
+    "settingDescription": "Warning: this setting alters how your app calculates LEN, MID, SEARCH, FIND and REPLACE and forces files to Compatibility Version 2. When these workbooks are shared, users may see different calculation results. This setting only applies to non-subscription Excel 2021 and Excel 2024.\r\n \r\nIf you enable this policy setting, when any workbook is opened in non-subscription Excel 2021 or Excel 2024, it will automatically be set to Compatibility Version 2. This will cause LEN, MID, SEARCH, FIND and REPLACE functions to calculate differently in those workbooks.\r\n \r\nIf you disable or do not configure this policy setting, the Compatibility Version will not be automatically set when a file is opened in any version of non-subscription Excel 2021 and Excel 2024 (this setting never affects other versions).",
+    "keywords": [
+      "L_ExcelForceSupportForUnicodeSurrogates",
+      "Force support for Unicode surrogates in Excel 2021 and Excel 2024",
+      "\\Microsoft Excel 2016\\Excel Options\\Advanced",
+      "Microsoft Excel 2016\\Excel Options\\Advanced",
+      "Advanced"
+    ],
+    "categoryName": "Microsoft Excel 2016"
+  },
+  {
     "settingId": "user_vendor_msft_policy_config_excel16v2~policy~l_microsoftofficeexcel~l_exceloptions~l_advanced_l_showformulabarinnormalview",
     "settingName": "Show Formula bar in Normal View (User)",
     "settingDescription": "Enabling this setting selects the Advanced (Display) user option to \"Show formula bar\".",
@@ -72191,6 +72054,93 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_builtinaiapisenabled",
+    "settingName": "Allow pages to use the built-in AI APIs. (User)",
+    "settingDescription": "Use this policy to control whether websites can access the built-in AI APIs, including the LanguageModel API, Summarization API, Writer API, and Rewriter API.\r\n\r\nEnable this policy to allow pages to use the APIs. If you don’t configure this policy, the APIs are still allowed.\r\n\r\nDisable this policy to block access to the APIs. The APIs will return an error when used.\r\n\r\nFor more information, see https://github.com/webmachinelearning/writing-assistance-apis/blob/main/README.md.",
+    "keywords": [
+      "BuiltInAIAPIsEnabled",
+      "Allow pages to use the built-in AI APIs.",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_recommended_microsoft365copilotchaticonenabled_recommended",
+    "settingName": "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar",
+    "settingDescription": "For users in an Entra ID Microsoft Edge profile, this policy controls whether the Microsoft 365 Copilot Chat icon will be shown in the Microsoft Edge for Business toolbar for Microsoft 365 Copilot licensed and unlicensed users.\r\n\r\nThis policy only applies when users are accessing Copilot in the sidepane.\r\n\r\nIf the policy is enabled: Copilot will appear in the toolbar.\r\n\r\nIf the policy is disabled: Copilot will not appear in the toolbar.\r\n\r\nIf the policy is not configured: Otherwise, Copilot will show in the toolbar and users may enable or disable Copilot from showing by using the Show Copilot toggle in settings.\r\n\r\nWhen both this policy and 'HubsSidebarEnabled' (Show Hubs Sidebar) are configured, this policy takes precedence in determining whether Copilot appears in the toolbar. If this policy is not configured and 'HubsSidebarEnabled' is disabled, Copilot will remain hidden. In a future release, this policy will be the sole control for managing Copilot's visibility in the toolbar.",
+    "keywords": [
+      "Microsoft365CopilotChatIconEnabled_recommended",
+      "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar",
+      "\\Microsoft Edge - Default Settings (users can override)",
+      "Microsoft Edge - Default Settings (users can override)"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~extensions_mandatoryextensionsforinprivatenavigation",
+    "settingName": "Specify extensions users must allow in order to navigate using InPrivate mode",
+    "settingDescription": "This policy lets you specify a list of extension IDs that must be explicitly allowed by the user to run in InPrivate mode in order to enable InPrivate browsing.\r\n\r\nIf users do not allow all listed extensions to run in InPrivate mode, they will be unable to navigate using InPrivate.\r\n\r\nIf any extension in the list is not installed, InPrivate navigation is blocked.\r\n\r\nThis policy only applies when InPrivate mode is enabled. If InPrivate mode is disabled using the InPrivateModeAvailability policy, this policy has no effect.\r\n\r\nExample value:\r\n\r\nabcdefghijklmnopabcdefghijklmnop",
+    "keywords": [
+      "MandatoryExtensionsForInPrivateNavigation",
+      "Specify extensions users must allow in order to navigate using InPrivate mode",
+      "\\Microsoft Edge\\Extensions",
+      "Microsoft Edge\\Extensions",
+      "Extensions"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~extensions_mandatoryextensionsforinprivatenavigation",
+    "settingName": "Specify extensions users must allow in order to navigate using InPrivate mode (User)",
+    "settingDescription": "This policy lets you specify a list of extension IDs that must be explicitly allowed by the user to run in InPrivate mode in order to enable InPrivate browsing.\r\n\r\nIf users do not allow all listed extensions to run in InPrivate mode, they will be unable to navigate using InPrivate.\r\n\r\nIf any extension in the list is not installed, InPrivate navigation is blocked.\r\n\r\nThis policy only applies when InPrivate mode is enabled. If InPrivate mode is disabled using the InPrivateModeAvailability policy, this policy has no effect.\r\n\r\nExample value:\r\n\r\nabcdefghijklmnopabcdefghijklmnop",
+    "keywords": [
+      "MandatoryExtensionsForInPrivateNavigation",
+      "Specify extensions users must allow in order to navigate using InPrivate mode",
+      "\\Microsoft Edge\\Extensions",
+      "Microsoft Edge\\Extensions",
+      "Extensions"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~identity_edgeopenexternallinkswithappspecifiedprofile",
+    "settingName": "Prioritize App specified profile to open external links (User)",
+    "settingDescription": "This policy controls whether the profile specified by an app (such as Microsoft Teams or Outlook) is given priority when opening external links, instead of the profile selected in the Default profile for external links setting.\r\n\r\nPolicy behavior:\r\n1. Enabled or not configured: The app-specified profile is prioritized for opening external links. This behavior overrides the profile selected in settings, and the behavior defined by the EdgeDefaultProfileEnabled and EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled policies. If the app doesn't specify a profile, this policy has no effect.\r\n2. Disabled: The profile selected in settings—along with the EdgeDefaultProfileEnabled and EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled policies—will be used to determine which profile opens external links.\r\n\r\nNOTE:\r\nThis policy doesn't override user-defined preferences set through Automatic profile switching, including the Custom site switch setting located within it. If a user has configured specific sites to open in designated profiles, those preferences take precedence.",
+    "keywords": [
+      "EdgeOpenExternalLinksWithAppSpecifiedProfile",
+      "Prioritize App specified profile to open external links",
+      "\\Microsoft Edge\\Identity and sign-in",
+      "Microsoft Edge\\Identity and sign-in",
+      "Identity and sign-in"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_microsoft365copilotchaticonenabled",
+    "settingName": "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar",
+    "settingDescription": "For users in an Entra ID Microsoft Edge profile, this policy controls whether the Microsoft 365 Copilot Chat icon will be shown in the Microsoft Edge for Business toolbar for Microsoft 365 Copilot licensed and unlicensed users.\r\n\r\nThis policy only applies when users are accessing Copilot in the sidepane.\r\n\r\nIf the policy is enabled: Copilot will appear in the toolbar.\r\n\r\nIf the policy is disabled: Copilot will not appear in the toolbar.\r\n\r\nIf the policy is not configured: Otherwise, Copilot will show in the toolbar and users may enable or disable Copilot from showing by using the Show Copilot toggle in settings.\r\n\r\nWhen both this policy and 'HubsSidebarEnabled' (Show Hubs Sidebar) are configured, this policy takes precedence in determining whether Copilot appears in the toolbar. If this policy is not configured and 'HubsSidebarEnabled' is disabled, Copilot will remain hidden. In a future release, this policy will be the sole control for managing Copilot's visibility in the toolbar.",
+    "keywords": [
+      "Microsoft365CopilotChatIconEnabled",
+      "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_enableunsafeswiftshader",
+    "settingName": "Allow software WebGL fallback using SwiftShader (User)",
+    "settingDescription": "Controls whether SwiftShader is used as a fallback for WebGL when hardware GPU acceleration is not available.\r\n\r\nWhen enabled, Microsoft Edge will use SwiftShader to support WebGL on systems without GPU acceleration, such as headless environments or virtual machines.\r\n\r\nStarting in Microsoft Edge version 139, SwiftShader has been deprecated due to security concerns. As a result, WebGL context creation will fail in scenarios where SwiftShader would have been used. Enabling this policy allows organizations to temporarily defer the deprecation and continue using SwiftShader.\r\n\r\nIf you disable or do not configure this policy, WebGL context creation may fail on systems without hardware acceleration. This could cause web content relying on WebGL to function incorrectly if it does not handle context creation failures.\r\n\r\nNote: This is a temporary policy and will be removed in a future release.",
+    "keywords": [
+      "EnableUnsafeSwiftShader",
+      "Allow software WebGL fallback using SwiftShader",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge~startup_restoreonstartup",
     "settingName": "Action to take on Microsoft Edge startup",
     "settingDescription": "Specify how Microsoft Edge behaves when it starts.\r\n\r\nIf you want a new tab to always open on startup, choose 'RestoreOnStartupIsNewTabPage'.\r\n\r\nIf you want to reopen URLs that were open the last time Microsoft Edge closed, choose 'RestoreOnStartupIsLastSession'. The browsing session will be restored as it was. Note that this option disables some settings that rely on sessions or that perform actions on exit (such as Clear browsing data on exit or session-only cookies).\r\n\r\nIf you want to open a specific set of URLs, choose 'RestoreOnStartupIsURLs'.\r\n\r\nStarting in Microsoft Edge version 125, if you want to reopen URLs that were open the last time Microsoft Edge closed and open a specific set of URLs, choose 'RestoreOnStartupIsLastSessionAndURLs'.\r\n\r\nDisabling this setting is the same as leaving it not configured. Users will be able to change it in Microsoft Edge.\r\n\r\nThis policy is only available on Windows instances that are joined to a Microsoft Active Directory domain, joined to Microsoft Azure Active Directory, or instances that enrolled for device management. On macOS, this policy is only available on instances that are managed via MDM or joined to a domain via MCX.\r\n\r\nPolicy options mapping:\r\n\r\n* RestoreOnStartupIsNewTabPage (5) = Open a new tab\r\n\r\n* RestoreOnStartupIsLastSession (1) = Restore the last session\r\n\r\n* RestoreOnStartupIsURLs (4) = Open a list of URLs\r\n\r\n* RestoreOnStartupIsLastSessionAndURLs (6) = Open a list of URLs and restore the last session\r\n\r\nUse the preceding information when configuring this policy.",
@@ -75265,6 +75215,19 @@
       "\\Microsoft Office 2016\\Diagnostics",
       "Microsoft Office 2016\\Diagnostics",
       "Diagnostics"
+    ],
+    "categoryName": "Microsoft Office 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_office16v19~policy~l_microsoftofficesystem~l_privacy~l_trustcenter_l_acceptalleulas",
+    "settingName": "Accept all EULAs (User)",
+    "settingDescription": "By default, users are required to accept a EULA upon activating an Office license. By setting this policy, all EULAs will be automatically accepted machine-wide and no prompts will be shown.",
+    "keywords": [
+      "L_AcceptAllEulas",
+      "Accept all EULAs",
+      "\\Microsoft Office 2016\\Privacy\\Trust Center",
+      "Microsoft Office 2016\\Privacy\\Trust Center",
+      "Trust Center"
     ],
     "categoryName": "Microsoft Office 2016"
   },
@@ -80446,6 +80409,18 @@
     "keywords": [
       "EnableSyncAdminReports",
       "Enable sync health reporting for OneDrive",
+      "\\OneDrive",
+      "OneDrive"
+    ],
+    "categoryName": "OneDrive"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_onedrivengscv7~policy~onedrivengsc_disablenewaccountdetection",
+    "settingName": "Disable a toast and activity center message to encourage a user to sign in OneDrive using an existing credential that is made available to Microsoft applications",
+    "settingDescription": "If admins enable this setting (value 1), the user won't see the toast and the activity center message about new accounts that can be used to sign-in with OneDrive.\r\n\r\nIf admins disable (value 0) or do not configure this setting, the user will see the toast and the activity center message when OneDrive detects a new account on the device.\r\n      ",
+    "keywords": [
+      "DisableNewAccountDetection",
+      "Disable a toast and activity center message to encourage a user to sign in OneDrive using an existing credential that is made available to Microsoft applications",
       "\\OneDrive",
       "OneDrive"
     ],
@@ -88205,6 +88180,31 @@
     "categoryName": "Microsoft Word 2016"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_word16v13~policy~l_microsoftofficeword~l_wordoptions~l_optionsgeneral_l_startupboostoption",
+    "settingName": "Allow Startup Boost feature (User)",
+    "settingDescription": "This policy setting configures the \"Startup Boost\" checkbox found under File tab | Options | General. Startup Boost improves Word's boot time by prewarming the app on user login.\r\n\r\nIf you enable or do not configure this policy, users will be able to use the Startup Boost feature. The Startup Boost checkbox will be enabled and checked by default.\r\n\r\nIf you disable this policy setting, the Startup Boost feature will not be available. The Startup Boost checkbox will be disabled and unchecked.\r\n\r\nNote: This policy setting only applies to subscription versions of Office, such as Microsoft 365 Apps for enterprise.\r\n      ",
+    "keywords": [
+      "L_StartupBoostOption",
+      "Allow Startup Boost feature",
+      "\\Microsoft Word 2016\\Word Options\\General",
+      "Microsoft Word 2016\\Word Options\\General",
+      "General"
+    ],
+    "categoryName": "Microsoft Word 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_word16v13~policy~l_microsoftofficeword_l_showesignribbon",
+    "settingName": "Allow the use of SharePoint eSignature for Microsoft Word (User)",
+    "settingDescription": "This policy setting allows you to control whether users can request eSignatures directly from Word in tenants that have enabled Microsoft's native eSignature service.\r\n\r\nIf you enable this policy setting, users can request eSignatures from within Word. This policy setting applies only to subscription versions of Word.\r\n\r\nIf you disable this policy setting, users cannot request eSignatures from within Word.\r\n\r\nIf you don't configure this policy setting, users cannot request eSignatures from within Word.",
+    "keywords": [
+      "L_ShowESignRibbon",
+      "Allow the use of SharePoint eSignature for Microsoft Word",
+      "\\Microsoft Word 2016",
+      "Microsoft Word 2016"
+    ],
+    "categoryName": "Microsoft Word 2016"
+  },
+  {
     "settingId": "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_wordoptions~l_security~l_trustcenter~l_fileblocksettings_l_word2007andlaterbinarydocumentsandtemplates",
     "settingName": "Word 2007 and later binary documents and templates (User)",
     "settingDescription": "This policy setting allows you to determine whether users can open, view, edit, or save Word files with the format specified by the title of this policy setting.\r\n\r\nIf you enable this policy setting, you can specify whether users can open, view, edit, or save files.\r\n\r\nThe options that can be selected are below.  Note: Not all options may be available for this policy setting.\r\n\r\n- Do not block: The file type will not be blocked.\r\n\r\n- Save blocked: Saving of the file type will be blocked.\r\n\r\n- Open/Save blocked, use open policy: Both opening and saving of the file type will be blocked. The file will open based on the policy setting configured in the \"default file block behavior\" key.\r\n\r\n- Block: Both opening and saving of the file type will be blocked, and the file will not open.\r\n\r\n- Open in Protected View: Both opening and saving of the file type will be blocked, and the option to edit the file type will not be enabled.\r\n\r\n- Allow editing and open in Protected View: Both opening and saving of the file type will be blocked, and the option to edit will be enabled.\r\n\r\nIf you disable or do not configure this policy setting, the file type will not be blocked.\r\n",
@@ -89658,131 +89658,6 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_settingssync_enablewindowsbackup",
-    "settingName": "Enable Windows Backup (Windows Insiders only)",
-    "settingDescription": "This policy setting allows administrators to configure and manage windows backup for their organization.\r\n\r\nIf you enable this policy setting, windows backup will occur periodically.\r\n\r\nIf you disable or do not configure this policy setting, windows backup will not take place.\r\n      \r\n This setting is only available to Windows Insiders",
-    "keywords": [
-      "EnableWindowsBackup",
-      "Enable Windows Backup",
-      "\\Windows Components\\Sync your settings",
-      "Administrative Templates\\Windows Components\\Sync your settings",
-      "Sync your settings"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_settingssync_disableaccessibilitysettingsync",
-    "settingName": "Do not sync accessibility settings",
-    "settingDescription": "\r\n        Prevent the \"accessibility\" group from syncing to and from this PC. This turns off and disables the \"accessibility\" group on the \"Windows backup\" settings page in PC settings.\r\n\r\nIf you enable this policy setting, the \"accessibility\" group will not be synced.\r\n\r\nUse the option \"Allow users to turn accessibility syncing on\" so that syncing is turned off by default but not disabled.\r\n\r\nIf you do not set or disable this setting, syncing of the \"accessibility\" group is on by default and configurable by the user.\r\n      ",
-    "keywords": [
-      "DisableAccessibilitySettingSync",
-      "Do not sync accessibility settings",
-      "\\Windows Components\\Sync your settings",
-      "Administrative Templates\\Windows Components\\Sync your settings",
-      "Sync your settings"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_edgehistoryaisearchenabled",
-    "settingName": "Control access to AI-enhanced search in History (User)",
-    "settingDescription": "This policy controls whether users can use AI-enhanced search in their browsing history in Microsoft Edge.\r\n\r\nWhen enabled or not configured, users can search using synonyms, natural language phrases, and minor spelling errors to find previously visited pages.\r\n\r\nWhen disabled, users can only perform exact match (verbatim) searches in their history.",
-    "keywords": [
-      "EdgeHistoryAISearchEnabled",
-      "Control access to AI-enhanced search in History",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_builtinaiapisenabled",
-    "settingName": "Allow pages to use the built-in AI APIs.",
-    "settingDescription": "Use this policy to control whether websites can access the built-in AI APIs, including the LanguageModel API, Summarization API, Writer API, and Rewriter API.\r\n\r\nEnable this policy to allow pages to use the APIs. If you don’t configure this policy, the APIs are still allowed.\r\n\r\nDisable this policy to block access to the APIs. The APIs will return an error when used.\r\n\r\nFor more information, see https://github.com/webmachinelearning/writing-assistance-apis/blob/main/README.md.",
-    "keywords": [
-      "BuiltInAIAPIsEnabled",
-      "Allow pages to use the built-in AI APIs.",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_onsecurityevententerpriseconnector",
-    "settingName": "Configuration policy for Microsoft Edge for Business Reporting Connectors",
-    "settingDescription": "Defines the Microsoft Edge for Business Reporting Connectors service settings that apply when a security event occurs in Microsoft Edge. These events include negative verdicts from Data Loss Prevention Connectors, password reuse, navigation to unsafe pages, and other security-sensitive actions.\r\n\r\nThe service_provider field specifies the reporting service provider. The enabled_event_names field lists the security events enabled for that provider.\r\n\r\nThis policy requires additional setup to take effect. For configuration guidance, see https://go.microsoft.com/fwlink/?linkid=2325446.\r\n\r\nExample value:\r\n\r\n[\r\n  {\r\n    \"enabled_event_names\": [\r\n      \"passwordChangedEvent\",\r\n      \"sensitiveDataEvent\"\r\n    ],\r\n    \"enabled_opt_in_events\": [\r\n      {\r\n        \"name\": \"loginEvent\",\r\n        \"url_patterns\": [\r\n          \"*\"\r\n        ]\r\n      },\r\n      {\r\n        \"name\": \"passwordBreachEvent\",\r\n        \"url_patterns\": [\r\n          \"example.com\",\r\n          \"other.example.com\"\r\n        ]\r\n      }\r\n    ],\r\n    \"service_provider\": \"microsoft\"\r\n  }\r\n]",
-    "keywords": [
-      "OnSecurityEventEnterpriseConnector",
-      "Configuration policy for Microsoft Edge for Business Reporting Connectors",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_enableunsafeswiftshader",
-    "settingName": "Allow software WebGL fallback using SwiftShader",
-    "settingDescription": "Controls whether SwiftShader is used as a fallback for WebGL when hardware GPU acceleration is not available.\r\n\r\nWhen enabled, Microsoft Edge will use SwiftShader to support WebGL on systems without GPU acceleration, such as headless environments or virtual machines.\r\n\r\nStarting in Microsoft Edge version 139, SwiftShader has been deprecated due to security concerns. As a result, WebGL context creation will fail in scenarios where SwiftShader would have been used. Enabling this policy allows organizations to temporarily defer the deprecation and continue using SwiftShader.\r\n\r\nIf you disable or do not configure this policy, WebGL context creation may fail on systems without hardware acceleration. This could cause web content relying on WebGL to function incorrectly if it does not handle context creation failures.\r\n\r\nNote: This is a temporary policy and will be removed in a future release.",
-    "keywords": [
-      "EnableUnsafeSwiftShader",
-      "Allow software WebGL fallback using SwiftShader",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~identity_edgeopenexternallinkswithappspecifiedprofile",
-    "settingName": "Prioritize App specified profile to open external links",
-    "settingDescription": "This policy controls whether the profile specified by an app (such as Microsoft Teams or Outlook) is given priority when opening external links, instead of the profile selected in the Default profile for external links setting.\r\n\r\nPolicy behavior:\r\n1. Enabled or not configured: The app-specified profile is prioritized for opening external links. This behavior overrides the profile selected in settings, and the behavior defined by the EdgeDefaultProfileEnabled and EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled policies. If the app doesn't specify a profile, this policy has no effect.\r\n2. Disabled: The profile selected in settings—along with the EdgeDefaultProfileEnabled and EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled policies—will be used to determine which profile opens external links.\r\n\r\nNOTE:\r\nThis policy doesn't override user-defined preferences set through Automatic profile switching, including the Custom site switch setting located within it. If a user has configured specific sites to open in designated profiles, those preferences take precedence.",
-    "keywords": [
-      "EdgeOpenExternalLinksWithAppSpecifiedProfile",
-      "Prioritize App specified profile to open external links",
-      "\\Microsoft Edge\\Identity and sign-in",
-      "Microsoft Edge\\Identity and sign-in",
-      "Identity and sign-in"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_office16v20~policy~l_microsoftofficesystem~l_privacy~l_trustcenter_l_shownfilefmtprompt",
-    "settingName": "Show the File Format dialog (User)",
-    "settingDescription": "This policy setting allows you to control whether the file format dialog has already been shown to the user. If you enable this policy setting, the dialog won't be shown again. If you disable this policy setting, the dialog prompts the user to select a default file format on each boot until one is selected. If you don't configure this policy setting, the dialog prompts the user to select a default file format on each boot until one is selected.",
-    "keywords": [
-      "L_ShownFileFmtPrompt",
-      "Show the File Format dialog",
-      "\\Microsoft Office 2016\\Privacy\\Trust Center",
-      "Microsoft Office 2016\\Privacy\\Trust Center",
-      "Trust Center"
-    ],
-    "categoryName": "Microsoft Office 2016"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_onedrivengscv7~policy~onedrivengsc_enableautostart",
-    "settingName": "Start OneDrive automatically when signing in to Windows (User)",
-    "settingDescription": "This setting overrides a user's choice, ensuring OneDrive will automatically start every time they sign in to Windows. \r\n      \r\nIf you configure this setting, OneDrive will start automatically when a user signs in to Windows. The OneDrive sync app must be restarted after this setting is enabled for the setting to take effect.\r\n\r\nIf you do not configure this setting or set it to any value other than 1, the user can choose to automatically start OneDrive (default choice) or to disable OneDrive from starting in OneDrive sync app settings.",
-    "keywords": [
-      "EnableAutoStart",
-      "Start OneDrive automatically when signing in to Windows",
-      "\\OneDrive",
-      "OneDrive"
-    ],
-    "categoryName": "OneDrive"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_outlk16v17~policy~l_microsoftofficeoutlook~l_outlookoptions~l_other_l_newoutlookautomaticsetupusersetting",
-    "settingName": "Manage automatic setup of classic Outlook accounts in new Outlook (User)",
-    "settingDescription": "\r\nThis policy setting allows you to manage whether classic Outlook automatically sets up user accounts and settings in new Outlook.\r\n\r\nIf you enable this policy setting, automatic setup of user accounts and settings in new Outlook is allowed and cannot be changed by the user.\r\n\r\nIf you disable this policy setting, automatic setup of user accounts and settings in new Outlook is not allowed and cannot be changed by the user.\r\n\r\nIf you don't configure this policy setting, users can manage the setting themselves. Automatic setup is enabled by default.\r\n      ",
-    "keywords": [
-      "L_NewOutlookAutomaticSetupUserSetting",
-      "Manage automatic setup of classic Outlook accounts in new Outlook",
-      "\\Microsoft Outlook 2016\\Outlook Options\\Other",
-      "Microsoft Outlook 2016\\Outlook Options\\Other",
-      "Other"
-    ],
-    "categoryName": "Microsoft Outlook 2016"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autolaunchprotocolsfromorigins",
@@ -102701,12 +102576,38 @@
     "categoryName": "Administrative Templates"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_settingssync_enablewindowsbackup",
+    "settingName": "Enable Windows Backup",
+    "settingDescription": "This policy setting allows administrators to configure and manage windows backup for their organization.\r\n\r\nIf you enable this policy setting, windows backup will occur periodically.\r\n\r\nIf you disable or do not configure this policy setting, windows backup will not take place.\r\n      ",
+    "keywords": [
+      "EnableWindowsBackup",
+      "Enable Windows Backup",
+      "\\Windows Components\\Sync your settings",
+      "Administrative Templates\\Windows Components\\Sync your settings",
+      "Sync your settings"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_admx_settingsync_disabledesktopthemesettingsync",
     "settingName": "Do not sync desktop personalization",
     "settingDescription": "Prevent the \"desktop personalization\" group from syncing to and from this PC.  This turns off and disables the \"desktop personalization\" group on the \"sync your settings\" page in PC settings.\r\n\r\nIf you enable this policy setting, the \"desktop personalization\" group will not be synced.\r\n\r\nUse the option \"Allow users to turn desktop personalization syncing on\" so that syncing it turned off by default but not disabled.\r\n\r\nIf you do not set or disable this setting, syncing of the \"desktop personalization\" group is on by default and configurable by the user.\r\n      \r\n ",
     "keywords": [
       "DisableDesktopThemeSettingSync",
       "Do not sync desktop personalization",
+      "\\Windows Components\\Sync your settings",
+      "Administrative Templates\\Windows Components\\Sync your settings",
+      "Sync your settings"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_settingssync_disableaccessibilitysettingsync",
+    "settingName": "Do not sync accessibility settings",
+    "settingDescription": "\r\n        Prevent the \"accessibility\" group from syncing to and from this PC. This turns off and disables the \"accessibility\" group on the \"Windows backup\" settings page in PC settings.\r\n\r\nIf you enable this policy setting, the \"accessibility\" group will not be synced.\r\n\r\nUse the option \"Allow users to turn accessibility syncing on\" so that syncing is turned off by default but not disabled.\r\n\r\nIf you do not set or disable this setting, syncing of the \"accessibility\" group is on by default and configurable by the user.\r\n      ",
+    "keywords": [
+      "DisableAccessibilitySettingSync",
+      "Do not sync accessibility settings",
       "\\Windows Components\\Sync your settings",
       "Administrative Templates\\Windows Components\\Sync your settings",
       "Sync your settings"
@@ -115934,6 +115835,67 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_edgehistoryaisearchenabled",
+    "settingName": "Control access to AI-enhanced search in History (User)",
+    "settingDescription": "This policy controls whether users can use AI-enhanced search in their browsing history in Microsoft Edge.\r\n\r\nWhen enabled or not configured, users can search using synonyms, natural language phrases, and minor spelling errors to find previously visited pages.\r\n\r\nWhen disabled, users can only perform exact match (verbatim) searches in their history.",
+    "keywords": [
+      "EdgeHistoryAISearchEnabled",
+      "Control access to AI-enhanced search in History",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_builtinaiapisenabled",
+    "settingName": "Allow pages to use the built-in AI APIs.",
+    "settingDescription": "Use this policy to control whether websites can access the built-in AI APIs, including the LanguageModel API, Summarization API, Writer API, and Rewriter API.\r\n\r\nEnable this policy to allow pages to use the APIs. If you don’t configure this policy, the APIs are still allowed.\r\n\r\nDisable this policy to block access to the APIs. The APIs will return an error when used.\r\n\r\nFor more information, see https://github.com/webmachinelearning/writing-assistance-apis/blob/main/README.md.",
+    "keywords": [
+      "BuiltInAIAPIsEnabled",
+      "Allow pages to use the built-in AI APIs.",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_onsecurityevententerpriseconnector",
+    "settingName": "Configuration policy for Microsoft Edge for Business Reporting Connectors",
+    "settingDescription": "Defines the Microsoft Edge for Business Reporting Connectors service settings that apply when a security event occurs in Microsoft Edge. These events include negative verdicts from Data Loss Prevention Connectors, password reuse, navigation to unsafe pages, and other security-sensitive actions.\r\n\r\nThe service_provider field specifies the reporting service provider. The enabled_event_names field lists the security events enabled for that provider.\r\n\r\nThis policy requires additional setup to take effect. For configuration guidance, see https://go.microsoft.com/fwlink/?linkid=2325446.\r\n\r\nExample value:\r\n\r\n[\r\n  {\r\n    \"enabled_event_names\": [\r\n      \"passwordChangedEvent\",\r\n      \"sensitiveDataEvent\"\r\n    ],\r\n    \"enabled_opt_in_events\": [\r\n      {\r\n        \"name\": \"loginEvent\",\r\n        \"url_patterns\": [\r\n          \"*\"\r\n        ]\r\n      },\r\n      {\r\n        \"name\": \"passwordBreachEvent\",\r\n        \"url_patterns\": [\r\n          \"example.com\",\r\n          \"other.example.com\"\r\n        ]\r\n      }\r\n    ],\r\n    \"service_provider\": \"microsoft\"\r\n  }\r\n]",
+    "keywords": [
+      "OnSecurityEventEnterpriseConnector",
+      "Configuration policy for Microsoft Edge for Business Reporting Connectors",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_enableunsafeswiftshader",
+    "settingName": "Allow software WebGL fallback using SwiftShader",
+    "settingDescription": "Controls whether SwiftShader is used as a fallback for WebGL when hardware GPU acceleration is not available.\r\n\r\nWhen enabled, Microsoft Edge will use SwiftShader to support WebGL on systems without GPU acceleration, such as headless environments or virtual machines.\r\n\r\nStarting in Microsoft Edge version 139, SwiftShader has been deprecated due to security concerns. As a result, WebGL context creation will fail in scenarios where SwiftShader would have been used. Enabling this policy allows organizations to temporarily defer the deprecation and continue using SwiftShader.\r\n\r\nIf you disable or do not configure this policy, WebGL context creation may fail on systems without hardware acceleration. This could cause web content relying on WebGL to function incorrectly if it does not handle context creation failures.\r\n\r\nNote: This is a temporary policy and will be removed in a future release.",
+    "keywords": [
+      "EnableUnsafeSwiftShader",
+      "Allow software WebGL fallback using SwiftShader",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~identity_edgeopenexternallinkswithappspecifiedprofile",
+    "settingName": "Prioritize App specified profile to open external links",
+    "settingDescription": "This policy controls whether the profile specified by an app (such as Microsoft Teams or Outlook) is given priority when opening external links, instead of the profile selected in the Default profile for external links setting.\r\n\r\nPolicy behavior:\r\n1. Enabled or not configured: The app-specified profile is prioritized for opening external links. This behavior overrides the profile selected in settings, and the behavior defined by the EdgeDefaultProfileEnabled and EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled policies. If the app doesn't specify a profile, this policy has no effect.\r\n2. Disabled: The profile selected in settings—along with the EdgeDefaultProfileEnabled and EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled policies—will be used to determine which profile opens external links.\r\n\r\nNOTE:\r\nThis policy doesn't override user-defined preferences set through Automatic profile switching, including the Custom site switch setting located within it. If a user has configured specific sites to open in designated profiles, those preferences take precedence.",
+    "keywords": [
+      "EdgeOpenExternalLinksWithAppSpecifiedProfile",
+      "Prioritize App specified profile to open external links",
+      "\\Microsoft Edge\\Identity and sign-in",
+      "Microsoft Edge\\Identity and sign-in",
+      "Identity and sign-in"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge~startup_restoreonstartup_restoreonstartup",
     "settingName": "Action to take on Microsoft Edge startup (Device)",
     "settingDescription": "",
@@ -123888,6 +123850,19 @@
     "categoryName": "Microsoft Office 2016"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_office16v20~policy~l_microsoftofficesystem~l_privacy~l_trustcenter_l_shownfilefmtprompt",
+    "settingName": "Show the File Format dialog (User)",
+    "settingDescription": "This policy setting allows you to control whether the file format dialog has already been shown to the user. If you enable this policy setting, the dialog won't be shown again. If you disable this policy setting, the dialog prompts the user to select a default file format on each boot until one is selected. If you don't configure this policy setting, the dialog prompts the user to select a default file format on each boot until one is selected.",
+    "keywords": [
+      "L_ShownFileFmtPrompt",
+      "Show the File Format dialog",
+      "\\Microsoft Office 2016\\Privacy\\Trust Center",
+      "Microsoft Office 2016\\Privacy\\Trust Center",
+      "Trust Center"
+    ],
+    "categoryName": "Microsoft Office 2016"
+  },
+  {
     "settingId": "user_vendor_msft_policy_config_office16v3~policy~l_microsoftofficesystem~l_globaloptions~l_customize_l_defaultuithemeuser",
     "settingName": "Default Office theme (User)",
     "settingDescription": "This policy setting allows you to select the user interface (UI) theme used by Office, if the user has not already selected an Office theme.\r\n\r\nNote: This setting only applies to Version 1903 or later of Office.\r\n\r\nIf you enable this policy setting, you may choose the Office theme used in cases where the user has not selected an Office theme themselves.\r\n\r\nIf you disable or do not configure this policy setting, Office will use the Colorful theme in cases where the user has not selected an Office theme themselves.\r\n\r\nRegardless of how you configure this policy setting, users can change their Office theme by going to File > Account > Office Theme (or, in Outlook, by going to File > Office Account > Office Theme).\r\n\r\nNote: The “Default Office theme” policy setting located under Computer Configuration takes precedence over this policy setting.",
@@ -124320,6 +124295,18 @@
     "keywords": [
       "EnableFeedbackAndSupport",
       " Allow users to contact Microsoft for feedback and support",
+      "\\OneDrive",
+      "OneDrive"
+    ],
+    "categoryName": "OneDrive"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_onedrivengscv7~policy~onedrivengsc_enableautostart",
+    "settingName": "Start OneDrive automatically when signing in to Windows (User)",
+    "settingDescription": "This setting overrides a user's choice, ensuring OneDrive will automatically start every time they sign in to Windows. \r\n      \r\nIf you configure this setting, OneDrive will start automatically when a user signs in to Windows. The OneDrive sync app must be restarted after this setting is enabled for the setting to take effect.\r\n\r\nIf you do not configure this setting or set it to any value other than 1, the user can choose to automatically start OneDrive (default choice) or to disable OneDrive from starting in OneDrive sync app settings.",
+    "keywords": [
+      "EnableAutoStart",
+      "Start OneDrive automatically when signing in to Windows",
       "\\OneDrive",
       "OneDrive"
     ],
@@ -124787,6 +124774,19 @@
     "keywords": [
       "L_NewOutlookAutoMigrationUserSettingPolicy",
       "Manage user setting for new Outlook automatic migration",
+      "\\Microsoft Outlook 2016\\Outlook Options\\Other",
+      "Microsoft Outlook 2016\\Outlook Options\\Other",
+      "Other"
+    ],
+    "categoryName": "Microsoft Outlook 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_outlk16v17~policy~l_microsoftofficeoutlook~l_outlookoptions~l_other_l_newoutlookautomaticsetupusersetting",
+    "settingName": "Manage automatic setup of classic Outlook accounts in new Outlook (User)",
+    "settingDescription": "\r\nThis policy setting allows you to manage whether classic Outlook automatically sets up user accounts and settings in new Outlook.\r\n\r\nIf you enable this policy setting, automatic setup of user accounts and settings in new Outlook is allowed and cannot be changed by the user.\r\n\r\nIf you disable this policy setting, automatic setup of user accounts and settings in new Outlook is not allowed and cannot be changed by the user.\r\n\r\nIf you don't configure this policy setting, users can manage the setting themselves. Automatic setup is enabled by default.\r\n      ",
+    "keywords": [
+      "L_NewOutlookAutomaticSetupUserSetting",
+      "Manage automatic setup of classic Outlook accounts in new Outlook",
       "\\Microsoft Outlook 2016\\Outlook Options\\Other",
       "Microsoft Outlook 2016\\Outlook Options\\Other",
       "Other"
@@ -133479,94 +133479,6 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_settingssync_disableaccessibilitysettingsync_checkbox_useroverride",
-    "settingName": "Allow users to turn \"accessibility\" syncing on. (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "DisableAccessibilitySettingSync",
-      "Do not sync accessibility settings",
-      "\\Windows Components\\Sync your settings",
-      "Administrative Templates\\Windows Components\\Sync your settings",
-      "Sync your settings"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_recommended~identity_recommended_edgeopenexternallinkswithprimaryworkprofileenabled_recommended",
-    "settingName": "Use Primary Work Profile as default to open external links (User)",
-    "settingDescription": "This policy controls whether Microsoft Edge uses the Primary Work Profile as the default profile when opening external links.\r\n1. On Windows, the Primary Work Profile refers to the profile signed in with the Entra ID account used to enroll the device.\r\n2. On macOS and Linux, the Primary Work Profile is the only profile signed in with an Entra ID account. If multiple profiles are signed in with Entra ID accounts, the Primary Work Profile setting does not apply.\r\n\r\nPolicy behavior:\r\n1. If enabled or not configured, Microsoft Edge will use the Primary Work Profile as the default for opening external links.\r\n2. If disabled, the last used profile becomes the default for opening external links.\r\n\r\nNote: This policy does not override the following scenarios:\r\n1. If the EdgeDefaultProfileEnabled policy is set, it takes precedence over this policy.\r\n2. External links opened from Outlook or Microsoft Teams may be configured to launch in a specific profile, which can override the Primary Work Profile setting.\r\n3. If the user sets a preference for \"Default profile for external links\" in Profile preferences, that setting will take effect.",
-    "keywords": [
-      "EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled_recommended",
-      "Use Primary Work Profile as default to open external links",
-      "\\Microsoft Edge - Default Settings (users can override)\\Identity and sign-in",
-      "Microsoft Edge - Default Settings (users can override)\\Identity and sign-in",
-      "Identity and sign-in"
-    ],
-    "categoryName": "Microsoft Edge - Default Settings (users can override)"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_prefetchwithserviceworkerenabled",
-    "settingName": "Allow SpeculationRules prefetch for ServiceWorker-controlled URLs (User)",
-    "settingDescription": "Controls whether SpeculationRules prefetch requests are allowed for\r\nServiceWorker-controlled URLs.\r\n\r\nStarting with Microsoft Edge version 138,\r\nprefetch requests to ServiceWorker-controlled URLs are allowed by default when\r\nthe PrefetchServiceWorker feature is enabled.\r\n\r\nIf this policy is enabled or not configured, that default behavior is used.\r\n\r\nTo restore the legacy behavior from versions prior to 138, where prefetch requests\r\nto ServiceWorker-controlled URLs were blocked, set this policy to disabled.\r\n\r\nThis policy is intended to be temporary and will be removed in the future.",
-    "keywords": [
-      "PrefetchWithServiceWorkerEnabled",
-      "Allow SpeculationRules prefetch for ServiceWorker-controlled URLs",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge~network_localnetworkaccessrestrictionsenabled",
-    "settingName": "Specifies whether to block requests from public websites to devices on a user's local network. (deprecated) (User)",
-    "settingDescription": "DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.\r\n\r\nLocal Network Access restrictions prevent public websites from making\r\nrequests to devices on a user's local network without explicit user permission.\r\n\r\nIf you enable this policy, Microsoft Edge will\r\nblock any request that would otherwise trigger a DevTools warning\r\ndue to Local Network Access checks.\r\nThese requests will be denied without prompting the user.\r\n\r\nIf you disable or don't configure this policy, Microsoft Edge will handle\r\nthese requests using the default behavior, which may include showing warnings in DevTools\r\nand allowing the request to proceed depending on the context.\r\n\r\nNote: This feature improves local network security by deprecating direct access to private IP addresses from public websites\r\nunless explicitly granted by the user.",
-    "keywords": [
-      "LocalNetworkAccessRestrictionsEnabled",
-      "Specifies whether to block requests from public websites to devices on a user's local network. (deprecated)",
-      "\\Microsoft Edge\\Network settings",
-      "Microsoft Edge\\Network settings",
-      "Network settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_tls13earlydataenabled",
-    "settingName": "Control whether TLS 1.3 Early Data is enabled in Microsoft Edge",
-    "settingDescription": "This policy controls whether TLS 1.3 Early Data is enabled in Microsoft Edge.\r\n\r\nTLS 1.3 Early Data is an extension that allows an HTTP request to be sent in parallel with the TLS handshake. When enabled and supported by the server, this can improve page load performance.\r\n\r\nEnabled – Microsoft Edge enables TLS 1.3 Early Data.\r\n\r\nDisabled – Microsoft Edge disables TLS 1.3 Early Data.\r\n\r\nNot configured – Microsoft Edge follows the default rollout process for TLS 1.3 Early Data.\r\n\r\nNOTE: When this feature is enabled, whether TLS 1.3 Early Data is used depends on server support. Most modern TLS servers and middleware can handle or reject Early Data without interrupting the connection. However, improperly implemented TLS stacks may cause connection failures. If such issues occur, contact the device or software vendor for a resolution.\r\n\r\nThis policy is temporary and intended to help test for compatibility issues. It may be removed in a future release once the feature is fully rolled out.",
-    "keywords": [
-      "TLS13EarlyDataEnabled",
-      "Control whether TLS 1.3 Early Data is enabled in Microsoft Edge",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_microsoft365copilotchaticonenabled",
-    "settingName": "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar (User)",
-    "settingDescription": "For users in an Entra ID Microsoft Edge profile, this policy controls whether the Microsoft 365 Copilot Chat icon will be shown in the Microsoft Edge for Business toolbar for Microsoft 365 Copilot licensed and unlicensed users.\r\n\r\nThis policy only applies when users are accessing Copilot in the sidepane.\r\n\r\nIf the policy is enabled: Copilot will appear in the toolbar.\r\n\r\nIf the policy is disabled: Copilot will not appear in the toolbar.\r\n\r\nIf the policy is not configured: Otherwise, Copilot will show in the toolbar and users may enable or disable Copilot from showing by using the Show Copilot toggle in settings.\r\n\r\nWhen both this policy and 'HubsSidebarEnabled' (Show Hubs Sidebar) are configured, this policy takes precedence in determining whether Copilot appears in the toolbar. If this policy is not configured and 'HubsSidebarEnabled' is disabled, Copilot will remain hidden. In a future release, this policy will be the sole control for managing Copilot's visibility in the toolbar.",
-    "keywords": [
-      "Microsoft365CopilotChatIconEnabled",
-      "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~extensions_mandatoryextensionsforinprivatenavigation_mandatoryextensionsforinprivatenavigationdesc",
-    "settingName": "Specify extensions users must allow in order to navigate using InPrivate mode (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "MandatoryExtensionsForInPrivateNavigation",
-      "Specify extensions users must allow in order to navigate using InPrivate mode",
-      "\\Microsoft Edge\\Extensions",
-      "Microsoft Edge\\Extensions",
-      "Extensions"
-    ],
-    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.adssettingforintrusiveadssites",
@@ -146851,6 +146763,19 @@
     "keywords": [
       "DisableApplicationSettingSync",
       "Do not sync app settings",
+      "\\Windows Components\\Sync your settings",
+      "Administrative Templates\\Windows Components\\Sync your settings",
+      "Sync your settings"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_settingssync_disableaccessibilitysettingsync_checkbox_useroverride",
+    "settingName": "Allow users to turn \"accessibility\" syncing on. (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "DisableAccessibilitySettingSync",
+      "Do not sync accessibility settings",
       "\\Windows Components\\Sync your settings",
       "Administrative Templates\\Windows Components\\Sync your settings",
       "Sync your settings"
@@ -161239,6 +161164,81 @@
       "Configuration policy for bulk data entry for Microsoft Edge for Business Data Loss Prevention Connectors",
       "\\Microsoft Edge",
       "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_recommended~identity_recommended_edgeopenexternallinkswithprimaryworkprofileenabled_recommended",
+    "settingName": "Use Primary Work Profile as default to open external links (User)",
+    "settingDescription": "This policy controls whether Microsoft Edge uses the Primary Work Profile as the default profile when opening external links.\r\n1. On Windows, the Primary Work Profile refers to the profile signed in with the Entra ID account used to enroll the device.\r\n2. On macOS and Linux, the Primary Work Profile is the only profile signed in with an Entra ID account. If multiple profiles are signed in with Entra ID accounts, the Primary Work Profile setting does not apply.\r\n\r\nPolicy behavior:\r\n1. If enabled or not configured, Microsoft Edge will use the Primary Work Profile as the default for opening external links.\r\n2. If disabled, the last used profile becomes the default for opening external links.\r\n\r\nNote: This policy does not override the following scenarios:\r\n1. If the EdgeDefaultProfileEnabled policy is set, it takes precedence over this policy.\r\n2. External links opened from Outlook or Microsoft Teams may be configured to launch in a specific profile, which can override the Primary Work Profile setting.\r\n3. If the user sets a preference for \"Default profile for external links\" in Profile preferences, that setting will take effect.",
+    "keywords": [
+      "EdgeOpenExternalLinksWithPrimaryWorkProfileEnabled_recommended",
+      "Use Primary Work Profile as default to open external links",
+      "\\Microsoft Edge - Default Settings (users can override)\\Identity and sign-in",
+      "Microsoft Edge - Default Settings (users can override)\\Identity and sign-in",
+      "Identity and sign-in"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_prefetchwithserviceworkerenabled",
+    "settingName": "Allow SpeculationRules prefetch for ServiceWorker-controlled URLs (User)",
+    "settingDescription": "Controls whether SpeculationRules prefetch requests are allowed for\r\nServiceWorker-controlled URLs.\r\n\r\nStarting with Microsoft Edge version 138,\r\nprefetch requests to ServiceWorker-controlled URLs are allowed by default when\r\nthe PrefetchServiceWorker feature is enabled.\r\n\r\nIf this policy is enabled or not configured, that default behavior is used.\r\n\r\nTo restore the legacy behavior from versions prior to 138, where prefetch requests\r\nto ServiceWorker-controlled URLs were blocked, set this policy to disabled.\r\n\r\nThis policy is intended to be temporary and will be removed in the future.",
+    "keywords": [
+      "PrefetchWithServiceWorkerEnabled",
+      "Allow SpeculationRules prefetch for ServiceWorker-controlled URLs",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge~network_localnetworkaccessrestrictionsenabled",
+    "settingName": "Specifies whether to block requests from public websites to devices on a user's local network. (deprecated) (User)",
+    "settingDescription": "DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.\r\n\r\nLocal Network Access restrictions prevent public websites from making\r\nrequests to devices on a user's local network without explicit user permission.\r\n\r\nIf you enable this policy, Microsoft Edge will\r\nblock any request that would otherwise trigger a DevTools warning\r\ndue to Local Network Access checks.\r\nThese requests will be denied without prompting the user.\r\n\r\nIf you disable or don't configure this policy, Microsoft Edge will handle\r\nthese requests using the default behavior, which may include showing warnings in DevTools\r\nand allowing the request to proceed depending on the context.\r\n\r\nNote: This feature improves local network security by deprecating direct access to private IP addresses from public websites\r\nunless explicitly granted by the user.",
+    "keywords": [
+      "LocalNetworkAccessRestrictionsEnabled",
+      "Specifies whether to block requests from public websites to devices on a user's local network. (deprecated)",
+      "\\Microsoft Edge\\Network settings",
+      "Microsoft Edge\\Network settings",
+      "Network settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev138~policy~microsoft_edge_tls13earlydataenabled",
+    "settingName": "Control whether TLS 1.3 Early Data is enabled in Microsoft Edge",
+    "settingDescription": "This policy controls whether TLS 1.3 Early Data is enabled in Microsoft Edge.\r\n\r\nTLS 1.3 Early Data is an extension that allows an HTTP request to be sent in parallel with the TLS handshake. When enabled and supported by the server, this can improve page load performance.\r\n\r\nEnabled – Microsoft Edge enables TLS 1.3 Early Data.\r\n\r\nDisabled – Microsoft Edge disables TLS 1.3 Early Data.\r\n\r\nNot configured – Microsoft Edge follows the default rollout process for TLS 1.3 Early Data.\r\n\r\nNOTE: When this feature is enabled, whether TLS 1.3 Early Data is used depends on server support. Most modern TLS servers and middleware can handle or reject Early Data without interrupting the connection. However, improperly implemented TLS stacks may cause connection failures. If such issues occur, contact the device or software vendor for a resolution.\r\n\r\nThis policy is temporary and intended to help test for compatibility issues. It may be removed in a future release once the feature is fully rolled out.",
+    "keywords": [
+      "TLS13EarlyDataEnabled",
+      "Control whether TLS 1.3 Early Data is enabled in Microsoft Edge",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge_microsoft365copilotchaticonenabled",
+    "settingName": "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar (User)",
+    "settingDescription": "For users in an Entra ID Microsoft Edge profile, this policy controls whether the Microsoft 365 Copilot Chat icon will be shown in the Microsoft Edge for Business toolbar for Microsoft 365 Copilot licensed and unlicensed users.\r\n\r\nThis policy only applies when users are accessing Copilot in the sidepane.\r\n\r\nIf the policy is enabled: Copilot will appear in the toolbar.\r\n\r\nIf the policy is disabled: Copilot will not appear in the toolbar.\r\n\r\nIf the policy is not configured: Otherwise, Copilot will show in the toolbar and users may enable or disable Copilot from showing by using the Show Copilot toggle in settings.\r\n\r\nWhen both this policy and 'HubsSidebarEnabled' (Show Hubs Sidebar) are configured, this policy takes precedence in determining whether Copilot appears in the toolbar. If this policy is not configured and 'HubsSidebarEnabled' is disabled, Copilot will remain hidden. In a future release, this policy will be the sole control for managing Copilot's visibility in the toolbar.",
+    "keywords": [
+      "Microsoft365CopilotChatIconEnabled",
+      "Control whether Microsoft 365 Copilot Chat shows in the Microsoft Edge for Business toolbar",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev139~policy~microsoft_edge~extensions_mandatoryextensionsforinprivatenavigation_mandatoryextensionsforinprivatenavigationdesc",
+    "settingName": "Specify extensions users must allow in order to navigate using InPrivate mode (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "MandatoryExtensionsForInPrivateNavigation",
+      "Specify extensions users must allow in order to navigate using InPrivate mode",
+      "\\Microsoft Edge\\Extensions",
+      "Microsoft Edge\\Extensions",
+      "Extensions"
     ],
     "categoryName": "Microsoft Edge"
   },
