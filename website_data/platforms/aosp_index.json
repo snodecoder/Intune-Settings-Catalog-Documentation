@@ -1,5 +1,42 @@
 [
   {
+    "settingId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurations",
+    "settingName": "Block Wi-Fi access point configuration",
+    "settingDescription": "If 'True', prevents users from creating or changing any Wi-Fi configurations. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to change the Wi-Fi settings on the device. Available for fully managed, dedicated and corporate-owned work profile devices. ",
+    "keywords": [
+      "Block",
+      "Wifi",
+      "Wifi Configuration",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.securitydevelopersettingsenabled",
+    "settingName": "Allow access to developer settings",
+    "settingDescription": "If 'True', allow users access developer settings on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might prevent users from accessing developer settings on the device. Available for fully managed, dedicated and corporate-owned work profile devices.",
+    "keywords": [
+      "Security",
+      "Developer",
+      "Settings",
+      "Enabled",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.volumeblockadjustment",
+    "settingName": "Block volume changes",
+    "settingDescription": "If 'True', prevents users from changing the device's volume, and also mutes the main volume. If 'False', Intune doesn't change or update this setting. By default, the OS might allow using the volume settings on the device. Available for fully managed and dedicated devices.",
+    "keywords": [
+      "Volume",
+      "Block",
+      "Adjustment",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp",
     "settingName": "Allow users to turn on debugging features",
     "settingDescription": "If 'True', permits users to access the debugging features on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might prevent users from using the debugging features on the device.",
@@ -111,6 +148,43 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.camerablocked",
+    "settingName": "Block access to camera (work profile-level)",
+    "settingDescription": "If 'True', prevents access to the camera on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow access to the camera. Intune only manages access to the device camera. It doesn't have access to pictures or videos. Available for fully managed, dedicated and corporate-owned work profile (at work profile level) devices. ",
+    "keywords": [
+      "Block",
+      "Camera",
+      "Camera Block",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.nfcblockoutgoingbeam",
+    "settingName": "Block beaming data from apps using NFC (work profile-level)",
+    "settingDescription": "If 'True', prevents using the Near Field Communication (NFC) technology to beam data from apps. If 'False', Intune doesn't change or update this setting. By default, the OS might allow using NFC to share data between devices. Available for fully managed, dedicated and corporate-owned work profile (at work profile level) devices.",
+    "keywords": [
+      "Nfc",
+      "Block",
+      "Outgoing",
+      "Beam",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.factoryresetblocked",
+    "settingName": "Block factory reset",
+    "settingDescription": "If 'True', prevents users from using the factory reset option in the device's settings. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to use this setting on the device. Available for fully managed and dedicated devices.",
+    "keywords": [
+      "Block",
+      "Factory reset",
+      "Factory reset Block",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.camerablockedaosp",
     "settingName": "Block access to camera",
     "settingDescription": "If 'True', prevents access to the camera on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow access to the camera. Intune only manages access to the device camera. It doesn't have access to pictures or videos.",
@@ -150,7 +224,7 @@
   {
     "settingId": "com.android.devicerestrictionpolicy.enterprisedisplaynamevisibility",
     "settingName": "Hide organization name",
-    "settingDescription": "If 'True', prevents the enterprise name from being displayed on the device (such as on the lock screen). If 'False', Intune doesn't change or update this setting. By default, the OS displays the enterprise name set during device setup. Available for fully managed and corporate-owned work profile devices.",
+    "settingDescription": "If 'True', prevents the enterprise name from being displayed on the device (such as on the lock screen). If 'False', Intune doesn't change or update this setting. By default, the OS displays the enterprise name set during device setup. Available for fully managed, dedicated, and corporate-owned work profile devices.",
     "keywords": [
       "Company",
       "company name",
@@ -239,6 +313,58 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.dataroamingblocked",
+    "settingName": "Block roaming data services",
+    "settingDescription": "If 'True', prevents data roaming over the cellular network. If 'False', Intune doesn't change or update this setting. By default, the OS might allow data roaming when the device is on a cellular network. Available for fully managed, dedicated and corporate-owned work profile devices. ",
+    "keywords": [
+      "Data",
+      "Roaming",
+      "Blocked",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.privatespacepolicy",
+    "settingName": "Block private space",
+    "settingDescription": "If 'True', prevents users from creating or using private spaces on the device, ensuring that all data is stored within the corporate profile. All existing private spaces will be deleted. If 'False', Intune doesn't change or update this setting. By default, the OS might allow the creation of private spaces for personal data. Available for corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "private space",
+      "private profile",
+      "isolated environment",
+      "launcher",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.appsdefaultpermissionpolicy",
+    "settingName": "Default permission policy (work profile-level)",
+    "settingDescription": "Define the default permission policy for requests for runtime permissions. Available for fully managed, dedicated and corporate-owned work profile (at work profile level) devices.",
+    "keywords": [
+      "Apps",
+      "Default",
+      "Permission",
+      "Policy",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.cellularblockwifitethering",
+    "settingName": "Block tethering and access to hotspots",
+    "settingDescription": "If 'True', prevents tethering and access to portable hotspots. If 'False', Intune doesn't change or update this setting. By default, the OS might allow tethering and access to portable hotspots. Available for fully managed, dedicated and corporate-owned work profile devices. ",
+    "keywords": [
+      "Cellular",
+      "Block",
+      "Wi",
+      "Fi",
+      "Tethering",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.bluetoothblockedaosp",
     "settingName": "Block Bluetooth",
     "settingDescription": "If 'True', disables Bluetooth on the device so that users can't pair with other devices. If 'False', Intune doesn't change or update this setting. By default, the OS might enable Bluetooth on the device.",
@@ -301,9 +427,35 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.usbdataaccess",
+    "settingName": "USB access",
+    "settingDescription": "Select what files and/or data can be transferred via USB. If you block file transfer, only files will be blocked from being transferred and other connection (such as mouse) will still be allowed. If you block USB data transfer, all data will be blocked. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "USB",
+      "USB Data Access",
+      "File Transfer",
+      "Data Transfer",
+      "Data Access",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.bluetoothblockconfiguration",
+    "settingName": "Block Bluetooth configuration",
+    "settingDescription": "If 'True', prevents users from configuring Bluetooth on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow using Bluetooth on the device. Available for fully managed, dedicated and corporate-owned work profile devices. ",
+    "keywords": [
+      "Block",
+      "Bluetooth",
+      "Bluetooth Configuration",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.storageblockexternalmediaaosp",
     "settingName": "Block mounting of external media",
-    "settingDescription": "If 'True', prevents users from using or connecting any external media on the device.If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to connect external media.",
+    "settingDescription": "If 'True', prevents users from using or connecting any external media on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to connect external media.",
     "keywords": [
       "Block",
       "External Media",

@@ -1,5 +1,89 @@
 [
   {
+    "settingId": "com.apple.managedclient.preferences_lowpriorityscheduledscan",
+    "settingName": "Low priority scheduled scan",
+    "settingDescription": "Should scheduled scan be run with low priority. (Scan might take longer to complete).",
+    "keywords": [
+      "Scheduled scan configuration"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_ignoreexclusions",
+    "settingName": "Ignore exclusions",
+    "settingDescription": "Should exclusions be ignored during a scheduled scan",
+    "keywords": [
+      "Scheduled scan configuration"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_dailyconfiguration_interval",
+    "settingName": "Start time",
+    "settingDescription": "Specify how many hours should elapse before the next hourly quick scan. 0 indicates no hourly quick scan. 1 indicates a scan every hour. 24 indicates a scan once a day.",
+    "keywords": [
+      "Scheduled scan configuration"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_dailyconfiguration_timeofday",
+    "settingName": "Time of day",
+    "settingDescription": "Specifies the time of day, as the number of minutes after midnight, to perform a daily quick scan.",
+    "keywords": [
+      "Scheduled scan configuration"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_checkfordefinitionsupdate",
+    "settingName": "Check for definitions update",
+    "settingDescription": "Check for definitions update before initiating a scheduled scan",
+    "keywords": [
+      "Scheduled scan configuration"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent",
+    "settingName": "Automatic sample submission Consent",
+    "settingDescription": "Sends sample files to Microsoft to help protect device users and your organization from potential threats",
+    "keywords": [
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disablednsparsing",
+    "settingName": "Disable DNS parsing",
+    "settingDescription": "Disables parsing of DNS traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disableftpparsing",
+    "settingName": "Disable FTP parsing",
+    "settingDescription": "Disables parsing of FTP traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_httpsonlymode",
+    "settingName": "Allow HTTPS-Only Mode to be enabled",
+    "settingDescription": "This policy controls whether users can enable HTTPS-Only Mode (Always Use Secure Connections) in Settings. HTTPS-Only Mode attempts to upgrade all navigations to HTTPS.\r\n\r\nIf this setting is not set or is set to allowed, users will be able to enable HTTPS-Only Mode.\r\nIf this setting is set to disallowed, users will not be able to enable HTTPS-Only Mode.\r\nIf this setting is set to force_enabled, HTTPS-Only Mode will be enabled in Strict mode and users will not be able to disable it.\r\nIf this setting is set to force_balanced_enabled, HTTPS-Only Mode will be enabled in Balanced mode and users will not be able to disable it.\r\n\r\nIf you set this policy to a value that is not supported by the version of Microsoft Edge that receives the policy, Microsoft Edge will default to the allowed setting.\r\n\r\nThe separate HttpAllowlist policy can be used to exempt specific hostnames or hostname patterns from being upgraded to HTTPS by this feature.\r\n\r\nPolicy options mapping:\r\n\r\n* allowed (allowed) = Do not restrict users' HTTPS-Only Mode setting\r\n\r\n* disallowed (disallowed) = Do not allow users to enable any HTTPS-Only Mode\r\n\r\n* force_enabled (force_enabled) = Force enable HTTPS-Only Mode in Strict mode\r\n\r\n* force_balanced_enabled (force_balanced_enabled) = Force enable HTTPS-Only Mode in Balanced Mode\r\n\r\nUse the preceding information when configuring this policy.\r\n\r\nExample value: disallowed",
+    "keywords": [
+      "HttpsOnlyMode",
+      "Allow HTTPS-Only Mode to be enabled",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "extensionsettings_extensionsettings",
     "settingName": "com.apple.configuration.safari.extensions.settings",
     "settingDescription": "Synthetic Top Level Setting Group Collection",
@@ -1634,7 +1718,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_screencapture_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -1742,7 +1826,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_camera_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -1769,7 +1853,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_systempolicydownloadsfolder_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -1877,7 +1961,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_systempolicyappdata_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -2003,7 +2087,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_addressbook_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -3175,7 +3259,7 @@
   {
     "settingId": "com.apple.applicationaccess_forceclassroomunpromptedscreenobservation",
     "settingName": "Force Classroom Unprompted Screen Observation",
-    "settingDescription": "If `true` and `ScreenObservationPermissionModificationAllowed` is also `true` in the Education payload, a student enrolled in a managed course through the Classroom app automatically gives permission to that course teacher's requests to observe the student's screen without prompting the student. Requires a supervised device. Available in iOS 11 and later, and macOS 10.14.4 and later.",
+    "settingDescription": "If `true` and `ScreenObservationPermissionModificationAllowed` is also `true` in the Education payload, a student enrolled in a managed course through the Classroom app automatically gives permission to that course teacher's requests to observe the student's screen without prompting the student.",
     "keywords": [
       "Restrictions"
     ],
@@ -4099,7 +4183,7 @@
   {
     "settingId": "com.apple.dock_static-apps_item_tile-data_label",
     "settingName": "Label",
-    "settingDescription": "The label of the dock item.",
+    "settingDescription": "The label of the Dock item.",
     "keywords": [
       "Dock"
     ],
@@ -10806,6 +10890,72 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "com.apple.managedclient.preferences_weeklyconfiguration_dayofweek",
+    "settingName": "Day of week",
+    "settingDescription": "Specifies the day of the week to perform a weekly scan. 0 indicates never. 1-7 indicates Sunday - Saturday. 8 indicates every day.",
+    "keywords": [
+      "Scheduled scan configuration"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_scheduledscan",
+    "settingName": "Scheduled Scan",
+    "settingDescription": "Schedule scans with Microsoft Defender for Endpoint.",
+    "keywords": [
+      "Features"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disablerdpparsing",
+    "settingName": "Disable RDP parsing",
+    "settingDescription": "Disables parsing of RDP traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowedcamerarestrictionbundleids",
+    "settingName": "Allowed Camera Restriction Bundle IDs",
+    "settingDescription": "If present, the system exempts apps with bundle IDs in the array from the `allowCamera` restriction. The system doesn't grant these apps access to the camera automatically; they're only exempted from the `allowCamera` restriction. This key has no effect when the camera isn't restricted. Multiple payloads combine using an intersect operation. Requires a supervised device.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.extensiblesso_extensiondata_useplatformssotgt_kerberos",
+    "settingName": "Use Platform SSOTGT",
+    "settingDescription": "If `true`, the system requires this configuration uses a TGT from Platform SSO instead of requesting a new one. Available in macOS 13 and later.",
+    "keywords": [
+      "Extensible Single Sign On Kerberos"
+    ],
+    "categoryName": "Authentication"
+  },
+  {
+    "settingId": "com.apple.webcontent-filter_safarihistoryretentionenabled",
+    "settingName": "Safari History Retention Enabled",
+    "settingDescription": "If `true`, this payload enforces a policy which requires retention of browsing history. This causes Safari to disable clearing of browsing history, and prevents the use of private browsing mode because that mode doesn't keep browsing history.",
+    "keywords": [
+      "Web Content Filter"
+    ],
+    "categoryName": "Web Content Filter"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_httpsonlymode_httpsonlymode",
+    "settingName": "Allow HTTPS-Only Mode to be enabled (User)",
+    "settingDescription": "",
+    "keywords": [
+      "HttpsOnlyMode",
+      "Allow HTTPS-Only Mode to be enabled",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_denieddomains",
     "settingName": "Denied Domains",
     "settingDescription": "Controls the domains and sub-domains the extension is not allowed to access. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
@@ -12368,7 +12518,7 @@
   {
     "settingId": "settings_item_mdmoptions_mdmoptions_promptusertoallowbootstraptokenforauthentication",
     "settingName": "Prompt User To Allow Bootstrap Token For Authentication",
-    "settingDescription": "If `true`, warn the user that they need to reboot into RecoveryOS and allow the MDM server to use the Bootstrap Token for authentication for certain sensitive operations; for example, enabling kernel extensions or installing certain types of software updates. Set this value to `false` if your MDM server doesn't need to perform these operations. The value provided here overrides the value specified in MDM, and only applies when `BootstrapTokenAllowedForAuthentication` is `true` in the `SecurityInfo` response. This value is available for Mac computers with Apple silicon in macOS 11 and later.",
+    "settingDescription": "If `true`, warn the user that they need to reboot into RecoveryOS and allow the MDM server to use the Bootstrap Token for authentication for certain sensitive operations; for example, enabling kernel extensions or installing certain types of software updates. Set this value to `false` if your MDM server doesn't need to perform these operations. The value provided here overrides the value specified in MDM, and only applies when `BootstrapTokenAllowedForAuthentication` is `true` in the `SecurityInfo` response. This value is available for a Mac with Apple silicon in macOS 11 and later.",
     "keywords": [
       "MDM Options"
     ],
@@ -12523,7 +12673,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_reminders_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -12550,7 +12700,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_systempolicydesktopfolder_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -12568,7 +12718,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_systempolicysysadminfiles_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -12586,7 +12736,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -12730,7 +12880,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_systempolicydocumentsfolder_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -12766,7 +12916,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_medialibrary_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -12820,7 +12970,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -12856,7 +13006,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_fileproviderpresence_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -12892,7 +13042,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -13162,7 +13312,7 @@
   {
     "settingId": "enforcement_detailsurl",
     "settingName": "Details URL",
-    "settingDescription": "The URL of a web page that shows details that the organization provides about the enforced update.",
+    "settingDescription": "The URL of a web page that shows details that the organization provides about the enforced software update.",
     "keywords": [
       "Software Update"
     ],
@@ -14022,7 +14172,7 @@
   {
     "settingId": "com.apple.applicationaccess_allowvisualintelligencesummary",
     "settingName": "Allow Visual Intelligence Summary",
-    "settingDescription": "If `false`, the system disables visual intelligence summarization. Available in iOS 18.3 and later.",
+    "settingDescription": "If `false`, the system disables visual intelligence summarization.",
     "keywords": [
       "Restrictions"
     ],
@@ -14103,7 +14253,7 @@
   {
     "settingId": "com.apple.applicationaccess_allowsatelliteconnection",
     "settingName": "Allow Satellite Connection",
-    "settingDescription": "If `false`, the system prohibits the connection to and use of satellite services. Available in iOS 18.2 and later.",
+    "settingDescription": "If `false`, the system prohibits the connection to and use of satellite services.",
     "keywords": [
       "Restrictions"
     ],
@@ -15202,7 +15352,7 @@
   {
     "settingId": "com.apple.dock_static-others_item_tile-data",
     "settingName": "Tile Data",
-    "settingDescription": "The information about the dock item.",
+    "settingDescription": "The information about the Dock item.",
     "keywords": [
       "Dock"
     ],
@@ -22072,6 +22222,165 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "com.apple.managedclient.preferences_dailyconfiguration",
+    "settingName": "Daily and Hourly quick scan configuration",
+    "settingDescription": "Check for definitions update before initiating a scheduled scan",
+    "keywords": [
+      "Scheduled scan configuration"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_weeklyconfiguration_timeofday",
+    "settingName": "Time of day",
+    "settingDescription": "Specifies the time of day, as the number of minutes after midnight, to perform a weekly scan.",
+    "keywords": [
+      "Scheduled scan configuration"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_weeklyconfiguration_scantype",
+    "settingName": "Scan type",
+    "settingDescription": "Specifies the type of scan to perform.",
+    "keywords": [
+      "Scheduled scan configuration"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_runscanwhenidle",
+    "settingName": "Run scheduled scan when idle",
+    "settingDescription": "Run scheduled scan when the device is idle. Only applicable for weekly full scans.",
+    "keywords": [
+      "Scheduled scan configuration"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_weeklyconfiguration",
+    "settingName": "Weekly scheduled scan configuration",
+    "settingDescription": "Should scheduled scan be run with low priority. (Scan might take longer to complete).",
+    "keywords": [
+      "Scheduled scan configuration"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_randomizescanstarttime",
+    "settingName": "Randomize scheduled scan start time",
+    "settingDescription": "Randomize the start time of a daily and weekly scheduled scan to any interval from 0 to 23 hours.",
+    "keywords": [
+      "Scheduled scan configuration"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_behaviormonitoring",
+    "settingName": "Behavior Monitoring",
+    "settingDescription": "Behavior Monitoring detections with Microsoft Defender for Endpoint.",
+    "keywords": [
+      "Features"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_groupids",
+    "settingName": "Group identifier",
+    "settingDescription": "",
+    "keywords": [
+      "Endpoint Detection and Response (EDR) preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_proxy",
+    "settingName": "Set proxy for MDE communication",
+    "settingDescription": "Configure proxy for all MDE cloud communication. If not set, the system-wide proxy is used.",
+    "keywords": [
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_definitionupdatedue",
+    "settingName": "Security intelligence update due (in days)",
+    "settingDescription": "Determines the number of days after which the last installed security intelligence updates are considered outdated.",
+    "keywords": [
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disablesmtpparsing",
+    "settingName": "Disable SMTP parsing",
+    "settingDescription": "Disables parsing of SMTP traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_httpsonlymode",
+    "settingName": "Allow HTTPS-Only Mode to be enabled (User)",
+    "settingDescription": "This policy controls whether users can enable HTTPS-Only Mode (Always Use Secure Connections) in Settings. HTTPS-Only Mode attempts to upgrade all navigations to HTTPS.\r\n\r\nIf this setting is not set or is set to allowed, users will be able to enable HTTPS-Only Mode.\r\nIf this setting is set to disallowed, users will not be able to enable HTTPS-Only Mode.\r\nIf this setting is set to force_enabled, HTTPS-Only Mode will be enabled in Strict mode and users will not be able to disable it.\r\nIf this setting is set to force_balanced_enabled, HTTPS-Only Mode will be enabled in Balanced mode and users will not be able to disable it.\r\n\r\nIf you set this policy to a value that is not supported by the version of Microsoft Edge that receives the policy, Microsoft Edge will default to the allowed setting.\r\n\r\nThe separate HttpAllowlist policy can be used to exempt specific hostnames or hostname patterns from being upgraded to HTTPS by this feature.\r\n\r\nPolicy options mapping:\r\n\r\n* allowed (allowed) = Do not restrict users' HTTPS-Only Mode setting\r\n\r\n* disallowed (disallowed) = Do not allow users to enable any HTTPS-Only Mode\r\n\r\n* force_enabled (force_enabled) = Force enable HTTPS-Only Mode in Strict mode\r\n\r\n* force_balanced_enabled (force_balanced_enabled) = Force enable HTTPS-Only Mode in Balanced Mode\r\n\r\nUse the preceding information when configuring this policy.\r\n\r\nExample value: disallowed",
+    "keywords": [
+      "HttpsOnlyMode",
+      "Allow HTTPS-Only Mode to be enabled",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_additionaldnsquerytypesenabled",
+    "settingName": "Allow DNS queries for more DNS record types (User)",
+    "settingDescription": "This policy controls whether Microsoft Edge can query more DNS record types when making insecure (non-Secure DNS) requests.\r\n\r\nIf this policy is unset or set to Enabled, more record types such as HTTPS (DNS type 65) may be queried in addition to A (DNS type 1) and AAAA (DNS type 28).\r\n\r\nIf this policy is set to Disabled, Microsoft Edge will only query A and AAAA record types for insecure DNS requests.\r\n\r\nThis setting doesn't affect DNS queries made via Secure DNS, which may always use more record types.\r\n\r\nNote: This is a temporary policy and is planned for removal in a future version of Microsoft Edge. After removal, Microsoft Edge will always be able to query more DNS types during insecure requests.",
+    "keywords": [
+      "AdditionalDnsQueryTypesEnabled",
+      "Allow DNS queries for more DNS record types",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_restrictcoresharingonrenderer",
+    "settingName": "Restrict CPU core sharing for renderer process",
+    "settingDescription": "This policy helps mitigate side-channel cross-process memory attacks by isolating the renderer process to a dedicated CPU core, preventing other processes from being scheduled on the same core. This mitigation is supported on Microsoft® Windows® 11 24H2 and later. If the operating system does not support the necessary scheduling features, this policy has no effect. Enabling this policy may reduce performance in demanding workloads, similar to the impact of disabling hyperthreading. For more information refer https://learn.microsoft.com/windows/win32/api/winnt/ns-winnt-process_mitigation_side_channel_isolation_policy\r\nIf you enable this policy, other processes can not be scheduled on the same CPU core as a renderer process.\r\nIf you disable this policy, other processes can be scheduled on the same CPU core as a renderer process.\r\nIf you don't configure this policy, other processes may be scheduled on the same core as the renderer process. Behavior may vary depending on Microsoft Edge version and platform.",
+    "keywords": [
+      "RestrictCoreSharingOnRenderer",
+      "Restrict CPU core sharing for renderer process",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_restrictcoresharingonrenderer",
+    "settingName": "Restrict CPU core sharing for renderer process (User)",
+    "settingDescription": "This policy helps mitigate side-channel cross-process memory attacks by isolating the renderer process to a dedicated CPU core, preventing other processes from being scheduled on the same core. This mitigation is supported on Microsoft® Windows® 11 24H2 and later. If the operating system does not support the necessary scheduling features, this policy has no effect. Enabling this policy may reduce performance in demanding workloads, similar to the impact of disabling hyperthreading. For more information refer https://learn.microsoft.com/windows/win32/api/winnt/ns-winnt-process_mitigation_side_channel_isolation_policy\r\nIf you enable this policy, other processes can not be scheduled on the same CPU core as a renderer process.\r\nIf you disable this policy, other processes can be scheduled on the same CPU core as a renderer process.\r\nIf you don't configure this policy, other processes may be scheduled on the same core as the renderer process. Behavior may vary depending on Microsoft Edge version and platform.",
+    "keywords": [
+      "RestrictCoreSharingOnRenderer",
+      "Restrict CPU core sharing for renderer process",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_serviceworkerautopreloadenabled",
+    "settingName": "Allow ServiceWorker to dispatch navigation requests without waiting for its startup",
+    "settingDescription": "This policy controls whether Microsoft Edge enables the ServiceWorkerAutoPreload feature.\r\n\r\nWhen enabled or not configured, Microsoft Edge may initiate the main resource network request concurrently with the Service Worker bootstrap process. This can improve performance in scenarios where the Service Worker is not already running.\r\n\r\nIf you disable this policy, Microsoft Edge will wait to dispatch the navigation request until after the Service Worker has started.\r\n\r\nThis is a temporary policy and will be removed in version 144 of Microsoft Edge.\r\n\r\nFor more details on the feature, see https://github.com/WICG/service-worker-auto-preload.",
+    "keywords": [
+      "ServiceWorkerAutoPreloadEnabled",
+      "Allow ServiceWorker to dispatch navigation requests without waiting for its startup",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_alloweddomains",
     "settingName": "Allowed Domains",
     "settingDescription": "Controls the domains and sub-domains the extension is granted access to. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
@@ -23842,7 +24151,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_speechrecognition_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -23887,7 +24196,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_postevent_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -23950,7 +24259,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_calendar_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -23977,7 +24286,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_systempolicynetworkvolumes_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -23986,7 +24295,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_systempolicyremovablevolumes_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -24094,7 +24403,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_systempolicyappbundles_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -24130,7 +24439,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_microphone_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -24157,7 +24466,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_appleevents_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -24193,7 +24502,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_listenevent_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -25286,7 +25595,7 @@
   {
     "settingId": "com.apple.applicationaccess_allownotestranscriptionsummary",
     "settingName": "Allow Notes Transcription Summary",
-    "settingDescription": "If `false`, disables transcription summarization in Notes. Available in iOS 18.3 and later, and macOS 15.3 and later.",
+    "settingDescription": "If `false`, disables transcription summarization in Notes.",
     "keywords": [
       "Restrictions"
     ],
@@ -25457,7 +25766,7 @@
   {
     "settingId": "com.apple.applicationaccess_allowedexternalintelligenceworkspaceids",
     "settingName": "Allowed External Intelligence Workspace IDs",
-    "settingDescription": "An array of strings, but currently restricted to a single element. If present, Apple Intelligence allows use of only the given external integration workspace ID, and requires a sign-in to make requests. The user is required to sign in to integrations that support signing in. Multiple payloads combine using an intersect operation. This means the allowed set of workspace IDs can become the empty set if multiple payloads specify conflicting values. Available in iOS 18.3 and later, macOS 15.3 and later, and visionOS 2.4 and later.",
+    "settingDescription": "An array of strings, but currently restricted to a single element. If present, Apple Intelligence allows use of only the given external integration workspace ID, and requires a sign-in to make requests. The user is required to sign in to integrations that support signing in. Multiple payloads combine using an intersect operation. This means the allowed set of workspace IDs can become the empty set if multiple payloads specify conflicting values.",
     "keywords": [
       "Restrictions"
     ],
@@ -25673,7 +25982,7 @@
   {
     "settingId": "com.apple.applicationaccess_allowsafarihistoryclearing",
     "settingName": "Allow Safari History Clearing",
-    "settingDescription": "If `false`, the system disables the ability to clear browsing history in Safari. Available in iOS 26 and later, macOS 26 and later, and visionOS 26 and later.",
+    "settingDescription": "If `false`, the system disables the ability to clear browsing history in Safari.",
     "keywords": [
       "Restrictions"
     ],
@@ -26376,7 +26685,7 @@
   {
     "settingId": "com.apple.dock_static-apps_item_tile-data",
     "settingName": "Tile Data",
-    "settingDescription": "The information about the dock item.",
+    "settingDescription": "The information about the Dock item.",
     "keywords": [
       "Dock"
     ],
@@ -26394,7 +26703,7 @@
   {
     "settingId": "com.apple.dock_static-others_item_tile-data_label",
     "settingName": "Label",
-    "settingDescription": "The label of the dock item.",
+    "settingDescription": "The label of the Dock item.",
     "keywords": [
       "Dock"
     ],
@@ -26475,7 +26784,7 @@
   {
     "settingId": "com.apple.dock_persistent-others_item_tile-data",
     "settingName": "Tile Data",
-    "settingDescription": "The information about the dock item.",
+    "settingDescription": "The information about the Dock item.",
     "keywords": [
       "Dock"
     ],
@@ -26502,7 +26811,7 @@
   {
     "settingId": "com.apple.dock_persistent-others_item_tile-data_label",
     "settingName": "Label",
-    "settingDescription": "The label of the dock item.",
+    "settingDescription": "The label of the Dock item.",
     "keywords": [
       "Dock"
     ],
@@ -26520,7 +26829,7 @@
   {
     "settingId": "com.apple.dock_persistent-apps_item_tile-data_label",
     "settingName": "Label",
-    "settingDescription": "The label of the dock item.",
+    "settingDescription": "The label of the Dock item.",
     "keywords": [
       "Dock"
     ],
@@ -33332,6 +33641,114 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "com.apple.managedclient.preferences_definitionupdatesinterval",
+    "settingName": "Security intelligence update interval (in seconds)",
+    "settingDescription": "Specifies the time interval (in seconds) after which security intelligence updates will be checked.",
+    "keywords": [
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disablednsovertcpparsing",
+    "settingName": "Disable DNS over TCP parsing",
+    "settingDescription": "Disables parsing of DNS over TCP",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disableinboundconnectionfiltering",
+    "settingName": "Disable inbound connection filtering",
+    "settingDescription": "Disables filtering of inbound connections",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disablehttpparsing",
+    "settingName": "Disable HTTP parsing",
+    "settingDescription": "Disables parsing of HTTP traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disableicmpparsing",
+    "settingName": "Disable ICMP parsing",
+    "settingDescription": "Disables parsing of ICMP traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disablesshparsing",
+    "settingName": "Disable SSH parsing",
+    "settingDescription": "Disables parsing of SSH traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disabletlsparsing",
+    "settingName": "Disable TLS parsing",
+    "settingDescription": "Disables parsing of TLS traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_enablesetwarntoblock",
+    "settingName": "Enable set warn to block",
+    "settingDescription": "Converts warn determinations into blocks",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_httpsonlymode_httpsonlymode",
+    "settingName": "Allow HTTPS-Only Mode to be enabled (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "HttpsOnlyMode",
+      "Allow HTTPS-Only Mode to be enabled",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_additionaldnsquerytypesenabled",
+    "settingName": "Allow DNS queries for more DNS record types",
+    "settingDescription": "This policy controls whether Microsoft Edge can query more DNS record types when making insecure (non-Secure DNS) requests.\r\n\r\nIf this policy is unset or set to Enabled, more record types such as HTTPS (DNS type 65) may be queried in addition to A (DNS type 1) and AAAA (DNS type 28).\r\n\r\nIf this policy is set to Disabled, Microsoft Edge will only query A and AAAA record types for insecure DNS requests.\r\n\r\nThis setting doesn't affect DNS queries made via Secure DNS, which may always use more record types.\r\n\r\nNote: This is a temporary policy and is planned for removal in a future version of Microsoft Edge. After removal, Microsoft Edge will always be able to query more DNS types during insecure requests.",
+    "keywords": [
+      "AdditionalDnsQueryTypesEnabled",
+      "Allow DNS queries for more DNS record types",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_serviceworkerautopreloadenabled",
+    "settingName": "Allow ServiceWorker to dispatch navigation requests without waiting for its startup (User)",
+    "settingDescription": "This policy controls whether Microsoft Edge enables the ServiceWorkerAutoPreload feature.\r\n\r\nWhen enabled or not configured, Microsoft Edge may initiate the main resource network request concurrently with the Service Worker bootstrap process. This can improve performance in scenarios where the Service Worker is not already running.\r\n\r\nIf you disable this policy, Microsoft Edge will wait to dispatch the navigation request until after the Service Worker has started.\r\n\r\nThis is a temporary policy and will be removed in version 144 of Microsoft Edge.\r\n\r\nFor more details on the feature, see https://github.com/WICG/service-worker-auto-preload.",
+    "keywords": [
+      "ServiceWorkerAutoPreloadEnabled",
+      "Allow ServiceWorker to dispatch navigation requests without waiting for its startup",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "extensionsettings_managedextensions",
     "settingName": "Managed Extensions",
     "settingDescription": "Extensions being managed",
@@ -35029,7 +35446,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_photos_item_identifier",
     "settingName": "Identifier",
-    "settingDescription": "The bundle ID or installation path of the binary.",
+    "settingDescription": "The bundle ID or installation path of the binary.\n\n> Note:\n> This value is case-sensitive.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -36684,7 +37101,7 @@
   {
     "settingId": "com.apple.applicationaccess_allowsafariprivatebrowsing",
     "settingName": "Allow Safari Private Browsing",
-    "settingDescription": "If `false`, the system disables the ability to use private browsing in Safari. Available in iOS 26 and later, macOS 26 and later, and visionOS 26 and later.",
+    "settingDescription": "If `false`, the system disables the ability to use private browsing in Safari.",
     "keywords": [
       "Restrictions"
     ],
@@ -37440,7 +37857,7 @@
   {
     "settingId": "com.apple.dock_persistent-apps_item_tile-data",
     "settingName": "Tile Data",
-    "settingDescription": "The information about the dock item.",
+    "settingDescription": "The information about the Dock item.",
     "keywords": [
       "Dock"
     ],

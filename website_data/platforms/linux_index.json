@@ -1,5 +1,32 @@
 [
   {
+    "settingId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent",
+    "settingName": "Automatic sample submission Consent",
+    "settingDescription": "Sends sample files to Microsoft to help protect device users and your organization from potential threats",
+    "keywords": [
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disablednsparsing",
+    "settingName": "Disable DNS parsing",
+    "settingDescription": "Disables parsing of DNS traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disableftpparsing",
+    "settingName": "Disable FTP parsing",
+    "settingDescription": "Disables parsing of FTP traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
     "settingId": "com.apple.managedclient.preferences_exclusionsmergepolicy",
     "settingName": "Exclusions merge",
     "settingDescription": "Specify the merge policy for exclusions. This can be a combination of administrator-defined and user-defined exclusions (merge) or only administrator-defined exclusions (admin_only). This setting can be used to restrict local users from defining their own exclusions.",
@@ -143,6 +170,15 @@
     "categoryName": "Microsoft Defender"
   },
   {
+    "settingId": "com.apple.managedclient.preferences_disablerdpparsing",
+    "settingName": "Disable RDP parsing",
+    "settingDescription": "Disables parsing of RDP traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
     "settingId": "com.apple.managedclient.preferences_scanresultsretentiondays",
     "settingName": "Scan results retention",
     "settingDescription": "Specify the number of days that results are retained in the scan history on the device. Old scan results are removed from the history. Old quarantined files that are also removed from the disk.",
@@ -282,6 +318,33 @@
     "settingDescription": "Global exclusions apply to both Antivirus and Endpoint detection and response to exclude at a much lower level closer to sensors. Usage: Tackling performance issues. Risk: Significantly risks protection",
     "keywords": [
       "Exclusion Settings"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_proxy",
+    "settingName": "Set proxy for MDE communication",
+    "settingDescription": "Configure proxy for all MDE cloud communication. If not set, the system-wide proxy is used.",
+    "keywords": [
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_definitionupdatedue",
+    "settingName": "Security intelligence update due (in days)",
+    "settingDescription": "Determines the number of days after which the last installed security intelligence updates are considered outdated.",
+    "keywords": [
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disablesmtpparsing",
+    "settingName": "Disable SMTP parsing",
+    "settingDescription": "Disables parsing of SMTP traffic",
+    "keywords": [
+      "Network protection"
     ],
     "categoryName": "Microsoft Defender"
   },
@@ -459,6 +522,78 @@
     "keywords": [
       "Microsoft Defender - Cloud delivered protection preferences",
       "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_definitionupdatesinterval",
+    "settingName": "Security intelligence update interval (in seconds)",
+    "settingDescription": "Specifies the time interval (in seconds) after which security intelligence updates will be checked.",
+    "keywords": [
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disablednsovertcpparsing",
+    "settingName": "Disable DNS over TCP parsing",
+    "settingDescription": "Disables parsing of DNS over TCP",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disableinboundconnectionfiltering",
+    "settingName": "Disable inbound connection filtering",
+    "settingDescription": "Disables filtering of inbound connections",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disablehttpparsing",
+    "settingName": "Disable HTTP parsing",
+    "settingDescription": "Disables parsing of HTTP traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disableicmpparsing",
+    "settingName": "Disable ICMP parsing",
+    "settingDescription": "Disables parsing of ICMP traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disablesshparsing",
+    "settingName": "Disable SSH parsing",
+    "settingDescription": "Disables parsing of SSH traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disabletlsparsing",
+    "settingName": "Disable TLS parsing",
+    "settingDescription": "Disables parsing of TLS traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_enablesetwarntoblock",
+    "settingName": "Enable set warn to block",
+    "settingDescription": "Converts warn determinations into blocks",
+    "keywords": [
+      "Network protection"
     ],
     "categoryName": "Microsoft Defender"
   },

@@ -1,5 +1,66 @@
 [
   {
+    "settingId": "user_vendor_msft_policy_config_connectivity_disablecrossdeviceresume",
+    "settingName": "Disable Cross Device Resume (User) (Windows Insiders only)",
+    "settingDescription": "This policy allows IT admins to turn off CrossDeviceResume feature to continue tasks, such as browsing file, continue using 1P/ 3P apps that require linking between Phone and PC. If you enable this policy setting, the Windows device will not receive any CrossDeviceResume notification. If you disable this policy setting, the Windows device will receive notification to resume activity from linked phone. If you do not configure this policy setting, the default behavior is that the CrossDeviceResume feature is turned 'ON'. Changes to this policy take effect on reboot.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Disable Cross Device Resume",
+      "Connectivity"
+    ],
+    "categoryName": "Connectivity"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_httpsonlymode",
+    "settingName": "Allow HTTPS-Only Mode to be enabled",
+    "settingDescription": "This policy controls whether users can enable HTTPS-Only Mode (Always Use Secure Connections) in Settings. HTTPS-Only Mode attempts to upgrade all navigations to HTTPS.\r\n\r\nIf this setting is not set or is set to allowed, users will be able to enable HTTPS-Only Mode.\r\nIf this setting is set to disallowed, users will not be able to enable HTTPS-Only Mode.\r\nIf this setting is set to force_enabled, HTTPS-Only Mode will be enabled in Strict mode and users will not be able to disable it.\r\nIf this setting is set to force_balanced_enabled, HTTPS-Only Mode will be enabled in Balanced mode and users will not be able to disable it.\r\n\r\nIf you set this policy to a value that is not supported by the version of Microsoft Edge that receives the policy, Microsoft Edge will default to the allowed setting.\r\n\r\nThe separate HttpAllowlist policy can be used to exempt specific hostnames or hostname patterns from being upgraded to HTTPS by this feature.\r\n\r\nPolicy options mapping:\r\n\r\n* allowed (allowed) = Do not restrict users' HTTPS-Only Mode setting\r\n\r\n* disallowed (disallowed) = Do not allow users to enable any HTTPS-Only Mode\r\n\r\n* force_enabled (force_enabled) = Force enable HTTPS-Only Mode in Strict mode\r\n\r\n* force_balanced_enabled (force_balanced_enabled) = Force enable HTTPS-Only Mode in Balanced Mode\r\n\r\nUse the preceding information when configuring this policy.\r\n\r\nExample value: disallowed",
+    "keywords": [
+      "HttpsOnlyMode",
+      "Allow HTTPS-Only Mode to be enabled",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge~network_localnetworkaccessallowedforurls_localnetworkaccessallowedforurlsdesc",
+    "settingName": "Allow sites to make requests to local network endpoints. (User)",
+    "settingDescription": "",
+    "keywords": [
+      "LocalNetworkAccessAllowedForUrls",
+      "Allow sites to make requests to local network endpoints.",
+      "\\Microsoft Edge\\Network settings",
+      "Microsoft Edge\\Network settings",
+      "Network settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge~network_localnetworkaccessallowedforurls",
+    "settingName": "Allow sites to make requests to local network endpoints.",
+    "settingDescription": "Specifies a list of URL patterns for which requests initiated from matching origins are exempt from Local Network Access restrictions.\r\n\r\nIf an origin is specified by both this policy and the 'LocalNetworkAccessBlockedForUrls' (Block sites from making requests to local network endpoints.) policy, the blocked list takes precedence.\r\n\r\nFor origins not covered by this policy, the user's personal settings and local network access restrictions will apply.\r\n\r\nFor guidance on valid URL pattern syntax, see:\r\nhttps://learn.microsoft.com/deployedge/edge-learnmore-ent-policy-url-patterns\r\n\r\nNote: This policy enables controlled exceptions to local network access restrictions. It allows specific public websites to access private IP addresses when necessary for trusted local communication scenarios. For more information about Local Network Access, see https://wicg.github.io/local-network-access/.\r\n\r\nExample value:\r\n\r\nhttp://www.example.com:8080\r\n[*.]example.edu\r\n*",
+    "keywords": [
+      "LocalNetworkAccessAllowedForUrls",
+      "Allow sites to make requests to local network endpoints.",
+      "\\Microsoft Edge\\Network settings",
+      "Microsoft Edge\\Network settings",
+      "Network settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge~network_localnetworkaccessblockedforurls_localnetworkaccessblockedforurlsdesc",
+    "settingName": "Block sites from making requests to local network endpoints. (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "LocalNetworkAccessBlockedForUrls",
+      "Block sites from making requests to local network endpoints.",
+      "\\Microsoft Edge\\Network settings",
+      "Microsoft Edge\\Network settings",
+      "Network settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchproviderencodings",
     "settingName": "Default search provider encodings",
     "settingDescription": "Specify the character encodings supported by the search provider. Encodings are code page names like UTF-8, GB2312, and ISO-8859-1. They are tried in the order provided.\n\nThis policy is optional. If not configured, the default, UTF-8, is used.\n\nThis policy is applied only if you enable the \"DefaultSearchProviderEnabled\" and \"DefaultSearchProviderSearchURL\" policies.\n\nStarting in Microsoft Edge 84, you can set this policy as a recommended policy. If the user has already set a default search provider, the default search provider configured by this recommended policy will not be added to the list of search providers the user can choose from. If this is the desired behavior, use the \"ManagedSearchEngines\" policy.",
@@ -45813,6 +45874,31 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_httpsonlymode_httpsonlymode",
+    "settingName": "Allow HTTPS-Only Mode to be enabled (User)",
+    "settingDescription": "",
+    "keywords": [
+      "HttpsOnlyMode",
+      "Allow HTTPS-Only Mode to be enabled",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge~network_localnetworkaccessallowedforurls",
+    "settingName": "Allow sites to make requests to local network endpoints. (User)",
+    "settingDescription": "Specifies a list of URL patterns for which requests initiated from matching origins are exempt from Local Network Access restrictions.\r\n\r\nIf an origin is specified by both this policy and the 'LocalNetworkAccessBlockedForUrls' (Block sites from making requests to local network endpoints.) policy, the blocked list takes precedence.\r\n\r\nFor origins not covered by this policy, the user's personal settings and local network access restrictions will apply.\r\n\r\nFor guidance on valid URL pattern syntax, see:\r\nhttps://learn.microsoft.com/deployedge/edge-learnmore-ent-policy-url-patterns\r\n\r\nNote: This policy enables controlled exceptions to local network access restrictions. It allows specific public websites to access private IP addresses when necessary for trusted local communication scenarios. For more information about Local Network Access, see https://wicg.github.io/local-network-access/.\r\n\r\nExample value:\r\n\r\nhttp://www.example.com:8080\r\n[*.]example.edu\r\n*",
+    "keywords": [
+      "LocalNetworkAccessAllowedForUrls",
+      "Allow sites to make requests to local network endpoints.",
+      "\\Microsoft Edge\\Network settings",
+      "Microsoft Edge\\Network settings",
+      "Network settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.newtabpagelocation_recommended",
     "settingName": "Configure the new tab page URL (users can override)",
     "settingDescription": "Configures the default URL for the new tab page.\n\nThe recommended version of this policy does not currently work and functions exactly like the mandatory version.\n\nThis policy determines the page that's opened when new tabs are created (including when new windows are opened). It also affects the startup page if that's set to open to the new tab page.\n\nThis policy doesn't determine which page opens on startup; that's controlled by the \"RestoreOnStartup\" policy. It also doesn't affect the home page if that's set to open to the new tab page.\n\nIf you don't configure this policy, the default new tab page is used.\n\nIf you configure this policy *and* the \"NewTabPageSetFeedType\" policy, this policy has precedence.\n\nIf a blank tab is preferred, \"about:blank\" is the correct URL to use, not \"about://blank\".\n\nThis policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.",
@@ -89660,6 +89746,92 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_httpsonlymode",
+    "settingName": "Allow HTTPS-Only Mode to be enabled (User)",
+    "settingDescription": "This policy controls whether users can enable HTTPS-Only Mode (Always Use Secure Connections) in Settings. HTTPS-Only Mode attempts to upgrade all navigations to HTTPS.\r\n\r\nIf this setting is not set or is set to allowed, users will be able to enable HTTPS-Only Mode.\r\nIf this setting is set to disallowed, users will not be able to enable HTTPS-Only Mode.\r\nIf this setting is set to force_enabled, HTTPS-Only Mode will be enabled in Strict mode and users will not be able to disable it.\r\nIf this setting is set to force_balanced_enabled, HTTPS-Only Mode will be enabled in Balanced mode and users will not be able to disable it.\r\n\r\nIf you set this policy to a value that is not supported by the version of Microsoft Edge that receives the policy, Microsoft Edge will default to the allowed setting.\r\n\r\nThe separate HttpAllowlist policy can be used to exempt specific hostnames or hostname patterns from being upgraded to HTTPS by this feature.\r\n\r\nPolicy options mapping:\r\n\r\n* allowed (allowed) = Do not restrict users' HTTPS-Only Mode setting\r\n\r\n* disallowed (disallowed) = Do not allow users to enable any HTTPS-Only Mode\r\n\r\n* force_enabled (force_enabled) = Force enable HTTPS-Only Mode in Strict mode\r\n\r\n* force_balanced_enabled (force_balanced_enabled) = Force enable HTTPS-Only Mode in Balanced Mode\r\n\r\nUse the preceding information when configuring this policy.\r\n\r\nExample value: disallowed",
+    "keywords": [
+      "HttpsOnlyMode",
+      "Allow HTTPS-Only Mode to be enabled",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_additionaldnsquerytypesenabled",
+    "settingName": "Allow DNS queries for more DNS record types (User)",
+    "settingDescription": "This policy controls whether Microsoft Edge can query more DNS record types when making insecure (non-Secure DNS) requests.\r\n\r\nIf this policy is unset or set to Enabled, more record types such as HTTPS (DNS type 65) may be queried in addition to A (DNS type 1) and AAAA (DNS type 28).\r\n\r\nIf this policy is set to Disabled, Microsoft Edge will only query A and AAAA record types for insecure DNS requests.\r\n\r\nThis setting doesn't affect DNS queries made via Secure DNS, which may always use more record types.\r\n\r\nNote: This is a temporary policy and is planned for removal in a future version of Microsoft Edge. After removal, Microsoft Edge will always be able to query more DNS types during insecure requests.",
+    "keywords": [
+      "AdditionalDnsQueryTypesEnabled",
+      "Allow DNS queries for more DNS record types",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_restrictcoresharingonrenderer",
+    "settingName": "Restrict CPU core sharing for renderer process",
+    "settingDescription": "This policy helps mitigate side-channel cross-process memory attacks by isolating the renderer process to a dedicated CPU core, preventing other processes from being scheduled on the same core. This mitigation is supported on Microsoft® Windows® 11 24H2 and later. If the operating system does not support the necessary scheduling features, this policy has no effect. Enabling this policy may reduce performance in demanding workloads, similar to the impact of disabling hyperthreading. For more information refer https://learn.microsoft.com/windows/win32/api/winnt/ns-winnt-process_mitigation_side_channel_isolation_policy\r\nIf you enable this policy, other processes can not be scheduled on the same CPU core as a renderer process.\r\nIf you disable this policy, other processes can be scheduled on the same CPU core as a renderer process.\r\nIf you don't configure this policy, other processes may be scheduled on the same core as the renderer process. Behavior may vary depending on Microsoft Edge version and platform.",
+    "keywords": [
+      "RestrictCoreSharingOnRenderer",
+      "Restrict CPU core sharing for renderer process",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_restrictcoresharingonrenderer",
+    "settingName": "Restrict CPU core sharing for renderer process (User)",
+    "settingDescription": "This policy helps mitigate side-channel cross-process memory attacks by isolating the renderer process to a dedicated CPU core, preventing other processes from being scheduled on the same core. This mitigation is supported on Microsoft® Windows® 11 24H2 and later. If the operating system does not support the necessary scheduling features, this policy has no effect. Enabling this policy may reduce performance in demanding workloads, similar to the impact of disabling hyperthreading. For more information refer https://learn.microsoft.com/windows/win32/api/winnt/ns-winnt-process_mitigation_side_channel_isolation_policy\r\nIf you enable this policy, other processes can not be scheduled on the same CPU core as a renderer process.\r\nIf you disable this policy, other processes can be scheduled on the same CPU core as a renderer process.\r\nIf you don't configure this policy, other processes may be scheduled on the same core as the renderer process. Behavior may vary depending on Microsoft Edge version and platform.",
+    "keywords": [
+      "RestrictCoreSharingOnRenderer",
+      "Restrict CPU core sharing for renderer process",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge~network_localnetworkaccessblockedforurls",
+    "settingName": "Block sites from making requests to local network endpoints. (User)",
+    "settingDescription": "List of URL patterns. Requests initiated from websites served by matching origins are blocked from issuing Local Network Access requests.\r\n\r\nIf an origin is covered by both this policy and by 'LocalNetworkAccessAllowedForUrls' (Allow sites to make requests to local network endpoints.), this policy takes precedence.\r\n\r\nDepending on the stage of the rollout of Local Network Access, LocalNetworkAccessRestrictionsEnabled may also need to be enabled for this policy to block Local Network Access requests.\r\n\r\nFor origins not covered by the patterns specified here, the user's personal configuration will apply.\r\n\r\nFor detailed information on valid URL patterns, please see https://learn.microsoft.com/deployedge/edge-learnmore-ent-policy-url-patterns.\r\n\r\nNote: This policy improves local network security by blocking specified public websites from accessing private IP addresses. It helps prevent unauthorized external sites from reaching internal resources unless explicitly permitted. For more information about Local Network Access, see https://wicg.github.io/local-network-access/.\r\n\r\nExample value:\r\n\r\nhttp://www.example.com:8080\r\n[*.]example.edu\r\n*",
+    "keywords": [
+      "LocalNetworkAccessBlockedForUrls",
+      "Block sites from making requests to local network endpoints.",
+      "\\Microsoft Edge\\Network settings",
+      "Microsoft Edge\\Network settings",
+      "Network settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge~network_localnetworkaccessblockedforurls",
+    "settingName": "Block sites from making requests to local network endpoints.",
+    "settingDescription": "List of URL patterns. Requests initiated from websites served by matching origins are blocked from issuing Local Network Access requests.\r\n\r\nIf an origin is covered by both this policy and by 'LocalNetworkAccessAllowedForUrls' (Allow sites to make requests to local network endpoints.), this policy takes precedence.\r\n\r\nDepending on the stage of the rollout of Local Network Access, LocalNetworkAccessRestrictionsEnabled may also need to be enabled for this policy to block Local Network Access requests.\r\n\r\nFor origins not covered by the patterns specified here, the user's personal configuration will apply.\r\n\r\nFor detailed information on valid URL patterns, please see https://learn.microsoft.com/deployedge/edge-learnmore-ent-policy-url-patterns.\r\n\r\nNote: This policy improves local network security by blocking specified public websites from accessing private IP addresses. It helps prevent unauthorized external sites from reaching internal resources unless explicitly permitted. For more information about Local Network Access, see https://wicg.github.io/local-network-access/.\r\n\r\nExample value:\r\n\r\nhttp://www.example.com:8080\r\n[*.]example.edu\r\n*",
+    "keywords": [
+      "LocalNetworkAccessBlockedForUrls",
+      "Block sites from making requests to local network endpoints.",
+      "\\Microsoft Edge\\Network settings",
+      "Microsoft Edge\\Network settings",
+      "Network settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_serviceworkerautopreloadenabled",
+    "settingName": "Allow ServiceWorker to dispatch navigation requests without waiting for its startup",
+    "settingDescription": "This policy controls whether Microsoft Edge enables the ServiceWorkerAutoPreload feature.\r\n\r\nWhen enabled or not configured, Microsoft Edge may initiate the main resource network request concurrently with the Service Worker bootstrap process. This can improve performance in scenarios where the Service Worker is not already running.\r\n\r\nIf you disable this policy, Microsoft Edge will wait to dispatch the navigation request until after the Service Worker has started.\r\n\r\nThis is a temporary policy and will be removed in version 144 of Microsoft Edge.\r\n\r\nFor more details on the feature, see https://github.com/WICG/service-worker-auto-preload.",
+    "keywords": [
+      "ServiceWorkerAutoPreloadEnabled",
+      "Allow ServiceWorker to dispatch navigation requests without waiting for its startup",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autolaunchprotocolsfromorigins",
     "settingName": "Define a list of protocols that can launch an external application from listed origins without prompting the user",
     "settingDescription": "Allows you to set a list of protocols, and for each protocol an associated list of allowed origin patterns, that can launch an external application without prompting the user. The trailing separator should not be included when listing the protocol. For example, list \"skype\" instead of \"skype:\" or \"skype://\".\n\nIf you configure this policy, a protocol will only be permitted to launch an external application without prompting by policy if:\n\n- the protocol is listed\n\n- the origin of the site trying to launch the protocol matches one of the origin patterns in that protocol's allowed_origins list.\n\nIf either condition is false, the external protocol launch prompt will not be omitted by policy.\n\nIf you don't configure this policy, no protocols can launch without a prompt. Users can opt out of prompts on a per-protocol/per-site basis unless the \"ExternalProtocolDialogShowAlwaysOpenCheckbox\" policy is set to Disabled. This policy has no impact on per-protocol/per-site prompt exemptions set by users.\n\nThe origin matching patterns use a similar format to those for the \"URLBlocklist\" policy, which are documented at <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n\nHowever, origin matching patterns for this policy cannot contain \"/path\" or \"@query\" elements. Any pattern that does contain a \"/path\" or \"@query\" element will be ignored.\n\nThis policy does not work as expected with file://* wildcards.",
@@ -133479,6 +133651,68 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_httpsonlymode_httpsonlymode",
+    "settingName": "Allow HTTPS-Only Mode to be enabled (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "HttpsOnlyMode",
+      "Allow HTTPS-Only Mode to be enabled",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge~network_localnetworkaccessblockedforurls_localnetworkaccessblockedforurlsdesc",
+    "settingName": "Block sites from making requests to local network endpoints. (User)",
+    "settingDescription": "",
+    "keywords": [
+      "LocalNetworkAccessBlockedForUrls",
+      "Block sites from making requests to local network endpoints.",
+      "\\Microsoft Edge\\Network settings",
+      "Microsoft Edge\\Network settings",
+      "Network settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_additionaldnsquerytypesenabled",
+    "settingName": "Allow DNS queries for more DNS record types",
+    "settingDescription": "This policy controls whether Microsoft Edge can query more DNS record types when making insecure (non-Secure DNS) requests.\r\n\r\nIf this policy is unset or set to Enabled, more record types such as HTTPS (DNS type 65) may be queried in addition to A (DNS type 1) and AAAA (DNS type 28).\r\n\r\nIf this policy is set to Disabled, Microsoft Edge will only query A and AAAA record types for insecure DNS requests.\r\n\r\nThis setting doesn't affect DNS queries made via Secure DNS, which may always use more record types.\r\n\r\nNote: This is a temporary policy and is planned for removal in a future version of Microsoft Edge. After removal, Microsoft Edge will always be able to query more DNS types during insecure requests.",
+    "keywords": [
+      "AdditionalDnsQueryTypesEnabled",
+      "Allow DNS queries for more DNS record types",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_serviceworkerautopreloadenabled",
+    "settingName": "Allow ServiceWorker to dispatch navigation requests without waiting for its startup (User)",
+    "settingDescription": "This policy controls whether Microsoft Edge enables the ServiceWorkerAutoPreload feature.\r\n\r\nWhen enabled or not configured, Microsoft Edge may initiate the main resource network request concurrently with the Service Worker bootstrap process. This can improve performance in scenarios where the Service Worker is not already running.\r\n\r\nIf you disable this policy, Microsoft Edge will wait to dispatch the navigation request until after the Service Worker has started.\r\n\r\nThis is a temporary policy and will be removed in version 144 of Microsoft Edge.\r\n\r\nFor more details on the feature, see https://github.com/WICG/service-worker-auto-preload.",
+    "keywords": [
+      "ServiceWorkerAutoPreloadEnabled",
+      "Allow ServiceWorker to dispatch navigation requests without waiting for its startup",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge~network_localnetworkaccessallowedforurls_localnetworkaccessallowedforurlsdesc",
+    "settingName": "Allow sites to make requests to local network endpoints. (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "LocalNetworkAccessAllowedForUrls",
+      "Allow sites to make requests to local network endpoints.",
+      "\\Microsoft Edge\\Network settings",
+      "Microsoft Edge\\Network settings",
+      "Network settings"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.adssettingforintrusiveadssites",

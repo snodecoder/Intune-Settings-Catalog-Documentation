@@ -400,6 +400,42 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "enrollment_autopilot_dpp_skipexpress",
+    "settingName": "Privacy settings",
+    "settingDescription": "Specify whether to show privacy settings to users.",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "SkipExpress",
+      "Out-of-box experience settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_devicerenametemplate",
+    "settingName": "Enter a name",
+    "settingDescription": "Create a unique name for your devices. Names must be 15 characters or less, and can contain letters (a-z, A-Z), numbers (0-9), and hyphens. Names must not contain only numbers. Names cannot include a blank space. Use the %SERIAL% macro to add a hardware-specific serial number. Alternatively, use the %RAND:x% macro to add a random string of numbers, where x equals the number of digits to add.",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "DeviceRenameTemplate",
+      "Out-of-box experience settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_applydevicerenametemplate",
+    "settingName": "Apply device name template",
+    "settingDescription": "Create a naming template to add names to your devices during enrollment.",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "ApplyDeviceRenameTemplate",
+      "Out-of-box experience settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_appledevicenametemplate",
     "settingName": "Device name template",
     "settingDescription": "Create a unique name for your devices. Names must be 63 characters or less, and can contain letters (a-z, A-Z), numbers (0-9), and hyphens.Variables supported: {{SERIAL}}, {{DEVICETYPE}}",
@@ -1019,13 +1055,25 @@
   },
   {
     "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_ruletype_userconfirmeduservalidation",
-    "settingName": "User Confirmed User Validation",
+    "settingName": "Validation",
     "settingDescription": "",
     "keywords": [
       "Elevation type",
       "Elevation",
       "Rule type",
       "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_language",
+    "settingName": "Language (Region)",
+    "settingDescription": "Specify the language and region that will be used.",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "Language (Region)",
+      "Out-of-box experience settings"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1470,6 +1518,30 @@
       "File Description",
       "Elevation",
       "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_skipeula",
+    "settingName": "Microsoft Software License Terms",
+    "settingDescription": "Specify whether to show the end-user license agreement to users.",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "SkipEula",
+      "Out-of-box experience settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_skipkeyboard",
+    "settingName": "Automatically configure keyboard",
+    "settingDescription": "If true, skip the keyboard selection page if Language is set.",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "SkipKeyboard",
+      "Out-of-box experience settings"
     ],
     "categoryName": "Uncategorized"
   },

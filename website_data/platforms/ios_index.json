@@ -1,5 +1,23 @@
 [
   {
+    "settingId": "settings_item_defaultapplications_messaging",
+    "settingName": "Messaging",
+    "settingDescription": "The bundle identifier of the app that the system sets as the default messaging app. This app must be an eligible messaging app.",
+    "keywords": [
+      "Default Applications"
+    ],
+    "categoryName": "Managed Settings"
+  },
+  {
+    "settingId": "settings_item_defaultapplications_calling",
+    "settingName": "Calling",
+    "settingDescription": "The bundle identifier of the app that the system sets as the default calling app. This app must be an eligible calling app.",
+    "keywords": [
+      "Default Applications"
+    ],
+    "categoryName": "Managed Settings"
+  },
+  {
     "settingId": "extensionsettings_extensionsettings",
     "settingName": "com.apple.configuration.safari.extensions.settings",
     "settingDescription": "Synthetic Top Level Setting Group Collection",
@@ -521,7 +539,7 @@
   {
     "settingId": "com.apple.applicationaccess_forceclassroomunpromptedscreenobservation",
     "settingName": "Force Classroom Unprompted Screen Observation",
-    "settingDescription": "If `true` and `ScreenObservationPermissionModificationAllowed` is also `true` in the Education payload, a student enrolled in a managed course through the Classroom app automatically gives permission to that course teacher's requests to observe the student's screen without prompting the student. Requires a supervised device. Available in iOS 11 and later, and macOS 10.14.4 and later.",
+    "settingDescription": "If `true` and `ScreenObservationPermissionModificationAllowed` is also `true` in the Education payload, a student enrolled in a managed course through the Classroom app automatically gives permission to that course teacher's requests to observe the student's screen without prompting the student.",
     "keywords": [
       "Restrictions"
     ],
@@ -1374,6 +1392,33 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "com.apple.applicationaccess_allowedcamerarestrictionbundleids",
+    "settingName": "Allowed Camera Restriction Bundle IDs",
+    "settingDescription": "If present, the system exempts apps with bundle IDs in the array from the `allowCamera` restriction. The system doesn't grant these apps access to the camera automatically; they're only exempted from the `allowCamera` restriction. This key has no effect when the camera isn't restricted. Multiple payloads combine using an intersect operation. Requires a supervised device.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.extensiblesso_extensiondata_useplatformssotgt_kerberos",
+    "settingName": "Use Platform SSOTGT",
+    "settingDescription": "If `true`, the system requires this configuration uses a TGT from Platform SSO instead of requesting a new one. Available in macOS 13 and later.",
+    "keywords": [
+      "Extensible Single Sign On Kerberos"
+    ],
+    "categoryName": "Authentication"
+  },
+  {
+    "settingId": "com.apple.webcontent-filter_safarihistoryretentionenabled",
+    "settingName": "Safari History Retention Enabled",
+    "settingDescription": "If `true`, this payload enforces a policy which requires retention of browsing history. This causes Safari to disable clearing of browsing history, and prevents the use of private browsing mode because that mode doesn't keep browsing history.",
+    "keywords": [
+      "Web Content Filter"
+    ],
+    "categoryName": "Web Content Filter"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_denieddomains",
     "settingName": "Denied Domains",
     "settingDescription": "Controls the domains and sub-domains the extension is not allowed to access. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
@@ -1525,7 +1570,7 @@
   {
     "settingId": "settings_item_mdmoptions_mdmoptions_promptusertoallowbootstraptokenforauthentication",
     "settingName": "Prompt User To Allow Bootstrap Token For Authentication",
-    "settingDescription": "If `true`, warn the user that they need to reboot into RecoveryOS and allow the MDM server to use the Bootstrap Token for authentication for certain sensitive operations; for example, enabling kernel extensions or installing certain types of software updates. Set this value to `false` if your MDM server doesn't need to perform these operations. The value provided here overrides the value specified in MDM, and only applies when `BootstrapTokenAllowedForAuthentication` is `true` in the `SecurityInfo` response. This value is available for Mac computers with Apple silicon in macOS 11 and later.",
+    "settingDescription": "If `true`, warn the user that they need to reboot into RecoveryOS and allow the MDM server to use the Bootstrap Token for authentication for certain sensitive operations; for example, enabling kernel extensions or installing certain types of software updates. Set this value to `false` if your MDM server doesn't need to perform these operations. The value provided here overrides the value specified in MDM, and only applies when `BootstrapTokenAllowedForAuthentication` is `true` in the `SecurityInfo` response. This value is available for a Mac with Apple silicon in macOS 11 and later.",
     "keywords": [
       "MDM Options"
     ],
@@ -1606,7 +1651,7 @@
   {
     "settingId": "enforcement_detailsurl",
     "settingName": "Details URL",
-    "settingDescription": "The URL of a web page that shows details that the organization provides about the enforced update.",
+    "settingDescription": "The URL of a web page that shows details that the organization provides about the enforced software update.",
     "keywords": [
       "Software Update"
     ],
@@ -1806,7 +1851,7 @@
   {
     "settingId": "com.apple.applicationaccess_allowvisualintelligencesummary",
     "settingName": "Allow Visual Intelligence Summary",
-    "settingDescription": "If `false`, the system disables visual intelligence summarization. Available in iOS 18.3 and later.",
+    "settingDescription": "If `false`, the system disables visual intelligence summarization.",
     "keywords": [
       "Restrictions"
     ],
@@ -1887,7 +1932,7 @@
   {
     "settingId": "com.apple.applicationaccess_allowsatelliteconnection",
     "settingName": "Allow Satellite Connection",
-    "settingDescription": "If `false`, the system prohibits the connection to and use of satellite services. Available in iOS 18.2 and later.",
+    "settingDescription": "If `false`, the system prohibits the connection to and use of satellite services.",
     "keywords": [
       "Restrictions"
     ],
@@ -3460,7 +3505,7 @@
   {
     "settingId": "com.apple.applicationaccess_allownotestranscriptionsummary",
     "settingName": "Allow Notes Transcription Summary",
-    "settingDescription": "If `false`, disables transcription summarization in Notes. Available in iOS 18.3 and later, and macOS 15.3 and later.",
+    "settingDescription": "If `false`, disables transcription summarization in Notes.",
     "keywords": [
       "Restrictions"
     ],
@@ -3631,7 +3676,7 @@
   {
     "settingId": "com.apple.applicationaccess_allowedexternalintelligenceworkspaceids",
     "settingName": "Allowed External Intelligence Workspace IDs",
-    "settingDescription": "An array of strings, but currently restricted to a single element. If present, Apple Intelligence allows use of only the given external integration workspace ID, and requires a sign-in to make requests. The user is required to sign in to integrations that support signing in. Multiple payloads combine using an intersect operation. This means the allowed set of workspace IDs can become the empty set if multiple payloads specify conflicting values. Available in iOS 18.3 and later, macOS 15.3 and later, and visionOS 2.4 and later.",
+    "settingDescription": "An array of strings, but currently restricted to a single element. If present, Apple Intelligence allows use of only the given external integration workspace ID, and requires a sign-in to make requests. The user is required to sign in to integrations that support signing in. Multiple payloads combine using an intersect operation. This means the allowed set of workspace IDs can become the empty set if multiple payloads specify conflicting values.",
     "keywords": [
       "Restrictions"
     ],
@@ -3847,7 +3892,7 @@
   {
     "settingId": "com.apple.applicationaccess_allowsafarihistoryclearing",
     "settingName": "Allow Safari History Clearing",
-    "settingDescription": "If `false`, the system disables the ability to clear browsing history in Safari. Available in iOS 26 and later, macOS 26 and later, and visionOS 26 and later.",
+    "settingDescription": "If `false`, the system disables the ability to clear browsing history in Safari.",
     "keywords": [
       "Restrictions"
     ],
@@ -5439,7 +5484,7 @@
   {
     "settingId": "com.apple.applicationaccess_allowsafariprivatebrowsing",
     "settingName": "Allow Safari Private Browsing",
-    "settingDescription": "If `false`, the system disables the ability to use private browsing in Safari. Available in iOS 26 and later, macOS 26 and later, and visionOS 26 and later.",
+    "settingDescription": "If `false`, the system disables the ability to use private browsing in Safari.",
     "keywords": [
       "Restrictions"
     ],
