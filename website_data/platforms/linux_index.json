@@ -1,19 +1,21 @@
 [
   {
-    "settingId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent",
-    "settingName": "Automatic sample submission Consent",
-    "settingDescription": "Sends sample files to Microsoft to help protect device users and your organization from potential threats",
+    "settingId": "com.apple.managedclient.preferences_passivemode",
+    "settingName": "Enable passive mode (deprecated)",
+    "settingDescription": "Whether the antivirus engine runs in passive mode or not.",
     "keywords": [
-      "Cloud delivered protection preferences"
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
     ],
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "com.apple.managedclient.preferences_disablednsparsing",
-    "settingName": "Disable DNS parsing",
-    "settingDescription": "Disables parsing of DNS traffic",
+    "settingId": "com.apple.managedclient.preferences_enabled",
+    "settingName": "Enable / disable cloud delivered protection",
+    "settingDescription": "Whether cloud delivered protection is enabled on the device or not. To improve the security of your services, we recommend keeping this feature turned on.",
     "keywords": [
-      "Network protection"
+      "Microsoft Defender - Cloud delivered protection preferences",
+      "Cloud delivered protection preferences"
     ],
     "categoryName": "Microsoft Defender"
   },
@@ -27,9 +29,27 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "com.apple.managedclient.preferences_exclusionsmergepolicy",
-    "settingName": "Exclusions merge",
-    "settingDescription": "Specify the merge policy for exclusions. This can be a combination of administrator-defined and user-defined exclusions (merge) or only administrator-defined exclusions (admin_only). This setting can be used to restrict local users from defining their own exclusions.",
+    "settingId": "linux_mdatp_managed_edr_tags",
+    "settingName": "Device tags",
+    "settingDescription": null,
+    "keywords": [
+      " EDR preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_maximumondemandscanthreads",
+    "settingName": "maximum on demand scan threads",
+    "settingDescription": "Specify the maximum number of number of threads used to perform the on demand scan.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_passivemode",
+    "settingName": "Enable passive mode (deprecated)",
+    "settingDescription": "Whether the antivirus engine runs in passive mode or not.",
     "keywords": [
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
@@ -37,9 +57,28 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "com.apple.managedclient.preferences_passivemode",
-    "settingName": "Enable passive mode (deprecated)",
-    "settingDescription": "Whether the antivirus engine runs in passive mode or not.",
+    "settingId": "linux_mdatp_managed_antivirusengine_exclusions_item_extension",
+    "settingName": "File extension",
+    "settingDescription": null,
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_cloudservice_cloudblocklevel",
+    "settingName": "Configure cloud block level",
+    "settingDescription": "Determines how aggressive Defender for Endpoint is in blocking and scanning suspicious files.",
+    "keywords": [
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_exclusionsmergepolicy",
+    "settingName": "Exclusions merge",
+    "settingDescription": "Specify the merge policy for exclusions. This can be a combination of administrator-defined and user-defined exclusions (merge) or only administrator-defined exclusions (admin_only). This setting can be used to restrict local users from defining their own exclusions.",
     "keywords": [
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
@@ -66,21 +105,20 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "com.apple.managedclient.preferences_enabled",
-    "settingName": "Enable / disable cloud delivered protection",
-    "settingDescription": "Whether cloud delivered protection is enabled on the device or not. To improve the security of your services, we recommend keeping this feature turned on.",
+    "settingId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent",
+    "settingName": "Automatic sample submission Consent",
+    "settingDescription": "Sends sample files to Microsoft to help protect device users and your organization from potential threats",
     "keywords": [
-      "Microsoft Defender - Cloud delivered protection preferences",
       "Cloud delivered protection preferences"
     ],
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "linux_mdatp_managed_edr_tags",
-    "settingName": "Device tags",
-    "settingDescription": null,
+    "settingId": "com.apple.managedclient.preferences_disablednsparsing",
+    "settingName": "Disable DNS parsing",
+    "settingDescription": "Disables parsing of DNS traffic",
     "keywords": [
-      " EDR preferences"
+      "Network protection"
     ],
     "categoryName": "Microsoft Defender"
   },
@@ -103,38 +141,9 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "linux_mdatp_managed_antivirusengine_maximumondemandscanthreads",
-    "settingName": "maximum on demand scan threads",
-    "settingDescription": "Specify the maximum number of number of threads used to perform the on demand scan.",
-    "keywords": [
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
     "settingId": "linux_mdatp_managed_antivirusengine_scanresultsretentiondays",
     "settingName": "Scan results retention",
     "settingDescription": "Specify the number of days that results are retained in the scan history on the device. Old scan results are removed from the history. Old quarantined files that are also removed from the disk.",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_passivemode",
-    "settingName": "Enable passive mode (deprecated)",
-    "settingDescription": "Whether the antivirus engine runs in passive mode or not.",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_exclusions_item_extension",
-    "settingName": "File extension",
-    "settingDescription": null,
     "keywords": [
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
@@ -152,29 +161,11 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "linux_mdatp_managed_cloudservice_cloudblocklevel",
-    "settingName": "Configure cloud block level",
-    "settingDescription": "Determines how aggressive Defender for Endpoint is in blocking and scanning suspicious files.",
-    "keywords": [
-      "Cloud delivered protection preferences"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
     "settingId": "linux_mdatp_managed_exclusionsettings_exclusions_item_path",
     "settingName": "Path",
     "settingDescription": "Path to exclude, wildcards are NOT supported",
     "keywords": [
       "Exclusion Settings"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_disablerdpparsing",
-    "settingName": "Disable RDP parsing",
-    "settingDescription": "Disables parsing of RDP traffic",
-    "keywords": [
-      "Network protection"
     ],
     "categoryName": "Microsoft Defender"
   },
@@ -256,6 +247,15 @@
     "categoryName": "Microsoft Defender"
   },
   {
+    "settingId": "com.apple.managedclient.preferences_disablerdpparsing",
+    "settingName": "Disable RDP parsing",
+    "settingDescription": "Disables parsing of RDP traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
     "settingId": "linux_mdatp_managed_edr_tags_item_value",
     "settingName": "Value of tag",
     "settingDescription": "Only one value per tag type can be set. Type of tags are unique, and should not be repeated in the same configuration profile.",
@@ -322,33 +322,6 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "com.apple.managedclient.preferences_proxy",
-    "settingName": "Set proxy for MDE communication",
-    "settingDescription": "Configure proxy for all MDE cloud communication. If not set, the system-wide proxy is used.",
-    "keywords": [
-      "Cloud delivered protection preferences"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_definitionupdatedue",
-    "settingName": "Security intelligence update due (in days)",
-    "settingDescription": "Determines the number of days after which the last installed security intelligence updates are considered outdated.",
-    "keywords": [
-      "Cloud delivered protection preferences"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_disablesmtpparsing",
-    "settingName": "Disable SMTP parsing",
-    "settingDescription": "Disables parsing of SMTP traffic",
-    "keywords": [
-      "Network protection"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
     "settingId": "com.apple.managedclient.preferences_threattypesettings",
     "settingName": "Threat type settings",
     "settingDescription": "The threatTypeSettings preference in the antivirus engine is used to control how certain threat types are handled by the product.",
@@ -389,12 +362,39 @@
     "categoryName": "Microsoft Defender"
   },
   {
+    "settingId": "com.apple.managedclient.preferences_proxy",
+    "settingName": "Set proxy for MDE communication",
+    "settingDescription": "Configure proxy for all MDE cloud communication. If not set, the system-wide proxy is used.",
+    "keywords": [
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
     "settingId": "com.apple.managedclient.preferences_diagnosticlevel",
     "settingName": "Diagnostic collection level",
     "settingDescription": "Diagnostic data is used to keep Microsoft Defender ATP secure and up-to-date, detect, diagnose and fix problems, and also make product improvements. This setting determines the level of diagnostics sent by the product to Microsoft.",
     "keywords": [
       "Microsoft Defender - Cloud delivered protection preferences",
       "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_definitionupdatedue",
+    "settingName": "Security intelligence update due (in days)",
+    "settingDescription": "Determines the number of days after which the last installed security intelligence updates are considered outdated.",
+    "keywords": [
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disablesmtpparsing",
+    "settingName": "Disable SMTP parsing",
+    "settingDescription": "Disables parsing of SMTP traffic",
+    "keywords": [
+      "Network protection"
     ],
     "categoryName": "Microsoft Defender"
   },
@@ -526,98 +526,6 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "com.apple.managedclient.preferences_definitionupdatesinterval",
-    "settingName": "Security intelligence update interval (in seconds)",
-    "settingDescription": "Specifies the time interval (in seconds) after which security intelligence updates will be checked.",
-    "keywords": [
-      "Cloud delivered protection preferences"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_disablednsovertcpparsing",
-    "settingName": "Disable DNS over TCP parsing",
-    "settingDescription": "Disables parsing of DNS over TCP",
-    "keywords": [
-      "Network protection"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_disableinboundconnectionfiltering",
-    "settingName": "Disable inbound connection filtering",
-    "settingDescription": "Disables filtering of inbound connections",
-    "keywords": [
-      "Network protection"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_disablehttpparsing",
-    "settingName": "Disable HTTP parsing",
-    "settingDescription": "Disables parsing of HTTP traffic",
-    "keywords": [
-      "Network protection"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_disableicmpparsing",
-    "settingName": "Disable ICMP parsing",
-    "settingDescription": "Disables parsing of ICMP traffic",
-    "keywords": [
-      "Network protection"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_disablesshparsing",
-    "settingName": "Disable SSH parsing",
-    "settingDescription": "Disables parsing of SSH traffic",
-    "keywords": [
-      "Network protection"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_disabletlsparsing",
-    "settingName": "Disable TLS parsing",
-    "settingDescription": "Disables parsing of TLS traffic",
-    "keywords": [
-      "Network protection"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_enablesetwarntoblock",
-    "settingName": "Enable set warn to block",
-    "settingDescription": "Converts warn determinations into blocks",
-    "keywords": [
-      "Network protection"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_exclusions",
-    "settingName": "Scan exclusions",
-    "settingDescription": "Entities that have been excluded from the scan. Exclusions can be specified by full paths, extensions, or file names.",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_enablerealtimeprotection",
-    "settingName": "Enable real-time protection (deprecated)",
-    "settingDescription": "Whether real-time protection (scan files as they are accessed) is enabled or not.",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
     "settingId": "com.apple.managedclient.preferences_exclusions_item_name",
     "settingName": "Name",
     "settingDescription": "Process name, either or full path or file name, wildcards supported",
@@ -686,11 +594,46 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "com.apple.managedclient.preferences_enforcementlevel",
-    "settingName": "Enforcement level",
-    "settingDescription": "Specifies if network protection is disabled, in audit mode, or enforced",
+    "settingId": "com.apple.managedclient.preferences_definitionupdatesinterval",
+    "settingName": "Security intelligence update interval (in seconds)",
+    "settingDescription": "Specifies the time interval (in seconds) after which security intelligence updates will be checked.",
     "keywords": [
-      "Microsoft Defender - Network protection",
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disableinboundconnectionfiltering",
+    "settingName": "Disable inbound connection filtering",
+    "settingDescription": "Disables filtering of inbound connections",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disablehttpparsing",
+    "settingName": "Disable HTTP parsing",
+    "settingDescription": "Disables parsing of HTTP traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disableicmpparsing",
+    "settingName": "Disable ICMP parsing",
+    "settingDescription": "Disables parsing of ICMP traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_enablesetwarntoblock",
+    "settingName": "Enable set warn to block",
+    "settingDescription": "Converts warn determinations into blocks",
+    "keywords": [
       "Network protection"
     ],
     "categoryName": "Microsoft Defender"
@@ -702,6 +645,72 @@
     "keywords": [
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scanafterdefinitionupdate",
+    "settingName": "Enable scanning after definition update",
+    "settingDescription": "Specifies whether to start a process scan after new security intelligence updates are downloaded on the device.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_exclusions",
+    "settingName": "Scan exclusions",
+    "settingDescription": "Entities that have been excluded from the scan. Exclusions can be specified by full paths, extensions, or file names.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_enablerealtimeprotection",
+    "settingName": "Enable real-time protection (deprecated)",
+    "settingDescription": "Whether real-time protection (scan files as they are accessed) is enabled or not.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disablednsovertcpparsing",
+    "settingName": "Disable DNS over TCP parsing",
+    "settingDescription": "Disables parsing of DNS over TCP",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disablesshparsing",
+    "settingName": "Disable SSH parsing",
+    "settingDescription": "Disables parsing of SSH traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disabletlsparsing",
+    "settingName": "Disable TLS parsing",
+    "settingDescription": "Disables parsing of TLS traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_enforcementlevel",
+    "settingName": "Enforcement level",
+    "settingDescription": "Specifies if network protection is disabled, in audit mode, or enforced",
+    "keywords": [
+      "Microsoft Defender - Network protection",
+      "Network protection"
     ],
     "categoryName": "Microsoft Defender"
   },
@@ -730,15 +739,6 @@
     "settingDescription": "Action to take when coming across a threat of the type specified in the preceding section.",
     "keywords": [
       "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_scanafterdefinitionupdate",
-    "settingName": "Enable scanning after definition update",
-    "settingDescription": "Specifies whether to start a process scan after new security intelligence updates are downloaded on the device.",
-    "keywords": [
       "Antivirus engine"
     ],
     "categoryName": "Microsoft Defender"

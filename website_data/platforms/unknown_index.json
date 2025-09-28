@@ -1,41 +1,8 @@
 [
   {
-    "settingId": "ade_activatecellulardata",
-    "settingName": "Carrier activation server URL",
-    "settingDescription": "",
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Management settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_authenticationmethod",
     "settingName": "Intune authentication method",
     "settingDescription": "If your organization uses multifactor authentication, select Setup Assistant with modern authentication, which prompts users to authenticate based on settings in Entra.",
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Management settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_useraffinity",
-    "settingName": "User affinity",
-    "settingDescription": "User affinity associates devices with users. Users must authenticate to enroll with user affinity.",
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Management settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_maximumsecondsinactivityuntiluserlogsout",
-    "settingName": "Maximum seconds of inactivity until user session logs out",
-    "settingDescription": "Available for devices running iPadOS versions 14.5 and later. Enter a value in seconds (minimum value to add is 30 seconds). If there isn't any activity after the value you enter, the user session automatically signs out. If you set the value to anything between 0-29, then the user session stays signed in.",
     "keywords": [
       "ADE profile",
       "enrollment",
@@ -57,41 +24,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_quiettime_rangesettings_endtime",
-    "settingName": "End",
-    "settingDescription": null,
-    "keywords": [
-      "end time",
-      "endtime",
-      "Range Settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "enrollment_autopilot_dpp_timeout",
-    "settingName": "Minutes allowed before showing installation error",
-    "settingDescription": "",
-    "keywords": [
-      "Autopilot",
-      "Device Preparation",
-      "Timeout",
-      "Out-of-box experience settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "enrollment_autopilot_dpp_allowedpolicyids",
-    "settingName": "Allowed Policies",
-    "settingDescription": "Select up to 10 policies you want to reference with this deployment. These policies should already be assigned to the Device group you selected earlier. You can check the installation status for these policies in the Device status report for this deployment.",
-    "keywords": [
-      "Autopilot",
-      "Device Preparation",
-      "AllowedPolicyIds",
-      "Policies"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_policy_elevationclientsettings_defaultelevationresponse",
     "settingName": "Default elevation response",
     "settingDescription": "",
@@ -100,28 +32,6 @@
       "Default Elevation Response",
       "Privilege Management",
       "Privilege Management Elevation Client Settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_elevationclientsettings_allowelevationdetection",
-    "settingName": "(Preview) Automatically detect elevations",
-    "settingDescription": "",
-    "keywords": [
-      "Client Settings",
-      "Automatically detect elevations",
-      "Privilege Management",
-      "Privilege management elevation client settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_xmlupload",
-    "settingName": "XML upload",
-    "settingDescription": "The format of the XML property list varies depending on the settings you are configuring for the ApplicationControl CSP. Microsoft Endpoint Manager will validate the XML format; but not validate the settings behaviour, the settings applicability nor sign the policy binary. ApplicationControl CSP supports base and supplemental policies for devices running the Windows 1903 build and later. Supplemental policies are required to loosen a base policy; and are always less restrictive. A supplemental policy needs to support a specific base policy that has been deployed to the same client. If not, there is no effect on assigned Windows devices.",
-    "keywords": [
-      "App Control for Business",
-      "XML Upload"
     ],
     "categoryName": "Uncategorized"
   },
@@ -135,81 +45,12 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_disableruntimefilepathrules",
-    "settingName": "Disable runtime file path rules",
-    "settingDescription": "Turning this off will disable FilePath rule protection of enforcing user-writeability and onlu allowing admin-writable locations.",
-    "keywords": [
-      "Advanced settings",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_trustappswithgoodreputation",
-    "settingName": "Trust apps with good reputation",
-    "settingDescription": "When enabled, applications with known good reputation as defined by the Microsoft's Intelligent Security Graph (ISG) are white listed.",
-    "keywords": [
-      "Application Control",
-      "Trust apps with good reputation",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_uploadxmldetails",
-    "settingName": "XML Upload",
-    "settingDescription": "The format of the XML property list varies depending on the settings you are configuring for the ApplicationControl CSP. Microsoft Endpoint Manager will validate the XML format; but not validate the settings behaviour, the settings applicability nor sign the policy binary. ApplicationControl CSP supports base and supplemental policies for devices running the Windows 1903 build and later. Supplemental policies are required to loosen a base policy; and are always less restrictive. A supplemental policy needs to support a specific base policy that has been deployed to the same client. If not, there is no effect on assigned Windows devices.",
-    "keywords": [
-      "Base settings",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_trustappsfrommanagedinstaller",
     "settingName": "Trust apps from managed installer",
     "settingDescription": "Turning Trust apps from managed installer on will not enforce the policy. We recommend first running the poliy with Trust apps from managed installer turned on prior to enforcement to determine the impacts of the policy.",
     "keywords": [
       "Application Control",
       "Trust apps from managed installer",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type_filehashdetails",
-    "settingName": "File hash",
-    "settingDescription": "A set of coma separated hashes for use of the application of this rule.",
-    "keywords": [
-      "Application Control",
-      "Rules",
-      "File Hash",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type_fileattributes_internalnamedetails",
-    "settingName": "Internal name",
-    "settingDescription": "The Internal name of the selected file as stated in the file attributes.",
-    "keywords": [
-      "Application Control",
-      "Rules",
-      "File Attributes",
-      "Internal name",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type_publisherdetails",
-    "settingName": "Publisher",
-    "settingDescription": "Creates a rule for a file that is signed by the software publisher. Upload the output generated by the binary file information extractor for your selected reference file.",
-    "keywords": [
-      "Application Control",
-      "Rules",
-      "Rule",
-      "Publisher",
       "App Control for Business"
     ],
     "categoryName": "Uncategorized"
@@ -261,22 +102,223 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_settings_clipboardsettings",
-    "settingName": "Clipboard behavior settings",
-    "settingDescription": "This policy setting allows you to decide how the clipboard behaves while in Microsoft Defender Application Guard.",
+    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_settings_savefilestohost",
+    "settingName": "Allow files to download and save to the host operating system",
+    "settingDescription": "This policy setting determines whether to save downloaded files to the host operating system from the Microsoft Defender Application Guard container. If you enable this setting, people can save downloaded files from the Microsoft Defender Application Guard container to the host operating system.",
     "keywords": [
-      "Clipboard Settings",
+      "Save Files To Host",
       "Windows Defender Application Guard",
       "Microsoft Defender Application Guard"
     ],
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_settings_savefilestohost",
-    "settingName": "Allow files to download and save to the host operating system",
-    "settingDescription": "This policy setting determines whether to save downloaded files to the host operating system from the Microsoft Defender Application Guard container. If you enable this setting, people can save downloaded files from the Microsoft Defender Application Guard container to the host operating system.",
+    "settingId": "device_vendor_msft_laps_policies_administratoraccountname",
+    "settingName": "Administrator Account Name ",
+    "settingDescription": "Use this setting to configure the name of the managed local administrator account.\n\nIf not specified, the default built-in local administrator account will be located by well-known SID (even if renamed).\n\nIf specified, the specified account's password will be managed.\n\nNote: if a custom managed local administrator account name is specified in this setting, that account must be created via other means. Specifying a name in this setting will not cause the account to be created.\r\n ",
     "keywords": [
-      "Save Files To Host",
+      "Administrator Account Name",
+      "LAPS"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_laps_policies_adencryptedpasswordhistorysize",
+    "settingName": "AD Encrypted Password History Size ",
+    "settingDescription": "Use this setting to configure how many previous encrypted passwords will be remembered in Active Directory.\n\nIf not specified, this setting will default to 0 passwords (disabled).\n\nThis setting has a minimum allowed value of 0 passwords.\n\nThis setting has a maximum allowed value of 12 passwords.\r\n ",
+    "keywords": [
+      "AD Encrypted Password History Size",
+      "LAPS"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_childprocessbehavior",
+    "settingName": "Child process behavior",
+    "settingDescription": "",
+    "keywords": [
+      "child process",
+      "Elevation",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_filename",
+    "settingName": "File name",
+    "settingDescription": null,
+    "keywords": [
+      "File Name",
+      "Elevation",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_activatecellulardata",
+    "settingName": "Carrier activation server URL",
+    "settingDescription": "",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Management settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_useraffinity",
+    "settingName": "User affinity",
+    "settingDescription": "User affinity associates devices with users. Users must authenticate to enroll with user affinity.",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Management settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_maximumsecondsinactivityuntiluserlogsout",
+    "settingName": "Maximum seconds of inactivity until user session logs out",
+    "settingDescription": "Available for devices running iPadOS versions 14.5 and later. Enter a value in seconds (minimum value to add is 30 seconds). If there isn't any activity after the value you enter, the user session automatically signs out. If you set the value to anything between 0-29, then the user session stays signed in.",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Management settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_quiettime_rangesettings_endtime",
+    "settingName": "End",
+    "settingDescription": null,
+    "keywords": [
+      "end time",
+      "endtime",
+      "Range Settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_timeout",
+    "settingName": "Minutes allowed before showing installation error",
+    "settingDescription": "",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "Timeout",
+      "Out-of-box experience settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_allowedpolicyids",
+    "settingName": "Allowed Policies",
+    "settingDescription": "Select up to 10 policies you want to reference with this deployment. These policies should already be assigned to the Device group you selected earlier. You can check the installation status for these policies in the Device status report for this deployment.",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "AllowedPolicyIds",
+      "Policies"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_elevationclientsettings_allowelevationdetection",
+    "settingName": "(Preview) Automatically detect elevations",
+    "settingDescription": "",
+    "keywords": [
+      "Client Settings",
+      "Automatically detect elevations",
+      "Privilege Management",
+      "Privilege management elevation client settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_xmlupload",
+    "settingName": "XML upload",
+    "settingDescription": "The format of the XML property list varies depending on the settings you are configuring for the ApplicationControl CSP. Microsoft Endpoint Manager will validate the XML format; but not validate the settings behaviour, the settings applicability nor sign the policy binary. ApplicationControl CSP supports base and supplemental policies for devices running the Windows 1903 build and later. Supplemental policies are required to loosen a base policy; and are always less restrictive. A supplemental policy needs to support a specific base policy that has been deployed to the same client. If not, there is no effect on assigned Windows devices.",
+    "keywords": [
+      "App Control for Business",
+      "XML Upload"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_disableruntimefilepathrules",
+    "settingName": "Disable runtime file path rules",
+    "settingDescription": "Turning this off will disable FilePath rule protection of enforcing user-writeability and onlu allowing admin-writable locations.",
+    "keywords": [
+      "Advanced settings",
+      "App Control for Business"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_trustappswithgoodreputation",
+    "settingName": "Trust apps with good reputation",
+    "settingDescription": "When enabled, applications with known good reputation as defined by the Microsoft's Intelligent Security Graph (ISG) are white listed.",
+    "keywords": [
+      "Application Control",
+      "Trust apps with good reputation",
+      "App Control for Business"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_uploadxmldetails",
+    "settingName": "XML Upload",
+    "settingDescription": "The format of the XML property list varies depending on the settings you are configuring for the ApplicationControl CSP. Microsoft Endpoint Manager will validate the XML format; but not validate the settings behaviour, the settings applicability nor sign the policy binary. ApplicationControl CSP supports base and supplemental policies for devices running the Windows 1903 build and later. Supplemental policies are required to loosen a base policy; and are always less restrictive. A supplemental policy needs to support a specific base policy that has been deployed to the same client. If not, there is no effect on assigned Windows devices.",
+    "keywords": [
+      "Base settings",
+      "App Control for Business"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type_filehashdetails",
+    "settingName": "File hash",
+    "settingDescription": "A set of coma separated hashes for use of the application of this rule.",
+    "keywords": [
+      "Application Control",
+      "Rules",
+      "File Hash",
+      "App Control for Business"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type_fileattributes_internalnamedetails",
+    "settingName": "Internal name",
+    "settingDescription": "The Internal name of the selected file as stated in the file attributes.",
+    "keywords": [
+      "Application Control",
+      "Rules",
+      "File Attributes",
+      "Internal name",
+      "App Control for Business"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type_publisherdetails",
+    "settingName": "Publisher",
+    "settingDescription": "Creates a rule for a file that is signed by the software publisher. Upload the output generated by the binary file information extractor for your selected reference file.",
+    "keywords": [
+      "Application Control",
+      "Rules",
+      "Rule",
+      "Publisher",
+      "App Control for Business"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_settings_clipboardsettings",
+    "settingName": "Clipboard behavior settings",
+    "settingDescription": "This policy setting allows you to decide how the clipboard behaves while in Microsoft Defender Application Guard.",
+    "keywords": [
+      "Clipboard Settings",
       "Windows Defender Application Guard",
       "Microsoft Defender Application Guard"
     ],
@@ -305,26 +347,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_laps_policies_administratoraccountname",
-    "settingName": "Administrator Account Name ",
-    "settingDescription": "Use this setting to configure the name of the managed local administrator account.\n\nIf not specified, the default built-in local administrator account will be located by well-known SID (even if renamed).\n\nIf specified, the specified account's password will be managed.\n\nNote: if a custom managed local administrator account name is specified in this setting, that account must be created via other means. Specifying a name in this setting will not cause the account to be created.\r\n ",
-    "keywords": [
-      "Administrator Account Name",
-      "LAPS"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_laps_policies_adencryptedpasswordhistorysize",
-    "settingName": "AD Encrypted Password History Size ",
-    "settingDescription": "Use this setting to configure how many previous encrypted passwords will be remembered in Active Directory.\n\nIf not specified, this setting will default to 0 passwords (disabled).\n\nThis setting has a minimum allowed value of 0 passwords.\n\nThis setting has a maximum allowed value of 12 passwords.\r\n ",
-    "keywords": [
-      "AD Encrypted Password History Size",
-      "LAPS"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_laps_policies_passwordagedays",
     "settingName": "Password Age Days ",
     "settingDescription": "Use this policy to configure the maximum password age of the managed local administrator account.\n\nIf not specified, this setting will default to 30 days\n\nThis setting has a minimum allowed value of 1 day when backing the password to onpremises Active Directory, and 7 days when backing the password to Microsoft Entra ID..\n\nThis setting has a maximum allowed value of 365 days.\r\n",
@@ -345,33 +367,11 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_childprocessbehavior",
-    "settingName": "Child process behavior",
-    "settingDescription": "",
-    "keywords": [
-      "child process",
-      "Elevation",
-      "Privilege Management"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_name",
     "settingName": "Rule name",
     "settingDescription": null,
     "keywords": [
       "Name",
-      "Elevation",
-      "Privilege Management"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_filename",
-    "settingName": "File name",
-    "settingDescription": null,
-    "keywords": [
-      "File Name",
       "Elevation",
       "Privilege Management"
     ],
@@ -396,42 +396,6 @@
       "Product Name",
       "Elevation",
       "Privilege Management"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "enrollment_autopilot_dpp_skipexpress",
-    "settingName": "Privacy settings",
-    "settingDescription": "Specify whether to show privacy settings to users.",
-    "keywords": [
-      "Autopilot",
-      "Device Preparation",
-      "SkipExpress",
-      "Out-of-box experience settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "enrollment_autopilot_dpp_devicerenametemplate",
-    "settingName": "Enter a name",
-    "settingDescription": "Create a unique name for your devices. Names must be 15 characters or less, and can contain letters (a-z, A-Z), numbers (0-9), and hyphens. Names must not contain only numbers. Names cannot include a blank space. Use the %SERIAL% macro to add a hardware-specific serial number. Alternatively, use the %RAND:x% macro to add a random string of numbers, where x equals the number of digits to add.",
-    "keywords": [
-      "Autopilot",
-      "Device Preparation",
-      "DeviceRenameTemplate",
-      "Out-of-box experience settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "enrollment_autopilot_dpp_applydevicerenametemplate",
-    "settingName": "Apply device name template",
-    "settingDescription": "Create a naming template to add names to your devices during enrollment.",
-    "keywords": [
-      "Autopilot",
-      "Device Preparation",
-      "ApplyDeviceRenameTemplate",
-      "Out-of-box experience settings"
     ],
     "categoryName": "Uncategorized"
   },
@@ -647,6 +611,18 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "enrollment_autopilot_dpp_skipexpress",
+    "settingName": "Privacy settings",
+    "settingDescription": "Specify whether to show privacy settings to users.",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "SkipExpress",
+      "Out-of-box experience settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "enrollment_autopilot_dpp_customerrormessage",
     "settingName": "Custom error message",
     "settingDescription": "This message will be displayed if an error occurs during deployment.",
@@ -654,6 +630,30 @@
       "Autopilot",
       "Device Preparation",
       "CustomErrorMessage",
+      "Out-of-box experience settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_devicerenametemplate",
+    "settingName": "Enter a name",
+    "settingDescription": "Create a unique name for your devices. Names must be 15 characters or less, and can contain letters (a-z, A-Z), numbers (0-9), and hyphens. Names must not contain only numbers. Names cannot include a blank space. Use the %SERIAL% macro to add a hardware-specific serial number. Alternatively, use the %RAND:x% macro to add a random string of numbers, where x equals the number of digits to add.",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "DeviceRenameTemplate",
+      "Out-of-box experience settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_applydevicerenametemplate",
+    "settingName": "Apply device name template",
+    "settingDescription": "Create a naming template to add names to your devices during enrollment.",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "ApplyDeviceRenameTemplate",
       "Out-of-box experience settings"
     ],
     "categoryName": "Uncategorized"
@@ -1066,18 +1066,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "enrollment_autopilot_dpp_language",
-    "settingName": "Language (Region)",
-    "settingDescription": "Specify the language and region that will be used.",
-    "keywords": [
-      "Autopilot",
-      "Device Preparation",
-      "Language (Region)",
-      "Out-of-box experience settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_awaitconfiguration_basic",
     "settingName": "Await final configuration",
     "settingDescription": "Keeps the device in Setup Assistant until the first sync between the device and Intune installs policies.",
@@ -1228,6 +1216,18 @@
       "start time",
       "starttime",
       "Range Settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_language",
+    "settingName": "Language (Region)",
+    "settingDescription": "Specify the language and region that will be used.",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "Language (Region)",
+      "Out-of-box experience settings"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1522,6 +1522,51 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "ade_setupassistant_enablelockdownmode",
+    "settingName": "Enable Lock down Mode",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_passcode",
+    "settingName": "Passcode",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_softwareupdatecompleted",
+    "settingName": "Software Update completed",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_allowskip",
+    "settingName": "Allow users to skip setup after multiple attempts",
+    "settingDescription": "Allow users to continue to desktop if deployment fails.",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "AllowSkip",
+      "Out-of-box experience settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "enrollment_autopilot_dpp_skipeula",
     "settingName": "Microsoft Software License Terms",
     "settingDescription": "Specify whether to show the end-user license agreement to users.",
@@ -1542,6 +1587,181 @@
       "Device Preparation",
       "SkipKeyboard",
       "Out-of-box experience settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_jointype",
+    "settingName": "Join type",
+    "settingDescription": "Specify how devices join an identity provider in your organization.",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "Join type",
+      "Deployment settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "linux_customconfig_script",
+    "settingName": "Execution Script",
+    "settingDescription": "Select the file containing the script to execute.",
+    "keywords": [
+      "Linux Custom Configuration"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type_fileattributes_filedescriptiondetails",
+    "settingName": "File description",
+    "settingDescription": "The description of the selected file as stated in the file attributes.",
+    "keywords": [
+      "Application Control",
+      "Rules",
+      "File Attributes",
+      "File Description",
+      "App Control for Business"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_name",
+    "settingName": "Rule Name",
+    "settingDescription": "The name of the rule",
+    "keywords": [
+      "Application Control",
+      "Rule Name",
+      "App Control for Business"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type",
+    "settingName": "Rule Type",
+    "settingDescription": "Rule Type",
+    "keywords": [
+      "Application Control",
+      "Rule Type",
+      "App Control for Business"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata",
+    "settingName": "Policy rule",
+    "settingDescription": "",
+    "keywords": [
+      "Defender",
+      "DeviceControl",
+      "Device Control"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_includedidlist_groupid",
+    "settingName": "Included Devices",
+    "settingDescription": "The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.",
+    "keywords": [
+      "Defender",
+      "DeviceControl",
+      "Device Control"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_computersid",
+    "settingName": "Computer Sid",
+    "settingDescription": "Local computer Sid or computer Sid group or the Sid of the AD object, defines whether to apply this policy over a specific machine or machine group; one entry can have a maximum of one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry.",
+    "keywords": [
+      "Defender",
+      "DeviceControl",
+      "Device Control"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_status",
+    "settingName": "Status",
+    "settingDescription": "Returns bitmask that indicates status of Application Guard installation for Microsoft Edge and prerequisites on the device.",
+    "keywords": [
+      "Status",
+      "WindowsDefenderApplicationGuard",
+      "Microsoft Defender Application Guard"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_settings_allowcameramicrophoneredirection",
+    "settingName": "Allow camera and microphone access",
+    "settingDescription": "This policy allows you to determine whether applications inside Microsoft Defender Application Guard can access the device’s camera and microphone when these settings are enabled on the user’s device. If you enable this policy, applications inside Microsoft Defender Application Guard will be able to access the camera and microphone on the user’s device. If you disable this policy, applications inside Microsoft Defender Application Guard will be unable to access the camera and microphone on the user’s device.",
+    "keywords": [
+      "Allow Camera Microphone Redirection",
+      "Windows Defender Application Guard",
+      "Microsoft Defender Application Guard"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_audit_auditapplicationguard",
+    "settingName": "Audit Application Guard",
+    "settingDescription": "This policy setting allows you to decide whether auditing events can be collected from Microsoft Defender Application Guard. If you enable this setting, Application Guard inherits auditing policies from your device and logs system events from the Application Guard container to your host. If you disable this setting, event logs aren't collected from your Application Guard container.",
+    "keywords": [
+      "Audit Application Guard",
+      "Windows Defender Application Guard",
+      "Microsoft Defender Application Guard"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_laps_policies_postauthenticationactions",
+    "settingName": "Post Authentication Actions ",
+    "settingDescription": "Use this setting to specify the actions to take upon expiration of the configured grace period.\n\nIf not specified, this setting will default to 3 (Reset the password and logoff the managed account).\n              \r\n ",
+    "keywords": [
+      "Post Authentication Actions",
+      "LAPS"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_laps_policies_passwordexpirationprotectionenabled",
+    "settingName": "Password Expiration Protection Enabled ",
+    "settingDescription": "Use this setting to configure additional enforcement of maximum password age for the managed local administrator account.\n\nWhen this setting is enabled, planned password expiration that would result in a password age greater than that dictated by \"PasswordAgeDays\" policy is NOT allowed. When such expiration is detected, the password is changed immediately and the new password expiration date is set according to policy.\n\nIf not specified, this setting defaults to True.\r\n ",
+    "keywords": [
+      "Password Expiration Protection Enabled",
+      "LAPS"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_laps_policies_automaticaccountmanagementenableaccount",
+    "settingName": "Automatic Account Management Enable Account",
+    "settingDescription": "Use this setting to configure whether the automatically managed account is enabled or disabled.\n\nIf this setting is enabled, the target account will be enabled.\n\nIf this setting is disabled, the target account will be disabled.\n\nIf not specified, this setting defaults to False.",
+    "keywords": [
+      "Automatic Account Management Enable Account",
+      "LAPS"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_ruletype_validation",
+    "settingName": "Validation",
+    "settingDescription": "",
+    "keywords": [
+      "Elevation type",
+      "Elevation",
+      "Rule type",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_signaturesource",
+    "settingName": "Signature source",
+    "settingDescription": "",
+    "keywords": [
+      "Certificate",
+      "Elevation",
+      "Privilege Management"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1590,28 +1810,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "ade_setupassistant_enablelockdownmode",
-    "settingName": "Enable Lock down Mode",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_setupassistant_passcode",
-    "settingName": "Passcode",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_setupassistant_restore",
     "settingName": "Restore",
     "settingDescription": null,
@@ -1641,41 +1839,6 @@
       "ADE profile",
       "enrollment",
       "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_setupassistant_softwareupdatecompleted",
-    "settingName": "Software Update completed",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "enrollment_autopilot_dpp_allowskip",
-    "settingName": "Allow users to skip setup after multiple attempts",
-    "settingDescription": "Allow users to continue to desktop if deployment fails.",
-    "keywords": [
-      "Autopilot",
-      "Device Preparation",
-      "AllowSkip",
-      "Out-of-box experience settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "enrollment_autopilot_dpp_jointype",
-    "settingName": "Join type",
-    "settingDescription": "Specify how devices join an identity provider in your organization.",
-    "keywords": [
-      "Autopilot",
-      "Device Preparation",
-      "Join type",
-      "Deployment settings"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1725,15 +1888,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "linux_customconfig_script",
-    "settingName": "Execution Script",
-    "settingDescription": "Select the file containing the script to execute.",
-    "keywords": [
-      "Linux Custom Configuration"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_policy_elevationclientsettings_enableepm",
     "settingName": "Endpoint Privilege Management",
     "settingDescription": "",
@@ -1766,47 +1920,12 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type_fileattributes_filedescriptiondetails",
-    "settingName": "File description",
-    "settingDescription": "The description of the selected file as stated in the file attributes.",
-    "keywords": [
-      "Application Control",
-      "Rules",
-      "File Attributes",
-      "File Description",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_id",
     "settingName": "Rule Id",
     "settingDescription": "The Id of the rule, leave this field blank, it will be filled in automatically.",
     "keywords": [
       "Application Control",
       "Rule Id",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_name",
-    "settingName": "Rule Name",
-    "settingDescription": "The name of the rule",
-    "keywords": [
-      "Application Control",
-      "Rule Name",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type",
-    "settingName": "Rule Type",
-    "settingDescription": "Rule Type",
-    "keywords": [
-      "Application Control",
-      "Rule Type",
       "App Control for Business"
     ],
     "categoryName": "Uncategorized"
@@ -1846,28 +1965,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata",
-    "settingName": "Policy rule",
-    "settingDescription": "",
-    "keywords": [
-      "Defender",
-      "DeviceControl",
-      "Device Control"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_includedidlist_groupid",
-    "settingName": "Included Devices",
-    "settingDescription": "The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.",
-    "keywords": [
-      "Defender",
-      "DeviceControl",
-      "Device Control"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask",
     "settingName": "Access mask",
     "settingDescription": "Defines the access.",
@@ -1890,17 +1987,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_computersid",
-    "settingName": "Computer Sid",
-    "settingDescription": "Local computer Sid or computer Sid group or the Sid of the AD object, defines whether to apply this policy over a specific machine or machine group; one entry can have a maximum of one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry.",
-    "keywords": [
-      "Defender",
-      "DeviceControl",
-      "Device Control"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_windowsdefenderapplicationguard_settings_printingsettings",
     "settingName": "Print Settings",
     "settingDescription": "This policy setting allows you to decide how the print functionality behaves while in Microsoft Defender Application Guard.",
@@ -1912,74 +1998,11 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_status",
-    "settingName": "Status",
-    "settingDescription": "Returns bitmask that indicates status of Application Guard installation for Microsoft Edge and prerequisites on the device.",
-    "keywords": [
-      "Status",
-      "WindowsDefenderApplicationGuard",
-      "Microsoft Defender Application Guard"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_settings_allowcameramicrophoneredirection",
-    "settingName": "Allow camera and microphone access",
-    "settingDescription": "This policy allows you to determine whether applications inside Microsoft Defender Application Guard can access the device’s camera and microphone when these settings are enabled on the user’s device. If you enable this policy, applications inside Microsoft Defender Application Guard will be able to access the camera and microphone on the user’s device. If you disable this policy, applications inside Microsoft Defender Application Guard will be unable to access the camera and microphone on the user’s device.",
-    "keywords": [
-      "Allow Camera Microphone Redirection",
-      "Windows Defender Application Guard",
-      "Microsoft Defender Application Guard"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_audit_auditapplicationguard",
-    "settingName": "Audit Application Guard",
-    "settingDescription": "This policy setting allows you to decide whether auditing events can be collected from Microsoft Defender Application Guard. If you enable this setting, Application Guard inherits auditing policies from your device and logs system events from the Application Guard container to your host. If you disable this setting, event logs aren't collected from your Application Guard container.",
-    "keywords": [
-      "Audit Application Guard",
-      "Windows Defender Application Guard",
-      "Microsoft Defender Application Guard"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_laps_policies_passwordlength",
     "settingName": "Password Length ",
     "settingDescription": "Use this setting to configure the length of the password of the managed local administrator account.\n\nIf not specified, this setting will default to 14 characters.\n\nThis setting has a minimum allowed value of 8 characters.\n\nThis setting has a maximum allowed value of 64 characters.\r\n ",
     "keywords": [
       "Password Length",
-      "LAPS"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_laps_policies_postauthenticationactions",
-    "settingName": "Post Authentication Actions ",
-    "settingDescription": "Use this setting to specify the actions to take upon expiration of the configured grace period.\n\nIf not specified, this setting will default to 3 (Reset the password and logoff the managed account).\n              \r\n ",
-    "keywords": [
-      "Post Authentication Actions",
-      "LAPS"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_laps_policies_passwordexpirationprotectionenabled",
-    "settingName": "Password Expiration Protection Enabled ",
-    "settingDescription": "Use this setting to configure additional enforcement of maximum password age for the managed local administrator account.\n\nWhen this setting is enabled, planned password expiration that would result in a password age greater than that dictated by \"PasswordAgeDays\" policy is NOT allowed. When such expiration is detected, the password is changed immediately and the new password expiration date is set according to policy.\n\nIf not specified, this setting defaults to True.\r\n ",
-    "keywords": [
-      "Password Expiration Protection Enabled",
-      "LAPS"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_laps_policies_automaticaccountmanagementenableaccount",
-    "settingName": "Automatic Account Management Enable Account",
-    "settingDescription": "Use this setting to configure whether the automatically managed account is enabled or disabled.\n\nIf this setting is enabled, the target account will be enabled.\n\nIf this setting is disabled, the target account will be disabled.\n\nIf not specified, this setting defaults to False.",
-    "keywords": [
-      "Automatic Account Management Enable Account",
       "LAPS"
     ],
     "categoryName": "Uncategorized"
@@ -2007,34 +2030,11 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_ruletype_validation",
-    "settingName": "Validation",
-    "settingDescription": "",
-    "keywords": [
-      "Elevation type",
-      "Elevation",
-      "Rule type",
-      "Privilege Management"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_arguments",
     "settingName": "Restrict Arguments",
     "settingDescription": "Specifies the argument values of the argument based elevation rule.",
     "keywords": [
       "Arguments",
-      "Elevation",
-      "Privilege Management"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_signaturesource",
-    "settingName": "Signature source",
-    "settingDescription": "",
-    "keywords": [
-      "Certificate",
       "Elevation",
       "Privilege Management"
     ],

@@ -1,33 +1,33 @@
 [
   {
-    "settingId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurations",
-    "settingName": "Block Wi-Fi access point configuration",
-    "settingDescription": "If 'True', prevents users from creating or changing any Wi-Fi configurations. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to change the Wi-Fi settings on the device. Available for fully managed, dedicated and corporate-owned work profile devices. ",
+    "settingId": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp",
+    "settingName": "Allow users to turn on debugging features",
+    "settingDescription": "If 'True', permits users to access the debugging features on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might prevent users from using the debugging features on the device.",
     "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
     "categoryName": "Device Restriction",
     "keywords": [
-      "Block",
-      "Wifi",
-      "Wifi Configuration",
+      "Debugging",
+      "Debugging features",
+      "Allow Debugging features",
       "General"
     ],
     "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
-    "offsetUri": "/wifiBlockEditConfigurations/",
+    "offsetUri": "/securityAllowDebuggingFeaturesAosp/",
     "settingUsage": "configuration",
     "uxBehavior": "toggle",
     "visibility": "settingsCatalog,template",
     "riskLevel": "low",
-    "defaultOptionId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurations_false",
+    "defaultOptionId": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp_false",
     "applicability": {
       "description": null,
-      "platform": "androidEnterprise",
+      "platform": "aosp",
       "deviceMode": "none",
       "technologies": "android"
     },
     "options": [
       {
-        "itemId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurations_false",
+        "itemId": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp_false",
         "description": "False",
         "helpText": null,
         "name": "False",
@@ -41,7 +41,7 @@
         "dependedOnBy": []
       },
       {
-        "itemId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurations_true",
+        "itemId": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp_true",
         "description": "True",
         "helpText": null,
         "name": "True",
@@ -59,16 +59,16 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": "",
-    "name": "WifiBlockEditConfigurations",
-    "rootDefinitionId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurations",
+    "name": "SecurityAllowDebuggingFeatures",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp",
     "settingDefinitionId": null,
     "definitionDescription": null,
     "dataType": null,
     "valueOptions": [
       {
-        "itemId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurations_false",
+        "itemId": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp_false",
         "description": "False",
         "helpText": null,
         "name": "False",
@@ -82,7 +82,7 @@
         "dependedOnBy": []
       },
       {
-        "itemId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurations_true",
+        "itemId": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp_true",
         "description": "True",
         "helpText": null,
         "name": "True",
@@ -159,7 +159,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": null,
     "name": "SecurityDeveloperSettingsEnabled",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.securitydevelopersettingsenabled",
@@ -183,309 +183,6 @@
       },
       {
         "itemId": "com.android.devicerestrictionpolicy.securitydevelopersettingsenabled_false",
-        "description": "false",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.volumeblockadjustment",
-    "settingName": "Block volume changes",
-    "settingDescription": "If 'True', prevents users from changing the device's volume, and also mutes the main volume. If 'False', Intune doesn't change or update this setting. By default, the OS might allow using the volume settings on the device. Available for fully managed and dedicated devices.",
-    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
-    "categoryName": "Device Restriction",
-    "keywords": [
-      "Volume",
-      "Block",
-      "Adjustment",
-      "General"
-    ],
-    "infoUrls": [],
-    "baseUri": "/com.android.deviceRestrictionPolicy/",
-    "offsetUri": "/volumeBlockAdjustment/",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "com.android.devicerestrictionpolicy.volumeblockadjustment_false",
-    "applicability": {
-      "description": null,
-      "platform": "androidEnterprise",
-      "deviceMode": "none",
-      "technologies": "android"
-    },
-    "options": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.volumeblockadjustment_true",
-        "description": "true",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.volumeblockadjustment_false",
-        "description": "false",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
-    "helpText": null,
-    "name": "VolumeBlockAdjustment",
-    "rootDefinitionId": "com.android.devicerestrictionpolicy.volumeblockadjustment",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.volumeblockadjustment_true",
-        "description": "true",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.volumeblockadjustment_false",
-        "description": "false",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp",
-    "settingName": "Allow users to turn on debugging features",
-    "settingDescription": "If 'True', permits users to access the debugging features on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might prevent users from using the debugging features on the device.",
-    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
-    "categoryName": "Device Restriction",
-    "keywords": [
-      "Debugging",
-      "Debugging features",
-      "Allow Debugging features",
-      "General"
-    ],
-    "infoUrls": [],
-    "baseUri": "/com.android.deviceRestrictionPolicy/",
-    "offsetUri": "/securityAllowDebuggingFeaturesAosp/",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp_false",
-    "applicability": {
-      "description": null,
-      "platform": "aosp",
-      "deviceMode": "none",
-      "technologies": "android"
-    },
-    "options": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp_false",
-        "description": "False",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp_true",
-        "description": "True",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
-    "helpText": "",
-    "name": "SecurityAllowDebuggingFeatures",
-    "rootDefinitionId": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp_false",
-        "description": "False",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp_true",
-        "description": "True",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.bluetoothblocked",
-    "settingName": "Block Bluetooth",
-    "settingDescription": "If 'True', disables Bluetooth entirely on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow Bluetooth to be used. Available for fully managed, dedicated, and corporate-owned work profile devices. In comparison, Bluetooth configuration disables the user from making changes to the Bluetooth toggle. As a result, it might be either 'On' or 'Off' depending on the state of Bluetooth prior to applying a policy with Bluetooth configuration enabled.",
-    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
-    "categoryName": "Device Restriction",
-    "keywords": [
-      "Bluetooth",
-      "Disable Bluetooth",
-      "Bluetooth settings",
-      "Block Bluetooth",
-      "Bluetooth policy",
-      "Bluetooth configuration",
-      "Allow Bluetooth",
-      "Bluetooth device restrictions",
-      "Bluetooth control",
-      "General"
-    ],
-    "infoUrls": [],
-    "baseUri": "/com.android.deviceRestrictionPolicy/",
-    "offsetUri": "/bluetoothBlocked/",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "com.android.devicerestrictionpolicy.bluetoothblocked_false",
-    "applicability": {
-      "description": null,
-      "platform": "androidEnterprise",
-      "deviceMode": "none",
-      "technologies": "android"
-    },
-    "options": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.bluetoothblocked_true",
-        "description": "True",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.bluetoothblocked_false",
-        "description": "false",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
-    "helpText": null,
-    "name": "BluetoothBlocked",
-    "rootDefinitionId": "com.android.devicerestrictionpolicy.bluetoothblocked",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.bluetoothblocked_true",
-        "description": "True",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.bluetoothblocked_false",
         "description": "false",
         "helpText": null,
         "name": "False",
@@ -562,7 +259,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": "",
     "name": "AppsBlockInstallFromUnknownSources",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.appsblockinstallfromunknownsourcesaosp",
@@ -586,6 +283,610 @@
       },
       {
         "itemId": "com.android.devicerestrictionpolicy.appsblockinstallfromunknownsourcesaosp_true",
+        "description": "True",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.volumeblockadjustment",
+    "settingName": "Block volume changes",
+    "settingDescription": "If 'True', prevents users from changing the device's volume, and also mutes the main volume. If 'False', Intune doesn't change or update this setting. By default, the OS might allow using the volume settings on the device. Available for fully managed and dedicated devices.",
+    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Volume",
+      "Block",
+      "Adjustment",
+      "General"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/volumeBlockAdjustment/",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.android.devicerestrictionpolicy.volumeblockadjustment_false",
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.volumeblockadjustment_true",
+        "description": "true",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.volumeblockadjustment_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638939166925930383",
+    "helpText": null,
+    "name": "VolumeBlockAdjustment",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.volumeblockadjustment",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.volumeblockadjustment_true",
+        "description": "true",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.volumeblockadjustment_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.passwordminimumlowercasecharacters",
+    "settingName": "Number of lowercase characters required",
+    "settingDescription": "Enter the number of lowercase characters the password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "categoryId": "f350f9a2-3a91-4d6d-90ed-7e3849b0d5f1",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Password",
+      "Minimum",
+      "Lower",
+      "Case",
+      "Characters",
+      "Device password"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/passwordMinimumLowerCaseCharacters/",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 16,
+      "minimumValue": 1
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 1
+    },
+    "accessTypes": "add,delete,get,replace",
+    "version": "638939166925930383",
+    "helpText": "Enter a number (1-16)",
+    "name": "PasswordMinimumLowerCaseCharacters",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.passwordsigninfailurecountbeforefactoryreset",
+    "settingName": "Number of sign-in failures before wiping device",
+    "settingDescription": "Enter the number of wrong passwords allowed before the device is wiped, from 4-11. If the value is blank, Intune doesn't change or update this setting. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "categoryId": "f350f9a2-3a91-4d6d-90ed-7e3849b0d5f1",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Password",
+      "Passcode",
+      "SignIn Failure",
+      "SignIn Failure Count Before Factory Reset",
+      "Device password"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/passwordSignInFailureCountBeforeFactoryReset/",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 11,
+      "minimumValue": 4
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 11
+    },
+    "accessTypes": "add,delete,get,replace",
+    "version": "638939166925930383",
+    "helpText": "Enter a number (4-11)",
+    "name": "PasswordSignInFailureCountBeforeFactoryReset",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordsigninfailurecountbeforefactoryreset",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.passwordblockkeyguard",
+    "settingName": "Disable lock screen",
+    "settingDescription": "If 'True', blocks all Keyguard lock screen features from being used. If 'False', Intune doesn't change or update this setting. By default, when the device is in lock screen, the OS might allow all the Keyguard features, such as camera, fingerprint unlock, and more. Available for fully managed and dedicated devices.",
+    "categoryId": "f350f9a2-3a91-4d6d-90ed-7e3849b0d5f1",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Password",
+      "Block",
+      "Keyguard",
+      "Device password"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/passwordBlockKeyguard/",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.android.devicerestrictionpolicy.passwordblockkeyguard_false",
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.passwordblockkeyguard_true",
+        "description": "true",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.passwordblockkeyguard_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638939166925930383",
+    "helpText": null,
+    "name": "PasswordBlockKeyguard",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordblockkeyguard",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.passwordblockkeyguard_true",
+        "description": "true",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.passwordblockkeyguard_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.securitycommoncriteriamodeenabled",
+    "settingName": "Require Common Criteria mode​",
+    "settingDescription": "If 'True', enables an elevated set of security standards on the device most often used in highly sensitive organizations, such as government establishments. If 'False', Intune doesn't change or update this setting. Available for fully managed, dedicated and corporate-owned work profile devices.",
+    "categoryId": "bf8e3e9c-f7e7-4a43-8898-2caf7b01d987",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Security",
+      "Common",
+      "Criteria",
+      "Mode",
+      "Enabled",
+      "System Security"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/securityCommonCriteriaModeEnabled/",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.android.devicerestrictionpolicy.securitycommoncriteriamodeenabled_false",
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.securitycommoncriteriamodeenabled_true",
+        "description": "true",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.securitycommoncriteriamodeenabled_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638939166925930383",
+    "helpText": null,
+    "name": "SecurityCommonCriteriaModeEnabled",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.securitycommoncriteriamodeenabled",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.securitycommoncriteriamodeenabled_true",
+        "description": "true",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.securitycommoncriteriamodeenabled_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.bluetoothblocked",
+    "settingName": "Block Bluetooth",
+    "settingDescription": "If 'True', disables Bluetooth entirely on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow Bluetooth to be used. Available for fully managed, dedicated, and corporate-owned work profile devices. In comparison, Bluetooth configuration disables the user from making changes to the Bluetooth toggle. As a result, it might be either 'On' or 'Off' depending on the state of Bluetooth prior to applying a policy with Bluetooth configuration enabled.",
+    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Bluetooth",
+      "Disable Bluetooth",
+      "Bluetooth settings",
+      "Block Bluetooth",
+      "Bluetooth policy",
+      "Bluetooth configuration",
+      "Allow Bluetooth",
+      "Bluetooth device restrictions",
+      "Bluetooth control",
+      "General"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/bluetoothBlocked/",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.android.devicerestrictionpolicy.bluetoothblocked_false",
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.bluetoothblocked_true",
+        "description": "True",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.bluetoothblocked_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638939166925930383",
+    "helpText": null,
+    "name": "BluetoothBlocked",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.bluetoothblocked",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.bluetoothblocked_true",
+        "description": "True",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.bluetoothblocked_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurations",
+    "settingName": "Block Wi-Fi access point configuration",
+    "settingDescription": "If 'True', prevents users from creating or changing any Wi-Fi configurations. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to change the Wi-Fi settings on the device. Available for fully managed, dedicated and corporate-owned work profile devices. ",
+    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Block",
+      "Wifi",
+      "Wifi Configuration",
+      "General"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/wifiBlockEditConfigurations/",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurations_false",
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurations_false",
+        "description": "False",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurations_true",
+        "description": "True",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638939166925930383",
+    "helpText": "",
+    "name": "WifiBlockEditConfigurations",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurations",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurations_false",
+        "description": "False",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurations_true",
         "description": "True",
         "helpText": null,
         "name": "True",
@@ -666,7 +967,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": null,
     "name": "PersonalProfileAppsAllowInstallFromUnknownSources",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.personalprofileappsallowinstallfromunknownsources",
@@ -768,7 +1069,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": null,
     "name": "AppsAllowInstallFromUnknownSources",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.appsallowinstallfromunknownsources",
@@ -910,7 +1211,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": "",
     "name": "AppsAutoUpdatePolicy",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.appsautoupdatepolicy",
@@ -1033,61 +1334,10 @@
       "value": 1
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": "Enter a number (1-24)",
     "name": "PasswordPreviousPasswordCountToBlock",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordpreviouspasswordcounttoblock",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.passwordminimumlowercasecharacters",
-    "settingName": "Number of lowercase characters required",
-    "settingDescription": "Enter the number of lowercase characters the password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
-    "categoryId": "f350f9a2-3a91-4d6d-90ed-7e3849b0d5f1",
-    "categoryName": "Device Restriction",
-    "keywords": [
-      "Password",
-      "Minimum",
-      "Lower",
-      "Case",
-      "Characters",
-      "Device password"
-    ],
-    "infoUrls": [],
-    "baseUri": "/com.android.deviceRestrictionPolicy/",
-    "offsetUri": "/passwordMinimumLowerCaseCharacters/",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "androidEnterprise",
-      "deviceMode": "none",
-      "technologies": "android"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
-      "maximumValue": 16,
-      "minimumValue": 1
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-      "settingValueTemplateReference": null,
-      "value": 1
-    },
-    "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
-    "helpText": "Enter a number (1-16)",
-    "name": "PasswordMinimumLowerCaseCharacters",
-    "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
     "settingDefinitionId": null,
     "definitionDescription": null,
     "dataType": null,
@@ -1135,7 +1385,7 @@
       "value": 1
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": "Enter a number (1-16)",
     "name": "PasswordMinimumUpperCaseCharacters",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
@@ -1146,99 +1396,35 @@
     "dependencies": []
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.passwordsigninfailurecountbeforefactoryreset",
-    "settingName": "Number of sign-in failures before wiping device",
-    "settingDescription": "Enter the number of wrong passwords allowed before the device is wiped, from 4-11. If the value is blank, Intune doesn't change or update this setting. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
-    "categoryId": "f350f9a2-3a91-4d6d-90ed-7e3849b0d5f1",
+    "settingId": "com.android.devicerestrictionpolicy.camerablockedaosp",
+    "settingName": "Block access to camera",
+    "settingDescription": "If 'True', prevents access to the camera on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow access to the camera. Intune only manages access to the device camera. It doesn't have access to pictures or videos.",
+    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
     "categoryName": "Device Restriction",
     "keywords": [
-      "Password",
-      "Passcode",
-      "SignIn Failure",
-      "SignIn Failure Count Before Factory Reset",
-      "Device password"
-    ],
-    "infoUrls": [],
-    "baseUri": "/com.android.deviceRestrictionPolicy/",
-    "offsetUri": "/passwordSignInFailureCountBeforeFactoryReset/",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "androidEnterprise",
-      "deviceMode": "none",
-      "technologies": "android"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
-      "maximumValue": 11,
-      "minimumValue": 4
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-      "settingValueTemplateReference": null,
-      "value": 11
-    },
-    "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
-    "helpText": "Enter a number (4-11)",
-    "name": "PasswordSignInFailureCountBeforeFactoryReset",
-    "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordsigninfailurecountbeforefactoryreset",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.passwordblockkeyguard",
-    "settingName": "Disable lock screen",
-    "settingDescription": "If 'True', blocks all Keyguard lock screen features from being used. If 'False', Intune doesn't change or update this setting. By default, when the device is in lock screen, the OS might allow all the Keyguard features, such as camera, fingerprint unlock, and more. Available for fully managed and dedicated devices.",
-    "categoryId": "f350f9a2-3a91-4d6d-90ed-7e3849b0d5f1",
-    "categoryName": "Device Restriction",
-    "keywords": [
-      "Password",
       "Block",
-      "Keyguard",
-      "Device password"
+      "Camera",
+      "Camera Block",
+      "General"
     ],
     "infoUrls": [],
     "baseUri": "/com.android.deviceRestrictionPolicy/",
-    "offsetUri": "/passwordBlockKeyguard/",
+    "offsetUri": "/cameraBlockedAosp/",
     "settingUsage": "configuration",
     "uxBehavior": "toggle",
     "visibility": "settingsCatalog,template",
     "riskLevel": "low",
-    "defaultOptionId": "com.android.devicerestrictionpolicy.passwordblockkeyguard_false",
+    "defaultOptionId": "com.android.devicerestrictionpolicy.camerablockedaosp_false",
     "applicability": {
       "description": null,
-      "platform": "androidEnterprise",
+      "platform": "aosp",
       "deviceMode": "none",
       "technologies": "android"
     },
     "options": [
       {
-        "itemId": "com.android.devicerestrictionpolicy.passwordblockkeyguard_true",
-        "description": "true",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.passwordblockkeyguard_false",
-        "description": "false",
+        "itemId": "com.android.devicerestrictionpolicy.camerablockedaosp_false",
+        "description": "False",
         "helpText": null,
         "name": "False",
         "displayName": "False",
@@ -1246,6 +1432,20 @@
           "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
           "settingValueTemplateReference": null,
           "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.camerablockedaosp_true",
+        "description": "True",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
         },
         "dependentOn": [],
         "dependedOnBy": []
@@ -1255,31 +1455,17 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
-    "helpText": null,
-    "name": "PasswordBlockKeyguard",
-    "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordblockkeyguard",
+    "version": "638939166925930383",
+    "helpText": "",
+    "name": "CameraBlocked",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.camerablockedaosp",
     "settingDefinitionId": null,
     "definitionDescription": null,
     "dataType": null,
     "valueOptions": [
       {
-        "itemId": "com.android.devicerestrictionpolicy.passwordblockkeyguard_true",
-        "description": "true",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.passwordblockkeyguard_false",
-        "description": "false",
+        "itemId": "com.android.devicerestrictionpolicy.camerablockedaosp_false",
+        "description": "False",
         "helpText": null,
         "name": "False",
         "displayName": "False",
@@ -1290,42 +1476,10 @@
         },
         "dependentOn": [],
         "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.securitycommoncriteriamodeenabled",
-    "settingName": "Require Common Criteria mode​",
-    "settingDescription": "If 'True', enables an elevated set of security standards on the device most often used in highly sensitive organizations, such as government establishments. If 'False', Intune doesn't change or update this setting. Available for fully managed, dedicated and corporate-owned work profile devices.",
-    "categoryId": "bf8e3e9c-f7e7-4a43-8898-2caf7b01d987",
-    "categoryName": "Device Restriction",
-    "keywords": [
-      "Security",
-      "Common",
-      "Criteria",
-      "Mode",
-      "Enabled",
-      "System Security"
-    ],
-    "infoUrls": [],
-    "baseUri": "/com.android.deviceRestrictionPolicy/",
-    "offsetUri": "/securityCommonCriteriaModeEnabled/",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "com.android.devicerestrictionpolicy.securitycommoncriteriamodeenabled_false",
-    "applicability": {
-      "description": null,
-      "platform": "androidEnterprise",
-      "deviceMode": "none",
-      "technologies": "android"
-    },
-    "options": [
+      },
       {
-        "itemId": "com.android.devicerestrictionpolicy.securitycommoncriteriamodeenabled_true",
-        "description": "true",
+        "itemId": "com.android.devicerestrictionpolicy.camerablockedaosp_true",
+        "description": "True",
         "helpText": null,
         "name": "True",
         "displayName": "True",
@@ -1333,61 +1487,6 @@
           "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
           "settingValueTemplateReference": null,
           "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.securitycommoncriteriamodeenabled_false",
-        "description": "false",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
-    "helpText": null,
-    "name": "SecurityCommonCriteriaModeEnabled",
-    "rootDefinitionId": "com.android.devicerestrictionpolicy.securitycommoncriteriamodeenabled",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.securitycommoncriteriamodeenabled_true",
-        "description": "true",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.securitycommoncriteriamodeenabled_false",
-        "description": "false",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
         },
         "dependentOn": [],
         "dependedOnBy": []
@@ -1455,7 +1554,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": "",
     "name": "CameraBlocked",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.camerablocked",
@@ -1555,7 +1654,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": null,
     "name": "NfcBlockOutgoingBeam",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.nfcblockoutgoingbeam",
@@ -1587,204 +1686,6 @@
           "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
           "settingValueTemplateReference": null,
           "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.factoryresetblocked",
-    "settingName": "Block factory reset",
-    "settingDescription": "If 'True', prevents users from using the factory reset option in the device's settings. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to use this setting on the device. Available for fully managed and dedicated devices.",
-    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
-    "categoryName": "Device Restriction",
-    "keywords": [
-      "Block",
-      "Factory reset",
-      "Factory reset Block",
-      "General"
-    ],
-    "infoUrls": [],
-    "baseUri": "/com.android.deviceRestrictionPolicy/",
-    "offsetUri": "/factoryResetBlocked/",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "com.android.devicerestrictionpolicy.factoryresetblocked_false",
-    "applicability": {
-      "description": null,
-      "platform": "androidEnterprise",
-      "deviceMode": "none",
-      "technologies": "android"
-    },
-    "options": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.factoryresetblocked_false",
-        "description": "False",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.factoryresetblocked_true",
-        "description": "True",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
-    "helpText": "",
-    "name": "FactoryResetBlocked",
-    "rootDefinitionId": "com.android.devicerestrictionpolicy.factoryresetblocked",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.factoryresetblocked_false",
-        "description": "False",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.factoryresetblocked_true",
-        "description": "True",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.camerablockedaosp",
-    "settingName": "Block access to camera",
-    "settingDescription": "If 'True', prevents access to the camera on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow access to the camera. Intune only manages access to the device camera. It doesn't have access to pictures or videos.",
-    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
-    "categoryName": "Device Restriction",
-    "keywords": [
-      "Block",
-      "Camera",
-      "Camera Block",
-      "General"
-    ],
-    "infoUrls": [],
-    "baseUri": "/com.android.deviceRestrictionPolicy/",
-    "offsetUri": "/cameraBlockedAosp/",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "com.android.devicerestrictionpolicy.camerablockedaosp_false",
-    "applicability": {
-      "description": null,
-      "platform": "aosp",
-      "deviceMode": "none",
-      "technologies": "android"
-    },
-    "options": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.camerablockedaosp_false",
-        "description": "False",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.camerablockedaosp_true",
-        "description": "True",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
-    "helpText": "",
-    "name": "CameraBlocked",
-    "rootDefinitionId": "com.android.devicerestrictionpolicy.camerablockedaosp",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.camerablockedaosp_false",
-        "description": "False",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.camerablockedaosp_true",
-        "description": "True",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
         },
         "dependentOn": [],
         "dependedOnBy": []
@@ -1853,7 +1754,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": "",
     "name": "ScreenCaptureBlocked",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.screencaptureblockedaosp",
@@ -1952,7 +1853,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": "",
     "name": "BluetoothBlockConfiguration",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.bluetoothblockconfigurationaosp",
@@ -2055,7 +1956,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": null,
     "name": "EnterpriseDisplayNameVisibility",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.enterprisedisplaynamevisibility",
@@ -2154,7 +2055,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": "",
     "name": "WifiBlockEditConfigurations",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurationsaosp",
@@ -2178,6 +2079,105 @@
       },
       {
         "itemId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurationsaosp_true",
+        "description": "True",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.factoryresetblocked",
+    "settingName": "Block factory reset",
+    "settingDescription": "If 'True', prevents users from using the factory reset option in the device's settings. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to use this setting on the device. Available for fully managed and dedicated devices.",
+    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Block",
+      "Factory reset",
+      "Factory reset Block",
+      "General"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/factoryResetBlocked/",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.android.devicerestrictionpolicy.factoryresetblocked_false",
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.factoryresetblocked_false",
+        "description": "False",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.factoryresetblocked_true",
+        "description": "True",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638939166925930383",
+    "helpText": "",
+    "name": "FactoryResetBlocked",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.factoryresetblocked",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.factoryresetblocked_false",
+        "description": "False",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.factoryresetblocked_true",
         "description": "True",
         "helpText": null,
         "name": "True",
@@ -2253,7 +2253,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": "",
     "name": "FactoryResetBlocked",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.factoryresetblockedaosp",
@@ -2353,7 +2353,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": null,
     "name": "PersonalProfileCameraBlocked",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.personalprofilecamerablocked",
@@ -2454,7 +2454,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": null,
     "name": "PersonalProfileScreenCaptureBlocked",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.personalprofilescreencaptureblocked",
@@ -2532,7 +2532,7 @@
       "value": 4
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": "Enter a number (4-16)",
     "name": "PasswordMinimumLength",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtypeaosp",
@@ -2644,7 +2644,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": "",
     "name": "passwordMinutesOfInactivityBeforeScreenTimeout",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordminutesofinactivitybeforescreentimeoutaosp",
@@ -2922,7 +2922,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": "",
     "name": "PasswordRequiredType",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
@@ -3266,7 +3266,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": "",
     "name": "PasswordRequiredType",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtypeaosp",
@@ -3475,7 +3475,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": null,
     "name": "SecurityRequireVerifyApps",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.securityrequireverifyapps",
@@ -3574,7 +3574,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": null,
     "name": "DataRoamingBlocked",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.dataroamingblocked",
@@ -3674,7 +3674,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": null,
     "name": "PrivateSpacePolicy",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.privatespacepolicy",
@@ -3706,6 +3706,105 @@
           "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
           "settingValueTemplateReference": null,
           "value": "PRIVATE_SPACE_DISALLOWED"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.bluetoothblockedaosp",
+    "settingName": "Block Bluetooth",
+    "settingDescription": "If 'True', disables Bluetooth on the device so that users can't pair with other devices. If 'False', Intune doesn't change or update this setting. By default, the OS might enable Bluetooth on the device.",
+    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Block",
+      "Bluetooth",
+      "Bluetooth Block",
+      "General"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/bluetoothBlockedAosp/",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.android.devicerestrictionpolicy.bluetoothblockedaosp_false",
+    "applicability": {
+      "description": null,
+      "platform": "aosp",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.bluetoothblockedaosp_false",
+        "description": "False",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.bluetoothblockedaosp_true",
+        "description": "True",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638939166925930383",
+    "helpText": "",
+    "name": "BluetoothBlocked",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.bluetoothblockedaosp",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.bluetoothblockedaosp_false",
+        "description": "False",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.bluetoothblockedaosp_true",
+        "description": "True",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
         },
         "dependentOn": [],
         "dependedOnBy": []
@@ -3802,7 +3901,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": "",
     "name": "AppsDefaultPermissionPolicy",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.appsdefaultpermissionpolicy",
@@ -3862,6 +3961,105 @@
           "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
           "settingValueTemplateReference": null,
           "value": "DENY"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.storageblockusbfiletransferaosp",
+    "settingName": "Block USB file transfer",
+    "settingDescription": "If 'True', prevents users from transferring files over USB. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to transfer files.",
+    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Block",
+      "USB",
+      "USB File Transfer",
+      "General"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/storageBlockUsbFileTransferAosp/",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.android.devicerestrictionpolicy.storageblockusbfiletransferaosp_false",
+    "applicability": {
+      "description": null,
+      "platform": "aosp",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.storageblockusbfiletransferaosp_false",
+        "description": "False",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.storageblockusbfiletransferaosp_true",
+        "description": "True",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638939166925930383",
+    "helpText": "",
+    "name": "StorageBlockUsbFileTransfer",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.storageblockusbfiletransferaosp",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.storageblockusbfiletransferaosp_false",
+        "description": "False",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.storageblockusbfiletransferaosp_true",
+        "description": "True",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
         },
         "dependentOn": [],
         "dependedOnBy": []
@@ -3931,7 +4129,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": null,
     "name": "CellularBlockWiFiTethering",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.cellularblockwifitethering",
@@ -4031,7 +4229,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": null,
     "name": "AccountsBlockModification",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.accountsblockmodification",
@@ -4132,7 +4330,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": null,
     "name": "CertificateCredentialConfigurationDisabled",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.certificatecredentialconfigurationdisabled",
@@ -4164,204 +4362,6 @@
           "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
           "settingValueTemplateReference": null,
           "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.bluetoothblockedaosp",
-    "settingName": "Block Bluetooth",
-    "settingDescription": "If 'True', disables Bluetooth on the device so that users can't pair with other devices. If 'False', Intune doesn't change or update this setting. By default, the OS might enable Bluetooth on the device.",
-    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
-    "categoryName": "Device Restriction",
-    "keywords": [
-      "Block",
-      "Bluetooth",
-      "Bluetooth Block",
-      "General"
-    ],
-    "infoUrls": [],
-    "baseUri": "/com.android.deviceRestrictionPolicy/",
-    "offsetUri": "/bluetoothBlockedAosp/",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "com.android.devicerestrictionpolicy.bluetoothblockedaosp_false",
-    "applicability": {
-      "description": null,
-      "platform": "aosp",
-      "deviceMode": "none",
-      "technologies": "android"
-    },
-    "options": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.bluetoothblockedaosp_false",
-        "description": "False",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.bluetoothblockedaosp_true",
-        "description": "True",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
-    "helpText": "",
-    "name": "BluetoothBlocked",
-    "rootDefinitionId": "com.android.devicerestrictionpolicy.bluetoothblockedaosp",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.bluetoothblockedaosp_false",
-        "description": "False",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.bluetoothblockedaosp_true",
-        "description": "True",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.storageblockusbfiletransferaosp",
-    "settingName": "Block USB file transfer",
-    "settingDescription": "If 'True', prevents users from transferring files over USB. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to transfer files.",
-    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
-    "categoryName": "Device Restriction",
-    "keywords": [
-      "Block",
-      "USB",
-      "USB File Transfer",
-      "General"
-    ],
-    "infoUrls": [],
-    "baseUri": "/com.android.deviceRestrictionPolicy/",
-    "offsetUri": "/storageBlockUsbFileTransferAosp/",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "com.android.devicerestrictionpolicy.storageblockusbfiletransferaosp_false",
-    "applicability": {
-      "description": null,
-      "platform": "aosp",
-      "deviceMode": "none",
-      "technologies": "android"
-    },
-    "options": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.storageblockusbfiletransferaosp_false",
-        "description": "False",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.storageblockusbfiletransferaosp_true",
-        "description": "True",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
-    "helpText": "",
-    "name": "StorageBlockUsbFileTransfer",
-    "rootDefinitionId": "com.android.devicerestrictionpolicy.storageblockusbfiletransferaosp",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.storageblockusbfiletransferaosp_false",
-        "description": "False",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.storageblockusbfiletransferaosp_true",
-        "description": "True",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
         },
         "dependentOn": [],
         "dependedOnBy": []
@@ -4409,7 +4409,7 @@
       "value": 11
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": "Enter a number (4-11)",
     "name": "PasswordSignInFailureCountBeforeFactoryReset",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordsigninfailurecountbeforefactoryresetaosp",
@@ -4459,7 +4459,7 @@
       "value": 1
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": "Enter a number (1-16)",
     "name": "PasswordMinimumSymbolCharacters",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
@@ -4529,7 +4529,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": "",
     "name": "PasswordRequireUnlock",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequireunlock",
@@ -4566,6 +4566,155 @@
         "dependedOnBy": []
       }
     ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.passwordminimumnumericcharacters",
+    "settingName": "Number of numeric characters required",
+    "settingDescription": "Enter the number of numeric characters (1, 2, 3, and so on) the password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "categoryId": "f350f9a2-3a91-4d6d-90ed-7e3849b0d5f1",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Password",
+      "Minimum",
+      "Numeric",
+      "Characters",
+      "Device password"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/passwordMinimumNumericCharacters/",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 16,
+      "minimumValue": 1
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 1
+    },
+    "accessTypes": "add,delete,get,replace",
+    "version": "638939166925930383",
+    "helpText": "Enter a number (1-16)",
+    "name": "PasswordMinimumNumericCharacters",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.passwordminimumlettercharacters",
+    "settingName": "Number of characters required",
+    "settingDescription": "Enter the number of characters the password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "categoryId": "f350f9a2-3a91-4d6d-90ed-7e3849b0d5f1",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Password",
+      "Minimum",
+      "Letter",
+      "Characters",
+      "Device password"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/passwordMinimumLetterCharacters/",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 16,
+      "minimumValue": 1
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 1
+    },
+    "accessTypes": "add,delete,get,replace",
+    "version": "638939166925930383",
+    "helpText": "Enter a number (1-16)",
+    "name": "PasswordMinimumLetterCharacters",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.passwordminimumlength",
+    "settingName": "Minimum password length",
+    "settingDescription": "Enter the minimum number of digits or characters the password must have, between 4 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "categoryId": "f350f9a2-3a91-4d6d-90ed-7e3849b0d5f1",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Password",
+      "Passcode",
+      "Password Length",
+      "Device password"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/passwordMinimumLength/",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 16,
+      "minimumValue": 4
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 4
+    },
+    "accessTypes": "add,delete,get,replace",
+    "version": "638939166925930383",
+    "helpText": "Enter a number (4-16)",
+    "name": "PasswordMinimumLength",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
     "dependencies": []
   },
   {
@@ -4644,7 +4793,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": null,
     "name": "UsbDataAccess",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.usbdataaccess",
@@ -4757,7 +4906,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": "",
     "name": "BluetoothBlockConfiguration",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.bluetoothblockconfiguration",
@@ -4856,7 +5005,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": "",
     "name": "StorageBlockExternalMedia",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.storageblockexternalmediaaosp",
@@ -4936,158 +5085,9 @@
       "value": 1
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": "Enter a number (1-16)",
     "name": "PasswordMinimumNonLetterCharacters",
-    "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.passwordminimumnumericcharacters",
-    "settingName": "Number of numeric characters required",
-    "settingDescription": "Enter the number of numeric characters (1, 2, 3, and so on) the password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
-    "categoryId": "f350f9a2-3a91-4d6d-90ed-7e3849b0d5f1",
-    "categoryName": "Device Restriction",
-    "keywords": [
-      "Password",
-      "Minimum",
-      "Numeric",
-      "Characters",
-      "Device password"
-    ],
-    "infoUrls": [],
-    "baseUri": "/com.android.deviceRestrictionPolicy/",
-    "offsetUri": "/passwordMinimumNumericCharacters/",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "androidEnterprise",
-      "deviceMode": "none",
-      "technologies": "android"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
-      "maximumValue": 16,
-      "minimumValue": 1
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-      "settingValueTemplateReference": null,
-      "value": 1
-    },
-    "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
-    "helpText": "Enter a number (1-16)",
-    "name": "PasswordMinimumNumericCharacters",
-    "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.passwordminimumlettercharacters",
-    "settingName": "Number of characters required",
-    "settingDescription": "Enter the number of characters the password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
-    "categoryId": "f350f9a2-3a91-4d6d-90ed-7e3849b0d5f1",
-    "categoryName": "Device Restriction",
-    "keywords": [
-      "Password",
-      "Minimum",
-      "Letter",
-      "Characters",
-      "Device password"
-    ],
-    "infoUrls": [],
-    "baseUri": "/com.android.deviceRestrictionPolicy/",
-    "offsetUri": "/passwordMinimumLetterCharacters/",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "androidEnterprise",
-      "deviceMode": "none",
-      "technologies": "android"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
-      "maximumValue": 16,
-      "minimumValue": 1
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-      "settingValueTemplateReference": null,
-      "value": 1
-    },
-    "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
-    "helpText": "Enter a number (1-16)",
-    "name": "PasswordMinimumLetterCharacters",
-    "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.passwordminimumlength",
-    "settingName": "Minimum password length",
-    "settingDescription": "Enter the minimum number of digits or characters the password must have, between 4 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
-    "categoryId": "f350f9a2-3a91-4d6d-90ed-7e3849b0d5f1",
-    "categoryName": "Device Restriction",
-    "keywords": [
-      "Password",
-      "Passcode",
-      "Password Length",
-      "Device password"
-    ],
-    "infoUrls": [],
-    "baseUri": "/com.android.deviceRestrictionPolicy/",
-    "offsetUri": "/passwordMinimumLength/",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "androidEnterprise",
-      "deviceMode": "none",
-      "technologies": "android"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
-      "maximumValue": 16,
-      "minimumValue": 4
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-      "settingValueTemplateReference": null,
-      "value": 4
-    },
-    "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
-    "helpText": "Enter a number (4-16)",
-    "name": "PasswordMinimumLength",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
     "settingDefinitionId": null,
     "definitionDescription": null,
@@ -5134,7 +5134,7 @@
       "value": 41
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "638929469840323948",
+    "version": "638939166925930383",
     "helpText": "Enter a number (1-365)",
     "name": "PasswordExpirationDays",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordexpirationdays",

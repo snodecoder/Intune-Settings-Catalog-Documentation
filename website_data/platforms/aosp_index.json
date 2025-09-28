@@ -1,12 +1,12 @@
 [
   {
-    "settingId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurations",
-    "settingName": "Block Wi-Fi access point configuration",
-    "settingDescription": "If 'True', prevents users from creating or changing any Wi-Fi configurations. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to change the Wi-Fi settings on the device. Available for fully managed, dedicated and corporate-owned work profile devices. ",
+    "settingId": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp",
+    "settingName": "Allow users to turn on debugging features",
+    "settingDescription": "If 'True', permits users to access the debugging features on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might prevent users from using the debugging features on the device.",
     "keywords": [
-      "Block",
-      "Wifi",
-      "Wifi Configuration",
+      "Debugging",
+      "Debugging features",
+      "Allow Debugging features",
       "General"
     ],
     "categoryName": "Device Restriction"
@@ -25,48 +25,6 @@
     "categoryName": "Device Restriction"
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.volumeblockadjustment",
-    "settingName": "Block volume changes",
-    "settingDescription": "If 'True', prevents users from changing the device's volume, and also mutes the main volume. If 'False', Intune doesn't change or update this setting. By default, the OS might allow using the volume settings on the device. Available for fully managed and dedicated devices.",
-    "keywords": [
-      "Volume",
-      "Block",
-      "Adjustment",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp",
-    "settingName": "Allow users to turn on debugging features",
-    "settingDescription": "If 'True', permits users to access the debugging features on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might prevent users from using the debugging features on the device.",
-    "keywords": [
-      "Debugging",
-      "Debugging features",
-      "Allow Debugging features",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.bluetoothblocked",
-    "settingName": "Block Bluetooth",
-    "settingDescription": "If 'True', disables Bluetooth entirely on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow Bluetooth to be used. Available for fully managed, dedicated, and corporate-owned work profile devices. In comparison, Bluetooth configuration disables the user from making changes to the Bluetooth toggle. As a result, it might be either 'On' or 'Off' depending on the state of Bluetooth prior to applying a policy with Bluetooth configuration enabled.",
-    "keywords": [
-      "Bluetooth",
-      "Disable Bluetooth",
-      "Bluetooth settings",
-      "Block Bluetooth",
-      "Bluetooth policy",
-      "Bluetooth configuration",
-      "Allow Bluetooth",
-      "Bluetooth device restrictions",
-      "Bluetooth control",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.appsblockinstallfromunknownsourcesaosp",
     "settingName": "Block user from turning on unknown sources",
     "settingDescription": "If 'True', prevents users from sideloading apps. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to sideload apps from unknown sources.",
@@ -80,17 +38,14 @@
     "categoryName": "Device Restriction"
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.passwordpreviouspasswordcounttoblock",
-    "settingName": "Number of passwords required before user can reuse a password",
-    "settingDescription": "Use this setting to restrict users from creating previously used passwords. Enter the number of previously used passwords that can't be used, from 1-24. For example, enter 5 so users can't set a new password to their current password or any of their previous four passwords. If the value is blank, Intune doesn't change or update this setting. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "settingId": "com.android.devicerestrictionpolicy.volumeblockadjustment",
+    "settingName": "Block volume changes",
+    "settingDescription": "If 'True', prevents users from changing the device's volume, and also mutes the main volume. If 'False', Intune doesn't change or update this setting. By default, the OS might allow using the volume settings on the device. Available for fully managed and dedicated devices.",
     "keywords": [
-      "Password",
-      "Previous",
-      "Password",
-      "Count",
-      "To",
+      "Volume",
       "Block",
-      "Device password"
+      "Adjustment",
+      "General"
     ],
     "categoryName": "Device Restriction"
   },
@@ -102,20 +57,6 @@
       "Password",
       "Minimum",
       "Lower",
-      "Case",
-      "Characters",
-      "Device password"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.passwordminimumuppercasecharacters",
-    "settingName": "Number of uppercase characters required",
-    "settingDescription": "Enter the number of uppercase characters the password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "Password",
-      "Minimum",
-      "Upper",
       "Case",
       "Characters",
       "Device password"
@@ -148,6 +89,77 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.bluetoothblocked",
+    "settingName": "Block Bluetooth",
+    "settingDescription": "If 'True', disables Bluetooth entirely on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow Bluetooth to be used. Available for fully managed, dedicated, and corporate-owned work profile devices. In comparison, Bluetooth configuration disables the user from making changes to the Bluetooth toggle. As a result, it might be either 'On' or 'Off' depending on the state of Bluetooth prior to applying a policy with Bluetooth configuration enabled.",
+    "keywords": [
+      "Bluetooth",
+      "Disable Bluetooth",
+      "Bluetooth settings",
+      "Block Bluetooth",
+      "Bluetooth policy",
+      "Bluetooth configuration",
+      "Allow Bluetooth",
+      "Bluetooth device restrictions",
+      "Bluetooth control",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurations",
+    "settingName": "Block Wi-Fi access point configuration",
+    "settingDescription": "If 'True', prevents users from creating or changing any Wi-Fi configurations. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to change the Wi-Fi settings on the device. Available for fully managed, dedicated and corporate-owned work profile devices. ",
+    "keywords": [
+      "Block",
+      "Wifi",
+      "Wifi Configuration",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.passwordpreviouspasswordcounttoblock",
+    "settingName": "Number of passwords required before user can reuse a password",
+    "settingDescription": "Use this setting to restrict users from creating previously used passwords. Enter the number of previously used passwords that can't be used, from 1-24. For example, enter 5 so users can't set a new password to their current password or any of their previous four passwords. If the value is blank, Intune doesn't change or update this setting. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Password",
+      "Previous",
+      "Password",
+      "Count",
+      "To",
+      "Block",
+      "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.passwordminimumuppercasecharacters",
+    "settingName": "Number of uppercase characters required",
+    "settingDescription": "Enter the number of uppercase characters the password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Password",
+      "Minimum",
+      "Upper",
+      "Case",
+      "Characters",
+      "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.camerablockedaosp",
+    "settingName": "Block access to camera",
+    "settingDescription": "If 'True', prevents access to the camera on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow access to the camera. Intune only manages access to the device camera. It doesn't have access to pictures or videos.",
+    "keywords": [
+      "Block",
+      "Camera",
+      "Camera Block",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.camerablocked",
     "settingName": "Block access to camera (work profile-level)",
     "settingDescription": "If 'True', prevents access to the camera on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow access to the camera. Intune only manages access to the device camera. It doesn't have access to pictures or videos. Available for fully managed, dedicated and corporate-owned work profile (at work profile level) devices. ",
@@ -168,30 +180,6 @@
       "Block",
       "Outgoing",
       "Beam",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.factoryresetblocked",
-    "settingName": "Block factory reset",
-    "settingDescription": "If 'True', prevents users from using the factory reset option in the device's settings. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to use this setting on the device. Available for fully managed and dedicated devices.",
-    "keywords": [
-      "Block",
-      "Factory reset",
-      "Factory reset Block",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.camerablockedaosp",
-    "settingName": "Block access to camera",
-    "settingDescription": "If 'True', prevents access to the camera on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow access to the camera. Intune only manages access to the device camera. It doesn't have access to pictures or videos.",
-    "keywords": [
-      "Block",
-      "Camera",
-      "Camera Block",
       "General"
     ],
     "categoryName": "Device Restriction"
@@ -245,6 +233,18 @@
       "Block",
       "Wifi",
       "Wifi Configuration",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.factoryresetblocked",
+    "settingName": "Block factory reset",
+    "settingDescription": "If 'True', prevents users from using the factory reset option in the device's settings. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to use this setting on the device. Available for fully managed and dedicated devices.",
+    "keywords": [
+      "Block",
+      "Factory reset",
+      "Factory reset Block",
       "General"
     ],
     "categoryName": "Device Restriction"
@@ -338,6 +338,18 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.bluetoothblockedaosp",
+    "settingName": "Block Bluetooth",
+    "settingDescription": "If 'True', disables Bluetooth on the device so that users can't pair with other devices. If 'False', Intune doesn't change or update this setting. By default, the OS might enable Bluetooth on the device.",
+    "keywords": [
+      "Block",
+      "Bluetooth",
+      "Bluetooth Block",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.appsdefaultpermissionpolicy",
     "settingName": "Default permission policy (work profile-level)",
     "settingDescription": "Define the default permission policy for requests for runtime permissions. Available for fully managed, dedicated and corporate-owned work profile (at work profile level) devices.",
@@ -346,6 +358,18 @@
       "Default",
       "Permission",
       "Policy",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.storageblockusbfiletransferaosp",
+    "settingName": "Block USB file transfer",
+    "settingDescription": "If 'True', prevents users from transferring files over USB. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to transfer files.",
+    "keywords": [
+      "Block",
+      "USB",
+      "USB File Transfer",
       "General"
     ],
     "categoryName": "Device Restriction"
@@ -360,30 +384,6 @@
       "Wi",
       "Fi",
       "Tethering",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.bluetoothblockedaosp",
-    "settingName": "Block Bluetooth",
-    "settingDescription": "If 'True', disables Bluetooth on the device so that users can't pair with other devices. If 'False', Intune doesn't change or update this setting. By default, the OS might enable Bluetooth on the device.",
-    "keywords": [
-      "Block",
-      "Bluetooth",
-      "Bluetooth Block",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.storageblockusbfiletransferaosp",
-    "settingName": "Block USB file transfer",
-    "settingDescription": "If 'True', prevents users from transferring files over USB. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to transfer files.",
-    "keywords": [
-      "Block",
-      "USB",
-      "USB File Transfer",
       "General"
     ],
     "categoryName": "Device Restriction"
@@ -422,6 +422,44 @@
       "Password",
       "Require",
       "Unlock",
+      "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.passwordminimumnumericcharacters",
+    "settingName": "Number of numeric characters required",
+    "settingDescription": "Enter the number of numeric characters (1, 2, 3, and so on) the password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Password",
+      "Minimum",
+      "Numeric",
+      "Characters",
+      "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.passwordminimumlettercharacters",
+    "settingName": "Number of characters required",
+    "settingDescription": "Enter the number of characters the password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Password",
+      "Minimum",
+      "Letter",
+      "Characters",
+      "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.passwordminimumlength",
+    "settingName": "Minimum password length",
+    "settingDescription": "Enter the minimum number of digits or characters the password must have, between 4 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Password",
+      "Passcode",
+      "Password Length",
       "Device password"
     ],
     "categoryName": "Device Restriction"
@@ -474,44 +512,6 @@
       "Non",
       "Letter",
       "Characters",
-      "Device password"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.passwordminimumnumericcharacters",
-    "settingName": "Number of numeric characters required",
-    "settingDescription": "Enter the number of numeric characters (1, 2, 3, and so on) the password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "Password",
-      "Minimum",
-      "Numeric",
-      "Characters",
-      "Device password"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.passwordminimumlettercharacters",
-    "settingName": "Number of characters required",
-    "settingDescription": "Enter the number of characters the password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "Password",
-      "Minimum",
-      "Letter",
-      "Characters",
-      "Device password"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.passwordminimumlength",
-    "settingName": "Minimum password length",
-    "settingDescription": "Enter the minimum number of digits or characters the password must have, between 4 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "Password",
-      "Passcode",
-      "Password Length",
       "Device password"
     ],
     "categoryName": "Device Restriction"
