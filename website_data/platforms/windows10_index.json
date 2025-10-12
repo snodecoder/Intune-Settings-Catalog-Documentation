@@ -1,13 +1,115 @@
 [
   {
-    "settingId": "vendor_msft_wirelessnetworkpreference_connectionprofiles_{connectionprofileid}_wirelesstype",
-    "settingName": "Wireless Type (Windows Insiders only)",
-    "settingDescription": "Type of wireless network (either Cellular or Wi-Fi). 0 represents Cellular, and 1 represents Wi-Fi. Currently only cellular is supported.\r\n This setting is only available to Windows Insiders",
+    "settingId": "device_vendor_msft_policy_config_desktopappinstaller_enablelocalarchivemalwarescanoverride",
+    "settingName": "Enable App Installer Local Archive Malware Scan Override",
+    "settingDescription": "This policy controls the ability to override malware vulnerability scans when installing an archive file using a local manifest using the command line arguments.\r\n\r\nIf you enable this policy, users can override the malware scan when performing a local manifest install of an archive file.\r\n\r\nIf you disable this policy, users will be unable to override the malware scan of an archive file when installing using a local manifest.\r\n\r\nIf you do not configure this policy, the Windows Package Manager administrator settings will be adhered to.",
     "keywords": [
-      "Wireless Type",
-      "Wireless Network Preference"
+      "EnableLocalArchiveMalwareScanOverride",
+      "Enable App Installer Local Archive Malware Scan Override",
+      "\\Windows Components\\Desktop App Installer",
+      "Administrative Templates\\Windows Components\\Desktop App Installer",
+      "Desktop App Installer"
     ],
-    "categoryName": "Wireless Network Preference"
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_desktopappinstaller_enablewindowspackagemanagercommandlineinterfaces",
+    "settingName": "Enable Windows Package Manager command line interfaces",
+    "settingDescription": "This policy determines if a user can perform an action using the Windows Package Manager through a command line interface (WinGet CLI, or WinGet PowerShell).\r\n\r\nIf you disable this policy, users will not be able execute the Windows Package Manager CLI, and PowerShell cmdlets.\r\n\r\nIf you enable, or do not configuring this policy, users will be able to execute the Windows Package Manager CLI commands, and PowerShell cmdlets. (Provided “Enable App Installer” policy is not disabled).\r\n\r\nThis policy does not override the “Enable App Installer” policy.",
+    "keywords": [
+      "EnableWindowsPackageManagerCommandLineInterfaces",
+      "Enable Windows Package Manager command line interfaces",
+      "\\Windows Components\\Desktop App Installer",
+      "Administrative Templates\\Windows Components\\Desktop App Installer",
+      "Desktop App Installer"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_internetexplorer_localmachinezonelogonoptions",
+    "settingName": "Logon options",
+    "settingDescription": "This policy setting allows you to manage settings for logon options.\r\n\r\nIf you enable this policy setting, you can choose from the following logon options.\r\n\r\nAnonymous logon to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol.\r\n\r\nPrompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session.\r\n\r\nAutomatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.\r\n\r\nAutomatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response is not supported by the server, the user is queried to provide the user name and password.\r\n\r\nIf you disable this policy setting, logon is set to Automatic logon only in Intranet zone.\r\n\r\nIf you do not configure this policy setting, logon is set to Automatic logon with current username and password.",
+    "keywords": [
+      "IZ_PolicyLogon_9",
+      "Logon options",
+      "\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Local Machine Zone",
+      "Administrative Templates\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Local Machine Zone",
+      "Local Machine Zone"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_internetexplorer_localmachinezonelogonoptions",
+    "settingName": "Logon options (User)",
+    "settingDescription": "This policy setting allows you to manage settings for logon options.\r\n\r\nIf you enable this policy setting, you can choose from the following logon options.\r\n\r\nAnonymous logon to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol.\r\n\r\nPrompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session.\r\n\r\nAutomatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.\r\n\r\nAutomatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response is not supported by the server, the user is queried to provide the user name and password.\r\n\r\nIf you disable this policy setting, logon is set to Automatic logon only in Intranet zone.\r\n\r\nIf you do not configure this policy setting, logon is set to Automatic logon with current username and password.",
+    "keywords": [
+      "IZ_PolicyLogon_9",
+      "Logon options",
+      "\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Local Machine Zone",
+      "Administrative Templates\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Local Machine Zone",
+      "Local Machine Zone"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_deviceguard_requiremicrosoftsignedbootchain",
+    "settingName": "Require Microsoft Signed Boot Chain",
+    "settingDescription": "Require Microsoft Signed Boot Chain: 1 - Require Microsoft Signed Boot Chain.",
+    "keywords": [
+      "Require Microsoft Signed Boot Chain",
+      "Device Guard"
+    ],
+    "categoryName": "Device Guard"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_newsandinterests_disablewidgetsonlockscreen",
+    "settingName": "Disable Widgets On Lock Screen",
+    "settingDescription": "Disable widgets on lock screen",
+    "keywords": [
+      "Disable Widgets On Lock Screen",
+      "News And Interests"
+    ],
+    "categoryName": "News And Interests"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_newsandinterests_disablewidgetsboard",
+    "settingName": "Disable Widgets Board",
+    "settingDescription": "Disable widgets board",
+    "keywords": [
+      "Disable Widgets Board",
+      "News And Interests"
+    ],
+    "categoryName": "News And Interests"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_power_enableenergysaver",
+    "settingName": "Enable Energy Saver",
+    "settingDescription": "This policy will extend battery life and reduce energy consumption by enabling Energy Saver to always be on. Energy Saver will always be on for desktops as well as laptops regardless of battery level for both AC and DC. If you disable or don't configure this policy setting, then Energy Saver will turn on based on the EnergySaverBatteryThreshold group policy.",
+    "keywords": [
+      "Enable Energy Saver",
+      "Power"
+    ],
+    "categoryName": "Power"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_privacy_letappsaccesssystemaimodels_userincontroloftheseapps",
+    "settingName": "Let Apps Access System AI Models User In Control Of These Apps",
+    "settingDescription": "List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the text and image generation setting for the listed apps. This setting overrides the default LetAppsAccessSystemAIModels policy setting for the specified apps.",
+    "keywords": [
+      "Let Apps Access System AI Models User In Control Of These Apps",
+      "Privacy"
+    ],
+    "categoryName": "Privacy"
+  },
+  {
+    "settingId": "vendor_msft_sharedpc_enablesharedpcmodewithonedrivesync",
+    "settingName": "Enable Shared PC Mode With One Drive Sync",
+    "settingDescription": "Setting this node to “1” triggers the action to configure a device to Shared PC mode with OneDrive sync turned on",
+    "keywords": [
+      "Enable Shared PC Mode With One Drive Sync",
+      "Shared PC"
+    ],
+    "categoryName": "Shared PC"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.importsearchengine_recommended",
@@ -1668,7 +1770,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_appruntime_allowmicrosoftaccountstobeoptional",
     "settingName": "Allow Microsoft accounts to be optional",
-    "settingDescription": "This policy setting lets you control whether Microsoft accounts are optional for Windows Store apps that require an account to sign in. This policy only affects Windows Store apps that support it.\r\n\r\nIf you enable this policy setting, Windows Store apps that typically require a Microsoft account to sign in will allow users to sign in with an enterprise account instead.\r\n\r\nIf you disable or do not configure this policy setting, users will need to sign in with a Microsoft account.",
+    "settingDescription": "This policy setting lets you control whether Microsoft accounts are optional for packaged Microsoft Store apps that require an account to sign in. This policy only affects packaged Microsoft Store apps that support it.\r\n\r\nIf you enable this policy setting, packaged Microsoft Store apps that typically require a Microsoft account to sign in will allow users to sign in with an enterprise account instead.\r\n\r\nIf you disable or do not configure this policy setting, users will need to sign in with a Microsoft account.",
     "keywords": [
       "AppxRuntimeMicrosoftAccountsOptional",
       "Allow Microsoft accounts to be optional",
@@ -2731,7 +2833,7 @@
   },
   {
     "settingId": "device_vendor_msft_policy_config_admx_deviceguard_configcipolicy",
-    "settingName": "Deploy Windows Defender Application Control",
+    "settingName": "Deploy App Control for Business",
     "settingDescription": "Deploy Windows Defender Application Control\r\n\r\nThis policy setting lets you deploy a Code Integrity Policy to a machine to control what is allowed to run on that machine.\r\n\r\nIf you deploy a Code Integrity Policy, Windows will restrict what can run in both kernel mode and on the Windows Desktop based on the policy. To enable this policy the machine must be rebooted. \r\n\r\nThe file path must be either a UNC path (for example, \\\\ServerName\\ShareName\\SIPolicy.p7b), or a locally valid path (for example, C:\\FolderName\\SIPolicy.p7b).  The local machine account (LOCAL SYSTEM) must have access permission to the policy file.\r\n \r\nIf using a signed and protected policy then disabling this policy setting doesn't remove the feature from the computer. Instead, you must either:\r\n\r\n   1) first update the policy to a non-protected policy and then disable the setting, or\r\n   2) disable the setting and then remove the policy from each computer, with a physically present user.\r\n      \r\n ",
     "keywords": [
       "ConfigCIPolicy",
@@ -21177,7 +21279,7 @@
   {
     "settingId": "vendor_msft_sharedpc_restrictlocalstorage",
     "settingName": "Restrict Local Storage",
-    "settingDescription": "Restricts the user from using local storage. This node is optional.",
+    "settingDescription": "Restricts the user from using local storage. This node is optional. If used, this value must be set before the action on the EnableSharedPCMode node is taken.",
     "keywords": [
       "Restrict Local Storage",
       "SharedPC",
@@ -21188,7 +21290,7 @@
   {
     "settingId": "vendor_msft_sharedpc_accountmodel",
     "settingName": "Account Model",
-    "settingDescription": "Configures which type of accounts are allowed to use the PC. Allowed values: 0 (only guest), 1 (domain-joined only), 2 (domain-joined and guest).",
+    "settingDescription": "Configures which type of accounts are allowed to use the PC. Allowed values: 0 (only guest), 1 (domain-joined only), 2 (domain-joined and guest). If used, this value must be set before the action on the EnableSharedPCMode node is taken.",
     "keywords": [
       "Account Model",
       "SharedPC",
@@ -21199,7 +21301,7 @@
   {
     "settingId": "vendor_msft_sharedpc_deletionpolicy",
     "settingName": "Deletion Policy",
-    "settingDescription": "Configures when accounts will be deleted. Allowed values: 0 (delete immediately), 1 (delete at disk space threshold), 2 (delete at disk space threshold and inactive threshold).",
+    "settingDescription": "Configures when accounts will be deleted. Allowed values: 0 (delete immediately), 1 (delete at disk space threshold), 2 (Delete at disk space threshold and inactive threshold). If used, this value must be set before the action on the EnableSharedPCMode node is taken.",
     "keywords": [
       "Deletion Policy",
       "SharedPC",
@@ -22313,7 +22415,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_update_requireupdateapproval",
     "settingName": "Require Update Approval",
-    "settingDescription": "Note If you previously used the Update/PhoneUpdateRestrictions policy in previous versions of Windows, it has been deprecated. Please use this policy instead. Allows the IT admin to restrict the updates that are installed on a device to only those on an update approval list. It enables IT to accept the End User License Agreement (EULA) associated with the approved update on behalf of the end-user. EULAs are approved once an update is approved. Supported operations are Get and Replace.",
+    "settingDescription": "NoteÂ If you previously used the Update/PhoneUpdateRestrictions policy in previous versions of Windows, it has been deprecated. Please use this policy instead. Allows the IT admin to restrict the updates that are installed on a device to only those on an update approval list. It enables IT to accept the End User License Agreement (EULA) associated with the approved update on behalf of the end-user. EULAs are approved once an update is approved. Supported operations are Get and Replace.",
     "keywords": [
       "Require Update Approval",
       "Update",
@@ -22324,7 +22426,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_update_schedulerestartwarning",
     "settingName": "Schedule Restart Warning",
-    "settingDescription": "Note This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise Allows the IT Admin to specify the period for auto-restart warning reminder notifications. The default value is 4 (hours).",
+    "settingDescription": "NoteÂ This policy is available on WindowsÂ 10 Pro, WindowsÂ 10 Enterprise, WindowsÂ 10 Education, and WindowsÂ 10 Mobile Enterprise Allows the IT Admin to specify the period for auto-restart warning reminder notifications. The default value is 4 (hours).",
     "keywords": [
       "Schedule Restart Warning",
       "Update",
@@ -22342,6 +22444,16 @@
       "Windows Update For Business"
     ],
     "categoryName": "Windows Update For Business"
+  },
+  {
+    "settingId": "vendor_msft_wirelessnetworkpreference_connectionprofiles_{connectionprofileid}_wirelesstype",
+    "settingName": "Wireless Type (Windows Insiders only)",
+    "settingDescription": "Type of wireless network (either Cellular or Wi-Fi). 0 represents Cellular, and 1 represents Wi-Fi. Currently only cellular is supported.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Wireless Type",
+      "Wireless Network Preference"
+    ],
+    "categoryName": "Wireless Network Preference"
   },
   {
     "settingId": "user_vendor_msft_policy_config_word16v14~policy~l_microsoftofficeword~l_wordoptions~l_advanced~l_emailoptions_l_advancedtypographyoutlook",
@@ -23277,24 +23389,53 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
-    "settingId": "vendor_msft_wirelessnetworkpreference_connectionprofiles_{connectionprofileid}",
-    "settingName": " Connection Profile ID (Windows Insiders only)",
-    "settingDescription": "Unique identifier of a network preference policy. Unique ID is auto-generated.\r\n This setting is only available to Windows Insiders",
+    "settingId": "device_vendor_msft_policy_config_remotedesktopservices_ts_server_remoteapp_use_shellappruntime",
+    "settingName": "Enable enhanced shell experience for RemoteApp",
+    "settingDescription": "This policy setting enables an enhanced shell experience for RemoteApp sessions, offering support for default file associations, Run/RunOnce registry keys, and more. This policy setting applies only to RemoteApp sessions and does not apply to Remote Desktop sessions.\r\n\r\nIf you enable or do not configure this policy setting, RemoteApp sessions on RD Session Host servers will have the enhanced shell experience.\r\n\r\nIf you disable this policy setting, RemoteApp sessions will not have the enhanced shell experience and will use the legacy shell behavior. This may be needed if compatibility issues arise in published RemoteApp programs.\r\n    ",
     "keywords": [
-      " Connection Profile ID",
-      "Wireless Network Preference"
+      "TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME",
+      "Enable enhanced shell experience for RemoteApp",
+      "\\Windows Components\\Remote Desktop Services\\Remote Desktop Session Host\\Remote Session Environment",
+      "Administrative Templates\\Windows Components\\Remote Desktop Services\\Remote Desktop Session Host\\Remote Session Environment",
+      "Remote Session Environment"
     ],
-    "categoryName": "Wireless Network Preference"
+    "categoryName": "Administrative Templates"
   },
   {
-    "settingId": "vendor_msft_wirelessnetworkpreference_parameters_cellularparameters_maxrescanintervalinseconds",
-    "settingName": "Max Rescan Interval In Seconds (Windows Insiders only)",
-    "settingDescription": "Maximum time (in seconds) from the point that no connection could be established using the permissible eSIM profiles on the device to the start of the next round of network discovery attempts. A smaller interval increases network discovery frequency and can decrease battery life significantly. A value of 0 means that the device is to pick a reasonable interval per its own discretion.\r\n This setting is only available to Windows Insiders",
+    "settingId": "user_vendor_msft_policy_config_internetexplorer_localmachinezonelogonoptions_iz_partname1a00",
+    "settingName": "Logon options (User)",
+    "settingDescription": "",
     "keywords": [
-      "Max Rescan Interval In Seconds",
-      "Wireless Network Preference"
+      "IZ_PolicyLogon_9",
+      "Logon options",
+      "\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Local Machine Zone",
+      "Administrative Templates\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Local Machine Zone",
+      "Local Machine Zone"
     ],
-    "categoryName": "Wireless Network Preference"
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_internetexplorer_trustedsiteszonelogonoptions",
+    "settingName": "Logon options",
+    "settingDescription": "This policy setting allows you to manage settings for logon options.\r\n\r\nIf you enable this policy setting, you can choose from the following logon options.\r\n\r\nAnonymous logon to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol.\r\n\r\nPrompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session.\r\n\r\nAutomatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.\r\n\r\nAutomatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response is not supported by the server, the user is queried to provide the user name and password.\r\n\r\nIf you disable this policy setting, logon is set to Automatic logon only in Intranet zone.\r\n\r\nIf you do not configure this policy setting, logon is set to Automatic logon with current username and password.",
+    "keywords": [
+      "IZ_PolicyLogon_5",
+      "Logon options",
+      "\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Trusted Sites Zone",
+      "Administrative Templates\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Trusted Sites Zone",
+      "Trusted Sites Zone"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_start_alwaysshownotificationicon",
+    "settingName": "Always Show Notification Icon (User)",
+    "settingDescription": "",
+    "keywords": [
+      "Always Show Notification Icon",
+      "Start"
+    ],
+    "categoryName": "Start"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchproviderencodings",
@@ -25902,7 +26043,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_desktopappinstaller_enablemsappinstallerprotocol",
     "settingName": "Enable App Installer ms-appinstaller protocol",
-    "settingDescription": "This policy controls whether users can install packages from a website that is using the ms-appinstaller protocol.\r\n      \r\nIf you enable or do not configure this setting, users will be able to install packages from websites that use this protocol. \r\n\r\nIf you disable this setting, users will not be able to install packages from websites that use this protocol.",
+    "settingDescription": "This policy controls whether users can install packages from a website that is using the ms-appinstaller protocol.\r\n\r\nIf you enable this setting, users will be able to install packages from websites that use this protocol.\r\n\r\nIf you disable or do not configure this setting, users will not be able to install packages from websites that use this protocol.",
     "keywords": [
       "EnableMSAppInstallerProtocol",
       "Enable App Installer ms-appinstaller protocol",
@@ -27148,8 +27289,8 @@
   },
   {
     "settingId": "device_vendor_msft_policy_config_internetexplorer_jscriptreplacement",
-    "settingName": "Replace JScript by loading JScript9Legacy in place of JScript via MSHTML/WebOC.",
-    "settingDescription": "This policy setting specifies whether JScript or JScript9Legacy is loaded for MSHTML/WebOC/MSXML/Cscript based invocations.\r\n      \r\nIf you enable this policy setting, JScript9Legacy will be loaded in situations where JScript is instantiated.\r\n\r\nIf you disable this policy, then JScript will be utilized.\r\n\r\nIf this policy is left unconfigured, then MSHTML will use JScript9Legacy and MSXML/Cscript will use JScript.",
+    "settingName": "Replace JScript by loading JScript9Legacy in place of JScript.",
+    "settingDescription": "This policy setting specifies whether JScript or JScript9Legacy is loaded.\r\n      \r\nIf you enable this policy setting or not configured, JScript9Legacy will be loaded in situations where JScript is instantiated.\r\n\r\nIf you disable this policy, then JScript will be utilized.",
     "keywords": [
       "JScriptReplacement",
       "Replace JScript by loading JScript9Legacy in place of JScript via MSHTML/WebOC.",
@@ -33451,7 +33592,7 @@
   {
     "settingId": "device_vendor_msft_euiccs_{euicc}_downloadservers_{servername}_maximumattempts",
     "settingName": "Maximum Attempts (Windows Insiders only)",
-    "settingDescription": "How many times profile download should be attempted before giving up. A value of 0 indicates unlimited retry attempts. This parameter is optional; default value (50) is equivalent to about a month of retry attempts.\r\n This setting is only available to Windows Insiders",
+    "settingDescription": "How many times profile download should be attempted before giving up. A value of 0 indicates unlimited retry attempts. When a value is not specified, it defaults to 50, which is equivalent to about a month of retry attempts.\r\n This setting is only available to Windows Insiders",
     "keywords": [
       "Maximum Attempts",
       "e UIC Cs",
@@ -42966,8 +43107,8 @@
   },
   {
     "settingId": "user_vendor_msft_pde_protectfolders_protectdesktop",
-    "settingName": "Protect Desktop (User) (Windows Insiders only)",
-    "settingDescription": "Allows the Admin to enable Personal Data Encryption on Desktop folder. Set to '1' to set this policy.\r\n This setting is only available to Windows Insiders",
+    "settingName": "Protect Desktop (User)",
+    "settingDescription": "Allows the Admin to enable Personal Data Encryption on Desktop folder. Set to '1' to set this policy.",
     "keywords": [
       "Protect Desktop",
       "Personal Data Encryption"
@@ -44148,7 +44289,7 @@
   {
     "settingId": "vendor_msft_sharedpc_enableaccountmanager",
     "settingName": "Enable Account Manager",
-    "settingDescription": "Enable the account manager for shared PC mode.",
+    "settingDescription": "Enable the account manager for shared PC mode. If used, this value must be set before the action on the EnableSharedPCMode node is taken.",
     "keywords": [
       "Enable Account Manager",
       "SharedPC",
@@ -44159,7 +44300,7 @@
   {
     "settingId": "vendor_msft_sharedpc_kioskmodeusertiledisplaytext",
     "settingName": "Kiosk Mode User Tile Display Text",
-    "settingDescription": "Specifies the display text for the account shown on the sign-in screen which launches the app specified by KioskModeAUMID.",
+    "settingDescription": "Specifies the display text for the account shown on the sign-in screen which launches the app specified by KioskModeAUMID. If used, this value must be set before the action on the EnableSharedPCMode node is taken.",
     "keywords": [
       "Kiosk Mode User Tile Display Text",
       "SharedPC",
@@ -45228,7 +45369,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_update_deferfeatureupdatesperiodindays",
     "settingName": "Defer Feature Updates Period In Days",
-    "settingDescription": "Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.  Defers Feature Updates for the specified number of days. Supported values are 0-365 days. Important The default maximum number of days to defer an update has been increased from 180 (Windows 10, version 1607) to 365 in Windows 10, version 1703.",
+    "settingDescription": "Since this policy is not blocked, you will not get a failure message when you use it to configure a WindowsÂ 10 Mobile device. However, the policy will not take effect.  Defers Feature Updates for the specified number of days. Supported values are 0-365 days. ImportantÂ The default maximum number of days to defer an update has been increased from 180 (Windows 10, version 1607) to 365 in Windows 10, version 1703.",
     "keywords": [
       "Defer Feature Updates Period In Days",
       "Update",
@@ -45239,7 +45380,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_update_pausedeferrals",
     "settingName": "Pause Deferrals",
-    "settingDescription": "NoteDon't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in Changes in Windows 10, version 1607 for update management. You can continue to use PauseDeferrals for Windows 10, version 1511 devices. Allows IT Admins to pause updates and upgrades for up to 5 weeks. Paused deferrals will be reset after 5 weeks. If the Specify intranet Microsoft update service location policy is enabled, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. If the Allow Telemetry policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.",
+    "settingDescription": "NoteDon't use this policy in WindowsÂ 10, version 1607 devices, instead use the new policies listed in Changes in Windows 10, version 1607 for update management. You can continue to use PauseDeferrals for WindowsÂ 10, version 1511 devices. Allows IT Admins to pause updates and upgrades for up to 5 weeks. Paused deferrals will be reset after 5 weeks. If the Specify intranet Microsoft update service location policy is enabled, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. If the Allow Telemetry policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.",
     "keywords": [
       "Pause Deferrals",
       "Update",
@@ -45256,6 +45397,26 @@
       "Wireless Display"
     ],
     "categoryName": "Wireless Display"
+  },
+  {
+    "settingId": "vendor_msft_wirelessnetworkpreference_connectionprofiles_{connectionprofileid}",
+    "settingName": " Connection Profile ID (Windows Insiders only)",
+    "settingDescription": "Unique identifier of a network preference policy. Unique ID is auto-generated.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      " Connection Profile ID",
+      "Wireless Network Preference"
+    ],
+    "categoryName": "Wireless Network Preference"
+  },
+  {
+    "settingId": "vendor_msft_wirelessnetworkpreference_parameters_cellularparameters_maxrescanintervalinseconds",
+    "settingName": "Max Rescan Interval In Seconds (Windows Insiders only)",
+    "settingDescription": "Maximum time (in seconds) from the point that no connection could be established using the permissible eSIM profiles on the device to the start of the next round of network discovery attempts. A smaller interval increases network discovery frequency and can decrease battery life significantly. A value of 0 means that the device is to pick a reasonable interval per its own discretion.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Max Rescan Interval In Seconds",
+      "Wireless Network Preference"
+    ],
+    "categoryName": "Wireless Network Preference"
   },
   {
     "settingId": "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_miscellaneous178_l_listofmanagedaddins_l_listofmanagedaddins2_value",
@@ -45946,43 +46107,119 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
-    "settingId": "vendor_msft_wirelessnetworkpreference_parameters_cellularparameters_preferredprofilewakeconnectiontimerinseconds",
-    "settingName": "Preferred Profile Wake Connection Timer In Seconds (Windows Insiders only)",
-    "settingDescription": "When the device is woken from sleep with the most-preferred profile already enabled, this value configures the amount of time (in seconds) before the agent will give up on waiting for connection re-establishment with the most-preferred profile and start network discovery.\r\n This setting is only available to Windows Insiders",
+    "settingId": "device_vendor_msft_policy_config_admx_taskbar_disablenotificationcenter",
+    "settingName": "Remove Notifications and Action Center",
+    "settingDescription": "This policy setting removes Notifications and Action Center from the notification area on the taskbar.\r\n\r\nThe notification area is located at the far right end of the taskbar and includes icons for current notifications and the system clock.\r\n\r\nIf this setting is enabled, Notifications and Action Center is not displayed in the notification area. The user will be able to read notifications when they appear, but they won’t be able to review any notifications they miss.\r\n\r\nIf you disable or do not configure this policy setting, Notification and Security and Maintenance will be displayed on the taskbar.\r\n\r\nA reboot is required for this policy setting to take effect.",
     "keywords": [
-      "Preferred Profile Wake Connection Timer In Seconds",
-      "Wireless Network Preference"
+      "DisableNotificationCenter",
+      "Remove Notifications and Action Center",
+      "\\Start Menu and Taskbar",
+      "Administrative Templates\\Start Menu and Taskbar",
+      "Start Menu and Taskbar"
     ],
-    "categoryName": "Wireless Network Preference"
+    "categoryName": "Administrative Templates"
   },
   {
-    "settingId": "vendor_msft_wirelessnetworkpreference_connectionprofiles_{connectionprofileid}_connectionprofileid",
-    "settingName": null,
-    "settingDescription": null,
+    "settingId": "device_vendor_msft_policy_config_mssecurityguide_netbtnodetypeconfiguration_pol_secguide_secguide_netbtnodetypecfg",
+    "settingName": "Configure NetBT NodeType (Device)",
+    "settingDescription": "",
     "keywords": [
-      "Wireless Network Preference"
+      "Pol_SecGuide_0050_NetbtNodeTypeConfig",
+      "NetBT NodeType configuration",
+      "\\MS Security Guide",
+      "Administrative Templates\\MS Security Guide",
+      "MS Security Guide"
     ],
-    "categoryName": "Wireless Network Preference"
+    "categoryName": "Administrative Templates"
   },
   {
-    "settingId": "vendor_msft_wirelessnetworkpreference_isenabled",
-    "settingName": "Is Enabled (Windows Insiders only)",
-    "settingDescription": "It determines whether the wireless connectivity management policy is enabled or not.\r\n This setting is only available to Windows Insiders",
+    "settingId": "user_vendor_msft_policy_config_internetexplorer_intranetzonelogonoptions_iz_partname1a00",
+    "settingName": "Logon options (User)",
+    "settingDescription": "",
     "keywords": [
-      "Is Enabled",
-      "Wireless Network Preference"
+      "IZ_PolicyLogon_3",
+      "Logon options",
+      "\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Intranet Zone",
+      "Administrative Templates\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Intranet Zone",
+      "Intranet Zone"
     ],
-    "categoryName": "Wireless Network Preference"
+    "categoryName": "Administrative Templates"
   },
   {
-    "settingId": "vendor_msft_wirelessnetworkpreference_connectionprofiles_{connectionprofileid}_cellular_plmnid",
-    "settingName": "PLMNID (Windows Insiders only)",
-    "settingDescription": "5- or 6-digit string identifying a cellular network. It consists of the combination of Mobile Country Code (MCC) and Mobile Network Code (MNC). \r\n This setting is only available to Windows Insiders",
+    "settingId": "device_vendor_msft_policy_config_admx_controlpaneldisplay_cpl_personalization_settheme_themefilename",
+    "settingName": "Path to theme file: (Device)",
+    "settingDescription": "",
     "keywords": [
-      "PLMNID",
-      "Wireless Network Preference"
+      "CPL_Personalization_SetTheme",
+      "Load a specific theme",
+      "\\Control Panel\\Personalization",
+      "Administrative Templates\\Control Panel\\Personalization",
+      "Personalization"
     ],
-    "categoryName": "Wireless Network Preference"
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_internetexplorer_trustedsiteszonelogonoptions",
+    "settingName": "Logon options (User)",
+    "settingDescription": "This policy setting allows you to manage settings for logon options.\r\n\r\nIf you enable this policy setting, you can choose from the following logon options.\r\n\r\nAnonymous logon to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol.\r\n\r\nPrompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session.\r\n\r\nAutomatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.\r\n\r\nAutomatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response is not supported by the server, the user is queried to provide the user name and password.\r\n\r\nIf you disable this policy setting, logon is set to Automatic logon only in Intranet zone.\r\n\r\nIf you do not configure this policy setting, logon is set to Automatic logon with current username and password.",
+    "keywords": [
+      "IZ_PolicyLogon_5",
+      "Logon options",
+      "\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Trusted Sites Zone",
+      "Administrative Templates\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Trusted Sites Zone",
+      "Trusted Sites Zone"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_display_configuremultipledisplaymode",
+    "settingName": "Configure Multiple Display Mode (User)",
+    "settingDescription": "Set the default display arrangement as clone, extend, internalOnly, externalOnly or default Windows Settings.",
+    "keywords": [
+      "Configure Multiple Display Mode",
+      "Display"
+    ],
+    "categoryName": "Display"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_printers_requireippspolicy",
+    "settingName": "Require Ipps Policy",
+    "settingDescription": "Allows restricting IPP printer installation to only allow printers supporting IPPS to be installed. This ensures TLS is used for printer communication",
+    "keywords": [
+      "Require Ipps Policy",
+      "Printers"
+    ],
+    "categoryName": "Printers"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_privacy_letappsaccesssystemaimodels_forceallowtheseapps",
+    "settingName": "Let Apps Access System AI Models Force Allow These Apps",
+    "settingDescription": "List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to use text and image generation features of Windows. This setting overrides the default LetAppsAccessSystemAIModels policy setting for the specified apps.",
+    "keywords": [
+      "Let Apps Access System AI Models Force Allow These Apps",
+      "Privacy"
+    ],
+    "categoryName": "Privacy"
+  },
+  {
+    "settingId": "vendor_msft_sharedpc_sleeptimeout",
+    "settingName": "Sleep Timeout",
+    "settingDescription": "The amount of time before the PC sleeps, giving in seconds. 0 means the PC never sleeps. Default is 5 minutes. If used, this value must be set before the action on the EnableSharedPCMode node is taken.",
+    "keywords": [
+      "Sleep Timeout",
+      "Shared PC"
+    ],
+    "categoryName": "Shared PC"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_windowsai_disablesettingsagent",
+    "settingName": "Disable Settings Agent",
+    "settingDescription": "This policy setting allows you to determine whether Settings Agentic search experience is available for users on their device. When the policy is enabled, the agentic experience will not be available, limiting search results to statically indexed searches and semantic searches. When the policy is disabled, users will have Settings Agent search experience available on their device.",
+    "keywords": [
+      "Disable Settings Agent",
+      "Windows AI"
+    ],
+    "categoryName": "Windows AI"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.newtabpagelocation_recommended",
@@ -47900,7 +48137,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_printers_configureredirectionguardpolicy",
     "settingName": "Configure Redirection Guard",
-    "settingDescription": "\r\nDetermines whether Redirection Guard is enabled for the print spooler.\r\n\r\nYou can enable this setting to configure the Redirection Guard policy being applied to spooler.\r\n\r\nIf you disable or do not configure this policy setting, Redirection Guard will default to being 'enabled'.\r\n\r\nIf you enable this setting you may select the following options:\r\n\r\n-- Enabled : Redirection Guard will prevent any file redirections from being followed\r\n\r\n-- Disabed : Redirection Guard will not be enabled and file redirections may be used within the spooler process\r\n\r\n-- Audit   : Redirection Guard will log events as though it were enabled but will not actually prevent file redirections from being used within the spooler.\r\n      ",
+    "settingDescription": "\r\nDetermines whether Redirection Guard is enabled for the print spooler.\r\n\r\nYou can enable this setting to configure the Redirection Guard policy being applied to spooler.\r\n\r\nIf you disable or do not configure this policy setting, Redirection Guard will default to being 'Enabled'.\r\n\r\nIf you enable this setting you may select the following options:\r\n\r\n-- Enabled : Redirection Guard will prevent any file redirections from being followed\r\n\r\n-- Disabed : Redirection Guard will not be enabled and file redirections may be used within the spooler process\r\n\r\n-- Audit   : Redirection Guard will log events as though it were enabled but will not actually prevent file redirections from being used within the spooler.\r\n      ",
     "keywords": [
       "ConfigureRedirectionGuardPolicy",
       "Configure Redirection Guard",
@@ -48041,7 +48278,7 @@
   },
   {
     "settingId": "user_vendor_msft_policy_config_admx_taskbar_showwindowsstoreappsontaskbar",
-    "settingName": "Show Windows Store apps on the taskbar (User)",
+    "settingName": "Show packaged Microsoft Store apps on the taskbar (User)",
     "settingDescription": "\r\nThis policy setting allows users to see Windows Store apps on the taskbar.\r\n \r\nIf you enable this policy setting, users will see Windows Store apps on the taskbar.\r\n \r\nIf you disable this policy setting, users won’t see Windows Store apps on the taskbar.\r\n \r\nIf you don’t configure this policy setting, the default setting for the user’s device will be used, and the user can choose to change it.\r\n ",
     "keywords": [
       "ShowWindowsStoreAppsOnTaskbar",
@@ -57659,7 +57896,7 @@
   },
   {
     "settingId": "device_vendor_msft_policy_config_admx_microsoftdefenderantivirus_scan_disablescanningnetworkfiles",
-    "settingName": "Scan network files",
+    "settingName": "Configure scanning of network files",
     "settingDescription": "This policy setting allows you to configure scanning for network files. It is recommended that you do not enable this setting.\r\n\r\n    If you enable this setting, network files will be scanned.\r\n\r\n    If you disable or do not configure this setting, network files will not be scanned.\r\n ",
     "keywords": [
       "Scan_DisableScanningNetworkFiles",
@@ -59243,8 +59480,8 @@
   },
   {
     "settingId": "device_vendor_msft_policy_config_windowslogon_enablemprnotifications",
-    "settingName": "Enable MPR notifications for the system",
-    "settingDescription": "This policy controls the configuration under which winlogon sends MPR notifications in the system.\r\n\r\nIf you enable this setting or do not configure it, winlogon sends MPR notifications if a credential manager is configured.\r\n\r\nIf you disable this setting, winlogon does not send MPR notifications.",
+    "settingName": "Configure the transmission of the user's password in the content of MPR notifications sent by winlogon.",
+    "settingDescription": "This policy controls whether the user's password is included in the content of MPR notifications sent by winlogon in the system.\r\n\r\nIf you disable this setting or do not configure it, winlogon sends MPR notifications with empty password fields of the user's authentication info.\r\n\r\nIf you enable this setting, winlogon sends MPR notifications containing the user's password in the authentication info.",
     "keywords": [
       "EnableMPRNotifications",
       "Enable MPR notifications for the system",
@@ -59719,7 +59956,7 @@
   {
     "settingId": "device_vendor_msft_bitlocker_allowwarningforotherdiskencryption",
     "settingName": "Allow Warning For Other Disk Encryption",
-    "settingDescription": "Allows Admin to disable all UI (notification for encryption and warning prompt for other disk encryption)\n                         and turn on encryption on the user machines silently.\n                         Warning: When you enable BitLocker on a device with third party encryption, it may render the device unusable and will\n                         require reinstallation of Windows.\n                         Note: This policy takes effect only if \"RequireDeviceEncryption\" policy is set to 1.\n                         The format is integer.\n                         The expected values for this policy are: \n\n                         1 = This is the default, when the policy is not set. Warning prompt and encryption notification is allowed.\n                         0 = Disables the warning prompt and encryption notification. Starting in Windows 10, next major update, \n                             the value 0 only takes affect on Azure Active Directory joined devices. \n                             Windows will attempt to silently enable BitLocker for value 0.\n\n                         If you want to disable this policy use the following SyncML:\n                         110./Device/Vendor/MSFT/BitLocker/AllowWarningForOtherDiskEncryptionint0",
+    "settingDescription": "Allows Admin to disable all UI (notification for encryption and warning prompt for other disk encryption)\n                         and turn on encryption on the user machines silently.\n                         Warning: When you enable BitLocker on a device with third party encryption, it may render the device unusable and will\n                         require reinstallation of Windows.\n                         Note: This policy takes effect only if \"RequireDeviceEncryption\" policy is set to 1.\n                         The format is integer.\n                         The expected values for this policy are: \n\n                         1 = This is the default, when the policy is not set. Warning prompt and encryption notification is allowed.\n                         0 = Disables the warning prompt and encryption notification. Starting in Windows 10, next major update, \n                             the value 0 only takes affect on Entra ID joined devices. \n                             Windows will attempt to silently enable BitLocker for value 0.\n\n                         If you want to disable this policy use the following SyncML:\n                         110./Device/Vendor/MSFT/BitLocker/AllowWarningForOtherDiskEncryptionint0",
     "keywords": [
       "Allow Warning For Other Disk Encryption",
       "BitLocker"
@@ -59729,7 +59966,7 @@
   {
     "settingId": "device_vendor_msft_bitlocker_configurerecoverypasswordrotation",
     "settingName": "Configure Recovery Password Rotation",
-    "settingDescription": " Allows Admin to configure Numeric Recovery Password Rotation upon use for OS and fixed drives on AAD and Hybrid domain joined devices.\n                          When not configured, Rotation is turned on by default for AAD only and off on Hybrid. The Policy will be effective only when \n                          Active Directory back up for recovery password is configured to required.\n                          For OS drive: Turn on \"Do not enable Bitlocker until recovery information is stored to AD DS for operating system drives\"\n                          For Fixed drives: Turn on \"Do not enable Bitlocker until recovery information is stored to AD DS for fixed data drives\"\n                       \n                          Supported Values: 0 - Numeric Recovery Passwords rotation OFF.\n                                            1 - Numeric Recovery Passwords Rotation upon use ON for AAD joined devices. Default value\n                                            2 - Numeric Recovery Passwords Rotation upon use ON for both AAD and Hybrid devices\n                         \n                         If you want to disable this policy use the following SyncML:\n \n                         112./Device/Vendor/MSFT/BitLocker/ConfigureRecoveryPasswordRotationint0",
+    "settingDescription": " Allows Admin to configure Numeric Recovery Password Rotation upon use for OS and fixed drives on Entra ID and Hybrid domain joined devices.\n                          When not configured, Rotation is turned on by default for Entra ID only and off on Hybrid. The Policy will be effective only when \n                          Active Directory back up for recovery password is configured to required.\n                          For OS drive: Turn on \"Do not enable Bitlocker until recovery information is stored to AD DS for operating system drives\"\n                          For Fixed drives: Turn on \"Do not enable Bitlocker until recovery information is stored to AD DS for fixed data drives\"\n                       \n                          Supported Values: 0 - Numeric Recovery Passwords rotation OFF.\n                                            1 - Numeric Recovery Passwords Rotation upon use ON for Entra ID joined devices. Default value\n                                            2 - Numeric Recovery Passwords Rotation upon use ON for both Entra ID and Hybrid devices\n                         \n                         If you want to disable this policy use the following SyncML:\n \n                         112./Device/Vendor/MSFT/BitLocker/ConfigureRecoveryPasswordRotationint0",
     "keywords": [
       "Configure Recovery Password Rotation",
       "BitLocker"
@@ -65021,7 +65258,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_defender_schedulequickscantime",
     "settingName": "Schedule Quick Scan Time",
-    "settingDescription": "Selects the time of day that the Windows Defender quick scan should run. Note The scan type will depends on what scan type is selected in the Defender/ScanParameter setting. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120",
+    "settingDescription": "Selects the time of day that the daily Windows Defender quick scan should run. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120",
     "keywords": [
       "Schedule Quick Scan Time",
       "Defender"
@@ -65581,7 +65818,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_display_configuremultipledisplaymode",
     "settingName": "Configure Multiple Display Mode",
-    "settingDescription": "This policy sets the default display arrangement to pick between clone, extend, internalOnly, externalOnly or default settings.",
+    "settingDescription": "Set the default display arrangement as clone, extend, internalOnly, externalOnly or default Windows Settings.",
     "keywords": [
       "Configure Multiple Display Mode",
       "Display"
@@ -87924,8 +88161,8 @@
   },
   {
     "settingId": "user_vendor_msft_policy_config_windowsai_disableclicktodo",
-    "settingName": "Disable Click To Do (User) (Windows Insiders only)",
-    "settingDescription": "Click to Do lets people take action on content on their screens. When activated, it takes a screenshot of their screen and analyzes it to present actions. Click to Do ends when they exit it, and it can't take screenshots while closed. Screenshot analysis is always performed locally on their device. By default, Click to Do is enabled for users. This policy setting allows you to determine whether Click to Do is available for users on their device. When the policy is enabled, the Click to Do component and entry points will not be available to users. When the policy is disabled, users will have Click to Do available on their device.\r\n This setting is only available to Windows Insiders",
+    "settingName": "Disable Click To Do (User)",
+    "settingDescription": "Click to Do lets people take action on content on their screens. When activated, it takes a screenshot of their screen and analyzes it to present actions. Click to Do ends when they exit it, and it can't take screenshots while closed. Screenshot analysis is always performed locally on their device. By default, Click to Do is enabled for users. This policy setting allows you to determine whether Click to Do is available for users on their device. When the policy is enabled, the Click to Do component and entry points will not be available to users. When the policy is disabled, users will have Click to Do available on their device.",
     "keywords": [
       "Disable Click To Do",
       "Windows AI"
@@ -88190,7 +88427,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_update_scheduledinstalltime",
     "settingName": "Scheduled Install Time",
-    "settingDescription": "Note This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile EnterpriseEnables the IT admin to schedule the time of the update installation. The data type is a integer. Supported operations are Add, Delete, Get, and Replace. Supported values are 0-23, where 0 = 12 AM and 23 = 11 PM. The default value is 3.",
+    "settingDescription": "NoteÂ This policy is available on WindowsÂ 10 Pro, WindowsÂ 10 Enterprise, WindowsÂ 10 Education, and WindowsÂ 10 Mobile EnterpriseEnables the IT admin to schedule the time of the update installation. The data type is a integer. Supported operations are Add, Delete, Get, and Replace. Supported values are 0-23, where 0 = 12 AM and 23 = 11 PM. The default value is 3.",
     "keywords": [
       "Scheduled Install Time",
       "Update",
@@ -88223,7 +88460,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_update_pausefeatureupdates",
     "settingName": "Pause Feature Updates",
-    "settingDescription": "Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.  Allows IT Admins to pause Feature Updates for up to 60 days.",
+    "settingDescription": "Since this policy is not blocked, you will not get a failure message when you use it to configure a WindowsÂ 10 Mobile device. However, the policy will not take effect.  Allows IT Admins to pause Feature Updates for up to 60 days.",
     "keywords": [
       "Pause Feature Updates",
       "Update",
@@ -88245,7 +88482,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_update_deferupdateperiod",
     "settingName": "Defer Update Period",
-    "settingDescription": "Note. Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in Changes in Windows 10, version 1607 for update management. You can continue to use DeferUpdatePeriod for Windows 10, version 1511 devices. Allows IT Admins to specify update delays for up to 4 weeks. Supported values are 0-4, which refers to the number of weeks to defer updates. In Windows 10 Mobile Enterprise version 1511 devices set to automatic updates, for DeferUpdatePeriod to work, you must set the following:Update/RequireDeferUpgrade must be set to 1System/AllowTelemetry must be set to 1 or higherIf the Specify intranet Microsoft update service location policy is enabled, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. If the Allow Telemetry policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. OS upgrade:Maximum deferral: 8 monthsDeferral increment: 1 monthUpdate type/notes:Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5Update:Maximum deferral: 1 monthDeferral increment: 1 weekUpdate type/notes:If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic. - Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441- Critical Update - E6CF1350-C01B-414D-A61F-263D14D133B4- Update Rollup - 28BC880E-0592-4CBF-8F95-C79B17911D5F- Service Pack - 68C5B0A3-D1A6-4553-AE49-01D3A7827828- Tools - B4832BD8-E735-4761-8DAF-37F882276DAB- Feature Pack - B54E7D24-7ADD-428F-8B75-90A396FA584F- Update - CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83- Driver - EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0Other/cannot defer:Maximum deferral: No deferralDeferral increment: No deferralUpdate type/notes:Any update category not specifically enumerated above falls into this category. - Definition Update - E0789628-CE08-4437-BE74-2495B842F43B",
+    "settingDescription": "Note. Don't use this policy in WindowsÂ 10, version 1607 devices, instead use the new policies listed in Changes in Windows 10, version 1607 for update management. You can continue to use DeferUpdatePeriod for WindowsÂ 10, version 1511 devices. Allows IT Admins to specify update delays for up to 4 weeks. Supported values are 0-4, which refers to the number of weeks to defer updates. In WindowsÂ 10 Mobile Enterprise version 1511 devices set to automatic updates, for DeferUpdatePeriod to work, you must set the following:Update/RequireDeferUpgrade must be set to 1System/AllowTelemetry must be set to 1 or higherIf the Specify intranet Microsoft update service location policy is enabled, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. If the Allow Telemetry policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. OS upgrade:Maximum deferral: 8 monthsDeferral increment: 1 monthUpdate type/notes:Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5Update:Maximum deferral: 1 monthDeferral increment: 1 weekUpdate type/notes:If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic. - Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441- Critical Update - E6CF1350-C01B-414D-A61F-263D14D133B4- Update Rollup - 28BC880E-0592-4CBF-8F95-C79B17911D5F- Service Pack - 68C5B0A3-D1A6-4553-AE49-01D3A7827828- Tools - B4832BD8-E735-4761-8DAF-37F882276DAB- Feature Pack - B54E7D24-7ADD-428F-8B75-90A396FA584F- Update - CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83- Driver - EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0Other/cannot defer:Maximum deferral: No deferralDeferral increment: No deferralUpdate type/notes:Any update category not specifically enumerated above falls into this category. - Definition Update - E0789628-CE08-4437-BE74-2495B842F43B",
     "keywords": [
       "Defer Update Period",
       "Update",
@@ -88393,6 +88630,45 @@
       "Wireless Display"
     ],
     "categoryName": "Wireless Display"
+  },
+  {
+    "settingId": "vendor_msft_wirelessnetworkpreference_parameters_cellularparameters_preferredprofilewakeconnectiontimerinseconds",
+    "settingName": "Preferred Profile Wake Connection Timer In Seconds (Windows Insiders only)",
+    "settingDescription": "When the device is woken from sleep with the most-preferred profile already enabled, this value configures the amount of time (in seconds) before the agent will give up on waiting for connection re-establishment with the most-preferred profile and start network discovery.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Preferred Profile Wake Connection Timer In Seconds",
+      "Wireless Network Preference"
+    ],
+    "categoryName": "Wireless Network Preference"
+  },
+  {
+    "settingId": "vendor_msft_wirelessnetworkpreference_connectionprofiles_{connectionprofileid}_connectionprofileid",
+    "settingName": null,
+    "settingDescription": null,
+    "keywords": [
+      "Wireless Network Preference"
+    ],
+    "categoryName": "Wireless Network Preference"
+  },
+  {
+    "settingId": "vendor_msft_wirelessnetworkpreference_isenabled",
+    "settingName": "Is Enabled (Windows Insiders only)",
+    "settingDescription": "It determines whether the wireless connectivity management policy is enabled or not.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Is Enabled",
+      "Wireless Network Preference"
+    ],
+    "categoryName": "Wireless Network Preference"
+  },
+  {
+    "settingId": "vendor_msft_wirelessnetworkpreference_connectionprofiles_{connectionprofileid}_cellular_plmnid",
+    "settingName": "PLMNID (Windows Insiders only)",
+    "settingDescription": "5- or 6-digit string identifying a cellular network. It consists of the combination of Mobile Country Code (MCC) and Mobile Network Code (MNC). \r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "PLMNID",
+      "Wireless Network Preference"
+    ],
+    "categoryName": "Wireless Network Preference"
   },
   {
     "settingId": "user_vendor_msft_policy_config_word16v10~policy~l_microsoftofficeword~l_wordoptions~l_optionsgeneral_l_disablemoderncommentsoptoutoption",
@@ -89888,54 +90164,142 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
-    "settingId": "vendor_msft_wirelessnetworkpreference_parameters_cellularparameters_profileregistrationtimerinseconds",
-    "settingName": "Profile Registration Timer In Seconds (Windows Insiders only)",
-    "settingDescription": "When evaluating eSIM profiles for connectivity, this value configures the amount of time (in seconds) that the agent will wait for network registration before considering this profile unsatisfactory and moving on to the next one.\r\n This setting is only available to Windows Insiders",
+    "settingId": "device_vendor_msft_policy_config_admx_startmenu_nochangestartmenu",
+    "settingName": "Prevent users from customizing their Start Screen",
+    "settingDescription": "This policy setting allows you to prevent users from changing their Start screen layout.\r\n\r\nIf you enable this setting, you will prevent a user from selecting an app, resizing a tile, pinning/unpinning a tile or a secondary tile, entering the customize mode and rearranging tiles within Start and Apps.\r\n\r\nIf you disable or do not configure this setting, you will allow a user to select an app, resize a tile, pin/unpin a tile or a secondary tile, enter the customize mode and rearrange tiles within Start and Apps.",
     "keywords": [
-      "Profile Registration Timer In Seconds",
-      "Wireless Network Preference"
+      "NoChangeStartMenu",
+      "Prevent users from customizing their Start Screen",
+      "\\Start Menu and Taskbar",
+      "Administrative Templates\\Start Menu and Taskbar",
+      "Start Menu and Taskbar"
     ],
-    "categoryName": "Wireless Network Preference"
+    "categoryName": "Administrative Templates"
   },
   {
-    "settingId": "vendor_msft_wirelessnetworkpreference_parameters_cellularparameters_screenoffdurationtotriggernetworkdiscoveryinminutes",
-    "settingName": "Screen Off Duration To Trigger Network Discovery In Minutes (Windows Insiders only)",
-    "settingDescription": "When the device experiences screen off and back on, this value configures the minimum duration (in minutes) of the screen off period that will trigger network discovery.\r\n This setting is only available to Windows Insiders",
+    "settingId": "device_vendor_msft_policy_config_desktopappinstaller_enablewindowspackagemanagerconfiguration",
+    "settingName": "Enable Windows Package Manager Configuration",
+    "settingDescription": "This policy controls whether the Windows Package Manager configuration feature can be used by users.\r\n\r\nIf you enable or do not configure this setting, users will be able to use the Windows Package Manager configuration feature.\r\n\r\nIf you disable this setting, users will not be able to use the Windows Package Manager configuration feature.",
     "keywords": [
-      "Screen Off Duration To Trigger Network Discovery In Minutes",
-      "Wireless Network Preference"
+      "EnableWindowsPackageManagerConfiguration",
+      "Enable Windows Package Manager Configuration",
+      "\\Windows Components\\Desktop App Installer",
+      "Administrative Templates\\Windows Components\\Desktop App Installer",
+      "Desktop App Installer"
     ],
-    "categoryName": "Wireless Network Preference"
+    "categoryName": "Administrative Templates"
   },
   {
-    "settingId": "vendor_msft_wirelessnetworkpreference_connectionprofiles_{connectionprofileid}_priority",
-    "settingName": "Priority (Windows Insiders only)",
-    "settingDescription": "Priority of a policy compared to the others where 1 represents the highest priority. Thus, the smaller this value is, the higher preference this specific network will receive in establishing a data connection. \r\n This setting is only available to Windows Insiders",
+    "settingId": "user_vendor_msft_policy_config_internetexplorer_intranetzonelogonoptions",
+    "settingName": "Logon options (User)",
+    "settingDescription": "This policy setting allows you to manage settings for logon options.\r\n\r\nIf you enable this policy setting, you can choose from the following logon options.\r\n\r\nAnonymous logon to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol.\r\n\r\nPrompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session.\r\n\r\nAutomatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.\r\n\r\nAutomatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response is not supported by the server, the user is queried to provide the user name and password.\r\n\r\nIf you disable this policy setting, logon is set to Automatic logon only in Intranet zone.\r\n\r\nIf you do not configure this policy setting, logon is set to Automatic logon only in Intranet zone.",
     "keywords": [
-      "Priority",
-      "Wireless Network Preference"
+      "IZ_PolicyLogon_3",
+      "Logon options",
+      "\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Intranet Zone",
+      "Administrative Templates\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Intranet Zone",
+      "Intranet Zone"
     ],
-    "categoryName": "Wireless Network Preference"
+    "categoryName": "Administrative Templates"
   },
   {
-    "settingId": "vendor_msft_wirelessnetworkpreference_connectionprofiles_{connectionprofileid}_stayconnected",
-    "settingName": "Stay Connected (Windows Insiders only)",
-    "settingDescription": "When set to 0: Default network discovery behavior is applied. When set to 1: Once connected, the device will always stay connected to this network. This means the device will not attempt to discover or switch to other higher priority networks until it first loses connectivity to this network.\r\n This setting is only available to Windows Insiders",
+    "settingId": "device_vendor_msft_policy_config_internetexplorer_intranetzonelogonoptions_iz_partname1a00",
+    "settingName": "Logon options (Device)",
+    "settingDescription": "",
     "keywords": [
-      "Stay Connected",
-      "Wireless Network Preference"
+      "IZ_PolicyLogon_3",
+      "Logon options",
+      "\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Intranet Zone",
+      "Administrative Templates\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Intranet Zone",
+      "Intranet Zone"
     ],
-    "categoryName": "Wireless Network Preference"
+    "categoryName": "Administrative Templates"
   },
   {
-    "settingId": "vendor_msft_wirelessnetworkpreference_parameters_cellularparameters_networkdiscoveryoption",
-    "settingName": "Network Discovery Option (Windows Insiders only)",
-    "settingDescription": "Configures which approach should be used in the network discovery process. There are two possible values: (0) no network scan will be performed – rather, registration and connection will be attempted with each eSIM profile in descending order of preference; or (1) Network scan will be performed using the current active eSIM profile. This option works for modems that when performing a network scan show the complete list of available networks independently of which eSIM profile is active.\r\n This setting is only available to Windows Insiders",
+    "settingId": "device_vendor_msft_policy_config_internetexplorer_intranetzonelogonoptions",
+    "settingName": "Logon options",
+    "settingDescription": "This policy setting allows you to manage settings for logon options.\r\n\r\nIf you enable this policy setting, you can choose from the following logon options.\r\n\r\nAnonymous logon to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol.\r\n\r\nPrompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session.\r\n\r\nAutomatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session.\r\n\r\nAutomatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response is not supported by the server, the user is queried to provide the user name and password.\r\n\r\nIf you disable this policy setting, logon is set to Automatic logon only in Intranet zone.\r\n\r\nIf you do not configure this policy setting, logon is set to Automatic logon only in Intranet zone.",
     "keywords": [
-      "Network Discovery Option",
-      "Wireless Network Preference"
+      "IZ_PolicyLogon_3",
+      "Logon options",
+      "\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Intranet Zone",
+      "Administrative Templates\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Intranet Zone",
+      "Intranet Zone"
     ],
-    "categoryName": "Wireless Network Preference"
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_internetexplorer_trustedsiteszonelogonoptions_iz_partname1a00",
+    "settingName": "Logon options (User)",
+    "settingDescription": "",
+    "keywords": [
+      "IZ_PolicyLogon_5",
+      "Logon options",
+      "\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Trusted Sites Zone",
+      "Administrative Templates\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Trusted Sites Zone",
+      "Trusted Sites Zone"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_display_setclonepreferredresolutionsource",
+    "settingName": "Set Clone Preferred Resolution Source (User)",
+    "settingDescription": "Set the cloned monitor preferred resolution source as internal or external monitor or set to default.",
+    "keywords": [
+      "Set Clone Preferred Resolution Source",
+      "Display"
+    ],
+    "categoryName": "Display"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_humanpresence_forceonlookerdetectionaction",
+    "settingName": "Force Onlooker Detection Action",
+    "settingDescription": "Determines whether the Onlooker Detection action is forced by the MDM policy. The user will not be able to change this setting and the toggle in the UI will be greyed out.",
+    "keywords": [
+      "Force Onlooker Detection Action",
+      "Human Presence"
+    ],
+    "categoryName": "Human Presence"
+  },
+  {
+    "settingId": "vendor_msft_sharedpc_maxpagefilesizemb",
+    "settingName": "Max Page File Size MB",
+    "settingDescription": "Maximum size of the paging file in MB. Applies only to systems with less than 32 GB storage and at least 3 GB of RAM. If used, this value must be set before the action on the EnableSharedPCMode node is taken.",
+    "keywords": [
+      "Max Page File Size MB",
+      "Shared PC"
+    ],
+    "categoryName": "Shared PC"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_start_turnoffabbreviateddatetimeformat",
+    "settingName": "Turn Off Abbreviated Date Time Format (User)",
+    "settingDescription": "",
+    "keywords": [
+      "Turn Off Abbreviated Date Time Format",
+      "Start"
+    ],
+    "categoryName": "Start"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_system_enablehotpatchautoremediation",
+    "settingName": "Enable Hotpatch Auto Remediation",
+    "settingDescription": "This policy setting controls whether Automatic Remediation is enabled on the hotpatch enrolled device. This policy has no effect on devices                     that does not have hotpatch updates installed.                     If you enable this policy setting, Automatic Remediation is enabled on the hotpatch enrolled device.                     If you disable or do not configure this policy setting, Automatic Remediation is disabled on the hotpatch enrolled device.",
+    "keywords": [
+      "Enable Hotpatch Auto Remediation",
+      "System"
+    ],
+    "categoryName": "System"
+  },
+  {
+    "settingId": "device_vendor_msft_windowsbackupandrestore_enablewindowsrestore",
+    "settingName": "Enable Windows Restore (Windows Insiders only)",
+    "settingDescription": "Sets a policy to enable Windows Restore.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Enable Windows Restore",
+      "Windows Backup And Restore"
+    ],
+    "categoryName": "Windows Backup And Restore"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autolaunchprotocolsfromorigins",
@@ -94775,7 +95139,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_desktopappinstaller_sourceautoupdateinterval",
     "settingName": "Set App Installer Source Auto Update Interval In Minutes",
-    "settingDescription": "This policy controls the auto update interval for package-based sources.\r\n\r\nIf you disable or do not configure this setting, the default interval or the value specified in settings will be used by the Windows Package Manager.\r\n\r\nIf you enable this setting, the number of minutes specified will be used by the Windows Package Manager.",
+    "settingDescription": "This policy controls the auto-update interval for package-based sources. The default source for Windows Package Manager is configured such that an index of the packages is cached on the local machine. The index is downloaded when a user invokes a command, and the interval has passed.\r\n\r\nIf you disable or do not configure this setting, the default interval or the value specified in the Windows Package Manager settings will be used.\r\n\r\nIf you enable this setting, the number of minutes specified will be used by the Windows Package Manager.",
     "keywords": [
       "SourceAutoUpdateInterval",
       "Set App Installer Source Auto Update Interval In Minutes",
@@ -94904,8 +95268,8 @@
   },
   {
     "settingId": "device_vendor_msft_policy_config_deviceinstallation_preventdevicemetadatafromnetwork",
-    "settingName": "Prevent device metadata retrieval from the Internet",
-    "settingDescription": "This policy setting allows you to prevent Windows from retrieving device metadata from the Internet.\r\n          \r\nIf you enable this policy setting, Windows does not retrieve device metadata for installed devices from the Internet. This policy setting overrides the setting in the Device Installation Settings dialog box (Control Panel > System and Security > System > Advanced System Settings > Hardware tab).\r\n\r\nIf you disable or do not configure this policy setting, the setting in the Device Installation Settings dialog box controls whether Windows retrieves device metadata from the Internet.",
+    "settingName": "Prevent automatic download of applications associated with device metadata",
+    "settingDescription": "This policy setting allows you to prevent Windows from downloading applications associated with device metadata.\r\n\r\nIf you enable this policy setting, Windows does not download applications associated with device metadata for installed devices. This policy setting overrides the setting in the Device Installation Settings dialog box (Control Panel > System and Security > System > Advanced System Settings > Hardware tab).\r\n\r\nIf you disable or do not configure this policy setting, the setting in the Device Installation Settings dialog box controls whether Windows downloads applications associated with device metadata.",
     "keywords": [
       "DeviceMetadata_PreventDeviceMetadataFromNetwork",
       "Prevent device metadata retrieval from the Internet",
@@ -96654,7 +97018,7 @@
   {
     "settingId": "user_vendor_msft_policy_config_internetexplorer_disableinternetexplorerapp_v2",
     "settingName": "Disable Internet Explorer 11 as a standalone browser (User)",
-    "settingDescription": "This policy lets you restrict launching of Internet Explorer as a standalone browser.\r\n\r\nIf you enable this policy, it:\r\n- Prevents Internet Explorer 11 from launching as a standalone browser.\r\n- Restricts Internet Explorer's usage to Microsoft Edge's native 'Internet Explorer mode'.\r\n- Redirects all attempts at launching Internet Explorer 11 to Microsoft Edge Stable Channel browser.\r\n- Overrides any other policies that redirect to Internet Explorer 11.\r\n\r\nIf you disable, or don’t configure this policy, all sites are opened using the current active browser settings. Note: Microsoft Edge Stable Channel must be installed for this policy to take effect.",
+    "settingDescription": "This policy lets you restrict launching of Internet Explorer as a standalone browser.\r\n\r\nIf you enable this policy, it:\r\n- Prevents Internet Explorer 11 from launching as a standalone browser.\r\n- Restricts Internet Explorer's usage to Microsoft Edge's native 'Internet Explorer mode'.\r\n- Redirects attempts at launching Internet Explorer 11 to Microsoft Edge Stable Channel browser.\r\n- Overrides any other policies that redirect to Internet Explorer 11.\r\n\r\nEven with this policy enabled launching Internet Explorer 11 using COM automation will still be allowed. To disable COM automation launches of Internet Explorer 11 use the \"Disable Internet Explorer 11 COM Automation\" group policy.\r\n\r\nIf you disable, or don’t configure this policy, all sites are opened using the current active browser settings. Note: Microsoft Edge Stable Channel must be installed for this policy to take effect.",
     "keywords": [
       "DisableInternetExplorerApp",
       "Disable Internet Explorer 11 as a standalone browser",
@@ -96702,8 +97066,8 @@
   },
   {
     "settingId": "user_vendor_msft_policy_config_internetexplorer_jscriptreplacement",
-    "settingName": "Replace JScript by loading JScript9Legacy in place of JScript via MSHTML/WebOC. (User)",
-    "settingDescription": "This policy setting specifies whether JScript or JScript9Legacy is loaded for MSHTML/WebOC/MSXML/Cscript based invocations.\r\n      \r\nIf you enable this policy setting, JScript9Legacy will be loaded in situations where JScript is instantiated.\r\n\r\nIf you disable this policy, then JScript will be utilized.\r\n\r\nIf this policy is left unconfigured, then MSHTML will use JScript9Legacy and MSXML/Cscript will use JScript.",
+    "settingName": "Replace JScript by loading JScript9Legacy in place of JScript. (User)",
+    "settingDescription": "This policy setting specifies whether JScript or JScript9Legacy is loaded.\r\n      \r\nIf you enable this policy setting or not configured, JScript9Legacy will be loaded in situations where JScript is instantiated.\r\n\r\nIf you disable this policy, then JScript will be utilized.",
     "keywords": [
       "JScriptReplacement",
       "Replace JScript by loading JScript9Legacy in place of JScript via MSHTML/WebOC.",
@@ -96901,7 +97265,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_internetexplorer_disableinternetexplorerapp_v2",
     "settingName": "Disable Internet Explorer 11 as a standalone browser",
-    "settingDescription": "This policy lets you restrict launching of Internet Explorer as a standalone browser.\r\n\r\nIf you enable this policy, it:\r\n- Prevents Internet Explorer 11 from launching as a standalone browser.\r\n- Restricts Internet Explorer's usage to Microsoft Edge's native 'Internet Explorer mode'.\r\n- Redirects all attempts at launching Internet Explorer 11 to Microsoft Edge Stable Channel browser.\r\n- Overrides any other policies that redirect to Internet Explorer 11.\r\n\r\nIf you disable, or don’t configure this policy, all sites are opened using the current active browser settings. Note: Microsoft Edge Stable Channel must be installed for this policy to take effect.",
+    "settingDescription": "This policy lets you restrict launching of Internet Explorer as a standalone browser.\r\n\r\nIf you enable this policy, it:\r\n- Prevents Internet Explorer 11 from launching as a standalone browser.\r\n- Restricts Internet Explorer's usage to Microsoft Edge's native 'Internet Explorer mode'.\r\n- Redirects attempts at launching Internet Explorer 11 to Microsoft Edge Stable Channel browser.\r\n- Overrides any other policies that redirect to Internet Explorer 11.\r\n\r\nEven with this policy enabled launching Internet Explorer 11 using COM automation will still be allowed. To disable COM automation launches of Internet Explorer 11 use the \"Disable Internet Explorer 11 COM Automation\" group policy.\r\n\r\nIf you disable, or don’t configure this policy, all sites are opened using the current active browser settings. Note: Microsoft Edge Stable Channel must be installed for this policy to take effect.",
     "keywords": [
       "DisableInternetExplorerApp",
       "Disable Internet Explorer 11 as a standalone browser",
@@ -103116,7 +103480,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_tenantrestrictions_configuretenantrestrictions",
     "settingName": "Cloud Policy Details",
-    "settingDescription": "This setting enables and configures the device-based tenant restrictions feature for Azure Active Directory.\r\n\r\nWhen you enable this setting, compliant applications will be prevented from accessing disallowed tenants, according to a policy set in your Azure AD tenant.\r\n\r\nNote: Creation of a policy in your home tenant is required, and additional security measures for managed devices are recommended for best protection. Refer to Azure AD Tenant Restrictions for more details.\r\n\r\nhttps://go.microsoft.com/fwlink/?linkid=2148762\r\n\r\nBefore enabling firewall protection, ensure that a Windows Defender Application Control (WDAC) policy that correctly tags applications has been applied to the target devices. Enabling firewall protection without a corresponding WDAC policy will prevent all applications from reaching Microsoft endpoints. This firewall setting is not supported on all versions of Windows - see the following link for more information. \r\nFor details about setting up WDAC with tenant restrictions, see https://go.microsoft.com/fwlink/?linkid=2155230",
+    "settingDescription": "\r\n          This setting enables and configures the device-based tenant restrictions feature for Azure Active Directory.\r\n\r\n          When you enable this setting, compliant applications will be prevented from accessing disallowed tenants, according to a policy set in your Azure AD tenant.\r\n\r\n          Note: Creation of a policy in your home tenant is required, and additional security measures for managed devices are recommended for best protection. Refer to Azure AD Tenant Restrictions for more details.\r\n\r\n          https://go.microsoft.com/fwlink/?linkid=2148762\r\n\r\n          Before enabling firewall protection, ensure that an App Control for Business policy that correctly tags applications has been applied to the target devices. Enabling firewall protection without a corresponding App Control for Business policy will prevent all applications from reaching Microsoft endpoints. This firewall setting is not supported on all versions of Windows - see the following link for more information.\r\n          For details about setting up WDAC with tenant restrictions, see https://go.microsoft.com/fwlink/?linkid=2155230",
     "keywords": [
       "trv2_payload",
       "Cloud Policy Details",
@@ -130046,7 +130410,7 @@
   {
     "settingId": "vendor_msft_sharedpc_disklevelcaching",
     "settingName": "Disk Level Caching",
-    "settingDescription": "Stop deleting accounts when available disk space reaches this threshold, given as percent of total disk capacity.",
+    "settingDescription": "Stop deleting accounts when available disk space reaches this threshold, given as percent of total disk capacity. If used, this value must be set before the action on the EnableSharedPCMode node is taken.",
     "keywords": [
       "Disk Level Caching",
       "SharedPC",
@@ -130057,7 +130421,7 @@
   {
     "settingId": "vendor_msft_sharedpc_kioskmodeaumid",
     "settingName": "Kiosk Mode AUMID",
-    "settingDescription": "Specifies the AUMID of the app to use with assigned access.",
+    "settingDescription": "Specifies the AUMID of the app to use with assigned access. If used, this value must be set before the action on the EnableSharedPCMode node is taken.",
     "keywords": [
       "Kiosk Mode AUMID",
       "SharedPC",
@@ -130079,7 +130443,7 @@
   {
     "settingId": "vendor_msft_sharedpc_setpowerpolicies",
     "settingName": "Set Power Policies",
-    "settingDescription": "Set a list of power policies.",
+    "settingDescription": "Set a list of power policies. If used, this value must be set before the action on the EnableSharedPCMode node is taken.",
     "keywords": [
       "Set Power Policies",
       "SharedPC",
@@ -131904,8 +132268,8 @@
   },
   {
     "settingId": "device_vendor_msft_policy_config_windowsai_allowrecallexport",
-    "settingName": "Allow Recall Export (Windows Insiders only)",
-    "settingDescription": "This policy allows you to determine whether Recall and snapshot information can be exported. Recall and snapshot information may be sensitive, and the files that are exported are unencrypted. Users can export from Settings > Privacy & Security > Recall & Snapshots > Advanced Settings > Export your Recall and snapshot info. Users are warned that the files are unencrypted before exporting. When you set this policy to enabled, users will be able to export Recall and snapshot information. If the policy is set to disabled or not configured, users will not be able to export their Recall and snapshot information.\r\n This setting is only available to Windows Insiders",
+    "settingName": "Allow Recall Export",
+    "settingDescription": "This policy allows you to determine whether users can export their own Recall and snapshot information. Exporting allows users to share their Recall and snapshot information with trusted apps or websites. Users can export from Settings > Privacy & security > Recall & snapshots > Advanced settings > Export snapshots > Export past snapshots > Export. Users can also choose to continuously export their snapshots if they turn on the option to Export snapshots from now on from Settings > Privacy & security > Recall & snapshots > Advanced settings > Export snapshots > Export. Before starting an export, the user must authenticate with Windows Hello and they are notified that their exported snapshots are encrypted since they might contain sensitive information. The user is also notified that they'll need to provide their Recall export code if they want to allow trusted apps or websites access to exported snapshots. The Recall export code is displayed to users during Recall setup even if this policy is set to disabled or not configured. For managed devices: When you set this policy to enabled, users will be able to export Recall and snapshot information. If the policy is set to disabled or not configured, users won't be able to export their Recall and snapshot information. Important: This setting applies to devices in the European Economic Area (EEA) only. Export of Recall and snapshot information is a user-initiated process and is per user. IT admins or other users can't initiate an export on behalf of another.",
     "keywords": [
       "Allow Recall Export",
       "Windows AI"
@@ -132205,7 +132569,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_update_requiredeferupgrade",
     "settingName": "Require Defer Upgrade",
-    "settingDescription": "NoteDon't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in Changes in Windows 10, version 1607 for update management. You can continue to use RequireDeferUpgrade for Windows 10, version 1511 devices. Allows the IT admin to set a device to Semi-Annual Channel train.",
+    "settingDescription": "NoteDon't use this policy in WindowsÂ 10, version 1607 devices, instead use the new policies listed in Changes in Windows 10, version 1607 for update management. You can continue to use RequireDeferUpgrade for WindowsÂ 10, version 1511 devices. Allows the IT admin to set a device to Semi-Annual Channel train.",
     "keywords": [
       "Require Defer Upgrade",
       "Update",
@@ -132260,7 +132624,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_update_excludewudriversinqualityupdate",
     "settingName": "Exclude WU Drivers In Quality Update",
-    "settingDescription": "NoteSince this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.  Allows IT Admins to exclude Windows Update (WU) drivers during updates.",
+    "settingDescription": "NoteSince this policy is not blocked, you will not get a failure message when you use it to configure a WindowsÂ 10 Mobile device. However, the policy will not take effect.  Allows IT Admins to exclude Windows Update (WU) drivers during updates.",
     "keywords": [
       "Exclude WU Drivers In Quality Update",
       "Update",
@@ -132271,7 +132635,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_update_activehoursstart",
     "settingName": "Active Hours Start",
-    "settingDescription": "Allows the IT admin (when used with Update/ActiveHoursEnd) to manage a range of hours where update reboots are not scheduled. This value sets the start time. There is a 12 hour maximum from end time. Note The default maximum difference from end time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured. See Update/ActiveHoursMaxRange above for more information. Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc. The default value is 8 (8 AM).",
+    "settingDescription": "Allows the IT admin (when used with Update/ActiveHoursEnd) to manage a range of hours where update reboots are not scheduled. This value sets the start time. There is a 12 hour maximum from end time. NoteÂ The default maximum difference from end time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured. See Update/ActiveHoursMaxRange above for more information. Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc. The default value is 8 (8 AM).",
     "keywords": [
       "Active Hours Start",
       "Update",
@@ -132304,7 +132668,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_update_activehoursend",
     "settingName": "Active Hours End",
-    "settingDescription": "Allows the IT admin (when used with Update/ActiveHoursStart) to manage a range of active hours where update reboots are not scheduled. This value sets the end time. There is a 12 hour maximum from start time. Note The default maximum difference from start time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured. See Update/ActiveHoursMaxRange below for more information. Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc. The default is 17 (5 PM).",
+    "settingDescription": "Allows the IT admin (when used with Update/ActiveHoursStart) to manage a range of active hours where update reboots are not scheduled. This value sets the end time. There is a 12 hour maximum from start time. NoteÂ The default maximum difference from start time has been increased to 18 in Windows 10, version 1703. In this version of Windows 10, the maximum range of active hours can now be configured. See Update/ActiveHoursMaxRange below for more information. Supported values are 0-23, where 0 is 12 AM, 1 is 1 AM, etc. The default is 17 (5 PM).",
     "keywords": [
       "Active Hours End",
       "Update",
@@ -132343,6 +132707,56 @@
       "Wireless Display"
     ],
     "categoryName": "Wireless Display"
+  },
+  {
+    "settingId": "vendor_msft_wirelessnetworkpreference_parameters_cellularparameters_profileregistrationtimerinseconds",
+    "settingName": "Profile Registration Timer In Seconds (Windows Insiders only)",
+    "settingDescription": "When evaluating eSIM profiles for connectivity, this value configures the amount of time (in seconds) that the agent will wait for network registration before considering this profile unsatisfactory and moving on to the next one.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Profile Registration Timer In Seconds",
+      "Wireless Network Preference"
+    ],
+    "categoryName": "Wireless Network Preference"
+  },
+  {
+    "settingId": "vendor_msft_wirelessnetworkpreference_parameters_cellularparameters_screenoffdurationtotriggernetworkdiscoveryinminutes",
+    "settingName": "Screen Off Duration To Trigger Network Discovery In Minutes (Windows Insiders only)",
+    "settingDescription": "When the device experiences screen off and back on, this value configures the minimum duration (in minutes) of the screen off period that will trigger network discovery.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Screen Off Duration To Trigger Network Discovery In Minutes",
+      "Wireless Network Preference"
+    ],
+    "categoryName": "Wireless Network Preference"
+  },
+  {
+    "settingId": "vendor_msft_wirelessnetworkpreference_connectionprofiles_{connectionprofileid}_priority",
+    "settingName": "Priority (Windows Insiders only)",
+    "settingDescription": "Priority of a policy compared to the others where 1 represents the highest priority. Thus, the smaller this value is, the higher preference this specific network will receive in establishing a data connection. \r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Priority",
+      "Wireless Network Preference"
+    ],
+    "categoryName": "Wireless Network Preference"
+  },
+  {
+    "settingId": "vendor_msft_wirelessnetworkpreference_connectionprofiles_{connectionprofileid}_stayconnected",
+    "settingName": "Stay Connected (Windows Insiders only)",
+    "settingDescription": "When set to 0: Default network discovery behavior is applied. When set to 1: Once connected, the device will always stay connected to this network. This means the device will not attempt to discover or switch to other higher priority networks until it first loses connectivity to this network.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Stay Connected",
+      "Wireless Network Preference"
+    ],
+    "categoryName": "Wireless Network Preference"
+  },
+  {
+    "settingId": "vendor_msft_wirelessnetworkpreference_parameters_cellularparameters_networkdiscoveryoption",
+    "settingName": "Network Discovery Option (Windows Insiders only)",
+    "settingDescription": "Configures which approach should be used in the network discovery process. There are two possible values: (0) no network scan will be performed – rather, registration and connection will be attempted with each eSIM profile in descending order of preference; or (1) Network scan will be performed using the current active eSIM profile. This option works for modems that when performing a network scan show the complete list of available networks independently of which eSIM profile is active.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Network Discovery Option",
+      "Wireless Network Preference"
+    ],
+    "categoryName": "Wireless Network Preference"
   },
   {
     "settingId": "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_wordoptions~l_security~l_trustcenter~l_fileblocksettings_l_word2000binarydocumentsandtemplates_l_word2000binarydocumentsandtemplatesdropid",
@@ -133911,14 +134325,77 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
-    "settingId": "vendor_msft_wirelessnetworkpreference_prefercellularoverwifi",
-    "settingName": "Prefer Cellular Over Wi Fi (Windows Insiders only)",
-    "settingDescription": "It determines the order of preference between Wi-Fi and cellular networks. When the value is set to “False”, Wi-Fi is preferred over cellular. When the value is set to “True”, cellular is preferred over Wi-Fi. \r\n This setting is only available to Windows Insiders",
+    "settingId": "device_vendor_msft_policy_config_internetexplorer_trustedsiteszonelogonoptions_iz_partname1a00",
+    "settingName": "Logon options (Device)",
+    "settingDescription": "",
     "keywords": [
-      "Prefer Cellular Over Wi Fi",
-      "Wireless Network Preference"
+      "IZ_PolicyLogon_5",
+      "Logon options",
+      "\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Trusted Sites Zone",
+      "Administrative Templates\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Trusted Sites Zone",
+      "Trusted Sites Zone"
     ],
-    "categoryName": "Wireless Network Preference"
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_humanpresence_forceonlookerdetection",
+    "settingName": "Force Onlooker Detection",
+    "settingDescription": "Determines whether detect when other people are looking at my screen is forced on/off by the MDM policy. The user will not be able to change this setting and the UI will be greyed out.",
+    "keywords": [
+      "Force Onlooker Detection",
+      "Human Presence"
+    ],
+    "categoryName": "Human Presence"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_privacy_letappsaccesssystemaimodels",
+    "settingName": "Let Apps Access System AI Models",
+    "settingDescription": "This policy setting specifies whether Windows apps can use text and image generation features of Windows.",
+    "keywords": [
+      "Let Apps Access System AI Models",
+      "Privacy"
+    ],
+    "categoryName": "Privacy"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_start_hidecategoryview",
+    "settingName": "Hide Category View",
+    "settingDescription": "This policy setting allows you to hide the category view in the Start Menu. If you enable this policy setting, the Start Menu will no longer show the category view as an option and will default to grid view.",
+    "keywords": [
+      "Hide Category View",
+      "Start"
+    ],
+    "categoryName": "Start"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_start_hidecategoryview",
+    "settingName": "Hide Category View (User)",
+    "settingDescription": "This policy setting allows you to hide the category view in the Start Menu. If you enable this policy setting, the Start Menu will no longer show the category view as an option and will default to grid view.",
+    "keywords": [
+      "Hide Category View",
+      "Start"
+    ],
+    "categoryName": "Start"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_system_allowoobeupdates",
+    "settingName": "Allow OOBE Updates",
+    "settingDescription": "Allows or disallows updating device during OOBE via NDUP. By default devices are allowed to update during OOBE.",
+    "keywords": [
+      "Allow OOBE Updates",
+      "System"
+    ],
+    "categoryName": "System"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_windowsai_disableclicktodo",
+    "settingName": "Disable Click To Do",
+    "settingDescription": "Click to Do lets people take action on content on their screens. When activated, it takes a screenshot of their screen and analyzes it to present actions. Click to Do ends when they exit it, and it can't take screenshots while closed. Screenshot analysis is always performed locally on their device. By default, Click to Do is enabled for users. This policy setting allows you to determine whether Click to Do is available for users on their device. When the policy is enabled, the Click to Do component and entry points will not be available to users. When the policy is disabled, users will have Click to Do available on their device.",
+    "keywords": [
+      "Disable Click To Do",
+      "Windows AI"
+    ],
+    "categoryName": "Windows AI"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchproviderkeyword_recommended",
@@ -135429,7 +135906,7 @@
   },
   {
     "settingId": "device_vendor_msft_policy_config_admx_appxruntime_appxruntimeapplicationcontenturirules",
-    "settingName": "Turn on dynamic Content URI Rules for Windows store apps",
+    "settingName": "Turn on dynamic Content URI Rules for packaged Microsoft Store apps",
     "settingDescription": "This policy setting lets you turn on Content URI Rules to supplement the static Content URI Rules that were defined as part of the app manifest and apply to all Windows Store apps that use the enterpriseAuthentication capability on a computer.\r\n\r\nIf you enable this policy setting, you can define additional Content URI Rules that all Windows Store apps that use the enterpriseAuthentication capability on a computer can use.\r\n\r\nIf you disable or don't set this policy setting, Windows Store apps will only use the static Content URI Rules.\r\n ",
     "keywords": [
       "AppxRuntimeApplicationContentUriRules",
@@ -137620,7 +138097,7 @@
   {
     "settingId": "user_vendor_msft_policy_config_internetexplorer_resetzoomfordialoginiemode",
     "settingName": "Reset zoom to default for HTML dialogs in Internet Explorer mode (User)",
-    "settingDescription": "This policy setting lets admins reset zoom to default for HTML dialogs in Internet Explorer mode.\r\n\r\nIf you enable this policy, the zoom of an HTML dialog in Internet Explorer mode will not get propagated from its parent page.\r\n\r\nIf you disable, or don't configure this policy, the zoom of an HTML dialog in Internet Explorer mode will be set based on the zoom of it's parent page.\r\n\r\nFor more information, see https://go.microsoft.com/fwlink/?linkid=2102115",
+    "settingDescription": "This policy setting lets admins reset zoom to default for HTML dialogs in Internet Explorer mode.\r\n\r\nIf you enable this policy, the zoom of an HTML dialog in Internet Explorer mode will not get propagated from its parent page.\r\n\r\nIf you disable, or don't configure this policy, the zoom of an HTML dialog in Internet Explorer mode will be set based on the zoom of it's parent page.\r\n\r\nFor more information, see https://go.microsoft.com/fwlink/?linkid=2220107",
     "keywords": [
       "ResetZoomForDialogInIEMode",
       "Reset zoom to default for HTML dialogs in Internet Explorer mode",
@@ -153948,8 +154425,8 @@
   },
   {
     "settingId": "user_vendor_msft_pde_protectfolders_protectpictures",
-    "settingName": "Protect Pictures (User) (Windows Insiders only)",
-    "settingDescription": "Allows the Admin to enable Personal Data Encryption on Pictures folder. Set to '1' to set this policy.\r\n This setting is only available to Windows Insiders",
+    "settingName": "Protect Pictures (User)",
+    "settingDescription": "Allows the Admin to enable Personal Data Encryption on Pictures folder. Set to '1' to set this policy.",
     "keywords": [
       "Protect Pictures",
       "Personal Data Encryption"
@@ -153958,8 +154435,8 @@
   },
   {
     "settingId": "user_vendor_msft_pde_protectfolders_protectdocuments",
-    "settingName": "Protect Documents (User) (Windows Insiders only)",
-    "settingDescription": "Allows the Admin to enable Personal Data Encryption on Documents folder. Set to '1' to set this policy.\r\n This setting is only available to Windows Insiders",
+    "settingName": "Protect Documents (User)",
+    "settingDescription": "Allows the Admin to enable Personal Data Encryption on Documents folder. Set to '1' to set this policy.",
     "keywords": [
       "Protect Documents",
       "Personal Data Encryption"
@@ -155254,7 +155731,7 @@
   {
     "settingId": "vendor_msft_sharedpc_maintenancestarttime",
     "settingName": "Maintenance Start Time",
-    "settingDescription": "Daily start time of maintenance hour. Given in minutes from midnight. Default is 0 (12am).",
+    "settingDescription": "Daily start time of maintenance hour. Given in minutes from midnight. Default is 0 (12am).  If used, this value must be set before the action on the EnableSharedPCMode node is taken.",
     "keywords": [
       "Maintenance Start Time",
       "SharedPC",
@@ -156151,7 +156628,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_update_updatenotificationlevel",
     "settingName": "Update Notification Level",
-    "settingDescription": "Display options for update notifications. This policy allows you to define what Windows Update notifications users see. This policy doesn't control how and when updates are downloaded and installed. Options:0 (default) – Use the default Windows Update notifications1 – Turn off all notifications, excluding restart warnings2 – Turn off all notifications, including restart warnings. Important. If you choose not to get update notifications and also define other Group policies so that devices aren't automatically getting updates, neither you nor device users will be aware of critical security, quality, or feature updates, and your devices may be at risk.",
+    "settingDescription": "Display options for update notifications. This policy allows you to define what Windows Update notifications users see. This policy doesn't control how and when updates are downloaded and installed. Options:0 (default) â€“ Use the default Windows Update notifications1 â€“ Turn off all notifications, excluding restart warnings2 â€“ Turn off all notifications, including restart warnings. Important. If you choose not to get update notifications and also define other Group policies so that devices aren't automatically getting updates, neither you nor device users will be aware of critical security, quality, or feature updates, and your devices may be at risk.",
     "keywords": [
       "Update Notification Level",
       "Update",
@@ -156202,6 +156679,16 @@
       "Windows Update For Business"
     ],
     "categoryName": "Windows Update For Business"
+  },
+  {
+    "settingId": "vendor_msft_wirelessnetworkpreference_prefercellularoverwifi",
+    "settingName": "Prefer Cellular Over Wi Fi (Windows Insiders only)",
+    "settingDescription": "It determines the order of preference between Wi-Fi and cellular networks. When the value is set to “False”, Wi-Fi is preferred over cellular. When the value is set to “True”, cellular is preferred over Wi-Fi. \r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Prefer Cellular Over Wi Fi",
+      "Wireless Network Preference"
+    ],
+    "categoryName": "Wireless Network Preference"
   },
   {
     "settingId": "user_vendor_msft_policy_config_word16v11~policy~l_microsoftofficeword~l_wordoptions~l_optionsgeneral_l_alternateclplabelcontentmarkanchoringoption",
@@ -156967,6 +157454,137 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_printers_configurewindowsprotectedprint",
+    "settingName": "Configure Windows protected print",
+    "settingDescription": "\r\nDetermines whether Windows protected print is enabled on this computer.\r\n\r\nBy default, Windows protected print is not enabled and there are not any restrictions on the print drivers that can be installed or print functionality.\r\n\r\nIf you enable this setting, the computer will operate in Windows protected print mode which only allows printing to printers that support a subset of inbox Windows print drivers.\r\n\r\nIf you disable this setting or do not configure it, there are not any restrictions on the print drivers that can be installed or print functionality.\r\n\r\nFor more information, please see https://learn.microsoft.com/en-us/windows-hardware/drivers/print/windows-protected-print-mode\r\n      ",
+    "keywords": [
+      "ConfigureWindowsProtectedPrint",
+      "Configure Windows protected print",
+      "\\Printers",
+      "Administrative Templates\\Printers",
+      "Printers"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_mssecurityguide_netbtnodetypeconfiguration",
+    "settingName": "NetBT NodeType configuration",
+    "settingDescription": "The NetBT NodeType setting determines what methods NetBT uses to register and resolve names:\r\n* A B-node computer uses broadcasts.\r\n* A P-node computer uses only point-to-point name queries to a name server (WINS).\r\n* An M-node computer broadcasts first, and then queries the name server.\r\n* An H-node computer queries the name server first, and then broadcasts.\r\nResolution through LMHOSTS or DNS follows these methods. If the NodeType value is present, it overrides any DhcpNodeType value.\r\nIf neither NodeType nor DhcpNodeType is present, the computer uses B-node if there are no WINS servers configured for the network, or H-node if there is at least one WINS server configured.\r\n",
+    "keywords": [
+      "Pol_SecGuide_0050_NetbtNodeTypeConfig",
+      "NetBT NodeType configuration",
+      "\\MS Security Guide",
+      "Administrative Templates\\MS Security Guide",
+      "MS Security Guide"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_desktopappinstaller_enablebypasscertificatepinningformicrosoftstore",
+    "settingName": "Enable App Installer Microsoft Store Source Certificate Validation Bypass",
+    "settingDescription": "This policy controls whether the Windows Package Manager will validate the Microsoft Store certificate hash matches to a known Microsoft Store certificate when initiating a connection to the Microsoft Store Source. \r\n\r\nIf you enable this policy, the Windows Package Manager will bypass the Microsoft Store certificate validation. \r\n\r\nIf you disable this policy, the Windows Package Manager will validate the Microsoft Store certificate used is valid and belongs to the Microsoft Store before communicating with the Microsoft Store source. \r\n\r\nIf you do not configure this policy, the Windows Package Manager administrator settings will be adhered to.",
+    "keywords": [
+      "EnableBypassCertificatePinningForMicrosoftStore",
+      "Enable App Installer Microsoft Store Source Certificate Validation Bypass",
+      "\\Windows Components\\Desktop App Installer",
+      "Administrative Templates\\Windows Components\\Desktop App Installer",
+      "Desktop App Installer"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_admx_windowsexplorer_disablemotwoninsecurepathcopy",
+    "settingName": "Do not apply the Mark of the Web tag to files copied from insecure sources",
+    "settingDescription": "This policy setting determines the application of the Mark of the Web tag to files sourced from insecure locations.\r\n\r\nIf you enable this policy setting, files copied from unsecure sources will not be tagged with the Mark of the Web.\r\n\r\nIf you disable or do not configure this policy setting, files copied from unsecure sources will be tagged with the appropriate Mark of the Web.\r\n\r\nNote: Failure to tag files from unsecure sources with the Mark of the Web can expose users’ computers to security risks.",
+    "keywords": [
+      "DisableMotWOnInsecurePathCopy",
+      "Do not apply the Mark of the Web tag to files copied from insecure sources",
+      "\\Windows Components\\File Explorer",
+      "Administrative Templates\\Windows Components\\File Explorer",
+      "File Explorer"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_internetexplorer_localmachinezonelogonoptions_iz_partname1a00",
+    "settingName": "Logon options (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "IZ_PolicyLogon_9",
+      "Logon options",
+      "\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Local Machine Zone",
+      "Administrative Templates\\Windows Components\\Internet Explorer\\Internet Control Panel\\Security Page\\Local Machine Zone",
+      "Local Machine Zone"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_admx_wpn_notoastnotification",
+    "settingName": "Turn off toast notifications",
+    "settingDescription": "\r\n          This policy setting turns off toast notifications for applications.\r\n\r\n          If you enable this policy setting, applications will not be able to raise toast notifications.\r\n\r\n          Note that this policy does not affect taskbar notification balloons.\r\n\r\n          Note that Windows system features are not affected by this policy.  You must enable/disable system features individually to stop their ability to raise toast notifications.\r\n\r\n          If you disable or do not configure this policy setting, toast notifications are enabled and can be turned off by the administrator or user.\r\n\r\n          No reboots or service restarts are required for this policy setting to take effect.\r\n      ",
+    "keywords": [
+      "NoToastNotification",
+      "Turn off toast notifications",
+      "\\Start Menu and Taskbar\\Notifications",
+      "Administrative Templates\\Start Menu and Taskbar\\Notifications",
+      "Notifications"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_admx_controlpaneldisplay_cpl_personalization_settheme",
+    "settingName": "Load a specific theme",
+    "settingDescription": "Specifies which theme file is applied to the computer the first time a user logs on.\r\n\r\nIf you enable this setting, the theme that you specify will be applied when a new user logs on for the first time.  This policy does not prevent the user from changing the theme or any of the theme elements such as the desktop background, color, sounds, or screen saver after the first logon.\r\n\r\nIf you disable or do not configure this setting, the default theme will be applied at the first logon.",
+    "keywords": [
+      "CPL_Personalization_SetTheme",
+      "Load a specific theme",
+      "\\Control Panel\\Personalization",
+      "Administrative Templates\\Control Panel\\Personalization",
+      "Personalization"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_privacy_letappsaccesssystemaimodels_forcedenytheseapps",
+    "settingName": "Let Apps Access System AI Models Force Deny These Apps",
+    "settingDescription": "List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied the use text and image generation features of Windows. This setting overrides the default LetAppsAccessSystemAIModels policy setting for the specified apps.",
+    "keywords": [
+      "Let Apps Access System AI Models Force Deny These Apps",
+      "Privacy"
+    ],
+    "categoryName": "Privacy"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_windowsai_disablecocreator",
+    "settingName": "Disable Cocreator",
+    "settingDescription": "This policy setting allows you to control whether Cocreator functionality is disabled in the Windows Paint app. If this policy is enabled, Cocreator functionality will not be accessible in the Paint app. If this policy is disabled or not configured, users will be able to access Cocreator functionality.",
+    "keywords": [
+      "Disable Cocreator",
+      "Windows AI"
+    ],
+    "categoryName": "Windows AI"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_windowsai_disablegenerativefill",
+    "settingName": "Disable Generative Fill",
+    "settingDescription": "This policy setting allows you to control whether generative fill functionality is disabled in the Windows Paint app. If this policy is enabled, generative fill functionality will not be accessible in the Paint app. If this policy is disabled or not configured, users will be able to access generative fill functionality.",
+    "keywords": [
+      "Disable Generative Fill",
+      "Windows AI"
+    ],
+    "categoryName": "Windows AI"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_windowsai_disableimagecreator",
+    "settingName": "Disable Image Creator",
+    "settingDescription": "This policy setting allows you to control whether Image Creator functionality is disabled in the Windows Paint app. If this policy is enabled, Image Creator functionality will not be accessible in the Paint app. If this policy is disabled or not configured, users will be able to access Image Creator functionality.",
+    "keywords": [
+      "Disable Image Creator",
+      "Windows AI"
+    ],
+    "categoryName": "Windows AI"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.adssettingforintrusiveadssites",
@@ -160791,7 +161409,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_internetexplorer_resetzoomfordialoginiemode",
     "settingName": "Reset zoom to default for HTML dialogs in Internet Explorer mode",
-    "settingDescription": "This policy setting lets admins reset zoom to default for HTML dialogs in Internet Explorer mode.\r\n\r\nIf you enable this policy, the zoom of an HTML dialog in Internet Explorer mode will not get propagated from its parent page.\r\n\r\nIf you disable, or don't configure this policy, the zoom of an HTML dialog in Internet Explorer mode will be set based on the zoom of it's parent page.\r\n\r\nFor more information, see https://go.microsoft.com/fwlink/?linkid=2102115",
+    "settingDescription": "This policy setting lets admins reset zoom to default for HTML dialogs in Internet Explorer mode.\r\n\r\nIf you enable this policy, the zoom of an HTML dialog in Internet Explorer mode will not get propagated from its parent page.\r\n\r\nIf you disable, or don't configure this policy, the zoom of an HTML dialog in Internet Explorer mode will be set based on the zoom of it's parent page.\r\n\r\nFor more information, see https://go.microsoft.com/fwlink/?linkid=2220107",
     "keywords": [
       "ResetZoomForDialogInIEMode",
       "Reset zoom to default for HTML dialogs in Internet Explorer mode",
@@ -167394,7 +168012,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_defender_schedulescantime",
     "settingName": "Schedule Scan Time",
-    "settingDescription": "Selects the time of day that the Windows Defender scan should run. Note The scan type will depends on what scan type is selected in the Defender/ScanParameter setting. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120.",
+    "settingDescription": "Selects the time of day that the weekly Windows Defender scan should run. Note The scan type will depends on what scan type is selected in the Defender/ScanParameter setting. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120.",
     "keywords": [
       "Schedule Scan Time",
       "Defender"
@@ -177827,7 +178445,7 @@
   {
     "settingId": "vendor_msft_sharedpc_diskleveldeletion",
     "settingName": "Disk Level Deletion",
-    "settingDescription": "Accounts will start being deleted when available disk space falls below this threshold, given as percent of total disk capacity. Accounts that have been inactive the longest will be deleted first.",
+    "settingDescription": "Accounts will start being deleted when available disk space falls below this threshold, given as percent of total disk capacity. Accounts that have been inactive the longest will be deleted first. If used, this value must be set before the action on the EnableSharedPCMode node is taken.",
     "keywords": [
       "Disk Level Deletion",
       "SharedPC",
@@ -177838,7 +178456,7 @@
   {
     "settingId": "vendor_msft_sharedpc_signinonresume",
     "settingName": "Sign In On Resume",
-    "settingDescription": "Require signing in on waking up from sleep.",
+    "settingDescription": "Require signing in on waking up from sleep. If used, this value must be set before the action on the EnableSharedPCMode node is taken.",
     "keywords": [
       "Sign In On Resume",
       "SharedPC",
@@ -178959,7 +179577,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_update_allowupdateservice",
     "settingName": "Allow Update Service",
-    "settingDescription": "Specifies whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Microsoft Store. Even when Windows Update is configured to receive updates from an intranet update service, it will periodically retrieve information from the public Windows Update service to enable future connections to Windows Update, and other services like Microsoft Update or the Microsoft Store. Enabling this policy will disable that functionality, and may cause connection to public services such as the Microsoft Store to stop working. Note This policy applies only when the desktop or device is configured to connect to an intranet update service using the Specify intranet Microsoft update service location policy.",
+    "settingDescription": "Specifies whether the device could use Microsoft Update, Windows Server Update Services (WSUS), or Microsoft Store. Even when Windows Update is configured to receive updates from an intranet update service, it will periodically retrieve information from the public Windows Update service to enable future connections to Windows Update, and other services like Microsoft Update or the Microsoft Store. Enabling this policy will disable that functionality, and may cause connection to public services such as the Microsoft Store to stop working. NoteÂ This policy applies only when the desktop or device is configured to connect to an intranet update service using the Specify intranet Microsoft update service location policy.",
     "keywords": [
       "Allow Update Service",
       "Update",
@@ -178970,7 +179588,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_update_deferupgradeperiod",
     "settingName": "Defer Upgrade Period",
-    "settingDescription": "NoteSince this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect. Don't use this policy in Windows 10, version 1607 devices, instead use the new policies listed in Changes in Windows 10, version 1607 for update management. You can continue to use DeferUpgradePeriod for Windows 10, version 1511 devices. Allows IT Admins to specify additional upgrade delays for up to 8 months. Supported values are 0-8, which refers to the number of months to defer upgrades. If the Specify intranet Microsoft update service location policy is enabled, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. If the Allow Telemetry policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.",
+    "settingDescription": "NoteSince this policy is not blocked, you will not get a failure message when you use it to configure a WindowsÂ 10 Mobile device. However, the policy will not take effect. Don't use this policy in WindowsÂ 10, version 1607 devices, instead use the new policies listed in Changes in Windows 10, version 1607 for update management. You can continue to use DeferUpgradePeriod for WindowsÂ 10, version 1511 devices. Allows IT Admins to specify additional upgrade delays for up to 8 months. Supported values are 0-8, which refers to the number of months to defer upgrades. If the Specify intranet Microsoft update service location policy is enabled, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect. If the Allow Telemetry policy is enabled and the Options value is set to 0, then the Defer upgrades by, Defer updates by and Pause Updates and Upgrades settings have no effect.",
     "keywords": [
       "Defer Upgrade Period",
       "Update",

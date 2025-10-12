@@ -1,5 +1,15 @@
 [
   {
+    "settingId": "device_vendor_msft_policy_config_privacy_letappsaccesssystemaimodels_userincontroloftheseapps",
+    "settingName": "Let Apps Access System AI Models User In Control Of These Apps",
+    "settingDescription": "List of semi-colon delimited Package Family Names of Microsoft Store Apps. The user is able to control the text and image generation setting for the listed apps. This setting overrides the default LetAppsAccessSystemAIModels policy setting for the specified apps.",
+    "keywords": [
+      "Let Apps Access System AI Models User In Control Of These Apps",
+      "Privacy"
+    ],
+    "categoryName": "Privacy"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_state",
     "settingName": "State",
     "settingDescription": "Controls whether an extension is allowed.\n* Allowed - The user is allowed to turn the extension on or off\n* AlwaysOn - The extension will always be on\n* AlwaysOff - The extension will always be off",
@@ -10885,6 +10895,16 @@
     "settingDescription": "List of semi-colon delimited Package Family Names of Windows Store Apps. Listed apps are allowed access to the user's movements while the apps are running in the background. This setting overrides the default LetAppsAccessBackgroundSpatialPerception policy setting for the specified apps.",
     "keywords": [
       "Let Apps Access Background Spatial Perception Force Allow These Apps",
+      "Privacy"
+    ],
+    "categoryName": "Privacy"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_privacy_letappsaccesssystemaimodels_forceallowtheseapps",
+    "settingName": "Let Apps Access System AI Models Force Allow These Apps",
+    "settingDescription": "List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are allowed to use text and image generation features of Windows. This setting overrides the default LetAppsAccessSystemAIModels policy setting for the specified apps.",
+    "keywords": [
+      "Let Apps Access System AI Models Force Allow These Apps",
       "Privacy"
     ],
     "categoryName": "Privacy"
@@ -33641,6 +33661,16 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_privacy_letappsaccesssystemaimodels",
+    "settingName": "Let Apps Access System AI Models",
+    "settingDescription": "This policy setting specifies whether Windows apps can use text and image generation features of Windows.",
+    "keywords": [
+      "Let Apps Access System AI Models",
+      "Privacy"
+    ],
+    "categoryName": "Privacy"
+  },
+  {
     "settingId": "com.apple.mcx_disableguestaccount",
     "settingName": "Disable Guest Account",
     "settingDescription": "If true, disables the guest account. This property has no effect if Enable Guest Account is true.",
@@ -39147,6 +39177,16 @@
       "Security"
     ],
     "categoryName": "Security"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_privacy_letappsaccesssystemaimodels_forcedenytheseapps",
+    "settingName": "Let Apps Access System AI Models Force Deny These Apps",
+    "settingDescription": "List of semi-colon delimited Package Family Names of Microsoft Store Apps. Listed apps are denied the use text and image generation features of Windows. This setting overrides the default LetAppsAccessSystemAIModels policy setting for the specified apps.",
+    "keywords": [
+      "Let Apps Access System AI Models Force Deny These Apps",
+      "Privacy"
+    ],
+    "categoryName": "Privacy"
   },
   {
     "settingId": "extensionsettings_managedextensions",
