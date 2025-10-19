@@ -949,7 +949,7 @@
   },
   {
     "settingId": "com.apple.applicationaccess_forcedelayedmajorsoftwareupdates",
-    "settingName": "Force Delayed Major Software Updates",
+    "settingName": "Force Delayed Major Software Updates (Deprecated)",
     "settingDescription": "If true, delays user visibility of non-OS Software Updates. Requires a supervised device. Visibility of Operating System updates is controlled through Force Delayed Software Updates. The delay is 30 days unless Enforced Software Update Delay is set to another value. Available in macOS 11 and later.",
     "keywords": [
       "Restrictions"
@@ -1392,16 +1392,6 @@
     "categoryName": "Accounts"
   },
   {
-    "settingId": "extensionsettings_managedextensions_generickey_denieddomains",
-    "settingName": "Denied Domains",
-    "settingDescription": "Controls the domains and sub-domains the extension is not allowed to access. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
-    "keywords": [
-      "Extension Settings",
-      "Safari Extension Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
     "settingId": "extensionsettings_managedextensions_generickey_privatebrowsing",
     "settingName": "Private Browsing",
     "settingDescription": "Controls whether an extension is allowed in Private Browsing.\n* Allowed - The user is allowed to turn the extension on or off in Private Browsing\n* AlwaysOn - The extension will always be on in Private Browsing if the extension is on outside of Private Browsing\n* AlwaysOff - The extension will never be on in Private Browsing",
@@ -1412,37 +1402,9 @@
     "categoryName": "Declarative Device Management (DDM)"
   },
   {
-    "settingId": "extensionsettings_managedextensions_generickey",
-    "settingName": "ANY",
-    "settingDescription": "The composed identifier of the managed extension, or \"*\" for all extensions. In order for the extension to be managed, its host app must be present on the device.",
-    "keywords": [
-      "Extension Settings",
-      "Safari Extension Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "com.apple.caldav.account_caldavport",
-    "settingName": "Cal DAV Port",
-    "settingDescription": "The server’s port.",
-    "keywords": [
-      "Caldav"
-    ],
-    "categoryName": "Accounts"
-  },
-  {
     "settingId": "com.apple.caldav.account_caldavhostname",
     "settingName": "Cal DAV Host Name",
     "settingDescription": "The server’s address.",
-    "keywords": [
-      "Caldav"
-    ],
-    "categoryName": "Accounts"
-  },
-  {
-    "settingId": "com.apple.caldav.account_caldavpassword",
-    "settingName": "Cal DAV Password",
-    "settingDescription": "The user’s password. This is only used with encrypted profiles.",
     "keywords": [
       "Caldav"
     ],
@@ -1458,27 +1420,9 @@
     "categoryName": "Accounts"
   },
   {
-    "settingId": "com.apple.carddav.account_carddavport",
-    "settingName": "Card DAV Port",
-    "settingDescription": "The server’s port.",
-    "keywords": [
-      "Carddav"
-    ],
-    "categoryName": "Accounts"
-  },
-  {
     "settingId": "com.apple.carddav.account_com.apple.carddav.account",
     "settingName": "Top Level Setting Group Collection",
     "settingDescription": "com.apple.carddav.account",
-    "keywords": [
-      "Carddav"
-    ],
-    "categoryName": "Accounts"
-  },
-  {
-    "settingId": "com.apple.carddav.account_carddavprincipalurl",
-    "settingName": "Card DAV Principal URL",
-    "settingDescription": "The base URL to the user’s address book.",
     "keywords": [
       "Carddav"
     ],
@@ -1492,16 +1436,6 @@
       "Carddav"
     ],
     "categoryName": "Accounts"
-  },
-  {
-    "settingId": "com.apple.airplay_passwords_item_deviceid",
-    "settingName": "Device ID",
-    "settingDescription": "The device ID of the AirPlay destination; used in macOS.",
-    "keywords": [
-      "Air Play",
-      "AirPlay"
-    ],
-    "categoryName": "AirPlay"
   },
   {
     "settingId": "com.apple.airplay_allowlist",
@@ -1532,15 +1466,6 @@
     "categoryName": "Managed Settings"
   },
   {
-    "settingId": "settings_item_defaultapplications",
-    "settingName": "Default Applications",
-    "settingDescription": "A dictionary that contains default application bundle identifiers. Currently it supports a default web browser app.",
-    "keywords": [
-      "Default Applications"
-    ],
-    "categoryName": "Managed Settings"
-  },
-  {
     "settingId": "settings_item_mdmoptions_mdmoptions_promptusertoallowbootstraptokenforauthentication",
     "settingName": "Prompt User To Allow Bootstrap Token For Authentication",
     "settingDescription": "If `true`, warn the user that they need to reboot into RecoveryOS and allow the MDM server to use the Bootstrap Token for authentication for certain sensitive operations; for example, enabling kernel extensions or installing certain types of software updates. Set this value to `false` if your MDM server doesn't need to perform these operations. The value provided here overrides the value specified in MDM, and only applies when `BootstrapTokenAllowedForAuthentication` is `true` in the `SecurityInfo` response. This value is available for a Mac with Apple silicon in macOS 11 and later.",
@@ -1566,24 +1491,6 @@
       "Bluetooth"
     ],
     "categoryName": "Managed Settings"
-  },
-  {
-    "settingId": "settings_item_wallpaper_image",
-    "settingName": "Image",
-    "settingDescription": "A Base64-encoded image in either PNG or JPG format to use for wallpaper.",
-    "keywords": [
-      "Wallpaper"
-    ],
-    "categoryName": "Managed Settings"
-  },
-  {
-    "settingId": "com.apple.font_font",
-    "settingName": "Font",
-    "settingDescription": "The contents of the font file.",
-    "keywords": [
-      "Font"
-    ],
-    "categoryName": "System Configuration"
   },
   {
     "settingId": "mathsettings_systembehavior",
@@ -1631,15 +1538,6 @@
     "categoryName": "Declarative Device Management (DDM)"
   },
   {
-    "settingId": "enforcement_enforcement",
-    "settingName": "com.apple.configuration.softwareupdate.enforcement.specific",
-    "settingDescription": "Synthetic Top Level Setting Group Collection",
-    "keywords": [
-      "Software Update"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
     "settingId": "settings_item_personalhotspot_enabled",
     "settingName": "Enabled",
     "settingDescription": "If `true`, enable Personal Hotspot. If `false`, disable Personal Hotspot.",
@@ -1649,45 +1547,9 @@
     "categoryName": "Managed Settings"
   },
   {
-    "settingId": "com.apple.cellular_apns_item_proxyserver",
-    "settingName": "Proxy Server",
-    "settingDescription": "The proxy server's address.",
-    "keywords": [
-      "Cellular"
-    ],
-    "categoryName": "Networking"
-  },
-  {
-    "settingId": "com.apple.cellular_apns_item_authenticationtype",
-    "settingName": "Authentication Type",
-    "settingDescription": "The authentication type for logging in.",
-    "keywords": [
-      "Cellular"
-    ],
-    "categoryName": "Networking"
-  },
-  {
     "settingId": "com.apple.cellular_attachapn_authenticationtype",
     "settingName": "Authentication Type",
     "settingDescription": "The authentication type for logging in.",
-    "keywords": [
-      "Cellular"
-    ],
-    "categoryName": "Networking"
-  },
-  {
-    "settingId": "com.apple.cellular_apns_item_allowedprotocolmask",
-    "settingName": "Allowed Protocol Mask",
-    "settingDescription": "The supported Internet Protocol versions. Available in iOS 10.3 and later.",
-    "keywords": [
-      "Cellular"
-    ],
-    "categoryName": "Networking"
-  },
-  {
-    "settingId": "com.apple.cellular_apns_item_allowedprotocolmaskinroaming",
-    "settingName": "Allowed Protocol Mask In Roaming",
-    "settingDescription": "The supported Internet Protocol versions while roaming. Available in iOS 10.3 and later.",
     "keywords": [
       "Cellular"
     ],
@@ -1703,15 +1565,6 @@
     "categoryName": "Networking"
   },
   {
-    "settingId": "com.apple.profileremovalpassword_com.apple.profileremovalpassword",
-    "settingName": "Top Level Setting Group Collection",
-    "settingDescription": "com.apple.profileRemovalPassword",
-    "keywords": [
-      "Profile Removal Password"
-    ],
-    "categoryName": "Profile Removal Password"
-  },
-  {
     "settingId": "ddm-latestsoftwareupdate_ddm-latestsoftwareupdate",
     "settingName": "Top Level Setting Group Collection",
     "settingDescription": "Synthetic Top Level Setting Group Collection",
@@ -1719,42 +1572,6 @@
       "Software Update Enforce Latest"
     ],
     "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "com.apple.app.lock_app_options_enablemonoaudio",
-    "settingName": "Enable Mono Audio",
-    "settingDescription": "If true, enables Mono Audio.",
-    "keywords": [
-      "App Lock"
-    ],
-    "categoryName": "App Management"
-  },
-  {
-    "settingId": "com.apple.app.lock_app_options",
-    "settingName": "Options",
-    "settingDescription": "A dictionary of options that the user cannot change.",
-    "keywords": [
-      "App Lock"
-    ],
-    "categoryName": "App Management"
-  },
-  {
-    "settingId": "com.apple.app.lock_app_userenabledoptions_voicecontrol",
-    "settingName": "Voice Control",
-    "settingDescription": "If true, allows the user to toggle Voice Control.",
-    "keywords": [
-      "App Lock"
-    ],
-    "categoryName": "App Management"
-  },
-  {
-    "settingId": "com.apple.app.lock_app_options_enablevoicecontrol",
-    "settingName": "Enable Voice Control",
-    "settingDescription": "If true, enables Voice Control.",
-    "keywords": [
-      "App Lock"
-    ],
-    "categoryName": "App Management"
   },
   {
     "settingId": "com.apple.airprint_airprint_item_port",
@@ -1786,15 +1603,6 @@
     "categoryName": "Restrictions"
   },
   {
-    "settingId": "com.apple.applicationaccess_ratingappsau",
-    "settingName": "Rating Apps - Australia",
-    "settingDescription": "The maximum level of app content allowed on the device. Available in iOS 4 and later.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
     "settingId": "com.apple.applicationaccess_deniediccidsforrcs",
     "settingName": "Denied ICCIDs For RCS",
     "settingDescription": "An array of strings representing ICCIDs of cellular plans. The device prevents use of any matching cellular networks with RCS messaging. The array must contain no more than 4 ICCID strings.",
@@ -1807,24 +1615,6 @@
     "settingId": "com.apple.applicationaccess_allowpasswordproximityrequests",
     "settingName": "Allow Password Proximity Requests",
     "settingDescription": "If false, disables requesting passwords from nearby devices. Requires a supervised device. Available in iOS 12 and later, and macOS 10.14 and later.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
-    "settingId": "com.apple.applicationaccess_allowproximitysetuptonewdevice",
-    "settingName": "Allow Proximity Setup To New Device",
-    "settingDescription": "If false, disables the prompt to set up new devices that are nearby. Requires a supervised device. Available in iOS 11 and later.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
-    "settingId": "com.apple.applicationaccess_allowvisualintelligencesummary",
-    "settingName": "Allow Visual Intelligence Summary",
-    "settingDescription": "If `false`, the system disables visual intelligence summarization.",
     "keywords": [
       "Restrictions"
     ],
@@ -1858,36 +1648,9 @@
     "categoryName": "Restrictions"
   },
   {
-    "settingId": "com.apple.applicationaccess_safariallowautofill",
-    "settingName": "Safari Allow Autofill",
-    "settingDescription": "If false, disables Safari AutoFill for passwords, contact info, and credit cards and also prevents the Keychain from being used for AutoFill. Though third-party password managers are allowed and apps can use AutoFill. As of iOS 13, requires a supervised device. Available in iOS 4 and later, and macOS 10.13 and later.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
-    "settingId": "com.apple.applicationaccess_allowdiagnosticsubmission",
-    "settingName": "Allow Diagnostic Submission",
-    "settingDescription": "If false, prevents the device from automatically submitting diagnostic reports to Apple. Available in iOS 6 and later, and macOS 10.13 and later. Also available for user enrollment.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
     "settingId": "com.apple.applicationaccess_allowfingerprintforunlock",
     "settingName": "Allow Fingerprint For Unlock",
     "settingDescription": "If false, prevents Touch ID or Face ID from unlocking a device. Available in iOS 7 and later, and macOS 10.12.4 and later.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
-    "settingId": "com.apple.applicationaccess_allowpasscodemodification",
-    "settingName": "Allow Passcode Modification",
-    "settingDescription": "If false, prevents the device passcode from being added, changed, or removed. This restriction is ignored by Shared iPads. Requires a supervised device. Available in iOS 9 and later, and macOS 10.13 and later.",
     "keywords": [
       "Restrictions"
     ],
@@ -1921,24 +1684,6 @@
     "categoryName": "Restrictions"
   },
   {
-    "settingId": "com.apple.applicationaccess_allowdefaultbrowsermodification",
-    "settingName": "Allow Default Browser Modification",
-    "settingDescription": "If false, disables default browser preference modification. The MDM Settings command to set the default browser preference will still work when this is applied.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
-    "settingId": "com.apple.applicationaccess_allowenterprisebookmetadatasync",
-    "settingName": "Allow Enterprise Book Metadata Sync",
-    "settingDescription": "If false, disables sync of Enterprise books, notes, and highlights. Available in iOS 8 and later. Also available for user enrollment.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
     "settingId": "com.apple.applicationaccess_allowmarketplaceappinstallation",
     "settingName": "Allow Marketplace App Installation",
     "settingDescription": "When 'false', the device prevents installation of alternative marketplace apps from the web, and prevents any installed alternative marketplace apps from installing apps.",
@@ -1957,36 +1702,9 @@
     "categoryName": "Restrictions"
   },
   {
-    "settingId": "com.apple.applicationaccess_allowprintersharingmodification",
-    "settingName": "Allow Printer Sharing Modification",
-    "settingDescription": "If 'false', prevents modifying Printer Sharing setting in System Settings.\nAvailable in macOS 14 and later.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
     "settingId": "com.apple.applicationaccess_deniediccidsforimessagefacetime",
     "settingName": "Denied ICCIDs For iMessage And FaceTime",
     "settingDescription": "An array of strings representing ICCIDs of cellular plans. The device prevents use of any matching cellular networks in iMessage and FaceTime. The array must contain no more than 4 ICCID strings.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
-    "settingId": "com.apple.applicationaccess_forceclassroomunpromptedappanddevicelock",
-    "settingName": "Force Classroom Unprompted App And Device Lock",
-    "settingDescription": "If true, allows the teacher to lock apps or the device without prompting the student. Requires a supervised device. Available in iOS 11 and later, and macOS 10.14.4 and later.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
-    "settingId": "com.apple.applicationaccess_allowlockscreennotificationsview",
-    "settingName": "Allow Lock Screen Notifications View",
-    "settingDescription": "If false, disables the Notifications history view on the lock screen, so users can’t view past notifications. However, they can still see notifications when they arrive. Available in iOS 7 and later. Also available for user enrollment.",
     "keywords": [
       "Restrictions"
     ],
@@ -2002,15 +1720,6 @@
     "categoryName": "Restrictions"
   },
   {
-    "settingId": "com.apple.applicationaccess_allownfc",
-    "settingName": "Allow NFC",
-    "settingDescription": "If false, disables NFC. Requires a supervised device. Available in iOS 14.2 and later.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
     "settingId": "com.apple.applicationaccess_allowrcsmessaging",
     "settingName": "Allow RCS Messaging",
     "settingDescription": "If false, prevents the use of RCS messaging.",
@@ -2020,45 +1729,9 @@
     "categoryName": "Restrictions"
   },
   {
-    "settingId": "com.apple.applicationaccess_allowapplepersonalizedadvertising",
-    "settingName": "Allow Apple Personalized Advertising",
-    "settingDescription": "If false, limits Apple personalized advertising. Available in iOS 14 and later.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
-    "settingId": "com.apple.applicationaccess_allowedcamerarestrictionbundleids",
-    "settingName": "Allowed Camera Restriction Bundle IDs",
-    "settingDescription": "If present, the system exempts apps with bundle IDs in the array from the `allowCamera` restriction. The system doesn't grant these apps access to the camera automatically; they're only exempted from the `allowCamera` restriction. This key has no effect when the camera isn't restricted. Multiple payloads combine using an intersect operation. Requires a supervised device.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
     "settingId": "com.apple.applicationaccess_allowshareddevicetemporarysession",
     "settingName": "Allow Shared Device Temporary Session",
     "settingDescription": "If false, temporary sessions aren’t available on Shared iPad. Available in iOS 13.4 and later.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
-    "settingId": "com.apple.applicationaccess_allowenterpriseapptrust",
-    "settingName": "Allow Enterprise App Trust",
-    "settingDescription": "If false, removes the Trust Enterprise Developer button in Settings > General > Profiles & Device Management, preventing apps from being provisioned by universal provisioning profiles. This restriction applies to free developer accounts. However, it doesn’t apply to enterprise app developers who are trusted because their apps were pushed through MDM. It also doesn’t revoke previously granted trust. Available in iOS 9 and later.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
-    "settingId": "com.apple.applicationaccess_allowiphonewidgetsonmac",
-    "settingName": "Allow iPhone Widgets On Mac",
-    "settingDescription": "If 'false', disallows iPhone widgets on a Mac that has signed in the same AppleID for iCloud. Supervised only.\nAvailable on iOS 17 and later.",
     "keywords": [
       "Restrictions"
     ],
@@ -2095,15 +1768,6 @@
     "settingId": "com.apple.applicationaccess_forcewifipoweron",
     "settingName": "Force WiFi Power On",
     "settingDescription": "If true, prevents Wi-Fi from being turned off in Settings or Control Center, even by entering or leaving Airplane Mode. It doesn’t prevent selecting which Wi-Fi network to use. Requires a supervised device. Available in iOS 13.0 and later.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
-    "settingId": "com.apple.applicationaccess_allowlocalusercreation",
-    "settingName": "Allow Local User Creation",
-    "settingDescription": "If 'false', prevents creating new users in System Settings.\nAvailable in macOS 14 and later.",
     "keywords": [
       "Restrictions"
     ],
@@ -2164,42 +1828,6 @@
     "categoryName": "Restrictions"
   },
   {
-    "settingId": "com.apple.applicationaccess_ratingtvshowsus",
-    "settingName": "Rating TV Shows - United States",
-    "settingDescription": "The maximum level of TV content allowed on the device. Available in iOS 4 and later.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
-    "settingId": "com.apple.applicationaccess_allowbookstoreerotica",
-    "settingName": "Allow Bookstore Erotica",
-    "settingDescription": "If false, the user can’t download Apple Books media that is tagged as erotica. Available in iOS 6 and later.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
-    "settingId": "com.apple.applicationaccess_allowdefinitionlookup",
-    "settingName": "Allow Definition Lookup",
-    "settingDescription": "If false, disables definition lookup. Requires a supervised device on iOS. Available in iOS 8.1.3 and later and macOS 10.11 and later.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
-    "settingId": "com.apple.applicationaccess_allowpasswordautofill",
-    "settingName": "Allow Password Auto Fill",
-    "settingDescription": "If false, disables the AutoFill Passwords feature in iOS (with Keychain and third-party password managers) and the user isn’t prompted to use a saved password in Safari or in apps. This restriction also disables Automatic Strong Passwords, and strong passwords are no longer suggested to users. It doesn’t prevent AutoFill for contact info and credit cards in Safari. Requires a supervised device. Available in iOS 12 and later, and macOS 10.14 and later.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
     "settingId": "com.apple.applicationaccess_ratingmoviesgb",
     "settingName": "Rating Movies - Great Britain",
     "settingDescription": "The maximum level of movie content allowed on the device. Available in iOS 4 and later.",
@@ -2245,15 +1873,6 @@
     "categoryName": "Restrictions"
   },
   {
-    "settingId": "com.apple.applicationaccess_allowimageplayground",
-    "settingName": "Allow Image Playground",
-    "settingDescription": "If false, prohibits the use of image generation.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
     "settingId": "com.apple.applicationaccess_forceencryptedbackup",
     "settingName": "Force Encrypted Backup",
     "settingDescription": "If true, encrypts all backups. Available in iOS 4 and later. Also available for user enrollment.",
@@ -2275,60 +1894,6 @@
     "settingId": "com.apple.applicationaccess_allowassistantusergeneratedcontent",
     "settingName": "Allow Assistant User Generated Content",
     "settingDescription": "If false, prevents Siri from querying user-generated content from the web. Requires a supervised device. Available in iOS 7 and later.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
-    "settingId": "com.apple.applicationaccess_allowvideoconferencingremotecontrol",
-    "settingName": "Allow Video Conferencing Remote Control (Deprecated)",
-    "settingDescription": "If `false`, disables the ability for a remote FaceTime session to request control of the device.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
-    "settingId": "com.apple.applicationaccess_allowwebdistributionappinstallation",
-    "settingName": "Allow Web Distribution App Installation",
-    "settingDescription": "When 'false', the device prevents installation of apps directly from the web.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
-    "settingId": "com.apple.applicationaccess_allowbluetoothmodification",
-    "settingName": "Allow Bluetooth Modification",
-    "settingDescription": "If false, prevents modification of Bluetooth settings. Requires a supervised device. Available in iOS 11 and later.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
-    "settingId": "com.apple.applicationaccess_allowesimoutgoingtransfers",
-    "settingName": "Allow ESIM Outgoing Transfers",
-    "settingDescription": "If 'false', prevents the transfer of an eSIM from the device on which the restriction is installed to a different device. Available in iOS 18 and later.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
-    "settingId": "com.apple.applicationaccess_enforcedsoftwareupdateminorosdeferredinstalldelay",
-    "settingName": "Enforced Software Update Minor OS Deferred Install Delay",
-    "settingDescription": "This restriction allows the admin to set how many days to delay a minor OS software update on the device. When this restriction is in place the user see a software update only after the specified delay after the release of the software update. This value controls the delay for Force Delayed Software Updates. Available in macOS 11.3 and later.",
-    "keywords": [
-      "Restrictions"
-    ],
-    "categoryName": "Restrictions"
-  },
-  {
-    "settingId": "com.apple.applicationaccess_allowmanagedtowriteunmanagedcontacts",
-    "settingName": "Allow Managed To Write Unmanaged Contacts",
-    "settingDescription": "If true, managed apps can write contacts to unmanaged contacts accounts. If Allow Open From Managed To Unmanaged is true, this restriction has no effect. If this restriction is set to true, you must install the payload through MDM. Available in iOS 12 and later.",
     "keywords": [
       "Restrictions"
     ],
@@ -2371,15 +1936,6 @@
     "categoryName": "Security"
   },
   {
-    "settingId": "com.apple.mobiledevice.passwordpolicy_changeatnextauth",
-    "settingName": "Change At Next Auth",
-    "settingDescription": "If true, causes a password reset to occur the next time the user tries to authenticate. If this key is set in a device profile, the setting takes effect for all users, and admin authentications may fail until the admin user password is also reset. Available in macOS 10.13 and later.",
-    "keywords": [
-      "Passcode"
-    ],
-    "categoryName": "Security"
-  },
-  {
     "settingId": "com.apple.mobiledevice.passwordpolicy_maxfailedattempts",
     "settingName": "Max Failed Attempts",
     "settingDescription": "The number of allowed failed attempts to enter the passcode at the device's lock screen. After six failed attempts, a time delay is imposed before a passcode can be entered again. The delay increases with each attempt. In macOS, set Minutes Until Failed Login Reset to define a delay before the next passcode can be entered. When this number is exceeded in macOS, the device is locked; in iOS, the device is wiped.",
@@ -2387,15 +1943,6 @@
       "Passcode"
     ],
     "categoryName": "Security"
-  },
-  {
-    "settingId": "settings_item_dataroaming",
-    "settingName": "Data Roaming",
-    "settingDescription": "A dictionary that contains data roaming settings. This setting requires the Network Information access right, and doesn't support user enrollment. Available in iOS 5 and later.",
-    "keywords": [
-      "Data Roaming"
-    ],
-    "categoryName": "Managed Settings"
   },
   {
     "settingId": "com.apple.extensiblesso_extensiondata_domainrealmmapping_generickey_kerberos_string",
@@ -2410,24 +1957,6 @@
     "settingId": "com.apple.extensiblesso_com.apple.extensiblesso-kerberos_kerberos",
     "settingName": "Top Level Setting Group Collection",
     "settingDescription": "Synthetic Top Level Setting Group Collection",
-    "keywords": [
-      "Extensible Single Sign On Kerberos"
-    ],
-    "categoryName": "Authentication"
-  },
-  {
-    "settingId": "com.apple.extensiblesso_type_kerberos",
-    "settingName": "Type",
-    "settingDescription": "This value must be Credential for the Kerberos extension.",
-    "keywords": [
-      "Extensible Single Sign On Kerberos"
-    ],
-    "categoryName": "Authentication"
-  },
-  {
-    "settingId": "com.apple.extensiblesso_extensiondata_requiretlsforldap_kerberos",
-    "settingName": "Require TLS For LDAP",
-    "settingDescription": "Require that LDAP connections use TLS. Available in macOS 11 and later.",
     "keywords": [
       "Extensible Single Sign On Kerberos"
     ],
@@ -2470,24 +1999,6 @@
     "categoryName": "Authentication"
   },
   {
-    "settingId": "com.apple.extensiblesso_extensiondata_customusernamelabel_kerberos",
-    "settingName": "Custom Username Label",
-    "settingDescription": "The custom user name label used in the Kerberos extension instead of “Username”. For example, “Company ID”. Available in macOS 11 and later.",
-    "keywords": [
-      "Extensible Single Sign On Kerberos"
-    ],
-    "categoryName": "Authentication"
-  },
-  {
-    "settingId": "com.apple.extensiblesso_extensiondata_performkerberosonly_kerberos",
-    "settingName": "Perform Kerberos Only",
-    "settingDescription": "If true, the Kerberos Extension handles Kerberos requests only. It doesn’t check for password expiration, show the password expiration in the menu, check for external password changes, perform password sync, or retrieve the home directory. Available in macOS 13 and later.",
-    "keywords": [
-      "Extensible Single Sign On Kerberos"
-    ],
-    "categoryName": "Authentication"
-  },
-  {
     "settingId": "com.apple.extensiblesso_extensiondata_requireuserpresence_kerberos",
     "settingName": "Require User Presence",
     "settingDescription": "If true, requires the user to provide Touch ID, Face ID or their passcode to access the keychain entry.",
@@ -2497,36 +2008,9 @@
     "categoryName": "Authentication"
   },
   {
-    "settingId": "com.apple.extensiblesso_extensiondata_pwreqlength_kerberos",
-    "settingName": "Password Req Length",
-    "settingDescription": "The minimum length of passwords on the domain. Available in macOS 10.15 and later.",
-    "keywords": [
-      "Extensible Single Sign On Kerberos"
-    ],
-    "categoryName": "Authentication"
-  },
-  {
-    "settingId": "com.apple.extensiblesso_extensiondata_pwreqcomplexity_kerberos",
-    "settingName": "Password Req Complexity",
-    "settingDescription": "If true, passwords must meet Active Directory's definition of \"complex\". Available in macOS 10.15 and later.",
-    "keywords": [
-      "Extensible Single Sign On Kerberos"
-    ],
-    "categoryName": "Authentication"
-  },
-  {
     "settingId": "com.apple.subscribedcalendar.account_subcalaccountpassword",
     "settingName": "Account Password",
     "settingDescription": "The user’s password.",
-    "keywords": [
-      "Subscribed Calendars"
-    ],
-    "categoryName": "Accounts"
-  },
-  {
-    "settingId": "com.apple.subscribedcalendar.account_subcalaccountusername",
-    "settingName": "Account Username",
-    "settingDescription": "The user's username.",
     "keywords": [
       "Subscribed Calendars"
     ],
@@ -2579,45 +2063,6 @@
       "Declarative Device Management (DDM)\\Passcode"
     ],
     "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "passcode_maximumpasscodeageindays",
-    "settingName": "Maximum Passcode Age In Days",
-    "settingDescription": "Specifies the maximum number of days that the passcode can remain unchanged. After this number of days, the system forces the user to change the passcode before it unlocks the device.",
-    "keywords": [
-      "Passcode",
-      "Declarative Device Management (DDM)\\Passcode"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "passcode_requirealphanumericpasscode",
-    "settingName": "Require Alphanumeric Passcode",
-    "settingDescription": "If `true`, the passcode needs to consist of at least one alphabetic character and at least one number.",
-    "keywords": [
-      "Passcode",
-      "Declarative Device Management (DDM)\\Passcode"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "passcode_requirepasscode",
-    "settingName": "Require Passcode on Device",
-    "settingDescription": "Specifies whether the user is forced to set a passcode. Setting this value, without any other keys present, forces the user to enter a passcode, without imposing a length or quality. The presence of any of the other keys implicitly requires a passcode be present on the device, and this key is ignored.",
-    "keywords": [
-      "Settings",
-      "Passcode"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "com.apple.extensiblesso_platformsso_tokentousermapping_fullname",
-    "settingName": "Full Name",
-    "settingDescription": "The claim name to use for the user's full name.",
-    "keywords": [
-      "Extensible Single Sign On (SSO)"
-    ],
-    "categoryName": "Authentication"
   },
   {
     "settingId": "com.apple.extensiblesso_platformsso_accountdisplayname",
@@ -2695,24 +2140,6 @@
     "categoryName": "Authentication"
   },
   {
-    "settingId": "com.apple.extensiblesso_platformsso_enablecreateuseratlogin",
-    "settingName": "Enable Create User At Login",
-    "settingDescription": "Enables creating new users at the login window with either Passwords or SmartCards. Requires 'UseSharedDeviceKeys' is true.",
-    "keywords": [
-      "Extensible Single Sign On (SSO)"
-    ],
-    "categoryName": "Authentication"
-  },
-  {
-    "settingId": "com.apple.extensiblesso_platformsso_userauthorizationmode",
-    "settingName": "User Authorization Mode",
-    "settingDescription": "This setting affects the permissions after authentication by Platform SSO. It is applied each time user authenticates. Use of the following:\n* Standard\n    The account will be a standard user. It will be removed from the 'admin' group.\n* Admin\n    The account will be added to the local administrators group.\n* Groups\n    The account will be assigned groups using the 'AdministratorGroups', 'AdditionalGroups', or 'AuthorizationGroups'.",
-    "keywords": [
-      "Extensible Single Sign On (SSO)"
-    ],
-    "categoryName": "Authentication"
-  },
-  {
     "settingId": "com.apple.extensiblesso_platformsso_newuserauthorizationmode",
     "settingName": "New User Authorization Mode",
     "settingDescription": "This setting affects the permissions for accounts created at login by Platform SSO. It is only used when the account is created. Use of the following:\n* Standard\n    The account will be a standard user.\n* Admin\n    The account will be added to the local administrators group.\n* Groups\n    The account will be assigned groups using the 'AdministratorGroups', 'AdditionalGroups', or 'AuthorizationGroups'.",
@@ -2720,15 +2147,6 @@
       "Extensible Single Sign On (SSO)"
     ],
     "categoryName": "Authentication"
-  },
-  {
-    "settingId": "com.apple.dnssettings.managed_dnssettings",
-    "settingName": "DNS Settings",
-    "settingDescription": "A dictionary that defines a configuration for an encrypted DNS server.",
-    "keywords": [
-      "DNS Settings"
-    ],
-    "categoryName": "Networking"
   },
   {
     "settingId": "com.apple.dnssettings.managed_dnssettings_serverurl",
@@ -2749,15 +2167,6 @@
     "categoryName": "Networking"
   },
   {
-    "settingId": "com.apple.cellularprivatenetwork.managed_geofences",
-    "settingName": "Geofences",
-    "settingDescription": "A list of up to 1000 geofences for private networks. Geofencing is only used on iPhone.",
-    "keywords": [
-      "Cellular Private Network"
-    ],
-    "categoryName": "Cellular Private Network"
-  },
-  {
     "settingId": "com.apple.cellularprivatenetwork.managed_geofences_item_geofenceid",
     "settingName": "Geofence Id",
     "settingDescription": "A geofence identifier that's unique within a list of geofences.",
@@ -2767,36 +2176,9 @@
     "categoryName": "Cellular Private Network"
   },
   {
-    "settingId": "com.apple.cellularprivatenetwork.managed_versionnumber",
-    "settingName": "Version Number",
-    "settingDescription": "The version number of this dataset that the system uses to track updates.",
-    "keywords": [
-      "Cellular Private Network"
-    ],
-    "categoryName": "Cellular Private Network"
-  },
-  {
-    "settingId": "safari_allowjavascript",
-    "settingName": "Allow Java Script",
-    "settingDescription": "If `false`, the system disables JavaScript in Safari.",
-    "keywords": [
-      "Safari Browser"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
     "settingId": "safari_allowsummary",
     "settingName": "Allow Summary",
     "settingDescription": "If `false`, the system disables summarization of content in Safari.",
-    "keywords": [
-      "Safari Browser"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "safari_safari",
-    "settingName": "com.apple.configuration.safari.settings",
-    "settingDescription": "Synthetic Top Level Setting Group Collection",
     "keywords": [
       "Safari Browser"
     ],
@@ -2826,6 +2208,694 @@
     "settingDescription": "Specifies the number of days to defer system or non-OS updates. When set, updates only appear after the specified delay, following the release of the update.",
     "keywords": [
       "Software Update Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "com.apple.webcontent-filter_filterpacketproviderdesignatedrequirement",
+    "settingName": "Filter Packet Provider Designated Requirement",
+    "settingDescription": "The designated requirement string that the system embeds in the code signature of the filter packet provider system extension. This string identifies the filter packet provider when the filter starts running. This field is a requirement if Filter Packets is true.",
+    "keywords": [
+      "Web Content Filter"
+    ],
+    "categoryName": "Web Content Filter"
+  },
+  {
+    "settingId": "com.apple.webcontent-filter_filterdataproviderbundleidentifier",
+    "settingName": "Filter Data Provider Bundle Identifier",
+    "settingDescription": "The bundle identifier string of the filter data provider system extension. This string identifies the filter data provider when the filter starts running. This field is a requirement if Filter Sockets is true.",
+    "keywords": [
+      "Web Content Filter"
+    ],
+    "categoryName": "Web Content Filter"
+  },
+  {
+    "settingId": "com.apple.webcontent-filter_filtertype",
+    "settingName": "Filter Type",
+    "settingDescription": "The type of filter, built-in or plug-in. In macOS, the system supports only the plug-in value.",
+    "keywords": [
+      "Web Content Filter"
+    ],
+    "categoryName": "Web Content Filter"
+  },
+  {
+    "settingId": "com.apple.proxy.http.global_com.apple.proxy.http.global",
+    "settingName": "Top Level Setting Group Collection",
+    "settingDescription": "com.apple.proxy.http.global",
+    "keywords": [
+      "Global HTTP Proxy"
+    ],
+    "categoryName": "Proxies"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsdaily",
+    "settingName": "Mute notifications daily",
+    "settingDescription": null,
+    "keywords": [
+      "Mute",
+      "Notifications",
+      "Teams",
+      "Outlook",
+      "Daily",
+      "Certain Hours"
+    ],
+    "categoryName": "Certain Hours"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_authentication_enablewebsignin",
+    "settingName": "Enable Web Sign In",
+    "settingDescription": "Specifies whether web-based sign-in is allowed for signing in to Windows",
+    "keywords": [
+      "Enable Web Sign In",
+      "Authentication"
+    ],
+    "categoryName": "Authentication"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_authentication_allowfastreconnect",
+    "settingName": "Allow Fast Reconnect",
+    "settingDescription": "Allows EAP Fast Reconnect from being attempted for EAP Method TLS. Most restricted value is 0.",
+    "keywords": [
+      "Allow Fast Reconnect",
+      "Authentication"
+    ],
+    "categoryName": "Authentication"
+  },
+  {
+    "settingId": "extensionsettings_managedextensions_generickey_denieddomains",
+    "settingName": "Denied Domains",
+    "settingDescription": "Controls the domains and sub-domains the extension is not allowed to access. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
+    "keywords": [
+      "Extension Settings",
+      "Safari Extension Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "extensionsettings_managedextensions_generickey",
+    "settingName": "ANY",
+    "settingDescription": "The composed identifier of the managed extension, or \"*\" for all extensions. In order for the extension to be managed, its host app must be present on the device.",
+    "keywords": [
+      "Extension Settings",
+      "Safari Extension Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "com.apple.caldav.account_caldavport",
+    "settingName": "Cal DAV Port",
+    "settingDescription": "The server’s port.",
+    "keywords": [
+      "Caldav"
+    ],
+    "categoryName": "Accounts"
+  },
+  {
+    "settingId": "com.apple.caldav.account_caldavpassword",
+    "settingName": "Cal DAV Password",
+    "settingDescription": "The user’s password. This is only used with encrypted profiles.",
+    "keywords": [
+      "Caldav"
+    ],
+    "categoryName": "Accounts"
+  },
+  {
+    "settingId": "com.apple.carddav.account_carddavport",
+    "settingName": "Card DAV Port",
+    "settingDescription": "The server’s port.",
+    "keywords": [
+      "Carddav"
+    ],
+    "categoryName": "Accounts"
+  },
+  {
+    "settingId": "com.apple.carddav.account_carddavprincipalurl",
+    "settingName": "Card DAV Principal URL",
+    "settingDescription": "The base URL to the user’s address book.",
+    "keywords": [
+      "Carddav"
+    ],
+    "categoryName": "Accounts"
+  },
+  {
+    "settingId": "com.apple.airplay_passwords_item_deviceid",
+    "settingName": "Device ID",
+    "settingDescription": "The device ID of the AirPlay destination; used in macOS.",
+    "keywords": [
+      "Air Play",
+      "AirPlay"
+    ],
+    "categoryName": "AirPlay"
+  },
+  {
+    "settingId": "settings_item_defaultapplications",
+    "settingName": "Default Applications",
+    "settingDescription": "A dictionary that contains default application bundle identifiers. Currently it supports a default web browser app.",
+    "keywords": [
+      "Default Applications"
+    ],
+    "categoryName": "Managed Settings"
+  },
+  {
+    "settingId": "settings_item_wallpaper_image",
+    "settingName": "Image",
+    "settingDescription": "A Base64-encoded image in either PNG or JPG format to use for wallpaper.",
+    "keywords": [
+      "Wallpaper"
+    ],
+    "categoryName": "Managed Settings"
+  },
+  {
+    "settingId": "com.apple.font_font",
+    "settingName": "Font",
+    "settingDescription": "The contents of the font file.",
+    "keywords": [
+      "Font"
+    ],
+    "categoryName": "System Configuration"
+  },
+  {
+    "settingId": "enforcement_enforcement",
+    "settingName": "com.apple.configuration.softwareupdate.enforcement.specific",
+    "settingDescription": "Synthetic Top Level Setting Group Collection",
+    "keywords": [
+      "Software Update"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "com.apple.cellular_apns_item_proxyserver",
+    "settingName": "Proxy Server",
+    "settingDescription": "The proxy server's address.",
+    "keywords": [
+      "Cellular"
+    ],
+    "categoryName": "Networking"
+  },
+  {
+    "settingId": "com.apple.cellular_apns_item_authenticationtype",
+    "settingName": "Authentication Type",
+    "settingDescription": "The authentication type for logging in.",
+    "keywords": [
+      "Cellular"
+    ],
+    "categoryName": "Networking"
+  },
+  {
+    "settingId": "com.apple.cellular_apns_item_allowedprotocolmask",
+    "settingName": "Allowed Protocol Mask",
+    "settingDescription": "The supported Internet Protocol versions. Available in iOS 10.3 and later.",
+    "keywords": [
+      "Cellular"
+    ],
+    "categoryName": "Networking"
+  },
+  {
+    "settingId": "com.apple.cellular_apns_item_allowedprotocolmaskinroaming",
+    "settingName": "Allowed Protocol Mask In Roaming",
+    "settingDescription": "The supported Internet Protocol versions while roaming. Available in iOS 10.3 and later.",
+    "keywords": [
+      "Cellular"
+    ],
+    "categoryName": "Networking"
+  },
+  {
+    "settingId": "com.apple.profileremovalpassword_com.apple.profileremovalpassword",
+    "settingName": "Top Level Setting Group Collection",
+    "settingDescription": "com.apple.profileRemovalPassword",
+    "keywords": [
+      "Profile Removal Password"
+    ],
+    "categoryName": "Profile Removal Password"
+  },
+  {
+    "settingId": "com.apple.app.lock_app_options_enablemonoaudio",
+    "settingName": "Enable Mono Audio",
+    "settingDescription": "If true, enables Mono Audio.",
+    "keywords": [
+      "App Lock"
+    ],
+    "categoryName": "App Management"
+  },
+  {
+    "settingId": "com.apple.app.lock_app_options",
+    "settingName": "Options",
+    "settingDescription": "A dictionary of options that the user cannot change.",
+    "keywords": [
+      "App Lock"
+    ],
+    "categoryName": "App Management"
+  },
+  {
+    "settingId": "com.apple.app.lock_app_userenabledoptions_voicecontrol",
+    "settingName": "Voice Control",
+    "settingDescription": "If true, allows the user to toggle Voice Control.",
+    "keywords": [
+      "App Lock"
+    ],
+    "categoryName": "App Management"
+  },
+  {
+    "settingId": "com.apple.app.lock_app_options_enablevoicecontrol",
+    "settingName": "Enable Voice Control",
+    "settingDescription": "If true, enables Voice Control.",
+    "keywords": [
+      "App Lock"
+    ],
+    "categoryName": "App Management"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_ratingappsau",
+    "settingName": "Rating Apps - Australia",
+    "settingDescription": "The maximum level of app content allowed on the device. Available in iOS 4 and later.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowproximitysetuptonewdevice",
+    "settingName": "Allow Proximity Setup To New Device",
+    "settingDescription": "If false, disables the prompt to set up new devices that are nearby. Requires a supervised device. Available in iOS 11 and later.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowvisualintelligencesummary",
+    "settingName": "Allow Visual Intelligence Summary",
+    "settingDescription": "If `false`, the system disables visual intelligence summarization.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_safariallowautofill",
+    "settingName": "Safari Allow Autofill",
+    "settingDescription": "If false, disables Safari AutoFill for passwords, contact info, and credit cards and also prevents the Keychain from being used for AutoFill. Though third-party password managers are allowed and apps can use AutoFill. As of iOS 13, requires a supervised device. Available in iOS 4 and later, and macOS 10.13 and later.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowdiagnosticsubmission",
+    "settingName": "Allow Diagnostic Submission",
+    "settingDescription": "If false, prevents the device from automatically submitting diagnostic reports to Apple. Available in iOS 6 and later, and macOS 10.13 and later. Also available for user enrollment.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowpasscodemodification",
+    "settingName": "Allow Passcode Modification",
+    "settingDescription": "If false, prevents the device passcode from being added, changed, or removed. This restriction is ignored by Shared iPads. Requires a supervised device. Available in iOS 9 and later, and macOS 10.13 and later.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowdefaultbrowsermodification",
+    "settingName": "Allow Default Browser Modification",
+    "settingDescription": "If false, disables default browser preference modification. The MDM Settings command to set the default browser preference will still work when this is applied.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowenterprisebookmetadatasync",
+    "settingName": "Allow Enterprise Book Metadata Sync",
+    "settingDescription": "If false, disables sync of Enterprise books, notes, and highlights. Available in iOS 8 and later. Also available for user enrollment.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowprintersharingmodification",
+    "settingName": "Allow Printer Sharing Modification",
+    "settingDescription": "If 'false', prevents modifying Printer Sharing setting in System Settings.\nAvailable in macOS 14 and later.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_forceclassroomunpromptedappanddevicelock",
+    "settingName": "Force Classroom Unprompted App And Device Lock",
+    "settingDescription": "If true, allows the teacher to lock apps or the device without prompting the student. Requires a supervised device. Available in iOS 11 and later, and macOS 10.14.4 and later.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowlockscreennotificationsview",
+    "settingName": "Allow Lock Screen Notifications View",
+    "settingDescription": "If false, disables the Notifications history view on the lock screen, so users can’t view past notifications. However, they can still see notifications when they arrive. Available in iOS 7 and later. Also available for user enrollment.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allownfc",
+    "settingName": "Allow NFC",
+    "settingDescription": "If false, disables NFC. Requires a supervised device. Available in iOS 14.2 and later.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowapplepersonalizedadvertising",
+    "settingName": "Allow Apple Personalized Advertising",
+    "settingDescription": "If false, limits Apple personalized advertising. Available in iOS 14 and later.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowedcamerarestrictionbundleids",
+    "settingName": "Allowed Camera Restriction Bundle IDs",
+    "settingDescription": "If present, the system exempts apps with bundle IDs in the array from the `allowCamera` restriction. The system doesn't grant these apps access to the camera automatically; they're only exempted from the `allowCamera` restriction. This key has no effect when the camera isn't restricted. Multiple payloads combine using an intersect operation. Requires a supervised device.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowenterpriseapptrust",
+    "settingName": "Allow Enterprise App Trust",
+    "settingDescription": "If false, removes the Trust Enterprise Developer button in Settings > General > Profiles & Device Management, preventing apps from being provisioned by universal provisioning profiles. This restriction applies to free developer accounts. However, it doesn’t apply to enterprise app developers who are trusted because their apps were pushed through MDM. It also doesn’t revoke previously granted trust. Available in iOS 9 and later.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowiphonewidgetsonmac",
+    "settingName": "Allow iPhone Widgets On Mac",
+    "settingDescription": "If 'false', disallows iPhone widgets on a Mac that has signed in the same AppleID for iCloud. Supervised only.\nAvailable on iOS 17 and later.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowlocalusercreation",
+    "settingName": "Allow Local User Creation",
+    "settingDescription": "If 'false', prevents creating new users in System Settings.\nAvailable in macOS 14 and later.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_ratingtvshowsus",
+    "settingName": "Rating TV Shows - United States",
+    "settingDescription": "The maximum level of TV content allowed on the device. Available in iOS 4 and later.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowbookstoreerotica",
+    "settingName": "Allow Bookstore Erotica",
+    "settingDescription": "If false, the user can’t download Apple Books media that is tagged as erotica. Available in iOS 6 and later.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowdefinitionlookup",
+    "settingName": "Allow Definition Lookup",
+    "settingDescription": "If false, disables definition lookup. Requires a supervised device on iOS. Available in iOS 8.1.3 and later and macOS 10.11 and later.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowpasswordautofill",
+    "settingName": "Allow Password Auto Fill",
+    "settingDescription": "If false, disables the AutoFill Passwords feature in iOS (with Keychain and third-party password managers) and the user isn’t prompted to use a saved password in Safari or in apps. This restriction also disables Automatic Strong Passwords, and strong passwords are no longer suggested to users. It doesn’t prevent AutoFill for contact info and credit cards in Safari. Requires a supervised device. Available in iOS 12 and later, and macOS 10.14 and later.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowimageplayground",
+    "settingName": "Allow Image Playground",
+    "settingDescription": "If false, prohibits the use of image generation.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowvideoconferencingremotecontrol",
+    "settingName": "Allow Video Conferencing Remote Control (Deprecated)",
+    "settingDescription": "If `false`, disables the ability for a remote FaceTime session to request control of the device.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowwebdistributionappinstallation",
+    "settingName": "Allow Web Distribution App Installation",
+    "settingDescription": "When 'false', the device prevents installation of apps directly from the web.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowbluetoothmodification",
+    "settingName": "Allow Bluetooth Modification",
+    "settingDescription": "If false, prevents modification of Bluetooth settings. Requires a supervised device. Available in iOS 11 and later.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowesimoutgoingtransfers",
+    "settingName": "Allow ESIM Outgoing Transfers",
+    "settingDescription": "If 'false', prevents the transfer of an eSIM from the device on which the restriction is installed to a different device. Available in iOS 18 and later.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_enforcedsoftwareupdateminorosdeferredinstalldelay",
+    "settingName": "Enforced Software Update Minor OS Deferred Install Delay (Deprecated)",
+    "settingDescription": "This restriction allows the admin to set how many days to delay a minor OS software update on the device. When this restriction is in place the user see a software update only after the specified delay after the release of the software update. This value controls the delay for Force Delayed Software Updates. Available in macOS 11.3 and later.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowmanagedtowriteunmanagedcontacts",
+    "settingName": "Allow Managed To Write Unmanaged Contacts",
+    "settingDescription": "If true, managed apps can write contacts to unmanaged contacts accounts. If Allow Open From Managed To Unmanaged is true, this restriction has no effect. If this restriction is set to true, you must install the payload through MDM. Available in iOS 12 and later.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "com.apple.mobiledevice.passwordpolicy_changeatnextauth",
+    "settingName": "Change At Next Auth",
+    "settingDescription": "If true, causes a password reset to occur the next time the user tries to authenticate. If this key is set in a device profile, the setting takes effect for all users, and admin authentications may fail until the admin user password is also reset. Available in macOS 10.13 and later.",
+    "keywords": [
+      "Passcode"
+    ],
+    "categoryName": "Security"
+  },
+  {
+    "settingId": "settings_item_dataroaming",
+    "settingName": "Data Roaming",
+    "settingDescription": "A dictionary that contains data roaming settings. This setting requires the Network Information access right, and doesn't support user enrollment. Available in iOS 5 and later.",
+    "keywords": [
+      "Data Roaming"
+    ],
+    "categoryName": "Managed Settings"
+  },
+  {
+    "settingId": "com.apple.extensiblesso_type_kerberos",
+    "settingName": "Type",
+    "settingDescription": "This value must be Credential for the Kerberos extension.",
+    "keywords": [
+      "Extensible Single Sign On Kerberos"
+    ],
+    "categoryName": "Authentication"
+  },
+  {
+    "settingId": "com.apple.extensiblesso_extensiondata_requiretlsforldap_kerberos",
+    "settingName": "Require TLS For LDAP",
+    "settingDescription": "Require that LDAP connections use TLS. Available in macOS 11 and later.",
+    "keywords": [
+      "Extensible Single Sign On Kerberos"
+    ],
+    "categoryName": "Authentication"
+  },
+  {
+    "settingId": "com.apple.extensiblesso_extensiondata_customusernamelabel_kerberos",
+    "settingName": "Custom Username Label",
+    "settingDescription": "The custom user name label used in the Kerberos extension instead of “Username”. For example, “Company ID”. Available in macOS 11 and later.",
+    "keywords": [
+      "Extensible Single Sign On Kerberos"
+    ],
+    "categoryName": "Authentication"
+  },
+  {
+    "settingId": "com.apple.extensiblesso_extensiondata_performkerberosonly_kerberos",
+    "settingName": "Perform Kerberos Only",
+    "settingDescription": "If true, the Kerberos Extension handles Kerberos requests only. It doesn’t check for password expiration, show the password expiration in the menu, check for external password changes, perform password sync, or retrieve the home directory. Available in macOS 13 and later.",
+    "keywords": [
+      "Extensible Single Sign On Kerberos"
+    ],
+    "categoryName": "Authentication"
+  },
+  {
+    "settingId": "com.apple.extensiblesso_extensiondata_pwreqlength_kerberos",
+    "settingName": "Password Req Length",
+    "settingDescription": "The minimum length of passwords on the domain. Available in macOS 10.15 and later.",
+    "keywords": [
+      "Extensible Single Sign On Kerberos"
+    ],
+    "categoryName": "Authentication"
+  },
+  {
+    "settingId": "com.apple.extensiblesso_extensiondata_pwreqcomplexity_kerberos",
+    "settingName": "Password Req Complexity",
+    "settingDescription": "If true, passwords must meet Active Directory's definition of \"complex\". Available in macOS 10.15 and later.",
+    "keywords": [
+      "Extensible Single Sign On Kerberos"
+    ],
+    "categoryName": "Authentication"
+  },
+  {
+    "settingId": "com.apple.subscribedcalendar.account_subcalaccountusername",
+    "settingName": "Account Username",
+    "settingDescription": "The user's username.",
+    "keywords": [
+      "Subscribed Calendars"
+    ],
+    "categoryName": "Accounts"
+  },
+  {
+    "settingId": "passcode_maximumpasscodeageindays",
+    "settingName": "Maximum Passcode Age In Days",
+    "settingDescription": "Specifies the maximum number of days that the passcode can remain unchanged. After this number of days, the system forces the user to change the passcode before it unlocks the device.",
+    "keywords": [
+      "Passcode",
+      "Declarative Device Management (DDM)\\Passcode"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "passcode_requirealphanumericpasscode",
+    "settingName": "Require Alphanumeric Passcode",
+    "settingDescription": "If `true`, the passcode needs to consist of at least one alphabetic character and at least one number.",
+    "keywords": [
+      "Passcode",
+      "Declarative Device Management (DDM)\\Passcode"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "passcode_requirepasscode",
+    "settingName": "Require Passcode on Device",
+    "settingDescription": "Specifies whether the user is forced to set a passcode. Setting this value, without any other keys present, forces the user to enter a passcode, without imposing a length or quality. The presence of any of the other keys implicitly requires a passcode be present on the device, and this key is ignored.",
+    "keywords": [
+      "Settings",
+      "Passcode"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "com.apple.extensiblesso_platformsso_tokentousermapping_fullname",
+    "settingName": "Full Name",
+    "settingDescription": "The claim name to use for the user's full name.",
+    "keywords": [
+      "Extensible Single Sign On (SSO)"
+    ],
+    "categoryName": "Authentication"
+  },
+  {
+    "settingId": "com.apple.extensiblesso_platformsso_enablecreateuseratlogin",
+    "settingName": "Enable Create User At Login",
+    "settingDescription": "Enables creating new users at the login window with either Passwords or SmartCards. Requires 'UseSharedDeviceKeys' is true.",
+    "keywords": [
+      "Extensible Single Sign On (SSO)"
+    ],
+    "categoryName": "Authentication"
+  },
+  {
+    "settingId": "com.apple.extensiblesso_platformsso_userauthorizationmode",
+    "settingName": "User Authorization Mode",
+    "settingDescription": "This setting affects the permissions after authentication by Platform SSO. It is applied each time user authenticates. Use of the following:\n* Standard\n    The account will be a standard user. It will be removed from the 'admin' group.\n* Admin\n    The account will be added to the local administrators group.\n* Groups\n    The account will be assigned groups using the 'AdministratorGroups', 'AdditionalGroups', or 'AuthorizationGroups'.",
+    "keywords": [
+      "Extensible Single Sign On (SSO)"
+    ],
+    "categoryName": "Authentication"
+  },
+  {
+    "settingId": "com.apple.dnssettings.managed_dnssettings",
+    "settingName": "DNS Settings",
+    "settingDescription": "A dictionary that defines a configuration for an encrypted DNS server.",
+    "keywords": [
+      "DNS Settings"
+    ],
+    "categoryName": "Networking"
+  },
+  {
+    "settingId": "com.apple.cellularprivatenetwork.managed_geofences",
+    "settingName": "Geofences",
+    "settingDescription": "A list of up to 1000 geofences for private networks. Geofencing is only used on iPhone.",
+    "keywords": [
+      "Cellular Private Network"
+    ],
+    "categoryName": "Cellular Private Network"
+  },
+  {
+    "settingId": "com.apple.cellularprivatenetwork.managed_versionnumber",
+    "settingName": "Version Number",
+    "settingDescription": "The version number of this dataset that the system uses to track updates.",
+    "keywords": [
+      "Cellular Private Network"
+    ],
+    "categoryName": "Cellular Private Network"
+  },
+  {
+    "settingId": "safari_allowjavascript",
+    "settingName": "Allow Java Script",
+    "settingDescription": "If `false`, the system disables JavaScript in Safari.",
+    "keywords": [
+      "Safari Browser"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "safari_safari",
+    "settingName": "com.apple.configuration.safari.settings",
+    "settingDescription": "Synthetic Top Level Setting Group Collection",
+    "keywords": [
+      "Safari Browser"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -2875,24 +2945,6 @@
     "categoryName": "Web Content Filter"
   },
   {
-    "settingId": "com.apple.webcontent-filter_filterpacketproviderdesignatedrequirement",
-    "settingName": "Filter Packet Provider Designated Requirement",
-    "settingDescription": "The designated requirement string that the system embeds in the code signature of the filter packet provider system extension. This string identifies the filter packet provider when the filter starts running. This field is a requirement if Filter Packets is true.",
-    "keywords": [
-      "Web Content Filter"
-    ],
-    "categoryName": "Web Content Filter"
-  },
-  {
-    "settingId": "com.apple.webcontent-filter_filterdataproviderbundleidentifier",
-    "settingName": "Filter Data Provider Bundle Identifier",
-    "settingDescription": "The bundle identifier string of the filter data provider system extension. This string identifies the filter data provider when the filter starts running. This field is a requirement if Filter Sockets is true.",
-    "keywords": [
-      "Web Content Filter"
-    ],
-    "categoryName": "Web Content Filter"
-  },
-  {
     "settingId": "com.apple.webcontent-filter_allowlistbookmarks_item_url",
     "settingName": "URL",
     "settingDescription": "The URL of the bookmark in the allow list.",
@@ -2911,15 +2963,6 @@
     "categoryName": "Web Content Filter"
   },
   {
-    "settingId": "com.apple.webcontent-filter_filtertype",
-    "settingName": "Filter Type",
-    "settingDescription": "The type of filter, built-in or plug-in. In macOS, the system supports only the plug-in value.",
-    "keywords": [
-      "Web Content Filter"
-    ],
-    "categoryName": "Web Content Filter"
-  },
-  {
     "settingId": "com.apple.webcontent-filter_filterpacketproviderbundleidentifier",
     "settingName": "Filter Packet Provider Bundle Identifier",
     "settingDescription": "The bundle identifier string of the filter packet provider system extension. This string identifies the filter packet provider when the filter starts running. This field is a requirement if Filter Packets is true.",
@@ -2927,29 +2970,6 @@
       "Web Content Filter"
     ],
     "categoryName": "Web Content Filter"
-  },
-  {
-    "settingId": "com.apple.proxy.http.global_com.apple.proxy.http.global",
-    "settingName": "Top Level Setting Group Collection",
-    "settingDescription": "com.apple.proxy.http.global",
-    "keywords": [
-      "Global HTTP Proxy"
-    ],
-    "categoryName": "Proxies"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsdaily",
-    "settingName": "Mute notifications daily",
-    "settingDescription": null,
-    "keywords": [
-      "Mute",
-      "Notifications",
-      "Teams",
-      "Outlook",
-      "Daily",
-      "Certain Hours"
-    ],
-    "categoryName": "Certain Hours"
   },
   {
     "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsdaily_starttime",
@@ -2971,26 +2991,6 @@
       "Accounts"
     ],
     "categoryName": "Accounts"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_authentication_enablewebsignin",
-    "settingName": "Enable Web Sign In",
-    "settingDescription": "Specifies whether web-based sign-in is allowed for signing in to Windows",
-    "keywords": [
-      "Enable Web Sign In",
-      "Authentication"
-    ],
-    "categoryName": "Authentication"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_authentication_allowfastreconnect",
-    "settingName": "Allow Fast Reconnect",
-    "settingDescription": "Allows EAP Fast Reconnect from being attempted for EAP Method TLS. Most restricted value is 0.",
-    "keywords": [
-      "Allow Fast Reconnect",
-      "Authentication"
-    ],
-    "categoryName": "Authentication"
   },
   {
     "settingId": "device_vendor_msft_policy_config_authentication_configurewebcamaccessdomainnames",
@@ -3900,7 +3900,7 @@
   },
   {
     "settingId": "com.apple.applicationaccess_enforcedsoftwareupdatemajorosdeferredinstalldelay",
-    "settingName": "Enforced Software Update Major OS Deferred Install Delay",
+    "settingName": "Enforced Software Update Major OS Deferred Install Delay (Deprecated)",
     "settingDescription": "This restriction allows the admin to set how many days to delay a major software update on the device. When this restriction is in place the user sees a software update only after the specified delay after the release of the software update. This value controls the delay for Force Delayed Major Software Updates. Available in macOS 11.3 and later.",
     "keywords": [
       "Restrictions"
@@ -4404,7 +4404,7 @@
   },
   {
     "settingId": "softwareupdate_recommendedcadence",
-    "settingName": "Recommended Cadence",
+    "settingName": "Recommendation Cadence (Deprecated)",
     "settingDescription": "Specifies how the device shows software updates to the user. When more than one update is available update, the device behaves as follows:\n* \"All\" - Shows all software update versions.\n* \"Oldest\" - Shows only the oldest (lower numbered) software update version.\n* \"Newest\" - Shows only the newest (highest numbered) software update version. Only applicable on Supervised devices with iOS 18+ and MacOS 15+",
     "keywords": [
       "Software Update Settings"
@@ -4724,7 +4724,7 @@
   },
   {
     "settingId": "com.apple.applicationaccess_forcedelayedappsoftwareupdates",
-    "settingName": "Force Delayed App Software Updates",
+    "settingName": "Force Delayed App Software Updates (Deprecated)",
     "settingDescription": "If set to true, delays user visibility of major OS Software Updates. Available in macOS 11.3 and later.",
     "keywords": [
       "Restrictions"
@@ -4814,7 +4814,7 @@
   },
   {
     "settingId": "com.apple.applicationaccess_enforcedsoftwareupdatenonosdeferredinstalldelay",
-    "settingName": "Enforced Software Update Non OS Deferred Install Delay",
+    "settingName": "Enforced Software Update Non OS Deferred Install Delay (Deprecated)",
     "settingDescription": "This restriction allows the admin to set how many days to delay an app software update on the device. When this restriction is in place the user sees a non-OS software update only after the specified delay after the release of the software. This value controls the delay for Force Delayed App Software Updates. Available in macOS 11.3 and later.",
     "keywords": [
       "Restrictions"
@@ -5618,7 +5618,7 @@
   },
   {
     "settingId": "com.apple.applicationaccess_enforcedsoftwareupdatedelay",
-    "settingName": "Enforced Software Update Delay",
+    "settingName": "Enforced Software Update Delay (Deprecated)",
     "settingDescription": "Sets how many days to delay a software update on the device. With this restriction in place, the user doesn't see a software update until the specified number of days after the software update release date. This value is used by Force Delayed App Software Updates and Force Delayed Software Updates. Requires a supervised device in iOS. Available in iOS 11.3 and later, and macOS 10.13.4 and later.",
     "keywords": [
       "Restrictions"

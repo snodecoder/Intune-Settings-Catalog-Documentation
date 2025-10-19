@@ -59,7 +59,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "passiveMode",
     "rootDefinitionId": "com.apple.managedclient.preferences_passivemode",
@@ -158,7 +158,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "enabled",
     "rootDefinitionId": "com.apple.managedclient.preferences_enabled",
@@ -254,7 +254,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "disableFtpParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disableftpparsing",
@@ -323,7 +323,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "tags",
     "rootDefinitionId": "linux_mdatp_managed_edr_tags",
@@ -371,7 +371,7 @@
       "value": 2
     },
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "maximumOnDemandScanThreads",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_maximumondemandscanthreads",
@@ -441,7 +441,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "passiveMode",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_passivemode",
@@ -521,7 +521,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "exclusions_item_extension",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_exclusions",
@@ -632,7 +632,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "cloudBlockLevel",
     "rootDefinitionId": "linux_mdatp_managed_cloudservice_cloudblocklevel",
@@ -773,7 +773,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "exclusionsMergePolicy",
     "rootDefinitionId": "com.apple.managedclient.preferences_exclusionsmergepolicy",
@@ -830,7 +830,7 @@
     "uxBehavior": "default",
     "visibility": "settingsCatalog,template",
     "riskLevel": "low",
-    "defaultOptionId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine_0",
+    "defaultOptionId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine_2",
     "applicability": {
       "description": null,
       "platform": "macOS",
@@ -885,7 +885,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "enforcementLevel",
     "rootDefinitionId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine",
@@ -979,7 +979,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "exclusions_item_extension",
     "rootDefinitionId": "com.apple.managedclient.preferences_exclusions",
@@ -1062,7 +1062,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "automaticSampleSubmissionConsent",
     "rootDefinitionId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent",
@@ -1172,7 +1172,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "disableDnsParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disablednsparsing",
@@ -1284,7 +1284,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "enforcementLevel",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_enforcementlevel",
@@ -1396,7 +1396,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "behaviorMonitoring",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_behaviormonitoring",
@@ -1474,7 +1474,7 @@
       "value": 90
     },
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "scanResultsRetentionDays",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scanresultsretentiondays",
@@ -1525,7 +1525,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "exclusions_item_name",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_exclusions",
@@ -1575,7 +1575,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "exclusions_item_path",
     "rootDefinitionId": "linux_mdatp_managed_exclusionsettings_exclusions",
@@ -1624,63 +1624,10 @@
       "value": 90
     },
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "scanResultsRetentionDays",
     "rootDefinitionId": "com.apple.managedclient.preferences_scanresultsretentiondays",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_allowedthreats",
-    "settingName": "Allowed threats",
-    "settingDescription": "List of threats (identified by their name) that are not blocked by the product and are instead allowed to run.",
-    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "infoUrls": [
-      "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#allowed-threats"
-    ],
-    "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
-    "offsetUri": "allowedThreats",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "macOS",
-      "deviceMode": "none",
-      "technologies": "mdm,appleRemoteManagement"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
-      "format": "none",
-      "inputValidationSchema": null,
-      "maximumLength": 1032,
-      "minimumLength": 0,
-      "isSecret": false,
-      "fileTypes": []
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-      "settingValueTemplateReference": null,
-      "value": ""
-    },
-    "accessTypes": "none",
-    "version": "638951450276131607",
-    "helpText": null,
-    "name": "allowedThreats",
-    "rootDefinitionId": "com.apple.managedclient.preferences_allowedthreats",
     "settingDefinitionId": null,
     "definitionDescription": null,
     "dataType": null,
@@ -1746,7 +1693,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "scanArchives",
     "rootDefinitionId": "com.apple.managedclient.preferences_scanarchives",
@@ -1783,6 +1730,601 @@
         "dependedOnBy": []
       }
     ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_threattypesettings_item_value",
+    "settingName": "Action to take",
+    "settingDescription": "Action to take when coming across a threat of the type specified in the preceding section.",
+    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "infoUrls": [],
+    "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
+    "offsetUri": "threatTypeSettings/[{0}]/value",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.apple.managedclient.preferences_threattypesettings_item_value_0",
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "mdm,appleRemoteManagement"
+    },
+    "options": [
+      {
+        "itemId": "com.apple.managedclient.preferences_threattypesettings_item_value_0",
+        "description": null,
+        "helpText": null,
+        "name": "audit",
+        "displayName": "audit",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "audit"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "com.apple.managedclient.preferences_threattypesettings",
+            "parentSettingId": "com.apple.managedclient.preferences_threattypesettings"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.apple.managedclient.preferences_threattypesettings_item_value_1",
+        "description": null,
+        "helpText": null,
+        "name": "block",
+        "displayName": "block",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "block"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "com.apple.managedclient.preferences_threattypesettings",
+            "parentSettingId": "com.apple.managedclient.preferences_threattypesettings"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.apple.managedclient.preferences_threattypesettings_item_value_2",
+        "description": null,
+        "helpText": null,
+        "name": "off",
+        "displayName": "off",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "off"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "com.apple.managedclient.preferences_threattypesettings",
+            "parentSettingId": "com.apple.managedclient.preferences_threattypesettings"
+          }
+        ],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "638960815959126030",
+    "helpText": null,
+    "name": "threatTypeSettings_item_value",
+    "rootDefinitionId": "com.apple.managedclient.preferences_threattypesettings",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.apple.managedclient.preferences_threattypesettings_item_value_0",
+        "description": null,
+        "helpText": null,
+        "name": "audit",
+        "displayName": "audit",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "audit"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "com.apple.managedclient.preferences_threattypesettings",
+            "parentSettingId": "com.apple.managedclient.preferences_threattypesettings"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.apple.managedclient.preferences_threattypesettings_item_value_1",
+        "description": null,
+        "helpText": null,
+        "name": "block",
+        "displayName": "block",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "block"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "com.apple.managedclient.preferences_threattypesettings",
+            "parentSettingId": "com.apple.managedclient.preferences_threattypesettings"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.apple.managedclient.preferences_threattypesettings_item_value_2",
+        "description": null,
+        "helpText": null,
+        "name": "off",
+        "displayName": "off",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "off"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "com.apple.managedclient.preferences_threattypesettings",
+            "parentSettingId": "com.apple.managedclient.preferences_threattypesettings"
+          }
+        ],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_scanafterdefinitionupdate",
+    "settingName": "Run a scan after definitions are updated",
+    "settingDescription": "Specifies whether to start a process scan after new security intelligence updates are downloaded on the device. Enabling this setting will trigger an antivirus scan on the running processes of the device.",
+    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-preferences?view=o365-worldwide#run-a-scan-after-definitions-are-updated"
+    ],
+    "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
+    "offsetUri": "scanAfterDefinitionUpdate",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.apple.managedclient.preferences_scanafterdefinitionupdate_true",
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "mdm,appleRemoteManagement,microsoftSense"
+    },
+    "options": [
+      {
+        "itemId": "com.apple.managedclient.preferences_scanafterdefinitionupdate_false",
+        "description": null,
+        "helpText": null,
+        "name": "Disabled",
+        "displayName": "Disabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.apple.managedclient.preferences_scanafterdefinitionupdate_true",
+        "description": null,
+        "helpText": null,
+        "name": "Enabled",
+        "displayName": "Enabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "638960815959126030",
+    "helpText": null,
+    "name": "scanAfterDefinitionUpdate",
+    "rootDefinitionId": "com.apple.managedclient.preferences_scanafterdefinitionupdate",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.apple.managedclient.preferences_scanafterdefinitionupdate_false",
+        "description": null,
+        "helpText": null,
+        "name": "Disabled",
+        "displayName": "Disabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.apple.managedclient.preferences_scanafterdefinitionupdate_true",
+        "description": null,
+        "helpText": null,
+        "name": "Enabled",
+        "displayName": "Enabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disablerdpparsing",
+    "settingName": "Disable RDP parsing",
+    "settingDescription": "Disables parsing of RDP traffic",
+    "categoryId": "269c487f-8902-486a-88dd-db9b9b4454b8",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Network protection"
+    ],
+    "infoUrls": [],
+    "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/networkProtection",
+    "offsetUri": "disableRdpParsing",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.apple.managedclient.preferences_disablerdpparsing_false",
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "mdm,appleRemoteManagement"
+    },
+    "options": [
+      {
+        "itemId": "com.apple.managedclient.preferences_disablerdpparsing_false",
+        "description": null,
+        "helpText": null,
+        "name": "Disabled",
+        "displayName": "Disabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.apple.managedclient.preferences_disablerdpparsing_true",
+        "description": null,
+        "helpText": null,
+        "name": "Enabled",
+        "displayName": "Enabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "638960815959126030",
+    "helpText": null,
+    "name": "disableRdpParsing",
+    "rootDefinitionId": "com.apple.managedclient.preferences_disablerdpparsing",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.apple.managedclient.preferences_disablerdpparsing_false",
+        "description": null,
+        "helpText": null,
+        "name": "Disabled",
+        "displayName": "Disabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.apple.managedclient.preferences_disablerdpparsing_true",
+        "description": null,
+        "helpText": null,
+        "name": "Enabled",
+        "displayName": "Enabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_mdatp_managed_edr_tags_item_value",
+    "settingName": "Value of tag",
+    "settingDescription": "Only one value per tag type can be set. Type of tags are unique, and should not be repeated in the same configuration profile.",
+    "categoryId": "22a2a407-0f28-481d-bdbe-1f9cb6d589c3",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      " EDR preferences"
+    ],
+    "infoUrls": [],
+    "baseUri": "PayloadContent/edr",
+    "offsetUri": "tags/[{0}]/value",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 0,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
+    "accessTypes": "none",
+    "version": "638960815959126030",
+    "helpText": null,
+    "name": "tags_item_value",
+    "rootDefinitionId": "linux_mdatp_managed_edr_tags",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_disallowedthreatactions",
+    "settingName": "Disallowed threat actions",
+    "settingDescription": "Restricts the actions that the local user of a device can take when threats are detected. The actions included in this list are not displayed in the user interface.",
+    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#disallowed-threat-actions"
+    ],
+    "baseUri": "PayloadContent/antivirusEngine",
+    "offsetUri": "disallowedThreatActions",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 0,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
+    "accessTypes": "none",
+    "version": "638960815959126030",
+    "helpText": null,
+    "name": "disallowedThreatActions",
+    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_disallowedthreatactions",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_mdatp_managed_exclusionsettings_exclusions_item_name",
+    "settingName": "Process name",
+    "settingDescription": "Process name, either or full path or file name, wildcards NOT supported",
+    "categoryId": "d2191717-e304-46f7-bcc0-55e6477026c9",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Exclusion Settings"
+    ],
+    "infoUrls": [],
+    "baseUri": "PayloadContent/exclusionSettings",
+    "offsetUri": "exclusions/[{0}]/name",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 0,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
+    "accessTypes": "none",
+    "version": "638960815959126030",
+    "helpText": null,
+    "name": "exclusions_item_name",
+    "rootDefinitionId": "linux_mdatp_managed_exclusionsettings_exclusions",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_mdatp_managed_exclusionsettings_exclusions",
+    "settingName": "Global Exclusions",
+    "settingDescription": "Global exclusions apply to both Antivirus and Endpoint detection and response to exclude at a much lower level closer to sensors. Usage: Tackling performance issues. Risk: Significantly risks protection",
+    "categoryId": "d2191717-e304-46f7-bcc0-55e6477026c9",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Exclusion Settings"
+    ],
+    "infoUrls": [
+      "https://learn.microsoft.com/en-us/defender-endpoint/linux-preferences#exclusion-setting-preferences"
+    ],
+    "baseUri": "PayloadContent/exclusionSettings",
+    "offsetUri": "exclusions",
+    "settingUsage": "configuration",
+    "uxBehavior": "contextPane",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "638960815959126030",
+    "helpText": null,
+    "name": "exclusions",
+    "rootDefinitionId": "linux_mdatp_managed_exclusionsettings_exclusions",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_allowedthreats",
+    "settingName": "Allowed threats",
+    "settingDescription": "List of threats (identified by their name) that are not blocked by the product and are instead allowed to run.",
+    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#allowed-threats"
+    ],
+    "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
+    "offsetUri": "allowedThreats",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "mdm,appleRemoteManagement"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 1032,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
+    "accessTypes": "none",
+    "version": "638960815959126030",
+    "helpText": null,
+    "name": "allowedThreats",
+    "rootDefinitionId": "com.apple.managedclient.preferences_allowedthreats",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
     "dependencies": []
   },
   {
@@ -1853,7 +2395,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "threatTypeSettings_item_key",
     "rootDefinitionId": "com.apple.managedclient.preferences_threattypesettings",
@@ -1962,7 +2504,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "threatTypeSettingsMergePolicy",
     "rootDefinitionId": "com.apple.managedclient.preferences_threattypesettingsmergepolicy",
@@ -1996,161 +2538,6 @@
           "value": "admin_only"
         },
         "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_threattypesettings_item_value",
-    "settingName": "Action to take",
-    "settingDescription": "Action to take when coming across a threat of the type specified in the preceding section.",
-    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "infoUrls": [],
-    "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
-    "offsetUri": "threatTypeSettings/[{0}]/value",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "com.apple.managedclient.preferences_threattypesettings_item_value_0",
-    "applicability": {
-      "description": null,
-      "platform": "macOS",
-      "deviceMode": "none",
-      "technologies": "mdm,appleRemoteManagement"
-    },
-    "options": [
-      {
-        "itemId": "com.apple.managedclient.preferences_threattypesettings_item_value_0",
-        "description": null,
-        "helpText": null,
-        "name": "audit",
-        "displayName": "audit",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "audit"
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "com.apple.managedclient.preferences_threattypesettings",
-            "parentSettingId": "com.apple.managedclient.preferences_threattypesettings"
-          }
-        ],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.apple.managedclient.preferences_threattypesettings_item_value_1",
-        "description": null,
-        "helpText": null,
-        "name": "block",
-        "displayName": "block",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "block"
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "com.apple.managedclient.preferences_threattypesettings",
-            "parentSettingId": "com.apple.managedclient.preferences_threattypesettings"
-          }
-        ],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.apple.managedclient.preferences_threattypesettings_item_value_2",
-        "description": null,
-        "helpText": null,
-        "name": "off",
-        "displayName": "off",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "off"
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "com.apple.managedclient.preferences_threattypesettings",
-            "parentSettingId": "com.apple.managedclient.preferences_threattypesettings"
-          }
-        ],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "none",
-    "version": "638951450276131607",
-    "helpText": null,
-    "name": "threatTypeSettings_item_value",
-    "rootDefinitionId": "com.apple.managedclient.preferences_threattypesettings",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "com.apple.managedclient.preferences_threattypesettings_item_value_0",
-        "description": null,
-        "helpText": null,
-        "name": "audit",
-        "displayName": "audit",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "audit"
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "com.apple.managedclient.preferences_threattypesettings",
-            "parentSettingId": "com.apple.managedclient.preferences_threattypesettings"
-          }
-        ],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.apple.managedclient.preferences_threattypesettings_item_value_1",
-        "description": null,
-        "helpText": null,
-        "name": "block",
-        "displayName": "block",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "block"
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "com.apple.managedclient.preferences_threattypesettings",
-            "parentSettingId": "com.apple.managedclient.preferences_threattypesettings"
-          }
-        ],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.apple.managedclient.preferences_threattypesettings_item_value_2",
-        "description": null,
-        "helpText": null,
-        "name": "off",
-        "displayName": "off",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "off"
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "com.apple.managedclient.preferences_threattypesettings",
-            "parentSettingId": "com.apple.managedclient.preferences_threattypesettings"
-          }
-        ],
         "dependedOnBy": []
       }
     ],
@@ -2215,7 +2602,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "enableFileHashComputation",
     "rootDefinitionId": "com.apple.managedclient.preferences_enablefilehashcomputation",
@@ -2252,250 +2639,6 @@
         "dependedOnBy": []
       }
     ],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_scanafterdefinitionupdate",
-    "settingName": "Run a scan after definitions are updated",
-    "settingDescription": "Specifies whether to start a process scan after new security intelligence updates are downloaded on the device. Enabling this setting will trigger an antivirus scan on the running processes of the device.",
-    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Antivirus engine"
-    ],
-    "infoUrls": [
-      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-preferences?view=o365-worldwide#run-a-scan-after-definitions-are-updated"
-    ],
-    "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
-    "offsetUri": "scanAfterDefinitionUpdate",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "com.apple.managedclient.preferences_scanafterdefinitionupdate_true",
-    "applicability": {
-      "description": null,
-      "platform": "macOS",
-      "deviceMode": "none",
-      "technologies": "mdm,appleRemoteManagement,microsoftSense"
-    },
-    "options": [
-      {
-        "itemId": "com.apple.managedclient.preferences_scanafterdefinitionupdate_false",
-        "description": null,
-        "helpText": null,
-        "name": "Disabled",
-        "displayName": "Disabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.apple.managedclient.preferences_scanafterdefinitionupdate_true",
-        "description": null,
-        "helpText": null,
-        "name": "Enabled",
-        "displayName": "Enabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "none",
-    "version": "638951450276131607",
-    "helpText": null,
-    "name": "scanAfterDefinitionUpdate",
-    "rootDefinitionId": "com.apple.managedclient.preferences_scanafterdefinitionupdate",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "com.apple.managedclient.preferences_scanafterdefinitionupdate_false",
-        "description": null,
-        "helpText": null,
-        "name": "Disabled",
-        "displayName": "Disabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.apple.managedclient.preferences_scanafterdefinitionupdate_true",
-        "description": null,
-        "helpText": null,
-        "name": "Enabled",
-        "displayName": "Enabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_disablerdpparsing",
-    "settingName": "Disable RDP parsing",
-    "settingDescription": "Disables parsing of RDP traffic",
-    "categoryId": "269c487f-8902-486a-88dd-db9b9b4454b8",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Network protection"
-    ],
-    "infoUrls": [],
-    "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/networkProtection",
-    "offsetUri": "disableRdpParsing",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "com.apple.managedclient.preferences_disablerdpparsing_false",
-    "applicability": {
-      "description": null,
-      "platform": "macOS",
-      "deviceMode": "none",
-      "technologies": "mdm,appleRemoteManagement"
-    },
-    "options": [
-      {
-        "itemId": "com.apple.managedclient.preferences_disablerdpparsing_false",
-        "description": null,
-        "helpText": null,
-        "name": "Disabled",
-        "displayName": "Disabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.apple.managedclient.preferences_disablerdpparsing_true",
-        "description": null,
-        "helpText": null,
-        "name": "Enabled",
-        "displayName": "Enabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "none",
-    "version": "638951450276131607",
-    "helpText": null,
-    "name": "disableRdpParsing",
-    "rootDefinitionId": "com.apple.managedclient.preferences_disablerdpparsing",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "com.apple.managedclient.preferences_disablerdpparsing_false",
-        "description": null,
-        "helpText": null,
-        "name": "Disabled",
-        "displayName": "Disabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.apple.managedclient.preferences_disablerdpparsing_true",
-        "description": null,
-        "helpText": null,
-        "name": "Enabled",
-        "displayName": "Enabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "linux_mdatp_managed_edr_tags_item_value",
-    "settingName": "Value of tag",
-    "settingDescription": "Only one value per tag type can be set. Type of tags are unique, and should not be repeated in the same configuration profile.",
-    "categoryId": "22a2a407-0f28-481d-bdbe-1f9cb6d589c3",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      " EDR preferences"
-    ],
-    "infoUrls": [],
-    "baseUri": "PayloadContent/edr",
-    "offsetUri": "tags/[{0}]/value",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "microsoftSense"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
-      "format": "none",
-      "inputValidationSchema": null,
-      "maximumLength": 0,
-      "minimumLength": 0,
-      "isSecret": false,
-      "fileTypes": []
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-      "settingValueTemplateReference": null,
-      "value": ""
-    },
-    "accessTypes": "none",
-    "version": "638951450276131607",
-    "helpText": null,
-    "name": "tags_item_value",
-    "rootDefinitionId": "linux_mdatp_managed_edr_tags",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
     "dependencies": []
   },
   {
@@ -2540,7 +2683,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "unmonitoredFilesystems",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_unmonitoredfilesystems",
@@ -2610,7 +2753,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "threatTypeSettingsMergePolicy",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_threattypesettingsmergepolicy",
@@ -2647,59 +2790,6 @@
         "dependedOnBy": []
       }
     ],
-    "dependencies": []
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_disallowedthreatactions",
-    "settingName": "Disallowed threat actions",
-    "settingDescription": "Restricts the actions that the local user of a device can take when threats are detected. The actions included in this list are not displayed in the user interface.",
-    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "infoUrls": [
-      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#disallowed-threat-actions"
-    ],
-    "baseUri": "PayloadContent/antivirusEngine",
-    "offsetUri": "disallowedThreatActions",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "microsoftSense"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
-      "format": "none",
-      "inputValidationSchema": null,
-      "maximumLength": 0,
-      "minimumLength": 0,
-      "isSecret": false,
-      "fileTypes": []
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-      "settingValueTemplateReference": null,
-      "value": ""
-    },
-    "accessTypes": "none",
-    "version": "638951450276131607",
-    "helpText": null,
-    "name": "disallowedThreatActions",
-    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_disallowedthreatactions",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
     "dependencies": []
   },
   {
@@ -2743,100 +2833,10 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "exclusions_item_path",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_exclusions",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "linux_mdatp_managed_exclusionsettings_exclusions_item_name",
-    "settingName": "Process name",
-    "settingDescription": "Process name, either or full path or file name, wildcards NOT supported",
-    "categoryId": "d2191717-e304-46f7-bcc0-55e6477026c9",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Exclusion Settings"
-    ],
-    "infoUrls": [],
-    "baseUri": "PayloadContent/exclusionSettings",
-    "offsetUri": "exclusions/[{0}]/name",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "microsoftSense"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
-      "format": "none",
-      "inputValidationSchema": null,
-      "maximumLength": 0,
-      "minimumLength": 0,
-      "isSecret": false,
-      "fileTypes": []
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-      "settingValueTemplateReference": null,
-      "value": ""
-    },
-    "accessTypes": "none",
-    "version": "638951450276131607",
-    "helpText": null,
-    "name": "exclusions_item_name",
-    "rootDefinitionId": "linux_mdatp_managed_exclusionsettings_exclusions",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "linux_mdatp_managed_exclusionsettings_exclusions",
-    "settingName": "Global Exclusions",
-    "settingDescription": "Global exclusions apply to both Antivirus and Endpoint detection and response to exclude at a much lower level closer to sensors. Usage: Tackling performance issues. Risk: Significantly risks protection",
-    "categoryId": "d2191717-e304-46f7-bcc0-55e6477026c9",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Exclusion Settings"
-    ],
-    "infoUrls": [
-      "https://learn.microsoft.com/en-us/defender-endpoint/linux-preferences#exclusion-setting-preferences"
-    ],
-    "baseUri": "PayloadContent/exclusionSettings",
-    "offsetUri": "exclusions",
-    "settingUsage": "configuration",
-    "uxBehavior": "contextPane",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "microsoftSense"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "none",
-    "version": "638951450276131607",
-    "helpText": null,
-    "name": "exclusions",
-    "rootDefinitionId": "linux_mdatp_managed_exclusionsettings_exclusions",
     "settingDefinitionId": null,
     "definitionDescription": null,
     "dataType": null,
@@ -2874,7 +2874,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "threatTypeSettings",
     "rootDefinitionId": "com.apple.managedclient.preferences_threattypesettings",
@@ -2952,7 +2952,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "exclusions_item_isDirectory",
     "rootDefinitionId": "com.apple.managedclient.preferences_exclusions",
@@ -3107,7 +3107,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "exclusions_item_$type",
     "rootDefinitionId": "com.apple.managedclient.preferences_exclusions",
@@ -3237,7 +3237,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "disallowedThreatActions",
     "rootDefinitionId": "com.apple.managedclient.preferences_disallowedthreatactions",
@@ -3289,7 +3289,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "proxy",
     "rootDefinitionId": "com.apple.managedclient.preferences_proxy",
@@ -3359,7 +3359,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "diagnosticLevel",
     "rootDefinitionId": "com.apple.managedclient.preferences_diagnosticlevel",
@@ -3436,7 +3436,7 @@
       "value": 7
     },
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "definitionUpdateDue",
     "rootDefinitionId": "com.apple.managedclient.preferences_definitionupdatedue",
@@ -3503,7 +3503,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "disableSmtpParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disablesmtpparsing",
@@ -3590,7 +3590,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "tags_item_key",
     "rootDefinitionId": "linux_mdatp_managed_edr_tags",
@@ -3663,7 +3663,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "allowedThreats",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_allowedthreats",
@@ -3733,7 +3733,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "exclusionsMergePolicy",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_exclusionsmergepolicy",
@@ -3803,7 +3803,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "threatTypeSettings",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_threattypesettings",
@@ -3881,7 +3881,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "exclusions_item_isDirectory",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_exclusions",
@@ -3998,7 +3998,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "threatTypeSettings_item_key",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_threattypesettings",
@@ -4086,7 +4086,7 @@
       "value": 10000
     },
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "scanHistoryMaximumItems",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scanhistorymaximumitems",
@@ -4127,7 +4127,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "exclusions",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_exclusions",
@@ -4196,7 +4196,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "enableFileHashComputation",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_enablefilehashcomputation",
@@ -4294,7 +4294,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "scanArchives",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scanarchives",
@@ -4393,7 +4393,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "enabled",
     "rootDefinitionId": "linux_mdatp_managed_cloudservice_enabled",
@@ -4492,7 +4492,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "automaticDefinitionUpdateEnabled",
     "rootDefinitionId": "linux_mdatp_managed_cloudservice_automaticdefinitionupdateenabled",
@@ -4605,7 +4605,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "automaticSampleSubmissionConsent",
     "rootDefinitionId": "linux_mdatp_managed_cloudservice_automaticsamplesubmissionconsent",
@@ -4699,7 +4699,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "exclusions_item_name",
     "rootDefinitionId": "com.apple.managedclient.preferences_exclusions",
@@ -4750,7 +4750,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "exclusions_item_path",
     "rootDefinitionId": "com.apple.managedclient.preferences_exclusions",
@@ -4798,7 +4798,7 @@
       "value": 2
     },
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "maximumOnDemandScanThreads",
     "rootDefinitionId": "com.apple.managedclient.preferences_maximumondemandscanthreads",
@@ -4847,7 +4847,7 @@
       "value": 10000
     },
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "scanHistoryMaximumItems",
     "rootDefinitionId": "com.apple.managedclient.preferences_scanhistorymaximumitems",
@@ -4958,7 +4958,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "cloudBlockLevel",
     "rootDefinitionId": "com.apple.managedclient.preferences_cloudblocklevel",
@@ -5099,7 +5099,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "automaticDefinitionUpdateEnabled",
     "rootDefinitionId": "com.apple.managedclient.preferences_automaticdefinitionupdateenabled",
@@ -5198,7 +5198,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "automaticSampleSubmission",
     "rootDefinitionId": "com.apple.managedclient.preferences_automaticsamplesubmission",
@@ -5275,7 +5275,7 @@
       "value": 28800
     },
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "definitionUpdatesInterval",
     "rootDefinitionId": "com.apple.managedclient.preferences_definitionupdatesinterval",
@@ -5342,7 +5342,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "disableInboundConnectionFiltering",
     "rootDefinitionId": "com.apple.managedclient.preferences_disableinboundconnectionfiltering",
@@ -5438,7 +5438,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "disableHttpParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disablehttpparsing",
@@ -5534,7 +5534,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "disableIcmpParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disableicmpparsing",
@@ -5630,7 +5630,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "enableSetWarnToBlock",
     "rootDefinitionId": "com.apple.managedclient.preferences_enablesetwarntoblock",
@@ -5775,7 +5775,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "exclusions_item_$type",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_exclusions",
@@ -5921,7 +5921,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "scanAfterDefinitionUpdate",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scanafterdefinitionupdate",
@@ -5991,7 +5991,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "exclusions",
     "rootDefinitionId": "com.apple.managedclient.preferences_exclusions",
@@ -6061,7 +6061,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "enableRealTimeProtection",
     "rootDefinitionId": "com.apple.managedclient.preferences_enablerealtimeprotection",
@@ -6157,7 +6157,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "disableDnsOverTcpParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disablednsovertcpparsing",
@@ -6253,7 +6253,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "disableSshParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disablesshparsing",
@@ -6349,7 +6349,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "disableTlsParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disabletlsparsing",
@@ -6460,7 +6460,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "enforcementLevel",
     "rootDefinitionId": "com.apple.managedclient.preferences_enforcementlevel",
@@ -6572,7 +6572,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "nonExecMountPolicy",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_nonexecmountpolicy",
@@ -6671,7 +6671,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "enableRealTimeProtection",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_enablerealtimeprotection",
@@ -6797,7 +6797,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "threatTypeSettings_item_value",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_threattypesettings",
@@ -6925,7 +6925,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "diagnosticLevel",
     "rootDefinitionId": "linux_mdatp_managed_cloudservice_diagnosticlevel",
@@ -7045,7 +7045,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "exclusions_item_$type",
     "rootDefinitionId": "linux_mdatp_managed_exclusionsettings_exclusions",
@@ -7175,7 +7175,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "exclusions_item_isDirectory",
     "rootDefinitionId": "linux_mdatp_managed_exclusionsettings_exclusions",
@@ -7297,7 +7297,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "638951450276131607",
+    "version": "638960815959126030",
     "helpText": null,
     "name": "enforcementLevel",
     "rootDefinitionId": "linux_mdatp_managed_networkprotection_enforcementlevel",

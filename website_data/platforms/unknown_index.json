@@ -36,50 +36,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_buildoptions",
-    "settingName": "Policy creation type",
-    "settingDescription": "Select Enter XML data to type or paste an XML property list that contains your Application Control policy. Select Use built-in controls to choose from toggles exposed in this Application Control policy. Setting this to Not Configured will result in default behaviour on the device with no added options from the ApplicationControl CSP on the device.",
-    "keywords": [
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_trustappsfrommanagedinstaller",
-    "settingName": "Trust apps from managed installer",
-    "settingDescription": "Turning Trust apps from managed installer on will not enforce the policy. We recommend first running the poliy with Trust apps from managed installer turned on prior to enforcement to determine the impacts of the policy.",
-    "keywords": [
-      "Application Control",
-      "Trust apps from managed installer",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions",
-    "settingName": "Configuration settings format",
-    "settingDescription": "Select Enter XML data to type or paste an XML property list that contains your Application Control policy. Select Use built-in controls to choose from toggles exposed in this Application Control policy. Setting this to Not Configured will result in default behaviour on the device with no added options from the ApplicationControl CSP on the device.",
-    "keywords": [
-      "Build options",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type_publisherdetails_issuingcadetails",
-    "settingName": "Issuing certificate authority",
-    "settingDescription": "The name of the issuing certificate authority",
-    "keywords": [
-      "Application Control",
-      "Rules",
-      "Issuing",
-      "CA",
-      "Certificate Authority",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry",
     "settingName": "Access",
     "settingDescription": "",
@@ -235,85 +191,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_xmlupload",
-    "settingName": "XML upload",
-    "settingDescription": "The format of the XML property list varies depending on the settings you are configuring for the ApplicationControl CSP. Microsoft Endpoint Manager will validate the XML format; but not validate the settings behaviour, the settings applicability nor sign the policy binary. ApplicationControl CSP supports base and supplemental policies for devices running the Windows 1903 build and later. Supplemental policies are required to loosen a base policy; and are always less restrictive. A supplemental policy needs to support a specific base policy that has been deployed to the same client. If not, there is no effect on assigned Windows devices.",
-    "keywords": [
-      "App Control for Business",
-      "XML Upload"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_disableruntimefilepathrules",
-    "settingName": "Disable runtime file path rules",
-    "settingDescription": "Turning this off will disable FilePath rule protection of enforcing user-writeability and onlu allowing admin-writable locations.",
-    "keywords": [
-      "Advanced settings",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_trustappswithgoodreputation",
-    "settingName": "Trust apps with good reputation",
-    "settingDescription": "When enabled, applications with known good reputation as defined by the Microsoft's Intelligent Security Graph (ISG) are white listed.",
-    "keywords": [
-      "Application Control",
-      "Trust apps with good reputation",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_uploadxmldetails",
-    "settingName": "XML Upload",
-    "settingDescription": "The format of the XML property list varies depending on the settings you are configuring for the ApplicationControl CSP. Microsoft Endpoint Manager will validate the XML format; but not validate the settings behaviour, the settings applicability nor sign the policy binary. ApplicationControl CSP supports base and supplemental policies for devices running the Windows 1903 build and later. Supplemental policies are required to loosen a base policy; and are always less restrictive. A supplemental policy needs to support a specific base policy that has been deployed to the same client. If not, there is no effect on assigned Windows devices.",
-    "keywords": [
-      "Base settings",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type_filehashdetails",
-    "settingName": "File hash",
-    "settingDescription": "A set of coma separated hashes for use of the application of this rule.",
-    "keywords": [
-      "Application Control",
-      "Rules",
-      "File Hash",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type_fileattributes_internalnamedetails",
-    "settingName": "Internal name",
-    "settingDescription": "The Internal name of the selected file as stated in the file attributes.",
-    "keywords": [
-      "Application Control",
-      "Rules",
-      "File Attributes",
-      "Internal name",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type_publisherdetails",
-    "settingName": "Publisher",
-    "settingDescription": "Creates a rule for a file that is signed by the software publisher. Upload the output generated by the binary file information extractor for your selected reference file.",
-    "keywords": [
-      "Application Control",
-      "Rules",
-      "Rule",
-      "Publisher",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_windowsdefenderapplicationguard_settings_clipboardsettings",
     "settingName": "Clipboard behavior settings",
     "settingDescription": "This policy setting allows you to decide how the clipboard behaves while in Microsoft Defender Application Guard.",
@@ -400,39 +277,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "ade_appledevicenametemplate",
-    "settingName": "Device name template",
-    "settingDescription": "Create a unique name for your devices. Names must be 63 characters or less, and can contain letters (a-z, A-Z), numbers (0-9), and hyphens.Variables supported: {{SERIAL}}, {{DEVICETYPE}}",
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Management settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_lockedenrollment",
-    "settingName": "Locked enrollment",
-    "settingDescription": "Blocks the user from removing the management profile through the iOS/iPadOS Settings menu.",
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Management settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_maximumcachedusers",
-    "settingName": "Maximum cached users",
-    "settingDescription": "The maximum number of users that can use a Shared iPad. You can cache up to 24 users on a 32GB or 64GB device.",
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Management settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_modernauth_awaitfinalconfiguration",
     "settingName": "Await final configuration",
     "settingDescription": "Keeps the device in Setup Assistant until the first sync between the device and Intune installs policies.",
@@ -455,52 +299,8 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "ade_setupassistant_appearance",
-    "settingName": "Appearance",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_setupassistant_appleid",
-    "settingName": "Apple ID",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_setupassistant_applepay",
     "settingName": "Apple Pay",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_setupassistant_departmentphone",
-    "settingName": "Department phone",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_setupassistant_diagnosticsdata",
-    "settingName": "Diagnostics Data",
     "settingDescription": null,
     "keywords": [
       "ADE profile",
@@ -523,28 +323,6 @@
   {
     "settingId": "ade_setupassistant_safety",
     "settingName": "Emergency SOS",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_setupassistant_screentime",
-    "settingName": "Screen Time",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_setupassistant_softwareupdate",
-    "settingName": "Software Update",
     "settingDescription": null,
     "keywords": [
       "ADE profile",
@@ -587,66 +365,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "ade_setupassistant_watchmigration",
-    "settingName": "Watch migration",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsclockedout",
-    "settingName": "Mute notifications",
-    "settingDescription": "This will automatically mute Microsoft Teams notifications when managed account is in non-working time. Note: Configuring this setting will prevent end users from editing their global quiet time settings.",
-    "keywords": [
-      "Mute",
-      "Notifications",
-      "Teams",
-      "Outlook",
-      "Non-working time"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "enrollment_autopilot_dpp_skipexpress",
-    "settingName": "Privacy settings",
-    "settingDescription": "Specify whether to show privacy settings to users.",
-    "keywords": [
-      "Autopilot",
-      "Device Preparation",
-      "SkipExpress",
-      "Out-of-box experience settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "enrollment_autopilot_dpp_customerrormessage",
-    "settingName": "Custom error message",
-    "settingDescription": "This message will be displayed if an error occurs during deployment.",
-    "keywords": [
-      "Autopilot",
-      "Device Preparation",
-      "CustomErrorMessage",
-      "Out-of-box experience settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "enrollment_autopilot_dpp_devicerenametemplate",
-    "settingName": "Enter a name",
-    "settingDescription": "Create a unique name for your devices. Names must be 15 characters or less, and can contain letters (a-z, A-Z), numbers (0-9), and hyphens. Names must not contain only numbers. Names cannot include a blank space. Use the %SERIAL% macro to add a hardware-specific serial number. Alternatively, use the %RAND:x% macro to add a random string of numbers, where x equals the number of digits to add.",
-    "keywords": [
-      "Autopilot",
-      "Device Preparation",
-      "DeviceRenameTemplate",
-      "Out-of-box experience settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "enrollment_autopilot_dpp_applydevicerenametemplate",
     "settingName": "Apply device name template",
     "settingDescription": "Create a naming template to add names to your devices during enrollment.",
@@ -681,58 +399,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationclientsettings_defaultelevationresponse_validation",
-    "settingName": "Validation",
-    "settingDescription": "",
-    "keywords": [
-      "Client Settings",
-      "Elevation",
-      "Validation",
-      "Privilege Management",
-      "Privilege Management Elevation Client Settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type_publisherdetails_publishernamedetails",
-    "settingName": "Publisher",
-    "settingDescription": "The name of the application publisher",
-    "keywords": [
-      "Application Control",
-      "Rules",
-      "Publisher",
-      "Publisher Name",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type_publisherfilenamedetails",
-    "settingName": "File name",
-    "settingDescription": "The name of the applications executable file name.",
-    "keywords": [
-      "Application Control",
-      "Rules",
-      "Publisher",
-      "Minimum Version",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type_fileattributes_filenamedetails",
-    "settingName": "Original file name",
-    "settingDescription": "The original name of the applications executable as stated in the file attributes.",
-    "keywords": [
-      "Application Control",
-      "Rules",
-      "File Attributes",
-      "File Name",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_applicationcontrol_built_in_controls_trust_apps",
     "settingName": "Select additional rules for trusting apps",
     "settingDescription": "By default, any devices targeted with this App Control for Business policy will have the setting to Trust Windows components and Store apps enabled, in either audit or enforce mode based on your selection./nFurther, you can optionally add some additional rules to your policy, such as selecting Trust apps with good reputation to allow reputable apps as defined by the Microsoft Intelligent Security Graph to run./nSelect Trust apps from managed installers to allow apps deployed via authorized sources of application deployment (managed installers). The Intune management extension will be considered a managed installer if it has been set as such within your organization. Any apps not marked as coming from a managed installer will not be allowed to run./nAll other apps and files not specified by the rules in this App Control for Business policy will be audited only in local client logs (if Audit only is selected), or blocked (if Enforce is selected) from running on devices.",
@@ -763,49 +429,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrol_built_in_controls_enable_app_control",
-    "settingName": "Enable App Control for Business policy to trust Windows components and Store apps",
-    "settingDescription": "Select Audit only to log all events in local client logs but not block any apps from running or select Enforce to actively block apps from running in a deployed App Control for Business base policy. App Control for Business policies created in either Audit only or Enforce mode will be deployed as rebootless base policies to all devices targeted./nBy default, any devices targeted with this App Control for Business policy will have the setting to Trust Windows components and Store apps enabled, in either audit or enforce mode based on your selection.",
-    "keywords": [
-      "Application Control",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type",
-    "settingName": "Type",
-    "settingDescription": "Defines the action for the removable storage groups in IncludedIDList\nEnforcement: Allow or Deny\nAudit: AuditAllowed or AuditDenied",
-    "keywords": [
-      "Defender",
-      "DeviceControl",
-      "Device Control"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_excludedidlist_groupid",
-    "settingName": "Excluded Devices",
-    "settingDescription": "The group(s) that the policy will not be applied to.",
-    "keywords": [
-      "Defender",
-      "DeviceControl",
-      "Device Control"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_name",
-    "settingName": "Name",
-    "settingDescription": "",
-    "keywords": [
-      "Defender",
-      "DeviceControl",
-      "Device Control"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
     "settingName": "ID",
     "settingDescription": "",
@@ -824,48 +447,6 @@
       "Defender",
       "DeviceControl",
       "Device Control"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_settings_clipboardfiletype",
-    "settingName": "Clipboard content options",
-    "settingDescription": "If you choose to enable copying, this policy determines the type of content that can be copied.",
-    "keywords": [
-      "Clipboard File Type",
-      "Windows Defender Application Guard",
-      "Microsoft Defender Application Guard"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_settings_certificatethumbprints",
-    "settingName": "Certificate Thumbprints",
-    "settingDescription": "This policy setting allows certain device level Root Certificates to be shared with the Microsoft Defender Application Guard container. If you enable this setting, certificates with a thumbprint matching the ones specified will be transferred into the container. Multiple certificates can be specified by using a comma to separate the thumbprints for each certificate you want to transfer. Here's an example: b4e72779a8a362c860c36a6461f31e3aa7e58c14,1b1d49f06d2a697a544a1059bd59a7b058cda924. If you disable or don’t configure this setting, certificates are not shared with the Microsoft Defender Application Guard container.",
-    "keywords": [
-      "Certificate Thumbprints",
-      "Windows Defender Application Guard",
-      "Microsoft Defender Application Guard"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_laps_policies_automaticaccountmanagementtarget",
-    "settingName": "Automatic Account Management Target",
-    "settingDescription": "Use this setting to configure which account is automatically managed.\n\nThe allowable settings are:\n\n0=The builtin administrator account will be managed.\n1=A new account created by Windows LAPS will be managed.\n\nIf not specified, this setting will default to 1.",
-    "keywords": [
-      "Automatic Account Management Target",
-      "LAPS"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_laps_policies_automaticaccountmanagementenabled",
-    "settingName": "Automatic Account Management Enabled",
-    "settingDescription": "Use this setting to specify whether automatic account management is enabled.\n\nIf this setting is enabled, the target account will be automatically managed.\n\nIf this setting is disabled, the target account will not be automatically managed.\n\nIf not specified, this setting defaults to False.",
-    "keywords": [
-      "Automatic Account Management Enabled",
-      "LAPS"
     ],
     "categoryName": "Uncategorized"
   },
@@ -890,39 +471,8 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_laps_policies_automaticaccountmanagementrandomizename",
-    "settingName": "Automatic Account Management Randomize Name",
-    "settingDescription": "Use this setting to configure whether the name of the automatically managed account uses a random numeric suffix each time the password is rotated.\n\nIf this setting is enabled, the name of the target account will use a random numeric suffix.\n\nIf this setting is disbled, the name of the target account will not use a random numeric suffix..\n\nIf not specified, this setting defaults to False.",
-    "keywords": [
-      "Automatic Account Management Randomize Name",
-      "LAPS"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_laps_policies_automaticaccountmanagementnameorprefix",
-    "settingName": "Automatic Account Management Name Or Prefix",
-    "settingDescription": "Use this setting to configure the name or prefix of the managed local administrator account.\n\nIf specified, the value will be used as the name or name prefix of the managed account.\n\nIf not specified, this setting will default to \"WLapsAdmin\".",
-    "keywords": [
-      "Automatic Account Management Name Or Prefix",
-      "LAPS"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_localusersandgroups_configure_groupconfiguration_accessgroup_desc",
     "settingName": "Local group",
-    "settingDescription": "This Setting allows an administrator to manage local groups on a Device.                             Possible settings:                             1. Update Group Membership: Update a group and add and/or remove members though the 'U' action.                             When using Update, existing group members that are not specified in the policy remain untouched.                             2. Replace Group Membership: Restrict a group by replacing group membership through the 'R' action.                             When using Replace, existing group membership is replaced by the list of members specified in                             the add member section. This option works in the same way as a Restricted Group and any group                             members that are not specified in the policy are removed.                             Caution: If the same group is configured with both Replace and Update, then Replace will win.",
-    "keywords": [
-      "LocalUsersAndGroups",
-      "Configure",
-      "Local Users And Groups"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localusersandgroups_configure_groupconfiguration_accessgroup",
-    "settingName": "access group",
     "settingDescription": "This Setting allows an administrator to manage local groups on a Device.                             Possible settings:                             1. Update Group Membership: Update a group and add and/or remove members though the 'U' action.                             When using Update, existing group members that are not specified in the policy remain untouched.                             2. Replace Group Membership: Restrict a group by replacing group membership through the 'R' action.                             When using Replace, existing group membership is replaced by the list of members specified in                             the add member section. This option works in the same way as a Restricted Group and any group                             members that are not specified in the policy are removed.                             Caution: If the same group is configured with both Replace and Update, then Replace will win.",
     "keywords": [
       "LocalUsersAndGroups",
@@ -939,28 +489,6 @@
       "LocalUsersAndGroups",
       "Configure",
       "Local Users And Groups"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localusersandgroups_configure_groupconfiguration_accessgroup_userselectiontype",
-    "settingName": "User selection type",
-    "settingDescription": "This Setting allows an administrator to manage local groups on a Device.                             Possible settings:                             1. Update Group Membership: Update a group and add and/or remove members though the 'U' action.                             When using Update, existing group members that are not specified in the policy remain untouched.                             2. Replace Group Membership: Restrict a group by replacing group membership through the 'R' action.                             When using Replace, existing group membership is replaced by the list of members specified in                             the add member section. This option works in the same way as a Restricted Group and any group                             members that are not specified in the policy are removed.                             Caution: If the same group is configured with both Replace and Update, then Replace will win.",
-    "keywords": [
-      "LocalUsersAndGroups",
-      "Configure",
-      "Local Users And Groups"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_certificatepayloadwithreusablesetting",
-    "settingName": "Certificate",
-    "settingDescription": null,
-    "keywords": [
-      "Certificate",
-      "Elevation",
-      "Privilege Management"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1032,6 +560,328 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_ruletype_userconfirmeduservalidation",
+    "settingName": "Validation",
+    "settingDescription": "",
+    "keywords": [
+      "Elevation type",
+      "Elevation",
+      "Rule type",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_appledevicenametemplate",
+    "settingName": "Device name template",
+    "settingDescription": "Create a unique name for your devices. Names must be 63 characters or less, and can contain letters (a-z, A-Z), numbers (0-9), and hyphens.Variables supported: {{SERIAL}}, {{DEVICETYPE}}",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Management settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_lockedenrollment",
+    "settingName": "Locked enrollment",
+    "settingDescription": "Blocks the user from removing the management profile through the iOS/iPadOS Settings menu.",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Management settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_maximumcachedusers",
+    "settingName": "Maximum cached users",
+    "settingDescription": "The maximum number of users that can use a Shared iPad. You can cache up to 24 users on a 32GB or 64GB device.",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Management settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_appearance",
+    "settingName": "Appearance",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_appleid",
+    "settingName": "Apple ID",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_departmentphone",
+    "settingName": "Department phone",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_diagnosticsdata",
+    "settingName": "Diagnostics Data",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_screentime",
+    "settingName": "Screen Time",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_softwareupdate",
+    "settingName": "Software Update",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_watchmigration",
+    "settingName": "Watch migration",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsclockedout",
+    "settingName": "Mute notifications",
+    "settingDescription": "This will automatically mute Microsoft Teams notifications when managed account is in non-working time. Note: Configuring this setting will prevent end users from editing their global quiet time settings.",
+    "keywords": [
+      "Mute",
+      "Notifications",
+      "Teams",
+      "Outlook",
+      "Non-working time"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_skipexpress",
+    "settingName": "Hide privacy settings",
+    "settingDescription": "Specify whether to show privacy settings to users.",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "SkipExpress",
+      "Out-of-box experience settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_customerrormessage",
+    "settingName": "Custom error message",
+    "settingDescription": "This message will be displayed if an error occurs during deployment.",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "CustomErrorMessage",
+      "Out-of-box experience settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_devicerenametemplate",
+    "settingName": "Enter a name",
+    "settingDescription": "Create a unique name for your devices. Names must be 15 characters or less, and can contain letters (a-z, A-Z), numbers (0-9), and hyphens. Names must not contain only numbers. Names cannot include a blank space. Use the %SERIAL% macro to add a hardware-specific serial number. Alternatively, use the %RAND:x% macro to add a random string of numbers, where x equals the number of digits to add.",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "DeviceRenameTemplate",
+      "Out-of-box experience settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationclientsettings_defaultelevationresponse_validation",
+    "settingName": "Validation",
+    "settingDescription": "",
+    "keywords": [
+      "Client Settings",
+      "Elevation",
+      "Validation",
+      "Privilege Management",
+      "Privilege Management Elevation Client Settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationcontrol_built_in_controls_enable_app_control",
+    "settingName": "Enable App Control for Business policy to trust Windows components and Store apps",
+    "settingDescription": "Select Audit only to log all events in local client logs but not block any apps from running or select Enforce to actively block apps from running in a deployed App Control for Business base policy. App Control for Business policies created in either Audit only or Enforce mode will be deployed as rebootless base policies to all devices targeted./nBy default, any devices targeted with this App Control for Business policy will have the setting to Trust Windows components and Store apps enabled, in either audit or enforce mode based on your selection.",
+    "keywords": [
+      "Application Control",
+      "App Control for Business"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_type",
+    "settingName": "Type",
+    "settingDescription": "Defines the action for the removable storage groups in IncludedIDList\nEnforcement: Allow or Deny\nAudit: AuditAllowed or AuditDenied",
+    "keywords": [
+      "Defender",
+      "DeviceControl",
+      "Device Control"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_excludedidlist_groupid",
+    "settingName": "Excluded Devices",
+    "settingDescription": "The group(s) that the policy will not be applied to.",
+    "keywords": [
+      "Defender",
+      "DeviceControl",
+      "Device Control"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_name",
+    "settingName": "Name",
+    "settingDescription": "",
+    "keywords": [
+      "Defender",
+      "DeviceControl",
+      "Device Control"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_settings_clipboardfiletype",
+    "settingName": "Clipboard content options",
+    "settingDescription": "If you choose to enable copying, this policy determines the type of content that can be copied.",
+    "keywords": [
+      "Clipboard File Type",
+      "Windows Defender Application Guard",
+      "Microsoft Defender Application Guard"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_settings_certificatethumbprints",
+    "settingName": "Certificate Thumbprints",
+    "settingDescription": "This policy setting allows certain device level Root Certificates to be shared with the Microsoft Defender Application Guard container. If you enable this setting, certificates with a thumbprint matching the ones specified will be transferred into the container. Multiple certificates can be specified by using a comma to separate the thumbprints for each certificate you want to transfer. Here's an example: b4e72779a8a362c860c36a6461f31e3aa7e58c14,1b1d49f06d2a697a544a1059bd59a7b058cda924. If you disable or don’t configure this setting, certificates are not shared with the Microsoft Defender Application Guard container.",
+    "keywords": [
+      "Certificate Thumbprints",
+      "Windows Defender Application Guard",
+      "Microsoft Defender Application Guard"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_laps_policies_automaticaccountmanagementtarget",
+    "settingName": "Automatic Account Management Target",
+    "settingDescription": "Use this setting to configure which account is automatically managed.\n\nThe allowable settings are:\n\n0=The builtin administrator account will be managed.\n1=A new account created by Windows LAPS will be managed.\n\nIf not specified, this setting will default to 1.",
+    "keywords": [
+      "Automatic Account Management Target",
+      "LAPS"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_laps_policies_automaticaccountmanagementenabled",
+    "settingName": "Automatic Account Management Enabled",
+    "settingDescription": "Use this setting to specify whether automatic account management is enabled.\n\nIf this setting is enabled, the target account will be automatically managed.\n\nIf this setting is disabled, the target account will not be automatically managed.\n\nIf not specified, this setting defaults to False.",
+    "keywords": [
+      "Automatic Account Management Enabled",
+      "LAPS"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_laps_policies_automaticaccountmanagementrandomizename",
+    "settingName": "Automatic Account Management Randomize Name",
+    "settingDescription": "Use this setting to configure whether the name of the automatically managed account uses a random numeric suffix each time the password is rotated.\n\nIf this setting is enabled, the name of the target account will use a random numeric suffix.\n\nIf this setting is disbled, the name of the target account will not use a random numeric suffix..\n\nIf not specified, this setting defaults to False.",
+    "keywords": [
+      "Automatic Account Management Randomize Name",
+      "LAPS"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_laps_policies_automaticaccountmanagementnameorprefix",
+    "settingName": "Automatic Account Management Name Or Prefix",
+    "settingDescription": "Use this setting to configure the name or prefix of the managed local administrator account.\n\nIf specified, the value will be used as the name or name prefix of the managed account.\n\nIf not specified, this setting will default to \"WLapsAdmin\".",
+    "keywords": [
+      "Automatic Account Management Name Or Prefix",
+      "LAPS"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localusersandgroups_configure_groupconfiguration_accessgroup",
+    "settingName": "access group",
+    "settingDescription": "This Setting allows an administrator to manage local groups on a Device.                             Possible settings:                             1. Update Group Membership: Update a group and add and/or remove members though the 'U' action.                             When using Update, existing group members that are not specified in the policy remain untouched.                             2. Replace Group Membership: Restrict a group by replacing group membership through the 'R' action.                             When using Replace, existing group membership is replaced by the list of members specified in                             the add member section. This option works in the same way as a Restricted Group and any group                             members that are not specified in the policy are removed.                             Caution: If the same group is configured with both Replace and Update, then Replace will win.",
+    "keywords": [
+      "LocalUsersAndGroups",
+      "Configure",
+      "Local Users And Groups"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localusersandgroups_configure_groupconfiguration_accessgroup_userselectiontype",
+    "settingName": "User selection type",
+    "settingDescription": "This Setting allows an administrator to manage local groups on a Device.                             Possible settings:                             1. Update Group Membership: Update a group and add and/or remove members though the 'U' action.                             When using Update, existing group members that are not specified in the policy remain untouched.                             2. Replace Group Membership: Restrict a group by replacing group membership through the 'R' action.                             When using Replace, existing group membership is replaced by the list of members specified in                             the add member section. This option works in the same way as a Restricted Group and any group                             members that are not specified in the policy are removed.                             Caution: If the same group is configured with both Replace and Update, then Replace will win.",
+    "keywords": [
+      "LocalUsersAndGroups",
+      "Configure",
+      "Local Users And Groups"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_certificatepayloadwithreusablesetting",
+    "settingName": "Certificate",
+    "settingDescription": null,
+    "keywords": [
+      "Certificate",
+      "Elevation",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_internalname",
     "settingName": "Internal name",
     "settingDescription": null,
@@ -1049,18 +899,6 @@
     "keywords": [
       "Certificate",
       "Elevation",
-      "Privilege Management"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_ruletype_userconfirmeduservalidation",
-    "settingName": "Validation",
-    "settingDescription": "",
-    "keywords": [
-      "Elevation type",
-      "Elevation",
-      "Rule type",
       "Privilege Management"
     ],
     "categoryName": "Uncategorized"
@@ -1303,86 +1141,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_action",
-    "settingName": "Action",
-    "settingDescription": "Sets a rule to allow or deny the configured settings.",
-    "keywords": [
-      "Application Control",
-      "Rules",
-      "Rule Action",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_auditmode",
-    "settingName": "Audit mode",
-    "settingDescription": "Turning audit mode on will not enforce the policy. We recommend first running the poliy with audit mode turned on prior to enforcement to determine the impacts of the policy.",
-    "keywords": [
-      "App Control for Business",
-      "Audit mode"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_hypervisorprotectedcodeintegrity",
-    "settingName": "Hypervisor protected Code Integrity",
-    "settingDescription": "When enabled, code integrity runs in a hypervisor-protected container.",
-    "keywords": [
-      "Advanced settings",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_trustappsfrommanagedinstaller",
-    "settingName": "Trust apps from managed installer",
-    "settingDescription": "Turning Trust apps from managed installer on will not enforce the policy. We recommend first running the poliy with Trust apps from managed installer turned on prior to enforcement to determine the impacts of the policy.",
-    "keywords": [
-      "App Control for Business",
-      "Trust apps from managed installer"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type_filepathdetails",
-    "settingName": "File Path",
-    "settingDescription": "The path of the directory or file for application of this rule.",
-    "keywords": [
-      "Application Control",
-      "Rules",
-      "File Path",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type_publisherdetails_minimumversiondetails",
-    "settingName": "Minimum Version",
-    "settingDescription": "The application's minimum version",
-    "keywords": [
-      "Application Control",
-      "Rules",
-      "Publisher",
-      "Minimum Version",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type_fileattributes_productnamedetails",
-    "settingName": "Product name",
-    "settingDescription": "The product name of the selected file as stated in the file attributes.",
-    "keywords": [
-      "Application Control",
-      "Rules",
-      "File Attributes",
-      "Product Name",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_sid",
     "settingName": "Sid",
     "settingDescription": "Local user Sid or user Sid group or the Sid of the AD object, defines whether to apply this policy over a specific user or user group; one entry can have a maximum of one Sid and an entry without any Sid means applying the policy over the machine.",
@@ -1568,7 +1326,7 @@
   },
   {
     "settingId": "enrollment_autopilot_dpp_skipeula",
-    "settingName": "Microsoft Software License Terms",
+    "settingName": "Hide Microsoft Software License Terms",
     "settingDescription": "Specify whether to show the end-user license agreement to users.",
     "keywords": [
       "Autopilot",
@@ -1608,41 +1366,6 @@
     "settingDescription": "Select the file containing the script to execute.",
     "keywords": [
       "Linux Custom Configuration"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type_fileattributes_filedescriptiondetails",
-    "settingName": "File description",
-    "settingDescription": "The description of the selected file as stated in the file attributes.",
-    "keywords": [
-      "Application Control",
-      "Rules",
-      "File Attributes",
-      "File Description",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_name",
-    "settingName": "Rule Name",
-    "settingDescription": "The name of the rule",
-    "keywords": [
-      "Application Control",
-      "Rule Name",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type",
-    "settingName": "Rule Type",
-    "settingDescription": "Rule Type",
-    "keywords": [
-      "Application Control",
-      "Rule Type",
-      "App Control for Business"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1896,61 +1619,6 @@
       "Elevation",
       "Privilege Management",
       "Privilege Management Elevation Client Settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_trustappswithgoodreputation",
-    "settingName": "Trust apps with good reputation",
-    "settingDescription": "When enabled, applications with known good reputation as defined by the Microsoft's Intelligent Security Graph (ISG) are white listed.",
-    "keywords": [
-      "App Control for Business",
-      "Trust apps with good reputation"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_basepolicyid",
-    "settingName": "Base policy id",
-    "settingDescription": "The id of the base policy for which this supplemental policy applies.",
-    "keywords": [
-      "Base settings",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_id",
-    "settingName": "Rule Id",
-    "settingDescription": "The Id of the rule, leave this field blank, it will be filled in automatically.",
-    "keywords": [
-      "Application Control",
-      "Rule Id",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}",
-    "settingName": "Policy rules",
-    "settingDescription": "",
-    "keywords": [
-      "Application Control",
-      "Rules",
-      "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationcontrolv2_supplementalpolicy_buildoptions_{ruleid}_type_fileattributesdetails",
-    "settingName": "File Attributes",
-    "settingDescription": "Creates a rule for attributes of a selected file.",
-    "keywords": [
-      "Application Control",
-      "Rules",
-      "Rule",
-      "File Attributes",
-      "App Control for Business"
     ],
     "categoryName": "Uncategorized"
   },

@@ -180,40 +180,10 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "com.apple.managedclient.preferences_allowedthreats",
-    "settingName": "Allowed threats",
-    "settingDescription": "List of threats (identified by their name) that are not blocked by the product and are instead allowed to run.",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
     "settingId": "com.apple.managedclient.preferences_scanarchives",
     "settingName": "Scanning inside archive files",
     "settingDescription": "If true, Defender will unpack archives and scan files inside them. Otherwise archive content will be skipped, that will improve scanning performance.",
     "keywords": [
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_threattypesettings_item_key",
-    "settingName": "Threat type",
-    "settingDescription": "Type of the threat for which the behavior is configured.",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_threattypesettingsmergepolicy",
-    "settingName": "Threat type settings merge",
-    "settingDescription": "Specify the merge policy for threat type settings. This can be a combination of administrator-defined and user-defined settings (merge) or only administrator-defined settings (admin_only). This setting can be used to restrict local users from defining their own settings for different threat types.",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
     "categoryName": "Microsoft Defender"
@@ -224,15 +194,6 @@
     "settingDescription": "Action to take when coming across a threat of the type specified in the preceding section.",
     "keywords": [
       "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_enablefilehashcomputation",
-    "settingName": "Enable file hash computation",
-    "settingDescription": "Enables or disables file hash computation feature. When this feature is enabled Windows defender will compute hashes for files it scans. This will help in improving the accuracy of Custom Indicator matches. However, enabling Enable file hash computation may impact device performance.",
-    "keywords": [
       "Antivirus engine"
     ],
     "categoryName": "Microsoft Defender"
@@ -265,38 +226,9 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "linux_mdatp_managed_antivirusengine_unmonitoredfilesystems",
-    "settingName": "Unmonitored Filesystems",
-    "settingDescription": "List of filesystems (identified by their name) to be unmonitored/excluded from Real Time Protection(RTP).",
-    "keywords": [
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_threattypesettingsmergepolicy",
-    "settingName": "Threat type settings merge",
-    "settingDescription": "Specify the merge policy for threat type settings. This can be a combination of administrator-defined and user-defined settings (merge) or only administrator-defined settings (admin_only). This setting can be used to restrict local users from defining their own settings for different threat types.",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
     "settingId": "linux_mdatp_managed_antivirusengine_disallowedthreatactions",
     "settingName": "Disallowed threat actions",
     "settingDescription": "Restricts the actions that the local user of a device can take when threats are detected. The actions included in this list are not displayed in the user interface.",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_exclusions_item_path",
-    "settingName": "Path",
-    "settingDescription": "Path to exclude, wildcards are supported",
     "keywords": [
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
@@ -318,6 +250,74 @@
     "settingDescription": "Global exclusions apply to both Antivirus and Endpoint detection and response to exclude at a much lower level closer to sensors. Usage: Tackling performance issues. Risk: Significantly risks protection",
     "keywords": [
       "Exclusion Settings"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_allowedthreats",
+    "settingName": "Allowed threats",
+    "settingDescription": "List of threats (identified by their name) that are not blocked by the product and are instead allowed to run.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_threattypesettings_item_key",
+    "settingName": "Threat type",
+    "settingDescription": "Type of the threat for which the behavior is configured.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_threattypesettingsmergepolicy",
+    "settingName": "Threat type settings merge",
+    "settingDescription": "Specify the merge policy for threat type settings. This can be a combination of administrator-defined and user-defined settings (merge) or only administrator-defined settings (admin_only). This setting can be used to restrict local users from defining their own settings for different threat types.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_enablefilehashcomputation",
+    "settingName": "Enable file hash computation",
+    "settingDescription": "Enables or disables file hash computation feature. When this feature is enabled Windows defender will compute hashes for files it scans. This will help in improving the accuracy of Custom Indicator matches. However, enabling Enable file hash computation may impact device performance.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_unmonitoredfilesystems",
+    "settingName": "Unmonitored Filesystems",
+    "settingDescription": "List of filesystems (identified by their name) to be unmonitored/excluded from Real Time Protection(RTP).",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_threattypesettingsmergepolicy",
+    "settingName": "Threat type settings merge",
+    "settingDescription": "Specify the merge policy for threat type settings. This can be a combination of administrator-defined and user-defined settings (merge) or only administrator-defined settings (admin_only). This setting can be used to restrict local users from defining their own settings for different threat types.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_exclusions_item_path",
+    "settingName": "Path",
+    "settingDescription": "Path to exclude, wildcards are supported",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
     ],
     "categoryName": "Microsoft Defender"
   },
