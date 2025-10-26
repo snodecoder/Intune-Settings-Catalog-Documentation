@@ -904,17 +904,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "ade_awaitconfiguration_basic",
-    "settingName": "Await final configuration",
-    "settingDescription": "Keeps the device in Setup Assistant until the first sync between the device and Intune installs policies.",
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Management settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_devicenametemplatechoices",
     "settingName": "Apple device name template",
     "settingDescription": "You can create a standard naming format to make it easier to name devices as they enroll in Intune. By default, Apple uses the device type (such as iPad or iPhone) and serial number to name ADE devices.",
@@ -929,28 +918,6 @@
     "settingId": "ade_maximumsecondsinactivityuntiltemporarysessionlogsout",
     "settingName": "Maximum seconds of inactivity until temporary session logs out",
     "settingDescription": "Available for devices running iPadOS versions 14.5 and later. Enter a value in seconds (minimum value to add is 30 seconds).  If there isn't any activity after the value you enter, then the temporary session automatically signs out. If you set the value to anything between 0-29, then the temporary session stays signed in. ",
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Management settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_requiresharedipadtemporarysessiononly",
-    "settingName": "Require Shared iPad temporary session only",
-    "settingDescription": "Available for devices running iPadOS versions 14.5 and later. When set to Yes, users only see the Guest Welcome pane, and can only sign in as a guest user. Users can't sign in with a Managed Apple ID.",
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Management settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_maximumsecondsafterscreenlockbeofrepasswordisrequired",
-    "settingName": "Maximum seconds after screen lock before password is required",
-    "settingDescription": "Available for Shared iPads. Maximum seconds after screen lock before password is required (0-14,400 seconds). If a device has a passcode, a change to a larger value doesn’t take effect until the user logs out or removes the passcode.",
     "keywords": [
       "ADE profile",
       "enrollment",
@@ -1014,28 +981,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "ade_setupassistant_privacy",
-    "settingName": "Privacy",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_setupassistant_restorecompleted",
-    "settingName": "Restore completed",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_setupassistant_siri",
     "settingName": "Siri",
     "settingDescription": null,
@@ -1043,17 +988,6 @@
       "ADE profile",
       "enrollment",
       "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_quiettime_rangesettings_starttime",
-    "settingName": "Start",
-    "settingDescription": null,
-    "keywords": [
-      "start time",
-      "starttime",
-      "Range Settings"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1106,29 +1040,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "enrollment_autopilot_dpp_deploymenttype",
-    "settingName": "Deployment type",
-    "settingDescription": "",
-    "keywords": [
-      "Autopilot",
-      "Device Preparation",
-      "Deployment settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_elevationclientsettings_reportingscope",
-    "settingName": "Reporting scope",
-    "settingDescription": "",
-    "keywords": [
-      "Client Settings",
-      "Reporting scope",
-      "Privilege Management",
-      "Privilege Management Elevation Client Settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_policy_elevationclientsettings_senddata",
     "settingName": "Send elevation data for reporting",
     "settingDescription": "",
@@ -1137,17 +1048,6 @@
       "Send Data to Microsoft",
       "Privilege Management",
       "Privilege Management Elevation Client Settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_sid",
-    "settingName": "Sid",
-    "settingDescription": "Local user Sid or user Sid group or the Sid of the AD object, defines whether to apply this policy over a specific user or user group; one entry can have a maximum of one Sid and an entry without any Sid means applying the policy over the machine.",
-    "keywords": [
-      "Defender",
-      "DeviceControl",
-      "Device Control"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1185,17 +1085,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_platformstatus",
-    "settingName": "Platform status",
-    "settingDescription": "Applies to Microsoft Office/Generic platform. Returns bitmask that indicates status of Application Guard platform installation and prerequisites on the device.  Bit 0 - Set to 1 when Application Guard is enabled into enterprise manage mode. Bit 1 - Set to 1 when the client machine is Hyper-V capable. Bit 2 - Reserved for Microsoft. Bit 3 - Set to 1 when Application Guard is installed on the client machine. Bit 4 - Reserved for Microsoft. Bit 5 - Set to 1 when the client machine meets minimum hardware requirements.",
-    "keywords": [
-      "PlatformStatus",
-      "WindowsDefenderApplicationGuard",
-      "Microsoft Defender Application Guard"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_windowsdefenderapplicationguard_settings_allowvirtualgpu",
     "settingName": "Allow hardware-accelerated rendering",
     "settingDescription": "This policy setting determines whether Microsoft Defender Application Guard renders graphics using hardware or software acceleration. If you enable this setting, Microsoft Defender Application Guard uses Hyper-V to access supported, high-security rendering graphics hardware (GPUs). These GPUs improve rendering performance and battery life while using Microsoft Defender Application Guard, particularly for video playback and other graphics-intensive use cases. If you enable this setting without connecting any high-security rendering graphics hardware, Microsoft Defender Application Guard will automatically revert to software-based (CPU) rendering.",
@@ -1227,6 +1116,139 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_filehash",
+    "settingName": "File hash",
+    "settingDescription": "Hash of the file that should be elevated",
+    "keywords": [
+      "File Hash",
+      "Elevation",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_filedescription",
+    "settingName": "File description",
+    "settingDescription": null,
+    "keywords": [
+      "File Description",
+      "Elevation",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_awaitconfiguration_basic",
+    "settingName": "Await final configuration",
+    "settingDescription": "Keeps the device in Setup Assistant until the first sync between the device and Intune installs policies.",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Management settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_requiresharedipadtemporarysessiononly",
+    "settingName": "Require Shared iPad temporary session only",
+    "settingDescription": "Available for devices running iPadOS versions 14.5 and later. When set to Yes, users only see the Guest Welcome pane, and can only sign in as a guest user. Users can't sign in with a Managed Apple ID.",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Management settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_maximumsecondsafterscreenlockbeofrepasswordisrequired",
+    "settingName": "Maximum seconds after screen lock before password is required",
+    "settingDescription": "Available for Shared iPads. Maximum seconds after screen lock before password is required (0-14,400 seconds). If a device has a passcode, a change to a larger value doesn’t take effect until the user logs out or removes the passcode.",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Management settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_privacy",
+    "settingName": "Privacy",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_restorecompleted",
+    "settingName": "Restore completed",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_quiettime_rangesettings_starttime",
+    "settingName": "Start",
+    "settingDescription": null,
+    "keywords": [
+      "start time",
+      "starttime",
+      "Range Settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_deploymenttype",
+    "settingName": "Deployment type",
+    "settingDescription": "",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "Deployment settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_elevationclientsettings_reportingscope",
+    "settingName": "Reporting scope",
+    "settingDescription": "",
+    "keywords": [
+      "Client Settings",
+      "Reporting scope",
+      "Privilege Management",
+      "Privilege Management Elevation Client Settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_sid",
+    "settingName": "Sid",
+    "settingDescription": "Local user Sid or user Sid group or the Sid of the AD object, defines whether to apply this policy over a specific user or user group; one entry can have a maximum of one Sid and an entry without any Sid means applying the policy over the machine.",
+    "keywords": [
+      "Defender",
+      "DeviceControl",
+      "Device Control"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_platformstatus",
+    "settingName": "Platform status",
+    "settingDescription": "Applies to Microsoft Office/Generic platform. Returns bitmask that indicates status of Application Guard platform installation and prerequisites on the device.  Bit 0 - Set to 1 when Application Guard is enabled into enterprise manage mode. Bit 1 - Set to 1 when the client machine is Hyper-V capable. Bit 2 - Reserved for Microsoft. Bit 3 - Set to 1 when Application Guard is installed on the client machine. Bit 4 - Reserved for Microsoft. Bit 5 - Set to 1 when the client machine meets minimum hardware requirements.",
+    "keywords": [
+      "PlatformStatus",
+      "WindowsDefenderApplicationGuard",
+      "Microsoft Defender Application Guard"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "device_vendor_msft_laps_policies_backupdirectory",
     "settingName": "Backup Directory ",
     "settingDescription": "Use this setting to configure which directory the local admin account password is backed up to.\n\nThe allowable settings are:\n\n0=Disabled (password will not be backed up)\n1=Backup the password to Microsoft Entra ID only\n2=Backup the password to Active Directory only\n\nIf not specified, this setting will default to 0.\r\n",
@@ -1254,28 +1276,6 @@
       "LocalUsersAndGroups",
       "Configure",
       "Local Users And Groups"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_filehash",
-    "settingName": "File hash",
-    "settingDescription": "Hash of the file that should be elevated",
-    "keywords": [
-      "File Hash",
-      "Elevation",
-      "Privilege Management"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_filedescription",
-    "settingName": "File description",
-    "settingDescription": null,
-    "keywords": [
-      "File Description",
-      "Elevation",
-      "Privilege Management"
     ],
     "categoryName": "Uncategorized"
   },

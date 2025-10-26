@@ -463,21 +463,6 @@
     "categoryName": "Device Restriction"
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.wifidirectsettings",
-    "settingName": "Block Wi-Fi Direct",
-    "settingDescription": "If 'True', blocks Wi-Fi Direct (a direct, peer-to-peer connection between devices using Wi-Fi frequencies). If set to 'False', Intune doesn't change or update this setting. By default, the OS might allow Wi-Fi Direct. Available for fully managed, dedicated, and corporate-owned work profile devices.",
-    "keywords": [
-      "Wifi direct",
-      "bluetooth",
-      "connection",
-      "Wi-Fi direct",
-      "direct",
-      "Wi-Fi",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.wifiblockeditpolicydefinedconfigurations",
     "settingName": "Block Wi-Fi setting changes",
     "settingDescription": "If 'True', prevents users from changing Wi-Fi settings created by the device owner. Users can create their own Wi-Fi configurations. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to change the Wi-Fi settings on the device. Available for fully managed and dedicated devices.",
@@ -488,18 +473,6 @@
       "Policy",
       "Defined",
       "Configurations",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.dataroamingblocked",
-    "settingName": "Block roaming data services",
-    "settingDescription": "If 'True', prevents data roaming over the cellular network. If 'False', Intune doesn't change or update this setting. By default, the OS might allow data roaming when the device is on a cellular network. Available for fully managed, dedicated and corporate-owned work profile devices. ",
-    "keywords": [
-      "Data",
-      "Roaming",
-      "Blocked",
       "General"
     ],
     "categoryName": "Device Restriction"
@@ -530,6 +503,73 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.cellularblockwifitethering",
+    "settingName": "Block tethering and access to hotspots",
+    "settingDescription": "If 'True', prevents tethering and access to portable hotspots. If 'False', Intune doesn't change or update this setting. By default, the OS might allow tethering and access to portable hotspots. Available for fully managed, dedicated and corporate-owned work profile devices. ",
+    "keywords": [
+      "Cellular",
+      "Block",
+      "Wi",
+      "Fi",
+      "Tethering",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.certificatecredentialconfigurationdisabled",
+    "settingName": "Block users from configuring credentials (work profile-level)",
+    "settingDescription": "If 'True', prevents users from configuring certificates assigned to devices, even devices that aren't associated with a user account. If 'False', Intune doesn't change or update this setting. By default, the OS might make it possible for users to configure or change their credentials when they access them in the keystore. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Certificate",
+      "Credential",
+      "Configuration",
+      "Disabled",
+      "User and Accounts",
+      "Users and Accounts"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.passwordrequireunlock",
+    "settingName": "Required unlock frequency",
+    "settingDescription": "Select how long users have before they're required to unlock the device using a strong authentication method (password, PIN, or pattern). Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Password",
+      "Require",
+      "Unlock",
+      "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.wifidirectsettings",
+    "settingName": "Block Wi-Fi Direct",
+    "settingDescription": "If 'True', blocks Wi-Fi Direct (a direct, peer-to-peer connection between devices using Wi-Fi frequencies). If set to 'False', Intune doesn't change or update this setting. By default, the OS might allow Wi-Fi Direct. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "Wifi direct",
+      "bluetooth",
+      "connection",
+      "Wi-Fi direct",
+      "direct",
+      "Wi-Fi",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.dataroamingblocked",
+    "settingName": "Block roaming data services",
+    "settingDescription": "If 'True', prevents data roaming over the cellular network. If 'False', Intune doesn't change or update this setting. By default, the OS might allow data roaming when the device is on a cellular network. Available for fully managed, dedicated and corporate-owned work profile devices. ",
+    "keywords": [
+      "Data",
+      "Roaming",
+      "Blocked",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.appsdefaultpermissionpolicy",
     "settingName": "Default permission policy (work profile-level)",
     "settingDescription": "Define the default permission policy for requests for runtime permissions. Available for fully managed, dedicated and corporate-owned work profile (at work profile level) devices.",
@@ -555,20 +595,6 @@
     "categoryName": "Device Restriction"
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.cellularblockwifitethering",
-    "settingName": "Block tethering and access to hotspots",
-    "settingDescription": "If 'True', prevents tethering and access to portable hotspots. If 'False', Intune doesn't change or update this setting. By default, the OS might allow tethering and access to portable hotspots. Available for fully managed, dedicated and corporate-owned work profile devices. ",
-    "keywords": [
-      "Cellular",
-      "Block",
-      "Wi",
-      "Fi",
-      "Tethering",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.accountsblockmodification",
     "settingName": "Block account changes",
     "settingDescription": "If 'True', prevents users from updating or changing accounts when in kiosk mode. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to update user accounts on the device. Available for dedicated devices.",
@@ -576,20 +602,6 @@
       "Accounts",
       "Block",
       "Modification",
-      "User and Accounts",
-      "Users and Accounts"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.certificatecredentialconfigurationdisabled",
-    "settingName": "Block users from configuring credentials (work profile-level)",
-    "settingDescription": "If 'True', prevents users from configuring certificates assigned to devices, even devices that aren't associated with a user account. If 'False', Intune doesn't change or update this setting. By default, the OS might make it possible for users to configure or change their credentials when they access them in the keystore. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "Certificate",
-      "Credential",
-      "Configuration",
-      "Disabled",
       "User and Accounts",
       "Users and Accounts"
     ],
@@ -617,18 +629,6 @@
       "Minimum",
       "Symbol",
       "Characters",
-      "Device password"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.passwordrequireunlock",
-    "settingName": "Required unlock frequency",
-    "settingDescription": "Select how long users have before they're required to unlock the device using a strong authentication method (password, PIN, or pattern). Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "Password",
-      "Require",
-      "Unlock",
       "Device password"
     ],
     "categoryName": "Device Restriction"

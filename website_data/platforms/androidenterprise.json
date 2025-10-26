@@ -3914,108 +3914,6 @@
     "dependencies": []
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.wifidirectsettings",
-    "settingName": "Block Wi-Fi Direct",
-    "settingDescription": "If 'True', blocks Wi-Fi Direct (a direct, peer-to-peer connection between devices using Wi-Fi frequencies). If set to 'False', Intune doesn't change or update this setting. By default, the OS might allow Wi-Fi Direct. Available for fully managed, dedicated, and corporate-owned work profile devices.",
-    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
-    "categoryName": "Device Restriction",
-    "keywords": [
-      "Wifi direct",
-      "bluetooth",
-      "connection",
-      "Wi-Fi direct",
-      "direct",
-      "Wi-Fi",
-      "General"
-    ],
-    "infoUrls": [],
-    "baseUri": "/com.android.deviceRestrictionPolicy/",
-    "offsetUri": "/wifiDirectSettings/",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "com.android.devicerestrictionpolicy.wifidirectsettings_allowed",
-    "applicability": {
-      "description": null,
-      "platform": "androidEnterprise",
-      "deviceMode": "none",
-      "technologies": "android"
-    },
-    "options": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.wifidirectsettings_allowed",
-        "description": "The user is allowed to use Wi-Fi direct.",
-        "helpText": null,
-        "name": "ALLOW_WIFI_DIRECT",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "ALLOW_WIFI_DIRECT"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.wifidirectsettings_disallowed",
-        "description": "The user is not allowed to use Wi-Fi direct. A NonComplianceDetail with API_LEVEL is reported if the Android version is less than 13.",
-        "helpText": null,
-        "name": "DISALLOW_WIFI_DIRECT",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "DISALLOW_WIFI_DIRECT"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "638960815959126030",
-    "helpText": null,
-    "name": "WifiDirectSettings",
-    "rootDefinitionId": "com.android.devicerestrictionpolicy.wifidirectsettings",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.wifidirectsettings_allowed",
-        "description": "The user is allowed to use Wi-Fi direct.",
-        "helpText": null,
-        "name": "ALLOW_WIFI_DIRECT",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "ALLOW_WIFI_DIRECT"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.wifidirectsettings_disallowed",
-        "description": "The user is not allowed to use Wi-Fi direct. A NonComplianceDetail with API_LEVEL is reported if the Android version is less than 13.",
-        "helpText": null,
-        "name": "DISALLOW_WIFI_DIRECT",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "DISALLOW_WIFI_DIRECT"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.wifiblockeditpolicydefinedconfigurations",
     "settingName": "Block Wi-Fi setting changes",
     "settingDescription": "If 'True', prevents users from changing Wi-Fi settings created by the device owner. Users can create their own Wi-Fi configurations. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to change the Wi-Fi settings on the device. Available for fully managed and dedicated devices.",
@@ -4102,105 +4000,6 @@
       },
       {
         "itemId": "com.android.devicerestrictionpolicy.wifiblockeditpolicydefinedconfigurations_false",
-        "description": "false",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.dataroamingblocked",
-    "settingName": "Block roaming data services",
-    "settingDescription": "If 'True', prevents data roaming over the cellular network. If 'False', Intune doesn't change or update this setting. By default, the OS might allow data roaming when the device is on a cellular network. Available for fully managed, dedicated and corporate-owned work profile devices. ",
-    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
-    "categoryName": "Device Restriction",
-    "keywords": [
-      "Data",
-      "Roaming",
-      "Blocked",
-      "General"
-    ],
-    "infoUrls": [],
-    "baseUri": "/com.android.deviceRestrictionPolicy/",
-    "offsetUri": "/dataRoamingBlocked/",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "com.android.devicerestrictionpolicy.dataroamingblocked_false",
-    "applicability": {
-      "description": null,
-      "platform": "androidEnterprise",
-      "deviceMode": "none",
-      "technologies": "android"
-    },
-    "options": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.dataroamingblocked_true",
-        "description": "true",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.dataroamingblocked_false",
-        "description": "false",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "638960815959126030",
-    "helpText": null,
-    "name": "DataRoamingBlocked",
-    "rootDefinitionId": "com.android.devicerestrictionpolicy.dataroamingblocked",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.dataroamingblocked_true",
-        "description": "true",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.dataroamingblocked_false",
         "description": "false",
         "helpText": null,
         "name": "False",
@@ -4408,6 +4207,508 @@
           "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
           "settingValueTemplateReference": null,
           "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.cellularblockwifitethering",
+    "settingName": "Block tethering and access to hotspots",
+    "settingDescription": "If 'True', prevents tethering and access to portable hotspots. If 'False', Intune doesn't change or update this setting. By default, the OS might allow tethering and access to portable hotspots. Available for fully managed, dedicated and corporate-owned work profile devices. ",
+    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Cellular",
+      "Block",
+      "Wi",
+      "Fi",
+      "Tethering",
+      "General"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/cellularBlockWiFiTethering/",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.android.devicerestrictionpolicy.cellularblockwifitethering_false",
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.cellularblockwifitethering_true",
+        "description": "true",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.cellularblockwifitethering_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638960815959126030",
+    "helpText": null,
+    "name": "CellularBlockWiFiTethering",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.cellularblockwifitethering",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.cellularblockwifitethering_true",
+        "description": "true",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.cellularblockwifitethering_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.certificatecredentialconfigurationdisabled",
+    "settingName": "Block users from configuring credentials (work profile-level)",
+    "settingDescription": "If 'True', prevents users from configuring certificates assigned to devices, even devices that aren't associated with a user account. If 'False', Intune doesn't change or update this setting. By default, the OS might make it possible for users to configure or change their credentials when they access them in the keystore. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "categoryId": "aad0d3ef-88f5-4b22-831b-27093eafbc64",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Certificate",
+      "Credential",
+      "Configuration",
+      "Disabled",
+      "User and Accounts",
+      "Users and Accounts"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/certificateCredentialConfigurationDisabled/",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.android.devicerestrictionpolicy.certificatecredentialconfigurationdisabled_false",
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.certificatecredentialconfigurationdisabled_true",
+        "description": "true",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.certificatecredentialconfigurationdisabled_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638960815959126030",
+    "helpText": null,
+    "name": "CertificateCredentialConfigurationDisabled",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.certificatecredentialconfigurationdisabled",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.certificatecredentialconfigurationdisabled_true",
+        "description": "true",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.certificatecredentialconfigurationdisabled_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.passwordrequireunlock",
+    "settingName": "Required unlock frequency",
+    "settingDescription": "Select how long users have before they're required to unlock the device using a strong authentication method (password, PIN, or pattern). Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "categoryId": "f350f9a2-3a91-4d6d-90ed-7e3849b0d5f1",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Password",
+      "Require",
+      "Unlock",
+      "Device password"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/passwordRequireUnlock/",
+    "settingUsage": "configuration",
+    "uxBehavior": "dropdown",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.passwordrequireunlock_devicedefault",
+        "description": null,
+        "helpText": null,
+        "name": "USE_DEFAULT_DEVICE_TIMEOUT",
+        "displayName": "Device default",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "USE_DEFAULT_DEVICE_TIMEOUT"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.passwordrequireunlock_requiredpasswordunlockdailyoption",
+        "description": null,
+        "helpText": null,
+        "name": "REQUIRE_EVERY_DAY",
+        "displayName": "24 hours since last PIN, password, or pattern unlock",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "REQUIRE_EVERY_DAY"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638960815959126030",
+    "helpText": "",
+    "name": "PasswordRequireUnlock",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequireunlock",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.passwordrequireunlock_devicedefault",
+        "description": null,
+        "helpText": null,
+        "name": "USE_DEFAULT_DEVICE_TIMEOUT",
+        "displayName": "Device default",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "USE_DEFAULT_DEVICE_TIMEOUT"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.passwordrequireunlock_requiredpasswordunlockdailyoption",
+        "description": null,
+        "helpText": null,
+        "name": "REQUIRE_EVERY_DAY",
+        "displayName": "24 hours since last PIN, password, or pattern unlock",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "REQUIRE_EVERY_DAY"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.wifidirectsettings",
+    "settingName": "Block Wi-Fi Direct",
+    "settingDescription": "If 'True', blocks Wi-Fi Direct (a direct, peer-to-peer connection between devices using Wi-Fi frequencies). If set to 'False', Intune doesn't change or update this setting. By default, the OS might allow Wi-Fi Direct. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Wifi direct",
+      "bluetooth",
+      "connection",
+      "Wi-Fi direct",
+      "direct",
+      "Wi-Fi",
+      "General"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/wifiDirectSettings/",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.android.devicerestrictionpolicy.wifidirectsettings_allowed",
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.wifidirectsettings_allowed",
+        "description": "The user is allowed to use Wi-Fi direct.",
+        "helpText": null,
+        "name": "ALLOW_WIFI_DIRECT",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "ALLOW_WIFI_DIRECT"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.wifidirectsettings_disallowed",
+        "description": "The user is not allowed to use Wi-Fi direct. A NonComplianceDetail with API_LEVEL is reported if the Android version is less than 13.",
+        "helpText": null,
+        "name": "DISALLOW_WIFI_DIRECT",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "DISALLOW_WIFI_DIRECT"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638960815959126030",
+    "helpText": null,
+    "name": "WifiDirectSettings",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.wifidirectsettings",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.wifidirectsettings_allowed",
+        "description": "The user is allowed to use Wi-Fi direct.",
+        "helpText": null,
+        "name": "ALLOW_WIFI_DIRECT",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "ALLOW_WIFI_DIRECT"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.wifidirectsettings_disallowed",
+        "description": "The user is not allowed to use Wi-Fi direct. A NonComplianceDetail with API_LEVEL is reported if the Android version is less than 13.",
+        "helpText": null,
+        "name": "DISALLOW_WIFI_DIRECT",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "DISALLOW_WIFI_DIRECT"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.dataroamingblocked",
+    "settingName": "Block roaming data services",
+    "settingDescription": "If 'True', prevents data roaming over the cellular network. If 'False', Intune doesn't change or update this setting. By default, the OS might allow data roaming when the device is on a cellular network. Available for fully managed, dedicated and corporate-owned work profile devices. ",
+    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Data",
+      "Roaming",
+      "Blocked",
+      "General"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/dataRoamingBlocked/",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.android.devicerestrictionpolicy.dataroamingblocked_false",
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.dataroamingblocked_true",
+        "description": "true",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.dataroamingblocked_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638960815959126030",
+    "helpText": null,
+    "name": "DataRoamingBlocked",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.dataroamingblocked",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.dataroamingblocked_true",
+        "description": "true",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.dataroamingblocked_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
         },
         "dependentOn": [],
         "dependedOnBy": []
@@ -4671,107 +4972,6 @@
     "dependencies": []
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.cellularblockwifitethering",
-    "settingName": "Block tethering and access to hotspots",
-    "settingDescription": "If 'True', prevents tethering and access to portable hotspots. If 'False', Intune doesn't change or update this setting. By default, the OS might allow tethering and access to portable hotspots. Available for fully managed, dedicated and corporate-owned work profile devices. ",
-    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
-    "categoryName": "Device Restriction",
-    "keywords": [
-      "Cellular",
-      "Block",
-      "Wi",
-      "Fi",
-      "Tethering",
-      "General"
-    ],
-    "infoUrls": [],
-    "baseUri": "/com.android.deviceRestrictionPolicy/",
-    "offsetUri": "/cellularBlockWiFiTethering/",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "com.android.devicerestrictionpolicy.cellularblockwifitethering_false",
-    "applicability": {
-      "description": null,
-      "platform": "androidEnterprise",
-      "deviceMode": "none",
-      "technologies": "android"
-    },
-    "options": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.cellularblockwifitethering_true",
-        "description": "true",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.cellularblockwifitethering_false",
-        "description": "false",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "638960815959126030",
-    "helpText": null,
-    "name": "CellularBlockWiFiTethering",
-    "rootDefinitionId": "com.android.devicerestrictionpolicy.cellularblockwifitethering",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.cellularblockwifitethering_true",
-        "description": "true",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.cellularblockwifitethering_false",
-        "description": "false",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.accountsblockmodification",
     "settingName": "Block account changes",
     "settingDescription": "If 'True', prevents users from updating or changing accounts when in kiosk mode. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to update user accounts on the device. Available for dedicated devices.",
@@ -4856,107 +5056,6 @@
       },
       {
         "itemId": "com.android.devicerestrictionpolicy.accountsblockmodification_false",
-        "description": "false",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.certificatecredentialconfigurationdisabled",
-    "settingName": "Block users from configuring credentials (work profile-level)",
-    "settingDescription": "If 'True', prevents users from configuring certificates assigned to devices, even devices that aren't associated with a user account. If 'False', Intune doesn't change or update this setting. By default, the OS might make it possible for users to configure or change their credentials when they access them in the keystore. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
-    "categoryId": "aad0d3ef-88f5-4b22-831b-27093eafbc64",
-    "categoryName": "Device Restriction",
-    "keywords": [
-      "Certificate",
-      "Credential",
-      "Configuration",
-      "Disabled",
-      "User and Accounts",
-      "Users and Accounts"
-    ],
-    "infoUrls": [],
-    "baseUri": "/com.android.deviceRestrictionPolicy/",
-    "offsetUri": "/certificateCredentialConfigurationDisabled/",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "com.android.devicerestrictionpolicy.certificatecredentialconfigurationdisabled_false",
-    "applicability": {
-      "description": null,
-      "platform": "androidEnterprise",
-      "deviceMode": "none",
-      "technologies": "android"
-    },
-    "options": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.certificatecredentialconfigurationdisabled_true",
-        "description": "true",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.certificatecredentialconfigurationdisabled_false",
-        "description": "false",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "638960815959126030",
-    "helpText": null,
-    "name": "CertificateCredentialConfigurationDisabled",
-    "rootDefinitionId": "com.android.devicerestrictionpolicy.certificatecredentialconfigurationdisabled",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.certificatecredentialconfigurationdisabled_true",
-        "description": "true",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.certificatecredentialconfigurationdisabled_false",
         "description": "false",
         "helpText": null,
         "name": "False",
@@ -5070,105 +5169,6 @@
     "definitionDescription": null,
     "dataType": null,
     "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.passwordrequireunlock",
-    "settingName": "Required unlock frequency",
-    "settingDescription": "Select how long users have before they're required to unlock the device using a strong authentication method (password, PIN, or pattern). Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
-    "categoryId": "f350f9a2-3a91-4d6d-90ed-7e3849b0d5f1",
-    "categoryName": "Device Restriction",
-    "keywords": [
-      "Password",
-      "Require",
-      "Unlock",
-      "Device password"
-    ],
-    "infoUrls": [],
-    "baseUri": "/com.android.deviceRestrictionPolicy/",
-    "offsetUri": "/passwordRequireUnlock/",
-    "settingUsage": "configuration",
-    "uxBehavior": "dropdown",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "androidEnterprise",
-      "deviceMode": "none",
-      "technologies": "android"
-    },
-    "options": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.passwordrequireunlock_devicedefault",
-        "description": null,
-        "helpText": null,
-        "name": "USE_DEFAULT_DEVICE_TIMEOUT",
-        "displayName": "Device default",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "USE_DEFAULT_DEVICE_TIMEOUT"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.passwordrequireunlock_requiredpasswordunlockdailyoption",
-        "description": null,
-        "helpText": null,
-        "name": "REQUIRE_EVERY_DAY",
-        "displayName": "24 hours since last PIN, password, or pattern unlock",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "REQUIRE_EVERY_DAY"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "638960815959126030",
-    "helpText": "",
-    "name": "PasswordRequireUnlock",
-    "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequireunlock",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.passwordrequireunlock_devicedefault",
-        "description": null,
-        "helpText": null,
-        "name": "USE_DEFAULT_DEVICE_TIMEOUT",
-        "displayName": "Device default",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "USE_DEFAULT_DEVICE_TIMEOUT"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.passwordrequireunlock_requiredpasswordunlockdailyoption",
-        "description": null,
-        "helpText": null,
-        "name": "REQUIRE_EVERY_DAY",
-        "displayName": "24 hours since last PIN, password, or pattern unlock",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "REQUIRE_EVERY_DAY"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
     "dependencies": []
   },
   {

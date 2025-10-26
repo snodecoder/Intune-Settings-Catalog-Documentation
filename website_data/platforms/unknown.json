@@ -8639,104 +8639,6 @@
     "dependencies": []
   },
   {
-    "settingId": "ade_awaitconfiguration_basic",
-    "settingName": "Await final configuration",
-    "settingDescription": "Keeps the device in Setup Assistant until the first sync between the device and Intune installs policies.",
-    "categoryId": "75e27534-3163-45b1-b34e-ca79b077b286",
-    "categoryName": "Uncategorized",
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Management settings"
-    ],
-    "infoUrls": [],
-    "baseUri": "./enrollment/ade",
-    "offsetUri": "/ade_awaitConfiguration_basic",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "template",
-    "riskLevel": "low",
-    "defaultOptionId": "ade_awaitconfiguration_basic_1",
-    "applicability": {
-      "description": null,
-      "platform": "visionOS,tvOS",
-      "deviceMode": "none",
-      "technologies": "enrollment"
-    },
-    "options": [
-      {
-        "itemId": "ade_awaitconfiguration_basic_0",
-        "description": null,
-        "helpText": null,
-        "name": "No",
-        "displayName": "No",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 0
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "ade_awaitconfiguration_basic_1",
-        "description": null,
-        "helpText": null,
-        "name": "Yes",
-        "displayName": "Yes",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 1
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "638960815959126030",
-    "helpText": "",
-    "name": "AwaitConfiguration_Basic_1",
-    "rootDefinitionId": "ade_awaitconfiguration_basic",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "ade_awaitconfiguration_basic_0",
-        "description": null,
-        "helpText": null,
-        "name": "No",
-        "displayName": "No",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 0
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "ade_awaitconfiguration_basic_1",
-        "description": null,
-        "helpText": null,
-        "name": "Yes",
-        "displayName": "Yes",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 1
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
     "settingId": "ade_devicenametemplatechoices",
     "settingName": "Apple device name template",
     "settingDescription": "You can create a standard naming format to make it easier to name devices as they enroll in Intune. By default, Apple uses the device type (such as iPad or iPhone) and serial number to name ADE devices.",
@@ -8885,208 +8787,6 @@
     "version": "638960815959126030",
     "helpText": "Enter value",
     "name": "MaximumSecondsInactivityUntilTemporarySessionLogsOut",
-    "rootDefinitionId": "ade_useraffinity",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "ade_requiresharedipadtemporarysessiononly",
-    "settingName": "Require Shared iPad temporary session only",
-    "settingDescription": "Available for devices running iPadOS versions 14.5 and later. When set to Yes, users only see the Guest Welcome pane, and can only sign in as a guest user. Users can't sign in with a Managed Apple ID.",
-    "categoryId": "75e27534-3163-45b1-b34e-ca79b077b286",
-    "categoryName": "Uncategorized",
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Management settings"
-    ],
-    "infoUrls": [],
-    "baseUri": "./enrollment/ade",
-    "offsetUri": "/requireSharedIPadTemporarySessionOnly",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "template",
-    "riskLevel": "low",
-    "defaultOptionId": "ade_requiresharedipadtemporarysessiononly_0",
-    "applicability": {
-      "description": null,
-      "platform": "iOS",
-      "deviceMode": "none",
-      "technologies": "enrollment"
-    },
-    "options": [
-      {
-        "itemId": "ade_requiresharedipadtemporarysessiononly_0",
-        "description": null,
-        "helpText": null,
-        "name": "NotConfigured",
-        "displayName": "Not configured",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 0
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "ade_useraffinity_3",
-            "parentSettingId": "ade_useraffinity"
-          }
-        ],
-        "dependedOnBy": [
-          {
-            "dependedOnBy": "ade_maximumcachedusers",
-            "required": true
-          },
-          {
-            "dependedOnBy": "ade_maximumsecondsafterscreenlockbeofrepasswordisrequired",
-            "required": false
-          },
-          {
-            "dependedOnBy": "ade_maximumsecondsinactivityuntiluserlogsout",
-            "required": true
-          }
-        ]
-      },
-      {
-        "itemId": "ade_requiresharedipadtemporarysessiononly_1",
-        "description": null,
-        "helpText": null,
-        "name": "Yes",
-        "displayName": "Yes",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 1
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "ade_useraffinity_3",
-            "parentSettingId": "ade_useraffinity"
-          }
-        ],
-        "dependedOnBy": [
-          {
-            "dependedOnBy": "ade_maximumsecondsinactivityuntiltemporarysessionlogsout",
-            "required": true
-          }
-        ]
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "638960815959126030",
-    "helpText": "",
-    "name": "RequireSharedIPadTemporarySessionOnly",
-    "rootDefinitionId": "ade_useraffinity",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "ade_requiresharedipadtemporarysessiononly_0",
-        "description": null,
-        "helpText": null,
-        "name": "NotConfigured",
-        "displayName": "Not configured",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 0
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "ade_useraffinity_3",
-            "parentSettingId": "ade_useraffinity"
-          }
-        ],
-        "dependedOnBy": [
-          {
-            "dependedOnBy": "ade_maximumcachedusers",
-            "required": true
-          },
-          {
-            "dependedOnBy": "ade_maximumsecondsafterscreenlockbeofrepasswordisrequired",
-            "required": false
-          },
-          {
-            "dependedOnBy": "ade_maximumsecondsinactivityuntiluserlogsout",
-            "required": true
-          }
-        ]
-      },
-      {
-        "itemId": "ade_requiresharedipadtemporarysessiononly_1",
-        "description": null,
-        "helpText": null,
-        "name": "Yes",
-        "displayName": "Yes",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 1
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "ade_useraffinity_3",
-            "parentSettingId": "ade_useraffinity"
-          }
-        ],
-        "dependedOnBy": [
-          {
-            "dependedOnBy": "ade_maximumsecondsinactivityuntiltemporarysessionlogsout",
-            "required": true
-          }
-        ]
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "ade_maximumsecondsafterscreenlockbeofrepasswordisrequired",
-    "settingName": "Maximum seconds after screen lock before password is required",
-    "settingDescription": "Available for Shared iPads. Maximum seconds after screen lock before password is required (0-14,400 seconds). If a device has a passcode, a change to a larger value doesn’t take effect until the user logs out or removes the passcode.",
-    "categoryId": "75e27534-3163-45b1-b34e-ca79b077b286",
-    "categoryName": "Uncategorized",
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Management settings"
-    ],
-    "infoUrls": [],
-    "baseUri": "./enrollment/ade",
-    "offsetUri": "/maximumSecondsAfterScreenLockBeofrePasswordIsRequired",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "iOS",
-      "deviceMode": "none",
-      "technologies": "enrollment"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
-      "maximumValue": 14400,
-      "minimumValue": 0
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-      "settingValueTemplateReference": null,
-      "value": 0
-    },
-    "accessTypes": "add,delete,get,replace",
-    "version": "638960815959126030",
-    "helpText": "Enter value",
-    "name": "MaximumSecondsAfterScreenLockBeofrePasswordIsRequired",
     "rootDefinitionId": "ade_useraffinity",
     "settingDefinitionId": null,
     "definitionDescription": null,
@@ -9585,202 +9285,6 @@
     "dependencies": []
   },
   {
-    "settingId": "ade_setupassistant_privacy",
-    "settingName": "Privacy",
-    "settingDescription": null,
-    "categoryId": "0d23daec-d948-4eee-8ee5-89ab1c59e440",
-    "categoryName": "Uncategorized",
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "infoUrls": [],
-    "baseUri": "./enrollment/ade",
-    "offsetUri": "/setupAssistant/privacy",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "template",
-    "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_privacy_1",
-    "applicability": {
-      "description": null,
-      "platform": "iOS",
-      "deviceMode": "none",
-      "technologies": "enrollment"
-    },
-    "options": [
-      {
-        "itemId": "ade_setupassistant_privacy_0",
-        "description": null,
-        "helpText": null,
-        "name": "Hide",
-        "displayName": "Hide",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 0
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "ade_setupassistant_privacy_1",
-        "description": null,
-        "helpText": null,
-        "name": "Show",
-        "displayName": "Show",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 1
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "638960815959126030",
-    "helpText": null,
-    "name": "Privacy",
-    "rootDefinitionId": "ade_setupassistant_privacy",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "ade_setupassistant_privacy_0",
-        "description": null,
-        "helpText": null,
-        "name": "Hide",
-        "displayName": "Hide",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 0
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "ade_setupassistant_privacy_1",
-        "description": null,
-        "helpText": null,
-        "name": "Show",
-        "displayName": "Show",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 1
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "ade_setupassistant_restorecompleted",
-    "settingName": "Restore completed",
-    "settingDescription": null,
-    "categoryId": "0d23daec-d948-4eee-8ee5-89ab1c59e440",
-    "categoryName": "Uncategorized",
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "infoUrls": [],
-    "baseUri": "./enrollment/ade",
-    "offsetUri": "/setupAssistant/restoreCompleted",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "template",
-    "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_restorecompleted_1",
-    "applicability": {
-      "description": null,
-      "platform": "iOS",
-      "deviceMode": "none",
-      "technologies": "enrollment"
-    },
-    "options": [
-      {
-        "itemId": "ade_setupassistant_restorecompleted_0",
-        "description": null,
-        "helpText": null,
-        "name": "Hide",
-        "displayName": "Hide",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 0
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "ade_setupassistant_restorecompleted_1",
-        "description": null,
-        "helpText": null,
-        "name": "Show",
-        "displayName": "Show",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 1
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "638960815959126030",
-    "helpText": null,
-    "name": "RestoreCompleted",
-    "rootDefinitionId": "ade_setupassistant_restorecompleted",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "ade_setupassistant_restorecompleted_0",
-        "description": null,
-        "helpText": null,
-        "name": "Hide",
-        "displayName": "Hide",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 0
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "ade_setupassistant_restorecompleted_1",
-        "description": null,
-        "helpText": null,
-        "name": "Show",
-        "displayName": "Show",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 1
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
     "settingId": "ade_setupassistant_siri",
     "settingName": "Siri",
     "settingDescription": null,
@@ -9876,59 +9380,6 @@
         "dependedOnBy": []
       }
     ],
-    "dependencies": []
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_quiettime_rangesettings_starttime",
-    "settingName": "Start",
-    "settingDescription": null,
-    "categoryId": "39d1a447-308a-4a49-9716-3097b321da31",
-    "categoryName": "Uncategorized",
-    "keywords": [
-      "start time",
-      "starttime",
-      "Range Settings"
-    ],
-    "infoUrls": [],
-    "baseUri": "./Device/Vendor/MSFT/Policy/QuietTime/RangeSettings",
-    "offsetUri": "/StartTime",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationExchangeOnlineSettingApplicability",
-      "description": null,
-      "platform": "android,iOS",
-      "deviceMode": "none",
-      "technologies": "exchangeOnline"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
-      "format": "dateTime",
-      "inputValidationSchema": null,
-      "maximumLength": 1024,
-      "minimumLength": 0,
-      "isSecret": false,
-      "fileTypes": []
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-      "settingValueTemplateReference": null,
-      "value": null
-    },
-    "accessTypes": "get",
-    "version": "638960815959126030",
-    "helpText": null,
-    "name": "StartTimeDateTime",
-    "rootDefinitionId": "device_vendor_msft_policy_config_quiettime_rangesettings_starttime",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
     "dependencies": []
   },
   {
@@ -16078,252 +15529,6 @@
     "dependencies": []
   },
   {
-    "settingId": "enrollment_autopilot_dpp_deploymenttype",
-    "settingName": "Deployment type",
-    "settingDescription": "",
-    "categoryId": "47b863f6-8116-432b-9fc1-9e487fdaa203",
-    "categoryName": "Uncategorized",
-    "keywords": [
-      "Autopilot",
-      "Device Preparation",
-      "Deployment settings"
-    ],
-    "infoUrls": [],
-    "baseUri": "./enrollment/autopilot/DevicePreparation",
-    "offsetUri": "/DeploymentSettings/DeploymentType",
-    "settingUsage": "configuration",
-    "uxBehavior": "dropdown",
-    "visibility": "template",
-    "riskLevel": "low",
-    "defaultOptionId": "enrollment_autopilot_dpp_deploymenttype_0",
-    "applicability": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
-      "description": null,
-      "platform": "windows10",
-      "deviceMode": "none",
-      "technologies": "enrollment",
-      "configurationServiceProviderVersion": "1.0",
-      "maximumSupportedVersion": null,
-      "minimumSupportedVersion": null,
-      "windowsSkus": [],
-      "requiresAzureAd": false,
-      "requiredAzureAdTrustType": "none"
-    },
-    "options": [
-      {
-        "itemId": "enrollment_autopilot_dpp_deploymenttype_0",
-        "description": null,
-        "helpText": null,
-        "name": "SingleUser",
-        "displayName": "Single user",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 0
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "638960815959126030",
-    "helpText": "",
-    "name": "DeploymentType",
-    "rootDefinitionId": "enrollment_autopilot_dpp_deploymenttype",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "enrollment_autopilot_dpp_deploymenttype_0",
-        "description": null,
-        "helpText": null,
-        "name": "SingleUser",
-        "displayName": "Single user",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 0
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "device_vendor_msft_policy_elevationclientsettings_reportingscope",
-    "settingName": "Reporting scope",
-    "settingDescription": "",
-    "categoryId": "b750fe41-33c4-4293-8dfc-42285be35752",
-    "categoryName": "Uncategorized",
-    "keywords": [
-      "Client Settings",
-      "Reporting scope",
-      "Privilege Management",
-      "Privilege Management Elevation Client Settings"
-    ],
-    "infoUrls": [],
-    "baseUri": "./Device/Vendor/MSFT/Policy",
-    "offsetUri": "PrivilegeManagement/ElevationClientSettings/ReportingScope",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "template",
-    "riskLevel": "low",
-    "defaultOptionId": "device_vendor_msft_policy_elevationclientsettings_reportingscope_2",
-    "applicability": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
-      "description": null,
-      "platform": "windows10",
-      "deviceMode": "none",
-      "technologies": "mdm,endpointPrivilegeManagement",
-      "configurationServiceProviderVersion": null,
-      "maximumSupportedVersion": null,
-      "minimumSupportedVersion": "10.0.19042",
-      "windowsSkus": [
-        "windowsProfessional",
-        "windowsEnterprise",
-        "windowsEducation",
-        "windows11SE"
-      ],
-      "requiresAzureAd": false,
-      "requiredAzureAdTrustType": "none"
-    },
-    "options": [
-      {
-        "itemId": "device_vendor_msft_policy_elevationclientsettings_reportingscope_1",
-        "description": "Diagnostic data and managed elevations only",
-        "helpText": null,
-        "name": "DiagnosticDataAndManagedElevationsOnly",
-        "displayName": "Diagnostic data and managed elevations only",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 1
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "device_vendor_msft_policy_elevationclientsettings_senddata_1",
-            "parentSettingId": "device_vendor_msft_policy_elevationclientsettings_senddata"
-          }
-        ],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "device_vendor_msft_policy_elevationclientsettings_reportingscope_2",
-        "description": "Diagnostic data and all endpoint elevations",
-        "helpText": null,
-        "name": "DiagnosticDataAndAllEndpointElevations",
-        "displayName": "Diagnostic data and all endpoint elevations",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 2
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "device_vendor_msft_policy_elevationclientsettings_senddata_1",
-            "parentSettingId": "device_vendor_msft_policy_elevationclientsettings_senddata"
-          }
-        ],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "device_vendor_msft_policy_elevationclientsettings_reportingscope_0",
-        "description": "Diagnostic data only",
-        "helpText": null,
-        "name": "DiagnosticDataOnly",
-        "displayName": "Diagnostic data only",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 0
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "device_vendor_msft_policy_elevationclientsettings_senddata_1",
-            "parentSettingId": "device_vendor_msft_policy_elevationclientsettings_senddata"
-          }
-        ],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "638960815959126030",
-    "helpText": null,
-    "name": "ReportingScope",
-    "rootDefinitionId": "device_vendor_msft_policy_elevationclientsettings_enableepm",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "device_vendor_msft_policy_elevationclientsettings_reportingscope_1",
-        "description": "Diagnostic data and managed elevations only",
-        "helpText": null,
-        "name": "DiagnosticDataAndManagedElevationsOnly",
-        "displayName": "Diagnostic data and managed elevations only",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 1
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "device_vendor_msft_policy_elevationclientsettings_senddata_1",
-            "parentSettingId": "device_vendor_msft_policy_elevationclientsettings_senddata"
-          }
-        ],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "device_vendor_msft_policy_elevationclientsettings_reportingscope_2",
-        "description": "Diagnostic data and all endpoint elevations",
-        "helpText": null,
-        "name": "DiagnosticDataAndAllEndpointElevations",
-        "displayName": "Diagnostic data and all endpoint elevations",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 2
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "device_vendor_msft_policy_elevationclientsettings_senddata_1",
-            "parentSettingId": "device_vendor_msft_policy_elevationclientsettings_senddata"
-          }
-        ],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "device_vendor_msft_policy_elevationclientsettings_reportingscope_0",
-        "description": "Diagnostic data only",
-        "helpText": null,
-        "name": "DiagnosticDataOnly",
-        "displayName": "Diagnostic data only",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 0
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "device_vendor_msft_policy_elevationclientsettings_senddata_1",
-            "parentSettingId": "device_vendor_msft_policy_elevationclientsettings_senddata"
-          }
-        ],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
     "settingId": "device_vendor_msft_policy_elevationclientsettings_senddata",
     "settingName": "Send elevation data for reporting",
     "settingDescription": "",
@@ -16462,78 +15667,6 @@
         "dependedOnBy": []
       }
     ],
-    "dependencies": []
-  },
-  {
-    "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_sid",
-    "settingName": "Sid",
-    "settingDescription": "Local user Sid or user Sid group or the Sid of the AD object, defines whether to apply this policy over a specific user or user group; one entry can have a maximum of one Sid and an entry without any Sid means applying the policy over the machine.",
-    "categoryId": "5ed18ca1-36d1-4375-bfd6-fd67801c2659",
-    "categoryName": "Uncategorized",
-    "keywords": [
-      "Defender",
-      "DeviceControl",
-      "Device Control"
-    ],
-    "infoUrls": [
-      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
-    ],
-    "baseUri": "./device/vendor/msft/defender",
-    "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
-      "description": null,
-      "platform": "windows10",
-      "deviceMode": "none",
-      "technologies": "mdm,microsoftSense",
-      "configurationServiceProviderVersion": "1.3",
-      "maximumSupportedVersion": null,
-      "minimumSupportedVersion": "10.0.18362",
-      "windowsSkus": [
-        "windowsEnterprise",
-        "windowsProfessional",
-        "windowsHome",
-        "unknown",
-        "windowsEducation",
-        "windowsMultiSession",
-        "surfaceHub",
-        "iotEnterprise",
-        "windowsCloudN",
-        "windows11SE"
-      ],
-      "requiresAzureAd": false,
-      "requiredAzureAdTrustType": "none"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
-      "format": "none",
-      "inputValidationSchema": null,
-      "maximumLength": 1024,
-      "minimumLength": 0,
-      "isSecret": false,
-      "fileTypes": []
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-      "settingValueTemplateReference": null,
-      "value": null
-    },
-    "accessTypes": "add,delete,get,replace",
-    "version": "638960815959126030",
-    "helpText": "",
-    "name": "Sid",
-    "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
     "dependencies": []
   },
   {
@@ -16819,72 +15952,6 @@
         "dependedOnBy": []
       }
     ],
-    "dependencies": []
-  },
-  {
-    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_platformstatus",
-    "settingName": "Platform status",
-    "settingDescription": "Applies to Microsoft Office/Generic platform. Returns bitmask that indicates status of Application Guard platform installation and prerequisites on the device.  Bit 0 - Set to 1 when Application Guard is enabled into enterprise manage mode. Bit 1 - Set to 1 when the client machine is Hyper-V capable. Bit 2 - Reserved for Microsoft. Bit 3 - Set to 1 when Application Guard is installed on the client machine. Bit 4 - Reserved for Microsoft. Bit 5 - Set to 1 when the client machine meets minimum hardware requirements.",
-    "categoryId": "cd55f347-a417-4fe9-83ee-8f1f40ac5eb0",
-    "categoryName": "Uncategorized",
-    "keywords": [
-      "PlatformStatus",
-      "WindowsDefenderApplicationGuard",
-      "Microsoft Defender Application Guard"
-    ],
-    "infoUrls": [
-      "https://docs.microsoft.com/en-us/windows/client-management/mdm/windowsdefenderapplicationguard-csp/"
-    ],
-    "baseUri": "./Device/Vendor/MSFT/WindowsDefenderApplicationGuard",
-    "offsetUri": "/PlatformStatus",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
-      "description": null,
-      "platform": "windows10",
-      "deviceMode": "none",
-      "technologies": "mdm,configManager",
-      "configurationServiceProviderVersion": "1.4",
-      "maximumSupportedVersion": null,
-      "minimumSupportedVersion": "10.0.19041",
-      "windowsSkus": [
-        "windowsEnterprise",
-        "windowsHome",
-        "surfaceHub",
-        "windowsEducation",
-        "windowsMultiSession",
-        "iotEnterprise",
-        "unknown",
-        "windowsCloudN"
-      ],
-      "requiresAzureAd": false,
-      "requiredAzureAdTrustType": "none"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
-      "maximumValue": 2147483647,
-      "minimumValue": 0
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-      "settingValueTemplateReference": null,
-      "value": 0
-    },
-    "accessTypes": "get",
-    "version": "638960815959126030",
-    "helpText": "",
-    "name": "PlatformStatus",
-    "rootDefinitionId": "device_vendor_msft_windowsdefenderapplicationguard_platformstatus",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
     "dependencies": []
   },
   {
@@ -17429,6 +16496,1067 @@
     "dependencies": []
   },
   {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_filehash",
+    "settingName": "File hash",
+    "settingDescription": "Hash of the file that should be elevated",
+    "categoryId": "4f3a6fca-a74c-448d-95b1-9d6d7a5d4449",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "File Hash",
+      "Elevation",
+      "Privilege Management"
+    ],
+    "infoUrls": [],
+    "baseUri": "./Device/Vendor/MSFT/Policy",
+    "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/FileHash",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+      "description": null,
+      "platform": "windows10",
+      "deviceMode": "none",
+      "technologies": "endpointPrivilegeManagement",
+      "configurationServiceProviderVersion": null,
+      "maximumSupportedVersion": null,
+      "minimumSupportedVersion": "10.0.19042",
+      "windowsSkus": [
+        "windowsProfessional",
+        "windowsEnterprise",
+        "windowsEducation",
+        "windows11SE"
+      ],
+      "requiresAzureAd": false,
+      "requiredAzureAdTrustType": "none"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "regEx",
+      "inputValidationSchema": "(^$|[A-Fa-f0-9]{64})$",
+      "maximumLength": 64,
+      "minimumLength": 64,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
+    "accessTypes": "add,delete,get,replace",
+    "version": "638960815959126030",
+    "helpText": null,
+    "name": "FileHash",
+    "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_filedescription",
+    "settingName": "File description",
+    "settingDescription": null,
+    "categoryId": "4f3a6fca-a74c-448d-95b1-9d6d7a5d4449",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "File Description",
+      "Elevation",
+      "Privilege Management"
+    ],
+    "infoUrls": [],
+    "baseUri": "./Device/Vendor/MSFT/Policy",
+    "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/FileDescription",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+      "description": null,
+      "platform": "windows10",
+      "deviceMode": "none",
+      "technologies": "endpointPrivilegeManagement",
+      "configurationServiceProviderVersion": null,
+      "maximumSupportedVersion": null,
+      "minimumSupportedVersion": "10.0.19042",
+      "windowsSkus": [
+        "windowsProfessional",
+        "windowsEnterprise",
+        "windowsEducation",
+        "windows11SE"
+      ],
+      "requiresAzureAd": false,
+      "requiredAzureAdTrustType": "none"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 50,
+      "minimumLength": 3,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
+    "accessTypes": "add,delete,get,replace",
+    "version": "638960815959126030",
+    "helpText": null,
+    "name": "FileDescription",
+    "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "ade_awaitconfiguration_basic",
+    "settingName": "Await final configuration",
+    "settingDescription": "Keeps the device in Setup Assistant until the first sync between the device and Intune installs policies.",
+    "categoryId": "75e27534-3163-45b1-b34e-ca79b077b286",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Management settings"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/ade_awaitConfiguration_basic",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "ade_awaitconfiguration_basic_1",
+    "applicability": {
+      "description": null,
+      "platform": "visionOS,tvOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [
+      {
+        "itemId": "ade_awaitconfiguration_basic_0",
+        "description": null,
+        "helpText": null,
+        "name": "No",
+        "displayName": "No",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_awaitconfiguration_basic_1",
+        "description": null,
+        "helpText": null,
+        "name": "Yes",
+        "displayName": "Yes",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638960815959126030",
+    "helpText": "",
+    "name": "AwaitConfiguration_Basic_1",
+    "rootDefinitionId": "ade_awaitconfiguration_basic",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "ade_awaitconfiguration_basic_0",
+        "description": null,
+        "helpText": null,
+        "name": "No",
+        "displayName": "No",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_awaitconfiguration_basic_1",
+        "description": null,
+        "helpText": null,
+        "name": "Yes",
+        "displayName": "Yes",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "ade_requiresharedipadtemporarysessiononly",
+    "settingName": "Require Shared iPad temporary session only",
+    "settingDescription": "Available for devices running iPadOS versions 14.5 and later. When set to Yes, users only see the Guest Welcome pane, and can only sign in as a guest user. Users can't sign in with a Managed Apple ID.",
+    "categoryId": "75e27534-3163-45b1-b34e-ca79b077b286",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Management settings"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/requireSharedIPadTemporarySessionOnly",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "ade_requiresharedipadtemporarysessiononly_0",
+    "applicability": {
+      "description": null,
+      "platform": "iOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [
+      {
+        "itemId": "ade_requiresharedipadtemporarysessiononly_0",
+        "description": null,
+        "helpText": null,
+        "name": "NotConfigured",
+        "displayName": "Not configured",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_useraffinity_3",
+            "parentSettingId": "ade_useraffinity"
+          }
+        ],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "ade_maximumcachedusers",
+            "required": true
+          },
+          {
+            "dependedOnBy": "ade_maximumsecondsafterscreenlockbeofrepasswordisrequired",
+            "required": false
+          },
+          {
+            "dependedOnBy": "ade_maximumsecondsinactivityuntiluserlogsout",
+            "required": true
+          }
+        ]
+      },
+      {
+        "itemId": "ade_requiresharedipadtemporarysessiononly_1",
+        "description": null,
+        "helpText": null,
+        "name": "Yes",
+        "displayName": "Yes",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_useraffinity_3",
+            "parentSettingId": "ade_useraffinity"
+          }
+        ],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "ade_maximumsecondsinactivityuntiltemporarysessionlogsout",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638960815959126030",
+    "helpText": "",
+    "name": "RequireSharedIPadTemporarySessionOnly",
+    "rootDefinitionId": "ade_useraffinity",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "ade_requiresharedipadtemporarysessiononly_0",
+        "description": null,
+        "helpText": null,
+        "name": "NotConfigured",
+        "displayName": "Not configured",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_useraffinity_3",
+            "parentSettingId": "ade_useraffinity"
+          }
+        ],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "ade_maximumcachedusers",
+            "required": true
+          },
+          {
+            "dependedOnBy": "ade_maximumsecondsafterscreenlockbeofrepasswordisrequired",
+            "required": false
+          },
+          {
+            "dependedOnBy": "ade_maximumsecondsinactivityuntiluserlogsout",
+            "required": true
+          }
+        ]
+      },
+      {
+        "itemId": "ade_requiresharedipadtemporarysessiononly_1",
+        "description": null,
+        "helpText": null,
+        "name": "Yes",
+        "displayName": "Yes",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_useraffinity_3",
+            "parentSettingId": "ade_useraffinity"
+          }
+        ],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "ade_maximumsecondsinactivityuntiltemporarysessionlogsout",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "ade_maximumsecondsafterscreenlockbeofrepasswordisrequired",
+    "settingName": "Maximum seconds after screen lock before password is required",
+    "settingDescription": "Available for Shared iPads. Maximum seconds after screen lock before password is required (0-14,400 seconds). If a device has a passcode, a change to a larger value doesn’t take effect until the user logs out or removes the passcode.",
+    "categoryId": "75e27534-3163-45b1-b34e-ca79b077b286",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Management settings"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/maximumSecondsAfterScreenLockBeofrePasswordIsRequired",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "iOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 14400,
+      "minimumValue": 0
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 0
+    },
+    "accessTypes": "add,delete,get,replace",
+    "version": "638960815959126030",
+    "helpText": "Enter value",
+    "name": "MaximumSecondsAfterScreenLockBeofrePasswordIsRequired",
+    "rootDefinitionId": "ade_useraffinity",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "ade_setupassistant_privacy",
+    "settingName": "Privacy",
+    "settingDescription": null,
+    "categoryId": "0d23daec-d948-4eee-8ee5-89ab1c59e440",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/setupAssistant/privacy",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "ade_setupassistant_privacy_1",
+    "applicability": {
+      "description": null,
+      "platform": "iOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [
+      {
+        "itemId": "ade_setupassistant_privacy_0",
+        "description": null,
+        "helpText": null,
+        "name": "Hide",
+        "displayName": "Hide",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_setupassistant_privacy_1",
+        "description": null,
+        "helpText": null,
+        "name": "Show",
+        "displayName": "Show",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638960815959126030",
+    "helpText": null,
+    "name": "Privacy",
+    "rootDefinitionId": "ade_setupassistant_privacy",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "ade_setupassistant_privacy_0",
+        "description": null,
+        "helpText": null,
+        "name": "Hide",
+        "displayName": "Hide",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_setupassistant_privacy_1",
+        "description": null,
+        "helpText": null,
+        "name": "Show",
+        "displayName": "Show",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "ade_setupassistant_restorecompleted",
+    "settingName": "Restore completed",
+    "settingDescription": null,
+    "categoryId": "0d23daec-d948-4eee-8ee5-89ab1c59e440",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/setupAssistant/restoreCompleted",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "ade_setupassistant_restorecompleted_1",
+    "applicability": {
+      "description": null,
+      "platform": "iOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [
+      {
+        "itemId": "ade_setupassistant_restorecompleted_0",
+        "description": null,
+        "helpText": null,
+        "name": "Hide",
+        "displayName": "Hide",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_setupassistant_restorecompleted_1",
+        "description": null,
+        "helpText": null,
+        "name": "Show",
+        "displayName": "Show",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638960815959126030",
+    "helpText": null,
+    "name": "RestoreCompleted",
+    "rootDefinitionId": "ade_setupassistant_restorecompleted",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "ade_setupassistant_restorecompleted_0",
+        "description": null,
+        "helpText": null,
+        "name": "Hide",
+        "displayName": "Hide",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_setupassistant_restorecompleted_1",
+        "description": null,
+        "helpText": null,
+        "name": "Show",
+        "displayName": "Show",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_quiettime_rangesettings_starttime",
+    "settingName": "Start",
+    "settingDescription": null,
+    "categoryId": "39d1a447-308a-4a49-9716-3097b321da31",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "start time",
+      "starttime",
+      "Range Settings"
+    ],
+    "infoUrls": [],
+    "baseUri": "./Device/Vendor/MSFT/Policy/QuietTime/RangeSettings",
+    "offsetUri": "/StartTime",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationExchangeOnlineSettingApplicability",
+      "description": null,
+      "platform": "android,iOS",
+      "deviceMode": "none",
+      "technologies": "exchangeOnline"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "dateTime",
+      "inputValidationSchema": null,
+      "maximumLength": 1024,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
+    "accessTypes": "get",
+    "version": "638960815959126030",
+    "helpText": null,
+    "name": "StartTimeDateTime",
+    "rootDefinitionId": "device_vendor_msft_policy_config_quiettime_rangesettings_starttime",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_deploymenttype",
+    "settingName": "Deployment type",
+    "settingDescription": "",
+    "categoryId": "47b863f6-8116-432b-9fc1-9e487fdaa203",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "Deployment settings"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/autopilot/DevicePreparation",
+    "offsetUri": "/DeploymentSettings/DeploymentType",
+    "settingUsage": "configuration",
+    "uxBehavior": "dropdown",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "enrollment_autopilot_dpp_deploymenttype_0",
+    "applicability": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+      "description": null,
+      "platform": "windows10",
+      "deviceMode": "none",
+      "technologies": "enrollment",
+      "configurationServiceProviderVersion": "1.0",
+      "maximumSupportedVersion": null,
+      "minimumSupportedVersion": null,
+      "windowsSkus": [],
+      "requiresAzureAd": false,
+      "requiredAzureAdTrustType": "none"
+    },
+    "options": [
+      {
+        "itemId": "enrollment_autopilot_dpp_deploymenttype_0",
+        "description": null,
+        "helpText": null,
+        "name": "SingleUser",
+        "displayName": "Single user",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638960815959126030",
+    "helpText": "",
+    "name": "DeploymentType",
+    "rootDefinitionId": "enrollment_autopilot_dpp_deploymenttype",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "enrollment_autopilot_dpp_deploymenttype_0",
+        "description": null,
+        "helpText": null,
+        "name": "SingleUser",
+        "displayName": "Single user",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "device_vendor_msft_policy_elevationclientsettings_reportingscope",
+    "settingName": "Reporting scope",
+    "settingDescription": "",
+    "categoryId": "b750fe41-33c4-4293-8dfc-42285be35752",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "Client Settings",
+      "Reporting scope",
+      "Privilege Management",
+      "Privilege Management Elevation Client Settings"
+    ],
+    "infoUrls": [],
+    "baseUri": "./Device/Vendor/MSFT/Policy",
+    "offsetUri": "PrivilegeManagement/ElevationClientSettings/ReportingScope",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "device_vendor_msft_policy_elevationclientsettings_reportingscope_2",
+    "applicability": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+      "description": null,
+      "platform": "windows10",
+      "deviceMode": "none",
+      "technologies": "mdm,endpointPrivilegeManagement",
+      "configurationServiceProviderVersion": null,
+      "maximumSupportedVersion": null,
+      "minimumSupportedVersion": "10.0.19042",
+      "windowsSkus": [
+        "windowsProfessional",
+        "windowsEnterprise",
+        "windowsEducation",
+        "windows11SE"
+      ],
+      "requiresAzureAd": false,
+      "requiredAzureAdTrustType": "none"
+    },
+    "options": [
+      {
+        "itemId": "device_vendor_msft_policy_elevationclientsettings_reportingscope_1",
+        "description": "Diagnostic data and managed elevations only",
+        "helpText": null,
+        "name": "DiagnosticDataAndManagedElevationsOnly",
+        "displayName": "Diagnostic data and managed elevations only",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "device_vendor_msft_policy_elevationclientsettings_senddata_1",
+            "parentSettingId": "device_vendor_msft_policy_elevationclientsettings_senddata"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "device_vendor_msft_policy_elevationclientsettings_reportingscope_2",
+        "description": "Diagnostic data and all endpoint elevations",
+        "helpText": null,
+        "name": "DiagnosticDataAndAllEndpointElevations",
+        "displayName": "Diagnostic data and all endpoint elevations",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 2
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "device_vendor_msft_policy_elevationclientsettings_senddata_1",
+            "parentSettingId": "device_vendor_msft_policy_elevationclientsettings_senddata"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "device_vendor_msft_policy_elevationclientsettings_reportingscope_0",
+        "description": "Diagnostic data only",
+        "helpText": null,
+        "name": "DiagnosticDataOnly",
+        "displayName": "Diagnostic data only",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "device_vendor_msft_policy_elevationclientsettings_senddata_1",
+            "parentSettingId": "device_vendor_msft_policy_elevationclientsettings_senddata"
+          }
+        ],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "638960815959126030",
+    "helpText": null,
+    "name": "ReportingScope",
+    "rootDefinitionId": "device_vendor_msft_policy_elevationclientsettings_enableepm",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "device_vendor_msft_policy_elevationclientsettings_reportingscope_1",
+        "description": "Diagnostic data and managed elevations only",
+        "helpText": null,
+        "name": "DiagnosticDataAndManagedElevationsOnly",
+        "displayName": "Diagnostic data and managed elevations only",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "device_vendor_msft_policy_elevationclientsettings_senddata_1",
+            "parentSettingId": "device_vendor_msft_policy_elevationclientsettings_senddata"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "device_vendor_msft_policy_elevationclientsettings_reportingscope_2",
+        "description": "Diagnostic data and all endpoint elevations",
+        "helpText": null,
+        "name": "DiagnosticDataAndAllEndpointElevations",
+        "displayName": "Diagnostic data and all endpoint elevations",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 2
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "device_vendor_msft_policy_elevationclientsettings_senddata_1",
+            "parentSettingId": "device_vendor_msft_policy_elevationclientsettings_senddata"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "device_vendor_msft_policy_elevationclientsettings_reportingscope_0",
+        "description": "Diagnostic data only",
+        "helpText": null,
+        "name": "DiagnosticDataOnly",
+        "displayName": "Diagnostic data only",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "device_vendor_msft_policy_elevationclientsettings_senddata_1",
+            "parentSettingId": "device_vendor_msft_policy_elevationclientsettings_senddata"
+          }
+        ],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_sid",
+    "settingName": "Sid",
+    "settingDescription": "Local user Sid or user Sid group or the Sid of the AD object, defines whether to apply this policy over a specific user or user group; one entry can have a maximum of one Sid and an entry without any Sid means applying the policy over the machine.",
+    "categoryId": "5ed18ca1-36d1-4375-bfd6-fd67801c2659",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "Defender",
+      "DeviceControl",
+      "Device Control"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control"
+    ],
+    "baseUri": "./device/vendor/msft/defender",
+    "offsetUri": "/configuration/devicecontrol/policyrules/{0}/ruledata",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+      "description": null,
+      "platform": "windows10",
+      "deviceMode": "none",
+      "technologies": "mdm,microsoftSense",
+      "configurationServiceProviderVersion": "1.3",
+      "maximumSupportedVersion": null,
+      "minimumSupportedVersion": "10.0.18362",
+      "windowsSkus": [
+        "windowsEnterprise",
+        "windowsProfessional",
+        "windowsHome",
+        "unknown",
+        "windowsEducation",
+        "windowsMultiSession",
+        "surfaceHub",
+        "iotEnterprise",
+        "windowsCloudN",
+        "windows11SE"
+      ],
+      "requiresAzureAd": false,
+      "requiredAzureAdTrustType": "none"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 1024,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
+    "accessTypes": "add,delete,get,replace",
+    "version": "638960815959126030",
+    "helpText": "",
+    "name": "Sid",
+    "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_platformstatus",
+    "settingName": "Platform status",
+    "settingDescription": "Applies to Microsoft Office/Generic platform. Returns bitmask that indicates status of Application Guard platform installation and prerequisites on the device.  Bit 0 - Set to 1 when Application Guard is enabled into enterprise manage mode. Bit 1 - Set to 1 when the client machine is Hyper-V capable. Bit 2 - Reserved for Microsoft. Bit 3 - Set to 1 when Application Guard is installed on the client machine. Bit 4 - Reserved for Microsoft. Bit 5 - Set to 1 when the client machine meets minimum hardware requirements.",
+    "categoryId": "cd55f347-a417-4fe9-83ee-8f1f40ac5eb0",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "PlatformStatus",
+      "WindowsDefenderApplicationGuard",
+      "Microsoft Defender Application Guard"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/client-management/mdm/windowsdefenderapplicationguard-csp/"
+    ],
+    "baseUri": "./Device/Vendor/MSFT/WindowsDefenderApplicationGuard",
+    "offsetUri": "/PlatformStatus",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+      "description": null,
+      "platform": "windows10",
+      "deviceMode": "none",
+      "technologies": "mdm,configManager",
+      "configurationServiceProviderVersion": "1.4",
+      "maximumSupportedVersion": null,
+      "minimumSupportedVersion": "10.0.19041",
+      "windowsSkus": [
+        "windowsEnterprise",
+        "windowsHome",
+        "surfaceHub",
+        "windowsEducation",
+        "windowsMultiSession",
+        "iotEnterprise",
+        "unknown",
+        "windowsCloudN"
+      ],
+      "requiresAzureAd": false,
+      "requiredAzureAdTrustType": "none"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 2147483647,
+      "minimumValue": 0
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 0
+    },
+    "accessTypes": "get",
+    "version": "638960815959126030",
+    "helpText": "",
+    "name": "PlatformStatus",
+    "rootDefinitionId": "device_vendor_msft_windowsdefenderapplicationguard_platformstatus",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
     "settingId": "device_vendor_msft_laps_policies_backupdirectory",
     "settingName": "Backup Directory ",
     "settingDescription": "Use this setting to configure which directory the local admin account password is backed up to.\n\nThe allowable settings are:\n\n0=Disabled (password will not be backed up)\n1=Backup the password to Microsoft Entra ID only\n2=Backup the password to Active Directory only\n\nIf not specified, this setting will default to 0.\r\n",
@@ -17756,134 +17884,6 @@
     "helpText": "",
     "name": "member",
     "rootDefinitionId": "device_vendor_msft_policy_config_localusersandgroups_configure",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_filehash",
-    "settingName": "File hash",
-    "settingDescription": "Hash of the file that should be elevated",
-    "categoryId": "4f3a6fca-a74c-448d-95b1-9d6d7a5d4449",
-    "categoryName": "Uncategorized",
-    "keywords": [
-      "File Hash",
-      "Elevation",
-      "Privilege Management"
-    ],
-    "infoUrls": [],
-    "baseUri": "./Device/Vendor/MSFT/Policy",
-    "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/FileHash",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
-      "description": null,
-      "platform": "windows10",
-      "deviceMode": "none",
-      "technologies": "endpointPrivilegeManagement",
-      "configurationServiceProviderVersion": null,
-      "maximumSupportedVersion": null,
-      "minimumSupportedVersion": "10.0.19042",
-      "windowsSkus": [
-        "windowsProfessional",
-        "windowsEnterprise",
-        "windowsEducation",
-        "windows11SE"
-      ],
-      "requiresAzureAd": false,
-      "requiredAzureAdTrustType": "none"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
-      "format": "regEx",
-      "inputValidationSchema": "(^$|[A-Fa-f0-9]{64})$",
-      "maximumLength": 64,
-      "minimumLength": 64,
-      "isSecret": false,
-      "fileTypes": []
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-      "settingValueTemplateReference": null,
-      "value": null
-    },
-    "accessTypes": "add,delete,get,replace",
-    "version": "638960815959126030",
-    "helpText": null,
-    "name": "FileHash",
-    "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_filedescription",
-    "settingName": "File description",
-    "settingDescription": null,
-    "categoryId": "4f3a6fca-a74c-448d-95b1-9d6d7a5d4449",
-    "categoryName": "Uncategorized",
-    "keywords": [
-      "File Description",
-      "Elevation",
-      "Privilege Management"
-    ],
-    "infoUrls": [],
-    "baseUri": "./Device/Vendor/MSFT/Policy",
-    "offsetUri": "/PrivilegeManagement/ElevationRules/{0}/FileDescription",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
-      "description": null,
-      "platform": "windows10",
-      "deviceMode": "none",
-      "technologies": "endpointPrivilegeManagement",
-      "configurationServiceProviderVersion": null,
-      "maximumSupportedVersion": null,
-      "minimumSupportedVersion": "10.0.19042",
-      "windowsSkus": [
-        "windowsProfessional",
-        "windowsEnterprise",
-        "windowsEducation",
-        "windows11SE"
-      ],
-      "requiresAzureAd": false,
-      "requiredAzureAdTrustType": "none"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
-      "format": "none",
-      "inputValidationSchema": null,
-      "maximumLength": 50,
-      "minimumLength": 3,
-      "isSecret": false,
-      "fileTypes": []
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-      "settingValueTemplateReference": null,
-      "value": null
-    },
-    "accessTypes": "add,delete,get,replace",
-    "version": "638960815959126030",
-    "helpText": null,
-    "name": "FileDescription",
-    "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
     "settingDefinitionId": null,
     "definitionDescription": null,
     "dataType": null,
