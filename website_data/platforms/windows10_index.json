@@ -1,40 +1,5 @@
 [
   {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages",
-    "settingName": "Remove Default Microsoft Store packages from the system.",
-    "settingDescription": "Removes Default Microsoft Store packages from the system.\r\n\r\nIf you enable this policy, the selected Microsoft Store apps in the provided list will be uninstalled from the system. You can make adjustments to the default settings.\r\n\r\nUnselected apps in the list will not be removed.\r\n\r\nDefault is 'disabled' (key not present).\r\n\r\nIf the policy is disabled or not configured, no Default Microsoft Store packages will be removed from the system.\r\n\r\n* This is a headless app (no UI)\r\n\r\n** This app is the default handler for a common file type or protocol. Removing this app might result in a degraded user experience. We do not recommend removing this app.\r\n      ",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_donotallowstorageofpasswordsandcredentialsfornetworkauthentication",
-    "settingName": "Network Access Do Not Allow Storage Of Passwords And Credentials For Network Authentication",
-    "settingDescription": "Network access: Do not allow storage of passwords and credentials for network authentication  This security setting determines whether Credential Manager saves passwords and credentials for later use when it gains domain authentication. If you enable this setting, Credential Manager does not store passwords and credentials on the computer. If you disable or do not configure this policy setting, Credential Manager will store passwords and credentials on this computer for later use for domain authentication. Note: When configuring this security setting, changes will not take effect until you restart Windows.  Default: Disabled.\r\n ",
-    "keywords": [
-      "Network Access Do Not Allow Storage Of Passwords And Credentials For Network Authentication",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_recommended_originkeyedprocessesenabled_recommended",
-    "settingName": "Enable origin-keyed process isolation for improved security",
-    "settingDescription": "This policy enables origin-keyed process isolation for most pages, which improves security by separating content from different origins into distinct processes. This may increase the number of processes created. Users can override this setting by using command-line flags or edge://flags to turn the feature on or off.\r\n\r\nIf you enable this policy, most origins will be isolated, even from other origins within the same site. For related configuration, see the IsolateOrigins and SitePerProcess policies.\r\n\r\nIf you disable this policy, origins will not be isolated from the rest of their site unless the origin explicitly requests isolation.\r\n\r\nIf you don’t configure this policy, the browser will decide which origins to isolate and when. By default, this feature is disabled. The default state may change in the future.",
-    "keywords": [
-      "OriginKeyedProcessesEnabled_recommended",
-      "Enable origin-keyed process isolation for improved security",
-      "\\Microsoft Edge - Default Settings (users can override)",
-      "Microsoft Edge - Default Settings (users can override)"
-    ],
-    "categoryName": "Microsoft Edge - Default Settings (users can override)"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.importsearchengine_recommended",
     "settingName": "Allow importing of search engine settings (users can override)",
     "settingDescription": "Allows users to import search engine settings from another browser into Microsoft Edge.\n\nIf you enable, this policy, the option to import search engine settings is automatically selected.\n\nIf you disable this policy, search engine settings aren't imported at first run, and users can't import them manually.\n\nIf you don't configure this policy, search engine settings are imported at first run, and users can choose whether to import this data manually during later browsing sessions.\n\nYou can set this policy as a recommendation. This means that Microsoft Edge imports search engine settings on first run, but users can select or clear the **search engine** option during manual import.\n\n**Note**: This policy currently manages importing from Internet Explorer (on Windows 7, 8, and 10).",
@@ -1687,6 +1652,19 @@
       "Turn on 64-bit tab processes when running in Enhanced Protected Mode on 64-bit versions of Windows",
       "\\Windows Components\\Internet Explorer\\Internet Control Panel\\Advanced Page",
       "Advanced Page"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages",
+    "settingName": "Remove Default Microsoft Store packages from the system.",
+    "settingDescription": "Removes Default Microsoft Store packages from the system.\r\n\r\nIf you enable this policy, the selected Microsoft Store apps in the provided list will be uninstalled from the system. You can make adjustments to the default settings.\r\n\r\nUnselected apps in the list will not be removed.\r\n\r\nDefault is 'disabled' (key not present).\r\n\r\nIf the policy is disabled or not configured, no Default Microsoft Store packages will be removed from the system.\r\n\r\n* This is a headless app (no UI)\r\n\r\n** This app is the default handler for a common file type or protocol. Removing this app might result in a degraded user experience. We do not recommend removing this app.\r\n      ",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
     ],
     "categoryName": "Administrative Templates"
   },
@@ -11609,6 +11587,16 @@
     "categoryName": "Local Policies Security Options"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_donotallowstorageofpasswordsandcredentialsfornetworkauthentication",
+    "settingName": "Network Access Do Not Allow Storage Of Passwords And Credentials For Network Authentication",
+    "settingDescription": "Network access: Do not allow storage of passwords and credentials for network authentication  This security setting determines whether Credential Manager saves passwords and credentials for later use when it gains domain authentication. If you enable this setting, Credential Manager does not store passwords and credentials on the computer. If you disable or do not configure this policy setting, Credential Manager will store passwords and credentials on this computer for later use for domain authentication. Note: When configuring this security setting, changes will not take effect until you restart Windows.  Default: Disabled.\r\n ",
+    "keywords": [
+      "Network Access Do Not Allow Storage Of Passwords And Credentials For Network Authentication",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networksecurity_donotstorelanmanagerhashvalueonnextpasswordchange",
     "settingName": "Network Security Do Not Store LAN Manager Hash Value On Next Password Change",
     "settingDescription": "Network security: Do not store LAN Manager hash value on next password change  This security setting determines if, at the next password change, the LAN Manager (LM) hash value for the new password is stored. The LM hash is relatively weak and prone to attack, as compared with the cryptographically stronger Windows NT hash. Since the LM hash is stored on the local computer in the security database the passwords can be compromised if the security database is attacked.   Default on Windows Vista and above: Enabled Default on Windows XP: Disabled.  Important  Windows 2000 Service Pack 2 (SP2) and above offer compatibility with authentication to previous versions of Windows, such as Microsoft Windows NT 4.0. This setting can affect the ability of computers running Windows 2000 Server, Windows 2000 Professional, Windows XP, and the Windows Server 2003 family to communicate with computers running Windows 95 and Windows 98.",
@@ -13679,6 +13667,18 @@
       "Network settings"
     ],
     "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_recommended_originkeyedprocessesenabled_recommended",
+    "settingName": "Enable origin-keyed process isolation for improved security",
+    "settingDescription": "This policy enables origin-keyed process isolation for most pages, which improves security by separating content from different origins into distinct processes. This may increase the number of processes created. Users can override this setting by using command-line flags or edge://flags to turn the feature on or off.\r\n\r\nIf you enable this policy, most origins will be isolated, even from other origins within the same site. For related configuration, see the IsolateOrigins and SitePerProcess policies.\r\n\r\nIf you disable this policy, origins will not be isolated from the rest of their site unless the origin explicitly requests isolation.\r\n\r\nIf you don’t configure this policy, the browser will decide which origins to isolate and when. By default, this feature is disabled. The default state may change in the future.",
+    "keywords": [
+      "OriginKeyedProcessesEnabled_recommended",
+      "Enable origin-keyed process isolation for improved security",
+      "\\Microsoft Edge - Default Settings (users can override)",
+      "Microsoft Edge - Default Settings (users can override)"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
   },
   {
     "settingId": "user_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended",
@@ -23468,55 +23468,6 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_windowsfeedbackhub",
-    "settingName": "Feedback Hub (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_outlookforwindows",
-    "settingName": "Outlook for Windows (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_windowscamera",
-    "settingName": "Windows Camera ** (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_remotelyaccessibleregistrypathsandsubpaths",
-    "settingName": "Network Access Remotely Accessible Registry Paths And Subpaths",
-    "settingDescription": "Network access: Remotely accessible registry paths and subpaths  This security setting determines which registry paths and subpaths can be accessed over the network, regardless of the users or groups listed in the access control list (ACL) of the winreg registry key.  Default:  System\\CurrentControlSet\\Control\\Print\\Printers  System\\CurrentControlSet\\Services\\Eventlog  Software\\Microsoft\\OLAP Server  Software\\Microsoft\\Windows NT\\CurrentVersion\\Print  Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows  System\\CurrentControlSet\\Control\\ContentIndex  System\\CurrentControlSet\\Control\\Terminal Server  System\\CurrentControlSet\\Control\\Terminal Server\\UserConfig  System\\CurrentControlSet\\Control\\Terminal Server\\DefaultUserConfiguration  Software\\Microsoft\\Windows NT\\CurrentVersion\\Perflib  System\\CurrentControlSet\\Services\\SysmonLog  System\\CurrentControlSet\\Services\\CertSvc  System\\CurrentControlSet\\Services\\Wins  Caution  Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the computer.  Note: On Windows XP, this security setting was called \"Network access: Remotely accessible registry paths.\" If you configure this setting on a member of the Windows Server 2003 family that is joined to a domain, this setting is inherited by computers running Windows XP, but will appear as the \"Network access: Remotely accessible registry paths\" security option. For more information, see Network access: Remotely accessible registry paths and subpaths.\r\n ",
-    "keywords": [
-      "Network Access Remotely Accessible Registry Paths And Subpaths",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchproviderencodings",
     "settingName": "Default search provider encodings",
     "settingDescription": "Specify the character encodings supported by the search provider. Encodings are code page names like UTF-8, GB2312, and ISO-8859-1. They are tried in the order provided.\n\nThis policy is optional. If not configured, the default, UTF-8, is used.\n\nThis policy is applied only if you enable the \"DefaultSearchProviderEnabled\" and \"DefaultSearchProviderSearchURL\" policies.\n\nStarting in Microsoft Edge 84, you can set this policy as a recommended policy. If the user has already set a default search provider, the default search provider configured by this recommended policy will not be added to the list of search providers the user can choose from. If this is the desired behavior, use the \"ManagedSearchEngines\" policy.",
@@ -25083,6 +25034,45 @@
       "Turn off encryption support",
       "\\Windows Components\\Internet Explorer\\Internet Control Panel\\Advanced Page",
       "Advanced Page"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_windowsfeedbackhub",
+    "settingName": "Feedback Hub (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_outlookforwindows",
+    "settingName": "Outlook for Windows (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_windowscamera",
+    "settingName": "Windows Camera ** (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
     ],
     "categoryName": "Administrative Templates"
   },
@@ -34921,6 +34911,16 @@
     "settingDescription": "Microsoft network client: Send unencrypted password to connect to third-party SMB servers  If this security setting is enabled, the Server Message Block (SMB) redirector is allowed to send plaintext passwords to non-Microsoft SMB servers that do not support password encryption during authentication.  Sending unencrypted passwords is a security risk.  Default: Disabled.",
     "keywords": [
       "Microsoft Network Client Send Unencrypted Password To Third Party SMB Servers",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_remotelyaccessibleregistrypathsandsubpaths",
+    "settingName": "Network Access Remotely Accessible Registry Paths And Subpaths",
+    "settingDescription": "Network access: Remotely accessible registry paths and subpaths  This security setting determines which registry paths and subpaths can be accessed over the network, regardless of the users or groups listed in the access control list (ACL) of the winreg registry key.  Default:  System\\CurrentControlSet\\Control\\Print\\Printers  System\\CurrentControlSet\\Services\\Eventlog  Software\\Microsoft\\OLAP Server  Software\\Microsoft\\Windows NT\\CurrentVersion\\Print  Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows  System\\CurrentControlSet\\Control\\ContentIndex  System\\CurrentControlSet\\Control\\Terminal Server  System\\CurrentControlSet\\Control\\Terminal Server\\UserConfig  System\\CurrentControlSet\\Control\\Terminal Server\\DefaultUserConfiguration  Software\\Microsoft\\Windows NT\\CurrentVersion\\Perflib  System\\CurrentControlSet\\Services\\SysmonLog  System\\CurrentControlSet\\Services\\CertSvc  System\\CurrentControlSet\\Services\\Wins  Caution  Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the computer.  Note: On Windows XP, this security setting was called \"Network access: Remotely accessible registry paths.\" If you configure this setting on a member of the Windows Server 2003 family that is joined to a domain, this setting is inherited by computers running Windows XP, but will appear as the \"Network access: Remotely accessible registry paths\" security option. For more information, see Network access: Remotely accessible registry paths and subpaths.\r\n ",
+    "keywords": [
+      "Network Access Remotely Accessible Registry Paths And Subpaths",
       "Local Policies Security Options"
     ],
     "categoryName": "Local Policies Security Options"
@@ -46314,134 +46314,6 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_copilot",
-    "settingName": "Microsoft Copilot (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_windowsnotepad",
-    "settingName": "Windows Notepad ** (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_microsoftstickynotes",
-    "settingName": "Microsoft Sticky Notes (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_microsoftsolitairecollection",
-    "settingName": "Microsoft Solitaire Collection (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_mediaplayer",
-    "settingName": "Windows Media Player ** (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_quickassist",
-    "settingName": "Quick Assist (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_domainmember_digitallysignsecurechanneldatawhenpossible",
-    "settingName": "Domain Member Digitally Sign Secure Channel Data When Possible",
-    "settingDescription": "Domain member: Digitally sign secure channel data (when possible)  This security setting determines whether a domain member attempts to negotiate signing for all secure channel traffic that it initiates. When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass through authentication, LSA SID/name Lookup etc. This setting determines whether or not the domain member attempts to negotiate signing for all secure channel traffic that it initiates. If enabled, the domain member will request signing of all secure channel traffic. If the Domain Controller supports signing of all secure channel traffic, then all secure channel traffic will be signed which ensures that it cannot be tampered with in transit.  Default: Enabled.\r\n ",
-    "keywords": [
-      "Domain Member Digitally Sign Secure Channel Data When Possible",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_systemcryptography_forcestrongkeyprotection",
-    "settingName": "System Cryptography Force Strong Key Protection",
-    "settingDescription": "System Cryptography: Force strong key protection for user keys stored on the computer  This security setting determines if users' private keys require a password to be used. The options are:  User input is not required when new keys are stored and used  User is prompted when the key is first used  User must enter a password each time they use a key  For more information, see Public key infrastructure.  Default: This policy is not defined.\r\n ",
-    "keywords": [
-      "System Cryptography Force Strong Key Protection",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_systemobjects_requirecaseinsensitivityfornonwindowssubsystems",
-    "settingName": "System Objects Require Case Insensitivity For Non Windows Subsystems",
-    "settingDescription": "System objects: Require case insensitivity for non-Windows subsystems  This security setting determines whether case insensitivity is enforced for all subsystems. The Win32 subsystem is case insensitive. However, the kernel supports case sensitivity for other subsystems, such as POSIX. If this setting is enabled, case insensitivity is enforced for all directory objects, symbolic links, and IO objects, including file objects. Disabling this setting does not allow the Win32 subsystem to become case sensitive.  Default: Enabled.\r\n ",
-    "keywords": [
-      "System Objects Require Case Insensitivity For Non Windows Subsystems",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_audit_audittheuseofbackupandrestoreprivilege",
-    "settingName": "Audit The Use Of Backup And Restoreprivilege",
-    "settingDescription": "Audit: Audit the use of Backup and Restore privilege  This security setting determines whether to audit the use of all user privileges, including Backup and Restore, when the Audit privilege use policy is in effect. Enabling this option when the Audit privilege use policy is also enabled generates an audit event for every file that is backed up or restored. If you disable this policy, then use of the Backup or Restore privilege is not audited even when Audit privilege use is enabled. Note: On Windows versions prior to Windows Vista configuring this security setting, changes will not take effect until you restart Windows. Enabling this setting can cause a LOT of events, sometimes hundreds per second, during a backup operation.  Default: Disabled.\r\n ",
-    "keywords": [
-      "Audit Audit The Use Of Backup And Restoreprivilege",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_domainmember_digitallyencryptsecurechanneldatawhenpossible",
-    "settingName": "Domain Member Digitally Encrypt Secure Channel Data When Possible",
-    "settingDescription": "Domain member: Digitally encrypt secure channel data (when possible)  This security setting determines whether a domain member attempts to negotiate encryption for all secure channel traffic that it initiates. When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass-through authentication, LSA SID/name Lookup etc. This setting determines whether or not the domain member attempts to negotiate encryption for all secure channel traffic that it initiates. If enabled, the domain member will request encryption of all secure channel traffic. If the domain controller supports encryption of all secure channel traffic, then all secure channel traffic will be encrypted. Otherwise only logon information transmitted over the secure channel will be encrypted. If this setting is disabled, then the domain member will not attempt to negotiate secure channel encryption.  Default: Enabled.  Important  There is no known reason for disabling this setting. Besides unnecessarily reducing the potential confidentiality level of the secure channel, disabling this setting may unnecessarily reduce secure channel throughput, because concurrent API calls that use the secure channel are only possible when the secure channel is signed or encrypted.  Note: Domain controllers are also domain members and establish secure channels with other domain controllers in the same domain as well as domain controllers in trusted domains.\r\n ",
-    "keywords": [
-      "Domain Member Digitally Encrypt Secure Channel Data When Possible",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.screencaptureallowedbyorigins",
     "settingName": "Allow Desktop, Window, and Tab capture by these origins",
     "settingDescription": "Setting the policy lets you set a list of URL patterns that can use Desktop, Window, and Tab Capture.\n\nLeaving the policy unset means that sites will not be considered for an override at this scope of Capture.\n\nThis policy is not considered if a site matches a URL pattern in any of the following policies: \"WindowCaptureAllowedByOrigins\", \"TabCaptureAllowedByOrigins\", \"SameOriginTabCaptureAllowedByOrigins\".\n\nIf a site matches a URL pattern in this policy, the \"ScreenCaptureAllowed\" will not be considered.\n\nFor detailed information on valid url patterns, please see <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.  This policy only matches based on origin, so any path in the URL pattern is ignored.",
@@ -47773,6 +47645,84 @@
       "Turn off encryption support",
       "\\Windows Components\\Internet Explorer\\Internet Control Panel\\Advanced Page",
       "Advanced Page"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_copilot",
+    "settingName": "Microsoft Copilot (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_windowsnotepad",
+    "settingName": "Windows Notepad ** (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_microsoftstickynotes",
+    "settingName": "Microsoft Sticky Notes (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_microsoftsolitairecollection",
+    "settingName": "Microsoft Solitaire Collection (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_mediaplayer",
+    "settingName": "Windows Media Player ** (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_quickassist",
+    "settingName": "Quick Assist (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
     ],
     "categoryName": "Administrative Templates"
   },
@@ -57241,6 +57191,36 @@
     "categoryName": "Local Policies Security Options"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_domainmember_digitallysignsecurechanneldatawhenpossible",
+    "settingName": "Domain Member Digitally Sign Secure Channel Data When Possible",
+    "settingDescription": "Domain member: Digitally sign secure channel data (when possible)  This security setting determines whether a domain member attempts to negotiate signing for all secure channel traffic that it initiates. When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass through authentication, LSA SID/name Lookup etc. This setting determines whether or not the domain member attempts to negotiate signing for all secure channel traffic that it initiates. If enabled, the domain member will request signing of all secure channel traffic. If the Domain Controller supports signing of all secure channel traffic, then all secure channel traffic will be signed which ensures that it cannot be tampered with in transit.  Default: Enabled.\r\n ",
+    "keywords": [
+      "Domain Member Digitally Sign Secure Channel Data When Possible",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_systemcryptography_forcestrongkeyprotection",
+    "settingName": "System Cryptography Force Strong Key Protection",
+    "settingDescription": "System Cryptography: Force strong key protection for user keys stored on the computer  This security setting determines if users' private keys require a password to be used. The options are:  User input is not required when new keys are stored and used  User is prompted when the key is first used  User must enter a password each time they use a key  For more information, see Public key infrastructure.  Default: This policy is not defined.\r\n ",
+    "keywords": [
+      "System Cryptography Force Strong Key Protection",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_systemobjects_requirecaseinsensitivityfornonwindowssubsystems",
+    "settingName": "System Objects Require Case Insensitivity For Non Windows Subsystems",
+    "settingDescription": "System objects: Require case insensitivity for non-Windows subsystems  This security setting determines whether case insensitivity is enforced for all subsystems. The Win32 subsystem is case insensitive. However, the kernel supports case sensitivity for other subsystems, such as POSIX. If this setting is enabled, case insensitivity is enforced for all directory objects, symbolic links, and IO objects, including file objects. Disabling this setting does not allow the Win32 subsystem to become case sensitive.  Default: Enabled.\r\n ",
+    "keywords": [
+      "System Objects Require Case Insensitivity For Non Windows Subsystems",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_donotallowanonymousenumerationofsamaccounts",
     "settingName": "Network Access Do Not Allow Anonymous Enumeration Of SAM Accounts",
     "settingDescription": "Network access: Do not allow anonymous enumeration of SAM accounts  This security setting determines what additional permissions will be granted for anonymous connections to the computer.  Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to grant access to users in a trusted domain that does not maintain a reciprocal trust.  This security option allows additional restrictions to be placed on anonymous connections as follows:  Enabled: Do not allow enumeration of SAM accounts. This option replaces Everyone with Authenticated Users in the security permissions for resources. Disabled: No additional restrictions. Rely on default permissions.  Default on workstations: Enabled. Default on server:Enabled.  Important  This policy has no impact on domain controllers.",
@@ -57266,6 +57246,26 @@
     "settingDescription": "Interactive logon: Do not require CTRL+ALT+DEL  This security setting determines whether pressing CTRL+ALT+DEL is required before a user can log on.  If this policy is enabled on a computer, a user is not required to press CTRL+ALT+DEL to log on. Not having to press CTRL+ALT+DEL leaves users susceptible to attacks that attempt to intercept the users' passwords. Requiring CTRL+ALT+DEL before users log on ensures that users are communicating by means of a trusted path when entering their passwords.  If this policy is disabled, any user is required to press CTRL+ALT+DEL before logging on to Windows.  Default on domain-computers: Enabled: At least Windows  8/Disabled: Windows 7 or earlier. Default on stand-alone computers: Enabled.",
     "keywords": [
       "Interactive Logon Do Not Require CTRLALTDEL",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_audit_audittheuseofbackupandrestoreprivilege",
+    "settingName": "Audit The Use Of Backup And Restoreprivilege",
+    "settingDescription": "Audit: Audit the use of Backup and Restore privilege  This security setting determines whether to audit the use of all user privileges, including Backup and Restore, when the Audit privilege use policy is in effect. Enabling this option when the Audit privilege use policy is also enabled generates an audit event for every file that is backed up or restored. If you disable this policy, then use of the Backup or Restore privilege is not audited even when Audit privilege use is enabled. Note: On Windows versions prior to Windows Vista configuring this security setting, changes will not take effect until you restart Windows. Enabling this setting can cause a LOT of events, sometimes hundreds per second, during a backup operation.  Default: Disabled.\r\n ",
+    "keywords": [
+      "Audit Audit The Use Of Backup And Restoreprivilege",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_domainmember_digitallyencryptsecurechanneldatawhenpossible",
+    "settingName": "Domain Member Digitally Encrypt Secure Channel Data When Possible",
+    "settingDescription": "Domain member: Digitally encrypt secure channel data (when possible)  This security setting determines whether a domain member attempts to negotiate encryption for all secure channel traffic that it initiates. When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass-through authentication, LSA SID/name Lookup etc. This setting determines whether or not the domain member attempts to negotiate encryption for all secure channel traffic that it initiates. If enabled, the domain member will request encryption of all secure channel traffic. If the domain controller supports encryption of all secure channel traffic, then all secure channel traffic will be encrypted. Otherwise only logon information transmitted over the secure channel will be encrypted. If this setting is disabled, then the domain member will not attempt to negotiate secure channel encryption.  Default: Enabled.  Important  There is no known reason for disabling this setting. Besides unnecessarily reducing the potential confidentiality level of the secure channel, disabling this setting may unnecessarily reduce secure channel throughput, because concurrent API calls that use the secure channel are only possible when the secure channel is signed or encrypted.  Note: Domain controllers are also domain members and establish secure channels with other domain controllers in the same domain as well as domain controllers in trusted domains.\r\n ",
+    "keywords": [
+      "Domain Member Digitally Encrypt Secure Channel Data When Possible",
       "Local Policies Security Options"
     ],
     "categoryName": "Local Policies Security Options"
@@ -68316,218 +68316,6 @@
     "categoryName": "Microsoft Word 2016"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_photos",
-    "settingName": "Microsoft Photos ** (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_xboxtcui",
-    "settingName": "Xbox TCUI * (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_windowsterminal",
-    "settingName": "Windows Terminal (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_screensketch",
-    "settingName": "Snipping Tool (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_xboxspeechtotextoverlay",
-    "settingName": "Xbox Speech To Text Overlay * (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_paint",
-    "settingName": "Paint (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_remotelyaccessibleregistrypaths",
-    "settingName": "Network Access Remotely Accessible Registry Paths",
-    "settingDescription": "Network access: Remotely accessible registry paths  This security setting determines which registry keys can be accessed over the network, regardless of the users or groups listed in the access control list (ACL) of the winreg registry key.  Default:  System\\CurrentControlSet\\Control\\ProductOptions  System\\CurrentControlSet\\Control\\Server Applications  Software\\Microsoft\\Windows NT\\CurrentVersion  Caution  Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the computer.  Note: This security setting is not available on earlier versions of Windows. The security setting that appears on computers running Windows XP, &quot;Network access: Remotely accessible registry paths&quot; corresponds to the &quot;Network access: Remotely accessible registry paths and subpaths&quot; security option on members of the Windows Server 2003 family. For more information, see Network access: Remotely accessible registry paths and subpaths.\r\n ",
-    "keywords": [
-      "Network Access Remotely Accessible Registry Paths",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_recoveryconsole_allowfloppycopyandaccesstoalldrivesandallfolders",
-    "settingName": "Recovery Console Allow Floppy Copy And Access To All Drives And All Folders",
-    "settingDescription": "Recovery console: Allow floppy copy and access to all drives and all folders  Enabling this security option makes the Recovery Console SET command available, which allows you to set the following Recovery Console environment variables:  AllowWildCards: Enable wildcard support for some commands (such as the DEL command).  AllowAllPaths: Allow access to all files and folders on the computer.  AllowRemovableMedia: Allow files to be copied to removable media, such as a floppy disk.  NoCopyPrompt: Do not prompt when overwriting an existing file.  Default: This policy is not defined and the recover console SET command is not available.\r\n ",
-    "keywords": [
-      "Recovery Console Allow Floppy Copy And Access To All Drives And All Folders",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networksecurity_ldapclientsigningrequirements",
-    "settingName": "Network Security LDAP Client Signing Requirements",
-    "settingDescription": "Network security: LDAP client signing requirements  This security setting determines the level of data signing that is requested on behalf of clients issuing LDAP BIND requests, as follows:  None: The LDAP BIND request is issued with the options that are specified by the caller.  Negotiate signing: If Transport Layer Security/Secure Sockets Layer (TLS\\SSL) has not been started, the LDAP BIND request is initiated with the LDAP data signing option set in addition to the options specified by the caller. If TLS\\SSL has been started, the LDAP BIND request is initiated with the options that are specified by the caller.  Require signature: This is the same as Negotiate signing. However, if the LDAP server's intermediate saslBindInProgress response does not indicate that LDAP traffic signing is required, the caller is told that the LDAP BIND command request failed.  Caution  If you set the server to Require signature, you must also set the client. Not setting the client results in a loss of connection with the server.  Note: This setting does not have any impact on ldap_simple_bind or ldap_simple_bind_s. No Microsoft LDAP clients that are shipped with Windows XP Professional use ldap_simple_bind or ldap_simple_bind_s to talk to a domain controller.  Default: Negotiate signing.\r\n ",
-    "keywords": [
-      "Network Security LDAP Client Signing Requirements",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_recoveryconsole_allowautomaticadministrativelogon",
-    "settingName": "Recovery Console Allow Automatic Administrative Logon",
-    "settingDescription": "Recovery console: Allow automatic administrative logon  This security setting determines if the password for the Administrator account must be given before access to the system is granted. If this option is enabled, the Recovery Console does not require you to provide a password, and it automatically logs on to the system.  Default: This policy is not defined and automatic administrative logon is not allowed.\r\n ",
-    "keywords": [
-      "Recovery Console Allow Automatic Administrative Logon",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_interactivelogon_promptusertochangepasswordbeforeexpiration",
-    "settingName": "Interactive Logon Prompt User To Change Password Before Expiration",
-    "settingDescription": "Interactive logon: Prompt user to change password before expiration  Determines how far in advance (in days) users are warned that their password is about to expire. With this advance warning, the user has time to construct a password that is sufficiently strong.  Default: 5 days.\r\n ",
-    "keywords": [
-      "Interactive Logon Prompt User To Change Password Before Expiration",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networksecurity_forcelogoffwhenlogonhoursexpire",
-    "settingName": "Network Security Force Logoff When Logon Hours Expire",
-    "settingDescription": "Network security: Force logoff when logon hours expire  This security setting determines whether to disconnect users who are connected to the local computer outside their user account's valid logon hours. This setting affects the Server Message Block (SMB) component. When this policy is enabled, it causes client sessions with the SMB server to be forcibly disconnected when the client's logon hours expire. If this policy is disabled, an established client session is allowed to be maintained after the client's logon hours have expired.  Default: Enabled.  Note: This security setting behaves as an account policy. For domain accounts, there can be only one account policy. The account policy must be defined in the Default Domain Policy, and it is enforced by the domain controllers that make up the domain. A domain controller always pulls the account policy from the Default Domain Policy Group Policy object (GPO), even if there is a different account policy applied to the organizational unit that contains the domain controller. By default, workstations and servers that are joined to a domain (for example, member computers) also receive the same account policy for their local accounts. However, local account policies for member computers can be different from the domain account policy by defining an account policy for the organizational unit that contains the member computers. Kerberos settings are not applied to member computers.\r\n ",
-    "keywords": [
-      "Network Security Force Logoff When Logon Hours Expire",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge~webrtc_webrtcpostquantumkeyagreement",
-    "settingName": "Enable post-quantum key agreement for WebRTC (User)",
-    "settingDescription": "This policy controls the use of post-quantum key agreement for WebRTC in Microsoft Edge.\r\n\r\nIf you enable this policy, Microsoft Edge will offer post-quantum key agreement for WebRTC.\r\n\r\nIf you disable this policy, post-quantum key agreement will not be offered for WebRTC.\r\n\r\nIf you don't configure this policy, post-quantum key agreement will not be offered for WebRTC. A future version of Microsoft Edge may enable this feature by default.\r\n\r\nOffering a post-quantum key agreement is backwards compatible. Existing datagram transport layer security (DTLS) peers and networking middleware are expected to ignore the new option and continue using previous options.\r\n\r\nHowever, devices that don't correctly implement DTLS may malfunction when offered the new option. For example, they may disconnect in response to unrecognized options or larger message sizes. Such devices aren’t post-quantum-ready and may interfere with an organization's post-quantum transition. If this issue occurs, administrators should contact the device vendor for a fix.\r\n\r\nThis policy is temporary and will be removed in a future release.",
-    "keywords": [
-      "WebRtcPostQuantumKeyAgreement",
-      "Enable post-quantum key agreement for WebRTC",
-      "\\Microsoft Edge\\WebRtc settings",
-      "Microsoft Edge\\WebRtc settings",
-      "Web Rtc settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_relaunchfastifoutdated_relaunchfastifoutdated",
-    "settingName": "Time period (days): (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RelaunchFastIfOutdated",
-      "Relaunch browser quickly when the current version is outdated",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_recommended_showtabpreviewenabled_recommended",
-    "settingName": "Enable tab preview on hover (User)",
-    "settingDescription": "This policy controls whether Microsoft Edge displays a preview of the tab content when the user hovers over a tab.\r\n\r\nIf you enable or don't configure this policy, Microsoft Edge shows a tab preview when the user hovers over a tab.\r\n\r\nIf you disable this policy, tab previews will not be shown on hover.",
-    "keywords": [
-      "ShowTabPreviewEnabled_recommended",
-      "Enable tab preview on hover",
-      "\\Microsoft Edge - Default Settings (users can override)",
-      "Microsoft Edge - Default Settings (users can override)"
-    ],
-    "categoryName": "Microsoft Edge - Default Settings (users can override)"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_recommended_originkeyedprocessesenabled_recommended",
-    "settingName": "Enable origin-keyed process isolation for improved security (User)",
-    "settingDescription": "This policy enables origin-keyed process isolation for most pages, which improves security by separating content from different origins into distinct processes. This may increase the number of processes created. Users can override this setting by using command-line flags or edge://flags to turn the feature on or off.\r\n\r\nIf you enable this policy, most origins will be isolated, even from other origins within the same site. For related configuration, see the IsolateOrigins and SitePerProcess policies.\r\n\r\nIf you disable this policy, origins will not be isolated from the rest of their site unless the origin explicitly requests isolation.\r\n\r\nIf you don’t configure this policy, the browser will decide which origins to isolate and when. By default, this feature is disabled. The default state may change in the future.",
-    "keywords": [
-      "OriginKeyedProcessesEnabled_recommended",
-      "Enable origin-keyed process isolation for improved security",
-      "\\Microsoft Edge - Default Settings (users can override)",
-      "Microsoft Edge - Default Settings (users can override)"
-    ],
-    "categoryName": "Microsoft Edge - Default Settings (users can override)"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_showtabpreviewenabled",
-    "settingName": "Enable tab preview on hover",
-    "settingDescription": "This policy controls whether Microsoft Edge displays a preview of the tab content when the user hovers over a tab.\r\n\r\nIf you enable or don't configure this policy, Microsoft Edge shows a tab preview when the user hovers over a tab.\r\n\r\nIf you disable this policy, tab previews will not be shown on hover.",
-    "keywords": [
-      "ShowTabPreviewEnabled",
-      "Enable tab preview on hover",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_updatev128~policy~cat_edgeupdate~cat_applications~cat_microsoftedge_pol_edgepreviewenrollmenttypemicrosoftedge_part_edgepreviewenrollmenttype",
-    "settingName": "Enrollment type (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "Pol_EdgePreviewEnrollmentTypeMicrosoftEdge",
-      "Edge Preview enrollment type",
-      "\\Microsoft Edge Update\\Applications\\Microsoft Edge",
-      "Microsoft Edge Update\\Applications\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge Update"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.newtabpagelocation_recommended",
     "settingName": "Configure the new tab page URL (users can override)",
     "settingDescription": "Configures the default URL for the new tab page.\n\nThe recommended version of this policy does not currently work and functions exactly like the mandatory version.\n\nThis policy determines the page that's opened when new tabs are created (including when new windows are opened). It also affects the startup page if that's set to open to the new tab page.\n\nThis policy doesn't determine which page opens on startup; that's controlled by the \"RestoreOnStartup\" policy. It also doesn't affect the home page if that's set to open to the new tab page.\n\nIf you don't configure this policy, the default new tab page is used.\n\nIf you configure this policy *and* the \"NewTabPageSetFeedType\" policy, this policy has precedence.\n\nIf a blank tab is preferred, \"about:blank\" is the correct URL to use, not \"about://blank\".\n\nThis policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.",
@@ -70203,6 +69991,84 @@
       "\\Windows Components\\Internet Explorer\\Security Features\\Add-on Management",
       "Administrative Templates\\Windows Components\\Internet Explorer\\Security Features\\Add-on Management",
       "Add-on Management"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_photos",
+    "settingName": "Microsoft Photos ** (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_xboxtcui",
+    "settingName": "Xbox TCUI * (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_windowsterminal",
+    "settingName": "Windows Terminal (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_screensketch",
+    "settingName": "Snipping Tool (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_xboxspeechtotextoverlay",
+    "settingName": "Xbox Speech To Text Overlay * (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_paint",
+    "settingName": "Paint (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
     ],
     "categoryName": "Administrative Templates"
   },
@@ -79754,11 +79620,41 @@
     "categoryName": "Local Policies Security Options"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_remotelyaccessibleregistrypaths",
+    "settingName": "Network Access Remotely Accessible Registry Paths",
+    "settingDescription": "Network access: Remotely accessible registry paths  This security setting determines which registry keys can be accessed over the network, regardless of the users or groups listed in the access control list (ACL) of the winreg registry key.  Default:  System\\CurrentControlSet\\Control\\ProductOptions  System\\CurrentControlSet\\Control\\Server Applications  Software\\Microsoft\\Windows NT\\CurrentVersion  Caution  Incorrectly editing the registry may severely damage your system. Before making changes to the registry, you should back up any valued data on the computer.  Note: This security setting is not available on earlier versions of Windows. The security setting that appears on computers running Windows XP, &quot;Network access: Remotely accessible registry paths&quot; corresponds to the &quot;Network access: Remotely accessible registry paths and subpaths&quot; security option on members of the Windows Server 2003 family. For more information, see Network access: Remotely accessible registry paths and subpaths.\r\n ",
+    "keywords": [
+      "Network Access Remotely Accessible Registry Paths",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_recoveryconsole_allowfloppycopyandaccesstoalldrivesandallfolders",
+    "settingName": "Recovery Console Allow Floppy Copy And Access To All Drives And All Folders",
+    "settingDescription": "Recovery console: Allow floppy copy and access to all drives and all folders  Enabling this security option makes the Recovery Console SET command available, which allows you to set the following Recovery Console environment variables:  AllowWildCards: Enable wildcard support for some commands (such as the DEL command).  AllowAllPaths: Allow access to all files and folders on the computer.  AllowRemovableMedia: Allow files to be copied to removable media, such as a floppy disk.  NoCopyPrompt: Do not prompt when overwriting an existing file.  Default: This policy is not defined and the recover console SET command is not available.\r\n ",
+    "keywords": [
+      "Recovery Console Allow Floppy Copy And Access To All Drives And All Folders",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networksecurity_lanmanagerauthenticationlevel",
     "settingName": "Network Security LAN Manager Authentication Level",
     "settingDescription": "Network security LAN Manager authentication level  This security setting determines which challenge/response authentication protocol is used for network logons. This choice affects the level of authentication protocol used by clients, the level of session security negotiated, and the level of authentication accepted by servers as follows:  Send LM and NTLM responses: Clients use LM and NTLM authentication and never use NTLMv2 session security; domain controllers accept LM, NTLM, and NTLMv2 authentication.  Send LM and NTLM - use NTLMv2 session security if negotiated: Clients use LM and NTLM authentication and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication.  Send NTLM response only: Clients use NTLM authentication only and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication.  Send NTLMv2 response only: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication.  Send NTLMv2 response only\\refuse LM: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM (accept only NTLM and NTLMv2 authentication).  Send NTLMv2 response only\\refuse LM and NTLM: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM and NTLM (accept only NTLMv2 authentication).  Important  This setting can affect the ability of computers running Windows 2000 Server, Windows 2000 Professional, Windows XP Professional, and the Windows Server 2003 family to communicate with computers running Windows NT 4.0 and earlier over the network. For example, at the time of this writing, computers running Windows NT 4.0 SP4 and earlier did not support NTLMv2. Computers running Windows 95 and Windows 98 did not support NTLM.  Default:  Windows 2000 and windows XP: send LM and NTLM responses  Windows Server 2003: Send NTLM response only  Windows Vista, Windows Server 2008, Windows 7, and Windows Server 2008 R2: Send NTLMv2 response only",
     "keywords": [
       "Network Security LAN Manager Authentication Level",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networksecurity_ldapclientsigningrequirements",
+    "settingName": "Network Security LDAP Client Signing Requirements",
+    "settingDescription": "Network security: LDAP client signing requirements  This security setting determines the level of data signing that is requested on behalf of clients issuing LDAP BIND requests, as follows:  None: The LDAP BIND request is issued with the options that are specified by the caller.  Negotiate signing: If Transport Layer Security/Secure Sockets Layer (TLS\\SSL) has not been started, the LDAP BIND request is initiated with the LDAP data signing option set in addition to the options specified by the caller. If TLS\\SSL has been started, the LDAP BIND request is initiated with the options that are specified by the caller.  Require signature: This is the same as Negotiate signing. However, if the LDAP server's intermediate saslBindInProgress response does not indicate that LDAP traffic signing is required, the caller is told that the LDAP BIND command request failed.  Caution  If you set the server to Require signature, you must also set the client. Not setting the client results in a loss of connection with the server.  Note: This setting does not have any impact on ldap_simple_bind or ldap_simple_bind_s. No Microsoft LDAP clients that are shipped with Windows XP Professional use ldap_simple_bind or ldap_simple_bind_s to talk to a domain controller.  Default: Negotiate signing.\r\n ",
+    "keywords": [
+      "Network Security LDAP Client Signing Requirements",
       "Local Policies Security Options"
     ],
     "categoryName": "Local Policies Security Options"
@@ -79774,11 +79670,41 @@
     "categoryName": "Local Policies Security Options"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_recoveryconsole_allowautomaticadministrativelogon",
+    "settingName": "Recovery Console Allow Automatic Administrative Logon",
+    "settingDescription": "Recovery console: Allow automatic administrative logon  This security setting determines if the password for the Administrator account must be given before access to the system is granted. If this option is enabled, the Recovery Console does not require you to provide a password, and it automatically logs on to the system.  Default: This policy is not defined and automatic administrative logon is not allowed.\r\n ",
+    "keywords": [
+      "Recovery Console Allow Automatic Administrative Logon",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_interactivelogon_promptusertochangepasswordbeforeexpiration",
+    "settingName": "Interactive Logon Prompt User To Change Password Before Expiration",
+    "settingDescription": "Interactive logon: Prompt user to change password before expiration  Determines how far in advance (in days) users are warned that their password is about to expire. With this advance warning, the user has time to construct a password that is sufficiently strong.  Default: 5 days.\r\n ",
+    "keywords": [
+      "Interactive Logon Prompt User To Change Password Before Expiration",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_accounts_renameguestaccount",
     "settingName": "Accounts Rename Guest Account",
     "settingDescription": "Accounts: Rename guest account  This security setting determines whether a different account name is associated with the security identifier (SID) for the account \"Guest.\" Renaming the well-known Guest account makes it slightly more difficult for unauthorized persons to guess this user name and password combination.  Default: Guest.",
     "keywords": [
       "Accounts Rename Guest Account",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networksecurity_forcelogoffwhenlogonhoursexpire",
+    "settingName": "Network Security Force Logoff When Logon Hours Expire",
+    "settingDescription": "Network security: Force logoff when logon hours expire  This security setting determines whether to disconnect users who are connected to the local computer outside their user account's valid logon hours. This setting affects the Server Message Block (SMB) component. When this policy is enabled, it causes client sessions with the SMB server to be forcibly disconnected when the client's logon hours expire. If this policy is disabled, an established client session is allowed to be maintained after the client's logon hours have expired.  Default: Enabled.  Note: This security setting behaves as an account policy. For domain accounts, there can be only one account policy. The account policy must be defined in the Default Domain Policy, and it is enforced by the domain controllers that make up the domain. A domain controller always pulls the account policy from the Default Domain Policy Group Policy object (GPO), even if there is a different account policy applied to the organizational unit that contains the domain controller. By default, workstations and servers that are joined to a domain (for example, member computers) also receive the same account policy for their local accounts. However, local account policies for member computers can be different from the domain account policy by defining an account policy for the organizational unit that contains the member computers. Kerberos settings are not applied to member computers.\r\n ",
+    "keywords": [
+      "Network Security Force Logoff When Logon Hours Expire",
       "Local Policies Security Options"
     ],
     "categoryName": "Local Policies Security Options"
@@ -82023,6 +81949,67 @@
     "keywords": [
       "HttpsOnlyMode",
       "Allow HTTPS-Only Mode to be enabled",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge~webrtc_webrtcpostquantumkeyagreement",
+    "settingName": "Enable post-quantum key agreement for WebRTC (User)",
+    "settingDescription": "This policy controls the use of post-quantum key agreement for WebRTC in Microsoft Edge.\r\n\r\nIf you enable this policy, Microsoft Edge will offer post-quantum key agreement for WebRTC.\r\n\r\nIf you disable this policy, post-quantum key agreement will not be offered for WebRTC.\r\n\r\nIf you don't configure this policy, post-quantum key agreement will not be offered for WebRTC. A future version of Microsoft Edge may enable this feature by default.\r\n\r\nOffering a post-quantum key agreement is backwards compatible. Existing datagram transport layer security (DTLS) peers and networking middleware are expected to ignore the new option and continue using previous options.\r\n\r\nHowever, devices that don't correctly implement DTLS may malfunction when offered the new option. For example, they may disconnect in response to unrecognized options or larger message sizes. Such devices aren’t post-quantum-ready and may interfere with an organization's post-quantum transition. If this issue occurs, administrators should contact the device vendor for a fix.\r\n\r\nThis policy is temporary and will be removed in a future release.",
+    "keywords": [
+      "WebRtcPostQuantumKeyAgreement",
+      "Enable post-quantum key agreement for WebRTC",
+      "\\Microsoft Edge\\WebRtc settings",
+      "Microsoft Edge\\WebRtc settings",
+      "Web Rtc settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_relaunchfastifoutdated_relaunchfastifoutdated",
+    "settingName": "Time period (days): (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RelaunchFastIfOutdated",
+      "Relaunch browser quickly when the current version is outdated",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_recommended_showtabpreviewenabled_recommended",
+    "settingName": "Enable tab preview on hover (User)",
+    "settingDescription": "This policy controls whether Microsoft Edge displays a preview of the tab content when the user hovers over a tab.\r\n\r\nIf you enable or don't configure this policy, Microsoft Edge shows a tab preview when the user hovers over a tab.\r\n\r\nIf you disable this policy, tab previews will not be shown on hover.",
+    "keywords": [
+      "ShowTabPreviewEnabled_recommended",
+      "Enable tab preview on hover",
+      "\\Microsoft Edge - Default Settings (users can override)",
+      "Microsoft Edge - Default Settings (users can override)"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_recommended_originkeyedprocessesenabled_recommended",
+    "settingName": "Enable origin-keyed process isolation for improved security (User)",
+    "settingDescription": "This policy enables origin-keyed process isolation for most pages, which improves security by separating content from different origins into distinct processes. This may increase the number of processes created. Users can override this setting by using command-line flags or edge://flags to turn the feature on or off.\r\n\r\nIf you enable this policy, most origins will be isolated, even from other origins within the same site. For related configuration, see the IsolateOrigins and SitePerProcess policies.\r\n\r\nIf you disable this policy, origins will not be isolated from the rest of their site unless the origin explicitly requests isolation.\r\n\r\nIf you don’t configure this policy, the browser will decide which origins to isolate and when. By default, this feature is disabled. The default state may change in the future.",
+    "keywords": [
+      "OriginKeyedProcessesEnabled_recommended",
+      "Enable origin-keyed process isolation for improved security",
+      "\\Microsoft Edge - Default Settings (users can override)",
+      "Microsoft Edge - Default Settings (users can override)"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_showtabpreviewenabled",
+    "settingName": "Enable tab preview on hover",
+    "settingDescription": "This policy controls whether Microsoft Edge displays a preview of the tab content when the user hovers over a tab.\r\n\r\nIf you enable or don't configure this policy, Microsoft Edge shows a tab preview when the user hovers over a tab.\r\n\r\nIf you disable this policy, tab previews will not be shown on hover.",
+    "keywords": [
+      "ShowTabPreviewEnabled",
+      "Enable tab preview on hover",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],
@@ -89242,6 +89229,19 @@
     "categoryName": "Microsoft Edge Update"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_updatev128~policy~cat_edgeupdate~cat_applications~cat_microsoftedge_pol_edgepreviewenrollmenttypemicrosoftedge_part_edgepreviewenrollmenttype",
+    "settingName": "Enrollment type (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "Pol_EdgePreviewEnrollmentTypeMicrosoftEdge",
+      "Edge Preview enrollment type",
+      "\\Microsoft Edge Update\\Applications\\Microsoft Edge",
+      "Microsoft Edge Update\\Applications\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge Update"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_updatev83diff~policy~cat_edgeupdate~cat_applications~cat_microsoftedgecanary_pol_createdesktopshortcutmicrosoftedgecanary",
     "settingName": "Prevent Desktop Shortcut creation upon install",
     "settingDescription": "If you enable this policy a desktop shortcut is created when Microsoft Edge is installed.\r\n  If you disable this policy, no desktop shortcut will be created when Microsoft Edge is installed.\r\n  If you don’t configure this policy a desktop shortcut to Microsoft Edge will be created during installation. \r\n  If Microsoft Edge is already installed, this policy will have no effect.\r\n\r\n  If you don't configure this policy for a channel, the 'CreateDesktopShortcut default' policy configuration determines shortcut creation when Microsoft Edge is installed.",
@@ -90750,67 +90750,6 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_clipchamp",
-    "settingName": "Microsoft Clipchamp (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_windowssoundrecorder",
-    "settingName": "Windows Sound Recorder (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_todo",
-    "settingName": "Microsoft To Do (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_audit_forceauditpolicysubcategorysettingstooverrideauditpolicycategorysettings",
-    "settingName": "Audit Force Audit Policy Subcategory Settings To Override Audit Policy Category Settings",
-    "settingDescription": "Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings  Windows Vista and later versions of Windows allow audit policy to be managed in a more precise way using audit policy subcategories. Setting audit policy at the category level will override the new subcategory audit policy feature. Group Policy only allows audit policy to be set at the category level, and existing group policy may override the subcategory settings of new machines as they are joined to the domain or upgraded to Windows Vista or later versions. To allow audit policy to be managed using subcategories without requiring a change to Group Policy, there is a new registry value in Windows Vista and later versions, SCENoApplyLegacyAuditPolicy, which prevents the application of category-level audit policy from Group Policy and from the Local Security Policy administrative tool. If the category level audit policy set here is not consistent with the events that are currently being generated, the cause might be that this registry key is set.  Default: Enabled\r\n ",
-    "keywords": [
-      "Audit Force Audit Policy Subcategory Settings To Override Audit Policy Category Settings",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_livevideotranslationenabled",
-    "settingName": "Allows users to translate videos to different languages. (User)",
-    "settingDescription": "This policy configures the on-device real-time video translation feature in Microsoft Edge.\r\nWith this feature, users can watch videos translated into their selected language in real time.\r\n\r\nWhen a user selects the Translate icon and chooses a source (video language) and target language (translated language),\r\ntranslation components are downloaded on first use (approximately 200 MB per language pair).\r\n\r\nThese components may be updated periodically to improve performance and translation quality.\r\nTranslation is performed locally on the user’s device and no data is sent outside of the device.\r\nThe feature is available only for non-DRM videos, on supported high-end devices, with select language pairs, and in select regions.\r\nFor more details, see https://www.microsoft.com/en-us/edge/features/real-time-video-translation.\r\n\r\nIf you enable or don’t configure this policy, the on-device real-time video translation feature is enabled and\r\nusers will see the Translate button when hovering over videos.\r\n\r\nIf you disable this policy, the on-device real-time video translation feature is disabled and the Translate button won’t be shown.",
-    "keywords": [
-      "LiveVideoTranslationEnabled",
-      "Allows users to translate videos to different languages.",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autolaunchprotocolsfromorigins",
     "settingName": "Define a list of protocols that can launch an external application from listed origins without prompting the user",
     "settingDescription": "Allows you to set a list of protocols, and for each protocol an associated list of allowed origin patterns, that can launch an external application without prompting the user. The trailing separator should not be included when listing the protocol. For example, list \"skype\" instead of \"skype:\" or \"skype://\".\n\nIf you configure this policy, a protocol will only be permitted to launch an external application without prompting by policy if:\n\n- the protocol is listed\n\n- the origin of the site trying to launch the protocol matches one of the origin patterns in that protocol's allowed_origins list.\n\nIf either condition is false, the external protocol launch prompt will not be omitted by policy.\n\nIf you don't configure this policy, no protocols can launch without a prompt. Users can opt out of prompts on a per-protocol/per-site basis unless the \"ExternalProtocolDialogShowAlwaysOpenCheckbox\" policy is set to Disabled. This policy has no impact on per-protocol/per-site prompt exemptions set by users.\n\nThe origin matching patterns use a similar format to those for the \"URLBlocklist\" policy, which are documented at <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n\nHowever, origin matching patterns for this policy cannot contain \"/path\" or \"@query\" elements. Any pattern that does contain a \"/path\" or \"@query\" element will be ignored.\n\nThis policy does not work as expected with file://* wildcards.",
@@ -92313,6 +92252,45 @@
       "Remove \"Run this time\" button for outdated ActiveX controls in Internet Explorer ",
       "\\Windows Components\\Internet Explorer\\Security Features\\Add-on Management",
       "Add-on Management"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_clipchamp",
+    "settingName": "Microsoft Clipchamp (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_windowssoundrecorder",
+    "settingName": "Windows Sound Recorder (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_todo",
+    "settingName": "Microsoft To Do (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
     ],
     "categoryName": "Administrative Templates"
   },
@@ -102040,6 +102018,16 @@
     "categoryName": "Local Policies Security Options"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_audit_forceauditpolicysubcategorysettingstooverrideauditpolicycategorysettings",
+    "settingName": "Audit Force Audit Policy Subcategory Settings To Override Audit Policy Category Settings",
+    "settingDescription": "Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings  Windows Vista and later versions of Windows allow audit policy to be managed in a more precise way using audit policy subcategories. Setting audit policy at the category level will override the new subcategory audit policy feature. Group Policy only allows audit policy to be set at the category level, and existing group policy may override the subcategory settings of new machines as they are joined to the domain or upgraded to Windows Vista or later versions. To allow audit policy to be managed using subcategories without requiring a change to Group Policy, there is a new registry value in Windows Vista and later versions, SCENoApplyLegacyAuditPolicy, which prevents the application of category-level audit policy from Group Policy and from the Local Security Policy administrative tool. If the category level audit policy set here is not consistent with the events that are currently being generated, the cause might be that this registry key is set.  Default: Enabled\r\n ",
+    "keywords": [
+      "Audit Force Audit Policy Subcategory Settings To Override Audit Policy Category Settings",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_devices_allowundockwithouthavingtologon",
     "settingName": "Devices Allow Undock Without Having To Logon",
     "settingDescription": "Devices: Allow undock without having to log on This security setting determines whether a portable computer can be undocked without having to log on. If this policy is enabled, logon is not required and an external hardware eject button can be used to undock the computer. If disabled, a user must log on and have the Remove computer from docking station privilege to undock the computer. Default: Enabled.  Caution Disabling this policy may tempt users to try and physically remove the laptop from its docking station using methods other than the external hardware eject button. Since this may cause damage to the hardware, this setting, in general, should only be disabled on laptop configurations that are physically securable.",
@@ -104150,6 +104138,18 @@
     "keywords": [
       "ServiceWorkerAutoPreloadEnabled",
       "Allow ServiceWorker to dispatch navigation requests without waiting for its startup",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_livevideotranslationenabled",
+    "settingName": "Allows users to translate videos to different languages. (User)",
+    "settingDescription": "This policy configures the on-device real-time video translation feature in Microsoft Edge.\r\nWith this feature, users can watch videos translated into their selected language in real time.\r\n\r\nWhen a user selects the Translate icon and chooses a source (video language) and target language (translated language),\r\ntranslation components are downloaded on first use (approximately 200 MB per language pair).\r\n\r\nThese components may be updated periodically to improve performance and translation quality.\r\nTranslation is performed locally on the user’s device and no data is sent outside of the device.\r\nThe feature is available only for non-DRM videos, on supported high-end devices, with select language pairs, and in select regions.\r\nFor more details, see https://www.microsoft.com/en-us/edge/features/real-time-video-translation.\r\n\r\nIf you enable or don’t configure this policy, the on-device real-time video translation feature is enabled and\r\nusers will see the Translate button when hovering over videos.\r\n\r\nIf you disable this policy, the on-device real-time video translation feature is disabled and the Translate button won’t be shown.",
+    "keywords": [
+      "LiveVideoTranslationEnabled",
+      "Allows users to translate videos to different languages.",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],
@@ -113046,79 +113046,6 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_bingweather",
-    "settingName": "MSN Weather (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_namedpipesthatcanbeaccessedanonymously",
-    "settingName": "Network Access Named Pipes That Can Be Accessed Anonymously",
-    "settingDescription": "Network access: Named pipes that can be accessed anonymously  This security setting determines which communication sessions (pipes) will have attributes and permissions that allow anonymous access.  Default: None.\r\n ",
-    "keywords": [
-      "Network Access Named Pipes That Can Be Accessed Anonymously",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_microsoftnetworkserver_disconnectclientswhenlogonhoursexpire",
-    "settingName": "Microsoft Network Server Disconnect Clients When Logon Hours Expire",
-    "settingDescription": "Microsoft network server: Disconnect clients when logon hours expire  This security setting determines whether to disconnect users who are connected to the local computer outside their user account's valid logon hours. This setting affects the Server Message Block (SMB) component. When this policy is enabled, it causes client sessions with the SMB Service to be forcibly disconnected when the client's logon hours expire. If this policy is disabled, an established client session is allowed to be maintained after the client's logon hours have expired.  Default on Windows Vista and above: Enabled.  Default on Windows XP: Disabled\r\n ",
-    "keywords": [
-      "Microsoft Network Server Disconnect Clients When Logon Hours Expire",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_microsoftnetworkserver_serverspntargetnamevalidationlevel",
-    "settingName": "Microsoft Network Server Server SPN Target Name Validation Level",
-    "settingDescription": "Microsoft network server: Server SPN target name validation level  This policy setting controls the level of validation a computer with shared folders or printers (the server) performs on the service principal name (SPN) that is provided by the client computer when it establishes a session using the server message block (SMB) protocol. The server message block (SMB) protocol provides the basis for file and print sharing and other networking operations, such as remote Windows administration. The SMB protocol supports validating the SMB server service principal name (SPN) within the authentication blob provided by a SMB client to  prevent a class of attacks against SMB servers referred to as SMB relay attacks. This setting will affect both SMB1 and SMB2. This security setting determines the level of validation a SMB server performs on the service principal name (SPN) provided by the SMB client when trying to establish a session to an SMB server. The options are:  Off – the SPN  is not required or validated by the SMB server from a SMB client.  Accept if provided by client – the SMB server will accept and validate the SPN provided by the SMB client and allow a session to be established if it matches the SMB server’s list of SPN’s for itself. If the SPN does NOT match, the session request for that SMB client will be denied.  Required from client - the SMB client MUST send a SPN name in session setup, and the SPN name provided MUST match the SMB server that is being requested to establish a connection.  If no SPN is provided by client, or the SPN provided does not match, the session is denied.  Default: Off  All Windows operating systems support both a client-side SMB component and a server-side SMB component. This setting affects the server SMB behavior, and its implementation should be carefully evaluated and tested to prevent disruptions to file and print serving capabilities. Additional information on implementing and using this to secure your SMB servers can be found at the Microsoft website  (https://go.microsoft.com/fwlink/?LinkId=144505).\r\n ",
-    "keywords": [
-      "Microsoft Network Server Server SPN Target Name Validation Level",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_microsoftnetworkserver_amountofidletimerequiredbeforesuspendingsession",
-    "settingName": "Microsoft Network Server Amount Of Idle Time Required Before Suspending Session",
-    "settingDescription": "Microsoft network server: Amount of idle time required before suspending a session  This security setting determines the amount of continuous idle time that must pass in a Server Message Block (SMB) session before the session is suspended due to inactivity. Administrators can use this policy to control when a computer suspends an inactive SMB session. If client activity resumes, the session is automatically reestablished. For this policy setting, a value of 0 means to disconnect an idle session as quickly as is reasonably possible. The maximum value is 99999, which is 208 days; in effect, this value disables the policy.  Default: This policy is not defined, which means that the system treats it as 15 minutes for servers and undefined for workstations.\r\n ",
-    "keywords": [
-      "Microsoft Network Server Amount Of Idle Time Required Before Suspending Session",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_sharesthatcanbeaccessedanonymously",
-    "settingName": "Network Access Shares That Can Be Accessed Anonymously",
-    "settingDescription": "Network access: Shares that can be accessed anonymously  This security setting determines which network shares can accessed by anonymous users.  Default: None specified.\r\n ",
-    "keywords": [
-      "Network Access Shares That Can Be Accessed Anonymously",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_domainmember_disablemachineaccountpasswordchanges",
-    "settingName": "Domain Member Disable Machine Account Password Changes",
-    "settingDescription": "Domain member: Disable machine account password changes  Determines whether a domain member periodically changes its computer account password. If this setting is enabled, the domain member does not attempt to change its computer account password. If this setting is disabled, the domain member attempts to change its computer account password as specified by the setting for Domain Member: Maximum age for machine account password, which by default is every 30 days.  Default: Disabled.  Notes  This security setting should not be enabled. Computer account passwords are used to establish secure channel communications between members and domain controllers and, within the domain, between the domain controllers themselves. Once it is established, the secure channel is used to transmit sensitive information that is necessary for making authentication and authorization decisions. This setting should not be used in an attempt to support dual-boot scenarios that use the same computer account. If you want to dual-boot two installations that are joined to the same domain, give the two installations different computer names.\r\n ",
-    "keywords": [
-      "Domain Member Disable Machine Account Password Changes",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchprovidersearchurl",
     "settingName": "Default search provider search URL",
     "settingDescription": "Specifies the URL of the search engine used for a default search. The URL contains the string '{searchTerms}', which is replaced at query time by the terms the user is searching for.\n\nSpecify Bing's search URL as:\n\n'{bing:baseURL}search?q={searchTerms}'.\n\nSpecify Google's search URL as: '{google:baseURL}search?q={searchTerms}&{google:RLZ}{google:originalQueryForSuggestion}{google:assistedQueryStats}{google:searchFieldtrialParameter}{google:searchClient}{google:sourceId}ie={inputEncoding}'.\n\nThis policy is required when you enable the \"DefaultSearchProviderEnabled\" policy; if you don't enable the latter policy, this policy is ignored.\n\nStarting in Microsoft Edge 84, you can set this policy as a recommended policy. If the user has already set a default search provider, the default search provider configured by this recommended policy will not be added to the list of search providers the user can choose from. If this is the desired behavior, use the \"ManagedSearchEngines\" policy.",
@@ -114833,6 +114760,19 @@
     "keywords": [
       "AllowDeploymentInSpecialProfiles",
       "Allow deployment operations in special profiles",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_bingweather",
+    "settingName": "MSN Weather (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
       "\\Windows Components\\App Package Deployment",
       "Administrative Templates\\Windows Components\\App Package Deployment",
       "App Package Deployment"
@@ -124281,6 +124221,26 @@
     "categoryName": "Lanman Workstation"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_namedpipesthatcanbeaccessedanonymously",
+    "settingName": "Network Access Named Pipes That Can Be Accessed Anonymously",
+    "settingDescription": "Network access: Named pipes that can be accessed anonymously  This security setting determines which communication sessions (pipes) will have attributes and permissions that allow anonymous access.  Default: None.\r\n ",
+    "keywords": [
+      "Network Access Named Pipes That Can Be Accessed Anonymously",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_microsoftnetworkserver_disconnectclientswhenlogonhoursexpire",
+    "settingName": "Microsoft Network Server Disconnect Clients When Logon Hours Expire",
+    "settingDescription": "Microsoft network server: Disconnect clients when logon hours expire  This security setting determines whether to disconnect users who are connected to the local computer outside their user account's valid logon hours. This setting affects the Server Message Block (SMB) component. When this policy is enabled, it causes client sessions with the SMB Service to be forcibly disconnected when the client's logon hours expire. If this policy is disabled, an established client session is allowed to be maintained after the client's logon hours have expired.  Default on Windows Vista and above: Enabled.  Default on Windows XP: Disabled\r\n ",
+    "keywords": [
+      "Microsoft Network Server Disconnect Clients When Logon Hours Expire",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_devices_preventusersfrominstallingprinterdriverswhenconnectingtosharedprinters",
     "settingName": "Devices Prevent Users From Installing Printer Drivers When Connecting To Shared Printers",
     "settingDescription": "Devices: Prevent users from installing printer drivers when connecting to shared printers  For a computer to print to a shared printer, the driver for that shared printer must be installed on the local computer. This security setting determines who is allowed to install a printer driver as part of connecting to a shared printer. If this setting is enabled, only Administrators can install a printer driver as part of connecting to a shared printer. If this setting is disabled, any user can install a printer driver as part of connecting to a shared printer.  Default on servers: Enabled. Default on workstations: Disabled  Notes  This setting does not affect the ability to add a local printer. This setting does not affect Administrators.",
@@ -124301,11 +124261,31 @@
     "categoryName": "Local Policies Security Options"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_microsoftnetworkserver_serverspntargetnamevalidationlevel",
+    "settingName": "Microsoft Network Server Server SPN Target Name Validation Level",
+    "settingDescription": "Microsoft network server: Server SPN target name validation level  This policy setting controls the level of validation a computer with shared folders or printers (the server) performs on the service principal name (SPN) that is provided by the client computer when it establishes a session using the server message block (SMB) protocol. The server message block (SMB) protocol provides the basis for file and print sharing and other networking operations, such as remote Windows administration. The SMB protocol supports validating the SMB server service principal name (SPN) within the authentication blob provided by a SMB client to  prevent a class of attacks against SMB servers referred to as SMB relay attacks. This setting will affect both SMB1 and SMB2. This security setting determines the level of validation a SMB server performs on the service principal name (SPN) provided by the SMB client when trying to establish a session to an SMB server. The options are:  Off – the SPN  is not required or validated by the SMB server from a SMB client.  Accept if provided by client – the SMB server will accept and validate the SPN provided by the SMB client and allow a session to be established if it matches the SMB server’s list of SPN’s for itself. If the SPN does NOT match, the session request for that SMB client will be denied.  Required from client - the SMB client MUST send a SPN name in session setup, and the SPN name provided MUST match the SMB server that is being requested to establish a connection.  If no SPN is provided by client, or the SPN provided does not match, the session is denied.  Default: Off  All Windows operating systems support both a client-side SMB component and a server-side SMB component. This setting affects the server SMB behavior, and its implementation should be carefully evaluated and tested to prevent disruptions to file and print serving capabilities. Additional information on implementing and using this to secure your SMB servers can be found at the Microsoft website  (https://go.microsoft.com/fwlink/?LinkId=144505).\r\n ",
+    "keywords": [
+      "Microsoft Network Server Server SPN Target Name Validation Level",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_interactivelogon_donotdisplayusernameatsignin",
     "settingName": "Interactive Logon Do Not Display Username At Sign In",
     "settingDescription": "Interactive logon: Don't display username at sign-in This security setting determines whether the username of the person signing in to this PC appears at Windows sign-in, after credentials are entered, and before the PC desktop is shown. If this policy is enabled, the username will not be shown.  If this policy is disabled, the username will be shown.  Default: Disabled.",
     "keywords": [
       "Interactive Logon Do Not Display Username At Sign In",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_microsoftnetworkserver_amountofidletimerequiredbeforesuspendingsession",
+    "settingName": "Microsoft Network Server Amount Of Idle Time Required Before Suspending Session",
+    "settingDescription": "Microsoft network server: Amount of idle time required before suspending a session  This security setting determines the amount of continuous idle time that must pass in a Server Message Block (SMB) session before the session is suspended due to inactivity. Administrators can use this policy to control when a computer suspends an inactive SMB session. If client activity resumes, the session is automatically reestablished. For this policy setting, a value of 0 means to disconnect an idle session as quickly as is reasonably possible. The maximum value is 99999, which is 208 days; in effect, this value disables the policy.  Default: This policy is not defined, which means that the system treats it as 15 minutes for servers and undefined for workstations.\r\n ",
+    "keywords": [
+      "Microsoft Network Server Amount Of Idle Time Required Before Suspending Session",
       "Local Policies Security Options"
     ],
     "categoryName": "Local Policies Security Options"
@@ -124326,6 +124306,16 @@
     "settingDescription": "User Account Control: Behavior of the elevation prompt for standard users This policy setting controls the behavior of the elevation prompt for standard users.  The options are:  • Prompt for credentials: (Default) When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.  • Automatically deny elevation requests: When an operation requires elevation of privilege, a configurable access denied error message is displayed. An enterprise that is running desktops as standard user may choose this setting to reduce help desk calls.  • Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.",
     "keywords": [
       "User Account Control Behavior Of The Elevation Prompt For Standard Users",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_sharesthatcanbeaccessedanonymously",
+    "settingName": "Network Access Shares That Can Be Accessed Anonymously",
+    "settingDescription": "Network access: Shares that can be accessed anonymously  This security setting determines which network shares can accessed by anonymous users.  Default: None specified.\r\n ",
+    "keywords": [
+      "Network Access Shares That Can Be Accessed Anonymously",
       "Local Policies Security Options"
     ],
     "categoryName": "Local Policies Security Options"
@@ -124376,6 +124366,16 @@
     "settingDescription": "Shutdown: Allow system to be shut down without having to log on  This security setting determines whether a computer can be shut down without having to log on to Windows.  When this policy is enabled, the Shut Down command is available on the Windows logon screen.  When this policy is disabled, the option to shut down the computer does not appear on the Windows logon screen. In this case, users must be able to log on to the computer successfully and have the Shut down the system user right before they can perform a system shutdown.  Default on workstations: Enabled. Default on servers: Disabled.",
     "keywords": [
       "Shutdown Allow System To Be Shut Down Without Having To Log On",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_domainmember_disablemachineaccountpasswordchanges",
+    "settingName": "Domain Member Disable Machine Account Password Changes",
+    "settingDescription": "Domain member: Disable machine account password changes  Determines whether a domain member periodically changes its computer account password. If this setting is enabled, the domain member does not attempt to change its computer account password. If this setting is disabled, the domain member attempts to change its computer account password as specified by the setting for Domain Member: Maximum age for machine account password, which by default is every 30 days.  Default: Disabled.  Notes  This security setting should not be enabled. Computer account passwords are used to establish secure channel communications between members and domain controllers and, within the domain, between the domain controllers themselves. Once it is established, the secure channel is used to transmit sensitive information that is necessary for making authentication and authorization decisions. This setting should not be used in an attempt to support dual-boot scenarios that use the same computer account. If you want to dual-boot two installations that are joined to the same domain, give the two installations different computer names.\r\n ",
+    "keywords": [
+      "Domain Member Disable Machine Account Password Changes",
       "Local Policies Security Options"
     ],
     "categoryName": "Local Policies Security Options"
@@ -135125,210 +135125,6 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_msteams",
-    "settingName": "Microsoft Teams (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_bingnews",
-    "settingName": "Microsoft News (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_gamingapp",
-    "settingName": "Xbox Gaming App (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_windowscalculator",
-    "settingName": "Windows Calculator (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_sharingandsecuritymodelforlocalaccounts",
-    "settingName": "Network Access Sharing And Security Model For Local Accounts",
-    "settingDescription": "Network access: Sharing and security model for local accounts  This security setting determines how network logons that use local accounts are authenticated. If this setting is set to Classic, network logons that use local account credentials authenticate by using those credentials. The Classic model allows fine control over access to resources. By using the Classic model, you can grant different types of access to different users for the same resource. If this setting is set to Guest only, network logons that use local accounts are automatically mapped to the Guest account. By using the Guest model, you can have all users treated equally. All users authenticate as Guest, and they all receive the same level of access to a given resource, which can be either Read-only or Modify.  Default on domain computers: Classic.  Default on stand-alone computers: Guest only  Important  With the Guest only model, any user who can access your computer over the network (including anonymous Internet users) can access your shared resources. You must use the Windows Firewall or another similar device to protect your computer from unauthorized access. Similarly, with the Classic model, local accounts must be password protected; otherwise, those user accounts can be used by anyone to access shared system resources.  Note: This setting does not affect interactive logons that are performed remotely by using such services as Telnet or Remote Desktop Services. Remote Desktop Services was called Terminal Services in previous versions of Windows Server. This policy will have no impact on computers running Windows 2000. When the computer is not joined to a domain, this setting also modifies the Sharing and Security tabs in File Explorer to correspond to the sharing and security model that is being used.\r\n ",
-    "keywords": [
-      "Network Access Sharing And Security Model For Local Accounts",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_interactivelogon_machineaccountlockoutthreshold",
-    "settingName": "Interactive Logon Machine Account Lockout Threshold",
-    "settingDescription": "Interactive logon: Machine account threshold.  The machine lockout policy is enforced only on those machines that have Bitlocker enabled for protecting OS volumes. Please ensure that appropriate recovery password backup policies are enabled. This security setting determines the number of failed logon attempts that causes the machine to be locked out. A locked out machine can only be recovered by providing recovery key at console. You can set the value between 1 and 999 failed logon attempts. If you set the value to 0, the machine will never be locked out. Values from 1 to 3 will be interpreted as 4. Failed password attempts against workstations or member servers that have been locked using either CTRL+ALT+DELETE or password protected screen savers counts as failed logon attempts. The machine lockout policy is enforced only on those machines that have Bitlocker enabled for protecting OS volumes. Please ensure that the appropriate recovery password backup policies are enabled.  Default: 0.\r\n ",
-    "keywords": [
-      "Interactive Logon Machine Account Lockout Threshold",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_domainmember_maximummachineaccountpasswordage",
-    "settingName": "Domain Member Maximum Machine Account Password Age",
-    "settingDescription": "Domain member: Maximum machine account password age  This security setting determines how often a domain member will attempt to change its computer account password.  Default: 30 days.  Important  This setting applies to Windows 2000 computers, but it is not available through the Security Configuration Manager tools on these computers.\r\n ",
-    "keywords": [
-      "Domain Member Maximum Machine Account Password Age",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_leteveryonepermissionsapplytoanonymoususers",
-    "settingName": "Network Access Let Everyone Permissions Apply To Anonymous Users",
-    "settingDescription": "Network access: Let Everyone permissions apply to anonymous users  This security setting determines what additional permissions are granted for anonymous connections to the computer. Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to grant access to users in a trusted domain that does not maintain a reciprocal trust. By Default, the Everyone security identifier (SID) is removed from the token created for anonymous connections. Therefore, permissions granted to the Everyone group do not apply to anonymous users. If this option is set, anonymous users can only access those resources for which the anonymous user has been explicitly given permission. If this policy is enabled, the Everyone SID is added to the token that is created for anonymous connections. In this case, anonymous users are able to access any resource for which the Everyone group has been given permissions.  Default: Disabled.\r\n ",
-    "keywords": [
-      "Network Access Let Everyone Permissions Apply To Anonymous Users",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_systemobjects_strengthendefaultpermissionsofinternalsystemobjects",
-    "settingName": "System Objects Strengthen Default Permissions Of Internal System Objects",
-    "settingDescription": "System objects: Strengthen default permissions of internal system objects (e.g., Symbolic Links)  This security setting determines the strength of the default discretionary access control list (DACL) for objects. Active Directory maintains a global list of shared system resources, such as DOS device names, mutexes, and semaphores. In this way, objects can be located and shared among processes. Each type of object is created with a default DACL that specifies who can access the objects and what permissions are granted. If this policy is enabled, the default DACL is stronger, allowing users who are not administrators to read shared objects but not allowing these users to modify shared objects that they did not create.  Default: Enabled.\r\n ",
-    "keywords": [
-      "System Objects Strengthen Default Permissions Of Internal System Objects",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_interactivelogon_numberofpreviouslogonstocache",
-    "settingName": "Interactive Logon Number Of Previous Logons To Cache",
-    "settingDescription": "Interactive logon: Number of previous logons to cache (in case domain controller is not available)  Each unique user's logon information is cached locally so that, in the event that a domain controller is unavailable during subsequent logon attempts, they are able to log on. The cached logon information is stored from the previous logon session. If a domain controller is unavailable and a user's logon information is not cached, the user is prompted with this message: There are currently no logon servers available to service the logon request. In this policy setting, a value of 0 disables logon caching. Any value above 50 only caches 50 logon attempts. Windows supports a maximum of 50 cache entries and the number of entries consumed per user depends on the credential. For example, a maximum of 50 unique password user accounts can be cached on a Windows system, but only 25 smart card user accounts can be cached because both the password information and the smart card information are stored. When a user with cached logon information logs on again, the user’s individual cached information is replaced.  Default:  Windows Server 2008: 25  All Other Versions: 10\r\n ",
-    "keywords": [
-      "Interactive Logon Number Of Previous Logons To Cache",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_domainmember_digitallyencryptorsignsecurechanneldataalways",
-    "settingName": "Domain Member Digitally Encrypt Or Sign Secure Channel Data Always",
-    "settingDescription": "Domain member: Digitally encrypt or sign secure channel data (always)  This security setting determines whether all secure channel traffic initiated by the domain member must be signed or encrypted. When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass through authentication, LSA SID/name Lookup etc. This setting determines whether or not all secure channel traffic initiated by the domain member meets minimum security requirements. Specifically it determines whether all secure channel traffic initiated by the domain member must be signed or encrypted. If this policy is enabled, then the secure channel will not be established unless either signing or encryption of all secure channel traffic is negotiated. If this policy is disabled, then encryption and signing of all secure channel traffic is negotiated with the Domain Controller in which case the level of signing and encryption depends on the version of the Domain Controller and the settings of the following two policies:  Domain member: Digitally encrypt secure channel data (when possible)  Domain member: Digitally sign secure channel data (when possible)  Default: Enabled.  Notes: If this policy is enabled, the policy Domain member: Digitally sign secure channel data (when possible) is assumed to be enabled regardless of its current setting. This ensures that the domain member attempts to negotiate at least signing of the secure channel traffic. Logon information transmitted over the secure channel is always encrypted regardless of whether encryption of ALL other secure channel traffic is negotiated or not.\r\n ",
-    "keywords": [
-      "Domain Member Digitally Encrypt Or Sign Secure Channel Data Always",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networksecurity_allowlocalsystemnullsessionfallback",
-    "settingName": "Network Security Allow Local System NULL Session Fallback",
-    "settingDescription": "Network security: Allow LocalSystem NULL session fallback  Allow NTLM to fall back to NULL session when used with LocalSystem. The default is TRUE up to Windows Vista and FALSE in Windows 7.\r\n ",
-    "keywords": [
-      "Network Security Allow Local System NULL Session Fallback",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_domainmember_requirestrongsessionkey",
-    "settingName": "Domain Member Require Strong Session Key",
-    "settingDescription": "Domain member: Require strong (Windows 2000 or later) session key  This security setting determines whether 128-bit key strength is required for encrypted secure channel data. When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller within the domain. This secure channel is used to perform operations such as NTLM pass-through authentication, LSA SID/name Lookup, and so on. Depending on what version of Windows is running on the domain controller that the domain member is communicating with and the settings of the parameters:  Domain member: Digitally encrypt or sign secure channel data (always)  Domain member: Digitally encrypt secure channel data (when possible)  Some or all of the information that is transmitted over the secure channel will be encrypted. This policy setting determines whether or not 128-bit key strength is required for the secure channel information that is encrypted. If this setting is enabled, then the secure channel will not be established unless 128-bit encryption can be performed. If this setting is disabled, then the key strength is negotiated with the domain controller.  Default: Enabled.  Important  In order to take advantage of this policy on member workstations and servers, all domain controllers that constitute the member's domain must be running Windows 2000 or later. In order to take advantage of this policy on domain controllers, all domain controllers in the same domain as well as all trusted domains must run Windows 2000 or later.\r\n ",
-    "keywords": [
-      "Domain Member Require Strong Session Key",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_recommended_showtabpreviewenabled_recommended",
-    "settingName": "Enable tab preview on hover",
-    "settingDescription": "This policy controls whether Microsoft Edge displays a preview of the tab content when the user hovers over a tab.\r\n\r\nIf you enable or don't configure this policy, Microsoft Edge shows a tab preview when the user hovers over a tab.\r\n\r\nIf you disable this policy, tab previews will not be shown on hover.",
-    "keywords": [
-      "ShowTabPreviewEnabled_recommended",
-      "Enable tab preview on hover",
-      "\\Microsoft Edge - Default Settings (users can override)",
-      "Microsoft Edge - Default Settings (users can override)"
-    ],
-    "categoryName": "Microsoft Edge - Default Settings (users can override)"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_relaunchfastifoutdated",
-    "settingName": "Relaunch browser quickly when the current version is outdated",
-    "settingDescription": "This policy specifies the minimum release age after which relaunch notifications become more aggressive. The release age is calculated from the time the currently running version was last served to clients.\r\n\r\nIf a browser relaunch is needed to finalize a pending update and the current version has been outdated for more than the number of days specified by this setting, the RelaunchNotificationPeriod policy is overridden to 2 hours. If the RelaunchNotification policy is set to 1 ('Required'), a browser relaunch will be forced at the end of the period.\r\n\r\nIf not set, or if the release age cannot be determined, the RelaunchNotificationPeriod policy will be used for all updates.",
-    "keywords": [
-      "RelaunchFastIfOutdated",
-      "Relaunch browser quickly when the current version is outdated",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_relaunchfastifoutdated",
-    "settingName": "Relaunch browser quickly when the current version is outdated (User)",
-    "settingDescription": "This policy specifies the minimum release age after which relaunch notifications become more aggressive. The release age is calculated from the time the currently running version was last served to clients.\r\n\r\nIf a browser relaunch is needed to finalize a pending update and the current version has been outdated for more than the number of days specified by this setting, the RelaunchNotificationPeriod policy is overridden to 2 hours. If the RelaunchNotification policy is set to 1 ('Required'), a browser relaunch will be forced at the end of the period.\r\n\r\nIf not set, or if the release age cannot be determined, the RelaunchNotificationPeriod policy will be used for all updates.",
-    "keywords": [
-      "RelaunchFastIfOutdated",
-      "Relaunch browser quickly when the current version is outdated",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge~webrtc_webrtcpostquantumkeyagreement",
-    "settingName": "Enable post-quantum key agreement for WebRTC",
-    "settingDescription": "This policy controls the use of post-quantum key agreement for WebRTC in Microsoft Edge.\r\n\r\nIf you enable this policy, Microsoft Edge will offer post-quantum key agreement for WebRTC.\r\n\r\nIf you disable this policy, post-quantum key agreement will not be offered for WebRTC.\r\n\r\nIf you don't configure this policy, post-quantum key agreement will not be offered for WebRTC. A future version of Microsoft Edge may enable this feature by default.\r\n\r\nOffering a post-quantum key agreement is backwards compatible. Existing datagram transport layer security (DTLS) peers and networking middleware are expected to ignore the new option and continue using previous options.\r\n\r\nHowever, devices that don't correctly implement DTLS may malfunction when offered the new option. For example, they may disconnect in response to unrecognized options or larger message sizes. Such devices aren’t post-quantum-ready and may interfere with an organization's post-quantum transition. If this issue occurs, administrators should contact the device vendor for a fix.\r\n\r\nThis policy is temporary and will be removed in a future release.",
-    "keywords": [
-      "WebRtcPostQuantumKeyAgreement",
-      "Enable post-quantum key agreement for WebRTC",
-      "\\Microsoft Edge\\WebRtc settings",
-      "Microsoft Edge\\WebRtc settings",
-      "Web Rtc settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_updatev128~policy~cat_edgeupdate~cat_applications~cat_microsoftedge_pol_edgepreviewenrollmenttypemicrosoftedge",
-    "settingName": "Edge Preview enrollment type",
-    "settingDescription": "Details for this policy will be available in a future release",
-    "keywords": [
-      "Pol_EdgePreviewEnrollmentTypeMicrosoftEdge",
-      "Edge Preview enrollment type",
-      "\\Microsoft Edge Update\\Applications\\Microsoft Edge",
-      "Microsoft Edge Update\\Applications\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge Update"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchproviderkeyword_recommended",
     "settingName": "Default search provider keyword (users can override)",
     "settingDescription": "Specifies the keyword, which is the shortcut used in the Address Bar to trigger the search for this provider.\n\nThis policy is optional. If you don't configure it, no keyword activates the search provider.\n\nThis policy is applied only if you enable the \"DefaultSearchProviderEnabled\" and \"DefaultSearchProviderSearchURL\" policies.\n\nStarting in Microsoft Edge 84, you can set this policy as a recommended policy. If the user has already set a default search provider, the default search provider configured by this recommended policy will not be added to the list of search providers the user can choose from. If this is the desired behavior, use the \"ManagedSearchEngines\" policy.",
@@ -136832,6 +136628,58 @@
       "Check for server certificate revocation",
       "\\Windows Components\\Internet Explorer\\Internet Control Panel\\Advanced Page",
       "Advanced Page"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_msteams",
+    "settingName": "Microsoft Teams (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_bingnews",
+    "settingName": "Microsoft News (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_gamingapp",
+    "settingName": "Xbox Gaming App (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_windowscalculator",
+    "settingName": "Windows Calculator (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
     ],
     "categoryName": "Administrative Templates"
   },
@@ -146996,6 +146844,16 @@
     "categoryName": "Lanman Workstation"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_sharingandsecuritymodelforlocalaccounts",
+    "settingName": "Network Access Sharing And Security Model For Local Accounts",
+    "settingDescription": "Network access: Sharing and security model for local accounts  This security setting determines how network logons that use local accounts are authenticated. If this setting is set to Classic, network logons that use local account credentials authenticate by using those credentials. The Classic model allows fine control over access to resources. By using the Classic model, you can grant different types of access to different users for the same resource. If this setting is set to Guest only, network logons that use local accounts are automatically mapped to the Guest account. By using the Guest model, you can have all users treated equally. All users authenticate as Guest, and they all receive the same level of access to a given resource, which can be either Read-only or Modify.  Default on domain computers: Classic.  Default on stand-alone computers: Guest only  Important  With the Guest only model, any user who can access your computer over the network (including anonymous Internet users) can access your shared resources. You must use the Windows Firewall or another similar device to protect your computer from unauthorized access. Similarly, with the Classic model, local accounts must be password protected; otherwise, those user accounts can be used by anyone to access shared system resources.  Note: This setting does not affect interactive logons that are performed remotely by using such services as Telnet or Remote Desktop Services. Remote Desktop Services was called Terminal Services in previous versions of Windows Server. This policy will have no impact on computers running Windows 2000. When the computer is not joined to a domain, this setting also modifies the Sharing and Security tabs in File Explorer to correspond to the sharing and security model that is being used.\r\n ",
+    "keywords": [
+      "Network Access Sharing And Security Model For Local Accounts",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_typeofadminapprovalmode",
     "settingName": "User Account Control Type Of Admin Approval Mode (Windows Insiders only)",
     "settingDescription": "User Account Control: Configure type of Admin Approval Mode. This policy setting controls whether Administrator protection is applied to admin approval mode elevations. If you change this policy setting, you must restart your computer. This policy is only supported on Windows Desktop, not Server. The options are: • Admin Approval Mode is running in legacy mode (default). • Admin Approval Mode is running with Administrator protection.\r\n This setting is only available to Windows Insiders",
@@ -147016,6 +146874,26 @@
     "categoryName": "Local Policies Security Options"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_interactivelogon_machineaccountlockoutthreshold",
+    "settingName": "Interactive Logon Machine Account Lockout Threshold",
+    "settingDescription": "Interactive logon: Machine account threshold.  The machine lockout policy is enforced only on those machines that have Bitlocker enabled for protecting OS volumes. Please ensure that appropriate recovery password backup policies are enabled. This security setting determines the number of failed logon attempts that causes the machine to be locked out. A locked out machine can only be recovered by providing recovery key at console. You can set the value between 1 and 999 failed logon attempts. If you set the value to 0, the machine will never be locked out. Values from 1 to 3 will be interpreted as 4. Failed password attempts against workstations or member servers that have been locked using either CTRL+ALT+DELETE or password protected screen savers counts as failed logon attempts. The machine lockout policy is enforced only on those machines that have Bitlocker enabled for protecting OS volumes. Please ensure that the appropriate recovery password backup policies are enabled.  Default: 0.\r\n ",
+    "keywords": [
+      "Interactive Logon Machine Account Lockout Threshold",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_domainmember_maximummachineaccountpasswordage",
+    "settingName": "Domain Member Maximum Machine Account Password Age",
+    "settingDescription": "Domain member: Maximum machine account password age  This security setting determines how often a domain member will attempt to change its computer account password.  Default: 30 days.  Important  This setting applies to Windows 2000 computers, but it is not available through the Security Configuration Manager tools on these computers.\r\n ",
+    "keywords": [
+      "Domain Member Maximum Machine Account Password Age",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_donotallowanonymousenumerationofsamaccountsandshares",
     "settingName": "Network Access Do Not Allow Anonymous Enumeration Of Sam Accounts And Shares",
     "settingDescription": "Network access: Do not allow anonymous enumeration of SAM accounts and shares  This security setting determines whether anonymous enumeration of SAM accounts and shares is allowed.  Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to grant access to users in a trusted domain that does not maintain a reciprocal trust. If you do not want to allow anonymous enumeration of SAM accounts and shares, then enable this policy.  Default: Disabled.",
@@ -147031,6 +146909,16 @@
     "settingDescription": "Network security: Restrict NTLM: Incoming NTLM traffic  This policy setting allows you to deny or allow incoming NTLM traffic.  If you select \"Allow all\" or do not configure this policy setting, the server will allow all NTLM authentication requests.  If you select \"Deny all domain accounts,\" the server will deny NTLM authentication requests for domain logon and display an NTLM blocked error, but allow local account logon.  If you select \"Deny all accounts,\" the server will deny NTLM authentication requests from incoming traffic and display an NTLM blocked error.  This policy is supported on at least Windows 7 or Windows Server 2008 R2.  Note: Block events are recorded on this computer in the \"Operational\" Log located under the Applications and Services Log/Microsoft/Windows/NTLM.",
     "keywords": [
       "Network Security Restrict NTLM Incoming NTLM Traffic",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_leteveryonepermissionsapplytoanonymoususers",
+    "settingName": "Network Access Let Everyone Permissions Apply To Anonymous Users",
+    "settingDescription": "Network access: Let Everyone permissions apply to anonymous users  This security setting determines what additional permissions are granted for anonymous connections to the computer. Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to grant access to users in a trusted domain that does not maintain a reciprocal trust. By Default, the Everyone security identifier (SID) is removed from the token created for anonymous connections. Therefore, permissions granted to the Everyone group do not apply to anonymous users. If this option is set, anonymous users can only access those resources for which the anonymous user has been explicitly given permission. If this policy is enabled, the Everyone SID is added to the token that is created for anonymous connections. In this case, anonymous users are able to access any resource for which the Everyone group has been given permissions.  Default: Disabled.\r\n ",
+    "keywords": [
+      "Network Access Let Everyone Permissions Apply To Anonymous Users",
       "Local Policies Security Options"
     ],
     "categoryName": "Local Policies Security Options"
@@ -147071,6 +146959,56 @@
     "settingDescription": "Network access: Restrict clients allowed to make remote calls to SAM  This policy setting allows you to restrict remote rpc connections to SAM.  If not selected, the default security descriptor will be used.  This policy is supported on at least Windows Server 2016.",
     "keywords": [
       "Network Access Restrict Clients Allowed To Make Remote Calls To SAM",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_systemobjects_strengthendefaultpermissionsofinternalsystemobjects",
+    "settingName": "System Objects Strengthen Default Permissions Of Internal System Objects",
+    "settingDescription": "System objects: Strengthen default permissions of internal system objects (e.g., Symbolic Links)  This security setting determines the strength of the default discretionary access control list (DACL) for objects. Active Directory maintains a global list of shared system resources, such as DOS device names, mutexes, and semaphores. In this way, objects can be located and shared among processes. Each type of object is created with a default DACL that specifies who can access the objects and what permissions are granted. If this policy is enabled, the default DACL is stronger, allowing users who are not administrators to read shared objects but not allowing these users to modify shared objects that they did not create.  Default: Enabled.\r\n ",
+    "keywords": [
+      "System Objects Strengthen Default Permissions Of Internal System Objects",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_interactivelogon_numberofpreviouslogonstocache",
+    "settingName": "Interactive Logon Number Of Previous Logons To Cache",
+    "settingDescription": "Interactive logon: Number of previous logons to cache (in case domain controller is not available)  Each unique user's logon information is cached locally so that, in the event that a domain controller is unavailable during subsequent logon attempts, they are able to log on. The cached logon information is stored from the previous logon session. If a domain controller is unavailable and a user's logon information is not cached, the user is prompted with this message: There are currently no logon servers available to service the logon request. In this policy setting, a value of 0 disables logon caching. Any value above 50 only caches 50 logon attempts. Windows supports a maximum of 50 cache entries and the number of entries consumed per user depends on the credential. For example, a maximum of 50 unique password user accounts can be cached on a Windows system, but only 25 smart card user accounts can be cached because both the password information and the smart card information are stored. When a user with cached logon information logs on again, the user’s individual cached information is replaced.  Default:  Windows Server 2008: 25  All Other Versions: 10\r\n ",
+    "keywords": [
+      "Interactive Logon Number Of Previous Logons To Cache",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_domainmember_digitallyencryptorsignsecurechanneldataalways",
+    "settingName": "Domain Member Digitally Encrypt Or Sign Secure Channel Data Always",
+    "settingDescription": "Domain member: Digitally encrypt or sign secure channel data (always)  This security setting determines whether all secure channel traffic initiated by the domain member must be signed or encrypted. When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass through authentication, LSA SID/name Lookup etc. This setting determines whether or not all secure channel traffic initiated by the domain member meets minimum security requirements. Specifically it determines whether all secure channel traffic initiated by the domain member must be signed or encrypted. If this policy is enabled, then the secure channel will not be established unless either signing or encryption of all secure channel traffic is negotiated. If this policy is disabled, then encryption and signing of all secure channel traffic is negotiated with the Domain Controller in which case the level of signing and encryption depends on the version of the Domain Controller and the settings of the following two policies:  Domain member: Digitally encrypt secure channel data (when possible)  Domain member: Digitally sign secure channel data (when possible)  Default: Enabled.  Notes: If this policy is enabled, the policy Domain member: Digitally sign secure channel data (when possible) is assumed to be enabled regardless of its current setting. This ensures that the domain member attempts to negotiate at least signing of the secure channel traffic. Logon information transmitted over the secure channel is always encrypted regardless of whether encryption of ALL other secure channel traffic is negotiated or not.\r\n ",
+    "keywords": [
+      "Domain Member Digitally Encrypt Or Sign Secure Channel Data Always",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networksecurity_allowlocalsystemnullsessionfallback",
+    "settingName": "Network Security Allow Local System NULL Session Fallback",
+    "settingDescription": "Network security: Allow LocalSystem NULL session fallback  Allow NTLM to fall back to NULL session when used with LocalSystem. The default is TRUE up to Windows Vista and FALSE in Windows 7.\r\n ",
+    "keywords": [
+      "Network Security Allow Local System NULL Session Fallback",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_domainmember_requirestrongsessionkey",
+    "settingName": "Domain Member Require Strong Session Key",
+    "settingDescription": "Domain member: Require strong (Windows 2000 or later) session key  This security setting determines whether 128-bit key strength is required for encrypted secure channel data. When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller within the domain. This secure channel is used to perform operations such as NTLM pass-through authentication, LSA SID/name Lookup, and so on. Depending on what version of Windows is running on the domain controller that the domain member is communicating with and the settings of the parameters:  Domain member: Digitally encrypt or sign secure channel data (always)  Domain member: Digitally encrypt secure channel data (when possible)  Some or all of the information that is transmitted over the secure channel will be encrypted. This policy setting determines whether or not 128-bit key strength is required for the secure channel information that is encrypted. If this setting is enabled, then the secure channel will not be established unless 128-bit encryption can be performed. If this setting is disabled, then the key strength is negotiated with the domain controller.  Default: Enabled.  Important  In order to take advantage of this policy on member workstations and servers, all domain controllers that constitute the member's domain must be running Windows 2000 or later. In order to take advantage of this policy on domain controllers, all domain controllers in the same domain as well as all trusted domains must run Windows 2000 or later.\r\n ",
+    "keywords": [
+      "Domain Member Require Strong Session Key",
       "Local Policies Security Options"
     ],
     "categoryName": "Local Policies Security Options"
@@ -149308,6 +149246,55 @@
       "\\Microsoft Edge\\Network settings",
       "Microsoft Edge\\Network settings",
       "Network settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_recommended_showtabpreviewenabled_recommended",
+    "settingName": "Enable tab preview on hover",
+    "settingDescription": "This policy controls whether Microsoft Edge displays a preview of the tab content when the user hovers over a tab.\r\n\r\nIf you enable or don't configure this policy, Microsoft Edge shows a tab preview when the user hovers over a tab.\r\n\r\nIf you disable this policy, tab previews will not be shown on hover.",
+    "keywords": [
+      "ShowTabPreviewEnabled_recommended",
+      "Enable tab preview on hover",
+      "\\Microsoft Edge - Default Settings (users can override)",
+      "Microsoft Edge - Default Settings (users can override)"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_relaunchfastifoutdated",
+    "settingName": "Relaunch browser quickly when the current version is outdated",
+    "settingDescription": "This policy specifies the minimum release age after which relaunch notifications become more aggressive. The release age is calculated from the time the currently running version was last served to clients.\r\n\r\nIf a browser relaunch is needed to finalize a pending update and the current version has been outdated for more than the number of days specified by this setting, the RelaunchNotificationPeriod policy is overridden to 2 hours. If the RelaunchNotification policy is set to 1 ('Required'), a browser relaunch will be forced at the end of the period.\r\n\r\nIf not set, or if the release age cannot be determined, the RelaunchNotificationPeriod policy will be used for all updates.",
+    "keywords": [
+      "RelaunchFastIfOutdated",
+      "Relaunch browser quickly when the current version is outdated",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_relaunchfastifoutdated",
+    "settingName": "Relaunch browser quickly when the current version is outdated (User)",
+    "settingDescription": "This policy specifies the minimum release age after which relaunch notifications become more aggressive. The release age is calculated from the time the currently running version was last served to clients.\r\n\r\nIf a browser relaunch is needed to finalize a pending update and the current version has been outdated for more than the number of days specified by this setting, the RelaunchNotificationPeriod policy is overridden to 2 hours. If the RelaunchNotification policy is set to 1 ('Required'), a browser relaunch will be forced at the end of the period.\r\n\r\nIf not set, or if the release age cannot be determined, the RelaunchNotificationPeriod policy will be used for all updates.",
+    "keywords": [
+      "RelaunchFastIfOutdated",
+      "Relaunch browser quickly when the current version is outdated",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge~webrtc_webrtcpostquantumkeyagreement",
+    "settingName": "Enable post-quantum key agreement for WebRTC",
+    "settingDescription": "This policy controls the use of post-quantum key agreement for WebRTC in Microsoft Edge.\r\n\r\nIf you enable this policy, Microsoft Edge will offer post-quantum key agreement for WebRTC.\r\n\r\nIf you disable this policy, post-quantum key agreement will not be offered for WebRTC.\r\n\r\nIf you don't configure this policy, post-quantum key agreement will not be offered for WebRTC. A future version of Microsoft Edge may enable this feature by default.\r\n\r\nOffering a post-quantum key agreement is backwards compatible. Existing datagram transport layer security (DTLS) peers and networking middleware are expected to ignore the new option and continue using previous options.\r\n\r\nHowever, devices that don't correctly implement DTLS may malfunction when offered the new option. For example, they may disconnect in response to unrecognized options or larger message sizes. Such devices aren’t post-quantum-ready and may interfere with an organization's post-quantum transition. If this issue occurs, administrators should contact the device vendor for a fix.\r\n\r\nThis policy is temporary and will be removed in a future release.",
+    "keywords": [
+      "WebRtcPostQuantumKeyAgreement",
+      "Enable post-quantum key agreement for WebRTC",
+      "\\Microsoft Edge\\WebRtc settings",
+      "Microsoft Edge\\WebRtc settings",
+      "Web Rtc settings"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -157074,6 +157061,19 @@
     "categoryName": "Microsoft Edge Update"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_updatev128~policy~cat_edgeupdate~cat_applications~cat_microsoftedge_pol_edgepreviewenrollmenttypemicrosoftedge",
+    "settingName": "Edge Preview enrollment type",
+    "settingDescription": "Details for this policy will be available in a future release",
+    "keywords": [
+      "Pol_EdgePreviewEnrollmentTypeMicrosoftEdge",
+      "Edge Preview enrollment type",
+      "\\Microsoft Edge Update\\Applications\\Microsoft Edge",
+      "Microsoft Edge Update\\Applications\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge Update"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_updatev86~policy~cat_edgeupdate~cat_applications~cat_microsoftedgecanary_pol_rollbacktotargetversionmicrosoftedgecanary",
     "settingName": "Rollback to Target version",
     "settingDescription": "Specifies that Microsoft Edge Update should rollback installations of Microsoft Edge to the version indicated in 'Target version override'.\r\n\r\nThis policy has no effect unless 'Target version override' is set and 'Update policy override' is set to one of the ON states (Always allow updates, Automatic silent updates only, Manual updates only).\r\n\r\nIf you disable this policy or don't configure it, installs that have a version higher than that specified by 'Target version override' will be left as-is.\r\n\r\nIf you enable this policy, installs that have a current version higher than specified by the 'Target version override' will be downgraded to the target version.\r\n\r\nWe recommend that users install the latest version of the Microsoft Edge browser to ensure protection by the latest security updates. Rollback to an earlier version risks exposure to known security issues. This policy is meant to be used as a temporary fix to address issues in a Microsoft Edge browser update.\r\n\r\nBefore temporarily rolling back your browser version, we recommend that you turn on Sync (https://go.microsoft.com/fwlink/?linkid=2133032) for all users in your organization. If you don't turn on Sync, there is a risk of permanent browsing data loss. Use this policy at your own risk.\r\n\r\nNote: All versions available for rollback can be viewed here https://aka.ms/EdgeEnterprise.\r\n\r\nThis policy is available only on Windows instances that are joined to a Microsoft® Active Directory® domain.\r\n\r\nThis policy applies to Microsoft Edge version 86 or later.\r\n\r\nSee https://go.microsoft.com/fwlink/?linkid=2133918 for more information. This policy is meant to serve as temporary measure when Enterprise Administrators need to downgrade for business reasons. To ensure users are protected by the latest security updates, the most recent version should be used. When versions are downgraded to older versions, there could be incompatibilities.",
@@ -158493,98 +158493,6 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_xboxidentityprovider",
-    "settingName": "Xbox Identity Provider * (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_microsoftofficehub",
-    "settingName": "Microsoft 365 Copilot (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RemoveDefaultMicrosoftStorePackages",
-      "Remove Default Microsoft Store packages from the system.",
-      "\\Windows Components\\App Package Deployment",
-      "Administrative Templates\\Windows Components\\App Package Deployment",
-      "App Package Deployment"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_devices_restrictfloppyaccesstolocallyloggedonuseronly",
-    "settingName": "Devices Restrict Floppy Access To Locally Logged On User Only",
-    "settingDescription": "Devices: Restrict floppy access to locally logged-on user only  This security setting determines whether removable floppy media are accessible to both local and remote users simultaneously. If this policy is enabled, it allows only the interactively logged-on user to access removable floppy media. If this policy is enabled and no one is logged on interactively, the floppy can be accessed over the network.  Default: This policy is not defined and floppy disk drive access is not restricted to the locally logged-on user.\r\n ",
-    "keywords": [
-      "Devices Restrict Floppy Access To Locally Logged On User Only",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_audit_shutdownsystemimmediatelyifunabletologsecurityaudits",
-    "settingName": "Audit Shutdown System Immediately If Unable To Log Security Audits",
-    "settingDescription": "Audit: Shut down system immediately if unable to log security audits  This security setting determines whether the system shuts down if it is unable to log security events. If this security setting is enabled, it causes the system to stop if a security audit cannot be logged for any reason. Typically, an event fails to be logged when the security audit log is full and the retention method that is specified for the security log is either Do Not Overwrite Events or Overwrite Events by Days. If the security log is full and an existing entry cannot be overwritten, and this security option is enabled, the following Stop error appears:  STOP: C0000244 {Audit Failed} An attempt to generate a security audit failed.  To recover, an administrator must log on, archive the log (optional), clear the log, and reset this option as desired. Until this security setting is reset, no users, other than a member of the Administrators group will be able to log on to the system, even if the security log is not full.  Note: On Windows versions prior to Windows Vista configuring this security setting, changes will not take effect until you restart Windows.  Default: Disabled.\r\n ",
-    "keywords": [
-      "Audit Shutdown System Immediately If Unable To Log Security Audits",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_allowanonymoussidornametranslation",
-    "settingName": "Network Access Allow Anonymous SID Or Name Translation",
-    "settingDescription": "Network access: Allow anonymous SID/name translation  This policy setting determines whether an anonymous user can request security identifier (SID) attributes for another user. If this policy is enabled, an anonymous user can request the SID attribute for another user. An anonymous user with knowledge of an administrator's SID could contact a computer that has this policy enabled and use the SID to get the administrator's name. This setting affects both the SID-to-name translation as well as the name-to-SID translation. If this policy setting is disabled, an anonymous user cannot request the SID attribute for another user.  Default on workstations and member servers: Disabled.  Default on domain controllers running Windows Server 2008 or later: Disabled.  Default on domain controllers running Windows Server 2003 R2 or earlier: Enabled.\r\n ",
-    "keywords": [
-      "Network Access Allow Anonymous SID Or Name Translation",
-      "Local Policies Security Options"
-    ],
-    "categoryName": "Local Policies Security Options"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_relaunchfastifoutdated_relaunchfastifoutdated",
-    "settingName": "Time period (days): (User)",
-    "settingDescription": "",
-    "keywords": [
-      "RelaunchFastIfOutdated",
-      "Relaunch browser quickly when the current version is outdated",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_livevideotranslationenabled",
-    "settingName": "Allows users to translate videos to different languages.",
-    "settingDescription": "This policy configures the on-device real-time video translation feature in Microsoft Edge.\r\nWith this feature, users can watch videos translated into their selected language in real time.\r\n\r\nWhen a user selects the Translate icon and chooses a source (video language) and target language (translated language),\r\ntranslation components are downloaded on first use (approximately 200 MB per language pair).\r\n\r\nThese components may be updated periodically to improve performance and translation quality.\r\nTranslation is performed locally on the user’s device and no data is sent outside of the device.\r\nThe feature is available only for non-DRM videos, on supported high-end devices, with select language pairs, and in select regions.\r\nFor more details, see https://www.microsoft.com/en-us/edge/features/real-time-video-translation.\r\n\r\nIf you enable or don’t configure this policy, the on-device real-time video translation feature is enabled and\r\nusers will see the Translate button when hovering over videos.\r\n\r\nIf you disable this policy, the on-device real-time video translation feature is disabled and the Translate button won’t be shown.",
-    "keywords": [
-      "LiveVideoTranslationEnabled",
-      "Allows users to translate videos to different languages.",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_showtabpreviewenabled",
-    "settingName": "Enable tab preview on hover (User)",
-    "settingDescription": "This policy controls whether Microsoft Edge displays a preview of the tab content when the user hovers over a tab.\r\n\r\nIf you enable or don't configure this policy, Microsoft Edge shows a tab preview when the user hovers over a tab.\r\n\r\nIf you disable this policy, tab previews will not be shown on hover.",
-    "keywords": [
-      "ShowTabPreviewEnabled",
-      "Enable tab preview on hover",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.adssettingforintrusiveadssites",
@@ -160363,6 +160271,32 @@
       "Check for server certificate revocation",
       "\\Windows Components\\Internet Explorer\\Internet Control Panel\\Advanced Page",
       "Advanced Page"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_xboxidentityprovider",
+    "settingName": "Xbox Identity Provider * (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_microsoftofficehub",
+    "settingName": "Microsoft 365 Copilot (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
     ],
     "categoryName": "Administrative Templates"
   },
@@ -170542,6 +170476,16 @@
     "categoryName": "Licensing"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_devices_restrictfloppyaccesstolocallyloggedonuseronly",
+    "settingName": "Devices Restrict Floppy Access To Locally Logged On User Only",
+    "settingDescription": "Devices: Restrict floppy access to locally logged-on user only  This security setting determines whether removable floppy media are accessible to both local and remote users simultaneously. If this policy is enabled, it allows only the interactively logged-on user to access removable floppy media. If this policy is enabled and no one is logged on interactively, the floppy can be accessed over the network.  Default: This policy is not defined and floppy disk drive access is not restricted to the locally logged-on user.\r\n ",
+    "keywords": [
+      "Devices Restrict Floppy Access To Locally Logged On User Only",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_useraccountcontrol_detectapplicationinstallationsandpromptforelevation",
     "settingName": "User Account Control Detect Application Installations And Prompt For Elevation",
     "settingDescription": "User Account Control: Detect application installations and prompt for elevation  This policy setting controls the behavior of application installation detection for the computer.  The options are:  Enabled: (Default) When an application installation package is detected that requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.  Disabled: Application installation packages are not detected and prompted for elevation. Enterprises that are running standard user desktops and use delegated installation technologies such as Group Policy Software Installation or Systems Management Server (SMS) should disable this policy setting. In this case, installer detection is unnecessary.",
@@ -170562,11 +170506,31 @@
     "categoryName": "Local Policies Security Options"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_audit_shutdownsystemimmediatelyifunabletologsecurityaudits",
+    "settingName": "Audit Shutdown System Immediately If Unable To Log Security Audits",
+    "settingDescription": "Audit: Shut down system immediately if unable to log security audits  This security setting determines whether the system shuts down if it is unable to log security events. If this security setting is enabled, it causes the system to stop if a security audit cannot be logged for any reason. Typically, an event fails to be logged when the security audit log is full and the retention method that is specified for the security log is either Do Not Overwrite Events or Overwrite Events by Days. If the security log is full and an existing entry cannot be overwritten, and this security option is enabled, the following Stop error appears:  STOP: C0000244 {Audit Failed} An attempt to generate a security audit failed.  To recover, an administrator must log on, archive the log (optional), clear the log, and reset this option as desired. Until this security setting is reset, no users, other than a member of the Administrators group will be able to log on to the system, even if the security log is not full.  Note: On Windows versions prior to Windows Vista configuring this security setting, changes will not take effect until you restart Windows.  Default: Disabled.\r\n ",
+    "keywords": [
+      "Audit Shutdown System Immediately If Unable To Log Security Audits",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_accounts_enableguestaccountstatus",
     "settingName": "Accounts Enable Guest Account Status",
     "settingDescription": "This security setting determines if the Guest account is enabled or disabled.  Default: Disabled.  Note: If the Guest account is disabled and the security option Network Access: Sharing and Security Model for local accounts is set to Guest Only, network logons, such as those performed by the Microsoft Network Server (SMB Service), will fail.",
     "keywords": [
       "Accounts Enable Guest Account Status",
+      "Local Policies Security Options"
+    ],
+    "categoryName": "Local Policies Security Options"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_localpoliciessecurityoptions_networkaccess_allowanonymoussidornametranslation",
+    "settingName": "Network Access Allow Anonymous SID Or Name Translation",
+    "settingDescription": "Network access: Allow anonymous SID/name translation  This policy setting determines whether an anonymous user can request security identifier (SID) attributes for another user. If this policy is enabled, an anonymous user can request the SID attribute for another user. An anonymous user with knowledge of an administrator's SID could contact a computer that has this policy enabled and use the SID to get the administrator's name. This setting affects both the SID-to-name translation as well as the name-to-SID translation. If this policy setting is disabled, an anonymous user cannot request the SID attribute for another user.  Default on workstations and member servers: Disabled.  Default on domain controllers running Windows Server 2008 or later: Disabled.  Default on domain controllers running Windows Server 2003 R2 or earlier: Enabled.\r\n ",
+    "keywords": [
+      "Network Access Allow Anonymous SID Or Name Translation",
       "Local Policies Security Options"
     ],
     "categoryName": "Local Policies Security Options"
@@ -172636,6 +172600,42 @@
     "keywords": [
       "HttpsOnlyMode",
       "Allow HTTPS-Only Mode to be enabled",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_relaunchfastifoutdated_relaunchfastifoutdated",
+    "settingName": "Time period (days): (User)",
+    "settingDescription": "",
+    "keywords": [
+      "RelaunchFastIfOutdated",
+      "Relaunch browser quickly when the current version is outdated",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_livevideotranslationenabled",
+    "settingName": "Allows users to translate videos to different languages.",
+    "settingDescription": "This policy configures the on-device real-time video translation feature in Microsoft Edge.\r\nWith this feature, users can watch videos translated into their selected language in real time.\r\n\r\nWhen a user selects the Translate icon and chooses a source (video language) and target language (translated language),\r\ntranslation components are downloaded on first use (approximately 200 MB per language pair).\r\n\r\nThese components may be updated periodically to improve performance and translation quality.\r\nTranslation is performed locally on the user’s device and no data is sent outside of the device.\r\nThe feature is available only for non-DRM videos, on supported high-end devices, with select language pairs, and in select regions.\r\nFor more details, see https://www.microsoft.com/en-us/edge/features/real-time-video-translation.\r\n\r\nIf you enable or don’t configure this policy, the on-device real-time video translation feature is enabled and\r\nusers will see the Translate button when hovering over videos.\r\n\r\nIf you disable this policy, the on-device real-time video translation feature is disabled and the Translate button won’t be shown.",
+    "keywords": [
+      "LiveVideoTranslationEnabled",
+      "Allows users to translate videos to different languages.",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_showtabpreviewenabled",
+    "settingName": "Enable tab preview on hover (User)",
+    "settingDescription": "This policy controls whether Microsoft Edge displays a preview of the tab content when the user hovers over a tab.\r\n\r\nIf you enable or don't configure this policy, Microsoft Edge shows a tab preview when the user hovers over a tab.\r\n\r\nIf you disable this policy, tab previews will not be shown on hover.",
+    "keywords": [
+      "ShowTabPreviewEnabled",
+      "Enable tab preview on hover",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],

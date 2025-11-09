@@ -16630,30 +16630,6 @@
     "categoryName": "Privacy"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_relaunchfastifoutdated_relaunchfastifoutdated",
-    "settingName": "Time period (days): (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "RelaunchFastIfOutdated",
-      "Relaunch browser quickly when the current version is outdated",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_showtabpreviewenabled",
-    "settingName": "Enable tab preview on hover",
-    "settingDescription": "This policy controls whether Microsoft Edge displays a preview of the tab content when the user hovers over a tab.\r\n\r\nIf you enable or don't configure this policy, Microsoft Edge shows a tab preview when the user hovers over a tab.\r\n\r\nIf you disable this policy, tab previews will not be shown on hover.",
-    "keywords": [
-      "ShowTabPreviewEnabled",
-      "Enable tab preview on hover",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "extensionsettings_managedextensions_generickey_denieddomains",
     "settingName": "Denied Domains",
     "settingDescription": "Controls the domains and sub-domains the extension is not allowed to access. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
@@ -21076,6 +21052,30 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_relaunchfastifoutdated_relaunchfastifoutdated",
+    "settingName": "Time period (days): (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RelaunchFastIfOutdated",
+      "Relaunch browser quickly when the current version is outdated",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_showtabpreviewenabled",
+    "settingName": "Enable tab preview on hover",
+    "settingDescription": "This policy controls whether Microsoft Edge displays a preview of the tab content when the user hovers over a tab.\r\n\r\nIf you enable or don't configure this policy, Microsoft Edge shows a tab preview when the user hovers over a tab.\r\n\r\nIf you disable this policy, tab previews will not be shown on hover.",
+    "keywords": [
+      "ShowTabPreviewEnabled",
+      "Enable tab preview on hover",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge~startup_restoreonstartup",
     "settingName": "Action to take on Microsoft Edge startup",
     "settingDescription": "Specify how Microsoft Edge behaves when it starts.\r\n\r\nIf you want a new tab to always open on startup, choose 'RestoreOnStartupIsNewTabPage'.\r\n\r\nIf you want to reopen URLs that were open the last time Microsoft Edge closed, choose 'RestoreOnStartupIsLastSession'. The browsing session will be restored as it was. Note that this option disables some settings that rely on sessions or that perform actions on exit (such as Clear browsing data on exit or session-only cookies).\r\n\r\nIf you want to open a specific set of URLs, choose 'RestoreOnStartupIsURLs'.\r\n\r\nStarting in Microsoft Edge version 125, if you want to reopen URLs that were open the last time Microsoft Edge closed and open a specific set of URLs, choose 'RestoreOnStartupIsLastSessionAndURLs'.\r\n\r\nDisabling this setting is the same as leaving it not configured. Users will be able to change it in Microsoft Edge.\r\n\r\nThis policy is only available on Windows instances that are joined to a Microsoft Active Directory domain, joined to Microsoft Azure Active Directory, or instances that enrolled for device management. On macOS, this policy is only available on instances that are managed via MDM or joined to a domain via MCX.\r\n\r\nPolicy options mapping:\r\n\r\n* RestoreOnStartupIsNewTabPage (5) = Open a new tab\r\n\r\n* RestoreOnStartupIsLastSession (1) = Restore the last session\r\n\r\n* RestoreOnStartupIsURLs (4) = Open a list of URLs\r\n\r\n* RestoreOnStartupIsLastSessionAndURLs (6) = Open a list of URLs and restore the last session\r\n\r\nUse the preceding information when configuring this policy.",
@@ -22264,18 +22264,6 @@
       "Security"
     ],
     "categoryName": "Security"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_livevideotranslationenabled",
-    "settingName": "Allows users to translate videos to different languages. (User)",
-    "settingDescription": "This policy configures the on-device real-time video translation feature in Microsoft Edge.\r\nWith this feature, users can watch videos translated into their selected language in real time.\r\n\r\nWhen a user selects the Translate icon and chooses a source (video language) and target language (translated language),\r\ntranslation components are downloaded on first use (approximately 200 MB per language pair).\r\n\r\nThese components may be updated periodically to improve performance and translation quality.\r\nTranslation is performed locally on the user’s device and no data is sent outside of the device.\r\nThe feature is available only for non-DRM videos, on supported high-end devices, with select language pairs, and in select regions.\r\nFor more details, see https://www.microsoft.com/en-us/edge/features/real-time-video-translation.\r\n\r\nIf you enable or don’t configure this policy, the on-device real-time video translation feature is enabled and\r\nusers will see the Translate button when hovering over videos.\r\n\r\nIf you disable this policy, the on-device real-time video translation feature is disabled and the Translate button won’t be shown.",
-    "keywords": [
-      "LiveVideoTranslationEnabled",
-      "Allows users to translate videos to different languages.",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "extensionsettings_managedextensions_generickey_alloweddomains",
@@ -26691,6 +26679,18 @@
     "keywords": [
       "ServiceWorkerAutoPreloadEnabled",
       "Allow ServiceWorker to dispatch navigation requests without waiting for its startup",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_livevideotranslationenabled",
+    "settingName": "Allows users to translate videos to different languages. (User)",
+    "settingDescription": "This policy configures the on-device real-time video translation feature in Microsoft Edge.\r\nWith this feature, users can watch videos translated into their selected language in real time.\r\n\r\nWhen a user selects the Translate icon and chooses a source (video language) and target language (translated language),\r\ntranslation components are downloaded on first use (approximately 200 MB per language pair).\r\n\r\nThese components may be updated periodically to improve performance and translation quality.\r\nTranslation is performed locally on the user’s device and no data is sent outside of the device.\r\nThe feature is available only for non-DRM videos, on supported high-end devices, with select language pairs, and in select regions.\r\nFor more details, see https://www.microsoft.com/en-us/edge/features/real-time-video-translation.\r\n\r\nIf you enable or don’t configure this policy, the on-device real-time video translation feature is enabled and\r\nusers will see the Translate button when hovering over videos.\r\n\r\nIf you disable this policy, the on-device real-time video translation feature is disabled and the Translate button won’t be shown.",
+    "keywords": [
+      "LiveVideoTranslationEnabled",
+      "Allows users to translate videos to different languages.",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],
@@ -33697,30 +33697,6 @@
     "categoryName": "Security"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_relaunchfastifoutdated",
-    "settingName": "Relaunch browser quickly when the current version is outdated",
-    "settingDescription": "This policy specifies the minimum release age after which relaunch notifications become more aggressive. The release age is calculated from the time the currently running version was last served to clients.\r\n\r\nIf a browser relaunch is needed to finalize a pending update and the current version has been outdated for more than the number of days specified by this setting, the RelaunchNotificationPeriod policy is overridden to 2 hours. If the RelaunchNotification policy is set to 1 ('Required'), a browser relaunch will be forced at the end of the period.\r\n\r\nIf not set, or if the release age cannot be determined, the RelaunchNotificationPeriod policy will be used for all updates.",
-    "keywords": [
-      "RelaunchFastIfOutdated",
-      "Relaunch browser quickly when the current version is outdated",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_relaunchfastifoutdated",
-    "settingName": "Relaunch browser quickly when the current version is outdated (User)",
-    "settingDescription": "This policy specifies the minimum release age after which relaunch notifications become more aggressive. The release age is calculated from the time the currently running version was last served to clients.\r\n\r\nIf a browser relaunch is needed to finalize a pending update and the current version has been outdated for more than the number of days specified by this setting, the RelaunchNotificationPeriod policy is overridden to 2 hours. If the RelaunchNotification policy is set to 1 ('Required'), a browser relaunch will be forced at the end of the period.\r\n\r\nIf not set, or if the release age cannot be determined, the RelaunchNotificationPeriod policy will be used for all updates.",
-    "keywords": [
-      "RelaunchFastIfOutdated",
-      "Relaunch browser quickly when the current version is outdated",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.apple.mcx_disableguestaccount",
     "settingName": "Disable Guest Account",
     "settingDescription": "If true, disables the guest account. This property has no effect if Enable Guest Account is true.",
@@ -38047,6 +38023,30 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_relaunchfastifoutdated",
+    "settingName": "Relaunch browser quickly when the current version is outdated",
+    "settingDescription": "This policy specifies the minimum release age after which relaunch notifications become more aggressive. The release age is calculated from the time the currently running version was last served to clients.\r\n\r\nIf a browser relaunch is needed to finalize a pending update and the current version has been outdated for more than the number of days specified by this setting, the RelaunchNotificationPeriod policy is overridden to 2 hours. If the RelaunchNotification policy is set to 1 ('Required'), a browser relaunch will be forced at the end of the period.\r\n\r\nIf not set, or if the release age cannot be determined, the RelaunchNotificationPeriod policy will be used for all updates.",
+    "keywords": [
+      "RelaunchFastIfOutdated",
+      "Relaunch browser quickly when the current version is outdated",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_relaunchfastifoutdated",
+    "settingName": "Relaunch browser quickly when the current version is outdated (User)",
+    "settingDescription": "This policy specifies the minimum release age after which relaunch notifications become more aggressive. The release age is calculated from the time the currently running version was last served to clients.\r\n\r\nIf a browser relaunch is needed to finalize a pending update and the current version has been outdated for more than the number of days specified by this setting, the RelaunchNotificationPeriod policy is overridden to 2 hours. If the RelaunchNotification policy is set to 1 ('Required'), a browser relaunch will be forced at the end of the period.\r\n\r\nIf not set, or if the release age cannot be determined, the RelaunchNotificationPeriod policy will be used for all updates.",
+    "keywords": [
+      "RelaunchFastIfOutdated",
+      "Relaunch browser quickly when the current version is outdated",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_edgecollectionsenabled",
     "settingName": "Enable the Collections feature",
     "settingDescription": "Lets you allow users to access the Collections feature, where they can collect, organize, share, and export content more efficiently and with Office integration.\r\n\r\nIf you enable or don't configure this policy, users can access and use the Collections feature in Microsoft Edge.\r\n\r\nIf you disable this policy, users can't access and use Collections in Microsoft Edge.",
@@ -39237,42 +39237,6 @@
       "Security"
     ],
     "categoryName": "Security"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_relaunchfastifoutdated_relaunchfastifoutdated",
-    "settingName": "Time period (days): (User)",
-    "settingDescription": "",
-    "keywords": [
-      "RelaunchFastIfOutdated",
-      "Relaunch browser quickly when the current version is outdated",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_livevideotranslationenabled",
-    "settingName": "Allows users to translate videos to different languages.",
-    "settingDescription": "This policy configures the on-device real-time video translation feature in Microsoft Edge.\r\nWith this feature, users can watch videos translated into their selected language in real time.\r\n\r\nWhen a user selects the Translate icon and chooses a source (video language) and target language (translated language),\r\ntranslation components are downloaded on first use (approximately 200 MB per language pair).\r\n\r\nThese components may be updated periodically to improve performance and translation quality.\r\nTranslation is performed locally on the user’s device and no data is sent outside of the device.\r\nThe feature is available only for non-DRM videos, on supported high-end devices, with select language pairs, and in select regions.\r\nFor more details, see https://www.microsoft.com/en-us/edge/features/real-time-video-translation.\r\n\r\nIf you enable or don’t configure this policy, the on-device real-time video translation feature is enabled and\r\nusers will see the Translate button when hovering over videos.\r\n\r\nIf you disable this policy, the on-device real-time video translation feature is disabled and the Translate button won’t be shown.",
-    "keywords": [
-      "LiveVideoTranslationEnabled",
-      "Allows users to translate videos to different languages.",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_showtabpreviewenabled",
-    "settingName": "Enable tab preview on hover (User)",
-    "settingDescription": "This policy controls whether Microsoft Edge displays a preview of the tab content when the user hovers over a tab.\r\n\r\nIf you enable or don't configure this policy, Microsoft Edge shows a tab preview when the user hovers over a tab.\r\n\r\nIf you disable this policy, tab previews will not be shown on hover.",
-    "keywords": [
-      "ShowTabPreviewEnabled",
-      "Enable tab preview on hover",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "extensionsettings_managedextensions",
@@ -43634,6 +43598,42 @@
     "keywords": [
       "HttpsOnlyMode",
       "Allow HTTPS-Only Mode to be enabled",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_relaunchfastifoutdated_relaunchfastifoutdated",
+    "settingName": "Time period (days): (User)",
+    "settingDescription": "",
+    "keywords": [
+      "RelaunchFastIfOutdated",
+      "Relaunch browser quickly when the current version is outdated",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_livevideotranslationenabled",
+    "settingName": "Allows users to translate videos to different languages.",
+    "settingDescription": "This policy configures the on-device real-time video translation feature in Microsoft Edge.\r\nWith this feature, users can watch videos translated into their selected language in real time.\r\n\r\nWhen a user selects the Translate icon and chooses a source (video language) and target language (translated language),\r\ntranslation components are downloaded on first use (approximately 200 MB per language pair).\r\n\r\nThese components may be updated periodically to improve performance and translation quality.\r\nTranslation is performed locally on the user’s device and no data is sent outside of the device.\r\nThe feature is available only for non-DRM videos, on supported high-end devices, with select language pairs, and in select regions.\r\nFor more details, see https://www.microsoft.com/en-us/edge/features/real-time-video-translation.\r\n\r\nIf you enable or don’t configure this policy, the on-device real-time video translation feature is enabled and\r\nusers will see the Translate button when hovering over videos.\r\n\r\nIf you disable this policy, the on-device real-time video translation feature is disabled and the Translate button won’t be shown.",
+    "keywords": [
+      "LiveVideoTranslationEnabled",
+      "Allows users to translate videos to different languages.",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev141~policy~microsoft_edge_showtabpreviewenabled",
+    "settingName": "Enable tab preview on hover (User)",
+    "settingDescription": "This policy controls whether Microsoft Edge displays a preview of the tab content when the user hovers over a tab.\r\n\r\nIf you enable or don't configure this policy, Microsoft Edge shows a tab preview when the user hovers over a tab.\r\n\r\nIf you disable this policy, tab previews will not be shown on hover.",
+    "keywords": [
+      "ShowTabPreviewEnabled",
+      "Enable tab preview on hover",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],

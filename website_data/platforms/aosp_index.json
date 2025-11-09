@@ -102,31 +102,6 @@
     "categoryName": "Device Restriction"
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.statusbarblocked",
-    "settingName": "Block access to status bar",
-    "settingDescription": "If 'True', prevents access to the status bar, including notifications and quick settings. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users access to the status bar. Available for fully managed and dedicated devices.",
-    "keywords": [
-      "Status",
-      "Bar",
-      "Blocked",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.datetimeconfigurationblocked",
-    "settingName": "Block date and time changes",
-    "settingDescription": "If 'True', prevents users from manually setting the date and time. If False, Intune doesn't change or update this setting. By default, the OS might allow users to the set date and time on the device. Available for fully managed, dedicated and corporate-owned work profile (at work profile level) devices.",
-    "keywords": [
-      "DateTimeConfigurationBlocked",
-      "DateTime",
-      "Configuration",
-      "Block",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.bluetoothblocked",
     "settingName": "Block Bluetooth",
     "settingDescription": "If 'True', disables Bluetooth entirely on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow Bluetooth to be used. Available for fully managed, dedicated, and corporate-owned work profile devices. In comparison, Bluetooth configuration disables the user from making changes to the Bluetooth toggle. As a result, it might be either 'On' or 'Off' depending on the state of Bluetooth prior to applying a policy with Bluetooth configuration enabled.",
@@ -145,6 +120,18 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.statusbarblocked",
+    "settingName": "Block access to status bar",
+    "settingDescription": "If 'True', prevents access to the status bar, including notifications and quick settings. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users access to the status bar. Available for fully managed and dedicated devices.",
+    "keywords": [
+      "Status",
+      "Bar",
+      "Blocked",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurations",
     "settingName": "Block Wi-Fi access point configuration",
     "settingDescription": "If 'True', prevents users from creating or changing any Wi-Fi configurations. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to change the Wi-Fi settings on the device. Available for fully managed, dedicated and corporate-owned work profile devices. ",
@@ -152,6 +139,19 @@
       "Block",
       "Wifi",
       "Wifi Configuration",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.datetimeconfigurationblocked",
+    "settingName": "Block date and time changes",
+    "settingDescription": "If 'True', prevents users from manually setting the date and time. If False, Intune doesn't change or update this setting. By default, the OS might allow users to the set date and time on the device. Available for fully managed, dedicated and corporate-owned work profile (at work profile level) devices.",
+    "keywords": [
+      "DateTimeConfigurationBlocked",
+      "DateTime",
+      "Configuration",
+      "Block",
       "General"
     ],
     "categoryName": "Device Restriction"
@@ -364,21 +364,6 @@
     "categoryName": "Device Restriction"
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.wifiblockeditpolicydefinedconfigurations",
-    "settingName": "Block Wi-Fi setting changes",
-    "settingDescription": "If 'True', prevents users from changing Wi-Fi settings created by the device owner. Users can create their own Wi-Fi configurations. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to change the Wi-Fi settings on the device. Available for fully managed and dedicated devices.",
-    "keywords": [
-      "Wifi",
-      "Block",
-      "Edit",
-      "Policy",
-      "Defined",
-      "Configurations",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.privatespacepolicy",
     "settingName": "Block private space",
     "settingDescription": "If 'True', prevents users from creating or using private spaces on the device, ensuring that all data is stored within the corporate profile. All existing private spaces will be deleted. If 'False', Intune doesn't change or update this setting. By default, the OS might allow the creation of private spaces for personal data. Available for corporate-owned work profile devices (at work profile level).",
@@ -399,6 +384,21 @@
       "Block",
       "Bluetooth",
       "Bluetooth Block",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.wifiblockeditpolicydefinedconfigurations",
+    "settingName": "Block Wi-Fi setting changes",
+    "settingDescription": "If 'True', prevents users from changing Wi-Fi settings created by the device owner. Users can create their own Wi-Fi configurations. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to change the Wi-Fi settings on the device. Available for fully managed and dedicated devices.",
+    "keywords": [
+      "Wifi",
+      "Block",
+      "Edit",
+      "Policy",
+      "Defined",
+      "Configurations",
       "General"
     ],
     "categoryName": "Device Restriction"
@@ -430,6 +430,18 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.dataroamingblocked",
+    "settingName": "Block roaming data services",
+    "settingDescription": "If 'True', prevents data roaming over the cellular network. If 'False', Intune doesn't change or update this setting. By default, the OS might allow data roaming when the device is on a cellular network. Available for fully managed, dedicated and corporate-owned work profile devices. ",
+    "keywords": [
+      "Data",
+      "Roaming",
+      "Blocked",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.wifidirectsettings",
     "settingName": "Block Wi-Fi Direct",
     "settingDescription": "If 'True', blocks Wi-Fi Direct (a direct, peer-to-peer connection between devices using Wi-Fi frequencies). If set to 'False', Intune doesn't change or update this setting. By default, the OS might allow Wi-Fi Direct. Available for fully managed, dedicated, and corporate-owned work profile devices.",
@@ -440,18 +452,6 @@
       "Wi-Fi direct",
       "direct",
       "Wi-Fi",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.dataroamingblocked",
-    "settingName": "Block roaming data services",
-    "settingDescription": "If 'True', prevents data roaming over the cellular network. If 'False', Intune doesn't change or update this setting. By default, the OS might allow data roaming when the device is on a cellular network. Available for fully managed, dedicated and corporate-owned work profile devices. ",
-    "keywords": [
-      "Data",
-      "Roaming",
-      "Blocked",
       "General"
     ],
     "categoryName": "Device Restriction"
