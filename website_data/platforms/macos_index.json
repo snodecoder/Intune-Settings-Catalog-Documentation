@@ -2649,7 +2649,10 @@
       "Block the Adobe Flash plug-in on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Block the Adobe Flash plug-in on specific sites (obsolete)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -2711,7 +2714,9 @@
       "Configure the home page URL",
       "\\Microsoft Edge\\Startup, home page and new tab page",
       "Microsoft Edge\\Startup, home page and new tab page",
-      "Startup, home page and new tab page"
+      "Startup, home page and new tab page",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -2748,7 +2753,9 @@
       "Proxy settings",
       "\\Microsoft Edge\\Proxy server",
       "Microsoft Edge\\Proxy server",
-      "Proxy server"
+      "Proxy server",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -2785,7 +2792,9 @@
       "Default geolocation setting",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -2798,7 +2807,9 @@
       "Configure the change password URL",
       "\\Microsoft Edge\\Password manager and protection",
       "Microsoft Edge\\Password manager and protection",
-      "Password manager and protection"
+      "Password manager and protection",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -2910,7 +2921,10 @@
       "Action to take on startup",
       "\\Microsoft Edge\\Startup, home page and new tab page",
       "Microsoft Edge\\Startup, home page and new tab page",
-      "Startup, home page and new tab page"
+      "Startup, home page and new tab page",
+      "Action to take on Microsoft Edge startup",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -3122,7 +3136,9 @@
       "Default notification setting",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -3135,7 +3151,9 @@
       "Block notifications on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -3148,7 +3166,9 @@
       "Sites to open when the browser starts",
       "\\Microsoft Edge\\Startup, home page and new tab page",
       "Microsoft Edge\\Startup, home page and new tab page",
-      "Startup, home page and new tab page"
+      "Startup, home page and new tab page",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -3161,7 +3181,10 @@
       "Set the proxy .pac file URL",
       "\\Microsoft Edge\\Proxy server",
       "Microsoft Edge\\Proxy server",
-      "Proxy server"
+      "Proxy server",
+      "Set the proxy .pac file URL (deprecated)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -3224,7 +3247,9 @@
       "Enable saving passwords to the password manager",
       "\\Microsoft Edge\\Password manager and protection",
       "Microsoft Edge\\Password manager and protection",
-      "Password manager and protection"
+      "Password manager and protection",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -3262,7 +3287,9 @@
       "Default search provider encodings",
       "\\Microsoft Edge\\Default search provider",
       "Microsoft Edge\\Default search provider",
-      "Default search provider"
+      "Default search provider",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -3275,7 +3302,9 @@
       "Parameters for an image URL that uses POST",
       "\\Microsoft Edge\\Default search provider",
       "Microsoft Edge\\Default search provider",
-      "Default search provider"
+      "Default search provider",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -3325,7 +3354,9 @@
       "Default JavaScript setting",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -3398,7 +3429,9 @@
       "Parameters for an image URL that uses POST",
       "\\Microsoft Edge\\Default search provider",
       "Microsoft Edge\\Default search provider",
-      "Default search provider"
+      "Default search provider",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -3423,7 +3456,9 @@
       "Block images on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -3436,7 +3471,9 @@
       "Allow specific extensions to be installed",
       "\\Microsoft Edge\\Extensions",
       "Microsoft Edge\\Extensions",
-      "Extensions"
+      "Extensions",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -3449,7 +3486,9 @@
       "Control use of the WebHID API",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -3475,7 +3514,9 @@
       "Block the WebHID API on these sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -3942,7 +3983,9 @@
       "Configure a list of origins that grant an extended background lifetime to connecting extensions.",
       "\\Microsoft Edge\\Extensions",
       "Microsoft Edge\\Extensions",
-      "Extensions"
+      "Extensions",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -3967,7 +4010,9 @@
       "Configure a list of origins that grant an extended background lifetime to connecting extensions.",
       "\\Microsoft Edge\\Extensions",
       "Microsoft Edge\\Extensions",
-      "Extensions"
+      "Extensions",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -4237,7 +4282,9 @@
       "Allow insecure content on specified sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -4262,7 +4309,9 @@
       "Allow insecure content on specified sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -4492,7 +4541,9 @@
       "Allow write access to files and directories on these sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -4566,7 +4617,9 @@
       "Allow write access to files and directories on these sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -4579,7 +4632,9 @@
       "Block read access via the File System API on these sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -4726,7 +4781,9 @@
       "Allow quick links on the new tab page",
       "\\Microsoft Edge\\Startup, home page and new tab page",
       "Microsoft Edge\\Startup, home page and new tab page",
-      "Startup, home page and new tab page"
+      "Startup, home page and new tab page",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -4777,7 +4834,9 @@
       "OneAuth Authentication Flow Enforced for signin",
       "\\Microsoft Edge\\Identity and sign-in",
       "Microsoft Edge\\Identity and sign-in",
-      "Identity and sign-in"
+      "Identity and sign-in",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -5008,7 +5067,9 @@
       "Automatically grant sites permission to connect all serial ports",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -5107,7 +5168,9 @@
       "Print preview sticky settings",
       "\\Microsoft Edge\\Printing",
       "Microsoft Edge\\Printing",
-      "Printing"
+      "Printing",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -8251,7 +8314,9 @@
       "Configure allowed extension types",
       "\\Microsoft Edge\\Extensions",
       "Microsoft Edge\\Extensions",
-      "Extensions"
+      "Extensions",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -8288,7 +8353,9 @@
       "Control which extensions cannot be installed",
       "\\Microsoft Edge\\Extensions",
       "Microsoft Edge\\Extensions",
-      "Extensions"
+      "Extensions",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -8387,7 +8454,9 @@
       "Control which native messaging hosts users can use",
       "\\Microsoft Edge\\Native Messaging",
       "Microsoft Edge\\Native Messaging",
-      "Native Messaging"
+      "Native Messaging",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -8424,7 +8493,10 @@
       "Configure address or URL of proxy server",
       "\\Microsoft Edge\\Proxy server",
       "Microsoft Edge\\Proxy server",
-      "Proxy server"
+      "Proxy server",
+      "Configure address or URL of proxy server (deprecated)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -8550,7 +8622,9 @@
       "Allow JavaScript on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -8635,7 +8709,9 @@
       "Configure the new tab page URL",
       "\\Microsoft Edge\\Startup, home page and new tab page",
       "Microsoft Edge\\Startup, home page and new tab page",
-      "Startup, home page and new tab page"
+      "Startup, home page and new tab page",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -8685,7 +8761,9 @@
       "Specifies the search-by-image feature for the default search provider",
       "\\Microsoft Edge\\Default search provider",
       "Microsoft Edge\\Default search provider",
-      "Default search provider"
+      "Default search provider",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -8723,7 +8801,9 @@
       "Default search provider search URL",
       "\\Microsoft Edge\\Default search provider",
       "Microsoft Edge\\Default search provider",
-      "Default search provider"
+      "Default search provider",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -8773,7 +8853,9 @@
       "Set the new tab page as the home page",
       "\\Microsoft Edge\\Startup, home page and new tab page",
       "Microsoft Edge\\Startup, home page and new tab page",
-      "Startup, home page and new tab page"
+      "Startup, home page and new tab page",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -8822,7 +8904,9 @@
       "Control use of the Web Bluetooth API",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -8910,7 +8994,9 @@
       "Allow WebUSB on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -8923,7 +9009,9 @@
       "Block cookies on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -8936,7 +9024,9 @@
       "Default images setting",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -8949,7 +9039,9 @@
       "Allow pop-up windows on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -8974,7 +9066,9 @@
       "Block the WebHID API on these sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -9109,7 +9203,9 @@
       "Configure the sticky print preview settings",
       "\\Microsoft Edge\\Printing",
       "Microsoft Edge\\Printing",
-      "Printing"
+      "Printing",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -9122,7 +9218,10 @@
       "Enable Picture Dictionary feature within Immersive Reader in Microsoft Edge",
       "\\Microsoft Edge\\Immersive Reader settings",
       "Microsoft Edge\\Immersive Reader settings",
-      "Immersive Reader settings"
+      "Immersive Reader settings",
+      "Enable Picture Dictionary feature within Immersive Reader in Microsoft Edge (obsolete)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -9259,7 +9358,9 @@
       "Configure the automatic profile switching site list",
       "\\Microsoft Edge\\Identity and sign-in",
       "Microsoft Edge\\Identity and sign-in",
-      "Identity and sign-in"
+      "Identity and sign-in",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -10093,7 +10194,9 @@
       "Block write access to files and directories on these sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -10279,7 +10382,11 @@
       "Configure Sleeping Tabs",
       "\\Microsoft Edge\\Sleeping Tabs settings",
       "Microsoft Edge\\Sleeping Tabs settings",
-      "Sleeping Tabs settings"
+      "Sleeping Tabs settings",
+      "Configure sleeping tabs",
+      "\\Microsoft Edge\\Sleeping tabs settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -10413,7 +10520,10 @@
       "Allow Microsoft News content on the new tab page",
       "\\Microsoft Edge\\Startup, home page and new tab page",
       "Microsoft Edge\\Startup, home page and new tab page",
-      "Startup, home page and new tab page"
+      "Startup, home page and new tab page",
+      "Allow Microsoft content on the new tab page",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -10426,7 +10536,9 @@
       "Allow quick links on the new tab page",
       "\\Microsoft Edge\\Startup, home page and new tab page",
       "Microsoft Edge\\Startup, home page and new tab page",
-      "Startup, home page and new tab page"
+      "Startup, home page and new tab page",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -10560,7 +10672,9 @@
       "Allow notifications to set Microsoft Edge as default PDF reader",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -10647,7 +10761,9 @@
       "Allow Desktop, Window, and Tab capture by these origins",
       "\\Microsoft Edge\\Permit or deny screen capture",
       "Microsoft Edge\\Permit or deny screen capture",
-      "Permit or deny screen capture"
+      "Permit or deny screen capture",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -10697,7 +10813,9 @@
       "Allow Window and Tab capture by these origins",
       "\\Microsoft Edge\\Permit or deny screen capture",
       "Microsoft Edge\\Permit or deny screen capture",
-      "Permit or deny screen capture"
+      "Permit or deny screen capture",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -10710,7 +10828,9 @@
       "Automatically grant sites permission to connect all serial ports",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -13742,7 +13862,9 @@
       "Enable saving passwords to the password manager",
       "\\Microsoft Edge\\Password manager and protection",
       "Microsoft Edge\\Password manager and protection",
-      "Password manager and protection"
+      "Password manager and protection",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -13755,7 +13877,9 @@
       "Block cookies on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -13768,7 +13892,9 @@
       "Configure cookies",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -13819,7 +13945,9 @@
       "Configure extension and user script install sources",
       "\\Microsoft Edge\\Extensions",
       "Microsoft Edge\\Extensions",
-      "Extensions"
+      "Extensions",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -13857,7 +13985,9 @@
       "Prevent bypassing of Microsoft Defender SmartScreen warnings about downloads",
       "\\Microsoft Edge\\SmartScreen settings",
       "Microsoft Edge\\SmartScreen settings",
-      "SmartScreen settings"
+      "SmartScreen settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -13968,7 +14098,9 @@
       "Configure the home page URL",
       "\\Microsoft Edge\\Startup, home page and new tab page",
       "Microsoft Edge\\Startup, home page and new tab page",
-      "Startup, home page and new tab page"
+      "Startup, home page and new tab page",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -13981,7 +14113,10 @@
       "Set the proxy .pac file URL",
       "\\Microsoft Edge\\Proxy server",
       "Microsoft Edge\\Proxy server",
-      "Proxy server"
+      "Proxy server",
+      "Set the proxy .pac file URL (deprecated)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -14154,7 +14289,10 @@
       "Configure the list of enterprise login URLs where password protection service should capture fingerprint of password",
       "\\Microsoft Edge\\Password manager and protection",
       "Microsoft Edge\\Password manager and protection",
-      "Password manager and protection"
+      "Password manager and protection",
+      "Configure the list of enterprise login URLs where the password protection service should capture salted hashes of a password",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -14180,7 +14318,9 @@
       "Default search provider encodings",
       "\\Microsoft Edge\\Default search provider",
       "Microsoft Edge\\Default search provider",
-      "Default search provider"
+      "Default search provider",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -14268,7 +14408,9 @@
       "Specifies the search-by-image feature for the default search provider",
       "\\Microsoft Edge\\Default search provider",
       "Microsoft Edge\\Default search provider",
-      "Default search provider"
+      "Default search provider",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -14332,7 +14474,9 @@
       "Allow JavaScript on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -14345,7 +14489,9 @@
       "Block notifications on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -14408,7 +14554,10 @@
       "Configure proxy bypass rules",
       "\\Microsoft Edge\\Proxy server",
       "Microsoft Edge\\Proxy server",
-      "Proxy server"
+      "Proxy server",
+      "Configure proxy bypass rules (deprecated)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -14459,7 +14608,9 @@
       "Allow cookies on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -14497,7 +14648,10 @@
       "Configure proxy server settings",
       "\\Microsoft Edge\\Proxy server",
       "Microsoft Edge\\Proxy server",
-      "Proxy server"
+      "Proxy server",
+      "Configure proxy server settings (deprecated)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -14546,7 +14700,9 @@
       "Control use of the WebHID API",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -14619,7 +14775,9 @@
       "Restrict the length of passwords that can be saved in the Password Manager",
       "\\Microsoft Edge\\Password manager and protection",
       "Microsoft Edge\\Password manager and protection",
-      "Password manager and protection"
+      "Password manager and protection",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -14731,7 +14889,9 @@
       "Hide App Launcher on Microsoft Edge new tab page",
       "\\Microsoft Edge\\Startup, home page and new tab page",
       "Microsoft Edge\\Startup, home page and new tab page",
-      "Startup, home page and new tab page"
+      "Startup, home page and new tab page",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -14781,7 +14941,9 @@
       "Automatically grant permission to these sites to connect to HID devices containing top-level collections with the given HID usage",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -14794,7 +14956,9 @@
       "Configure navigation settings per groups of URLs in Microsoft Edge Workspaces",
       "\\Microsoft Edge\\Edge Workspaces settings",
       "Microsoft Edge\\Edge Workspaces settings",
-      "Edge Workspaces settings"
+      "Edge Workspaces settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -14940,7 +15104,9 @@
       "Pin browser essentials toolbar button",
       "\\Microsoft Edge\\Performance",
       "Microsoft Edge\\Performance",
-      "Performance"
+      "Performance",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -15337,7 +15503,9 @@
       "Action to take on Microsoft Edge startup",
       "\\Microsoft Edge\\Startup, home page and new tab page",
       "Microsoft Edge\\Startup, home page and new tab page",
-      "Startup, home page and new tab page"
+      "Startup, home page and new tab page",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -15422,7 +15590,9 @@
       "Force Microsoft Defender SmartScreen checks on downloads from trusted sources",
       "\\Microsoft Edge\\SmartScreen settings",
       "Microsoft Edge\\SmartScreen settings",
-      "SmartScreen settings"
+      "SmartScreen settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -15483,7 +15653,10 @@
       "Configure the Microsoft Edge new tab page experience",
       "\\Microsoft Edge\\Startup, home page and new tab page",
       "Microsoft Edge\\Startup, home page and new tab page",
-      "Startup, home page and new tab page"
+      "Startup, home page and new tab page",
+      "Configure the Microsoft Edge new tab page experience (obsolete)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -15496,7 +15669,10 @@
       "Configure the Microsoft Edge new tab page experience",
       "\\Microsoft Edge\\Startup, home page and new tab page",
       "Microsoft Edge\\Startup, home page and new tab page",
-      "Startup, home page and new tab page"
+      "Startup, home page and new tab page",
+      "Configure the Microsoft Edge new tab page experience (obsolete)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -15534,7 +15710,9 @@
       "Control use of insecure content exceptions",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -16122,7 +16300,9 @@
       "Allow users to get a strong password suggestion whenever they are creating an account online",
       "\\Microsoft Edge\\Password manager and protection",
       "Microsoft Edge\\Password manager and protection",
-      "Password manager and protection"
+      "Password manager and protection",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -16135,7 +16315,9 @@
       "Block JavaScript from using JIT on these sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -16148,7 +16330,9 @@
       "Sets layout for printing",
       "\\Microsoft Edge\\Printing",
       "Microsoft Edge\\Printing",
-      "Printing"
+      "Printing",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -16198,7 +16382,10 @@
       "Enable new SmartScreen library",
       "\\Microsoft Edge\\SmartScreen settings",
       "Microsoft Edge\\SmartScreen settings",
-      "SmartScreen settings"
+      "SmartScreen settings",
+      "Enable new SmartScreen library (obsolete)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -16324,7 +16511,9 @@
       "Automatically grant sites permission to connect to USB serial devices",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -16361,7 +16550,9 @@
       "Allow Same Origin Tab capture by these origins",
       "\\Microsoft Edge\\Permit or deny screen capture",
       "Microsoft Edge\\Permit or deny screen capture",
-      "Permit or deny screen capture"
+      "Permit or deny screen capture",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -18136,7 +18327,7 @@
   },
   {
     "settingId": "com.apple.familycontrols.contentfilter_filterblacklist",
-    "settingName": "Filter Blocklist",
+    "settingName": "Filter Blocklist (Deprecated)",
     "settingDescription": "The array of URLs that defines a deny list. When Restrict Web and Use Content Filter are enabled, no URLs in the deny list are available to the user.",
     "keywords": [
       "Parental Controls Content Filter"
@@ -19466,7 +19657,9 @@
       "Allow cookies on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -19479,7 +19672,10 @@
       "Default Adobe Flash setting",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Default Adobe Flash setting (obsolete)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -19504,7 +19700,10 @@
       "Action to take on startup",
       "\\Microsoft Edge\\Startup, home page and new tab page",
       "Microsoft Edge\\Startup, home page and new tab page",
-      "Startup, home page and new tab page"
+      "Startup, home page and new tab page",
+      "Action to take on Microsoft Edge startup",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -19567,7 +19766,9 @@
       "Allow WebUSB on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -19617,7 +19818,9 @@
       "Grant access to specific sites to connect to specific USB devices",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -19654,7 +19857,9 @@
       "Allow pop-up windows on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -19667,7 +19872,9 @@
       "Block WebUSB on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -19680,7 +19887,9 @@
       "Control which extensions are installed silently",
       "\\Microsoft Edge\\Extensions",
       "Microsoft Edge\\Extensions",
-      "Extensions"
+      "Extensions",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -19729,7 +19938,9 @@
       "Configure extension and user script install sources",
       "\\Microsoft Edge\\Extensions",
       "Microsoft Edge\\Extensions",
-      "Extensions"
+      "Extensions",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -19852,7 +20063,9 @@
       "Configure password protection warning trigger",
       "\\Microsoft Edge\\Password manager and protection",
       "Microsoft Edge\\Password manager and protection",
-      "Password manager and protection"
+      "Password manager and protection",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -19877,7 +20090,9 @@
       "Configure extension management settings",
       "\\Microsoft Edge\\Extensions",
       "Microsoft Edge\\Extensions",
-      "Extensions"
+      "Extensions",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -19902,7 +20117,10 @@
       "Configure address or URL of proxy server",
       "\\Microsoft Edge\\Proxy server",
       "Microsoft Edge\\Proxy server",
-      "Proxy server"
+      "Proxy server",
+      "Configure address or URL of proxy server (deprecated)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -19965,7 +20183,9 @@
       "Enable the default search provider",
       "\\Microsoft Edge\\Default search provider",
       "Microsoft Edge\\Default search provider",
-      "Default search provider"
+      "Default search provider",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -19978,7 +20198,9 @@
       "Default search provider keyword",
       "\\Microsoft Edge\\Default search provider",
       "Microsoft Edge\\Default search provider",
-      "Default search provider"
+      "Default search provider",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -20041,7 +20263,9 @@
       "Configure the change password URL",
       "\\Microsoft Edge\\Password manager and protection",
       "Microsoft Edge\\Password manager and protection",
-      "Password manager and protection"
+      "Password manager and protection",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -20054,7 +20278,9 @@
       "Automatically select client certificates for these sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -20067,7 +20293,9 @@
       "Allow user-level native messaging hosts (installed without admin permissions)",
       "\\Microsoft Edge\\Native Messaging",
       "Microsoft Edge\\Native Messaging",
-      "Native Messaging"
+      "Native Messaging",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -20093,7 +20321,9 @@
       "Limit cookies from specific websites to the current session",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -20106,7 +20336,9 @@
       "Control which native messaging hosts users can use",
       "\\Microsoft Edge\\Native Messaging",
       "Microsoft Edge\\Native Messaging",
-      "Native Messaging"
+      "Native Messaging",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -20119,7 +20351,9 @@
       "Allow notifications on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -20156,7 +20390,9 @@
       "Default pop-up window setting",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -20169,7 +20405,9 @@
       "Allow images on these sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -20182,7 +20420,9 @@
       "Control which extensions cannot be installed",
       "\\Microsoft Edge\\Extensions",
       "Microsoft Edge\\Extensions",
-      "Extensions"
+      "Extensions",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -20281,7 +20521,9 @@
       "Default Profile Setting Enabled",
       "\\Microsoft Edge\\Identity and sign-in",
       "Microsoft Edge\\Identity and sign-in",
-      "Identity and sign-in"
+      "Identity and sign-in",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -20475,7 +20717,9 @@
       "Allow listed sites to connect to any HID device",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -20488,7 +20732,9 @@
       "Automatically grant permission to these sites to connect to HID devices containing top-level collections with the given HID usage",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -20526,7 +20772,9 @@
       "Default automatic downloads setting",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -20539,7 +20787,10 @@
       "Enable Picture Dictionary feature within Immersive Reader in Microsoft Edge",
       "\\Microsoft Edge\\Immersive Reader settings",
       "Microsoft Edge\\Immersive Reader settings",
-      "Immersive Reader settings"
+      "Immersive Reader settings",
+      "Enable Picture Dictionary feature within Immersive Reader in Microsoft Edge (obsolete)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -20661,7 +20912,9 @@
       "Pin browser essentials toolbar button",
       "\\Microsoft Edge\\Performance",
       "Microsoft Edge\\Performance",
-      "Performance"
+      "Performance",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -20811,7 +21064,9 @@
       "Control the availability of developer mode on extensions page",
       "\\Microsoft Edge\\Extensions",
       "Microsoft Edge\\Extensions",
-      "Extensions"
+      "Extensions",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -21084,7 +21339,9 @@
       "Action to take on Microsoft Edge startup",
       "\\Microsoft Edge\\Startup, home page and new tab page",
       "Microsoft Edge\\Startup, home page and new tab page",
-      "Startup, home page and new tab page"
+      "Startup, home page and new tab page",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -21194,7 +21451,9 @@
       "Force Microsoft Defender SmartScreen checks on downloads from trusted sources",
       "\\Microsoft Edge\\SmartScreen settings",
       "Microsoft Edge\\SmartScreen settings",
-      "SmartScreen settings"
+      "SmartScreen settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -21574,7 +21833,9 @@
       "Block read access via the File System API on these sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -21587,7 +21848,9 @@
       "Allow read access via the File System API on these sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -21624,7 +21887,11 @@
       "Set the background tab inactivity timeout for Sleeping Tabs",
       "\\Microsoft Edge\\Sleeping Tabs settings",
       "Microsoft Edge\\Sleeping Tabs settings",
-      "Sleeping Tabs settings"
+      "Sleeping Tabs settings",
+      "Set the background tab inactivity timeout for sleeping tabs",
+      "\\Microsoft Edge\\Sleeping tabs settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -21637,7 +21904,11 @@
       "Block Sleeping Tabs on specific sites",
       "\\Microsoft Edge\\Sleeping Tabs settings",
       "Microsoft Edge\\Sleeping Tabs settings",
-      "Sleeping Tabs settings"
+      "Sleeping Tabs settings",
+      "Block sleeping tabs on specific sites",
+      "\\Microsoft Edge\\Sleeping tabs settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -21879,7 +22150,9 @@
       "Sets layout for printing",
       "\\Microsoft Edge\\Printing",
       "Microsoft Edge\\Printing",
-      "Printing"
+      "Printing",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -21916,7 +22189,9 @@
       "Configures a setting that asks users to enter their device password while using password autofill",
       "\\Microsoft Edge\\Password manager and protection",
       "Microsoft Edge\\Password manager and protection",
-      "Password manager and protection"
+      "Password manager and protection",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -21929,7 +22204,9 @@
       "Allow users to get a strong password suggestion whenever they are creating an account online",
       "\\Microsoft Edge\\Password manager and protection",
       "Microsoft Edge\\Password manager and protection",
-      "Password manager and protection"
+      "Password manager and protection",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -21942,7 +22219,9 @@
       "Enable implicit sign-in",
       "\\Microsoft Edge\\Identity and sign-in",
       "Microsoft Edge\\Identity and sign-in",
-      "Identity and sign-in"
+      "Identity and sign-in",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -21979,7 +22258,9 @@
       "Allow intranet zone file URL links from Microsoft Edge to open in Windows File Explorer",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -22066,7 +22347,9 @@
       "Enable Microsoft Defender SmartScreen DNS requests",
       "\\Microsoft Edge\\SmartScreen settings",
       "Microsoft Edge\\SmartScreen settings",
-      "SmartScreen settings"
+      "SmartScreen settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -22115,7 +22398,9 @@
       "Print preview sticky settings",
       "\\Microsoft Edge\\Printing",
       "Microsoft Edge\\Printing",
-      "Printing"
+      "Printing",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -22264,6 +22549,15 @@
       "Security"
     ],
     "categoryName": "Security"
+  },
+  {
+    "settingId": "com.apple.familycontrols.contentfilter_filterdenylist",
+    "settingName": "Filter Denylist",
+    "settingDescription": "The array of URLs that defines a deny list. When `restrictWeb` and `useContentFilter` are enabled, no URLs in the deny list are available to the user.",
+    "keywords": [
+      "Parental Controls Content Filter"
+    ],
+    "categoryName": "Parental Controls"
   },
   {
     "settingId": "extensionsettings_managedextensions_generickey_alloweddomains",
@@ -23436,7 +23730,7 @@
   {
     "settingId": "enforcement_targetbuildversion",
     "settingName": "Target Build Version",
-    "settingDescription": "The target build version to update the device to by the appropriate time, for example, `20A242`. The system uses the build version for testing during seeding periods. The build version can include a supplemental version identifier, for example, `20A242a`. If the build version isn't consistent with the target OS version specified in the `TargetOSVersion` key, the target OS version takes precedence.",
+    "settingDescription": "The target build version to update the device to by the appropriate time, for example, `20A242`. Use the build version for testing during seeding periods. The build version can include a supplemental version identifier, for example, `20A242a`.",
     "keywords": [
       "Software Update"
     ],
@@ -25090,7 +25384,10 @@
       "Allow the Adobe Flash plug-in on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Allow the Adobe Flash plug-in on specific sites (obsolete)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -25237,7 +25534,9 @@
       "Allow images on these sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -25250,7 +25549,9 @@
       "Block pop-up windows on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -25312,7 +25613,9 @@
       "Enable the default search provider",
       "\\Microsoft Edge\\Default search provider",
       "Microsoft Edge\\Default search provider",
-      "Default search provider"
+      "Default search provider",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -25325,7 +25628,9 @@
       "Default search provider keyword",
       "\\Microsoft Edge\\Default search provider",
       "Microsoft Edge\\Default search provider",
-      "Default search provider"
+      "Default search provider",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -25436,7 +25741,9 @@
       "Block JavaScript on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -25449,7 +25756,9 @@
       "Allow notifications on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -25575,7 +25884,9 @@
       "Default search provider search URL",
       "\\Microsoft Edge\\Default search provider",
       "Microsoft Edge\\Default search provider",
-      "Default search provider"
+      "Default search provider",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -25588,7 +25899,10 @@
       "Configure proxy server settings",
       "\\Microsoft Edge\\Proxy server",
       "Microsoft Edge\\Proxy server",
-      "Proxy server"
+      "Proxy server",
+      "Configure proxy server settings (deprecated)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -25650,7 +25964,9 @@
       "Block JavaScript on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -25675,7 +25991,9 @@
       "Control use of the Web Bluetooth API",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -25713,7 +26031,9 @@
       "Automatically select client certificates for these sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -25726,7 +26046,9 @@
       "Default notification setting",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -25764,7 +26086,10 @@
       "Block the Adobe Flash plug-in on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Block the Adobe Flash plug-in on specific sites (obsolete)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -25777,7 +26102,9 @@
       "Control which extensions are installed silently",
       "\\Microsoft Edge\\Extensions",
       "Microsoft Edge\\Extensions",
-      "Extensions"
+      "Extensions",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -25802,7 +26129,9 @@
       "Allow the WebHID API on these sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -26074,7 +26403,10 @@
       "Enable Grammar Tools feature within Immersive Reader in Microsoft Edge",
       "\\Microsoft Edge\\Immersive Reader settings",
       "Microsoft Edge\\Immersive Reader settings",
-      "Immersive Reader settings"
+      "Immersive Reader settings",
+      "Enable Grammar Tools feature within Immersive Reader in Microsoft Edge (obsolete)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -26087,7 +26419,9 @@
       "Allow multiple automatic downloads in quick succession on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -26753,7 +27087,10 @@
       "Set new tab page company logo (deprecated)",
       "\\Microsoft Edge\\Startup, home page and new tab page",
       "Microsoft Edge\\Startup, home page and new tab page",
-      "Startup, home page and new tab page"
+      "Startup, home page and new tab page",
+      "Set new tab page company logo (obsolete)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -26816,7 +27153,9 @@
       "Block insecure content on specified sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -26841,7 +27180,9 @@
       "Block insecure content on specified sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -27207,7 +27548,11 @@
       "Configure Sleeping Tabs",
       "\\Microsoft Edge\\Sleeping Tabs settings",
       "Microsoft Edge\\Sleeping Tabs settings",
-      "Sleeping Tabs settings"
+      "Sleeping Tabs settings",
+      "Configure sleeping tabs",
+      "\\Microsoft Edge\\Sleeping tabs settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -27282,7 +27627,9 @@
       "Print Rasterization Mode",
       "\\Microsoft Edge\\Printing",
       "Microsoft Edge\\Printing",
-      "Printing"
+      "Printing",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -27331,7 +27678,9 @@
       "OneAuth Authentication Flow Enforced for signin",
       "\\Microsoft Edge\\Identity and sign-in",
       "Microsoft Edge\\Identity and sign-in",
-      "Identity and sign-in"
+      "Identity and sign-in",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -27381,7 +27730,9 @@
       "Block JavaScript from using JIT on these sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -27493,7 +27844,9 @@
       "Allow Window and Tab capture by these origins",
       "\\Microsoft Edge\\Permit or deny screen capture",
       "Microsoft Edge\\Permit or deny screen capture",
-      "Permit or deny screen capture"
+      "Permit or deny screen capture",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -27558,7 +27911,9 @@
       "Automatically grant sites permission to connect to USB serial devices",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -31149,7 +31504,9 @@
       "Default pop-up window setting",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -31261,7 +31618,9 @@
       "Configure native messaging block list",
       "\\Microsoft Edge\\Native Messaging",
       "Microsoft Edge\\Native Messaging",
-      "Native Messaging"
+      "Native Messaging",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -31336,7 +31695,9 @@
       "Configure the list of domains for which Microsoft Defender SmartScreen won't trigger warnings",
       "\\Microsoft Edge\\SmartScreen settings",
       "Microsoft Edge\\SmartScreen settings",
-      "SmartScreen settings"
+      "SmartScreen settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -31448,7 +31809,9 @@
       "Prevent bypassing of Microsoft Defender SmartScreen warnings about downloads",
       "\\Microsoft Edge\\SmartScreen settings",
       "Microsoft Edge\\SmartScreen settings",
-      "SmartScreen settings"
+      "SmartScreen settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -31487,7 +31850,9 @@
       "Sites to open when the browser starts",
       "\\Microsoft Edge\\Startup, home page and new tab page",
       "Microsoft Edge\\Startup, home page and new tab page",
-      "Startup, home page and new tab page"
+      "Startup, home page and new tab page",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -31635,7 +32000,9 @@
       "Configure allowed extension types",
       "\\Microsoft Edge\\Extensions",
       "Microsoft Edge\\Extensions",
-      "Extensions"
+      "Extensions",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -31648,7 +32015,9 @@
       "Configure cookies",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -31661,7 +32030,9 @@
       "Block pop-up windows on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -31966,7 +32337,9 @@
       "Configure the sticky print preview settings",
       "\\Microsoft Edge\\Printing",
       "Microsoft Edge\\Printing",
-      "Printing"
+      "Printing",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -31979,7 +32352,9 @@
       "Block multiple automatic downloads in quick succession on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -32005,7 +32380,9 @@
       "Block multiple automatic downloads in quick succession on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -32018,7 +32395,9 @@
       "Default automatic downloads setting",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -32144,7 +32523,9 @@
       "Configure the automatic profile switching site list",
       "\\Microsoft Edge\\Identity and sign-in",
       "Microsoft Edge\\Identity and sign-in",
-      "Identity and sign-in"
+      "Identity and sign-in",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -32243,7 +32624,9 @@
       "Control the availability of developer mode on extensions page",
       "\\Microsoft Edge\\Extensions",
       "Microsoft Edge\\Extensions",
-      "Extensions"
+      "Extensions",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -32553,7 +32936,10 @@
       "Set new tab page company logo (deprecated)",
       "\\Microsoft Edge\\Startup, home page and new tab page",
       "Microsoft Edge\\Startup, home page and new tab page",
-      "Startup, home page and new tab page"
+      "Startup, home page and new tab page",
+      "Set new tab page company logo (obsolete)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -32603,7 +32989,9 @@
       "Configure Microsoft Defender SmartScreen to block potentially unwanted apps",
       "\\Microsoft Edge\\SmartScreen settings",
       "Microsoft Edge\\SmartScreen settings",
-      "SmartScreen settings"
+      "SmartScreen settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -32640,7 +33028,10 @@
       "Enable default legacy SameSite cookie behavior setting",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Enable default legacy SameSite cookie behavior setting (obsolete)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -33003,7 +33394,9 @@
       "Allow read access via the File System API on these sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -33041,7 +33434,10 @@
       "Choose whether users can receive customized background images and text, suggestions, notifications,\r\nand tips for Microsoft services",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Choose whether users can receive customized background images and text, suggestions, notifications, and tips for Microsoft services",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -33116,7 +33512,11 @@
       "Set the background tab inactivity timeout for Sleeping Tabs",
       "\\Microsoft Edge\\Sleeping Tabs settings",
       "Microsoft Edge\\Sleeping Tabs settings",
-      "Sleeping Tabs settings"
+      "Sleeping Tabs settings",
+      "Set the background tab inactivity timeout for sleeping tabs",
+      "\\Microsoft Edge\\Sleeping tabs settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -33177,7 +33577,9 @@
       "Print Rasterization Mode",
       "\\Microsoft Edge\\Printing",
       "Microsoft Edge\\Printing",
-      "Printing"
+      "Printing",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -33251,7 +33653,9 @@
       "Enable implicit sign-in",
       "\\Microsoft Edge\\Identity and sign-in",
       "Microsoft Edge\\Identity and sign-in",
-      "Identity and sign-in"
+      "Identity and sign-in",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -33303,7 +33707,9 @@
       "Allow JavaScript to use JIT on these sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -33316,7 +33722,9 @@
       "Control use of JavaScript JIT",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -33329,7 +33737,9 @@
       "Allow JavaScript to use JIT on these sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -33355,7 +33765,9 @@
       "Allow intranet zone file URL links from Microsoft Edge to open in Windows File Explorer",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -33444,7 +33856,9 @@
       "Allow Desktop, Window, and Tab capture by these origins",
       "\\Microsoft Edge\\Permit or deny screen capture",
       "Microsoft Edge\\Permit or deny screen capture",
-      "Permit or deny screen capture"
+      "Permit or deny screen capture",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -36465,7 +36879,9 @@
       "Configure the list of domains for which Microsoft Defender SmartScreen won't trigger warnings",
       "\\Microsoft Edge\\SmartScreen settings",
       "Microsoft Edge\\SmartScreen settings",
-      "SmartScreen settings"
+      "SmartScreen settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -36526,7 +36942,9 @@
       "Limit cookies from specific websites to the current session",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -36539,7 +36957,9 @@
       "Control use of the WebUSB API",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -36565,7 +36985,9 @@
       "Default images setting",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -36578,7 +37000,9 @@
       "Allow specific extensions to be installed",
       "\\Microsoft Edge\\Extensions",
       "Microsoft Edge\\Extensions",
-      "Extensions"
+      "Extensions",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -36737,7 +37161,9 @@
       "Proxy settings",
       "\\Microsoft Edge\\Proxy server",
       "Microsoft Edge\\Proxy server",
-      "Proxy server"
+      "Proxy server",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -36928,7 +37354,9 @@
       "Default JavaScript setting",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -36990,7 +37418,9 @@
       "Default search provider URL for suggestions",
       "\\Microsoft Edge\\Default search provider",
       "Microsoft Edge\\Default search provider",
-      "Default search provider"
+      "Default search provider",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -37015,7 +37445,9 @@
       "Default search provider name",
       "\\Microsoft Edge\\Default search provider",
       "Microsoft Edge\\Default search provider",
-      "Default search provider"
+      "Default search provider",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -37028,7 +37460,9 @@
       "Prevent bypassing Microsoft Defender SmartScreen prompts for sites",
       "\\Microsoft Edge\\SmartScreen settings",
       "Microsoft Edge\\SmartScreen settings",
-      "SmartScreen settings"
+      "SmartScreen settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -37053,7 +37487,9 @@
       "Configure the new tab page URL",
       "\\Microsoft Edge\\Startup, home page and new tab page",
       "Microsoft Edge\\Startup, home page and new tab page",
-      "Startup, home page and new tab page"
+      "Startup, home page and new tab page",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -37091,7 +37527,9 @@
       "Control use of the WebUSB API",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -37104,7 +37542,9 @@
       "Grant access to specific sites to connect to specific USB devices",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -37166,7 +37606,9 @@
       "Default search provider URL for suggestions",
       "\\Microsoft Edge\\Default search provider",
       "Microsoft Edge\\Default search provider",
-      "Default search provider"
+      "Default search provider",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -37203,7 +37645,10 @@
       "Allow the Adobe Flash plug-in on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Allow the Adobe Flash plug-in on specific sites (obsolete)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -37216,7 +37661,9 @@
       "Block WebUSB on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -37302,7 +37749,9 @@
       "Allow the WebHID API on these sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -37315,7 +37764,9 @@
       "Default Profile Setting Enabled",
       "\\Microsoft Edge\\Identity and sign-in",
       "Microsoft Edge\\Identity and sign-in",
-      "Identity and sign-in"
+      "Identity and sign-in",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -37388,7 +37839,9 @@
       "Restrict the length of passwords that can be saved in the Password Manager",
       "\\Microsoft Edge\\Password manager and protection",
       "Microsoft Edge\\Password manager and protection",
-      "Password manager and protection"
+      "Password manager and protection",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -37449,7 +37902,9 @@
       "Allow listed sites connect to specific HID devices",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -37486,7 +37941,9 @@
       "Allow listed sites to connect to any HID device",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -37499,7 +37956,10 @@
       "Enable Grammar Tools feature within Immersive Reader in Microsoft Edge",
       "\\Microsoft Edge\\Immersive Reader settings",
       "Microsoft Edge\\Immersive Reader settings",
-      "Immersive Reader settings"
+      "Immersive Reader settings",
+      "Enable Grammar Tools feature within Immersive Reader in Microsoft Edge (obsolete)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -37512,7 +37972,9 @@
       "Configure navigation settings per groups of URLs in Microsoft Edge Workspaces",
       "\\Microsoft Edge\\Edge Workspaces settings",
       "Microsoft Edge\\Edge Workspaces settings",
-      "Edge Workspaces settings"
+      "Edge Workspaces settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -37574,7 +38036,9 @@
       "Default setting for third-party storage partitioning",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -37587,7 +38051,10 @@
       "Block third-party storage partitioning for these origins",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Disable third-party storage partitioning for specific top-level origins",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -37600,7 +38067,9 @@
       "Default setting for third-party storage partitioning",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -37613,7 +38082,10 @@
       "Block third-party storage partitioning for these origins",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Disable third-party storage partitioning for specific top-level origins",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -38152,7 +38624,10 @@
       "Revert to legacy SameSite behavior for cookies on specified sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Revert to legacy SameSite behavior for cookies on specified sites (obsolete)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -38165,7 +38640,10 @@
       "Enable default legacy SameSite cookie behavior setting",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Enable default legacy SameSite cookie behavior setting (obsolete)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -38468,7 +38946,10 @@
       "Choose whether users can receive customized background images and text, suggestions, notifications,\r\nand tips for Microsoft services",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Choose whether users can receive customized background images and text, suggestions, notifications, and tips for Microsoft services",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -38749,7 +39230,10 @@
       "Allow Microsoft News content on the new tab page",
       "\\Microsoft Edge\\Startup, home page and new tab page",
       "Microsoft Edge\\Startup, home page and new tab page",
-      "Startup, home page and new tab page"
+      "Startup, home page and new tab page",
+      "Allow Microsoft content on the new tab page",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -38774,7 +39258,9 @@
       "Configures a setting that asks users to enter their device password while using password autofill",
       "\\Microsoft Edge\\Password manager and protection",
       "Microsoft Edge\\Password manager and protection",
-      "Password manager and protection"
+      "Password manager and protection",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -38836,7 +39322,9 @@
       "Allow notifications to set Microsoft Edge as default PDF reader",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -38862,7 +39350,10 @@
       "Enable new SmartScreen library",
       "\\Microsoft Edge\\SmartScreen settings",
       "Microsoft Edge\\SmartScreen settings",
-      "SmartScreen settings"
+      "SmartScreen settings",
+      "Enable new SmartScreen library (obsolete)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -39010,7 +39501,9 @@
       "Allow Tab capture by these origins",
       "\\Microsoft Edge\\Permit or deny screen capture",
       "Microsoft Edge\\Permit or deny screen capture",
-      "Permit or deny screen capture"
+      "Permit or deny screen capture",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -41979,7 +42472,9 @@
       "Configure password protection warning trigger",
       "\\Microsoft Edge\\Password manager and protection",
       "Microsoft Edge\\Password manager and protection",
-      "Password manager and protection"
+      "Password manager and protection",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -41992,7 +42487,9 @@
       "Default search provider name",
       "\\Microsoft Edge\\Default search provider",
       "Microsoft Edge\\Default search provider",
-      "Default search provider"
+      "Default search provider",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -42044,7 +42541,9 @@
       "Prevent bypassing Microsoft Defender SmartScreen prompts for sites",
       "\\Microsoft Edge\\SmartScreen settings",
       "Microsoft Edge\\SmartScreen settings",
-      "SmartScreen settings"
+      "SmartScreen settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -42165,7 +42664,9 @@
       "Allow user-level native messaging hosts (installed without admin permissions)",
       "\\Microsoft Edge\\Native Messaging",
       "Microsoft Edge\\Native Messaging",
-      "Native Messaging"
+      "Native Messaging",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -42203,7 +42704,9 @@
       "Block images on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -42483,7 +42986,9 @@
       "Set the new tab page as the home page",
       "\\Microsoft Edge\\Startup, home page and new tab page",
       "Microsoft Edge\\Startup, home page and new tab page",
-      "Startup, home page and new tab page"
+      "Startup, home page and new tab page",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -42534,7 +43039,10 @@
       "Configure the list of enterprise login URLs where password protection service should capture fingerprint of password",
       "\\Microsoft Edge\\Password manager and protection",
       "Microsoft Edge\\Password manager and protection",
-      "Password manager and protection"
+      "Password manager and protection",
+      "Configure the list of enterprise login URLs where the password protection service should capture salted hashes of a password",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -42633,7 +43141,9 @@
       "Configure extension management settings",
       "\\Microsoft Edge\\Extensions",
       "Microsoft Edge\\Extensions",
-      "Extensions"
+      "Extensions",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -42646,7 +43156,9 @@
       "Default geolocation setting",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -42672,7 +43184,9 @@
       "Configure native messaging block list",
       "\\Microsoft Edge\\Native Messaging",
       "Microsoft Edge\\Native Messaging",
-      "Native Messaging"
+      "Native Messaging",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -42748,7 +43262,10 @@
       "Default Adobe Flash setting",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Default Adobe Flash setting (obsolete)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -42797,7 +43314,10 @@
       "Configure proxy bypass rules",
       "\\Microsoft Edge\\Proxy server",
       "Microsoft Edge\\Proxy server",
-      "Proxy server"
+      "Proxy server",
+      "Configure proxy bypass rules (deprecated)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -43019,7 +43539,9 @@
       "Hide App Launcher on Microsoft Edge new tab page",
       "\\Microsoft Edge\\Startup, home page and new tab page",
       "Microsoft Edge\\Startup, home page and new tab page",
-      "Startup, home page and new tab page"
+      "Startup, home page and new tab page",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -43057,7 +43579,9 @@
       "Allow listed sites connect to specific HID devices",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -43096,7 +43620,9 @@
       "Allow multiple automatic downloads in quick succession on specific sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -43808,7 +44334,9 @@
       "Configure Microsoft Defender SmartScreen to block potentially unwanted apps",
       "\\Microsoft Edge\\SmartScreen settings",
       "Microsoft Edge\\SmartScreen settings",
-      "SmartScreen settings"
+      "SmartScreen settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -43821,7 +44349,9 @@
       "Control use of insecure content exceptions",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -43859,7 +44389,10 @@
       "Revert to legacy SameSite behavior for cookies on specified sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Revert to legacy SameSite behavior for cookies on specified sites (obsolete)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -44054,7 +44587,9 @@
       "Block write access to files and directories on these sites",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -44190,7 +44725,11 @@
       "Block Sleeping Tabs on specific sites",
       "\\Microsoft Edge\\Sleeping Tabs settings",
       "Microsoft Edge\\Sleeping Tabs settings",
-      "Sleeping Tabs settings"
+      "Sleeping Tabs settings",
+      "Block sleeping tabs on specific sites",
+      "\\Microsoft Edge\\Sleeping tabs settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -44450,7 +44989,9 @@
       "Control use of JavaScript JIT",
       "\\Microsoft Edge\\Content settings",
       "Microsoft Edge\\Content settings",
-      "Content settings"
+      "Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -44622,7 +45163,9 @@
       "Allow Same Origin Tab capture by these origins",
       "\\Microsoft Edge\\Permit or deny screen capture",
       "Microsoft Edge\\Permit or deny screen capture",
-      "Permit or deny screen capture"
+      "Permit or deny screen capture",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -44648,7 +45191,9 @@
       "Allow Tab capture by these origins",
       "\\Microsoft Edge\\Permit or deny screen capture",
       "Microsoft Edge\\Permit or deny screen capture",
-      "Permit or deny screen capture"
+      "Permit or deny screen capture",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -44661,7 +45206,9 @@
       "Enable Microsoft Defender SmartScreen DNS requests",
       "\\Microsoft Edge\\SmartScreen settings",
       "Microsoft Edge\\SmartScreen settings",
-      "SmartScreen settings"
+      "SmartScreen settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge"
     ],
     "categoryName": "Microsoft Edge"
   },

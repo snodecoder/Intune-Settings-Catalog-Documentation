@@ -3143,7 +3143,7 @@
   {
     "settingId": "enforcement_targetbuildversion",
     "settingName": "Target Build Version",
-    "settingDescription": "The target build version to update the device to by the appropriate time, for example, `20A242`. The system uses the build version for testing during seeding periods. The build version can include a supplemental version identifier, for example, `20A242a`. If the build version isn't consistent with the target OS version specified in the `TargetOSVersion` key, the target OS version takes precedence.",
+    "settingDescription": "The target build version to update the device to by the appropriate time, for example, `20A242`. Use the build version for testing during seeding periods. The build version can include a supplemental version identifier, for example, `20A242a`.",
     "keywords": [
       "Software Update"
     ],
