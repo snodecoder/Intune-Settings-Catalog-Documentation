@@ -22551,15 +22551,6 @@
     "categoryName": "Security"
   },
   {
-    "settingId": "com.apple.familycontrols.contentfilter_filterdenylist",
-    "settingName": "Filter Denylist",
-    "settingDescription": "The array of URLs that defines a deny list. When `restrictWeb` and `useContentFilter` are enabled, no URLs in the deny list are available to the user.",
-    "keywords": [
-      "Parental Controls Content Filter"
-    ],
-    "categoryName": "Parental Controls"
-  },
-  {
     "settingId": "extensionsettings_managedextensions_generickey_alloweddomains",
     "settingName": "Allowed Domains",
     "settingDescription": "Controls the domains and sub-domains the extension is granted access to. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
@@ -23961,6 +23952,15 @@
       "Associated Domains"
     ],
     "categoryName": "App Management"
+  },
+  {
+    "settingId": "com.apple.familycontrols.contentfilter_filterdenylist",
+    "settingName": "Filter Denylist",
+    "settingDescription": "The array of URLs that defines a deny list. When `restrictWeb` and `useContentFilter` are enabled, no URLs in the deny list are available to the user.",
+    "keywords": [
+      "Parental Controls Content Filter"
+    ],
+    "categoryName": "Parental Controls"
   },
   {
     "settingId": "com.apple.mcx.timemachine_com.apple.mcx.timemachine",

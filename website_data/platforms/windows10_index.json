@@ -1,48 +1,5 @@
 [
   {
-    "settingId": "device_vendor_msft_policy_config_experience_disableshareapppromotions",
-    "settingName": "Disable Share App Promotions (Windows Insiders only)",
-    "settingDescription": "This policy setting allow IT admins to control whether promotional apps are displayed in the Share sheet. If you enable this policy, Windows will not show  promotional apps in the Share sheet. If you disable or do not configure this policy, Share sheet may show app suggestions and promotions when the Share sheet is opened.\r\n This setting is only available to Windows Insiders",
-    "keywords": [
-      "Disable Share App Promotions",
-      "Experience"
-    ],
-    "categoryName": "Experience"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge_recommended~scarewareblocker_recommended_scarewareblockerblocksdetectedsitesenabled_recommended",
-    "settingName": "Configure Edge scareware blocker to block sites detected as potential tech scams (User)",
-    "settingDescription": "This policy controls whether Microsoft Edge blocks sites that are detected as potential tech scams.\r\n\r\nThis policy only takes effect if ScarewareBlockerProtectionEnabled is enabled.\r\n\r\nIf you enable or don't configure this policy, Microsoft Edge will block sites detected as potential tech scams.\r\n\r\nIf you disable this policy, Microsoft Edge will not block sites detected as potential tech scams.",
-    "keywords": [
-      "ScarewareBlockerBlocksDetectedSitesEnabled_recommended",
-      "Configure Edge scareware blocker to block sites detected as potential tech scams",
-      "\\Microsoft Edge - Default Settings (users can override)\\Scareware Blocker settings",
-      "Microsoft Edge - Default Settings (users can override)\\Scareware Blocker settings",
-      "Scareware Blocker settings"
-    ],
-    "categoryName": "Microsoft Edge - Default Settings (users can override)"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_secureboot_configurehighconfidenceoptout",
-    "settingName": "Configure High Confidence Opt Out",
-    "settingDescription": "This policy provides permission to opt out of high confidence buckets that will automatically be applied as part of the LCU.",
-    "keywords": [
-      "Configure High Confidence Opt Out",
-      "Secure Boot"
-    ],
-    "categoryName": "Secure Boot"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_secureboot_configuremicrosoftupdatemanagedoptin",
-    "settingName": "Configure Microsoft Update Managed Opt In",
-    "settingDescription": "This policy controls provides permission to opt-in to CFR servicing (Microsoft Managed)",
-    "keywords": [
-      "Configure Microsoft Update Managed Opt In",
-      "Secure Boot"
-    ],
-    "categoryName": "Secure Boot"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.importsearchengine_recommended",
     "settingName": "Allow importing of search engine settings (users can override)",
     "settingDescription": "Allows users to import search engine settings from another browser into Microsoft Edge.\n\nIf you enable, this policy, the option to import search engine settings is automatically selected.\n\nIf you disable this policy, search engine settings aren't imported at first run, and users can't import them manually.\n\nIf you don't configure this policy, search engine settings are imported at first run, and users can choose whether to import this data manually during later browsing sessions.\n\nYou can set this policy as a recommendation. This means that Microsoft Edge imports search engine settings on first run, but users can select or clear the **search engine** option during manual import.\n\n**Note**: This policy currently manages importing from Internet Explorer (on Windows 7, 8, and 10).",
@@ -11671,6 +11628,16 @@
     "categoryName": "Experience"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_experience_disableshareapppromotions",
+    "settingName": "Disable Share App Promotions (Windows Insiders only)",
+    "settingDescription": "This policy setting allow IT admins to control whether promotional apps are displayed in the Share sheet. If you enable this policy, Windows will not show  promotional apps in the Share sheet. If you disable or do not configure this policy, Share sheet may show app suggestions and promotions when the Share sheet is opened.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Disable Share App Promotions",
+      "Experience"
+    ],
+    "categoryName": "Experience"
+  },
+  {
     "settingId": "user_vendor_msft_policy_config_fileexplorer_setallowedstoragelocations",
     "settingName": "Set Allowed Storage Locations (User)",
     "settingDescription": "A value that can represent one or more storage locations in File Explorer. If not specified, the default is access to all storage locations.",
@@ -14421,6 +14388,19 @@
       "Enable origin-keyed process isolation for improved security",
       "\\Microsoft Edge - Default Settings (users can override)",
       "Microsoft Edge - Default Settings (users can override)"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge_recommended~scarewareblocker_recommended_scarewareblockerblocksdetectedsitesenabled_recommended",
+    "settingName": "Configure Edge scareware blocker to block sites detected as potential tech scams (User)",
+    "settingDescription": "This policy controls whether Microsoft Edge blocks sites that are detected as potential tech scams.\r\n\r\nThis policy only takes effect if ScarewareBlockerProtectionEnabled is enabled.\r\n\r\nIf you enable or don't configure this policy, Microsoft Edge will block sites detected as potential tech scams.\r\n\r\nIf you disable this policy, Microsoft Edge will not block sites detected as potential tech scams.",
+    "keywords": [
+      "ScarewareBlockerBlocksDetectedSitesEnabled_recommended",
+      "Configure Edge scareware blocker to block sites detected as potential tech scams",
+      "\\Microsoft Edge - Default Settings (users can override)\\Scareware Blocker settings",
+      "Microsoft Edge - Default Settings (users can override)\\Scareware Blocker settings",
+      "Scareware Blocker settings"
     ],
     "categoryName": "Microsoft Edge - Default Settings (users can override)"
   },
@@ -22162,6 +22142,26 @@
     "categoryName": "Administrative Templates"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_secureboot_configurehighconfidenceoptout",
+    "settingName": "Configure High Confidence Opt Out",
+    "settingDescription": "This policy provides permission to opt out of high confidence buckets that will automatically be applied as part of the LCU.",
+    "keywords": [
+      "Configure High Confidence Opt Out",
+      "Secure Boot"
+    ],
+    "categoryName": "Secure Boot"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_secureboot_configuremicrosoftupdatemanagedoptin",
+    "settingName": "Configure Microsoft Update Managed Opt In",
+    "settingDescription": "This policy controls provides permission to opt-in to CFR servicing (Microsoft Managed)",
+    "keywords": [
+      "Configure Microsoft Update Managed Opt In",
+      "Secure Boot"
+    ],
+    "categoryName": "Secure Boot"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_security_requireprovisioningpackagesignature",
     "settingName": "Require Provisioning Package Signature",
     "settingDescription": "Specifies whether provisioning packages must have a certificate signed by a device trusted authority.",
@@ -24343,32 +24343,6 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge~scarewareblocker_scarewareblockerblocksdetectedsitesenabled",
-    "settingName": "Configure Edge scareware blocker to block sites detected as potential tech scams",
-    "settingDescription": "This policy controls whether Microsoft Edge blocks sites that are detected as potential tech scams.\r\n\r\nThis policy only takes effect if ScarewareBlockerProtectionEnabled is enabled.\r\n\r\nIf you enable or don't configure this policy, Microsoft Edge will block sites detected as potential tech scams.\r\n\r\nIf you disable this policy, Microsoft Edge will not block sites detected as potential tech scams.",
-    "keywords": [
-      "ScarewareBlockerBlocksDetectedSitesEnabled",
-      "Configure Edge scareware blocker to block sites detected as potential tech scams",
-      "\\Microsoft Edge\\Scareware Blocker settings",
-      "Microsoft Edge\\Scareware Blocker settings",
-      "Scareware Blocker settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_terminalserver-avdv3~policy~avd_gp_node~avd_transport_gp_node_avd_server_udp_shortpath_direct",
-    "settingName": "Enable RDP Shortpath for managed network using NAT traversal",
-    "settingDescription": "This policy lets you control RDP Shortpath for managed networks. It's a direct UDP connection between a client device and session host using a private connection, such as ExpressRoute private peering or a virtual private network (VPN). When the RDP Shortpath listener isn't enabled on session hosts and an inbound port isn't allowed, ICE/STUN is used to discover available IP addresses and a dynamic port that can be used for a connection. \r\n \r\nIf you enable or do not configure the policy this policy setting, Remote Desktop Protocol will consider managed networks paths to establish connection with the session host. \r\n \r\nIf you disable this policy, Remote Desktop Protocol will NOT consider managed networks path to establish connection with the session host.\r\n      ",
-    "keywords": [
-      "AVD_SERVER_UDP_SHORTPATH_DIRECT",
-      "Enable RDP Shortpath for managed network using NAT traversal",
-      "\\Windows Components\\Remote Desktop Services\\Remote Desktop Session Host\\Azure Virtual Desktop\\RDP Shortpath",
-      "Administrative Templates\\Windows Components\\Remote Desktop Services\\Remote Desktop Session Host\\Azure Virtual Desktop\\RDP Shortpath",
-      "RDP Shortpath"
-    ],
-    "categoryName": "Administrative Templates"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchproviderencodings",
@@ -38548,6 +38522,19 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge~scarewareblocker_scarewareblockerblocksdetectedsitesenabled",
+    "settingName": "Configure Edge scareware blocker to block sites detected as potential tech scams",
+    "settingDescription": "This policy controls whether Microsoft Edge blocks sites that are detected as potential tech scams.\r\n\r\nThis policy only takes effect if ScarewareBlockerProtectionEnabled is enabled.\r\n\r\nIf you enable or don't configure this policy, Microsoft Edge will block sites detected as potential tech scams.\r\n\r\nIf you disable this policy, Microsoft Edge will not block sites detected as potential tech scams.",
+    "keywords": [
+      "ScarewareBlockerBlocksDetectedSitesEnabled",
+      "Configure Edge scareware blocker to block sites detected as potential tech scams",
+      "\\Microsoft Edge\\Scareware Blocker settings",
+      "Microsoft Edge\\Scareware Blocker settings",
+      "Scareware Blocker settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_restoreonstartup",
     "settingName": "Action to take on Microsoft Edge startup (Device)",
     "settingDescription": "",
@@ -46381,6 +46368,19 @@
     "categoryName": "Administrative Templates"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_terminalserver-avdv3~policy~avd_gp_node~avd_transport_gp_node_avd_server_udp_shortpath_direct",
+    "settingName": "Enable RDP Shortpath for managed network using NAT traversal",
+    "settingDescription": "This policy lets you control RDP Shortpath for managed networks. It's a direct UDP connection between a client device and session host using a private connection, such as ExpressRoute private peering or a virtual private network (VPN). When the RDP Shortpath listener isn't enabled on session hosts and an inbound port isn't allowed, ICE/STUN is used to discover available IP addresses and a dynamic port that can be used for a connection. \r\n \r\nIf you enable or do not configure the policy this policy setting, Remote Desktop Protocol will consider managed networks paths to establish connection with the session host. \r\n \r\nIf you disable this policy, Remote Desktop Protocol will NOT consider managed networks path to establish connection with the session host.\r\n      ",
+    "keywords": [
+      "AVD_SERVER_UDP_SHORTPATH_DIRECT",
+      "Enable RDP Shortpath for managed network using NAT traversal",
+      "\\Windows Components\\Remote Desktop Services\\Remote Desktop Session Host\\Azure Virtual Desktop\\RDP Shortpath",
+      "Administrative Templates\\Windows Components\\Remote Desktop Services\\Remote Desktop Session Host\\Azure Virtual Desktop\\RDP Shortpath",
+      "RDP Shortpath"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_textinput_configuretraditionalchineseimeversion",
     "settingName": "Configure Traditional Chinese IME Version",
     "settingDescription": "This policy allows the IT admin to configure the Microsoft Traditional Chinese IME version in the desktop. The following list shows the supported values: 0 (default) – The new Microsoft Traditional Chinese IME is on by default. Allow to control Microsoft Traditional Chinese IME version to use. 1 - The previous version of Microsoft Traditional Chinese IME is always selected.  Not allowed to control Microsoft Traditional Chinese IME version to use. 2 - The new Microsoft Traditional Chinese IME is always selected.  Not allowed to control Microsoft Traditional Chinese IME version to use.",
@@ -48029,16 +48029,6 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_secureboot_enablesecurebootcertificateupdates",
-    "settingName": "Enable Secureboot Certificate Updates",
-    "settingDescription": "This policy enables the Secure Boot certificate update process. Setting this to Enabled causes the new Secure Boot certificates to be installed and installs the 2023 signed boot manager for all devices where the policy is applied.",
-    "keywords": [
-      "Enable Secureboot Certificate Updates",
-      "Secure Boot"
-    ],
-    "categoryName": "Secure Boot"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.screencaptureallowedbyorigins",
@@ -68916,7 +68906,7 @@
   },
   {
     "settingId": "device_vendor_msft_remoteremediation_cloudremediationsettings_networksettings_networkcredentials_networkpasswordencryptiontype",
-    "settingName": "Network Password Encryption Type (Windows Insiders only)",
+    "settingName": "Network Password Encryption Type (Windows Insiders only) [Pending fix]",
     "settingDescription": "The type of encryption that might be used for the network password.\r\n This setting is only available to Windows Insiders",
     "keywords": [
       "Network Password Encryption Type",
@@ -68969,6 +68959,16 @@
       "MS Security Guide"
     ],
     "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_secureboot_enablesecurebootcertificateupdates",
+    "settingName": "Enable Secureboot Certificate Updates",
+    "settingDescription": "This policy enables the Secure Boot certificate update process. Setting this to Enabled causes the new Secure Boot certificates to be installed and installs the 2023 signed boot manager for all devices where the policy is applied.",
+    "keywords": [
+      "Enable Secureboot Certificate Updates",
+      "Secure Boot"
+    ],
+    "categoryName": "Secure Boot"
   },
   {
     "settingId": "device_vendor_msft_policy_config_settings_allowdatetime",
@@ -70878,19 +70878,6 @@
       "Trust Center"
     ],
     "categoryName": "Microsoft Word 2016"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge_recommended~scarewareblocker_recommended_scarewareblockersenddetectedsitestosmartscreenenabled_recommended",
-    "settingName": "Configure Edge scareware blocker to share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen (User)",
-    "settingDescription": "This policy controls whether Microsoft Edge shares URLs of sites that are detected as potential tech scams with Microsoft Defender SmartScreen.\r\n\r\nThis policy only takes effect if ScarewareBlockerProtectionEnabled is enabled.\r\n\r\nIf you enable this policy, Microsoft Edge will share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen.\r\n\r\nIf you disable or don't configure this policy, Microsoft Edge will not share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen.",
-    "keywords": [
-      "ScarewareBlockerSendDetectedSitesToSmartScreenEnabled_recommended",
-      "Configure Edge scareware blocker to share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen",
-      "\\Microsoft Edge - Default Settings (users can override)\\Scareware Blocker settings",
-      "Microsoft Edge - Default Settings (users can override)\\Scareware Blocker settings",
-      "Scareware Blocker settings"
-    ],
-    "categoryName": "Microsoft Edge - Default Settings (users can override)"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.newtabpagelocation_recommended",
@@ -85291,6 +85278,19 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge_recommended~scarewareblocker_recommended_scarewareblockersenddetectedsitestosmartscreenenabled_recommended",
+    "settingName": "Configure Edge scareware blocker to share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen (User)",
+    "settingDescription": "This policy controls whether Microsoft Edge shares URLs of sites that are detected as potential tech scams with Microsoft Defender SmartScreen.\r\n\r\nThis policy only takes effect if ScarewareBlockerProtectionEnabled is enabled.\r\n\r\nIf you enable this policy, Microsoft Edge will share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen.\r\n\r\nIf you disable or don't configure this policy, Microsoft Edge will not share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen.",
+    "keywords": [
+      "ScarewareBlockerSendDetectedSitesToSmartScreenEnabled_recommended",
+      "Configure Edge scareware blocker to share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen",
+      "\\Microsoft Edge - Default Settings (users can override)\\Scareware Blocker settings",
+      "Microsoft Edge - Default Settings (users can override)\\Scareware Blocker settings",
+      "Scareware Blocker settings"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge~startup_restoreonstartup",
     "settingName": "Action to take on Microsoft Edge startup",
     "settingDescription": "Specify how Microsoft Edge behaves when it starts.\r\n\r\nIf you want a new tab to always open on startup, choose 'RestoreOnStartupIsNewTabPage'.\r\n\r\nIf you want to reopen URLs that were open the last time Microsoft Edge closed, choose 'RestoreOnStartupIsLastSession'. The browsing session will be restored as it was. Note that this option disables some settings that rely on sessions or that perform actions on exit (such as Clear browsing data on exit or session-only cookies).\r\n\r\nIf you want to open a specific set of URLs, choose 'RestoreOnStartupIsURLs'.\r\n\r\nStarting in Microsoft Edge version 125, if you want to reopen URLs that were open the last time Microsoft Edge closed and open a specific set of URLs, choose 'RestoreOnStartupIsLastSessionAndURLs'.\r\n\r\nDisabling this setting is the same as leaving it not configured. Users will be able to change it in Microsoft Edge.\r\n\r\nThis policy is only available on Windows instances that are joined to a Microsoft Active Directory domain, joined to Microsoft Azure Active Directory, or instances that enrolled for device management. On macOS, this policy is only available on instances that are managed via MDM or joined to a domain via MCX.\r\n\r\nPolicy options mapping:\r\n\r\n* RestoreOnStartupIsNewTabPage (5) = Open a new tab\r\n\r\n* RestoreOnStartupIsLastSession (1) = Restore the last session\r\n\r\n* RestoreOnStartupIsURLs (4) = Open a list of URLs\r\n\r\n* RestoreOnStartupIsLastSessionAndURLs (6) = Open a list of URLs and restore the last session\r\n\r\nUse the preceding information when configuring this policy.",
@@ -92312,7 +92312,7 @@
   },
   {
     "settingId": "device_vendor_msft_remoteremediation_cloudremediationsettings_networksettings_networkcredentials_networkpasswordencryptionstore",
-    "settingName": "Network Password Encryption Store (Windows Insiders only)",
+    "settingName": "Network Password Encryption Store (Windows Insiders only) [Pending fix]",
     "settingDescription": "The encryption store that is specified if we are using a custom certificate for password encryption.\r\n This setting is only available to Windows Insiders",
     "keywords": [
       "Network Password Encryption Store",
@@ -94177,59 +94177,6 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_internetexplorer_disableinternetexplorerlaunchviacom",
-    "settingName": "Disable Internet Explorer 11 Launch Via COM Automation (User)",
-    "settingDescription": "This policy lets you restrict launching of Internet Explorer using COM automation.\r\n\r\nIf you enable this policy, it prevents Internet Explorer 11 from being launched using COM automation.\r\n\r\nIf you disable, or don’t configure this policy, Internet Explorer 11 COM automation launches are allowed.",
-    "keywords": [
-      "DisableInternetExplorerLaunchViaCOM",
-      "Disable Internet Explorer 11 Launch Via COM Automation",
-      "\\Windows Components\\Internet Explorer",
-      "Both",
-      "Software\\Policies\\Microsoft\\Internet Explorer\\Main",
-      "Internet Explorer"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge~scarewareblocker_scarewareblockersenddetectedsitestosmartscreenenabled",
-    "settingName": "Configure Edge scareware blocker to share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen (User)",
-    "settingDescription": "This policy controls whether Microsoft Edge shares URLs of sites that are detected as potential tech scams with Microsoft Defender SmartScreen.\r\n\r\nThis policy only takes effect if ScarewareBlockerProtectionEnabled is enabled.\r\n\r\nIf you enable this policy, Microsoft Edge will share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen.\r\n\r\nIf you disable or don't configure this policy, Microsoft Edge will not share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen.",
-    "keywords": [
-      "ScarewareBlockerSendDetectedSitesToSmartScreenEnabled",
-      "Configure Edge scareware blocker to share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen",
-      "\\Microsoft Edge\\Scareware Blocker settings",
-      "Microsoft Edge\\Scareware Blocker settings",
-      "Scareware Blocker settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge~scarewareblocker_scarewareblockersenddetectedsitestosmartscreenenabled",
-    "settingName": "Configure Edge scareware blocker to share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen",
-    "settingDescription": "This policy controls whether Microsoft Edge shares URLs of sites that are detected as potential tech scams with Microsoft Defender SmartScreen.\r\n\r\nThis policy only takes effect if ScarewareBlockerProtectionEnabled is enabled.\r\n\r\nIf you enable this policy, Microsoft Edge will share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen.\r\n\r\nIf you disable or don't configure this policy, Microsoft Edge will not share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen.",
-    "keywords": [
-      "ScarewareBlockerSendDetectedSitesToSmartScreenEnabled",
-      "Configure Edge scareware blocker to share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen",
-      "\\Microsoft Edge\\Scareware Blocker settings",
-      "Microsoft Edge\\Scareware Blocker settings",
-      "Scareware Blocker settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_terminalserver-avdv3~policy~avd_gp_node~avd_transport_gp_node_avd_server_udp_shortpath_public",
-    "settingName": "Enable RDP Shortpath for public network using NAT traversal",
-    "settingDescription": "This policy lets you control RDP Shortpath for public networks using NAT traversal. It is a direct UDP connection between the client device and session host, using the Simple Traversal Underneath NAT (STUN) protocol. Inbound ports on the session host aren't required to be allowed. \r\n \r\nIf you enable or do not configure this policy setting, Remote Desktop Protocol will consider public networks non-relayed paths to establish connection with the session host. \r\n \r\nIf you disable this policy, Remote Desktop Protocol will NOT consider public networks non-relayed paths to establish connection with the session host. \r\n\r\n      ",
-    "keywords": [
-      "AVD_SERVER_UDP_SHORTPATH_PUBLIC",
-      "Enable RDP Shortpath for public network using NAT traversal",
-      "\\Windows Components\\Remote Desktop Services\\Remote Desktop Session Host\\Azure Virtual Desktop\\RDP Shortpath",
-      "Administrative Templates\\Windows Components\\Remote Desktop Services\\Remote Desktop Session Host\\Azure Virtual Desktop\\RDP Shortpath",
-      "RDP Shortpath"
-    ],
-    "categoryName": "Administrative Templates"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autolaunchprotocolsfromorigins",
@@ -97859,6 +97806,20 @@
       "Enable global window list in Internet Explorer mode",
       "\\Windows Components\\Internet Explorer",
       "Administrative Templates\\Windows Components\\Internet Explorer",
+      "Internet Explorer"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_internetexplorer_disableinternetexplorerlaunchviacom",
+    "settingName": "Disable Internet Explorer 11 Launch Via COM Automation (User)",
+    "settingDescription": "This policy lets you restrict launching of Internet Explorer using COM automation.\r\n\r\nIf you enable this policy, it prevents Internet Explorer 11 from being launched using COM automation.\r\n\r\nIf you disable, or don’t configure this policy, Internet Explorer 11 COM automation launches are allowed.",
+    "keywords": [
+      "DisableInternetExplorerLaunchViaCOM",
+      "Disable Internet Explorer 11 Launch Via COM Automation",
+      "\\Windows Components\\Internet Explorer",
+      "Both",
+      "Software\\Policies\\Microsoft\\Internet Explorer\\Main",
       "Internet Explorer"
     ],
     "categoryName": "Administrative Templates"
@@ -108316,6 +108277,32 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge~scarewareblocker_scarewareblockersenddetectedsitestosmartscreenenabled",
+    "settingName": "Configure Edge scareware blocker to share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen (User)",
+    "settingDescription": "This policy controls whether Microsoft Edge shares URLs of sites that are detected as potential tech scams with Microsoft Defender SmartScreen.\r\n\r\nThis policy only takes effect if ScarewareBlockerProtectionEnabled is enabled.\r\n\r\nIf you enable this policy, Microsoft Edge will share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen.\r\n\r\nIf you disable or don't configure this policy, Microsoft Edge will not share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen.",
+    "keywords": [
+      "ScarewareBlockerSendDetectedSitesToSmartScreenEnabled",
+      "Configure Edge scareware blocker to share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen",
+      "\\Microsoft Edge\\Scareware Blocker settings",
+      "Microsoft Edge\\Scareware Blocker settings",
+      "Scareware Blocker settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge~scarewareblocker_scarewareblockersenddetectedsitestosmartscreenenabled",
+    "settingName": "Configure Edge scareware blocker to share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen",
+    "settingDescription": "This policy controls whether Microsoft Edge shares URLs of sites that are detected as potential tech scams with Microsoft Defender SmartScreen.\r\n\r\nThis policy only takes effect if ScarewareBlockerProtectionEnabled is enabled.\r\n\r\nIf you enable this policy, Microsoft Edge will share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen.\r\n\r\nIf you disable or don't configure this policy, Microsoft Edge will not share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen.",
+    "keywords": [
+      "ScarewareBlockerSendDetectedSitesToSmartScreenEnabled",
+      "Configure Edge scareware blocker to share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen",
+      "\\Microsoft Edge\\Scareware Blocker settings",
+      "Microsoft Edge\\Scareware Blocker settings",
+      "Scareware Blocker settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_commandlineflagsecuritywarningsenabled",
     "settingName": "Enable security warnings for command-line flags",
     "settingDescription": "If disabled, this policy prevents security warnings from appearing when Microsoft Edge is launched with potentially dangerous command-line flags.\r\n\r\nIf enabled or unset, security warnings are displayed when these command-line flags are used to launch Microsoft Edge.\r\n\r\nFor example, the --disable-gpu-sandbox flag generates this warning:  You're using an unsupported command-line flag: --disable-gpu-sandbox. This poses stability and security risks.\r\n\r\nOn Windows, this policy is only available on instances that are joined to a Microsoft Active Directory domain, or Windows 10 Pro (or Enterprise) instances that are enrolled for device management.",
@@ -114981,7 +114968,7 @@
   },
   {
     "settingId": "device_vendor_msft_remoteremediation_cloudremediationsettings_networksettings_networkcredentials_networkpassword",
-    "settingName": "Network Password (Windows Insiders only)",
+    "settingName": "Network Password (Windows Insiders only) [Pending fix]",
     "settingDescription": "Get/Set the password for the wifi network that cloud remediation will attempt to connect during cloud remediation.\r\n This setting is only available to Windows Insiders",
     "keywords": [
       "Network Password",
@@ -115335,6 +115322,19 @@
       "\\Windows Components\\Remote Desktop Services\\Remote Desktop Session Host\\Azure Virtual Desktop",
       "Administrative Templates\\Windows Components\\Remote Desktop Services\\Remote Desktop Session Host\\Azure Virtual Desktop",
       "Azure Virtual Desktop"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_terminalserver-avdv3~policy~avd_gp_node~avd_transport_gp_node_avd_server_udp_shortpath_public",
+    "settingName": "Enable RDP Shortpath for public network using NAT traversal",
+    "settingDescription": "This policy lets you control RDP Shortpath for public networks using NAT traversal. It is a direct UDP connection between the client device and session host, using the Simple Traversal Underneath NAT (STUN) protocol. Inbound ports on the session host aren't required to be allowed. \r\n \r\nIf you enable or do not configure this policy setting, Remote Desktop Protocol will consider public networks non-relayed paths to establish connection with the session host. \r\n \r\nIf you disable this policy, Remote Desktop Protocol will NOT consider public networks non-relayed paths to establish connection with the session host. \r\n\r\n      ",
+    "keywords": [
+      "AVD_SERVER_UDP_SHORTPATH_PUBLIC",
+      "Enable RDP Shortpath for public network using NAT traversal",
+      "\\Windows Components\\Remote Desktop Services\\Remote Desktop Session Host\\Azure Virtual Desktop\\RDP Shortpath",
+      "Administrative Templates\\Windows Components\\Remote Desktop Services\\Remote Desktop Session Host\\Azure Virtual Desktop\\RDP Shortpath",
+      "RDP Shortpath"
     ],
     "categoryName": "Administrative Templates"
   },
@@ -117320,32 +117320,6 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_printers_configurerpcauthnlevelprivacyenabled",
-    "settingName": "Configure RPC packet level privacy setting for incoming connections",
-    "settingDescription": "\r\nThis policy setting controls whether packet level privacy is enabled for RPC for incoming connections.\r\n\r\nBy default packet level privacy is enabled for RPC for incoming connections.\r\n\r\nIf you enable or do not configure this policy setting, packet level privacy is enabled for RPC for incoming connections.\r\n      ",
-    "keywords": [
-      "ConfigureRpcAuthnLevelPrivacyEnabled",
-      "Configure RPC packet level privacy setting for incoming connections",
-      "\\Printers",
-      "Administrative Templates\\Printers",
-      "Printers"
-    ],
-    "categoryName": "Administrative Templates"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge~scarewareblocker_scarewareblockerallowlistdomains",
-    "settingName": "Configure the list of domains where Microsoft Edge scareware blocker won't run",
-    "settingDescription": "This policy configures the list of trusted domains for Microsoft Edge scareware blocker. When a website's source URL matches any domain in this list, Edge scareware blocker won’t analyze that site.\r\n\r\nThis policy takes effect only if the ScarewareBlockerProtectionEnabled policy is enabled.\r\n\r\nIf you enable this policy, Microsoft Edge scareware blocker will trust the specified domains.\r\n\r\nIf you disable or don't configure this policy, Microsoft Edge scareware blocker will analyze all sites.\r\n\r\nExample value:\r\n\r\nmydomain.com\r\nmyuniversity.edu",
-    "keywords": [
-      "ScarewareBlockerAllowListDomains",
-      "Configure the list of domains where Microsoft Edge scareware blocker won't run",
-      "\\Microsoft Edge\\Scareware Blocker settings",
-      "Microsoft Edge\\Scareware Blocker settings",
-      "Scareware Blocker settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchprovidersearchurl",
     "settingName": "Default search provider search URL",
     "settingDescription": "Specifies the URL of the search engine used for a default search. The URL contains the string '{searchTerms}', which is replaced at query time by the terms the user is searching for.\n\nSpecify Bing's search URL as:\n\n'{bing:baseURL}search?q={searchTerms}'.\n\nSpecify Google's search URL as: '{google:baseURL}search?q={searchTerms}&{google:RLZ}{google:originalQueryForSuggestion}{google:assistedQueryStats}{google:searchFieldtrialParameter}{google:searchClient}{google:sourceId}ie={inputEncoding}'.\n\nThis policy is required when you enable the \"DefaultSearchProviderEnabled\" policy; if you don't enable the latter policy, this policy is ignored.\n\nStarting in Microsoft Edge 84, you can set this policy as a recommended policy. If the user has already set a default search provider, the default search provider configured by this recommended policy will not be added to the list of search providers the user can choose from. If this is the desired behavior, use the \"ManagedSearchEngines\" policy.",
@@ -118727,6 +118701,19 @@
       "Start Menu and Taskbar",
       "User",
       "Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_printers_configurerpcauthnlevelprivacyenabled",
+    "settingName": "Configure RPC packet level privacy setting for incoming connections",
+    "settingDescription": "\r\nThis policy setting controls whether packet level privacy is enabled for RPC for incoming connections.\r\n\r\nBy default packet level privacy is enabled for RPC for incoming connections.\r\n\r\nIf you enable or do not configure this policy setting, packet level privacy is enabled for RPC for incoming connections.\r\n      ",
+    "keywords": [
+      "ConfigureRpcAuthnLevelPrivacyEnabled",
+      "Configure RPC packet level privacy setting for incoming connections",
+      "\\Printers",
+      "Administrative Templates\\Printers",
+      "Printers"
     ],
     "categoryName": "Administrative Templates"
   },
@@ -131290,6 +131277,19 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge~scarewareblocker_scarewareblockerallowlistdomains",
+    "settingName": "Configure the list of domains where Microsoft Edge scareware blocker won't run",
+    "settingDescription": "This policy configures the list of trusted domains for Microsoft Edge scareware blocker. When a website's source URL matches any domain in this list, Edge scareware blocker won’t analyze that site.\r\n\r\nThis policy takes effect only if the ScarewareBlockerProtectionEnabled policy is enabled.\r\n\r\nIf you enable this policy, Microsoft Edge scareware blocker will trust the specified domains.\r\n\r\nIf you disable or don't configure this policy, Microsoft Edge scareware blocker will analyze all sites.\r\n\r\nExample value:\r\n\r\nmydomain.com\r\nmyuniversity.edu",
+    "keywords": [
+      "ScarewareBlockerAllowListDomains",
+      "Configure the list of domains where Microsoft Edge scareware blocker won't run",
+      "\\Microsoft Edge\\Scareware Blocker settings",
+      "Microsoft Edge\\Scareware Blocker settings",
+      "Scareware Blocker settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge~startup_restoreonstartup_restoreonstartup",
     "settingName": "Action to take on Microsoft Edge startup (Device)",
     "settingDescription": "",
@@ -138351,7 +138351,7 @@
   },
   {
     "settingId": "device_vendor_msft_remoteremediation_cloudremediationsettings_networksettings_networkcredentials_networkssid",
-    "settingName": "Network SSID (Windows Insiders only)",
+    "settingName": "Network SSID (Windows Insiders only) [Pending fix]",
     "settingDescription": "Get/Set the network SSID that cloud remediation will attempt to connect to during remediation.\r\n This setting is only available to Windows Insiders",
     "keywords": [
       "Network SSID",
@@ -140225,45 +140225,6 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge~scarewareblocker_scarewareblockerblocksdetectedsitesenabled",
-    "settingName": "Configure Edge scareware blocker to block sites detected as potential tech scams (User)",
-    "settingDescription": "This policy controls whether Microsoft Edge blocks sites that are detected as potential tech scams.\r\n\r\nThis policy only takes effect if ScarewareBlockerProtectionEnabled is enabled.\r\n\r\nIf you enable or don't configure this policy, Microsoft Edge will block sites detected as potential tech scams.\r\n\r\nIf you disable this policy, Microsoft Edge will not block sites detected as potential tech scams.",
-    "keywords": [
-      "ScarewareBlockerBlocksDetectedSitesEnabled",
-      "Configure Edge scareware blocker to block sites detected as potential tech scams",
-      "\\Microsoft Edge\\Scareware Blocker settings",
-      "Microsoft Edge\\Scareware Blocker settings",
-      "Scareware Blocker settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge_recommended~scarewareblocker_recommended_scarewareblockersenddetectedsitestosmartscreenenabled_recommended",
-    "settingName": "Configure Edge scareware blocker to share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen",
-    "settingDescription": "This policy controls whether Microsoft Edge shares URLs of sites that are detected as potential tech scams with Microsoft Defender SmartScreen.\r\n\r\nThis policy only takes effect if ScarewareBlockerProtectionEnabled is enabled.\r\n\r\nIf you enable this policy, Microsoft Edge will share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen.\r\n\r\nIf you disable or don't configure this policy, Microsoft Edge will not share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen.",
-    "keywords": [
-      "ScarewareBlockerSendDetectedSitesToSmartScreenEnabled_recommended",
-      "Configure Edge scareware blocker to share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen",
-      "\\Microsoft Edge - Default Settings (users can override)\\Scareware Blocker settings",
-      "Microsoft Edge - Default Settings (users can override)\\Scareware Blocker settings",
-      "Scareware Blocker settings"
-    ],
-    "categoryName": "Microsoft Edge - Default Settings (users can override)"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_terminalserver-avdv3~policy~avd_gp_node~avd_transport_gp_node_avd_server_udp_shortpath_relay",
-    "settingName": "Enable RDP Shortpath for public network using Relay (TURN)",
-    "settingDescription": "This policy lets you control RDP Shortpath for public networks using the Traversal Using Relay NAT (TURN). A relayed UDP is a connection between a client device and session host using a public connection where TURN relays traffic through an intermediate server between a client and session host \r\n \r\nIf you enable or do not configure this policy setting, Remote Desktop Protocol will consider public networks relayed paths to establish connection with the session host. \r\n \r\nIf you disable this policy, Remote Desktop Protocol will NOT consider public networks relayed paths to establish connection with the session host.\r\n      ",
-    "keywords": [
-      "AVD_SERVER_UDP_SHORTPATH_RELAY",
-      "Enable RDP Shortpath for public network using Relay (TURN)",
-      "\\Windows Components\\Remote Desktop Services\\Remote Desktop Session Host\\Azure Virtual Desktop\\RDP Shortpath",
-      "Administrative Templates\\Windows Components\\Remote Desktop Services\\Remote Desktop Session Host\\Azure Virtual Desktop\\RDP Shortpath",
-      "RDP Shortpath"
-    ],
-    "categoryName": "Administrative Templates"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchproviderkeyword_recommended",
@@ -155215,6 +155176,32 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge~scarewareblocker_scarewareblockerblocksdetectedsitesenabled",
+    "settingName": "Configure Edge scareware blocker to block sites detected as potential tech scams (User)",
+    "settingDescription": "This policy controls whether Microsoft Edge blocks sites that are detected as potential tech scams.\r\n\r\nThis policy only takes effect if ScarewareBlockerProtectionEnabled is enabled.\r\n\r\nIf you enable or don't configure this policy, Microsoft Edge will block sites detected as potential tech scams.\r\n\r\nIf you disable this policy, Microsoft Edge will not block sites detected as potential tech scams.",
+    "keywords": [
+      "ScarewareBlockerBlocksDetectedSitesEnabled",
+      "Configure Edge scareware blocker to block sites detected as potential tech scams",
+      "\\Microsoft Edge\\Scareware Blocker settings",
+      "Microsoft Edge\\Scareware Blocker settings",
+      "Scareware Blocker settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge_recommended~scarewareblocker_recommended_scarewareblockersenddetectedsitestosmartscreenenabled_recommended",
+    "settingName": "Configure Edge scareware blocker to share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen",
+    "settingDescription": "This policy controls whether Microsoft Edge shares URLs of sites that are detected as potential tech scams with Microsoft Defender SmartScreen.\r\n\r\nThis policy only takes effect if ScarewareBlockerProtectionEnabled is enabled.\r\n\r\nIf you enable this policy, Microsoft Edge will share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen.\r\n\r\nIf you disable or don't configure this policy, Microsoft Edge will not share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen.",
+    "keywords": [
+      "ScarewareBlockerSendDetectedSitesToSmartScreenEnabled_recommended",
+      "Configure Edge scareware blocker to share URLs of sites detected as potential tech scams with Microsoft Defender SmartScreen",
+      "\\Microsoft Edge - Default Settings (users can override)\\Scareware Blocker settings",
+      "Microsoft Edge - Default Settings (users can override)\\Scareware Blocker settings",
+      "Scareware Blocker settings"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
     "settingId": "user_vendor_msft_policy_config_microsoft_edgev77.3~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended_restoreonstartup",
     "settingName": "Action to take on Microsoft Edge startup (User)",
     "settingDescription": "",
@@ -162986,6 +162973,19 @@
     "categoryName": "Administrative Templates"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_terminalserver-avdv3~policy~avd_gp_node~avd_transport_gp_node_avd_server_udp_shortpath_relay",
+    "settingName": "Enable RDP Shortpath for public network using Relay (TURN)",
+    "settingDescription": "This policy lets you control RDP Shortpath for public networks using the Traversal Using Relay NAT (TURN). A relayed UDP is a connection between a client device and session host using a public connection where TURN relays traffic through an intermediate server between a client and session host \r\n \r\nIf you enable or do not configure this policy setting, Remote Desktop Protocol will consider public networks relayed paths to establish connection with the session host. \r\n \r\nIf you disable this policy, Remote Desktop Protocol will NOT consider public networks relayed paths to establish connection with the session host.\r\n      ",
+    "keywords": [
+      "AVD_SERVER_UDP_SHORTPATH_RELAY",
+      "Enable RDP Shortpath for public network using Relay (TURN)",
+      "\\Windows Components\\Remote Desktop Services\\Remote Desktop Session Host\\Azure Virtual Desktop\\RDP Shortpath",
+      "Administrative Templates\\Windows Components\\Remote Desktop Services\\Remote Desktop Session Host\\Azure Virtual Desktop\\RDP Shortpath",
+      "RDP Shortpath"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_textinput_enabletouchkeyboardautoinvokeindesktopmode",
     "settingName": "Enable Touch Keyboard Auto Invoke In Desktop Mode",
     "settingDescription": "This policy allows the IT admin to enable the touch keyboard to automatically show up when the device is in the desktop mode. The touch keyboard is enabled in both the tablet and desktop mode. In the tablet mode, when you touch a textbox, the touch keyboard automatically shows up. But in the desktop mode, by default, the touch keyboard does not automatically show up when you touch a textbox. The user must click the system tray to enable the touch keyboard. When this policy is enabled, the touch keyboard automatically shows up when the device is in the desktop mode. This policy corresponds to Show the touch keyboard when not in tablet mode and there's no keyboard attached in the Settings app.",
@@ -164555,58 +164555,6 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge_recommended~scarewareblocker_recommended_scarewareblockerblocksdetectedsitesenabled_recommended",
-    "settingName": "Configure Edge scareware blocker to block sites detected as potential tech scams",
-    "settingDescription": "This policy controls whether Microsoft Edge blocks sites that are detected as potential tech scams.\r\n\r\nThis policy only takes effect if ScarewareBlockerProtectionEnabled is enabled.\r\n\r\nIf you enable or don't configure this policy, Microsoft Edge will block sites detected as potential tech scams.\r\n\r\nIf you disable this policy, Microsoft Edge will not block sites detected as potential tech scams.",
-    "keywords": [
-      "ScarewareBlockerBlocksDetectedSitesEnabled_recommended",
-      "Configure Edge scareware blocker to block sites detected as potential tech scams",
-      "\\Microsoft Edge - Default Settings (users can override)\\Scareware Blocker settings",
-      "Microsoft Edge - Default Settings (users can override)\\Scareware Blocker settings",
-      "Scareware Blocker settings"
-    ],
-    "categoryName": "Microsoft Edge - Default Settings (users can override)"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge~scarewareblocker_scarewareblockerallowlistdomains",
-    "settingName": "Configure the list of domains where Microsoft Edge scareware blocker won't run (User)",
-    "settingDescription": "This policy configures the list of trusted domains for Microsoft Edge scareware blocker. When a website's source URL matches any domain in this list, Edge scareware blocker won’t analyze that site.\r\n\r\nThis policy takes effect only if the ScarewareBlockerProtectionEnabled policy is enabled.\r\n\r\nIf you enable this policy, Microsoft Edge scareware blocker will trust the specified domains.\r\n\r\nIf you disable or don't configure this policy, Microsoft Edge scareware blocker will analyze all sites.\r\n\r\nExample value:\r\n\r\nmydomain.com\r\nmyuniversity.edu",
-    "keywords": [
-      "ScarewareBlockerAllowListDomains",
-      "Configure the list of domains where Microsoft Edge scareware blocker won't run",
-      "\\Microsoft Edge\\Scareware Blocker settings",
-      "Microsoft Edge\\Scareware Blocker settings",
-      "Scareware Blocker settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge~scarewareblocker_scarewareblockerallowlistdomains_scarewareblockerallowlistdomainsdesc",
-    "settingName": "Configure the list of domains where Microsoft Edge scareware blocker won't run (User)",
-    "settingDescription": "",
-    "keywords": [
-      "ScarewareBlockerAllowListDomains",
-      "Configure the list of domains where Microsoft Edge scareware blocker won't run",
-      "\\Microsoft Edge\\Scareware Blocker settings",
-      "Microsoft Edge\\Scareware Blocker settings",
-      "Scareware Blocker settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge~scarewareblocker_scarewareblockerallowlistdomains_scarewareblockerallowlistdomainsdesc",
-    "settingName": "Configure the list of domains where Microsoft Edge scareware blocker won't run (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "ScarewareBlockerAllowListDomains",
-      "Configure the list of domains where Microsoft Edge scareware blocker won't run",
-      "\\Microsoft Edge\\Scareware Blocker settings",
-      "Microsoft Edge\\Scareware Blocker settings",
-      "Scareware Blocker settings"
-    ],
-    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.adssettingforintrusiveadssites",
@@ -179451,6 +179399,58 @@
       "Enable tab preview on hover",
       "\\Microsoft Edge",
       "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge_recommended~scarewareblocker_recommended_scarewareblockerblocksdetectedsitesenabled_recommended",
+    "settingName": "Configure Edge scareware blocker to block sites detected as potential tech scams",
+    "settingDescription": "This policy controls whether Microsoft Edge blocks sites that are detected as potential tech scams.\r\n\r\nThis policy only takes effect if ScarewareBlockerProtectionEnabled is enabled.\r\n\r\nIf you enable or don't configure this policy, Microsoft Edge will block sites detected as potential tech scams.\r\n\r\nIf you disable this policy, Microsoft Edge will not block sites detected as potential tech scams.",
+    "keywords": [
+      "ScarewareBlockerBlocksDetectedSitesEnabled_recommended",
+      "Configure Edge scareware blocker to block sites detected as potential tech scams",
+      "\\Microsoft Edge - Default Settings (users can override)\\Scareware Blocker settings",
+      "Microsoft Edge - Default Settings (users can override)\\Scareware Blocker settings",
+      "Scareware Blocker settings"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge~scarewareblocker_scarewareblockerallowlistdomains",
+    "settingName": "Configure the list of domains where Microsoft Edge scareware blocker won't run (User)",
+    "settingDescription": "This policy configures the list of trusted domains for Microsoft Edge scareware blocker. When a website's source URL matches any domain in this list, Edge scareware blocker won’t analyze that site.\r\n\r\nThis policy takes effect only if the ScarewareBlockerProtectionEnabled policy is enabled.\r\n\r\nIf you enable this policy, Microsoft Edge scareware blocker will trust the specified domains.\r\n\r\nIf you disable or don't configure this policy, Microsoft Edge scareware blocker will analyze all sites.\r\n\r\nExample value:\r\n\r\nmydomain.com\r\nmyuniversity.edu",
+    "keywords": [
+      "ScarewareBlockerAllowListDomains",
+      "Configure the list of domains where Microsoft Edge scareware blocker won't run",
+      "\\Microsoft Edge\\Scareware Blocker settings",
+      "Microsoft Edge\\Scareware Blocker settings",
+      "Scareware Blocker settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge~scarewareblocker_scarewareblockerallowlistdomains_scarewareblockerallowlistdomainsdesc",
+    "settingName": "Configure the list of domains where Microsoft Edge scareware blocker won't run (User)",
+    "settingDescription": "",
+    "keywords": [
+      "ScarewareBlockerAllowListDomains",
+      "Configure the list of domains where Microsoft Edge scareware blocker won't run",
+      "\\Microsoft Edge\\Scareware Blocker settings",
+      "Microsoft Edge\\Scareware Blocker settings",
+      "Scareware Blocker settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev142~policy~microsoft_edge~scarewareblocker_scarewareblockerallowlistdomains_scarewareblockerallowlistdomainsdesc",
+    "settingName": "Configure the list of domains where Microsoft Edge scareware blocker won't run (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "ScarewareBlockerAllowListDomains",
+      "Configure the list of domains where Microsoft Edge scareware blocker won't run",
+      "\\Microsoft Edge\\Scareware Blocker settings",
+      "Microsoft Edge\\Scareware Blocker settings",
+      "Scareware Blocker settings"
     ],
     "categoryName": "Microsoft Edge"
   },

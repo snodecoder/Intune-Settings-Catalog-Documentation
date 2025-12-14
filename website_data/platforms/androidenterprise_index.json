@@ -15,6 +15,56 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp",
+    "settingName": "Allow users to turn on debugging features",
+    "settingDescription": "If 'True', permits users to access the debugging features on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might prevent users from using the debugging features on the device.",
+    "keywords": [
+      "Debugging",
+      "Debugging features",
+      "Allow Debugging features",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.securitydevelopersettingsenabled",
+    "settingName": "Allow access to developer settings",
+    "settingDescription": "If 'True', allow users access developer settings on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might prevent users from accessing developer settings on the device. Available for fully managed, dedicated and corporate-owned work profile devices.",
+    "keywords": [
+      "Security",
+      "Developer",
+      "Settings",
+      "Enabled",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.appsblockinstallfromunknownsourcesaosp",
+    "settingName": "Block user from turning on unknown sources",
+    "settingDescription": "If 'True', prevents users from sideloading apps. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to sideload apps from unknown sources.",
+    "keywords": [
+      "Block",
+      "Install apps",
+      "Unknown Sources",
+      "Install apps from unknown sources",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.volumeblockadjustment",
+    "settingName": "Block volume changes",
+    "settingDescription": "If 'True', prevents users from changing the device's volume, and also mutes the main volume. If 'False', Intune doesn't change or update this setting. By default, the OS might allow using the volume settings on the device. Available for fully managed and dedicated devices.",
+    "keywords": [
+      "Volume",
+      "Block",
+      "Adjustment",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordminimumnonlettercharacters",
     "settingName": "Number of non-letter characters required",
     "settingDescription": "Enter the number of non-letters (anything other than letters in the alphabet) the work profile password must have, between 1 and 16 characters. Available for corporate-owned work profile devices (at work profile level).",
@@ -75,56 +125,6 @@
     "categoryName": "Device Restriction"
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp",
-    "settingName": "Allow users to turn on debugging features",
-    "settingDescription": "If 'True', permits users to access the debugging features on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might prevent users from using the debugging features on the device.",
-    "keywords": [
-      "Debugging",
-      "Debugging features",
-      "Allow Debugging features",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.securitydevelopersettingsenabled",
-    "settingName": "Allow access to developer settings",
-    "settingDescription": "If 'True', allow users access developer settings on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might prevent users from accessing developer settings on the device. Available for fully managed, dedicated and corporate-owned work profile devices.",
-    "keywords": [
-      "Security",
-      "Developer",
-      "Settings",
-      "Enabled",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.appsblockinstallfromunknownsourcesaosp",
-    "settingName": "Block user from turning on unknown sources",
-    "settingDescription": "If 'True', prevents users from sideloading apps. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to sideload apps from unknown sources.",
-    "keywords": [
-      "Block",
-      "Install apps",
-      "Unknown Sources",
-      "Install apps from unknown sources",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.volumeblockadjustment",
-    "settingName": "Block volume changes",
-    "settingDescription": "If 'True', prevents users from changing the device's volume, and also mutes the main volume. If 'False', Intune doesn't change or update this setting. By default, the OS might allow using the volume settings on the device. Available for fully managed and dedicated devices.",
-    "keywords": [
-      "Volume",
-      "Block",
-      "Adjustment",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.passwordminimumlowercasecharacters",
     "settingName": "Number of lowercase characters required",
     "settingDescription": "Enter the number of lowercase characters the password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
@@ -174,19 +174,6 @@
       "Mode",
       "Enabled",
       "System Security"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.bluetoothblockcontactsharing",
-    "settingName": "Block contact sharing via Bluetooth (work profile-level)",
-    "settingDescription": "If 'True', prevents sharing work profile contacts with paired Bluetooth devices, such as cars or mobile devices. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to share their contacts via Bluetooth. Available for corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "Bluetooth",
-      "Block",
-      "Contact",
-      "Sharing",
-      "General"
     ],
     "categoryName": "Device Restriction"
   },
@@ -241,6 +228,19 @@
       "Block",
       "Wifi",
       "Wifi Configuration",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.bluetoothblockcontactsharing",
+    "settingName": "Block contact sharing via Bluetooth (work profile-level)",
+    "settingDescription": "If 'True', prevents sharing work profile contacts with paired Bluetooth devices, such as cars or mobile devices. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to share their contacts via Bluetooth. Available for corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Bluetooth",
+      "Block",
+      "Contact",
+      "Sharing",
       "General"
     ],
     "categoryName": "Device Restriction"
@@ -351,20 +351,6 @@
     "categoryName": "Device Restriction"
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordminimumlength",
-    "settingName": "Minimum password length",
-    "settingDescription": "Enter the minimum number of digits or characters the work profile password must have, between 4 and 16 characters. Available for corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "Work",
-      "Profile",
-      "Password",
-      "Minimum",
-      "Length",
-      "Work profile password"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.networkescapehatchallowed",
     "settingName": "Allow network escape hatch",
     "settingDescription": "If 'True', allows users to turn on the network escape hatch feature. If a network connection can't be made at boot time, the escape hatch prompts the user to temporarily connect to a network in order to refresh the device policy. After applying policy, the temporary network will be forgotten and the device will continue booting. This prevents being unable to connect to a network if there is no suitable network in the last policy and the device boots into an app in lock task mode, or the user is otherwise unable to reach device settings. If 'False', Intune doesn't change or update this setting. By default, the OS might prevent users from turning on the network escape hatch feature on the device. Available for fully managed and dedicated devices.",
@@ -465,6 +451,20 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordminimumlength",
+    "settingName": "Minimum password length",
+    "settingDescription": "Enter the minimum number of digits or characters the work profile password must have, between 4 and 16 characters. Available for corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Work",
+      "Profile",
+      "Password",
+      "Minimum",
+      "Length",
+      "Work profile password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.passwordminutesofinactivitybeforescreentimeoutaosp",
     "settingName": "Maximum minutes of inactivity until screen locks",
     "settingDescription": "Enter the maximum length of time, from 1 minute to 1 hour, that devices can be idle before the screen is automatically locked. Users must enter their credentials to regain access. For example, enter 5 to lock the device after 5 minutes of inactivity. Ignored by device if new time is longer than what's currently set on device. If set to Immediately, devices will use the minimum possible value per device.",
@@ -515,37 +515,6 @@
       "Data",
       "Sharing",
       "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordminimumlowercasecharacters",
-    "settingName": "Number of lowercase characters required",
-    "settingDescription": "Enter the number of lowercase characters the work profile password must have, between 1 and 16 characters. Available for corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "Work",
-      "Profile",
-      "Password",
-      "Minimum",
-      "Lower",
-      "Case",
-      "Characters",
-      "Work profile password"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordminimumnumericcharacters",
-    "settingName": "Number of numeric characters required",
-    "settingDescription": "Enter the number of numeric characters (1, 2, 3, and so on) the work profile password must have, between 1 and 16 characters. Available for corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "Work",
-      "Profile",
-      "Password",
-      "Minimum",
-      "Numeric",
-      "Characters",
-      "Work profile password"
     ],
     "categoryName": "Device Restriction"
   },
@@ -604,6 +573,37 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordminimumlowercasecharacters",
+    "settingName": "Number of lowercase characters required",
+    "settingDescription": "Enter the number of lowercase characters the work profile password must have, between 1 and 16 characters. Available for corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Work",
+      "Profile",
+      "Password",
+      "Minimum",
+      "Lower",
+      "Case",
+      "Characters",
+      "Work profile password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordminimumnumericcharacters",
+    "settingName": "Number of numeric characters required",
+    "settingDescription": "Enter the number of numeric characters (1, 2, 3, and so on) the work profile password must have, between 1 and 16 characters. Available for corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Work",
+      "Profile",
+      "Password",
+      "Minimum",
+      "Numeric",
+      "Characters",
+      "Work profile password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.passwordminimumlengthaosp",
     "settingName": "Minimum password length",
     "settingDescription": "Enter the minimum number of digits or characters the password must have, from 4 to 16.",
@@ -625,20 +625,6 @@
       "Password type",
       "Password required type",
       "Device password"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordexpirationdays",
-    "settingName": "Number of days until password expires",
-    "settingDescription": "Enter the number of days, until the work profile password must be changed, from 1-365. For example, enter 90 to expire the password after 90 days. When the password expires, users are prompted to create a new password. If the value is blank, Intune doesn't change or update this setting. Available for corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "Work",
-      "Profile",
-      "Password",
-      "Expiration",
-      "Days",
-      "Work profile password"
     ],
     "categoryName": "Device Restriction"
   },
@@ -711,6 +697,20 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordexpirationdays",
+    "settingName": "Number of days until password expires",
+    "settingDescription": "Enter the number of days, until the work profile password must be changed, from 1-365. For example, enter 90 to expire the password after 90 days. When the password expires, users are prompted to create a new password. If the value is blank, Intune doesn't change or update this setting. Available for corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Work",
+      "Profile",
+      "Password",
+      "Expiration",
+      "Days",
+      "Work profile password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.passwordrequireunlock",
     "settingName": "Required unlock frequency",
     "settingDescription": "Select how long users have before they're required to unlock the device using a strong authentication method (password, PIN, or pattern). Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
@@ -719,21 +719,6 @@
       "Require",
       "Unlock",
       "Device password"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordminimumsymbolcharacters",
-    "settingName": "Number of symbol characters required",
-    "settingDescription": "Enter the number of symbol characters (&, #, %, and so on) the work profile password must have, between 1 and 16 characters. Available for corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "Work",
-      "Profile",
-      "Password",
-      "Minimum",
-      "Symbol",
-      "Characters",
-      "Work profile password"
     ],
     "categoryName": "Device Restriction"
   },
@@ -803,6 +788,21 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordminimumsymbolcharacters",
+    "settingName": "Number of symbol characters required",
+    "settingDescription": "Enter the number of symbol characters (&, #, %, and so on) the work profile password must have, between 1 and 16 characters. Available for corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Work",
+      "Profile",
+      "Password",
+      "Minimum",
+      "Symbol",
+      "Characters",
+      "Work profile password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.passwordsigninfailurecountbeforefactoryresetaosp",
     "settingName": "Number of sign-in failures before wiping device",
     "settingDescription": "Enter the number of sign-in attempts allowed, from 4 to 11, before the device is wiped. 0 (zero) might disable the device wipe functionality. When the value is blank, Intune doesn't change or update this setting.",
@@ -825,22 +825,6 @@
       "Symbol",
       "Characters",
       "Device password"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordminimumuppercasecharacters",
-    "settingName": "Number of uppercase characters required",
-    "settingDescription": "Enter the number of uppercase characters the work profile password must have, between 1 and 16 characters. Available for corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "Work",
-      "Profile",
-      "Password",
-      "Minimum",
-      "Upper",
-      "Case",
-      "Characters",
-      "Work profile password"
     ],
     "categoryName": "Device Restriction"
   },
@@ -896,6 +880,22 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordminimumuppercasecharacters",
+    "settingName": "Number of uppercase characters required",
+    "settingDescription": "Enter the number of uppercase characters the work profile password must have, between 1 and 16 characters. Available for corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Work",
+      "Profile",
+      "Password",
+      "Minimum",
+      "Upper",
+      "Case",
+      "Characters",
+      "Work profile password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.passwordminimumnumericcharacters",
     "settingName": "Number of numeric characters required",
     "settingDescription": "Enter the number of numeric characters (1, 2, 3, and so on) the password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
@@ -930,52 +930,6 @@
       "Passcode",
       "Password Length",
       "Device password"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.assistcontentpolicy",
-    "settingName": "Block assist content sharing with privileged apps",
-    "settingDescription": "If 'True', blocks assist content (such as screenshots and app details) to be sent to a privileged app, like an assistant app. The setting can be used to block Circle to Search (AI feature). If set to 'False', Intune doesn't change or update this setting. By default, the OS might allow sharing assist content with privileged apps. Available for fully managed, dedicated, and corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "AI",
-      "Circle to Search",
-      "Privileged Apps",
-      "Content",
-      "AI setting",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordpreviouspasswordcounttoblock",
-    "settingName": "Number of passwords required before user can reuse a password",
-    "settingDescription": "Use this setting to restrict users from creating previously used work profile passwords. Enter the number of previously used passwords that can't be used, from 1-24. For example, enter 5 so users can't set a new password to their current password or any of their previous four passwords. If the value is blank, Intune doesn't change or update this setting. Available for corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "Work",
-      "Profile",
-      "Password",
-      "Previous",
-      "Password",
-      "Count",
-      "To",
-      "Block",
-      "Work profile password"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordminimumlettercharacters",
-    "settingName": "Number of characters required",
-    "settingDescription": "Enter the number of characters the work profile password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "Work",
-      "Profile",
-      "Password",
-      "Minimum",
-      "Letter",
-      "Characters",
-      "Work profile password"
     ],
     "categoryName": "Device Restriction"
   },
@@ -1037,6 +991,52 @@
       "External Media",
       "External Media Block",
       "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.assistcontentpolicy",
+    "settingName": "Block assist content sharing with privileged apps",
+    "settingDescription": "If 'True', blocks assist content (such as screenshots and app details) to be sent to a privileged app, like an assistant app. The setting can be used to block Circle to Search (AI feature). If set to 'False', Intune doesn't change or update this setting. By default, the OS might allow sharing assist content with privileged apps. Available for fully managed, dedicated, and corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "AI",
+      "Circle to Search",
+      "Privileged Apps",
+      "Content",
+      "AI setting",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordpreviouspasswordcounttoblock",
+    "settingName": "Number of passwords required before user can reuse a password",
+    "settingDescription": "Use this setting to restrict users from creating previously used work profile passwords. Enter the number of previously used passwords that can't be used, from 1-24. For example, enter 5 so users can't set a new password to their current password or any of their previous four passwords. If the value is blank, Intune doesn't change or update this setting. Available for corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Work",
+      "Profile",
+      "Password",
+      "Previous",
+      "Password",
+      "Count",
+      "To",
+      "Block",
+      "Work profile password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordminimumlettercharacters",
+    "settingName": "Number of characters required",
+    "settingDescription": "Enter the number of characters the work profile password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Work",
+      "Profile",
+      "Password",
+      "Minimum",
+      "Letter",
+      "Characters",
+      "Work profile password"
     ],
     "categoryName": "Device Restriction"
   },

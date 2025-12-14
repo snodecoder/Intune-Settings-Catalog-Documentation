@@ -104,19 +104,6 @@
     "categoryName": "Device Restriction"
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.bluetoothblockcontactsharing",
-    "settingName": "Block contact sharing via Bluetooth (work profile-level)",
-    "settingDescription": "If 'True', prevents sharing work profile contacts with paired Bluetooth devices, such as cars or mobile devices. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to share their contacts via Bluetooth. Available for corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "Bluetooth",
-      "Block",
-      "Contact",
-      "Sharing",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.screencaptureblocked",
     "settingName": "Block screen capture",
     "settingDescription": "If 'True', prevents screenshots or screen captures on the device. It also prevents the content from being shown on display devices that don't have a secure video output. If 'False', Intune doesn't change or update this setting. By default, the OS might let users capture the screen contents as an image. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
@@ -167,6 +154,19 @@
       "Block",
       "Wifi",
       "Wifi Configuration",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.bluetoothblockcontactsharing",
+    "settingName": "Block contact sharing via Bluetooth (work profile-level)",
+    "settingDescription": "If 'True', prevents sharing work profile contacts with paired Bluetooth devices, such as cars or mobile devices. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to share their contacts via Bluetooth. Available for corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Bluetooth",
+      "Block",
+      "Contact",
+      "Sharing",
       "General"
     ],
     "categoryName": "Device Restriction"
@@ -658,20 +658,6 @@
     "categoryName": "Device Restriction"
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.assistcontentpolicy",
-    "settingName": "Block assist content sharing with privileged apps",
-    "settingDescription": "If 'True', blocks assist content (such as screenshots and app details) to be sent to a privileged app, like an assistant app. The setting can be used to block Circle to Search (AI feature). If set to 'False', Intune doesn't change or update this setting. By default, the OS might allow sharing assist content with privileged apps. Available for fully managed, dedicated, and corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "AI",
-      "Circle to Search",
-      "Privileged Apps",
-      "Content",
-      "AI setting",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.locationmode",
     "settingName": "Block location",
     "settingDescription": "If 'True', disables the Location setting on the device and prevents users from turning it on. When this setting is disabled, then any other setting that depends on the device location is affected, including the Locate device remote action that admins use. If 'False', Intune doesn't change or update this setting. By default, the OS might allow using location on the device. Available for fully managed, dedicated and corporate-owned work profile devices.",
@@ -728,6 +714,20 @@
       "Block",
       "External Media",
       "External Media Block",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.assistcontentpolicy",
+    "settingName": "Block assist content sharing with privileged apps",
+    "settingDescription": "If 'True', blocks assist content (such as screenshots and app details) to be sent to a privileged app, like an assistant app. The setting can be used to block Circle to Search (AI feature). If set to 'False', Intune doesn't change or update this setting. By default, the OS might allow sharing assist content with privileged apps. Available for fully managed, dedicated, and corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "AI",
+      "Circle to Search",
+      "Privileged Apps",
+      "Content",
+      "AI setting",
       "General"
     ],
     "categoryName": "Device Restriction"
