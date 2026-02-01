@@ -1347,7 +1347,7 @@
   },
   {
     "settingId": "softwareupdate_rapidsecurityresponse",
-    "settingName": "Rapid Security Response",
+    "settingName": "Background Security Improvement Settings",
     "settingDescription": "These configurations allow for setting user access to interacting with Rapid Security Responses (RSRs). Only applicable on Supervised devices with iOS 18+ and MacOS 15+",
     "keywords": [
       "Software Update Settings"
@@ -3124,7 +3124,7 @@
   },
   {
     "settingId": "settings_item_softwareupdatesettings_recommendationcadence",
-    "settingName": "Recommendation Cadence",
+    "settingName": "Recommendation Cadence (Deprecated)",
     "settingDescription": "This value defines how the system presents software updates to the user. When there's more than one available update for the user, the system behaves as follows:\n\n- `0`: Presents both options to the user.\n- `1`: Presents the lower numbered (oldest) software update version.\n- `2`: Presents only the highest numbered (most recent) release available for the device.\n\nThis value has no effect when there's only one available update; the system shows the single available update to the user regardless of the value of this setting.\n\nAvailable in iOS 14.5 and later.",
     "keywords": [
       "Software Update Settings"
@@ -3314,7 +3314,7 @@
   },
   {
     "settingId": "com.apple.applicationaccess_allowrapidsecurityresponseremoval",
-    "settingName": "Allow Rapid Security Response Removal",
+    "settingName": "Allow Background Security Improvement Removal (Deprecated)",
     "settingDescription": "If false, users are unable to remove the Rapid Security Response option.",
     "keywords": [
       "Restrictions"
@@ -3350,7 +3350,7 @@
   },
   {
     "settingId": "com.apple.applicationaccess_allowrapidsecurityresponseinstallation",
-    "settingName": "Allow Rapid Security Response Installation",
+    "settingName": "Allow Background Security Improvement Installation (Deprecated)",
     "settingDescription": "If false, Rapid Security Response will be disabled. ",
     "keywords": [
       "Restrictions"
@@ -4479,7 +4479,7 @@
   },
   {
     "settingId": "softwareupdate_recommendedcadence",
-    "settingName": "Recommendation Cadence (Deprecated)",
+    "settingName": "Recommendation Cadence",
     "settingDescription": "Specifies how the device shows software updates to the user. When more than one update is available update, the device behaves as follows:\n* \"All\" - Shows all software update versions.\n* \"Oldest\" - Shows only the oldest (lower numbered) software update version.\n* \"Newest\" - Shows only the newest (highest numbered) software update version. Only applicable on Supervised devices with iOS 18+ and MacOS 15+",
     "keywords": [
       "Software Update Settings"
@@ -5261,6 +5261,15 @@
       "Security"
     ],
     "categoryName": "Security"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_ratingappsexemptedbundleids",
+    "settingName": "Rating Apps Exempted Bundle IDs",
+    "settingDescription": "If present, the system exempts apps with bundle IDs in the array from age-based rating restrictions. The system uses intersection combine rules to combine multiple payloads and any exceptions that parental control apps provide, including ScreenTime.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
   },
   {
     "settingId": "extensionsettings_managedextensions",
