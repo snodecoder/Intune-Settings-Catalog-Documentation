@@ -1,5 +1,32 @@
 [
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_idledetectionallowedforurls",
+    "settingName": "Allow idle detection on these sites (User)",
+    "settingDescription": "Allows you to specify a list of URL patterns for sites that are allowed to use the Idle Detection API.\r\n\r\nIf you do not configure this policy, the default behavior applies to all sites. The default behavior is determined by the DefaultIdleDetectionSetting policy, if configured, or by the user’s personal settings otherwise.\r\n\r\nOnly the origin of the URL is evaluated. Any path specified in a URL pattern is ignored. Wildcards, *, are supported. For detailed information about valid URL pattern formats, see https://go.microsoft.com/fwlink/?linkid=209532.\r\n\r\nURL patterns specified in the blocklist take precedence over this allowlist. This allowlist takes precedence over the DefaultIdleDetectionSetting policy.\r\n\r\nExample value:\r\n\r\nhttps://www.example.com\r\n[*.]example.edu",
+    "keywords": [
+      "IdleDetectionAllowedForUrls",
+      "Allow idle detection on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_idledetectionallowedforurls_idledetectionallowedforurlsdesc",
+    "settingName": "Allowed sites for idle detection (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "IdleDetectionAllowedForUrls",
+      "Allow idle detection on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Microsoft Edge\\Content settings",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_state",
     "settingName": "State",
     "settingDescription": "Controls whether an extension is allowed.\n* Allowed - The user is allowed to turn the extension on or off\n* AlwaysOn - The extension will always be on\n* AlwaysOff - The extension will always be off",
@@ -5725,6 +5752,19 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_idledetectionblockedforurls_idledetectionblockedforurlsdesc",
+    "settingName": "Blocked sites for idle detection (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "IdleDetectionBlockedForUrls",
+      "Block idle detection on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Microsoft Edge\\Content settings",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "extensionsettings_extensionsettings",
     "settingName": "com.apple.configuration.safari.extensions.settings",
     "settingDescription": "Synthetic Top Level Setting Group Collection",
@@ -5769,6 +5809,15 @@
       "LDAP"
     ],
     "categoryName": "Accounts"
+  },
+  {
+    "settingId": "com.apple.airplay_allowlist_item_devicename",
+    "settingName": "Device Name",
+    "settingDescription": "The name of the AirPlay device.\n\nThe system limits the list of visible AirPlay destinations to devices that are present in the `AllowList` field of all installed AirPlay payloads.",
+    "keywords": [
+      "AirPlay"
+    ],
+    "categoryName": "AirPlay"
   },
   {
     "settingId": "com.apple.airplay_passwords_item_devicename",
@@ -7953,7 +8002,7 @@
   {
     "settingId": "softwareupdate_rapidsecurityresponse_enable",
     "settingName": "Enable",
-    "settingDescription": "If 'false', Rapid Security Responses are not offered for user installation. Rapid Security Responses can still be installed via 'com.apple.configuration.softwareupdate.enforcement.specific' configurations. If 'true', Rapid Security Responses are offered to the user.",
+    "settingDescription": "If set to 'false', Background Security Improvements aren't offered for user installation. The system can still install Background Security Improvements with Software Update and Enforce Latest configurations. If set to 'true', the system offers Background Security Improvements to the user.",
     "keywords": [
       "Software Update Settings"
     ],
@@ -7971,7 +8020,7 @@
   {
     "settingId": "softwareupdate_rapidsecurityresponse",
     "settingName": "Background Security Improvement Settings",
-    "settingDescription": "These configurations allow for setting user access to interacting with Rapid Security Responses (RSRs). Only applicable on Supervised devices with iOS 18+ and MacOS 15+",
+    "settingDescription": "These configurations set user access to interacting with Background Security Improvements.",
     "keywords": [
       "Software Update Settings"
     ],
@@ -11710,11 +11759,57 @@
     "categoryName": "Privacy"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.localnetworkaccessrestrictionstemporaryoptout",
-    "settingName": "Specifies whether to opt out of Local Network Access restrictions",
-    "settingDescription": "This policy allows for opting out of restrictions on requests to local network endpoints.\n\nIf you enable this policy, Local Network Access requests will only display warnings in Edge DevTools when Local Network Access checks fail.\n\nIf you disable or don't configure this policy, Local Network Access requests will follow the default handling behavior.\n\nFor more information about Local Network Access restrictions, see Local Network Access .\n\nTo allow specific URL patterns that should automatically be granted Local Network Access permission, use the LocalNetworkAccessAllowedForUrls policy.\n\nNote: This opt-out policy is temporary and will be removed after Microsoft Edge version 152.",
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_staticstoragequotaenabled",
+    "settingName": "Control whether storage quota APIs will return static values (User)",
+    "settingDescription": "Controls how the Storage Quota APIs report the available quota to websites.\r\n\r\nWhen enabled, the Storage Quota APIs return a static quota value equal to the current usage plus the smaller of 10 GiB or the device's total storage rounded up to the nearest 1 GiB.\r\n\r\nWhen disabled, the Storage Quota APIs return a dynamic quota value that reflects the actual available device storage.\r\n\r\nWhen unset, the browser uses the default platform behavior.\r\n\r\nThis policy does not affect sites with unlimited storage permissions or enforced quota settings.",
     "keywords": [
-      "Network settings"
+      "StaticStorageQuotaEnabled",
+      "Control whether storage quota APIs will return static values",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_defaultidledetectionsetting_defaultidledetectionsetting",
+    "settingName": "Idle detection (User)",
+    "settingDescription": "",
+    "keywords": [
+      "DefaultIdleDetectionSetting",
+      "Default idle detection setting",
+      "\\Microsoft Edge\\Content settings",
+      "Microsoft Edge\\Content settings",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~extensions_edgesafehostingextensionenabled",
+    "settingName": "Control Microsoft Edge Safe Hosting Extension (User)",
+    "settingDescription": "This policy controls whether the Microsoft Edge Safe Hosting component extension is installed automatically when users visit supported Microsoft services, such as Microsoft 365 Copilot app.\r\n\r\nThe Microsoft Edge Safe Hosting extension provides additional security capabilities for these services. When a user accesses a supported service, the extension installs automatically to enable those protections.\r\n\r\nIf you enable or don't configure this policy, the extension installs automatically and remains installed for 90 days after the user's last visit, then is removed if no further activity occurs.\r\n\r\nIf you disable this policy, the extension won't install automatically. If it’s already installed, it will be removed.\r\n\r\nNote: This policy controls only automatic installation. It doesn’t prevent users from manually installing other extensions from the Microsoft Edge Add-ons website.",
+    "keywords": [
+      "EdgeSafeHostingExtensionEnabled",
+      "Control Microsoft Edge Safe Hosting Extension",
+      "\\Microsoft Edge\\Extensions",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Extensions"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_staticstoragequotaenabled",
+    "settingName": "Control whether storage quota APIs will return static values",
+    "settingDescription": "Controls how the Storage Quota APIs report the available quota to websites.\r\n\r\nWhen enabled, the Storage Quota APIs return a static quota value equal to the current usage plus the smaller of 10 GiB or the device's total storage rounded up to the nearest 1 GiB.\r\n\r\nWhen disabled, the Storage Quota APIs return a dynamic quota value that reflects the actual available device storage.\r\n\r\nWhen unset, the browser uses the default platform behavior.\r\n\r\nThis policy does not affect sites with unlimited storage permissions or enforced quota settings.",
+    "keywords": [
+      "StaticStorageQuotaEnabled",
+      "Control whether storage quota APIs will return static values",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -13474,7 +13569,7 @@
   },
   {
     "settingId": "com.apple.applicationaccess_forcedelayedsoftwareupdates",
-    "settingName": "Force Delayed Software Updates",
+    "settingName": "Force Delayed Software Updates (Deprecated)",
     "settingDescription": "If true, delays user visibility of software updates. In macOS, seed build updates are allowed, without delay. The delay is 30 days unless Enforced Software Update Delay is set to another value. Available in iOS 11.3 and later, and macOS 10.13 and later.",
     "keywords": [
       "Restrictions"
@@ -14276,6 +14371,15 @@
     "settingDescription": "Configure the list of enhance security trusted domains. This means that\nenhance security mode will not be enforced when loading the sites in trusted domains.",
     "keywords": [
       "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.localnetworkaccessrestrictionstemporaryoptout",
+    "settingName": "Specifies whether to opt out of Local Network Access restrictions",
+    "settingDescription": "This policy allows for opting out of restrictions on requests to local network endpoints.\n\nIf you enable this policy, Local Network Access requests will only display warnings in Edge DevTools when Local Network Access checks fail.\n\nIf you disable or don't configure this policy, Local Network Access requests will follow the default handling behavior.\n\nFor more information about Local Network Access restrictions, see Local Network Access .\n\nTo allow specific URL patterns that should automatically be granted Local Network Access permission, use the LocalNetworkAccessAllowedForUrls policy.\n\nNote: This opt-out policy is temporary and will be removed after Microsoft Edge version 152.",
+    "keywords": [
+      "Network settings"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -17813,6 +17917,33 @@
       "Privacy"
     ],
     "categoryName": "Privacy"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_idledetectionblockedforurls_idledetectionblockedforurlsdesc",
+    "settingName": "Blocked sites for idle detection (User)",
+    "settingDescription": "",
+    "keywords": [
+      "IdleDetectionBlockedForUrls",
+      "Block idle detection on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Microsoft Edge\\Content settings",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_defaultidledetectionsetting",
+    "settingName": "Default idle detection setting",
+    "settingDescription": "Setting this policy to 1 - AllowIdleDetection allows websites to use the Idle Detection API without requesting user permission.\r\n\r\nSetting this policy to 2 - BlockIdleDetection prevents websites from using the Idle Detection API.\r\n\r\nSetting this policy to 3 - AskIdleDetection requires websites to request user permission each time before using the Idle Detection API.\r\n\r\nIf you do not configure this policy, users can decide whether to allow the Idle Detection API and can change this setting themselves.\r\n\r\nPolicy options mapping:\r\n\r\n* AllowIdleDetection (1) = Allow sites to detect idle state without asking the user\r\n\r\n* BlockIdleDetection (2) = Do not allow any site to detect the user's idle state\r\n\r\n* AskIdleDetection (3) = Ask every time a site wants to detect the user's idle state\r\n\r\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "DefaultIdleDetectionSetting",
+      "Default idle detection setting",
+      "\\Microsoft Edge\\Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "extensionsettings_managedextensions_generickey_denieddomains",
@@ -23920,6 +24051,102 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_defaultidledetectionsetting",
+    "settingName": "Default idle detection setting (User)",
+    "settingDescription": "Setting this policy to 1 - AllowIdleDetection allows websites to use the Idle Detection API without requesting user permission.\r\n\r\nSetting this policy to 2 - BlockIdleDetection prevents websites from using the Idle Detection API.\r\n\r\nSetting this policy to 3 - AskIdleDetection requires websites to request user permission each time before using the Idle Detection API.\r\n\r\nIf you do not configure this policy, users can decide whether to allow the Idle Detection API and can change this setting themselves.\r\n\r\nPolicy options mapping:\r\n\r\n* AllowIdleDetection (1) = Allow sites to detect idle state without asking the user\r\n\r\n* BlockIdleDetection (2) = Do not allow any site to detect the user's idle state\r\n\r\n* AskIdleDetection (3) = Ask every time a site wants to detect the user's idle state\r\n\r\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "DefaultIdleDetectionSetting",
+      "Default idle detection setting",
+      "\\Microsoft Edge\\Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_idledetectionblockedforurls",
+    "settingName": "Block idle detection on these sites (User)",
+    "settingDescription": "Allows you to specify a list of URL patterns for sites that are not allowed to use the Idle Detection API.\r\n\r\nOnly the origin of the URL is evaluated. Any path specified in a URL pattern is ignored. Wildcards, *, are supported.\r\n\r\nFor detailed information about valid URL pattern formats, see https://go.microsoft.com/fwlink/?linkid=2095322.\r\n\r\nIf you do not configure this policy, the default behavior applies to all sites. The default behavior is determined by the DefaultIdleDetectionSetting policy, if configured, or by the user’s personal settings otherwise.\r\n\r\nExample value:\r\n\r\nhttps://www.example.com\r\n[*.]example.edu",
+    "keywords": [
+      "IdleDetectionBlockedForUrls",
+      "Block idle detection on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_defaultidledetectionsetting_defaultidledetectionsetting",
+    "settingName": "Idle detection (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "DefaultIdleDetectionSetting",
+      "Default idle detection setting",
+      "\\Microsoft Edge\\Content settings",
+      "Microsoft Edge\\Content settings",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_idledetectionallowedforurls_idledetectionallowedforurlsdesc",
+    "settingName": "Allowed sites for idle detection (User)",
+    "settingDescription": "",
+    "keywords": [
+      "IdleDetectionAllowedForUrls",
+      "Allow idle detection on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Microsoft Edge\\Content settings",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_webappinstallbyuserenabled",
+    "settingName": "Enable User Web App Install From Browser",
+    "settingDescription": "This policy controls whether users can install web apps through Microsoft Edge.\r\nIf you enable or don’t configure this policy, users can install web apps through the browser.\r\nIf you disable this policy, users can’t install web apps through the browser, and the \"apps\" data type is excluded from synchronization.\r\nThis policy doesn't support dynamic refresh. Changes to this policy, whether enabled, disabled, or not configured, take effect only after the browser is restarted.\r\nThis policy doesn't affect the 'WebAppInstallForceList' policy. Web apps specified by that policy are installed regardless of this policy setting.",
+    "keywords": [
+      "WebAppInstallByUserEnabled",
+      "Enable User Web App Install From Browser",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~identity_editprofileenabled",
+    "settingName": "Enable editing profile in settings (User)",
+    "settingDescription": "This policy controls whether users can modify profile properties (such as profile avatar) from the profile settings page.\r\n\r\nIf you enable or don't configure this policy, users can edit profile properties. The edit button is available on the profile settings page.\r\n\r\nIf you disable this policy, users can't edit profile properties. The edit button is disabled on the profile settings page.",
+    "keywords": [
+      "EditProfileEnabled",
+      "Enable editing profile in settings",
+      "\\Microsoft Edge\\Identity and sign-in",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Identity and sign-in"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~extensions_edgesafehostingextensionenabled",
+    "settingName": "Control Microsoft Edge Safe Hosting Extension",
+    "settingDescription": "This policy controls whether the Microsoft Edge Safe Hosting component extension is installed automatically when users visit supported Microsoft services, such as Microsoft 365 Copilot app.\r\n\r\nThe Microsoft Edge Safe Hosting extension provides additional security capabilities for these services. When a user accesses a supported service, the extension installs automatically to enable those protections.\r\n\r\nIf you enable or don't configure this policy, the extension installs automatically and remains installed for 90 days after the user's last visit, then is removed if no further activity occurs.\r\n\r\nIf you disable this policy, the extension won't install automatically. If it’s already installed, it will be removed.\r\n\r\nNote: This policy controls only automatic installation. It doesn’t prevent users from manually installing other extensions from the Microsoft Edge Add-ons website.",
+    "keywords": [
+      "EdgeSafeHostingExtensionEnabled",
+      "Control Microsoft Edge Safe Hosting Extension",
+      "\\Microsoft Edge\\Extensions",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Extensions"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_alloweddomains",
     "settingName": "Allowed Domains",
     "settingDescription": "Controls the domains and sub-domains the extension is granted access to. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
@@ -29805,6 +30032,34 @@
       "Security"
     ],
     "categoryName": "Security"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_idledetectionallowedforurls",
+    "settingName": "Allow idle detection on these sites",
+    "settingDescription": "Allows you to specify a list of URL patterns for sites that are allowed to use the Idle Detection API.\r\n\r\nIf you do not configure this policy, the default behavior applies to all sites. The default behavior is determined by the DefaultIdleDetectionSetting policy, if configured, or by the user’s personal settings otherwise.\r\n\r\nOnly the origin of the URL is evaluated. Any path specified in a URL pattern is ignored. Wildcards, *, are supported. For detailed information about valid URL pattern formats, see https://go.microsoft.com/fwlink/?linkid=209532.\r\n\r\nURL patterns specified in the blocklist take precedence over this allowlist. This allowlist takes precedence over the DefaultIdleDetectionSetting policy.\r\n\r\nExample value:\r\n\r\nhttps://www.example.com\r\n[*.]example.edu",
+    "keywords": [
+      "IdleDetectionAllowedForUrls",
+      "Allow idle detection on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_idledetectionblockedforurls",
+    "settingName": "Block idle detection on these sites",
+    "settingDescription": "Allows you to specify a list of URL patterns for sites that are not allowed to use the Idle Detection API.\r\n\r\nOnly the origin of the URL is evaluated. Any path specified in a URL pattern is ignored. Wildcards, *, are supported.\r\n\r\nFor detailed information about valid URL pattern formats, see https://go.microsoft.com/fwlink/?linkid=2095322.\r\n\r\nIf you do not configure this policy, the default behavior applies to all sites. The default behavior is determined by the DefaultIdleDetectionSetting policy, if configured, or by the user’s personal settings otherwise.\r\n\r\nExample value:\r\n\r\nhttps://www.example.com\r\n[*.]example.edu",
+    "keywords": [
+      "IdleDetectionBlockedForUrls",
+      "Block idle detection on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "extensionsettings_managedextensions_generickey_keytobereplaced",
@@ -36102,20 +36357,44 @@
     "categoryName": "Security"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.precisegeolocationallowedforurls",
-    "settingName": "Allow precise geolocation on these sites",
-    "settingDescription": "This policy lets you specify a list of URL patterns for sites that are allowed to access the user's high-accuracy geolocation without prompting for permission.\n\nIf you leave this policy unset, DefaultGeolocationSetting applies to all sites (if configured). Otherwise, the user's personal setting is used.\n\nFor information about valid url patterns, see https://learn.microsoft.com/deployedge/edge-learnmmore-url-list-filter%20format. Wildcards (*) are supported.",
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~passwordmanager_passwordmanagerpasskeysenabled",
+    "settingName": "Enable saving passkeys to the password manager",
+    "settingDescription": "This policy controls whether users can save passkeys in the built-in password manager. It does not limit access to, or change the contents of, passkeys already saved in the password manager.\r\n\r\nIf the PasswordManagerEnabled policy is Disabled, saving to the built-in password manager is disabled in general, including passkeys. In this case, this policy has no effect.\r\n\r\nIf this policy is enabled or not configured, users can save passkeys in the built-in password manager when signed in to Microsoft Edge.\r\n\r\nIf this policy is disabled, users cannot save new passkeys to the built-in password manager. Previously saved passkeys continue to work.",
     "keywords": [
-      "Content settings"
+      "PasswordManagerPasskeysEnabled",
+      "Enable saving passkeys to the password manager",
+      "\\Microsoft Edge\\Password manager and protection",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Password manager and protection"
     ],
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.whatsnewpageforentraprofilesenabled",
-    "settingName": "Control whether an informational webpage for Edge for Business is shown in the new tab after major browser updates",
-    "settingDescription": "Starting in Microsoft Edge version 145, users with Microsoft Entra ID profiles will see an informational page about new Edge for Business features after major browser updates. This page highlights recent enhancements designed to promote secure and productive browsing.\n\nThis policy controls whether users with Microsoft Entra ID profiles see this informational page. This policy applies only to Microsoft Entra ID profiles and does not apply to Microsoft account (MSA) profiles.\n\nThis policy is available starting in Microsoft Edge version 144 to allow configuration ahead of the changes introduced in version 145.\n\nIf you enable this policy or do not configure it, Microsoft Edge shows the informational page by default.\nIf you disable this policy, Microsoft Edge does not show the informational page to users.",
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_webappinstallbyuserenabled",
+    "settingName": "Enable User Web App Install From Browser (User)",
+    "settingDescription": "This policy controls whether users can install web apps through Microsoft Edge.\r\nIf you enable or don’t configure this policy, users can install web apps through the browser.\r\nIf you disable this policy, users can’t install web apps through the browser, and the \"apps\" data type is excluded from synchronization.\r\nThis policy doesn't support dynamic refresh. Changes to this policy, whether enabled, disabled, or not configured, take effect only after the browser is restarted.\r\nThis policy doesn't affect the 'WebAppInstallForceList' policy. Web apps specified by that policy are installed regardless of this policy setting.",
     "keywords": [
-      "Uncategorized"
+      "WebAppInstallByUserEnabled",
+      "Enable User Web App Install From Browser",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~identity_editprofileenabled",
+    "settingName": "Enable editing profile in settings",
+    "settingDescription": "This policy controls whether users can modify profile properties (such as profile avatar) from the profile settings page.\r\n\r\nIf you enable or don't configure this policy, users can edit profile properties. The edit button is available on the profile settings page.\r\n\r\nIf you disable this policy, users can't edit profile properties. The edit button is disabled on the profile settings page.",
+    "keywords": [
+      "EditProfileEnabled",
+      "Enable editing profile in settings",
+      "\\Microsoft Edge\\Identity and sign-in",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Identity and sign-in"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -38277,7 +38556,7 @@
   {
     "settingId": "softwareupdate_rapidsecurityresponse_enablerollback",
     "settingName": "Enable Rollback",
-    "settingDescription": "If 'false', Rapid Security Response rollbacks are not offered to the user. If 'true', Rapid Security Response rollbacks are offered to the user.",
+    "settingDescription": " If set to 'false', the system doesn't offer Background Security Improvement rollbacks to the user. If set to 'true', the system offers Background Security Improvement rollbacks to the user.",
     "keywords": [
       "Software Update Settings"
     ],
@@ -38388,6 +38667,15 @@
     "settingDescription": "Specifies whether WebAssembly modules can be sent to another window or worker cross-origin. Cross-origin WebAssembly module sharing was deprecated as part of the efforts to deprecate document.domain, see https://github.com/mikewest/deprecating-document-domain. This policy allowed re-enabling of cross-origin WebAssembly module sharing. This policy is obsolete because it was intended to offer a longer transition period in the deprecation process.\n\nIf you enable this policy, sites can send WebAssembly modules cross-origin\nwithout restrictions.\n\nIf you disable or don't configure this policy, sites can only send\nWebAssembly modules to windows and workers in the same origin.",
     "keywords": [
       "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.precisegeolocationallowedforurls",
+    "settingName": "Allow precise geolocation on these sites",
+    "settingDescription": "This policy lets you specify a list of URL patterns for sites that are allowed to access the user's high-accuracy geolocation without prompting for permission.\n\nIf you leave this policy unset, DefaultGeolocationSetting applies to all sites (if configured). Otherwise, the user's personal setting is used.\n\nFor information about valid url patterns, see https://learn.microsoft.com/deployedge/edge-learnmmore-url-list-filter%20format. Wildcards (*) are supported.",
+    "keywords": [
+      "Content settings"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -38658,6 +38946,15 @@
     "settingDescription": "The performance detector detects tab performance issues and recommends actions to fix the performance issues.\n\nIf you enable or don't configure this policy, performance detector is turned on.\n\nIf you disable this policy, performance detector is turned off.\n\nThe user can configure its behavior in edge://settings/system.\n\nLearn more about performance detector: https://aka.ms/EdgePerformanceDetector",
     "keywords": [
       "Performance"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.whatsnewpageforentraprofilesenabled",
+    "settingName": "Control whether an informational webpage for Edge for Business is shown in the new tab after major browser updates",
+    "settingDescription": "Starting in Microsoft Edge version 145, users with Microsoft Entra ID profiles will see an informational page about new Edge for Business features after major browser updates. This page highlights recent enhancements designed to promote secure and productive browsing.\n\nThis policy controls whether users with Microsoft Entra ID profiles see this informational page. This policy applies only to Microsoft Entra ID profiles and does not apply to Microsoft account (MSA) profiles.\n\nThis policy is available starting in Microsoft Edge version 144 to allow configuration ahead of the changes introduced in version 145.\n\nIf you enable this policy or do not configure it, Microsoft Edge shows the informational page by default.\nIf you disable this policy, Microsoft Edge does not show the informational page to users.",
+    "keywords": [
+      "Uncategorized"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -42167,20 +42464,16 @@
     "categoryName": "Security"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.geolocationblockedforurls",
-    "settingName": "Block geolocation on these sites",
-    "settingDescription": "Use this policy to define a list of URL patterns for sites that are blocked from accessing the user's geolocation. These sites also can't prompt the user for location permissions.\n\nIf you enable this policy, the list you provide determines which sites are blocked from requesting or accessing geolocation.\n\nIf you disable or don't configure this policy, DefaultGeolocationSetting applies to all sites, if configured. If it's not configured, the user’s personal browser setting is used.\n\nFor detailed information on valid url patterns, see the documentation on pattern formats: https://learn.microsoft.com/deployedge/edge-learnmmore-url-list-filter%20format.",
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~passwordmanager_passwordmanagerpasskeysenabled",
+    "settingName": "Enable saving passkeys to the password manager (User)",
+    "settingDescription": "This policy controls whether users can save passkeys in the built-in password manager. It does not limit access to, or change the contents of, passkeys already saved in the password manager.\r\n\r\nIf the PasswordManagerEnabled policy is Disabled, saving to the built-in password manager is disabled in general, including passkeys. In this case, this policy has no effect.\r\n\r\nIf this policy is enabled or not configured, users can save passkeys in the built-in password manager when signed in to Microsoft Edge.\r\n\r\nIf this policy is disabled, users cannot save new passkeys to the built-in password manager. Previously saved passkeys continue to work.",
     "keywords": [
-      "Content settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.sharebrowsinghistorywithcopilotsearchallowed",
-    "settingName": "Allow sharing tenant-approved browsing history with Microsoft 365 Copilot Search",
-    "settingDescription": "This policy controls whether browsing history in Microsoft Edge is shared with Microsoft 365 Copilot Search to provide more relevant search results. Only tenant-approved, work-related sites are shared.\n\nThis feature is available only to users who are signed in to Microsoft Edge with an Entra ID account and have an eligible Microsoft 365 Copilot license.\n\nIf you enable or don't configure this policy, browsing history will be shared with Microsoft 365 Copilot Search by default, and users can turn off sharing using the toggle in Microsoft Edge settings.\n\nIf you disable this policy, browsing history won't be shared with Microsoft 365 Copilot Search.\n\nLearn more about how Copilot uses data and consent at <a href=\"https://go.microsoft.com/fwlink/?linkid=2333202\">https://go.microsoft.com/fwlink/?linkid=2333202</a>",
-    "keywords": [
-      "Uncategorized"
+      "PasswordManagerPasskeysEnabled",
+      "Enable saving passkeys to the password manager",
+      "\\Microsoft Edge\\Password manager and protection",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Password manager and protection"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -42232,7 +42525,7 @@
   },
   {
     "settingId": "com.apple.airplay_allowlist_item_deviceid",
-    "settingName": "Device ID",
+    "settingName": "Device ID (Deprecated)",
     "settingDescription": "The device ID of the AirPlay destination in the format xx:xx:xx:xx:xx:xx. This field isn’t case-sensitive.",
     "keywords": [
       "Air Play",
@@ -42879,6 +43172,24 @@
     "categoryName": "Microsoft Defender"
   },
   {
+    "settingId": "com.apple.managedclient.preferences_offlinedefinitionupdateurl",
+    "settingName": "URL for a security intelligence updates mirror server",
+    "settingDescription": "Sets the URL for a local offline security intelligence updates mirror server. When the feature is enabled Defender will use it to update the signatures.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_offlinedefinitionupdate",
+    "settingName": "Enable offline security intelligence updates",
+    "settingDescription": "Enables or disables offline security intelligence updates feature. When this feature is enabled Defender will use a local mirror server to update the signatures.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
     "settingId": "settings_item_bluetooth",
     "settingName": "Bluetooth",
     "settingDescription": "A dictionary that contains Bluetooth settings. This setting requires the Network Information access right, doesn't support user enrollment, and is available only on supervised devices. Available in iOS 11.3 and later, and macOS 10.13.4 and later.",
@@ -43066,6 +43377,15 @@
       "Microsoft Office"
     ],
     "categoryName": "Microsoft Office"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_offlinedefinitionupdateverifysig",
+    "settingName": "offline security intelligence updates signature verification",
+    "settingDescription": "Offline security intelligence updates signature verification with Microsoft Defender for Endpoint. It is recommended to keep this setting enabled when offline updates are enabled.",
+    "keywords": [
+      "Features"
+    ],
+    "categoryName": "Microsoft Defender"
   },
   {
     "settingId": "com.apple.mcx_destroyfvkeyonstandby",
@@ -44685,6 +45005,15 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.geolocationblockedforurls",
+    "settingName": "Block geolocation on these sites",
+    "settingDescription": "Use this policy to define a list of URL patterns for sites that are blocked from accessing the user's geolocation. These sites also can't prompt the user for location permissions.\n\nIf you enable this policy, the list you provide determines which sites are blocked from requesting or accessing geolocation.\n\nIf you disable or don't configure this policy, DefaultGeolocationSetting applies to all sites, if configured. If it's not configured, the user’s personal browser setting is used.\n\nFor detailed information on valid url patterns, see the documentation on pattern formats: https://learn.microsoft.com/deployedge/edge-learnmmore-url-list-filter%20format.",
+    "keywords": [
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.signedhttpexchangeenabled",
     "settingName": "Enable Signed HTTP Exchange (SXG) support",
     "settingDescription": "Enable support for Signed HTTP Exchange (SXG).\n\nIf this policy isn't set or enabled, Microsoft Edge will accept web contents served as Signed HTTP Exchanges.\n\nIf this policy is set to disabled, Signed HTTP Exchanges can't be loaded.",
@@ -44697,6 +45026,15 @@
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.exemptdomainfiletypepairsfromfiletypedownloadwarnings",
     "settingName": "Disable download file type extension-based warnings for specified file types on domains (Obsolete)",
     "settingDescription": "This policy has been obsoleted in favor of \"ExemptFileTypeDownloadWarnings\" because of a type mismatch that caused errors in Mac.\n\nYou can enable this policy to create a dictionary of file type extensions with a corresponding list of domains that will be exempted from file type extension-based download warnings. This lets enterprise administrators block file type extension-based download warnings for files that are associated with a listed domain. For example, if  the \"jnlp\" extension is associated with \"website1.com\", users would not see a warning when downloading \"jnlp\" files from \"website1.com\", but see a download warning when downloading \"jnlp\" files from \"website2.com\".\n\nFiles with file type extensions specified for domains identified by this policy will still be subject to non-file type extension-based security warnings such as mixed-content download warnings and Microsoft Defender SmartScreen warnings.\n\nIf you disable this policy or don't configure it, file types that trigger extension-based download warnings will show warnings to the user.\n\nIf you enable this policy:\n\n* The URL pattern should be formatted according to <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n* The file type extension entered must be in lower-cased ASCII. The leading separator should not be included when listing the file type extension, so list \"jnlp\" should be used instead of \".jnlp\".\n\nExample:\n\nThe following example value would prevent file type extension-based download warnings on swf, exe, and jnlp extensions for *.contoso.com domains. It will show the user a file type extension-based download warning on any other domain for exe and jnlp files, but not for swf files.\n\n[\n  { \"file_extension\": \"jnlp\", \"domains\": [\"contoso.com\"] },\n  { \"file_extension\": \"exe\", \"domains\": [\"contoso.com\"] },\n  { \"file_extension\": \"swf\", \"domains\": [\"*\"] }\n]\n\nNote that while the preceding example shows the suppression of file type extension-based download warnings for \"swf\" files for all domains, applying suppression of such warnings for all domains for any dangerous file type extension is not recommended due to security concerns. It is shown in the example merely to demonstrate the ability to do so.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.sharebrowsinghistorywithcopilotsearchallowed",
+    "settingName": "Allow sharing tenant-approved browsing history with Microsoft 365 Copilot Search",
+    "settingDescription": "This policy controls whether browsing history in Microsoft Edge is shared with Microsoft 365 Copilot Search to provide more relevant search results. Only tenant-approved, work-related sites are shared.\n\nThis feature is available only to users who are signed in to Microsoft Edge with an Entra ID account and have an eligible Microsoft 365 Copilot license.\n\nIf you enable or don't configure this policy, browsing history will be shared with Microsoft 365 Copilot Search by default, and users can turn off sharing using the toggle in Microsoft Edge settings.\n\nIf you disable this policy, browsing history won't be shared with Microsoft 365 Copilot Search.\n\nLearn more about how Copilot uses data and consent at <a href=\"https://go.microsoft.com/fwlink/?linkid=2333202\">https://go.microsoft.com/fwlink/?linkid=2333202</a>",
     "keywords": [
       "Uncategorized"
     ],

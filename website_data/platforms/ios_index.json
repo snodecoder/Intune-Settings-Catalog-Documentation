@@ -2757,6 +2757,15 @@
     "categoryName": "Accounts"
   },
   {
+    "settingId": "com.apple.airplay_allowlist_item_devicename",
+    "settingName": "Device Name",
+    "settingDescription": "The name of the AirPlay device.\n\nThe system limits the list of visible AirPlay destinations to devices that are present in the `AllowList` field of all installed AirPlay payloads.",
+    "keywords": [
+      "AirPlay"
+    ],
+    "categoryName": "AirPlay"
+  },
+  {
     "settingId": "com.apple.airplay_passwords_item_devicename",
     "settingName": "Device Name",
     "settingDescription": "The name of the AirPlay destination; used in iOS.",
@@ -3366,7 +3375,7 @@
   {
     "settingId": "softwareupdate_rapidsecurityresponse_enable",
     "settingName": "Enable",
-    "settingDescription": "If 'false', Rapid Security Responses are not offered for user installation. Rapid Security Responses can still be installed via 'com.apple.configuration.softwareupdate.enforcement.specific' configurations. If 'true', Rapid Security Responses are offered to the user.",
+    "settingDescription": "If set to 'false', Background Security Improvements aren't offered for user installation. The system can still install Background Security Improvements with Software Update and Enforce Latest configurations. If set to 'true', the system offers Background Security Improvements to the user.",
     "keywords": [
       "Software Update Settings"
     ],
@@ -3384,7 +3393,7 @@
   {
     "settingId": "softwareupdate_rapidsecurityresponse",
     "settingName": "Background Security Improvement Settings",
-    "settingDescription": "These configurations allow for setting user access to interacting with Rapid Security Responses (RSRs). Only applicable on Supervised devices with iOS 18+ and MacOS 15+",
+    "settingDescription": "These configurations set user access to interacting with Background Security Improvements.",
     "keywords": [
       "Software Update Settings"
     ],
@@ -5479,6 +5488,34 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_staticstoragequotaenabled",
+    "settingName": "Control whether storage quota APIs will return static values (User)",
+    "settingDescription": "Controls how the Storage Quota APIs report the available quota to websites.\r\n\r\nWhen enabled, the Storage Quota APIs return a static quota value equal to the current usage plus the smaller of 10 GiB or the device's total storage rounded up to the nearest 1 GiB.\r\n\r\nWhen disabled, the Storage Quota APIs return a dynamic quota value that reflects the actual available device storage.\r\n\r\nWhen unset, the browser uses the default platform behavior.\r\n\r\nThis policy does not affect sites with unlimited storage permissions or enforced quota settings.",
+    "keywords": [
+      "StaticStorageQuotaEnabled",
+      "Control whether storage quota APIs will return static values",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_staticstoragequotaenabled",
+    "settingName": "Control whether storage quota APIs will return static values",
+    "settingDescription": "Controls how the Storage Quota APIs report the available quota to websites.\r\n\r\nWhen enabled, the Storage Quota APIs return a static quota value equal to the current usage plus the smaller of 10 GiB or the device's total storage rounded up to the nearest 1 GiB.\r\n\r\nWhen disabled, the Storage Quota APIs return a dynamic quota value that reflects the actual available device storage.\r\n\r\nWhen unset, the browser uses the default platform behavior.\r\n\r\nThis policy does not affect sites with unlimited storage permissions or enforced quota settings.",
+    "keywords": [
+      "StaticStorageQuotaEnabled",
+      "Control whether storage quota APIs will return static values",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_privatebrowsing",
     "settingName": "Private Browsing",
     "settingDescription": "Controls whether an extension is allowed in Private Browsing.\n* Allowed - The user is allowed to turn the extension on or off in Private Browsing\n* AlwaysOn - The extension will always be on in Private Browsing if the extension is on outside of Private Browsing\n* AlwaysOff - The extension will never be on in Private Browsing",
@@ -5835,7 +5872,7 @@
   },
   {
     "settingId": "com.apple.applicationaccess_forcedelayedsoftwareupdates",
-    "settingName": "Force Delayed Software Updates",
+    "settingName": "Force Delayed Software Updates (Deprecated)",
     "settingDescription": "If true, delays user visibility of software updates. In macOS, seed build updates are allowed, without delay. The delay is 30 days unless Enforced Software Update Delay is set to another value. Available in iOS 11.3 and later, and macOS 10.13 and later.",
     "keywords": [
       "Restrictions"
@@ -11080,6 +11117,20 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_webappinstallbyuserenabled",
+    "settingName": "Enable User Web App Install From Browser",
+    "settingDescription": "This policy controls whether users can install web apps through Microsoft Edge.\r\nIf you enable or don’t configure this policy, users can install web apps through the browser.\r\nIf you disable this policy, users can’t install web apps through the browser, and the \"apps\" data type is excluded from synchronization.\r\nThis policy doesn't support dynamic refresh. Changes to this policy, whether enabled, disabled, or not configured, take effect only after the browser is restarted.\r\nThis policy doesn't affect the 'WebAppInstallForceList' policy. Web apps specified by that policy are installed regardless of this policy setting.",
+    "keywords": [
+      "WebAppInstallByUserEnabled",
+      "Enable User Web App Install From Browser",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_alloweddomains",
     "settingName": "Allowed Domains",
     "settingDescription": "Controls the domains and sub-domains the extension is granted access to. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
@@ -13856,7 +13907,7 @@
   },
   {
     "settingId": "settings_item_softwareupdatesettings",
-    "settingName": "Software Update Settings",
+    "settingName": "Software Update Settings (Deprecated)",
     "settingDescription": "A dictionary that contains software update settings. This setting doesn't support user enrollment. Available in iOS 14.5 and later.",
     "keywords": [
       "Software Update Settings"
@@ -16441,11 +16492,16 @@
     "categoryName": "Security"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.whatsnewpageforentraprofilesenabled",
-    "settingName": "Control whether an informational webpage for Edge for Business is shown in the new tab after major browser updates",
-    "settingDescription": "Starting in Microsoft Edge version 145, users with Microsoft Entra ID profiles will see an informational page about new Edge for Business features after major browser updates. This page highlights recent enhancements designed to promote secure and productive browsing.\n\nThis policy controls whether users with Microsoft Entra ID profiles see this informational page. This policy applies only to Microsoft Entra ID profiles and does not apply to Microsoft account (MSA) profiles.\n\nThis policy is available starting in Microsoft Edge version 144 to allow configuration ahead of the changes introduced in version 145.\n\nIf you enable this policy or do not configure it, Microsoft Edge shows the informational page by default.\nIf you disable this policy, Microsoft Edge does not show the informational page to users.",
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_webappinstallbyuserenabled",
+    "settingName": "Enable User Web App Install From Browser (User)",
+    "settingDescription": "This policy controls whether users can install web apps through Microsoft Edge.\r\nIf you enable or don’t configure this policy, users can install web apps through the browser.\r\nIf you disable this policy, users can’t install web apps through the browser, and the \"apps\" data type is excluded from synchronization.\r\nThis policy doesn't support dynamic refresh. Changes to this policy, whether enabled, disabled, or not configured, take effect only after the browser is restarted.\r\nThis policy doesn't affect the 'WebAppInstallForceList' policy. Web apps specified by that policy are installed regardless of this policy setting.",
     "keywords": [
-      "Uncategorized"
+      "WebAppInstallByUserEnabled",
+      "Enable User Web App Install From Browser",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -17088,7 +17144,7 @@
   {
     "settingId": "softwareupdate_rapidsecurityresponse_enablerollback",
     "settingName": "Enable Rollback",
-    "settingDescription": "If 'false', Rapid Security Response rollbacks are not offered to the user. If 'true', Rapid Security Response rollbacks are offered to the user.",
+    "settingDescription": " If set to 'false', the system doesn't offer Background Security Improvement rollbacks to the user. If set to 'true', the system offers Background Security Improvement rollbacks to the user.",
     "keywords": [
       "Software Update Settings"
     ],
@@ -17342,6 +17398,15 @@
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.edgewalletcheckoutenabled_recommended",
     "settingName": "Enable Wallet Checkout feature (users can override)",
     "settingDescription": "Enables Wallet Checkout feature in Microsoft Edge.\n\nIf you enable or don't configure this policy, users can choose whether to use wallet checkout while shopping on Microsoft Edge.\n\nIf you disable this policy, users can't use wallet checkout while shopping on Microsoft Edge.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.whatsnewpageforentraprofilesenabled",
+    "settingName": "Control whether an informational webpage for Edge for Business is shown in the new tab after major browser updates",
+    "settingDescription": "Starting in Microsoft Edge version 145, users with Microsoft Entra ID profiles will see an informational page about new Edge for Business features after major browser updates. This page highlights recent enhancements designed to promote secure and productive browsing.\n\nThis policy controls whether users with Microsoft Entra ID profiles see this informational page. This policy applies only to Microsoft Entra ID profiles and does not apply to Microsoft account (MSA) profiles.\n\nThis policy is available starting in Microsoft Edge version 144 to allow configuration ahead of the changes introduced in version 145.\n\nIf you enable this policy or do not configure it, Microsoft Edge shows the informational page by default.\nIf you disable this policy, Microsoft Edge does not show the informational page to users.",
     "keywords": [
       "Uncategorized"
     ],
@@ -19238,15 +19303,6 @@
     "categoryName": "Security"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.sharebrowsinghistorywithcopilotsearchallowed",
-    "settingName": "Allow sharing tenant-approved browsing history with Microsoft 365 Copilot Search",
-    "settingDescription": "This policy controls whether browsing history in Microsoft Edge is shared with Microsoft 365 Copilot Search to provide more relevant search results. Only tenant-approved, work-related sites are shared.\n\nThis feature is available only to users who are signed in to Microsoft Edge with an Entra ID account and have an eligible Microsoft 365 Copilot license.\n\nIf you enable or don't configure this policy, browsing history will be shared with Microsoft 365 Copilot Search by default, and users can turn off sharing using the toggle in Microsoft Edge settings.\n\nIf you disable this policy, browsing history won't be shared with Microsoft 365 Copilot Search.\n\nLearn more about how Copilot uses data and consent at <a href=\"https://go.microsoft.com/fwlink/?linkid=2333202\">https://go.microsoft.com/fwlink/?linkid=2333202</a>",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "extensionsettings_managedextensions",
     "settingName": "Managed Extensions",
     "settingDescription": "Extensions being managed",
@@ -19294,7 +19350,7 @@
   },
   {
     "settingId": "com.apple.airplay_allowlist_item_deviceid",
-    "settingName": "Device ID",
+    "settingName": "Device ID (Deprecated)",
     "settingDescription": "The device ID of the AirPlay destination in the format xx:xx:xx:xx:xx:xx. This field isn’t case-sensitive.",
     "keywords": [
       "Air Play",
@@ -20328,6 +20384,15 @@
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.exemptdomainfiletypepairsfromfiletypedownloadwarnings",
     "settingName": "Disable download file type extension-based warnings for specified file types on domains (Obsolete)",
     "settingDescription": "This policy has been obsoleted in favor of \"ExemptFileTypeDownloadWarnings\" because of a type mismatch that caused errors in Mac.\n\nYou can enable this policy to create a dictionary of file type extensions with a corresponding list of domains that will be exempted from file type extension-based download warnings. This lets enterprise administrators block file type extension-based download warnings for files that are associated with a listed domain. For example, if  the \"jnlp\" extension is associated with \"website1.com\", users would not see a warning when downloading \"jnlp\" files from \"website1.com\", but see a download warning when downloading \"jnlp\" files from \"website2.com\".\n\nFiles with file type extensions specified for domains identified by this policy will still be subject to non-file type extension-based security warnings such as mixed-content download warnings and Microsoft Defender SmartScreen warnings.\n\nIf you disable this policy or don't configure it, file types that trigger extension-based download warnings will show warnings to the user.\n\nIf you enable this policy:\n\n* The URL pattern should be formatted according to <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n* The file type extension entered must be in lower-cased ASCII. The leading separator should not be included when listing the file type extension, so list \"jnlp\" should be used instead of \".jnlp\".\n\nExample:\n\nThe following example value would prevent file type extension-based download warnings on swf, exe, and jnlp extensions for *.contoso.com domains. It will show the user a file type extension-based download warning on any other domain for exe and jnlp files, but not for swf files.\n\n[\n  { \"file_extension\": \"jnlp\", \"domains\": [\"contoso.com\"] },\n  { \"file_extension\": \"exe\", \"domains\": [\"contoso.com\"] },\n  { \"file_extension\": \"swf\", \"domains\": [\"*\"] }\n]\n\nNote that while the preceding example shows the suppression of file type extension-based download warnings for \"swf\" files for all domains, applying suppression of such warnings for all domains for any dangerous file type extension is not recommended due to security concerns. It is shown in the example merely to demonstrate the ability to do so.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.sharebrowsinghistorywithcopilotsearchallowed",
+    "settingName": "Allow sharing tenant-approved browsing history with Microsoft 365 Copilot Search",
+    "settingDescription": "This policy controls whether browsing history in Microsoft Edge is shared with Microsoft 365 Copilot Search to provide more relevant search results. Only tenant-approved, work-related sites are shared.\n\nThis feature is available only to users who are signed in to Microsoft Edge with an Entra ID account and have an eligible Microsoft 365 Copilot license.\n\nIf you enable or don't configure this policy, browsing history will be shared with Microsoft 365 Copilot Search by default, and users can turn off sharing using the toggle in Microsoft Edge settings.\n\nIf you disable this policy, browsing history won't be shared with Microsoft 365 Copilot Search.\n\nLearn more about how Copilot uses data and consent at <a href=\"https://go.microsoft.com/fwlink/?linkid=2333202\">https://go.microsoft.com/fwlink/?linkid=2333202</a>",
     "keywords": [
       "Uncategorized"
     ],

@@ -1,5 +1,113 @@
 [
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_idledetectionallowedforurls",
+    "settingName": "Allow idle detection on these sites (User)",
+    "settingDescription": "Allows you to specify a list of URL patterns for sites that are allowed to use the Idle Detection API.\r\n\r\nIf you do not configure this policy, the default behavior applies to all sites. The default behavior is determined by the DefaultIdleDetectionSetting policy, if configured, or by the user’s personal settings otherwise.\r\n\r\nOnly the origin of the URL is evaluated. Any path specified in a URL pattern is ignored. Wildcards, *, are supported. For detailed information about valid URL pattern formats, see https://go.microsoft.com/fwlink/?linkid=209532.\r\n\r\nURL patterns specified in the blocklist take precedence over this allowlist. This allowlist takes precedence over the DefaultIdleDetectionSetting policy.\r\n\r\nExample value:\r\n\r\nhttps://www.example.com\r\n[*.]example.edu",
+    "keywords": [
+      "IdleDetectionAllowedForUrls",
+      "Allow idle detection on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_idledetectionallowedforurls_idledetectionallowedforurlsdesc",
+    "settingName": "Allowed sites for idle detection (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "IdleDetectionAllowedForUrls",
+      "Allow idle detection on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Microsoft Edge\\Content settings",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_office16v21~policy~l_microsoftofficesystem~l_securitysettings_l_allowedcomaddins_l_allowedcomaddinslist_key",
+    "settingName": "Name",
+    "settingDescription": "",
+    "keywords": [
+      "L_AllowedCOMAddins",
+      "List of allowed COM/VSTO add-ins registered in HKCU",
+      "\\Microsoft Office 2016\\Security Settings",
+      "Microsoft Office 2016\\Security Settings",
+      "Security Settings"
+    ],
+    "categoryName": "Microsoft Office 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_office16v21~policy~l_microsoftofficesystem~l_securitysettings_l_restrictcucomaddin",
+    "settingName": "Block loading of COM/VSTO add-ins registered in HKCU (User)",
+    "settingDescription": "This policy setting controls whether COM/VSTO add-ins registered only in HKEY_CURRENT_USER (HKCU) are blocked from loading.\r\n\r\nStandard users can install add-ins through ClickOnce deployment or the Office Add-ins settings, which typically register add-ins in HKCU rather than HKEY_LOCAL_MACHINE (HKLM).\r\n\r\nIf you enable this policy setting, all COM/VSTO add-ins registered only in HKCU will be blocked from loading, preventing users from running add-ins they have installed without administrator privileges.\r\n\r\nIf you disable or don't configure this policy setting, COM/VSTO add-ins registered in HKCU are allowed to load normally.\r\n\r\nNote: Add-ins registered in HKLM (typically installed by administrators) are not affected by this policy setting.",
+    "keywords": [
+      "L_RestrictCUCOMAddin",
+      "Block loading of COM/VSTO add-ins registered in HKCU",
+      "\\Microsoft Office 2016\\Security Settings",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\common\\security",
+      "restrictcucomaddin",
+      "Security Settings"
+    ],
+    "categoryName": "Microsoft Office 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_onent16v8~policy~l_microsoftofficeonenote~l_disableitemsinuserinterface~l_custom_l_disableshortcutkeys291_l_enterakeyandmodifiertodisable",
+    "settingName": "Enter a key and modifier to disable (User)",
+    "settingDescription": "",
+    "keywords": [
+      "L_disableshortcutkeys291",
+      "Disable shortcut keys",
+      "\\Microsoft OneNote 2016\\Disable Items in User Interface\\Custom",
+      "Microsoft OneNote 2016\\Disable Items in User Interface\\Custom",
+      "Custom"
+    ],
+    "categoryName": "Microsoft One Note 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_outlk16v18~policy~l_microsoftofficeoutlook~l_outlookoptions~l_preferences~l_emailoptions~l_advancedemailoptions~l_whensendingamessagecategory_l_deletemeetingrequestfrominboxwhenresponding_l_deletemeetingrequestfrominboxwhenresponding",
+    "settingName": "Delete meeting request from Inbox when responding (User)",
+    "settingDescription": "",
+    "keywords": [
+      "L_DeletemeetingrequestfromInboxwhenresponding",
+      "Delete meeting request from Inbox when responding",
+      "\\Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "When sending a message"
+    ],
+    "categoryName": "Microsoft Outlook 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_outlk16v18~policy~l_microsoftofficeoutlook~l_outlookoptions~l_preferences~l_emailoptions~l_advancedemailoptions~l_whensendingamessagecategory_l_automaticnamechecking",
+    "settingName": "Automatic name checking (User)",
+    "settingDescription": "Sets the value for the corresponding UI option.",
+    "keywords": [
+      "L_Automaticnamechecking",
+      "Automatic name checking",
+      "\\Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\outlook\\preferences",
+      "When sending a message"
+    ],
+    "categoryName": "Microsoft Outlook 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_outlk16v18~policy~l_microsoftofficeoutlook~l_outlookoptions~l_preferences~l_emailoptions~l_advancedemailoptions~l_whensendingamessagecategory_l_addpropertiestoattachmentstoenablereplywithchanges_l_addpropertiestoattachmentstoenablereplywithchanges",
+    "settingName": "Add properties to attachments to enable Reply with Changes (User)",
+    "settingDescription": "",
+    "keywords": [
+      "L_AddpropertiestoattachmentstoenableReplywithChanges",
+      "Add properties to attachments to enable Reply with Changes",
+      "\\Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "When sending a message"
+    ],
+    "categoryName": "Microsoft Outlook 2016"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.importsearchengine_recommended",
     "settingName": "Allow importing of search engine settings (users can override)",
     "settingDescription": "Allows users to import search engine settings from another browser into Microsoft Edge.\n\nIf you enable, this policy, the option to import search engine settings is automatically selected.\n\nIf you disable this policy, search engine settings aren't imported at first run, and users can't import them manually.\n\nIf you don't configure this policy, search engine settings are imported at first run, and users can choose whether to import this data manually during later browsing sessions.\n\nYou can set this policy as a recommendation. This means that Microsoft Edge imports search engine settings on first run, but users can select or clear the **search engine** option during manual import.\n\n**Note**: This policy currently manages importing from Internet Explorer (on Windows 7, 8, and 10).",
@@ -20551,7 +20659,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\security",
       "allowaddinaccesstoencryptedfiles"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_versionsandrecylebin_l_daysbacktokeepitemsinrecyclebin_l_daysbacktokeepitemsinrecyclebinspinid",
@@ -20564,7 +20672,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Versions and Recyle Bin",
       "Versions and Recyle Bin"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_addins_l_disableinstalledonenoteaddins",
@@ -20580,7 +20688,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\security",
       "disablealladdins"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_defaultunitofmeasurementusedinonenote",
@@ -20595,7 +20703,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\other"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_audioandvideo_l_choosedefaultcodectobeusedforvideonotebook",
@@ -20610,7 +20718,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\audio"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_password_l_lockpasswordprotectedsectionsafteruserhasntworkedonthemforatime_l_timeintervalminutestolockpasswordprotectedsections",
@@ -20623,7 +20731,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Password",
       "Password"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_addins_l_blockallunmanagedaddins",
@@ -20639,7 +20747,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\resiliency",
       "restricttolist"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_editing_l_autobulletrecognition",
@@ -20655,7 +20763,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\editing",
       "bullet auto reco"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_notebookpresence",
@@ -20671,7 +20779,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options",
       "disablepresence"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_save_l_locationofbackupfolder",
@@ -20686,7 +20794,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\paths"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_addins_l_listofmanagedaddins_l_listofmanagedaddins2",
@@ -20699,7 +20807,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Add-ins",
       "Add-ins"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_versionsandrecylebin_l_daysbacktokeepinversionhistory_l_daysbacktokeepinversionhistoryspinid",
@@ -20712,7 +20820,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Versions and Recyle Bin",
       "Versions and Recyle Bin"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_security~l_cryptography_l_configurecngcipherchainingmode_l_configurecngcipherchainingmodedropid",
@@ -20725,7 +20833,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Security\\Cryptography",
       "Cryptography"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_save_l_locationofunfilednotessection",
@@ -20740,7 +20848,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\paths"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_editing_l_autonumberingrecognition",
@@ -20756,7 +20864,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\editing",
       "numbering auto reco"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v3~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_sharepointbackgroundsyncintervalmultiplier_l_empty16",
@@ -20769,7 +20877,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Other",
       "Other"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v3~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_sharepointpresenceintervalmultiplier_l_empty18",
@@ -20782,7 +20890,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Other",
       "Other"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v5~policy~l_microsoftofficeonenote~l_onenoteoptions~l_editing_l_onenotetextprediction",
@@ -20798,7 +20906,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\editing",
       "textprediction"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v7~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_onenotesensitivitylabels",
@@ -20811,7 +20919,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Other",
       "Other"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "osrecoverysettings_qualityupdate",
@@ -25643,6 +25751,59 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_idledetectionblockedforurls_idledetectionblockedforurlsdesc",
+    "settingName": "Blocked sites for idle detection (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "IdleDetectionBlockedForUrls",
+      "Block idle detection on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Microsoft Edge\\Content settings",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_recommended_httpsonlymode_recommended_httpsonlymode",
+    "settingName": "Allow HTTPS-Only Mode to be enabled (User)",
+    "settingDescription": "",
+    "keywords": [
+      "HttpsOnlyMode_recommended",
+      "Allow HTTPS-Only Mode to be enabled",
+      "\\Microsoft Edge - Default Settings (users can override)",
+      "Microsoft Edge - Default Settings (users can override)"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_outlk16v18~policy~l_microsoftofficeoutlook~l_outlookoptions~l_preferences~l_emailoptions~l_advancedemailoptions~l_whensendingamessagecategory_l_messagesexpireafterdays",
+    "settingName": "Messages expire after (days) (User)",
+    "settingDescription": "Sets the value for the corresponding UI option.",
+    "keywords": [
+      "L_Messagesexpireafterdays",
+      "Messages expire after (days)",
+      "\\Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\outlook\\preferences",
+      "When sending a message"
+    ],
+    "categoryName": "Microsoft Outlook 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_outlk16v18~policy~l_microsoftofficeoutlook~l_outlookoptions~l_preferences~l_emailoptions~l_advancedemailoptions~l_whensendingamessagecategory_l_setimportance",
+    "settingName": "Set importance (User)",
+    "settingDescription": "Sets the value for the corresponding UI option.",
+    "keywords": [
+      "L_Setimportance",
+      "Set importance",
+      "\\Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\outlook\\preferences",
+      "When sending a message"
+    ],
+    "categoryName": "Microsoft Outlook 2016"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.cacertificateswithconstraints",
@@ -46380,7 +46541,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\save"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_audioandvideo_l_specifynumberofbitstosamplewhenrecording",
@@ -46395,7 +46556,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\audio"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_audioandvideo_l_specifynumberofchannelstorecord",
@@ -46410,7 +46571,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\audio"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_password_l_lockpasswordprotectedsectionsafteruserhasntworkedonthemforatime_l_checktolocksections",
@@ -46423,7 +46584,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Password",
       "Password"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_setuncintervaltopollforchangesonfileservers",
@@ -46438,7 +46599,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\save"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_save_l_locationofbackupfolder_l_backupfolder",
@@ -46451,7 +46612,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Save",
       "Save"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_audioandvideo_l_disablelinkedaudiofeature",
@@ -46467,7 +46628,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\audio",
       "disablerecording"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_password_l_lockpasswordprotectedsectionsafteruserhasntworkedonthemforatime",
@@ -46482,7 +46643,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\security"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_security~l_cryptography_l_setcngcipheralgorithm_l_setcngcipheralgorithmid",
@@ -46495,7 +46656,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Security\\Cryptography",
       "Cryptography"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_display_l_shownotecontainers",
@@ -46511,7 +46672,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\other",
       "shownotecontainers"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_audioandvideo_l_disableaudosearch",
@@ -46527,7 +46688,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\other",
       "enableaudiosearch"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_numberofdaysbeforewarningthatserveris_l_empty14",
@@ -46540,7 +46701,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Other",
       "Other"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_audioandvideo_l_specifyratetosampleaudiobitssecond",
@@ -46555,7 +46716,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\audio"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_pen_l_showtabletpcinputpanelononenotepages",
@@ -46571,7 +46732,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\pen",
       "showtabletpcinputpanel"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v3~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_sharepointlivesyncintervalmultiplier",
@@ -46586,7 +46747,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\save"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "osrecoverysettings_acceptlicense",
@@ -48961,7 +49122,7 @@
   {
     "settingId": "device_vendor_msft_remoteremediation_cloudremediationsettings_enablecloudremediation",
     "settingName": "Enable Cloud Remediation (Windows Insiders only)",
-    "settingDescription": "Enable or disable quick machine recovery, a feature that will search for device recovery solutions if your device fails to start.\r\n This setting is only available to Windows Insiders",
+    "settingDescription": "Enable or disable cloud remediation.\r\n This setting is only available to Windows Insiders",
     "keywords": [
       "Enable Cloud Remediation",
       "Remote Remediation"
@@ -50873,13 +51034,126 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.localnetworkaccessrestrictionstemporaryoptout",
-    "settingName": "Specifies whether to opt out of Local Network Access restrictions",
-    "settingDescription": "This policy allows for opting out of restrictions on requests to local network endpoints.\n\nIf you enable this policy, Local Network Access requests will only display warnings in Edge DevTools when Local Network Access checks fail.\n\nIf you disable or don't configure this policy, Local Network Access requests will follow the default handling behavior.\n\nFor more information about Local Network Access restrictions, see Local Network Access .\n\nTo allow specific URL patterns that should automatically be granted Local Network Access permission, use the LocalNetworkAccessAllowedForUrls policy.\n\nNote: This opt-out policy is temporary and will be removed after Microsoft Edge version 152.",
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_staticstoragequotaenabled",
+    "settingName": "Control whether storage quota APIs will return static values (User)",
+    "settingDescription": "Controls how the Storage Quota APIs report the available quota to websites.\r\n\r\nWhen enabled, the Storage Quota APIs return a static quota value equal to the current usage plus the smaller of 10 GiB or the device's total storage rounded up to the nearest 1 GiB.\r\n\r\nWhen disabled, the Storage Quota APIs return a dynamic quota value that reflects the actual available device storage.\r\n\r\nWhen unset, the browser uses the default platform behavior.\r\n\r\nThis policy does not affect sites with unlimited storage permissions or enforced quota settings.",
     "keywords": [
-      "Network settings"
+      "StaticStorageQuotaEnabled",
+      "Control whether storage quota APIs will return static values",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_defaultidledetectionsetting_defaultidledetectionsetting",
+    "settingName": "Idle detection (User)",
+    "settingDescription": "",
+    "keywords": [
+      "DefaultIdleDetectionSetting",
+      "Default idle detection setting",
+      "\\Microsoft Edge\\Content settings",
+      "Microsoft Edge\\Content settings",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~extensions_edgesafehostingextensionenabled",
+    "settingName": "Control Microsoft Edge Safe Hosting Extension (User)",
+    "settingDescription": "This policy controls whether the Microsoft Edge Safe Hosting component extension is installed automatically when users visit supported Microsoft services, such as Microsoft 365 Copilot app.\r\n\r\nThe Microsoft Edge Safe Hosting extension provides additional security capabilities for these services. When a user accesses a supported service, the extension installs automatically to enable those protections.\r\n\r\nIf you enable or don't configure this policy, the extension installs automatically and remains installed for 90 days after the user's last visit, then is removed if no further activity occurs.\r\n\r\nIf you disable this policy, the extension won't install automatically. If it’s already installed, it will be removed.\r\n\r\nNote: This policy controls only automatic installation. It doesn’t prevent users from manually installing other extensions from the Microsoft Edge Add-ons website.",
+    "keywords": [
+      "EdgeSafeHostingExtensionEnabled",
+      "Control Microsoft Edge Safe Hosting Extension",
+      "\\Microsoft Edge\\Extensions",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Extensions"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_staticstoragequotaenabled",
+    "settingName": "Control whether storage quota APIs will return static values",
+    "settingDescription": "Controls how the Storage Quota APIs report the available quota to websites.\r\n\r\nWhen enabled, the Storage Quota APIs return a static quota value equal to the current usage plus the smaller of 10 GiB or the device's total storage rounded up to the nearest 1 GiB.\r\n\r\nWhen disabled, the Storage Quota APIs return a dynamic quota value that reflects the actual available device storage.\r\n\r\nWhen unset, the browser uses the default platform behavior.\r\n\r\nThis policy does not affect sites with unlimited storage permissions or enforced quota settings.",
+    "keywords": [
+      "StaticStorageQuotaEnabled",
+      "Control whether storage quota APIs will return static values",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_recommended_httpsonlymode_recommended_httpsonlymode",
+    "settingName": "Allow HTTPS-Only Mode to be enabled (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "HttpsOnlyMode_recommended",
+      "Allow HTTPS-Only Mode to be enabled",
+      "\\Microsoft Edge - Default Settings (users can override)",
+      "Microsoft Edge - Default Settings (users can override)"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_office16v21~policy~l_microsoftofficesystem~l_securitysettings_l_allowedcomaddins",
+    "settingName": "List of allowed COM/VSTO add-ins registered in HKCU (User)",
+    "settingDescription": "This policy setting allows you to specify COM/VSTO add-ins registered in HKEY_CURRENT_USER (HKCU) that should be allowed to load, overriding the \"Block loading of COM/VSTO add-ins registered in HKCU\" policy.\r\n\r\nSome legitimate add-ins may be installed in HKCU even when deployed by administrators, due to how the independent software vendor (ISV) designed their installer. This policy provides an administrative override to allow specific add-ins to load despite being registered in HKCU.\r\n\r\nIf you enable this policy setting, you can specify a list of COM/VSTO add-ins that are allowed to load from HKCU. Enter each add-in using its ProgID as the name.\r\n\r\nIf you disable or don't configure this policy setting, the standard HKCU blocking behavior applies when that policy is enabled.",
+    "keywords": [
+      "L_AllowedCOMAddins",
+      "List of allowed COM/VSTO add-ins registered in HKCU",
+      "\\Microsoft Office 2016\\Security Settings",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\common\\security\\allowedcomaddins",
+      "Security Settings"
+    ],
+    "categoryName": "Microsoft Office 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_outlk16v18~policy~l_microsoftofficeoutlook~l_outlookoptions~l_preferences~l_emailoptions~l_advancedemailoptions~l_whensendingamessagecategory_l_setsensitivity",
+    "settingName": "Set sensitivity (User)",
+    "settingDescription": "Sets the value for the corresponding UI option.",
+    "keywords": [
+      "L_Setsensitivity",
+      "Set sensitivity",
+      "\\Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\outlook\\preferences",
+      "When sending a message"
+    ],
+    "categoryName": "Microsoft Outlook 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_outlk16v18~policy~l_microsoftofficeoutlook~l_outlookoptions~l_preferences~l_emailoptions~l_advancedemailoptions~l_whensendingamessagecategory_l_setimportance_l_setimportance",
+    "settingName": "Set importance: (User)",
+    "settingDescription": "",
+    "keywords": [
+      "L_Setimportance",
+      "Set importance",
+      "\\Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "When sending a message"
+    ],
+    "categoryName": "Microsoft Outlook 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_outlk16v18~policy~l_microsoftofficeoutlook~l_outlookoptions~l_preferences~l_emailoptions~l_advancedemailoptions~l_whensendingamessagecategory_l_addpropertiestoattachmentstoenablereplywithchanges",
+    "settingName": "Add properties to attachments to enable Reply with Changes (User)",
+    "settingDescription": "Sets the value for the corresponding UI option.",
+    "keywords": [
+      "L_AddpropertiestoattachmentstoenableReplywithChanges",
+      "Add properties to attachments to enable Reply with Changes",
+      "\\Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\outlook\\preferences",
+      "When sending a message"
+    ],
+    "categoryName": "Microsoft Outlook 2016"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.screencaptureallowedbyorigins",
@@ -51022,6 +51296,15 @@
     "settingDescription": "Configure the list of enhance security trusted domains. This means that\nenhance security mode will not be enforced when loading the sites in trusted domains.",
     "keywords": [
       "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.localnetworkaccessrestrictionstemporaryoptout",
+    "settingName": "Specifies whether to opt out of Local Network Access restrictions",
+    "settingDescription": "This policy allows for opting out of restrictions on requests to local network endpoints.\n\nIf you enable this policy, Local Network Access requests will only display warnings in Edge DevTools when Local Network Access checks fail.\n\nIf you disable or don't configure this policy, Local Network Access requests will follow the default handling behavior.\n\nFor more information about Local Network Access restrictions, see Local Network Access .\n\nTo allow specific URL patterns that should automatically be granted Local Network Access permission, use the LocalNetworkAccessAllowedForUrls policy.\n\nNote: This opt-out policy is temporary and will be removed after Microsoft Edge version 152.",
+    "keywords": [
+      "Network settings"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -70276,7 +70559,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\versions",
       "pruneversionsovertime"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_audioandvideo_l_specifyratetosampleaudiobitssecond_l_bitssecond",
@@ -70289,7 +70572,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Audio and Video",
       "Audio and Video"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_specifyembeddedfilesizelimit_l_embeddedfilesizelimit",
@@ -70302,7 +70585,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Other",
       "Other"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_security~l_cryptography_l_setparametersforcngcontext_l_setparametersforcngcontextid",
@@ -70315,7 +70598,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Security\\Cryptography",
       "Cryptography"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_backup_l_numberofbackupcopiestokeep",
@@ -70330,7 +70613,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\save"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_spelling_l_onenotespellingoptions_l_empty11",
@@ -70343,7 +70626,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Spelling",
       "Spelling"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_pen_l_usepenpressuresensitivity",
@@ -70359,7 +70642,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\pen",
       "inkpressure"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_security~l_cryptography_l_specifycngrandomnumbergeneratoralgorithm_l_specifycngrandomnumbergeneratoralgorithmid",
@@ -70372,7 +70655,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Security\\Cryptography",
       "Cryptography"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_disableembeddedfiles",
@@ -70388,7 +70671,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options",
       "disableembeddedfiles"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_editing_l_turnofflinkcreationwith",
@@ -70404,7 +70687,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\editing",
       "wikilink"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_security~l_cryptography_l_specifycnghashalgorithm",
@@ -70419,7 +70702,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\security\\crypto"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_email_l_allowonenoteemailattachments",
@@ -70435,7 +70718,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options",
       "email attachment"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_turnoffonenoteautolinkednotetaking",
@@ -70451,7 +70734,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\linkednotes",
       "autolink"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_specifyembeddedfilesizelimit",
@@ -70466,7 +70749,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\general"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_security~l_cryptography_l_setcngcipheralgorithm",
@@ -70481,7 +70764,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\security\\crypto"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_security~l_cryptography_l_setcngcipherkeylength",
@@ -70496,7 +70779,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\security\\crypto"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v3~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_sharepointlivesyncintervalmultiplier_l_empty17",
@@ -70509,7 +70792,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Other",
       "Other"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "osrecoverysettings_os",
@@ -73024,8 +73307,8 @@
   },
   {
     "settingId": "device_vendor_msft_remoteremediation_cloudremediationsettings_networksettings_networkcredentials_networkpasswordencryptiontype",
-    "settingName": "Network Password Encryption Type (Windows Insiders only) [Pending fix]",
-    "settingDescription": "Refers to the type of encryption that can be used for the network password. If you specify \"Encrypt with custom certificate\" you must also enter the encryption store.\r\n This setting is only available to Windows Insiders",
+    "settingName": "Network Password Encryption Type (Windows Insiders only)",
+    "settingDescription": "The type of encryption that might be used for the network password.\r\n This setting is only available to Windows Insiders",
     "keywords": [
       "Network Password Encryption Type",
       "Remote Remediation"
@@ -73035,7 +73318,7 @@
   {
     "settingId": "device_vendor_msft_remoteremediation_cloudremediationsettings_autoremediationsettings_setretryinterval",
     "settingName": "Set Retry Interval (Windows Insiders only)",
-    "settingDescription": "Refers to the time in minutes that a device will wait before trying to look for solutions again. The retry interval should not be higher than the time to reboot, and will only take effect if auto remediation is on. Otherwise an invalid argument error will be returned and no changes will be made. A retry interval of 0 means that the device will look for solutions once without any retries.\r\n This setting is only available to Windows Insiders",
+    "settingDescription": "Get/set the retry interval (in minutes) during auto cloud remediation. The retry interval should not be higher than the time to reboot. \"SetRetryInterval\" is dependent on \"EnableAutoRemediation\" and only takes effect if \"EnableAutoRemediation\" is set to true. Otherwise, an invalid argument error will be returned and no changes will be made.\r\n This setting is only available to Windows Insiders",
     "keywords": [
       "Set Retry Interval",
       "Remote Remediation"
@@ -75006,6 +75289,74 @@
       "Trust Center"
     ],
     "categoryName": "Microsoft Word 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_idledetectionblockedforurls_idledetectionblockedforurlsdesc",
+    "settingName": "Blocked sites for idle detection (User)",
+    "settingDescription": "",
+    "keywords": [
+      "IdleDetectionBlockedForUrls",
+      "Block idle detection on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Microsoft Edge\\Content settings",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_defaultidledetectionsetting",
+    "settingName": "Default idle detection setting",
+    "settingDescription": "Setting this policy to 1 - AllowIdleDetection allows websites to use the Idle Detection API without requesting user permission.\r\n\r\nSetting this policy to 2 - BlockIdleDetection prevents websites from using the Idle Detection API.\r\n\r\nSetting this policy to 3 - AskIdleDetection requires websites to request user permission each time before using the Idle Detection API.\r\n\r\nIf you do not configure this policy, users can decide whether to allow the Idle Detection API and can change this setting themselves.\r\n\r\nPolicy options mapping:\r\n\r\n* AllowIdleDetection (1) = Allow sites to detect idle state without asking the user\r\n\r\n* BlockIdleDetection (2) = Do not allow any site to detect the user's idle state\r\n\r\n* AskIdleDetection (3) = Ask every time a site wants to detect the user's idle state\r\n\r\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "DefaultIdleDetectionSetting",
+      "Default idle detection setting",
+      "\\Microsoft Edge\\Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_office16v21~policy~l_microsoftofficesystem~l_securitysettings_l_allowedcomaddins_l_allowedcomaddinslist_value",
+    "settingName": "Value",
+    "settingDescription": "",
+    "keywords": [
+      "L_AllowedCOMAddins",
+      "List of allowed COM/VSTO add-ins registered in HKCU",
+      "\\Microsoft Office 2016\\Security Settings",
+      "Microsoft Office 2016\\Security Settings",
+      "Security Settings"
+    ],
+    "categoryName": "Microsoft Office 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_onent16v8~policy~l_microsoftofficeonenote~l_disableitemsinuserinterface~l_custom_l_disableshortcutkeys291",
+    "settingName": "Disable shortcut keys (User)",
+    "settingDescription": "This policy setting allows you to disable any shortcut key by using its virtual key code ID, including shortcut keys that are not in the predefined lists.\r\n\r\nIf you enable this policy setting, you can enter a virtual key code ID number to disable a specific shortcut key.\r\n\r\nIf you disable or do not configure this policy setting, all default shortcut keys are enabled for users.",
+    "keywords": [
+      "L_disableshortcutkeys291",
+      "Disable shortcut keys",
+      "\\Microsoft OneNote 2016\\Disable Items in User Interface\\Custom",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\onenote\\disabledshortcutkeyslist",
+      "Custom"
+    ],
+    "categoryName": "Microsoft One Note 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_outlk16v18~policy~l_microsoftofficeoutlook~l_outlookoptions~l_preferences~l_emailoptions~l_advancedemailoptions~l_whensendingamessagecategory_l_deletemeetingrequestfrominboxwhenresponding",
+    "settingName": "Delete meeting request from Inbox when responding (User)",
+    "settingDescription": "Sets the value for the corresponding UI option.",
+    "keywords": [
+      "L_DeletemeetingrequestfromInboxwhenresponding",
+      "Delete meeting request from Inbox when responding",
+      "\\Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\outlook\\preferences",
+      "When sending a message"
+    ],
+    "categoryName": "Microsoft Outlook 2016"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.newtabpagelocation_recommended",
@@ -94845,7 +95196,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Save",
       "Save"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_versionsandrecylebin_l_daysbacktokeepinversionhistory",
@@ -94860,7 +95211,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\versions"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_versionsandrecylebin_l_maximumnumberofonceperdayversionhistoryitemskept",
@@ -94875,7 +95226,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\versions"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_sharepointsyncinterval_l_empty15",
@@ -94888,7 +95239,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Other",
       "Other"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_security~l_cryptography_l_configurecngcipherchainingmode",
@@ -94903,7 +95254,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\security\\crypto"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_editing_l_includelinktosourcewhenpastingfromtheinternet",
@@ -94919,7 +95270,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\editing",
       "pasteincludeurl"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_sharepointsyncinterval",
@@ -94934,7 +95285,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\save"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_sendtoonenote_l_disableoutlooksendemailtoonenoteoption",
@@ -94950,7 +95301,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\outlookandweb",
       "disablesendemailtoonenote"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_save_l_enableabilitytooptimizeonenotefiles",
@@ -94965,7 +95316,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\save"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_numberofdaysbeforewarningthatserveris",
@@ -94980,7 +95331,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\synchronization"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_security~l_cryptography_l_specifycngsaltlength_l_specifycngsaltlengthspinid",
@@ -94993,7 +95344,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Security\\Cryptography",
       "Cryptography"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_password_l_lockpasswordprotectedsectionsassoonasinavigateawayfromthem",
@@ -95009,7 +95360,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\security",
       "locksectionsimmediately"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_editing_l_defaultfontsize",
@@ -95024,7 +95375,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\editing"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_embeddedfilesblockedextensions",
@@ -95039,7 +95390,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\embeddedfileopenoptions"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_versionsandrecylebin_l_daysofhourlyversionsnottopruneafterdaysback_l_daysofhourlyversionsnottopruneafterdaysbackspinid",
@@ -95052,7 +95403,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Versions and Recyle Bin",
       "Versions and Recyle Bin"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_security~l_cryptography_l_specifyencryptioncompatibility_l_specifyencryptioncompatibilitydropid",
@@ -95065,7 +95416,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Security\\Cryptography",
       "Cryptography"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_pen_l_createallnewpageswithrulelines",
@@ -95081,7 +95432,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\pen",
       "userulelines"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v3~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_sharepointbackgroundsyncintervalmultiplier",
@@ -95096,7 +95447,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\save"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v4~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_disablesupportdiagnostics",
@@ -95112,7 +95463,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\general",
       "disablesupportdiagnostics"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v6.1~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_turnoffnewstickynotesinonenote",
@@ -95125,7 +95476,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Other",
       "Other"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_outlk16v10~policy~l_microsoftofficeoutlook~l_outlookoptions~l_preferences~l_calendaroptions_l_disablecalendarsearchagendaview",
@@ -97745,7 +98096,7 @@
   },
   {
     "settingId": "device_vendor_msft_remoteremediation_cloudremediationsettings_networksettings_networkcredentials_networkpasswordencryptionstore",
-    "settingName": "Network Password Encryption Store (Windows Insiders only) [Pending fix]",
+    "settingName": "Network Password Encryption Store (Windows Insiders only)",
     "settingDescription": "The encryption store that is specified if we are using a custom certificate for password encryption.\r\n This setting is only available to Windows Insiders",
     "keywords": [
       "Network Password Encryption Store",
@@ -99633,6 +99984,183 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_defaultidledetectionsetting",
+    "settingName": "Default idle detection setting (User)",
+    "settingDescription": "Setting this policy to 1 - AllowIdleDetection allows websites to use the Idle Detection API without requesting user permission.\r\n\r\nSetting this policy to 2 - BlockIdleDetection prevents websites from using the Idle Detection API.\r\n\r\nSetting this policy to 3 - AskIdleDetection requires websites to request user permission each time before using the Idle Detection API.\r\n\r\nIf you do not configure this policy, users can decide whether to allow the Idle Detection API and can change this setting themselves.\r\n\r\nPolicy options mapping:\r\n\r\n* AllowIdleDetection (1) = Allow sites to detect idle state without asking the user\r\n\r\n* BlockIdleDetection (2) = Do not allow any site to detect the user's idle state\r\n\r\n* AskIdleDetection (3) = Ask every time a site wants to detect the user's idle state\r\n\r\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "DefaultIdleDetectionSetting",
+      "Default idle detection setting",
+      "\\Microsoft Edge\\Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_idledetectionblockedforurls",
+    "settingName": "Block idle detection on these sites (User)",
+    "settingDescription": "Allows you to specify a list of URL patterns for sites that are not allowed to use the Idle Detection API.\r\n\r\nOnly the origin of the URL is evaluated. Any path specified in a URL pattern is ignored. Wildcards, *, are supported.\r\n\r\nFor detailed information about valid URL pattern formats, see https://go.microsoft.com/fwlink/?linkid=2095322.\r\n\r\nIf you do not configure this policy, the default behavior applies to all sites. The default behavior is determined by the DefaultIdleDetectionSetting policy, if configured, or by the user’s personal settings otherwise.\r\n\r\nExample value:\r\n\r\nhttps://www.example.com\r\n[*.]example.edu",
+    "keywords": [
+      "IdleDetectionBlockedForUrls",
+      "Block idle detection on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_defaultidledetectionsetting_defaultidledetectionsetting",
+    "settingName": "Idle detection (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "DefaultIdleDetectionSetting",
+      "Default idle detection setting",
+      "\\Microsoft Edge\\Content settings",
+      "Microsoft Edge\\Content settings",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_idledetectionallowedforurls_idledetectionallowedforurlsdesc",
+    "settingName": "Allowed sites for idle detection (User)",
+    "settingDescription": "",
+    "keywords": [
+      "IdleDetectionAllowedForUrls",
+      "Allow idle detection on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Microsoft Edge\\Content settings",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_webappinstallbyuserenabled",
+    "settingName": "Enable User Web App Install From Browser",
+    "settingDescription": "This policy controls whether users can install web apps through Microsoft Edge.\r\nIf you enable or don’t configure this policy, users can install web apps through the browser.\r\nIf you disable this policy, users can’t install web apps through the browser, and the \"apps\" data type is excluded from synchronization.\r\nThis policy doesn't support dynamic refresh. Changes to this policy, whether enabled, disabled, or not configured, take effect only after the browser is restarted.\r\nThis policy doesn't affect the 'WebAppInstallForceList' policy. Web apps specified by that policy are installed regardless of this policy setting.",
+    "keywords": [
+      "WebAppInstallByUserEnabled",
+      "Enable User Web App Install From Browser",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~identity_editprofileenabled",
+    "settingName": "Enable editing profile in settings (User)",
+    "settingDescription": "This policy controls whether users can modify profile properties (such as profile avatar) from the profile settings page.\r\n\r\nIf you enable or don't configure this policy, users can edit profile properties. The edit button is available on the profile settings page.\r\n\r\nIf you disable this policy, users can't edit profile properties. The edit button is disabled on the profile settings page.",
+    "keywords": [
+      "EditProfileEnabled",
+      "Enable editing profile in settings",
+      "\\Microsoft Edge\\Identity and sign-in",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Identity and sign-in"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_recommended_httpsonlymode_recommended",
+    "settingName": "Allow HTTPS-Only Mode to be enabled",
+    "settingDescription": "This policy controls whether users can enable HTTPS-Only Mode (Always Use Secure Connections) in Settings. HTTPS-Only Mode attempts to upgrade all navigations to HTTPS.\r\n\r\nIf this setting isn't set or is set to `allowed`, users are able to enable HTTPS-Only Mode.\r\nIf this setting is set to `disallowed`, HTTPS-Only Mode will be disabled.\r\nIf this setting is set to `force_enabled`, HTTPS-Only Mode is enabled in Strict mode.\r\nIf this setting is set to `force_balanced_enabled`, HTTPS-Only Mode is enabled in Balanced mode.\r\n\r\nThe settings `force_enabled` and `force_balanced_enabled` can be recommended to users. HTTPS-Only Mode will be set to Strict or Balanced initially, but users are allowed to change it.\r\n\r\nIf you set this policy to a value that isn't supported by the version of Microsoft Edge that receives the policy, Microsoft Edge defaults to the `allowed` setting.\r\n\r\nThe separate HttpAllowlist policy can be used to exempt specific hostnames or hostname patterns from being upgraded to HTTPS by this feature.\r\n\r\nPolicy options mapping:\r\n\r\n* allowed (allowed) = Don't restrict users' HTTPS-Only Mode setting\r\n\r\n* disallowed (disallowed) = Disable HTTPS-Only Mode\r\n\r\n* force_enabled (force_enabled) = Force enable HTTPS-Only Mode in Strict mode\r\n\r\n* force_balanced_enabled (force_balanced_enabled) = Force enable HTTPS-Only Mode in Balanced Mode\r\n\r\nUse the preceding information when configuring this policy.\r\n\r\nExample value: disallowed",
+    "keywords": [
+      "HttpsOnlyMode_recommended",
+      "Allow HTTPS-Only Mode to be enabled",
+      "\\Microsoft Edge - Default Settings (users can override)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge\\Recommended",
+      "Microsoft Edge - Default Settings (users can override)"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~extensions_edgesafehostingextensionenabled",
+    "settingName": "Control Microsoft Edge Safe Hosting Extension",
+    "settingDescription": "This policy controls whether the Microsoft Edge Safe Hosting component extension is installed automatically when users visit supported Microsoft services, such as Microsoft 365 Copilot app.\r\n\r\nThe Microsoft Edge Safe Hosting extension provides additional security capabilities for these services. When a user accesses a supported service, the extension installs automatically to enable those protections.\r\n\r\nIf you enable or don't configure this policy, the extension installs automatically and remains installed for 90 days after the user's last visit, then is removed if no further activity occurs.\r\n\r\nIf you disable this policy, the extension won't install automatically. If it’s already installed, it will be removed.\r\n\r\nNote: This policy controls only automatic installation. It doesn’t prevent users from manually installing other extensions from the Microsoft Edge Add-ons website.",
+    "keywords": [
+      "EdgeSafeHostingExtensionEnabled",
+      "Control Microsoft Edge Safe Hosting Extension",
+      "\\Microsoft Edge\\Extensions",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Extensions"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_recommended_httpsonlymode_recommended",
+    "settingName": "Allow HTTPS-Only Mode to be enabled (User)",
+    "settingDescription": "This policy controls whether users can enable HTTPS-Only Mode (Always Use Secure Connections) in Settings. HTTPS-Only Mode attempts to upgrade all navigations to HTTPS.\r\n\r\nIf this setting isn't set or is set to `allowed`, users are able to enable HTTPS-Only Mode.\r\nIf this setting is set to `disallowed`, HTTPS-Only Mode will be disabled.\r\nIf this setting is set to `force_enabled`, HTTPS-Only Mode is enabled in Strict mode.\r\nIf this setting is set to `force_balanced_enabled`, HTTPS-Only Mode is enabled in Balanced mode.\r\n\r\nThe settings `force_enabled` and `force_balanced_enabled` can be recommended to users. HTTPS-Only Mode will be set to Strict or Balanced initially, but users are allowed to change it.\r\n\r\nIf you set this policy to a value that isn't supported by the version of Microsoft Edge that receives the policy, Microsoft Edge defaults to the `allowed` setting.\r\n\r\nThe separate HttpAllowlist policy can be used to exempt specific hostnames or hostname patterns from being upgraded to HTTPS by this feature.\r\n\r\nPolicy options mapping:\r\n\r\n* allowed (allowed) = Don't restrict users' HTTPS-Only Mode setting\r\n\r\n* disallowed (disallowed) = Disable HTTPS-Only Mode\r\n\r\n* force_enabled (force_enabled) = Force enable HTTPS-Only Mode in Strict mode\r\n\r\n* force_balanced_enabled (force_balanced_enabled) = Force enable HTTPS-Only Mode in Balanced Mode\r\n\r\nUse the preceding information when configuring this policy.\r\n\r\nExample value: disallowed",
+    "keywords": [
+      "HttpsOnlyMode_recommended",
+      "Allow HTTPS-Only Mode to be enabled",
+      "\\Microsoft Edge - Default Settings (users can override)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge\\Recommended",
+      "Microsoft Edge - Default Settings (users can override)"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_office16v21~policy~l_microsoftofficesystem~l_miscellaneous437_l_ageoutpolicyincludingfilespendingupload",
+    "settingName": "Age out documents older than n days Including documents with pending uploads (User)",
+    "settingDescription": "\r\n          This policy controls when locally cached Office documents are aged out of the Office Document Cache including if the file may have pending uploads. This acts as a maximum possible age (in days) for any file to remain in the Office Document Cache.\r\n\r\n          If you enable this policy setting, files older than the policy \"Age out documents older than n days\" as well as this setting will get cleaned up regardless of file pending upload status.\r\n\r\n          If you disable this policy setting or if you do not configure this policy setting, Office will clean out only files that do not have pending changes per the policy \"Age out documents older than n days\". Configuring this policy with a value of 0 is also considered disabling the policy.\r\n\r\n          For more information https://support.microsoft.com/en-us/topic/managing-office-document-cache-size-ea64af72-b597-408e-8ecf-fd55daa02476\r\n\r\n          Note: This policy setting only applies to Office builds 19328.20000 and newer\r\n      ",
+    "keywords": [
+      "L_AgeOutPolicyIncludingFilesPendingUpload",
+      "Age out documents older than n days Including documents with pending uploads",
+      "\\Microsoft Office 2016\\Miscellaneous",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\common\\fileio",
+      "Miscellaneous"
+    ],
+    "categoryName": "Microsoft Office 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_office16v21~policy~l_microsoftofficesystem~l_miscellaneous437_l_ageoutpolicyincludingfilespendingupload_l_ageoutpolicyincludingfilespendinguploaddecimal",
+    "settingName": "Number of days (User)",
+    "settingDescription": "",
+    "keywords": [
+      "L_AgeOutPolicyIncludingFilesPendingUpload",
+      "Age out documents older than n days Including documents with pending uploads",
+      "\\Microsoft Office 2016\\Miscellaneous",
+      "Microsoft Office 2016\\Miscellaneous",
+      "Miscellaneous"
+    ],
+    "categoryName": "Microsoft Office 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_office16v21~policy~l_microsoftofficesystem~l_securitysettings_l_allowedcomaddins_l_allowedcomaddinslist",
+    "settingName": "Allowed COM/VSTO Add-ins: (User)",
+    "settingDescription": "",
+    "keywords": [
+      "L_AllowedCOMAddins",
+      "List of allowed COM/VSTO add-ins registered in HKCU",
+      "\\Microsoft Office 2016\\Security Settings",
+      "Microsoft Office 2016\\Security Settings",
+      "Security Settings"
+    ],
+    "categoryName": "Microsoft Office 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_outlk16v18~policy~l_microsoftofficeoutlook~l_outlookoptions~l_preferences~l_emailoptions~l_advancedemailoptions~l_whensendingamessagecategory_l_suggestnameswhilecompletingtoccandbccfields_l_suggestnameswhilecompletingtoccandbccfields",
+    "settingName": "Suggest names while completing To, Cc, and Bcc fields (User)",
+    "settingDescription": "",
+    "keywords": [
+      "L_SuggestnameswhilecompletingToCcandBccfields",
+      "Suggest names while completing To, Cc, and Bcc fields",
+      "\\Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "When sending a message"
+    ],
+    "categoryName": "Microsoft Outlook 2016"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autolaunchprotocolsfromorigins",
@@ -119502,7 +120030,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\save"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_addins_l_listofmanagedaddins_l_listofmanagedaddins2_key",
@@ -119515,7 +120043,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Add-ins",
       "Add-ins"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_audioandvideo_l_specifynumberofbitstosamplewhenrecording_l_bits",
@@ -119528,7 +120056,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Audio and Video",
       "Audio and Video"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_versionsandrecylebin_l_maximumnumberofonceperdayversionhistoryitemskept_l_maximumnumberofonceperdayversionhistoryitemskeptspinid",
@@ -119541,7 +120069,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Versions and Recyle Bin",
       "Versions and Recyle Bin"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_versionsandrecylebin_l_daysofhourlyversionsnottopruneafterdaysback",
@@ -119556,7 +120084,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\versions"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_pen_l_disablescratchout",
@@ -119572,7 +120100,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\pen",
       "disablescratchout"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_audioandvideo_l_specifynumberofchannelstorecord_l_channels12",
@@ -119585,7 +120113,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Audio and Video",
       "Audio and Video"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_editing_l_turnoffautocalculator",
@@ -119601,7 +120129,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\editing",
       "autocalculate"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_disableonenotescreenclippings",
@@ -119617,7 +120145,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\other",
       "disablescreenclippings"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_versionsandrecylebin_l_daysofallversions",
@@ -119632,7 +120160,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\versions"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_backup_l_automaticallybackupmynotebook_l_checktoenableautomaticbackup",
@@ -119645,7 +120173,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Backup",
       "Backup"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_addins_l_disableonenotecomapi",
@@ -119661,7 +120189,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\security",
       "disablecomapi"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_security~l_cryptography_l_specifycngsaltlength",
@@ -119676,7 +120204,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\security\\crypto"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_backup_l_automaticallybackupmynotebook_l_automaticallybackupatthisintervalmin",
@@ -119689,7 +120217,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Backup",
       "Backup"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_display_l_pagetabsappearontheleft_l_specifylocationofthepagetabcontrol",
@@ -119702,7 +120230,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Display",
       "Display"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_outlk16v11~policy~l_microsoftofficeoutlook~l_outlookoptions~l_mail~l_composemessages_l_specifymaxcertlengthallowedtostamp",
@@ -121859,8 +122387,8 @@
   },
   {
     "settingId": "device_vendor_msft_remoteremediation_cloudremediationsettings_networksettings_networkcredentials_networkpassword",
-    "settingName": "Network Password (Windows Insiders only) [Pending fix]",
-    "settingDescription": "Refers to the password for the wifi network that the device will attempt to connect to during remediation. If a password is set without a SSID, then this will be ignored.\r\n This setting is only available to Windows Insiders",
+    "settingName": "Network Password (Windows Insiders only)",
+    "settingDescription": "Get/Set the password for the wifi network that cloud remediation will attempt to connect during cloud remediation.\r\n This setting is only available to Windows Insiders",
     "keywords": [
       "Network Password",
       "Remote Remediation"
@@ -123054,8 +123582,8 @@
   },
   {
     "settingId": "device_vendor_msft_windowsbackupandrestore_enablewindowsrestore",
-    "settingName": "Enable Windows Restore (Windows Insiders only)",
-    "settingDescription": "Sets a policy to enable Windows Restore.\r\n This setting is only available to Windows Insiders",
+    "settingName": "Enable Windows Restore",
+    "settingDescription": "Sets a policy to enable Windows Restore.",
     "keywords": [
       "Enable Windows Restore",
       "Windows Backup And Restore"
@@ -124228,6 +124756,117 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_idledetectionallowedforurls",
+    "settingName": "Allow idle detection on these sites",
+    "settingDescription": "Allows you to specify a list of URL patterns for sites that are allowed to use the Idle Detection API.\r\n\r\nIf you do not configure this policy, the default behavior applies to all sites. The default behavior is determined by the DefaultIdleDetectionSetting policy, if configured, or by the user’s personal settings otherwise.\r\n\r\nOnly the origin of the URL is evaluated. Any path specified in a URL pattern is ignored. Wildcards, *, are supported. For detailed information about valid URL pattern formats, see https://go.microsoft.com/fwlink/?linkid=209532.\r\n\r\nURL patterns specified in the blocklist take precedence over this allowlist. This allowlist takes precedence over the DefaultIdleDetectionSetting policy.\r\n\r\nExample value:\r\n\r\nhttps://www.example.com\r\n[*.]example.edu",
+    "keywords": [
+      "IdleDetectionAllowedForUrls",
+      "Allow idle detection on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~contentsettings_idledetectionblockedforurls",
+    "settingName": "Block idle detection on these sites",
+    "settingDescription": "Allows you to specify a list of URL patterns for sites that are not allowed to use the Idle Detection API.\r\n\r\nOnly the origin of the URL is evaluated. Any path specified in a URL pattern is ignored. Wildcards, *, are supported.\r\n\r\nFor detailed information about valid URL pattern formats, see https://go.microsoft.com/fwlink/?linkid=2095322.\r\n\r\nIf you do not configure this policy, the default behavior applies to all sites. The default behavior is determined by the DefaultIdleDetectionSetting policy, if configured, or by the user’s personal settings otherwise.\r\n\r\nExample value:\r\n\r\nhttps://www.example.com\r\n[*.]example.edu",
+    "keywords": [
+      "IdleDetectionBlockedForUrls",
+      "Block idle detection on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_office16v21~policy~l_microsoftofficesystem~l_securitysettings_l_requirealwaysonmacrosig",
+    "settingName": "Require trusted publisher signatures for macros that are always loaded (User)",
+    "settingDescription": "This policy setting controls signature requirements for macros that are automatically loaded when Office applications start.\r\n\r\nMacros that are always loaded include VBA add-ins and templates that load automatically: Excel add-ins (xla/xlam), PowerPoint add-ins (ppa/ppam), Access add-ins (accda/mda), and Word templates (dot/dotm).\r\n\r\nIf you enable this policy setting:\r\n- Unsigned macros that are always loaded are silently disabled and don't load.\r\n- Signed but untrusted macros that are always loaded display a red Message Bar with no option for users to enable them for the current session.\r\n- Macros signed by a trusted publisher are allowed to always load.\r\n\r\nIf you disable or don't configure this policy setting, macros that are always on can load without requiring trusted publisher signatures.",
+    "keywords": [
+      "L_RequireAlwaysOnMacroSig",
+      "Require trusted publisher signatures for macros that are always loaded",
+      "\\Microsoft Office 2016\\Security Settings",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\common\\security",
+      "requirealwaysonmacrosig",
+      "Security Settings"
+    ],
+    "categoryName": "Microsoft Office 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_office16v21~policy~l_microsoftofficesystem~l_miscellaneous437_l_writingassistantadminchoiceadminchoice",
+    "settingName": "Enable Writing Assistant (User)",
+    "settingDescription": "This policy setting controls whether users can use the Writing Assistant feature.\r\n      \r\nIf you enable or don’t configure this policy setting, users will be allowed to use Writing Assistant and it will be enabled by default (unless the users disabled it).\r\n\r\nIf you disable this policy setting, users won't see Writing Assistant by default.\r\n\r\nNote: This policy setting only applies to subscription versions of Office, such as Microsoft 365 Apps for Enterprise.\r\n      ",
+    "keywords": [
+      "L_WritingAssistantAdminChoiceAdminChoice",
+      "Enable Writing Assistant",
+      "\\Microsoft Office 2016\\Miscellaneous",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\common\\general",
+      "writingassistantadminchoice",
+      "Miscellaneous"
+    ],
+    "categoryName": "Microsoft Office 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_outlk16v18~policy~l_microsoftofficeoutlook~l_outlookoptions~l_preferences~l_emailoptions~l_advancedemailoptions~l_whensendingamessagecategory_l_automaticnamechecking_l_automaticnamechecking",
+    "settingName": "Automatic name checking (User)",
+    "settingDescription": "",
+    "keywords": [
+      "L_Automaticnamechecking",
+      "Automatic name checking",
+      "\\Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "When sending a message"
+    ],
+    "categoryName": "Microsoft Outlook 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_outlk16v18~policy~l_microsoftofficeoutlook~l_outlookoptions~l_preferences~l_emailoptions~l_advancedemailoptions~l_whensendingamessagecategory_l_suggestnameswhilecompletingtoccandbccfields",
+    "settingName": "Suggest names while completing To, Cc, and Bcc fields (User)",
+    "settingDescription": "Sets the value for the corresponding UI option.",
+    "keywords": [
+      "L_SuggestnameswhilecompletingToCcandBccfields",
+      "Suggest names while completing To, Cc, and Bcc fields",
+      "\\Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\outlook\\preferences",
+      "When sending a message"
+    ],
+    "categoryName": "Microsoft Outlook 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_outlk16v18~policy~l_microsoftofficeoutlook~l_outlookoptions~l_preferences~l_emailoptions~l_advancedemailoptions~l_whensendingamessagecategory_l_setsensitivity_l_setsensitivity",
+    "settingName": "Set sensitivity: (User)",
+    "settingDescription": "",
+    "keywords": [
+      "L_Setsensitivity",
+      "Set sensitivity",
+      "\\Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "When sending a message"
+    ],
+    "categoryName": "Microsoft Outlook 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_outlk16v18~policy~l_microsoftofficeoutlook~l_outlookoptions~l_preferences~l_emailoptions~l_advancedemailoptions~l_whensendingamessagecategory_l_allowcommasasaddressseparator_l_allowcommasasaddressseparator",
+    "settingName": "Allow commas as address separator (User)",
+    "settingDescription": "",
+    "keywords": [
+      "L_Allowcommasasaddressseparator",
+      "Allow commas as address separator",
+      "\\Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "When sending a message"
+    ],
+    "categoryName": "Microsoft Outlook 2016"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchprovidersearchurl",
@@ -143903,7 +144542,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Add-ins",
       "Add-ins"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_noteflags_l_showdimmedtaggednotesinthetagssummarytaskpane",
@@ -143919,7 +144558,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\other",
       "showinactivenoteflag"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_security~l_cryptography_l_specifycnghashalgorithm_l_specifycnghashalgorithmdropid",
@@ -143932,7 +144571,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Security\\Cryptography",
       "Cryptography"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_security~l_cryptography_l_specifyencryptioncompatibility",
@@ -143947,7 +144586,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\security\\crypto"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_security~l_cryptography_l_setcngpasswordspincount_l_setcngpasswordspincountspinid",
@@ -143960,7 +144599,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Security\\Cryptography",
       "Cryptography"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_disableocr",
@@ -143976,7 +144615,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\other",
       "disableocr"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_audioandvideo_l_rewindfromstartofparagraphbythefollowingnumberofseconds_l_rewindfromstartofparagraphbysec",
@@ -143989,7 +144628,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Audio and Video",
       "Audio and Video"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_loadanotebookonfirstboot",
@@ -144004,7 +144643,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\other"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_audioandvideo_l_choosedefaultcodectobeusedforvideonotebook_l_choosethewindowsmediavideo8codec",
@@ -144017,7 +144656,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Audio and Video",
       "Audio and Video"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_save_l_enableabilitytooptimizeonenotefiles_l_optimizeonenotefilesatthisintervalmin",
@@ -144030,7 +144669,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Save",
       "Save"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_addins_l_listofmanagedaddins",
@@ -144045,7 +144684,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\resiliency\\addinlist"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_save_l_locationofunfilednotessection_l_opensidenotesinthissection",
@@ -144058,7 +144697,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Save",
       "Save"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_backup_l_numberofbackupcopiestokeep_l_numberofbackupcopiestokeep2",
@@ -144071,7 +144710,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Backup",
       "Backup"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_spelling_l_onenotespellingoptions",
@@ -144086,7 +144725,7 @@
       "User",
       "software\\policies\\microsoft\\shared tools\\proofing tools\\1.0\\office"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_save_l_enableabilitytooptimizeonenotefiles_l_checktoenableabilitytooptimizeonenotefiles",
@@ -144099,7 +144738,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Save",
       "Save"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_editing_l_defaultfontsize_l_fontsize",
@@ -144112,7 +144751,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Editing",
       "Editing"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_email_l_usethissignatureforonenoteemail_l_entersignaturetouseforonenoteemail",
@@ -144125,7 +144764,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\E-mail",
       "E-mail"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v3~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_sharepointpresenceintervalmultiplier",
@@ -144140,7 +144779,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\save"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_outlk16v15~policy~l_microsoftofficeoutlook~l_outlookoptions~l_preferences~l_emailoptions_l_mailtipsbardisplayoption",
@@ -146731,7 +147370,7 @@
   {
     "settingId": "device_vendor_msft_remoteremediation_cloudremediationsettings_autoremediationsettings_settimetoreboot",
     "settingName": "Set Time To Reboot (Windows Insiders only)",
-    "settingDescription": "Refers to the time in minutes that a device will spend in the recovery environment before attempting to reboot. The maximum time to reboot possible is 72 hours, should be greater than or equal to the retry interval, and only takes effect if auto remediation is on. Otherwise an invalid argument error will be returned and no changes will be made.\r\n This setting is only available to Windows Insiders",
+    "settingDescription": "Get/set the time to reboot (in minutes) during auto cloud remediation. The maximum time to reboot possible is 72 hours. \"SetTimeToReboot\" is dependent on \"EnableAutoRemediation\" and only takes effect if \"EnableAutoRemediation\" is set to true. Otherwise an invalid argument error will be returned and no changes will be made.\r\n This setting is only available to Windows Insiders",
     "keywords": [
       "Set Time To Reboot",
       "Remote Remediation"
@@ -146740,8 +147379,8 @@
   },
   {
     "settingId": "device_vendor_msft_remoteremediation_cloudremediationsettings_networksettings_networkcredentials_networkssid",
-    "settingName": "Network SSID (Windows Insiders only) [Pending fix]",
-    "settingDescription": "Refers to the wifi network SSID that the device will attempt to automatically connect to during remediation.\r\n This setting is only available to Windows Insiders",
+    "settingName": "Network SSID (Windows Insiders only)",
+    "settingDescription": "Get/Set the network SSID that cloud remediation will attempt to connect to during remediation.\r\n This setting is only available to Windows Insiders",
     "keywords": [
       "Network SSID",
       "Remote Remediation"
@@ -148620,22 +149259,103 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.precisegeolocationallowedforurls",
-    "settingName": "Allow precise geolocation on these sites",
-    "settingDescription": "This policy lets you specify a list of URL patterns for sites that are allowed to access the user's high-accuracy geolocation without prompting for permission.\n\nIf you leave this policy unset, DefaultGeolocationSetting applies to all sites (if configured). Otherwise, the user's personal setting is used.\n\nFor information about valid url patterns, see https://learn.microsoft.com/deployedge/edge-learnmmore-url-list-filter%20format. Wildcards (*) are supported.",
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~passwordmanager_passwordmanagerpasskeysenabled",
+    "settingName": "Enable saving passkeys to the password manager",
+    "settingDescription": "This policy controls whether users can save passkeys in the built-in password manager. It does not limit access to, or change the contents of, passkeys already saved in the password manager.\r\n\r\nIf the PasswordManagerEnabled policy is Disabled, saving to the built-in password manager is disabled in general, including passkeys. In this case, this policy has no effect.\r\n\r\nIf this policy is enabled or not configured, users can save passkeys in the built-in password manager when signed in to Microsoft Edge.\r\n\r\nIf this policy is disabled, users cannot save new passkeys to the built-in password manager. Previously saved passkeys continue to work.",
     "keywords": [
-      "Content settings"
+      "PasswordManagerPasskeysEnabled",
+      "Enable saving passkeys to the password manager",
+      "\\Microsoft Edge\\Password manager and protection",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Password manager and protection"
     ],
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.whatsnewpageforentraprofilesenabled",
-    "settingName": "Control whether an informational webpage for Edge for Business is shown in the new tab after major browser updates",
-    "settingDescription": "Starting in Microsoft Edge version 145, users with Microsoft Entra ID profiles will see an informational page about new Edge for Business features after major browser updates. This page highlights recent enhancements designed to promote secure and productive browsing.\n\nThis policy controls whether users with Microsoft Entra ID profiles see this informational page. This policy applies only to Microsoft Entra ID profiles and does not apply to Microsoft account (MSA) profiles.\n\nThis policy is available starting in Microsoft Edge version 144 to allow configuration ahead of the changes introduced in version 145.\n\nIf you enable this policy or do not configure it, Microsoft Edge shows the informational page by default.\nIf you disable this policy, Microsoft Edge does not show the informational page to users.",
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_webappinstallbyuserenabled",
+    "settingName": "Enable User Web App Install From Browser (User)",
+    "settingDescription": "This policy controls whether users can install web apps through Microsoft Edge.\r\nIf you enable or don’t configure this policy, users can install web apps through the browser.\r\nIf you disable this policy, users can’t install web apps through the browser, and the \"apps\" data type is excluded from synchronization.\r\nThis policy doesn't support dynamic refresh. Changes to this policy, whether enabled, disabled, or not configured, take effect only after the browser is restarted.\r\nThis policy doesn't affect the 'WebAppInstallForceList' policy. Web apps specified by that policy are installed regardless of this policy setting.",
     "keywords": [
-      "Uncategorized"
+      "WebAppInstallByUserEnabled",
+      "Enable User Web App Install From Browser",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~identity_editprofileenabled",
+    "settingName": "Enable editing profile in settings",
+    "settingDescription": "This policy controls whether users can modify profile properties (such as profile avatar) from the profile settings page.\r\n\r\nIf you enable or don't configure this policy, users can edit profile properties. The edit button is available on the profile settings page.\r\n\r\nIf you disable this policy, users can't edit profile properties. The edit button is disabled on the profile settings page.",
+    "keywords": [
+      "EditProfileEnabled",
+      "Enable editing profile in settings",
+      "\\Microsoft Edge\\Identity and sign-in",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Identity and sign-in"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_office16v21~policy~l_microsoftofficesystem~l_securitysettings_l_blockmotwmacrointrustedorsigned",
+    "settingName": "Block all internet macros (ignore trusted locations or publishers) (User)",
+    "settingDescription": "This policy setting removes the trusted location and trusted publisher exceptions for files downloaded from the internet with Mark of the Web (MOTW).\r\n\r\nBy default, Office blocks macros from the internet but allows exceptions for files that are either in trusted locations or signed by trusted publishers.\r\n\r\nIf you enable this policy setting, all macros in files downloaded from the internet will be blocked, including those in trusted locations or signed by trusted publishers. This provides maximum protection against internet-based macro threats.\r\n\r\nIf you disable or don't configure this policy setting, the default behavior applies where macros from the internet are blocked except when the file is in a trusted location or signed by a trusted publisher.",
+    "keywords": [
+      "L_BlockMOTWMacroInTrustedOrSigned",
+      "Block all internet macros (ignore trusted locations or publishers)",
+      "\\Microsoft Office 2016\\Security Settings",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\common\\security",
+      "blockmotwmacrointrustedorsigned",
+      "Security Settings"
+    ],
+    "categoryName": "Microsoft Office 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_office16v21~policy~l_microsoftofficesystem~l_securitysettings_l_blockvbamacrotrusteddocument",
+    "settingName": "Turn off Trusted Documents for VBA macros (User)",
+    "settingDescription": "This policy setting allows you to turn off the Trusted Documents feature for documents containing VBA macros.\r\n\r\nIf you enable this policy setting, users will always see security notifications for VBA macros in documents. When users click \"Enable Content\" for VBA macros, Office will not create a trust record for the document, ensuring that the user is prompted every time they open the document.\r\n\r\nIf you disable or don't configure this policy setting, the Trusted Documents feature allows users to always allow VBA macros in a document so that the user is not prompted the next time they open that document. Trusted documents are exempt from security notifications.\r\n\r\nNote: Enabling this policy setting does not clear existing trusted documents that were previously trusted.",
+    "keywords": [
+      "L_BlockVBAMacroTrustedDocument",
+      "Turn off Trusted Documents for VBA macros",
+      "\\Microsoft Office 2016\\Security Settings",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\common\\security",
+      "blockvbamacrotrusteddocument",
+      "Security Settings"
+    ],
+    "categoryName": "Microsoft Office 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_outlk16v18~policy~l_microsoftofficeoutlook~l_outlookoptions~l_preferences~l_emailoptions~l_advancedemailoptions~l_whensendingamessagecategory_l_allowcommasasaddressseparator",
+    "settingName": "Allow commas as address separator (User)",
+    "settingDescription": "Sets the value for the corresponding UI option.",
+    "keywords": [
+      "L_Allowcommasasaddressseparator",
+      "Allow commas as address separator",
+      "\\Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\outlook\\preferences",
+      "When sending a message"
+    ],
+    "categoryName": "Microsoft Outlook 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_outlk16v18~policy~l_microsoftofficeoutlook~l_outlookoptions~l_preferences~l_emailoptions~l_advancedemailoptions~l_whensendingamessagecategory_l_messagesexpireafterdays_l_messagesexpireafterdays",
+    "settingName": "Messages expire after (days): (User)",
+    "settingDescription": "",
+    "keywords": [
+      "L_Messagesexpireafterdays",
+      "Messages expire after (days)",
+      "\\Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "Microsoft Outlook 2016\\Outlook Options\\Preferences\\E-mail Options\\Advanced E-mail Options\\When sending a message",
+      "When sending a message"
+    ],
+    "categoryName": "Microsoft Outlook 2016"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.extensioninstalltypeblocklist",
@@ -148679,6 +149399,15 @@
     "settingDescription": "Specifies whether WebAssembly modules can be sent to another window or worker cross-origin. Cross-origin WebAssembly module sharing was deprecated as part of the efforts to deprecate document.domain, see https://github.com/mikewest/deprecating-document-domain. This policy allowed re-enabling of cross-origin WebAssembly module sharing. This policy is obsolete because it was intended to offer a longer transition period in the deprecation process.\n\nIf you enable this policy, sites can send WebAssembly modules cross-origin\nwithout restrictions.\n\nIf you disable or don't configure this policy, sites can only send\nWebAssembly modules to windows and workers in the same origin.",
     "keywords": [
       "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.precisegeolocationallowedforurls",
+    "settingName": "Allow precise geolocation on these sites",
+    "settingDescription": "This policy lets you specify a list of URL patterns for sites that are allowed to access the user's high-accuracy geolocation without prompting for permission.\n\nIf you leave this policy unset, DefaultGeolocationSetting applies to all sites (if configured). Otherwise, the user's personal setting is used.\n\nFor information about valid url patterns, see https://learn.microsoft.com/deployedge/edge-learnmmore-url-list-filter%20format. Wildcards (*) are supported.",
+    "keywords": [
+      "Content settings"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -148958,6 +149687,15 @@
     "settingDescription": "The performance detector detects tab performance issues and recommends actions to fix the performance issues.\n\nIf you enable or don't configure this policy, performance detector is turned on.\n\nIf you disable this policy, performance detector is turned off.\n\nThe user can configure its behavior in edge://settings/system.\n\nLearn more about performance detector: https://aka.ms/EdgePerformanceDetector",
     "keywords": [
       "Performance"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.whatsnewpageforentraprofilesenabled",
+    "settingName": "Control whether an informational webpage for Edge for Business is shown in the new tab after major browser updates",
+    "settingDescription": "Starting in Microsoft Edge version 145, users with Microsoft Entra ID profiles will see an informational page about new Edge for Business features after major browser updates. This page highlights recent enhancements designed to promote secure and productive browsing.\n\nThis policy controls whether users with Microsoft Entra ID profiles see this informational page. This policy applies only to Microsoft Entra ID profiles and does not apply to Microsoft account (MSA) profiles.\n\nThis policy is available starting in Microsoft Edge version 144 to allow configuration ahead of the changes introduced in version 145.\n\nIf you enable this policy or do not configure it, Microsoft Edge shows the informational page by default.\nIf you disable this policy, Microsoft Edge does not show the informational page to users.",
+    "keywords": [
+      "Uncategorized"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -170159,7 +170897,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\other"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_versionsandrecylebin_l_daysofallversions_l_daysofallversionsspinid",
@@ -170172,7 +170910,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Versions and Recyle Bin",
       "Versions and Recyle Bin"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_versionsandrecylebin_l_daysbacktokeepitemsinrecyclebin",
@@ -170187,7 +170925,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\versions"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_disableonenotescreenclippingnotifications",
@@ -170203,7 +170941,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\other",
       "disablescreenclippingballoon"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_pen_l_automaticallyswitchbetweenpenandselectiontool",
@@ -170219,7 +170957,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\pen",
       "automodeswitch"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_embeddedfilesblockedextensions_l_empty12",
@@ -170232,7 +170970,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Other",
       "Other"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_addonenoteicontonotificationarea",
@@ -170248,7 +170986,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\other",
       "runsystemtrayapp"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_security~l_cryptography_l_setcngcipherkeylength_l_setcngcipherkeylengthspinid",
@@ -170261,7 +170999,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Security\\Cryptography",
       "Cryptography"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_noteflags_l_copyitemswhenmovingthem",
@@ -170277,7 +171015,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\other",
       "duplicatenoteflag"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_versionsandrecylebin_l_turnoffversionsandnotebookrecyclebininsharednotebooks",
@@ -170293,7 +171031,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\versions",
       "enablehistory"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_editing_l_defaultfontname_l_font",
@@ -170306,7 +171044,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Editing",
       "Editing"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_defaultunitofmeasurementusedinonenote_l_specifydefaultunitofmeasurement",
@@ -170319,7 +171057,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Other",
       "Other"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_display_l_navigationbarappearsontheright",
@@ -170335,7 +171073,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\other",
       "navbaronleft"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_save_l_notebookroot_l_empty1",
@@ -170348,7 +171086,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Save",
       "Save"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_password_l_disablepasswordprotectedsections",
@@ -170364,7 +171102,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\general",
       "passwordprotectiondisabled"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_display_l_pagetabsappearontheleft",
@@ -170379,7 +171117,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\other"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_editing_l_defaultfontname",
@@ -170394,7 +171132,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\editing"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_security~l_cryptography_l_setcngpasswordspincount",
@@ -170409,7 +171147,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\security\\crypto"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_email_l_addsignaturetoonenoteemailmessages",
@@ -170425,7 +171163,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\other",
       "emailsignature"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_loadanotebookonfirstboot_l_empty13",
@@ -170438,7 +171176,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Other",
       "Other"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "osrecoverysettings_formatdisk",
@@ -174660,22 +175398,75 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.geolocationblockedforurls",
-    "settingName": "Block geolocation on these sites",
-    "settingDescription": "Use this policy to define a list of URL patterns for sites that are blocked from accessing the user's geolocation. These sites also can't prompt the user for location permissions.\n\nIf you enable this policy, the list you provide determines which sites are blocked from requesting or accessing geolocation.\n\nIf you disable or don't configure this policy, DefaultGeolocationSetting applies to all sites, if configured. If it's not configured, the user’s personal browser setting is used.\n\nFor detailed information on valid url patterns, see the documentation on pattern formats: https://learn.microsoft.com/deployedge/edge-learnmmore-url-list-filter%20format.",
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge~passwordmanager_passwordmanagerpasskeysenabled",
+    "settingName": "Enable saving passkeys to the password manager (User)",
+    "settingDescription": "This policy controls whether users can save passkeys in the built-in password manager. It does not limit access to, or change the contents of, passkeys already saved in the password manager.\r\n\r\nIf the PasswordManagerEnabled policy is Disabled, saving to the built-in password manager is disabled in general, including passkeys. In this case, this policy has no effect.\r\n\r\nIf this policy is enabled or not configured, users can save passkeys in the built-in password manager when signed in to Microsoft Edge.\r\n\r\nIf this policy is disabled, users cannot save new passkeys to the built-in password manager. Previously saved passkeys continue to work.",
     "keywords": [
-      "Content settings"
+      "PasswordManagerPasskeysEnabled",
+      "Enable saving passkeys to the password manager",
+      "\\Microsoft Edge\\Password manager and protection",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Password manager and protection"
     ],
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.sharebrowsinghistorywithcopilotsearchallowed",
-    "settingName": "Allow sharing tenant-approved browsing history with Microsoft 365 Copilot Search",
-    "settingDescription": "This policy controls whether browsing history in Microsoft Edge is shared with Microsoft 365 Copilot Search to provide more relevant search results. Only tenant-approved, work-related sites are shared.\n\nThis feature is available only to users who are signed in to Microsoft Edge with an Entra ID account and have an eligible Microsoft 365 Copilot license.\n\nIf you enable or don't configure this policy, browsing history will be shared with Microsoft 365 Copilot Search by default, and users can turn off sharing using the toggle in Microsoft Edge settings.\n\nIf you disable this policy, browsing history won't be shared with Microsoft 365 Copilot Search.\n\nLearn more about how Copilot uses data and consent at <a href=\"https://go.microsoft.com/fwlink/?linkid=2333202\">https://go.microsoft.com/fwlink/?linkid=2333202</a>",
+    "settingId": "user_vendor_msft_policy_config_office16v21~policy~l_microsoftofficesystem~l_securitysettings_l_vbadigsigchaintrustedpublishers",
+    "settingName": "Allow root or intermediate certificates as VBA trusted publishers (User)",
+    "settingDescription": "This policy setting controls whether root and intermediate certificates can be added as trusted publishers for VBA macro validation when the VBA Macro Notification Settings policy is set to \"Disable all except digitally signed macros\".\r\n\r\nIf you enable this policy setting, administrators can add root or intermediate certificates to the trusted publishers store. VBA macros signed by any certificate that chains to these trusted root or intermediate certificates will be considered as signed by a trusted publisher and allowed to run.\r\n\r\nIf you disable or don't configure this policy setting, only end (leaf) certificates can be added as trusted publishers.\r\n\r\nNote: This policy setting only takes effect when the VBA Macro Notification Settings policy is set to \"Disable all except digitally signed macros\".",
     "keywords": [
-      "Uncategorized"
+      "L_VBADigSigChainTrustedPublishers",
+      "Allow root or intermediate certificates as VBA trusted publishers",
+      "\\Microsoft Office 2016\\Security Settings",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\common\\security",
+      "vbadigsigchaintrustedpublishers",
+      "Security Settings"
     ],
-    "categoryName": "Microsoft Edge"
+    "categoryName": "Microsoft Office 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_office16v21~policy~l_microsoftofficesystem~l_securitysettings_l_enablemacrotrustlevel",
+    "settingName": "Enable macro trust levels (User)",
+    "settingDescription": "This policy setting controls whether macro trust levels are enabled, which classifies VBA macros into four security levels based on file location and digital signature status.\r\n\r\nIf you enable this policy setting, VBA macros will be classified into the following trust levels with corresponding user experiences:\r\n\r\n- Lowest (Most Trusted): Files signed by a trusted publisher, saved to a trusted location, or unsaved files.\r\n      - User Experience: No Message Bar displayed, macros load normally.\r\n\r\n- Lower: Files opened from a connected personal or business OneDrive account, connected SharePoint location, or local OneDrive folders.\r\n      - User Experience: Yellow Message Bar with Enable Content option.\r\n\r\n- Moderate: Files opened from intranet locations, or signed with an extended validation (EV) certificate but not by a trusted publisher.\r\n      - User Experience: Yellow Message Bar with a Learn More option. This encourages security awareness by requiring additional steps before enabling macros.\r\n\r\n- Highest (Least Trusted): All other files.\r\n      - User Experience: Red Message Bar with macros blocked.\r\n\r\nWhen enabled, unsaved files containing macros will display a warning dialog when users attempt to save the file to local disk, informing them that saving locally may block macro execution when the file is reopened.\r\n\r\nIf you disable or don't configure this policy setting, macro trust levels are not enabled and the standard macro security behavior applies.",
+    "keywords": [
+      "L_EnableMacroTrustLevel",
+      "Enable macro trust levels",
+      "\\Microsoft Office 2016\\Security Settings",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\common\\security",
+      "enablemacrotrustlevel",
+      "Security Settings"
+    ],
+    "categoryName": "Microsoft Office 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_onent16v8~policy~l_microsoftofficeonenote~l_disableitemsinuserinterface~l_custom_l_disablecommandbarbuttonsandmenuitems290",
+    "settingName": "Disable commands (User)",
+    "settingDescription": "This policy setting allows you to disable any command bar button and menu item with a command bar ID, including command bar buttons and menu items that are not in the predefined lists.\r\n\r\nIf you enable this policy setting, you can enter an ID number to disable a specific command bar button or menu item.  The ID number needs to be in decimal (not hexadecimal).  Multiple values should be separated by commas.\r\n\r\nIf you disable or do not configure this policy setting, all default command bar buttons or menu items are available to users.",
+    "keywords": [
+      "L_disablecommandbarbuttonsandmenuitems290",
+      "Disable commands",
+      "\\Microsoft OneNote 2016\\Disable Items in User Interface\\Custom",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\onenote\\disabledcmdbaritemslist",
+      "Custom"
+    ],
+    "categoryName": "Microsoft One Note 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_onent16v8~policy~l_microsoftofficeonenote~l_disableitemsinuserinterface~l_custom_l_disablecommandbarbuttonsandmenuitems290_l_enteracommandbaridtodisable",
+    "settingName": "Enter a command bar ID to disable (User)",
+    "settingDescription": "",
+    "keywords": [
+      "L_disablecommandbarbuttonsandmenuitems290",
+      "Disable commands",
+      "\\Microsoft OneNote 2016\\Disable Items in User Interface\\Custom",
+      "Microsoft OneNote 2016\\Disable Items in User Interface\\Custom",
+      "Custom"
+    ],
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.adssettingforintrusiveadssites",
@@ -174957,6 +175748,15 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.geolocationblockedforurls",
+    "settingName": "Block geolocation on these sites",
+    "settingDescription": "Use this policy to define a list of URL patterns for sites that are blocked from accessing the user's geolocation. These sites also can't prompt the user for location permissions.\n\nIf you enable this policy, the list you provide determines which sites are blocked from requesting or accessing geolocation.\n\nIf you disable or don't configure this policy, DefaultGeolocationSetting applies to all sites, if configured. If it's not configured, the user’s personal browser setting is used.\n\nFor detailed information on valid url patterns, see the documentation on pattern formats: https://learn.microsoft.com/deployedge/edge-learnmmore-url-list-filter%20format.",
+    "keywords": [
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.signedhttpexchangeenabled",
     "settingName": "Enable Signed HTTP Exchange (SXG) support",
     "settingDescription": "Enable support for Signed HTTP Exchange (SXG).\n\nIf this policy isn't set or enabled, Microsoft Edge will accept web contents served as Signed HTTP Exchanges.\n\nIf this policy is set to disabled, Signed HTTP Exchanges can't be loaded.",
@@ -174969,6 +175769,15 @@
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.exemptdomainfiletypepairsfromfiletypedownloadwarnings",
     "settingName": "Disable download file type extension-based warnings for specified file types on domains (Obsolete)",
     "settingDescription": "This policy has been obsoleted in favor of \"ExemptFileTypeDownloadWarnings\" because of a type mismatch that caused errors in Mac.\n\nYou can enable this policy to create a dictionary of file type extensions with a corresponding list of domains that will be exempted from file type extension-based download warnings. This lets enterprise administrators block file type extension-based download warnings for files that are associated with a listed domain. For example, if  the \"jnlp\" extension is associated with \"website1.com\", users would not see a warning when downloading \"jnlp\" files from \"website1.com\", but see a download warning when downloading \"jnlp\" files from \"website2.com\".\n\nFiles with file type extensions specified for domains identified by this policy will still be subject to non-file type extension-based security warnings such as mixed-content download warnings and Microsoft Defender SmartScreen warnings.\n\nIf you disable this policy or don't configure it, file types that trigger extension-based download warnings will show warnings to the user.\n\nIf you enable this policy:\n\n* The URL pattern should be formatted according to <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n* The file type extension entered must be in lower-cased ASCII. The leading separator should not be included when listing the file type extension, so list \"jnlp\" should be used instead of \".jnlp\".\n\nExample:\n\nThe following example value would prevent file type extension-based download warnings on swf, exe, and jnlp extensions for *.contoso.com domains. It will show the user a file type extension-based download warning on any other domain for exe and jnlp files, but not for swf files.\n\n[\n  { \"file_extension\": \"jnlp\", \"domains\": [\"contoso.com\"] },\n  { \"file_extension\": \"exe\", \"domains\": [\"contoso.com\"] },\n  { \"file_extension\": \"swf\", \"domains\": [\"*\"] }\n]\n\nNote that while the preceding example shows the suppression of file type extension-based download warnings for \"swf\" files for all domains, applying suppression of such warnings for all domains for any dangerous file type extension is not recommended due to security concerns. It is shown in the example merely to demonstrate the ability to do so.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.sharebrowsinghistorywithcopilotsearchallowed",
+    "settingName": "Allow sharing tenant-approved browsing history with Microsoft 365 Copilot Search",
+    "settingDescription": "This policy controls whether browsing history in Microsoft Edge is shared with Microsoft 365 Copilot Search to provide more relevant search results. Only tenant-approved, work-related sites are shared.\n\nThis feature is available only to users who are signed in to Microsoft Edge with an Entra ID account and have an eligible Microsoft 365 Copilot license.\n\nIf you enable or don't configure this policy, browsing history will be shared with Microsoft 365 Copilot Search by default, and users can turn off sharing using the toggle in Microsoft Edge settings.\n\nIf you disable this policy, browsing history won't be shared with Microsoft 365 Copilot Search.\n\nLearn more about how Copilot uses data and consent at <a href=\"https://go.microsoft.com/fwlink/?linkid=2333202\">https://go.microsoft.com/fwlink/?linkid=2333202</a>",
     "keywords": [
       "Uncategorized"
     ],
@@ -195376,7 +196185,7 @@
       "Microsoft OneNote 2016\\OneNote Options\\Other",
       "Other"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_audioandvideo_l_rewindfromstartofparagraphbythefollowingnumberofseconds",
@@ -195391,7 +196200,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\audio"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_email_l_attachembeddedfilestotheemail",
@@ -195407,7 +196216,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options",
       "email embedded files"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_editing_l_autokeyboardswitching",
@@ -195423,7 +196232,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\language",
       "autokeyboard"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_display_l_verticalscrollbarappearsonleft",
@@ -195439,7 +196248,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\other",
       "vertscrollbaronleft"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_security~l_cryptography_l_specifycngrandomnumbergeneratoralgorithm",
@@ -195454,7 +196263,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\security\\crypto"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_editing_l_showpasteoptionsbuttons",
@@ -195470,7 +196279,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\other",
       "pasteooui"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_security~l_cryptography_l_setparametersforcngcontext",
@@ -195485,7 +196294,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\security\\crypto"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v2~policy~l_microsoftofficeonenote~l_onenoteoptions~l_save_l_notebookroot",
@@ -195500,7 +196309,7 @@
       "User",
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\save"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_onent16v6~policy~l_microsoftofficeonenote~l_onenoteoptions~l_other_l_turnoffnewstickynotesinonenote",
@@ -195516,7 +196325,7 @@
       "software\\policies\\microsoft\\office\\16.0\\onenote\\options\\other",
       "msoridonenotedisablememorywindow"
     ],
-    "categoryName": "OneNote Options"
+    "categoryName": "Microsoft One Note 2016"
   },
   {
     "settingId": "user_vendor_msft_policy_config_outlk16~policy~l_microsoftofficeoutlook~l_outlookoptions~l_other_l_disablepreviewplace",
@@ -197876,7 +198685,7 @@
   {
     "settingId": "device_vendor_msft_remoteremediation_cloudremediationsettings_autoremediationsettings_enableautoremediation",
     "settingName": "Enable Auto Remediation (Windows Insiders only)",
-    "settingDescription": "Enable to automatically check for remediation solutions. Disable to check manually.\r\n This setting is only available to Windows Insiders",
+    "settingDescription": "Enable or disable auto remediation.\r\n This setting is only available to Windows Insiders",
     "keywords": [
       "Enable Auto Remediation",
       "Remote Remediation"

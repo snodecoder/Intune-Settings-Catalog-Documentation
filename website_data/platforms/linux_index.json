@@ -678,6 +678,24 @@
     "categoryName": "Microsoft Defender"
   },
   {
+    "settingId": "com.apple.managedclient.preferences_offlinedefinitionupdateurl",
+    "settingName": "URL for a security intelligence updates mirror server",
+    "settingDescription": "Sets the URL for a local offline security intelligence updates mirror server. When the feature is enabled Defender will use it to update the signatures.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_offlinedefinitionupdate",
+    "settingName": "Enable offline security intelligence updates",
+    "settingDescription": "Enables or disables offline security intelligence updates feature. When this feature is enabled Defender will use a local mirror server to update the signatures.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
     "settingId": "com.apple.managedclient.preferences_disablednsovertcpparsing",
     "settingName": "Disable DNS over TCP parsing",
     "settingDescription": "Disables parsing of DNS over TCP",
