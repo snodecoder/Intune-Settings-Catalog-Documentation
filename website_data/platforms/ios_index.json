@@ -1,5 +1,68 @@
 [
   {
+    "settingId": "sirisettings_enabled",
+    "settingName": "Enabled",
+    "settingDescription": "If `false`, disables Siri.",
+    "keywords": [
+      "Siri Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "sirisettings_sirisettings",
+    "settingName": "com.apple.configuration.siri.settings",
+    "settingDescription": "Synthetic Top Level Setting Group Collection",
+    "keywords": [
+      "Siri Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "intelligencesettings_allowpersonalizedhandwritingresults",
+    "settingName": "Allow Personalized Handwriting Results",
+    "settingDescription": "If `false`, disables Personalized Handwriting Results.",
+    "keywords": [
+      "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "intelligencesettings_apps",
+    "settingName": "Apps",
+    "settingDescription": "If present, configures app-specific Intelligence features.",
+    "keywords": [
+      "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "intelligencesettings_apps_mail",
+    "settingName": "Mail",
+    "settingDescription": "If present, configures Mail Intelligence features.",
+    "keywords": [
+      "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "intelligencesettings_forceondeviceonlytranslation",
+    "settingName": "Force On Device Only Translation",
+    "settingDescription": "If `true`, forces On-Device Only Translation.",
+    "keywords": [
+      "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "keyboardsettings_keyboardsettings",
+    "settingName": "com.apple.configuration.keyboard.settings",
+    "settingDescription": "Synthetic Top Level Setting Group Collection",
+    "keywords": [
+      "Keyboard Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_state",
     "settingName": "State",
     "settingDescription": "Controls whether an extension is allowed.\n* Allowed - The user is allowed to turn the extension on or off\n* AlwaysOn - The extension will always be on\n* AlwaysOff - The extension will always be off",
@@ -681,7 +744,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.internetexplorerintegrationsitelistrefreshinterval",
     "settingName": "Configure how frequently the Enterprise Mode Site List is refreshed",
-    "settingDescription": "This setting lets you specify a custom refresh interval for the Enterprise Mode Site List. The refresh interval is specified in minutes. The minimum refresh interval is 30 minutes.\n\nThis setting is applicable only when the \"InternetExplorerIntegrationSiteList\" or \"InternetExplorerIntegrationCloudSiteList\" setting is configured.\n\nIf you configure this policy, Microsoft Edge will attempt to retrieve an updated version of the configured Enterprise Mode Site List using the specified refresh interval.\n\nIf you disable or don't configure this policy, Microsoft Edge will use a default refresh interval, it is 10080 minutes (7 days) starting from version 110 or later, 120 minutes from version 93 to 110, and 30 minutes before version 93.",
+    "settingDescription": "This setting lets you specify a custom refresh interval for the Enterprise Mode Site List. The refresh interval is specified in minutes. The minimum refresh interval is 30 minutes.\n\nThis setting is applicable only when the \"InternetExplorerIntegrationSiteList\" or \"InternetExplorerIntegrationCloudSiteList\" setting is configured.\n\nIf you configure this policy, Microsoft Edge attempts to retrieve an updated version of the configured Enterprise Mode Site List using the specified refresh interval.\n\nIf you disable or don't configure this policy, Microsoft Edge uses a default refresh interval, it's 10080 minutes (7 days) starting from version 110 or later, 120 minutes from version 93 to 110, and 30 minutes before version 93.",
     "keywords": [
       "Uncategorized"
     ],
@@ -690,7 +753,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.runallflashinallowmode",
     "settingName": "Extend Adobe Flash content setting to all content (Obsolete)",
-    "settingDescription": "This policy doesn't work because Flash is no longer supported by Microsoft Edge.\n\nIf you enable this policy, all Adobe Flash content embedded in websites that are set to allow Adobe Flash in the content settings -- either by the user or by enterprise policy -- will run. This includes content from other origins and/or small content.\n\nTo control which websites are allowed to run Adobe Flash, see the specifications in the \"DefaultPluginsSetting\", \"PluginsAllowedForUrls\", and \"PluginsBlockedForUrls\" policies.\n\nIf you disable this policy or don't configure it, Adobe Flash content from other origins (from sites that aren't specified in the three policies mentioned immediately above) or small content might be blocked.",
+    "settingDescription": "This policy doesn't work because Flash is no longer supported by Microsoft Edge.\n\nIf you enable this policy, all Adobe Flash content embedded in websites that are set to allow Adobe Flash in the content settings, either by the user or by enterprise policy, run. This includes content from other origins and/or small content.\n\nTo control which websites are allowed to run Adobe Flash, see the specifications in the \"DefaultPluginsSetting\", \"PluginsAllowedForUrls\", and \"PluginsBlockedForUrls\" policies.\n\nIf you disable this policy or don't configure it, Adobe Flash content from other origins (sites that aren't specified in the preceding three policies) or small content might be blocked.",
     "keywords": [
       "Uncategorized"
     ],
@@ -699,7 +762,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.webappinstallforcelist",
     "settingName": "Configure list of force-installed Web Apps",
-    "settingDescription": "Setting the policy specifies a list of web apps that install silently, without user interaction.  Users can't turn off the policy or uninstall these web apps.\n\nEach list item of the policy is an object with a mandatory member:\nurl (the URL of the web app to install)\n\nand 6 optional members:\n- default_launch_container\n(for how the web app opens—a new tab is the default)\n\n- create_desktop_shortcut\n(True if you want to create Linux and\nMicrosoft Windows desktop shortcuts).\n\n- fallback_app_name\n(Starting with Microsoft Edge version 90,\nlets you permanently override the app name if it is not a Progressive Web App (PWA)\nor temporarily override the app name if authentication is required before\ninstallation can be completed. If both\ncustom_name and\nfallback_app_name are provided,\nthe latter will be ignored.)\n\n- custom_name\n(Starting with Microsoft Edge version 112\non all desktop platforms, lets you permanently override the app name for all\nweb apps and PWAs.)\n\n- custom_icon\n(Starting with Microsoft Edge version 112\non all desktop platforms, lets you to override the app icon of installed apps.\nThe icons have to be square, maximal 1 MB in size, and in one of the following formats:\njpeg, png, gif, webp, ico. The hash value has to be the SHA256 hash of the icon file.\nThe url should be accessible without authentication to\nensure the icon can be used upon app installation.)\n\n- install_as_shortcut\n(Starting with Microsoft Edge\nversion 107). If enabled, the given url will be installed as a shortcut,\nas if done via the \"Create Shortcut...\" option in the desktop browser GUI.\nNote that when installed as a shortcut it won't be updated if the manifest in url changes.\nIf disabled or unset, the web app at the given url will be installed normally.\n(This is not currently supported in Microsoft Edge.)",
+    "settingDescription": "Setting the policy specifies a list of web apps that install silently, without user interaction.  Users can't turn off the policy or uninstall these web apps.\n\nEach list item of the policy is an object with a mandatory member:\nurl (the URL of the web app to install)\n\nand 6 optional members:\n- default_launch_container\n(for how the web app opens—a new tab is the default)\n\n- create_desktop_shortcut\n(True if you want to create Linux and\nMicrosoft Windows desktop shortcuts).\n\n- fallback_app_name\n(Starting with Microsoft Edge version 90,\nlets you permanently override the app name if it is not a Progressive Web App (PWA)\nor temporarily override the app name if authentication is required before\ninstallation can be completed. If both\ncustom_name and\nfallback_app_name are provided,\nthe latter will be ignored.)\n\n- custom_name\n(Starting with Microsoft Edge version 112\non all desktop platforms, lets you permanently override the app name for all\nweb apps and PWAs.)\n\n- custom_icon\n(Starting with Microsoft Edge version 112\non all desktop platforms, lets you to override the app icon of installed apps.\nThe icons have to be square, maximal 1 MB in size, and in one of the following formats:\njpeg, png, gif, webp, ico. The hash value has to be the SHA256 hash of the icon file.\nThe url should be accessible without authentication to\nensure the icon can be used upon app installation.)\n\n- install_as_shortcut\n(Starting with Microsoft Edge\nversion 107). If enabled, the given url will be installed as a shortcut,\nas if done via the \"Create Shortcut...\" option in the desktop browser GUI.\nNote that when installed as a shortcut it won't be updated if the manifest in url changes.\nIf disabled or unset, the web app at the given url will be installed normally.\n(This is not currently supported in Microsoft Edge.)\n\nThe 'WebAppInstallByUserEnabled' policy doesn't affect this policy. Web apps specified by this policy are installed regardless of the 'WebAppInstallByUserEnabled' policy setting.",
     "keywords": [
       "Uncategorized"
     ],
@@ -807,7 +870,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.internetexplorerintegrationalwayswaitforunload",
     "settingName": "Wait for Internet Explorer mode tabs to completely unload before ending the browser session",
-    "settingDescription": "This policy causes Microsoft Edge to continue running until all Internet Explorer tabs have completely finished unloading. This allows Internet Explorer plugins like ActiveX controls to perform additional critical work even after the browser has been closed. However, this can cause stability and performance issues, and Microsoft Edge processes may remain active in the background with no visible windows if the webpage or plugin prevents Internet Explorer from unloading. This policy should only be used if your organization depends on a plugin that requires this behavior.\n\nIf you enable this policy, Microsoft Edge will always wait for Internet Explorer mode tabs to fully unload before ending the browser session.\n\nIf you disable or don't configure this policy, Microsoft Edge will not always wait for Internet Explorer mode tabs to fully unload before ending the browser session.\n\nTo learn more about Internet Explorer mode, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2174004\">https://go.microsoft.com/fwlink/?linkid=2174004</a>",
+    "settingDescription": "This policy causes Microsoft Edge to continue running until all Internet Explorer tabs have completely finished unloading. This allows Internet Explorer plugins like ActiveX controls to perform other critical work even after the browser has been closed. However, this can cause stability and performance issues, and Microsoft Edge processes may remain active in the background with no visible windows if the webpage or plugin prevents Internet Explorer from unloading. This policy should only be used if your organization depends on a plugin that requires this behavior.\n\nIf you enable this policy, Microsoft Edge always waits for Internet Explorer mode tabs to fully unload before ending the browser session.\n\nIf you disable or don't configure this policy, Microsoft Edge won't always wait for Internet Explorer mode tabs to fully unload before ending the browser session.\n\nTo learn more about Internet Explorer mode, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2174004\">https://go.microsoft.com/fwlink/?linkid=2174004</a>",
     "keywords": [
       "Uncategorized"
     ],
@@ -888,7 +951,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.webselectenabled",
     "settingName": "Web Select Enabled (Obsolete)",
-    "settingDescription": "This policy is obsoleted because Web Select is part of Web Capture and can be controlled by \"WebCaptureEnabled\". This policy won't work in Microsoft Edge version 117. If Web Capture is disabled by \"WebCaptureEnabled\", Web select will not be available in Web Capture.\n\nWeb select lets users select and copy web content while preserving its formatting when pasted in most cases. It also allows more targeted selection on some web elements, such as copying a single column in a table.\n\nIf you enable or don't configure this policy, Web select is available in Web Capture and can be accessed directly using the CTRL+SHIFT+X keyboard shortcut.\n\nIf you disable this policy, Web select will not be available in Web Capture and the CTRL+SHIFT+X keyboard shortcut will also not work.",
+    "settingDescription": "This policy is obsoleted because Web Select is part of Web Capture and can be controlled by \"WebCaptureEnabled\". This policy doesn't work in Microsoft Edge version 117. If Web Capture is disabled by \"WebCaptureEnabled\", Web select won't be available in Web Capture.\n\nWeb select lets users select and copy web content while preserving its formatting when pasted in most cases. It also allows more targeted selection on some web elements, such as copying a single column in a table.\n\nIf you enable or don't configure this policy, Web select is available in Web Capture and can be accessed directly using the CTRL+SHIFT+X keyboard shortcut.\n\nIf you disable this policy, Web select won't be available in Web Capture and the CTRL+SHIFT+X keyboard shortcut will also not work.",
     "keywords": [
       "Uncategorized"
     ],
@@ -951,7 +1014,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.localbrowserdatashareenabled_recommended",
     "settingName": "Enable Windows to search local Microsoft Edge browsing data (users can override)",
-    "settingDescription": "Enables Windows to index Microsoft Edge browsing data stored locally on the user's device and allows users to find and launch previously stored browsing data directly from Windows features such as the search box on the taskbar in Windows.\n\nIf you enable this policy or don't configure it, Microsoft Edge will publish local browsing data to the Windows Indexer.\n\nIf you disable this policy, Microsoft Edge will not share data to the Windows Indexer.\n\nNote that if you disable this policy, Microsoft Edge will remove the data shared with Windows on the device and stop sharing any new browsing data.",
+    "settingDescription": "Enables Windows to index Microsoft Edge browsing data stored locally on the user's device and allows users to find and launch previously stored browsing data directly from Windows features such as the search box on the taskbar in Windows.\n\nIf you enable this policy or don't configure it, Microsoft Edge publishes local browsing data to the Windows Indexer.\n\nIf you disable this policy, Microsoft Edge won't share data to the Windows Indexer.\n\nNote that if you disable this policy, Microsoft Edge removes the data shared with Windows on the device and stops sharing any new browsing data.",
     "keywords": [
       "Uncategorized"
     ],
@@ -3456,7 +3519,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.organizationlogooverlayonappiconenabled_recommended",
     "settingName": "Allow your organization's logo from Microsoft Entra to be overlaid on the Microsoft Edge app icon of a work or school profile (users can override)",
-    "settingDescription": "Allow your organization's logo from Entra, if any, to be overlaid on the Microsoft Edge app icon of a profile that's signed in with an Entra ID (formerly known as Azure Active Directory) account. This requires a browser restart to take effect.\n\nIf you enable this policy, your organization's logo from Entra will be used.\n\nIf you disable or don't configure this policy, your organization's logo from Entra won't be used.\n\nFor more information about configuring your organization's logo on Entra, please visit <a href=\"https://go.microsoft.com/fwlink/?linkid=2254514\">https://go.microsoft.com/fwlink/?linkid=2254514</a>.",
+    "settingDescription": "Allows your organization's logo from Entra, if any, to be overlaid on the Microsoft Edge app icon of a profile that's signed in with an Entra ID (formerly known as Azure Active Directory) account. This requires a browser restart to take effect.\n\nIf you enable this policy, your organization's logo from Entra is used.\n\nIf you disable or don't configure this policy, your organization's logo from Entra won't be used.\n\nFor more information about configuring your organization's logo on Entra, visit <a href=\"https://go.microsoft.com/fwlink/?linkid=2254514\">https://go.microsoft.com/fwlink/?linkid=2254514</a>.",
     "keywords": [
       "Uncategorized"
     ],
@@ -3483,7 +3546,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.travelassistanceenabled_recommended",
     "settingName": "Enable travel assistance (Obsolete) (users can override)",
-    "settingDescription": "This policy is obsolete as the feature is now contained within the Edge Sidebar and can be managed using the \"HubsSidebarEnabled\" policy. It doesn't work in Microsoft Edge after version 105.\nConfigure this policy to allow/disallow travel assistance.\n\nThe travel assistance feature gives helpful and relevant information to a user who performs Travel related task within the browser. This feature provides trusted and validated suggestions / information  to the users from across sources gathered by Microsoft.\n\nIf you enable or don't configure this setting, travel assistance will be enabled for the users when they are performing travel related tasks.\n\nIf you disable this setting, travel assistance will be disabled and  users will not be able to see any travel related recommendations.",
+    "settingDescription": "This policy is obsolete as the feature is now contained within the Edge Sidebar and can be managed using the \"HubsSidebarEnabled\" policy. It doesn't work in Microsoft Edge after version 105.\nConfigure this policy to allow/disallow travel assistance.\n\nThe travel assistance feature gives helpful and relevant information to a user who performs a travel-related task within the browser. This feature provides trusted and validated suggestions/information  to the users from across sources gathered by Microsoft.\n\nIf you enable or don't configure this setting, travel assistance is enabled for the users when they are performing travel-related tasks.\n\nIf you disable this setting, travel assistance will be disabled, and  users won't be able to see any travel-related recommendations.",
     "keywords": [
       "Uncategorized"
     ],
@@ -3519,7 +3582,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.internetexplorermodeenablesavepageas",
     "settingName": "Allow Save page as in Internet Explorer mode",
-    "settingDescription": "This policy enables 'Save page as' functionality in Internet Explorer mode.\nUsers can use this option to save the current page in the browser. When a user re-opens a saved page, it will be loaded in the default browser.\n\nIf you enable this policy, the \"Save page as\" option will be clickable in \"More tools\".\n\nIf you disable or don't configure this policy, users can't select the \"Save page as\" option in \"More tools\".\n\nNote: To make the \"Ctrl+S\" shortcut work, users must enable the Internet Explorer policy, 'Enable extended hot key in Internet Explorer mode'.\n\nTo learn more about Internet Explorer mode, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2094210\">https://go.microsoft.com/fwlink/?linkid=2094210</a>",
+    "settingDescription": "This policy enables 'Save page as' functionality in Internet Explorer mode.\nUsers can use this option to save the current page in the browser. When a user reopens a saved page, it's loaded in the default browser.\n\nIf you enable this policy, the \"Save page as\" option is clickable in \"More tools\".\n\nIf you disable or don't configure this policy, users can't select the \"Save page as\" option in \"More tools\".\n\nNote: To make the \"Ctrl+S\" shortcut work, users must enable the Internet Explorer policy, namely 'Enable extended hot key in Internet Explorer mode'.\n\nTo learn more about Internet Explorer mode, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2094210\">https://go.microsoft.com/fwlink/?linkid=2094210</a>",
     "keywords": [
       "Uncategorized"
     ],
@@ -3528,7 +3591,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.searchinsidebarenabled",
     "settingName": "Search in Sidebar enabled",
-    "settingDescription": "Search in Sidebar allows users to open search result in sidebar (including sidebar search for Progressive Web Apps).\n\nIf you configure this policy to 'EnableSearchInSidebar' or don't configure it,  Search in sidebar will be enabled.\n\nIf you configure this policy to 'DisableSearchInSidebarForKidsMode', Search in sidebar will be disabled when in Kids mode. Some methods that would normally invoke sidebar search will invoke a traditional search instead.\n\nIf you configure this policy to 'DisableSearchInSidebar', Search in sidebar will be disabled. Some methods that would normally invoke sidebar search will invoke a traditional search instead.\n\nPolicy options mapping:\n\n* EnableSearchInSidebar (0) = Enable search in sidebar\n\n* DisableSearchInSidebarForKidsMode (1) = Disable search in sidebar for Kids Mode\n\n* DisableSearchInSidebar (2) = Disable search in sidebar\n\nUse the preceding information when configuring this policy.",
+    "settingDescription": "Search in Sidebar allows users to open search result in sidebar (including sidebar search for Progressive Web Apps).\n\nIf you configure this policy to 'EnableSearchInSidebar' or don't configure it,  Search in sidebar is enabled.\n\nIf you configure this policy to 'DisableSearchInSidebarForKidsMode', Search in sidebar is disabled when in Kids mode. Some methods that would normally invoke sidebar search will invoke a traditional search instead.\n\nIf you configure this policy to 'DisableSearchInSidebar', Search in sidebar is disabled. Some methods that would invoke sidebar search invoke a traditional search instead.\n\nPolicy options mapping:\n\n* EnableSearchInSidebar (0) = Enable search in sidebar\n\n* DisableSearchInSidebarForKidsMode (1) = Disable search in sidebar for Kids Mode\n\n* DisableSearchInSidebar (2) = Disable search in sidebar\n\nUse the preceding information when configuring this policy.",
     "keywords": [
       "Uncategorized"
     ],
@@ -3654,7 +3717,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.sendmouseeventsdisabledformcontrolsenabled",
     "settingName": "Control the new behavior for event dispatching on disabled form controls (Obsolete)",
-    "settingDescription": "Event dispatching on disabled form controls is being changed in Edge to improve compatibility with other browsers and to improve the developer experience.\n\nWith this change, MouseEvents get dispatched on disabled form control elements. Exceptions for this behavior are click, mouseup, and mousedown. Some examples of the new events are mousemove, mouseenter, and mouseleave.\n\nThis change also truncates the event path of click, mouseup, and mousedown when they’re dispatched on children of disabled form controls. These events aren’t dispatched on the disabled form control or any of its ancestors.\n\nNote: This new behavior might break some websites.\n\nIf this policy is enabled or left not set, the new behavior will be used.\n\nIf this policy is disabled, the old behavior will be used.",
+    "settingDescription": "Event dispatching on disabled form controls is being changed in Microsoft Edge to improve compatibility with other browsers and to improve the developer experience.\n\nWith this change, MouseEvents get dispatched on disabled form control elements. Exceptions for this behavior are click, mouseup, and mousedown. Some examples of the new events are mousemove, mouseenter, and mouseleave.\n\nThis change also truncates the event path of click, mouseup, and mousedown when they’re dispatched on children of disabled form controls. These events aren’t dispatched on the disabled form control or on any of its ancestors.\n\nNote: This new behavior might break some websites.\n\nIf you enable or don't configure this policy, the new behavior is used.\n\nIf you disable this policy, the old behavior is used.",
     "keywords": [
       "Uncategorized"
     ],
@@ -3699,7 +3762,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.httpsonlymode",
     "settingName": "Allow HTTPS-Only Mode to be enabled",
-    "settingDescription": "This policy controls whether users can enable HTTPS-Only Mode (Always Use Secure Connections) in Settings. HTTPS-Only Mode attempts to upgrade all navigations to HTTPS.\n\nIf this setting isn't set or is set to allowed, users are able to enable HTTPS-Only Mode.\nIf this setting is set to `disallowed`, users can't enable HTTPS-Only Mode.\nIf this setting is set to force_enabled, HTTPS-Only Mode is enabled in Strict mode and users can't disable it.\nIf this setting is set to force_balanced_enabled, HTTPS-Only Mode is enabled in Balanced mode and users can't disable it.\n\nIf you set this policy to a value that isn't supported by the version of Microsoft Edge that receives the policy, Microsoft Edge defaults to the allowed setting.\n\nThe separate HttpAllowlist policy can be used to exempt specific hostnames or hostname patterns from being upgraded to HTTPS by this feature.\n\nPolicy options mapping:\n\n* allowed (allowed) = Don't restrict users' HTTPS-Only Mode setting\n\n* disallowed (disallowed) = Don't allow users to enable any HTTPS-Only Mode\n\n* force_enabled (force_enabled) = Force enable HTTPS-Only Mode in Strict mode\n\n* force_balanced_enabled (force_balanced_enabled) = Force enable HTTPS-Only Mode in Balanced Mode\n\nUse the preceding information when configuring this policy.",
+    "settingDescription": "This policy controls whether users can enable HTTPS-Only Mode (Always Use Secure Connections) in Settings. HTTPS-Only Mode attempts to upgrade all navigations to HTTPS.\n\nIf this setting isn't set or is set to `allowed`, users are able to enable HTTPS-Only Mode.\nIf this setting is set to `disallowed`, HTTPS-Only Mode will be disabled.\nIf this setting is set to `force_enabled`, HTTPS-Only Mode is enabled in Strict mode.\nIf this setting is set to `force_balanced_enabled`, HTTPS-Only Mode is enabled in Balanced mode.\n\nThe settings `force_enabled` and `force_balanced_enabled` can be recommended to users. HTTPS-Only Mode will be set to Strict or Balanced initially, but users are allowed to change it.\n\nIf you set this policy to a value that isn't supported by the version of Microsoft Edge that receives the policy, Microsoft Edge defaults to the `allowed` setting.\n\nThe separate HttpAllowlist policy can be used to exempt specific hostnames or hostname patterns from being upgraded to HTTPS by this feature.\n\nPolicy options mapping:\n\n* allowed (allowed) = Don't restrict users' HTTPS-Only Mode setting\n\n* disallowed (disallowed) = Disable HTTPS-Only Mode\n\n* force_enabled (force_enabled) = Force enable HTTPS-Only Mode in Strict mode\n\n* force_balanced_enabled (force_balanced_enabled) = Force enable HTTPS-Only Mode in Balanced Mode\n\nUse the preceding information when configuring this policy.",
     "keywords": [
       "Uncategorized"
     ],
@@ -5488,26 +5551,93 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_staticstoragequotaenabled",
-    "settingName": "Control whether storage quota APIs will return static values (User)",
-    "settingDescription": "Controls how the Storage Quota APIs report the available quota to websites.\r\n\r\nWhen enabled, the Storage Quota APIs return a static quota value equal to the current usage plus the smaller of 10 GiB or the device's total storage rounded up to the nearest 1 GiB.\r\n\r\nWhen disabled, the Storage Quota APIs return a dynamic quota value that reflects the actual available device storage.\r\n\r\nWhen unset, the browser uses the default platform behavior.\r\n\r\nThis policy does not affect sites with unlimited storage permissions or enforced quota settings.",
+    "settingId": "intelligencesettings_apps_mail_allowsmartreplies",
+    "settingName": "Allow Smart Replies",
+    "settingDescription": "If `false`, disables Mail Smart Replies.",
     "keywords": [
-      "StaticStorageQuotaEnabled",
-      "Control whether storage quota APIs will return static values",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
+      "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "externalintelligencesettings_enabled",
+    "settingName": "Enabled",
+    "settingDescription": "If `false`, disables external intelligence integrations.",
+    "keywords": [
+      "External Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "intelligencesettings_apps_safari",
+    "settingName": "Safari",
+    "settingDescription": "If present, configures Safari intelligence features.",
+    "keywords": [
+      "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "intelligencesettings_allowappleintelligencereport",
+    "settingName": "Allow Apple Intelligence Report",
+    "settingDescription": "If `false`, disables Apple Intelligence Report.",
+    "keywords": [
+      "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "externalintelligencesettings_externalintelligencesettings",
+    "settingName": "com.apple.configuration.external-intelligence.settings",
+    "settingDescription": "Synthetic Top Level Setting Group Collection",
+    "keywords": [
+      "External Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "intelligencesettings_allowvisualintelligencesummary",
+    "settingName": "Allow Visual Intelligence Summary",
+    "settingDescription": "If `false`, disables Visual Intelligence Summary.",
+    "keywords": [
+      "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "keyboardsettings_allowtextreplacement",
+    "settingName": "Allow Text Replacement",
+    "settingDescription": "If `false`, disables text replacement.",
+    "keywords": [
+      "Keyboard Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "keyboardsettings_allowmathkeyboardsuggestions",
+    "settingName": "Allow Math Keyboard Suggestions",
+    "settingDescription": "If `false`, disables keyboard suggestions that include math solutions. This key is also supported by the math.settings configuration.",
+    "keywords": [
+      "Keyboard Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.httpsonlymode_recommended",
+    "settingName": "Allow HTTPS-Only Mode to be enabled (users can override)",
+    "settingDescription": "This policy controls whether users can enable HTTPS-Only Mode (Always Use Secure Connections) in Settings. HTTPS-Only Mode attempts to upgrade all navigations to HTTPS.\n\nIf this setting isn't set or is set to `allowed`, users are able to enable HTTPS-Only Mode.\nIf this setting is set to `disallowed`, HTTPS-Only Mode will be disabled.\nIf this setting is set to `force_enabled`, HTTPS-Only Mode is enabled in Strict mode.\nIf this setting is set to `force_balanced_enabled`, HTTPS-Only Mode is enabled in Balanced mode.\n\nThe settings `force_enabled` and `force_balanced_enabled` can be recommended to users. HTTPS-Only Mode will be set to Strict or Balanced initially, but users are allowed to change it.\n\nIf you set this policy to a value that isn't supported by the version of Microsoft Edge that receives the policy, Microsoft Edge defaults to the `allowed` setting.\n\nThe separate HttpAllowlist policy can be used to exempt specific hostnames or hostname patterns from being upgraded to HTTPS by this feature.\n\nPolicy options mapping:\n\n* allowed (allowed) = Don't restrict users' HTTPS-Only Mode setting\n\n* disallowed (disallowed) = Disable HTTPS-Only Mode\n\n* force_enabled (force_enabled) = Force enable HTTPS-Only Mode in Strict mode\n\n* force_balanced_enabled (force_balanced_enabled) = Force enable HTTPS-Only Mode in Balanced Mode\n\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "Uncategorized"
     ],
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_staticstoragequotaenabled",
-    "settingName": "Control whether storage quota APIs will return static values",
-    "settingDescription": "Controls how the Storage Quota APIs report the available quota to websites.\r\n\r\nWhen enabled, the Storage Quota APIs return a static quota value equal to the current usage plus the smaller of 10 GiB or the device's total storage rounded up to the nearest 1 GiB.\r\n\r\nWhen disabled, the Storage Quota APIs return a dynamic quota value that reflects the actual available device storage.\r\n\r\nWhen unset, the browser uses the default platform behavior.\r\n\r\nThis policy does not affect sites with unlimited storage permissions or enforced quota settings.",
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev146~policy~microsoft_edge_standardizedbrowserzoomenabled",
+    "settingName": "Enable Standardized Browser Zoom Behavior (User)",
+    "settingDescription": "Configures whether the CSS \"zoom\" property follows the current CSS specification or legacy behavior.\r\n\r\nWhen this policy is enabled or not configured, the CSS \"zoom\" property follows the current specification defined by the CSS Working Group:\r\nhttps://drafts.csswg.org/css-viewport/#zoom-property\r\n\r\nWhen this policy is disabled, the CSS \"zoom\" property uses its legacy, pre-standardized behavior.\r\n\r\nThis policy is temporary and is intended to provide time for organizations to migrate web content to the updated behavior. In a future Microsoft Edge release, this policy will be removed and the standardized behavior will be enforced by default.",
     "keywords": [
-      "StaticStorageQuotaEnabled",
-      "Control whether storage quota APIs will return static values",
+      "StandardizedBrowserZoomEnabled",
+      "Enable Standardized Browser Zoom Behavior",
       "\\Microsoft Edge",
       "Both",
       "Software\\Policies\\Microsoft\\Edge",
@@ -6451,7 +6581,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.configurefriendlyurlformat_recommended",
     "settingName": "Configure the default paste format of URLs copied from Microsoft Edge, and determine if additional formats will be available to users (users can override)",
-    "settingDescription": "If FriendlyURLs are enabled, Microsoft Edge will compute additional representations of the URL and place them on the clipboard.\n\nThis policy configures what format will be pasted when the user pastes in external applications, or inside Microsoft Edge without the 'Paste as' context menu item.\n\nIf configured, this policy makes a choice on behalf of the user. The options in edge://settings/shareCopyPaste will be grayed out, and the options in the 'Paste As' context menu will not be available.\n\n* Not configured = The user will be able to choose their preferred paste format. By default, this is set to the friendly URL format. The 'Paste As' menu will be available in Microsoft Edge.\n\n* 1 = No additional formats will be stored on the clipboard. There will be no 'Paste as' context menu item in Microsoft Edge and the only format available to paste will be the plain text URL format. Effectively, the friendly URL feature will be disabled.\n\n* 3 = The user will get a friendly URL whenever they paste into surfaces that accept rich text. The plain URL will still be available for non-rich surfaces. There will be no 'Paste As' menu in Microsoft Edge.\n\n* 4 = (Not currently used)\n\nThe richer formats may not be well-supported in some paste destinations and/or websites. In these scenarios, the plain URL option is recommended when configuring this policy.\n\nThe recommended policy is available in Microsoft Edge 105 or later.\n\nPolicy options mapping:\n\n* PlainText (1) = The plain URL without any extra information, such as the page's title. This is the recommended option when this policy is configured. For more information, see the description.\n\n* TitledHyperlink (3) = Titled Hyperlink: A hyperlink that points to the copied URL, but whose visible text is the title of the destination page. This is the Friendly URL format.\n\n* WebPreview (4) = Coming soon. If set, behaves the same as 'Plain URL'.\n\nUse the preceding information when configuring this policy.",
+    "settingDescription": "If FriendlyURLs are enabled, Microsoft Edge computes more representations of the URL and places them on the clipboard.\n\nThis policy configures what format is pasted when the user pastes in external applications or inside Microsoft Edge without the 'Paste as' context menu item.\n\nIf you configure this policy, it makes a choice on behalf of the user. The options in edge://settings/shareCopyPaste will be grayed out, and the options in the 'Paste As' context menu won't be available.\n\n* Not configured = The users are able to choose their preferred paste format. By default, this is set to the friendly URL format. The 'Paste As' menu will be available in Microsoft Edge.\n\n* 1 = No additional formats are stored on the clipboard. There will be no 'Paste as' context menu item in Microsoft Edge, and the only format available to paste will be the plain text URL format. Effectively, the friendly URL feature will be disabled.\n\n* 3 = The user gets a friendly URL whenever they paste into surfaces that accept rich text. The plain URL is still be available for non-rich surfaces. There will be no 'Paste As' menu in Microsoft Edge.\n\n* 4 = (Not currently used)\n\nThe richer formats may not be supported in some paste destinations and/or websites. In these scenarios, the plain URL option is recommended when configuring this policy.\n\nThe recommended policy is available in Microsoft Edge 105 or later.\n\nPolicy options mapping:\n\n* PlainText (1) = The plain URL without any extra information, such as the page's title. This is the recommended option when this policy is configured. For more information, see the description.\n\n* TitledHyperlink (3) = Titled Hyperlink: A hyperlink that points to the copied URL but whose visible text is the title of the destination page. This is the Friendly URL format.\n\n* WebPreview (4) = Coming soon. If set, behaves the same as 'Plain URL'.\n\nUse the preceding information when configuring this policy.",
     "keywords": [
       "Uncategorized"
     ],
@@ -6469,7 +6599,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autoopenallowedforurls",
     "settingName": "URLs where AutoOpenFileTypes can apply",
-    "settingDescription": "A list of URLs to which \"AutoOpenFileTypes\" will apply to. This policy has no impact on automatically open values set by users via the download shelf ... > \"Always open files of this type\" menu entry.\n\nIf you set URLs in this policy, files will only automatically open by policy if the URL is part of this set and the file type is listed in \"AutoOpenFileTypes\". If either condition is false, the download won't automatically open by policy.\n\nIf you don't set this policy, all downloads where the file type is in \"AutoOpenFileTypes\" will automatically open.\n\nA URL pattern has to be formatted according to <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n\nThis policy does not work as expected with file://* wildcards.",
+    "settingDescription": "A list of URLs to which \"AutoOpenFileTypes\" applies to. This policy has no impact on automatically open values set by users via the download shelf ... > \"Always open files of this type\" menu entry.\n\nIf you set URLs in this policy, files will only automatically open by policy if the URL is part of this set and the file type is listed in \"AutoOpenFileTypes\". If either condition is false, the download won't automatically open by policy.\n\nIf you don't set this policy, all downloads where the file type is in \"AutoOpenFileTypes\" automatically opens.\n\nA URL pattern has to be formatted according to <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n\nThis policy doesn't work as expected with file://* wildcards.",
     "keywords": [
       "Uncategorized"
     ],
@@ -6523,7 +6653,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.originagentclusterdefaultenabled",
     "settingName": "Origin-keyed agent clustering enabled by default",
-    "settingDescription": "The Origin-Agent-Cluster: HTTP header controls whether a document is isolated in an origin-keyed agent cluster or in a site-keyed agent cluster. This has security implications because an origin-keyed agent cluster allows isolating documents by origin. The consequence of this for developers is that the document.domain accessor can no longer be set when origin-keyed agent clustering is enabled.\n\nIf you enable or don't configure this policy, documents without the Origin-Agent-Cluster: header will be assigned to origin-keyed agent clustering by default. On these documents, the document.domain accessor will not be settable.\n\nIf you disable this policy, documents without the Origin-Agent-Cluster: header will be assigned to site-keyed agent clusters by default. On these documents, the document.domain accessor will be settable.\n\nSee <a href=\"https://go.microsoft.com/fwlink/?linkid=2191896\">https://go.microsoft.com/fwlink/?linkid=2191896</a> for additional details.",
+    "settingDescription": "The Origin-Agent-Cluster: HTTP header controls whether a document is isolated in an origin-keyed agent cluster or in a site-keyed agent cluster. This functionality has security implications because an origin-keyed agent cluster allows isolating documents by origin. The consequence of this for developers is that the document.domain accessor can no longer be set when origin-keyed agent clustering is enabled.\n\nIf you enable or don't configure this policy, documents without the Origin-Agent-Cluster: header are assigned to origin-keyed agent clustering by default. On these documents, the document.domain accessor isn't settable.\n\nIf you disable this policy, documents without the Origin-Agent-Cluster: header are assigned to site-keyed agent clusters by default. On these documents, the document.domain accessor is settable.\n\nFor more information, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2191896\">https://go.microsoft.com/fwlink/?linkid=2191896</a>.",
     "keywords": [
       "Uncategorized"
     ],
@@ -6649,7 +6779,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.forcemajorversiontominorpositioninuseragent",
     "settingName": "Enable or disable freezing the User-Agent string at major version 99 (Obsolete)",
-    "settingDescription": "This policy was removed in Microsoft Edge 118 and is ignored if configured.\n\nThis policy controls whether the User-Agent string major\nversion should be frozen at 99.\n\nThe User-Agent request header lets websites identify the application,\noperating system, vendor, and/or version of the requesting user agent.\nSome websites make assumptions about how this header is formatted and may\nencounter issues with version strings that include three digits in the\nmajor position (for example, 100.0.0.0).\n\nSetting the policy to 'Default' or leaving it unset will default to\nbrowser settings for the User-Agent string major version.\nIf set to 'ForceEnabled', the User-Agent string will always report the\nmajor version as 99 and include the browser's major version in the minor\nposition. For example, browser version 101.0.0.0 would send a User-Agent\nrequest header that reports version 99.101.0.0.\nIf set to 'ForceDisabled', the User-Agent string will not freeze the\nmajor version.\n\nThis policy is temporary and will be deprecated in the future. Note that\nif this policy and\nUser-Agent Reduction are\nboth enabled, the User-Agent version string will always be 99.0.0.0.\n\nPolicy options mapping:\n\n* Default (0) = Default to browser settings for User-Agent string version.\n\n* ForceDisabled (1) = The User-Agent string will not freeze the major version.\n\n* ForceEnabled (2) = The User-Agent string will freeze the major version as 99 and include the browser's major version in the minor position.\n\nUse the preceding information when configuring this policy.",
+    "settingDescription": "This policy was removed in Microsoft Edge 118 and is ignored if configured.\n\nThis policy controls whether the User-Agent string major\nversion should be frozen at 99.\n\nThe User-Agent request header lets websites identify the application,\noperating system, vendor, and/or version of the requesting user agent.\nSome websites make assumptions about how this header is formatted and may\nencounter issues with version strings that include three digits in the\nmajor position (for example, 100.0.0.0).\n\nIf you set this policy to 'Default' or don't configure it, then it defaults to\nbrowser settings for the User-Agent string major version.\nIf you set this policy to 'ForceEnabled', the User-Agent string will always report the\nmajor version as 99 and include the browser's major version in the minor\nposition. For example, browser version 101.0.0.0 would send a User-Agent\nrequest header that reports version 99.101.0.0.\nIf you set this policy to 'ForceDisabled', the User-Agent string won't freeze the\nmajor version.\n\nThis policy is temporary and will be deprecated in the future. If this policy and\nUser-Agent Reduction are\nboth enabled, the User-Agent version string will always be 99.0.0.0.\n\nPolicy options mapping:\n\n* Default (0) = Default to browser settings for User-Agent string version.\n\n* ForceDisabled (1) = The User-Agent string won't freeze the major version.\n\n* ForceEnabled (2) = The User-Agent string will freeze the major version as 99 and include the browser's major version in the minor position.\n\nUse the preceding information when configuring this policy.",
     "keywords": [
       "Uncategorized"
     ],
@@ -6676,7 +6806,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.quicksearchshowminimenu",
     "settingName": "Enables Microsoft Edge mini menu",
-    "settingDescription": "Enables the Microsoft Edge mini menu on websites and PDFs. The mini menu appears when users select text and provides basic actions like Copy and smart actions such as Definitions.\n\nIf you enable or don't configure this policy, selecting text on websites or PDFs will show the mini menu.\n\nIf you disable this policy, the mini menu won't appear when users select text on websites or PDFs.\n\nNote: Starting in Microsoft Edge for Mac version 143, this policy is obsolete because the mini menu feature has been removed on Mac.",
+    "settingDescription": "Enables the Microsoft Edge mini menu on websites and PDFs. The mini menu appears when users select text and provides basic actions like Copy and smart actions such as Definitions.\n\nIf you enable or don't configure this policy, selecting text on websites or PDFs shows the mini menu.\n\nIf you disable this policy, the mini menu doesn't appear when users select text on websites or PDFs.\n\nNote: Starting in Microsoft Edge for Mac version 143, this policy is obsolete because the mini menu feature has been removed on Mac.",
     "keywords": [
       "Uncategorized"
     ],
@@ -7554,6 +7684,34 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_staticstoragequotaenabled",
+    "settingName": "Control whether storage quota APIs will return static values (User)",
+    "settingDescription": "Controls how the Storage Quota APIs report the available quota to websites.\r\n\r\nWhen enabled, the Storage Quota APIs return a static quota value equal to the current usage plus the smaller of 10 GiB or the device's total storage rounded up to the nearest 1 GiB.\r\n\r\nWhen disabled, the Storage Quota APIs return a dynamic quota value that reflects the actual available device storage.\r\n\r\nWhen unset, the browser uses the default platform behavior.\r\n\r\nThis policy does not affect sites with unlimited storage permissions or enforced quota settings.",
+    "keywords": [
+      "StaticStorageQuotaEnabled",
+      "Control whether storage quota APIs will return static values",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_staticstoragequotaenabled",
+    "settingName": "Control whether storage quota APIs will return static values",
+    "settingDescription": "Controls how the Storage Quota APIs report the available quota to websites.\r\n\r\nWhen enabled, the Storage Quota APIs return a static quota value equal to the current usage plus the smaller of 10 GiB or the device's total storage rounded up to the nearest 1 GiB.\r\n\r\nWhen disabled, the Storage Quota APIs return a dynamic quota value that reflects the actual available device storage.\r\n\r\nWhen unset, the browser uses the default platform behavior.\r\n\r\nThis policy does not affect sites with unlimited storage permissions or enforced quota settings.",
+    "keywords": [
+      "StaticStorageQuotaEnabled",
+      "Control whether storage quota APIs will return static values",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_allowtrackingforurls_allowtrackingforurlsdesc",
     "settingName": "Configure tracking prevention exceptions for specific sites (Device)",
     "settingDescription": "",
@@ -8298,6 +8456,42 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "externalintelligencesettings_allowedworkspaceids",
+    "settingName": "Allowed Workspace I Ds",
+    "settingDescription": "An array of strings, but currently restricted to a single element. If present, Apple Intelligence allows use of only the given external integration workspace ID, and requires a sign-in to make requests. The user is required to sign in to integrations that support signing in. Multiple values combine using an intersect operation.",
+    "keywords": [
+      "External Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "intelligencesettings_allowimagewand",
+    "settingName": "Allow Image Wand",
+    "settingDescription": "If `false`, disables Image Wand.",
+    "keywords": [
+      "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "intelligencesettings_allowimageplayground",
+    "settingName": "Allow Image Playground",
+    "settingDescription": "If `false`, disables Image Playground.",
+    "keywords": [
+      "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "keyboardsettings_allowpredictivetext",
+    "settingName": "Allow Predictive Text",
+    "settingDescription": "If `false`, disables predictive text.",
+    "keywords": [
+      "Keyboard Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_denieddomains",
     "settingName": "Denied Domains",
     "settingDescription": "Controls the domains and sub-domains the extension is not allowed to access. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
@@ -9010,7 +9204,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.websqlnonsecurecontextenabled",
     "settingName": "Force WebSQL in non-secure contexts to be enabled (Obsolete)",
-    "settingDescription": "This policy doesn't work because WebSQL in non-secure contexts is on by default as of Microsoft Edge 105.\nIf you enable this policy, WebSQL in non-secure contexts will be enabled.\nIf you disable or don't configure this policy, WebSQL in non-secure contexts will follow the default settings of the browser.\n\nThis policy was removed in Microsoft Edge 113 and is ignored if configured.",
+    "settingDescription": "This policy doesn't work because WebSQL in nonsecure contexts is on by default as of Microsoft Edge 105.\nIf you enable this policy, WebSQL in nonsecure contexts is enabled.\nIf you disable or don't configure this policy, WebSQL in nonsecure contexts follows the default settings of the browser.\n\nThis policy was removed in Microsoft Edge 113, and it's ignored if configured.",
     "keywords": [
       "Uncategorized"
     ],
@@ -9082,7 +9276,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.copilotpagecontext",
     "settingName": "Control Copilot access to page context for Microsoft Entra ID profiles",
-    "settingDescription": "This policy controls access to page contents for Copilot in the Microsoft Edge sidebar when users are logged into their MSA Copilot account. This policy applies only to Microsoft Entra ID Microsoft Edge profiles. To summarize pages and interact with text selections, it needs to be able to access the page contents. This policy does not apply to MSA Microsoft Edge profiles. This policy doesn't control access for Copilot with enterprise data protection (EDP). Access for Copilot with enterprise data protection (EDP) is controlled by the \"EdgeEntraCopilotPageContext\" policy.\n\nIf you enable this policy, Copilot will have access to page content when logged in with Entra ID.\n\nIf this policy is not configured, the default behavior for non-EU countries is that access is initially enabled. For EU countries, the default behavior is that access is initially disabled. In both cases, if the policy is not configured, users can enable or disable Copilot's access to page content using the setting toggle in Microsoft Edge.\n\nIf you disable this policy, Copilot will not be able to access page context.",
+    "settingDescription": "This policy controls access to page contents for Copilot in the Microsoft Edge sidebar when users are logged into their MSA Copilot account. This policy applies only to Microsoft Entra ID Microsoft Edge profiles. To summarize pages and interact with text selections, it needs to be able to access the page contents. This policy doesn't apply to MSA Microsoft Edge profiles. This policy doesn't control access for Copilot with enterprise data protection (EDP). Access for Copilot with EDP is controlled by the \"EdgeEntraCopilotPageContext\" policy.\n\nIf you enable this policy, Copilot will have access to page content when logged in with Entra ID.\n\nIf this policy isn't configured, the default behavior for non-EU countries/regions is that access is initially enabled. For EU countries/regions, the default behavior is that access is initially disabled. In both cases, if the policy isn't configured, users can enable or disable Copilot's access to page content using the setting toggle in Microsoft Edge.\n\nIf you disable this policy, Copilot won't be able to access page context.",
     "keywords": [
       "Uncategorized"
     ],
@@ -9226,7 +9420,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.configurekeyboardshortcuts",
     "settingName": "Configure the list of commands for which to disable keyboard shortcuts",
-    "settingDescription": "Configure the list of Microsoft Edge commands for which to disable keyboard shortcuts.\n\nSee <a href=\"https://go.microsoft.com/fwlink/?linkid=2186950\">https://go.microsoft.com/fwlink/?linkid=2186950</a> for a list of possible commands to disable.\n\nIf you enable this policy, commands in the 'disabled' list will no longer be activated by keyboard shortcuts.\n\nIf you disable this policy, all keyboard shortcuts behave as usual.\n\nNote: Disabling a command will only remove its shortcut mapping. Commands in the 'disabled' list will still function if accessed via browser UI.",
+    "settingDescription": "Configure the list of Microsoft Edge commands for which keyboard shortcuts must be disabled.\n\nSee <a href=\"https://go.microsoft.com/fwlink/?linkid=2186950\">https://go.microsoft.com/fwlink/?linkid=2186950</a> for a list of possible commands to disable.\n\nIf you enable this policy, commands in the 'disabled' list are no longer activated by keyboard shortcuts.\n\nIf you disable this policy, all keyboard shortcuts behave as usual.\n\nNote: Disabling a command only removes its shortcut mapping. Commands in the 'disabled' list still function if accessed via browser UI.",
     "keywords": [
       "Uncategorized"
     ],
@@ -9280,7 +9474,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.fetchkeepalivedurationsecondsonshutdown",
     "settingName": "Fetch keepalive duration on shutdown",
-    "settingDescription": "Controls the duration (in seconds) that keepalive requests are allowed to prevent the browser from completing its shutdown.\n\nIf you configure this policy, the browser will block completing shutdown while it processes any outstanding keepalive requests (see https://fetch.spec.whatwg.org/#request-keepalive-flag) up to the maximum period of time specified by this policy.\n\nIf you disable or don't configure this policy, the default value of 0 seconds is used and outstanding keepalive requests will be immediately cancelled during browser shutdown.",
+    "settingDescription": "Controls the duration (in seconds) that keepalive requests are allowed to prevent the browser from completing its shutdown.\n\nIf you configure this policy, the browser blocks completing shutdown while it processes any outstanding keepalive requests (see https://fetch.spec.whatwg.org/#request-keepalive-flag) up to the maximum period of time specified by this policy.\n\nIf you disable or don't configure this policy, the default value of 0 seconds is used, and the outstanding keepalive requests are immediately cancelled during browser shutdown.",
     "keywords": [
       "Uncategorized"
     ],
@@ -9307,7 +9501,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.pdfxfaenabled",
     "settingName": "XFA support in native PDF reader enabled",
-    "settingDescription": "Lets the Microsoft Edge browser enable XFA (XML Forms Architecture) support in the native PDF reader and allows users to open XFA PDF files in the browser.\n\nIf you enable this policy, XFA support in the native PDF reader will be enabled.\n\nIf you disable or don't configure this policy, Microsoft Edge will not enable XFA support in the native PDF reader.",
+    "settingDescription": "Lets the Microsoft Edge browser enable XFA (XML Forms Architecture) support in the native PDF reader and allows users to open XFA PDF files in the browser.\n\nIf you enable this policy, XFA support in the native PDF reader is enabled.\n\nIf you disable or don't configure this policy, Microsoft Edge won't enable XFA support in the native PDF reader.",
     "keywords": [
       "Uncategorized"
     ],
@@ -9316,7 +9510,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.backgroundtemplatelistupdatesenabled",
     "settingName": "Enables background updates to the list of available templates for Collections and other features that use templates (Deprecated)",
-    "settingDescription": "This policy is deprecated because we are moving to a new policy. It won't work in Microsoft Edge as soon as version 104. The new policy to use is \"EdgeAssetDeliveryServiceEnabled\".\n\nLets you enable or disable background updates to the list of available templates for Collections and other features that use templates.  Templates are used to extract rich metadata from a webpage when the page is saved to a collection.\n\nIf you enable this setting or the setting is unconfigured, the list of available templates will be downloaded in the background from a Microsoft service every 24 hours.\n\nIf you disable this setting the list of available templates will be downloaded on demand. This type of download might result in small performance penalties for Collections and other features.",
+    "settingDescription": "This policy is deprecated because we are moving to a new policy. It won't work in Microsoft Edge as soon as version 104. The new policy to use is \"EdgeAssetDeliveryServiceEnabled\".\n\nLets you enable or disable background updates to the list of available templates for Collections and other features that use templates. Templates are used to extract rich metadata from a webpage when the page is saved to a collection.\n\nIf you enable this setting or the setting is unconfigured, the list of available templates are downloaded in the background from a Microsoft service every 24 hours.\n\nIf you disable this setting the list of available templates are downloaded on demand. This type of download might result in small performance penalties for Collections and other features.",
     "keywords": [
       "Uncategorized"
     ],
@@ -9325,7 +9519,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.quicksearchshowminimenu_recommended",
     "settingName": "Enables Microsoft Edge mini menu (users can override)",
-    "settingDescription": "Enables the Microsoft Edge mini menu on websites and PDFs. The mini menu appears when users select text and provides basic actions like Copy and smart actions such as Definitions.\n\nIf you enable or don't configure this policy, selecting text on websites or PDFs will show the mini menu.\n\nIf you disable this policy, the mini menu won't appear when users select text on websites or PDFs.\n\nNote: Starting in Microsoft Edge for Mac version 143, this policy is obsolete because the mini menu feature has been removed on Mac.",
+    "settingDescription": "Enables the Microsoft Edge mini menu on websites and PDFs. The mini menu appears when users select text and provides basic actions like Copy and smart actions such as Definitions.\n\nIf you enable or don't configure this policy, selecting text on websites or PDFs shows the mini menu.\n\nIf you disable this policy, the mini menu doesn't appear when users select text on websites or PDFs.\n\nNote: Starting in Microsoft Edge for Mac version 143, this policy is obsolete because the mini menu feature has been removed on Mac.",
     "keywords": [
       "Uncategorized"
     ],
@@ -9397,7 +9591,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.syncdisabled_recommended",
     "settingName": "Disable synchronization of data using Microsoft sync services (users can override)",
-    "settingDescription": "Disables data synchronization in Microsoft Edge. This policy also prevents the sync consent prompt from appearing.\n\nThis policy disables cloud synchronization only and has no impact on the \"RoamingProfileSupportEnabled\" policy.\n\nIf you don't set this policy or apply it as recommended, users are able to turn sync on or off. If you apply this policy as mandatory, users won't be able to turn sync on.",
+    "settingDescription": "Disables data synchronization in Microsoft Edge. This policy also prevents the sync consent prompt from appearing.\n\nThis policy disables cloud synchronization only and has no impact on the \"RoamingProfileSupportEnabled\" policy.\n\nIf you don't set this policy or apply it as recommended, users can turn on or turn off sync. If you apply this policy as mandatory, users won't be able to turn on sync.",
     "keywords": [
       "Uncategorized"
     ],
@@ -11117,18 +11311,40 @@
     "categoryName": "Security"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_webappinstallbyuserenabled",
-    "settingName": "Enable User Web App Install From Browser",
-    "settingDescription": "This policy controls whether users can install web apps through Microsoft Edge.\r\nIf you enable or don’t configure this policy, users can install web apps through the browser.\r\nIf you disable this policy, users can’t install web apps through the browser, and the \"apps\" data type is excluded from synchronization.\r\nThis policy doesn't support dynamic refresh. Changes to this policy, whether enabled, disabled, or not configured, take effect only after the browser is restarted.\r\nThis policy doesn't affect the 'WebAppInstallForceList' policy. Web apps specified by that policy are installed regardless of this policy setting.",
+    "settingId": "intelligencesettings_apps_notes_allowtranscription",
+    "settingName": "Allow Transcription",
+    "settingDescription": "If `false`, disables Notes Transcription.",
     "keywords": [
-      "WebAppInstallByUserEnabled",
-      "Enable User Web App Install From Browser",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
+      "Intelligence Settings"
     ],
-    "categoryName": "Microsoft Edge"
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "intelligencesettings_intelligencesettings",
+    "settingName": "com.apple.configuration.intelligence.settings",
+    "settingDescription": "Synthetic Top Level Setting Group Collection",
+    "keywords": [
+      "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "keyboardsettings_allowdefinitionlookup",
+    "settingName": "Allow Definition Lookup",
+    "settingDescription": "If `false`, disables definition lookup.",
+    "keywords": [
+      "Keyboard Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "keyboardsettings_allowautocorrection",
+    "settingName": "Allow Auto Correction",
+    "settingDescription": "If `false`, disables auto-correction.",
+    "keywords": [
+      "Keyboard Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "extensionsettings_managedextensions_generickey_alloweddomains",
@@ -11915,7 +12131,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.smartactionsblocklist_recommended",
     "settingName": "Block smart actions for a list of services (users can override)",
-    "settingDescription": "List specific services, such as PDFs, and websites that don't show smart actions. (Smart actions are actions like \"define\" which are available in full and mini context menus in Microsoft Edge.)\n\nIf you enable the policy:\n   - The smart action in the mini and full context menu will be disabled for all profiles for services that match the given list.\n   - Users will not see the smart action in the mini and full context menu on text selection for services that match the given list.\n   - In Microsoft Edge settings, the smart action in the mini and full context menu will be disabled for services that match the given list.\n\nIf you disable or don't configure this policy:\n   - The smart action in the mini and full context menu will be enabled for all profiles.\n   - Users will see the smart action in the mini and full context menu on text selection.\n   - In Microsoft Edge settings, the smart action in the mini and full context menu will be enabled.\n\nPolicy options mapping:\n\n* smart_actions (smart_actions) = Smart actions in pdfs and on websites\n\n* smart_actions_website (smart_actions_website) = Smart actions on websites\n\n* smart_actions_pdf (smart_actions_pdf) = Smart actions in PDF\n\nUse the preceding information when configuring this policy.",
+    "settingDescription": "List specific services, such as PDFs, and websites that don't show smart actions. (Smart actions are actions like \"define\" which are available in full and mini context menus in Microsoft Edge.)\n\nIf you enable the policy:\n   - The smart action in the mini and full context menu is disabled for all profiles for services that match the given list.\n   - Users won't see the smart action in the mini and full context menu on text selection for services that match the given list.\n   - In Microsoft Edge settings, the smart action in the mini and full context menu is disabled for services that match the given list.\n\nIf you disable or don't configure this policy:\n   - The smart action in the mini and full context menu is enabled for all profiles.\n   - Users will see the smart action in the mini and full context menu on text selection.\n   - In Microsoft Edge settings, the smart action in the mini and full context menu is enabled.\n\nPolicy options mapping:\n\n* smart_actions (smart_actions) = Smart actions in pdfs and on websites\n\n* smart_actions_website (smart_actions_website) = Smart actions on websites\n\n* smart_actions_pdf (smart_actions_pdf) = Smart actions in PDF\n\nUse the preceding information when configuring this policy.",
     "keywords": [
       "Uncategorized"
     ],
@@ -11933,7 +12149,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.edgesidebarappurlhostallowlist",
     "settingName": "Allow specific apps to be opened in Microsoft Edge sidebar",
-    "settingDescription": "Define a list of sites, based on URL patterns, that are not subject to the \"EdgeSidebarAppUrlHostBlockList\".\n\nIf you don't configure this policy, a user can open any app in sidebar except the urls listed in \"EdgeSidebarAppUrlHostBlockList\".\n\nIf you configure this policy, the apps listed in the allow list could be opened in sidebar even if they are listed in the block list.\n\nBy default, all apps are allowed. However, if you prohibited apps by policy, you can use the list of allowed apps to change that policy.\n\nFor detailed information about valid url patterns, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2281313\">https://go.microsoft.com/fwlink/?linkid=2281313</a>.",
+    "settingDescription": "Define a list of sites, based on URL patterns, that aren't subject to the \"EdgeSidebarAppUrlHostBlockList\".\n\nIf you don't configure this policy, a user can open any app in sidebar except the urls listed in \"EdgeSidebarAppUrlHostBlockList\".\n\nIf you configure this policy, the apps listed in the allow list could be opened in sidebar even if they are listed in the block list.\n\nBy default, all apps are allowed. However, if you prohibited apps by policy, you can use the list of allowed apps to change that policy.\n\nFor detailed information about valid url patterns, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2281313\">https://go.microsoft.com/fwlink/?linkid=2281313</a>.",
     "keywords": [
       "Uncategorized"
     ],
@@ -11978,7 +12194,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.showmicrosoftrewards",
     "settingName": "Show Microsoft Rewards experiences",
-    "settingDescription": "Show Microsoft Rewards experience and notifications.\nIf you enable this policy:\n   - Microsoft account users (excludes Azure AD accounts) in search, new tab page, and earn markets will see the Microsoft Rewards experience in their Microsoft Edge user profile.\n   - The setting to enable Microsoft Rewards in Microsoft Edge settings will be enabled and toggled on.\n\nIf you disable this policy:\n   - Microsoft account users (excludes Azure AD accounts) in search, new tab page, and earn markets will not see the Microsoft Rewards experience in their Microsoft Edge user profile.\n   - The setting to enable Microsoft Rewards in Microsoft Edge settings will be disabled and toggled off.\n\nIf you don't configure this policy:\n   - Microsoft account users (excludes Azure AD accounts) in search, new tab page, and earn markets will see the Microsoft Rewards experience in their Microsoft Edge user profile.\n   - The setting to enable Microsoft Rewards in Microsoft Edge settings will be enabled and toggled on.",
+    "settingDescription": "Show Microsoft Rewards experience and notifications.\nIf you enable this policy:\n   - Microsoft account users (excludes Azure AD accounts) in search, new tab page, and earn markets see the Microsoft Rewards experience in their Microsoft Edge user profile.\n   - The setting to enable Microsoft Rewards in Microsoft Edge settings is enabled and toggled on.\n\nIf you disable this policy:\n   - Microsoft account users (excludes Azure AD accounts) in search, new tab page, and earn markets won't see the Microsoft Rewards experience in their Microsoft Edge user profile.\n   - The setting to enable Microsoft Rewards in Microsoft Edge settings is disabled and toggled off.\n\nIf you don't configure this policy:\n   - Microsoft account users (excludes Azure AD accounts) in search, new tab page, and earn markets see the Microsoft Rewards experience in their Microsoft Edge user profile.\n   - The setting to enable Microsoft Rewards in Microsoft Edge settings is enabled and toggled on.",
     "keywords": [
       "Uncategorized"
     ],
@@ -12014,7 +12230,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.importstartuppagesettings",
     "settingName": "Allow importing of startup page settings",
-    "settingDescription": "Allows users to import Startup settings from another browser into Microsoft Edge.\n\nIf you enable this policy, the Startup settings are always imported.\n\nIf you disable this policy, startup settings are not imported at first run or at manual import.\n\nIf you don't configure this policy, startup settings are imported at first run, and users can choose whether to import this data manually by selecting browser settings option during later browsing sessions.\n\nYou can set this policy as a recommendation. This means that Microsoft Edge will import startup settings on first run, but users can select or clear **browser settings** option during manual import.\n\n**Note**: This policy currently manages importing from Microsoft Edge Legacy and Google Chrome (on Windows 7, 8, and 10) browsers.",
+    "settingDescription": "Allows users to import Startup settings from another browser into Microsoft Edge.\n\nIf you enable this policy, the Startup settings are always imported.\n\nIf you disable this policy, startup settings aren't imported at first run or at manual import.\n\nIf you don't configure this policy, startup settings are imported at first run, and users can choose whether to import this data manually by selecting browser settings option during later browsing sessions.\n\nYou can set this policy as a recommendation. This means that Microsoft Edge will import startup settings on first run, but users can select or clear **browser settings** option during manual import.\n\n**Note**: This policy currently manages importing from Microsoft Edge Legacy and Google Chrome (on Windows 7, 8, and 10) browsers.",
     "keywords": [
       "Uncategorized"
     ],
@@ -12050,7 +12266,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.microsofteditorsynonymsenabled",
     "settingName": "Synonyms are provided when using Microsoft Editor spell checker",
-    "settingDescription": "The Microsoft Editor service provides enhanced spell and grammar checking for editable text fields on web pages, and synonyms can be suggested as an integrated feature.\n\nIf you enable this policy, Microsoft Editor spell checker will provide synonyms for suggestions for misspelled words.\n\nIf you disable or don't configure this policy, Microsoft Editor spell checker will not provide synonyms for suggestions for misspelled words.\n\nIf the \"SpellcheckEnabled\" policy or the \"MicrosoftEditorProofingEnabled\" policy are set to disabled, or the user disables spell checking or chooses not to use Microsoft Editor spell checker in the settings page, this policy will have no effect.",
+    "settingDescription": "The Microsoft Editor service provides enhanced spell and grammar checking for editable text fields on web pages, and synonyms can be suggested as an integrated feature.\n\nIf you enable this policy, Microsoft Editor spell checker provides synonyms for suggestions for misspelled words.\n\nIf you disable or don't configure this policy, Microsoft Editor spell checker won't provide synonyms for suggestions for misspelled words.\n\nIf the \"SpellcheckEnabled\" policy or the \"MicrosoftEditorProofingEnabled\" policy are set to disabled, or the user disables spell checking or chooses not to use Microsoft Editor spell checker in the settings page, this policy will have no effect.",
     "keywords": [
       "Uncategorized"
     ],
@@ -12095,7 +12311,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.microsoftedgeinsiderpromotionenabled",
     "settingName": "Microsoft Edge Insider Promotion Enabled",
-    "settingDescription": "Shows content promoting the Microsoft Edge Insider channels on the About Microsoft Edge settings page.\n\nIf you enable or don't configure this policy, the Microsoft Edge Insider promotion content will be shown on the About Microsoft Edge page.\n\nIf you disable this policy, the Microsoft Edge Insider promotion content will not be shown on the About Microsoft Edge page.",
+    "settingDescription": "Shows content promoting the Microsoft Edge Insider channels on the About Microsoft Edge settings page.\n\nIf you enable or don't configure this policy, the Microsoft Edge Insider promotion content is shown on the About Microsoft Edge page.\n\nIf you disable this policy, the Microsoft Edge Insider promotion content isn't shown on the About Microsoft Edge page.",
     "keywords": [
       "Uncategorized"
     ],
@@ -12104,7 +12320,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.internetexplorerintegrationlocalfileallowed",
     "settingName": "Allow launching of local files in Internet Explorer mode",
-    "settingDescription": "This policy controls the availability of the --ie-mode-file-url command line argument which is used to launch Microsoft Edge with a local file specified on the command line into Internet Explorer mode.\n\nThis setting works in conjunction with:\n\"InternetExplorerIntegrationLevel\" is set to 'IEMode'.\n\nIf you set this policy to true, or don't configure it, the user is allowed to use the --ie-mode-file-url command line argument for launching local files in Internet Explorer mode.\n\nIf you set this policy to false, the user isn't allowed to use the --ie-mode-file-url command line argument for launching local files in Internet Explorer mode.\n\nTo learn more about Internet Explorer mode, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2094210\">https://go.microsoft.com/fwlink/?linkid=2094210</a>",
+    "settingDescription": "This policy controls the availability of the --ie-mode-file-url command line argument used to launch Microsoft Edge with a local file specified on the command line into Internet Explorer mode.\n\nThis setting works in conjunction with \"InternetExplorerIntegrationLevel\" (which is set to 'IEMode').\n\nIf this policy is set to \"true\", or don't configure it, the user is allowed to use the --ie-mode-file-url command line argument for launching local files in Internet Explorer mode.\n\nIf this policy is set to \"false\", the user isn't allowed to use the --ie-mode-file-url command line argument for launching local files in Internet Explorer mode.\n\nFor more information about Internet Explorer mode, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2094210\">https://go.microsoft.com/fwlink/?linkid=2094210</a>.",
     "keywords": [
       "Uncategorized"
     ],
@@ -12194,7 +12410,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.searchforimageenabled",
     "settingName": "Search for image enabled",
-    "settingDescription": "This policy lets you configure the Image Search feature in the right-click context menu.\n\nIf you enable or don't configure this policy, then the \"Search the web for image\" option will be visible in the context menu.\n\nIf you disable this policy, then the \"Search the web for image\" will not be visible in the context menu.",
+    "settingDescription": "This policy lets you configure the Image Search feature in the right-click context menu.\n\nIf you enable or don't configure this policy, then the \"Search the web for image\" option is visible in the context menu.\n\nIf you disable this policy, then the \"Search the web for image\" won't be visible in the context menu.",
     "keywords": [
       "Uncategorized"
     ],
@@ -12212,7 +12428,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.addressbarmicrosoftsearchinbingproviderenabled",
     "settingName": "Enable Microsoft Search in Bing suggestions in the address bar (Obsolete)",
-    "settingDescription": "Enables the display of relevant Microsoft Search in Bing suggestions in the address bar's suggestion list when the user enters a search query in the address bar. If you enable or don't configure this policy, users can see internal results powered by Microsoft Search in Bing in the Microsoft Edge address bar suggestion list. To access Microsoft Search in Bing results, the user must be signed into Microsoft Edge with their organization's Azure AD account.\n\nIf you disable this policy, users won't see internal results in the Microsoft Edge address bar suggestion list.\n\nStarting with Microsoft Edge version 89, Microsoft Search in Bing suggestions will be available even if Bing is not the user's default search provider.\n\nThis policy is no longer applicable due to changes in access to work search through Bing-related endpoints.",
+    "settingDescription": "Enables the display of relevant Microsoft Search in Bing suggestions in the address bar's suggestion list when the user enters a search query in the address bar. If you enable or don't configure this policy, users can see internal results powered by Microsoft Search in Bing in the Microsoft Edge address bar suggestion list. To access Microsoft Search in Bing results, the user must be signed in to Microsoft Edge with their organization's Azure AD account.\n\nIf you disable this policy, users won't see internal results in the Microsoft Edge address bar suggestion list.\n\nStarting with Microsoft Edge version 89, Microsoft Search in Bing suggestions will be available even if Bing isn't the user's default search provider.\n\nThis policy is no longer applicable due to changes in access to work search through Bing-related endpoints.",
     "keywords": [
       "Uncategorized"
     ],
@@ -12248,7 +12464,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.travelassistanceenabled",
     "settingName": "Enable travel assistance (Obsolete)",
-    "settingDescription": "This policy is obsolete as the feature is now contained within the Edge Sidebar and can be managed using the \"HubsSidebarEnabled\" policy. It doesn't work in Microsoft Edge after version 105.\nConfigure this policy to allow/disallow travel assistance.\n\nThe travel assistance feature gives helpful and relevant information to a user who performs Travel related task within the browser. This feature provides trusted and validated suggestions / information  to the users from across sources gathered by Microsoft.\n\nIf you enable or don't configure this setting, travel assistance will be enabled for the users when they are performing travel related tasks.\n\nIf you disable this setting, travel assistance will be disabled and  users will not be able to see any travel related recommendations.",
+    "settingDescription": "This policy is obsolete as the feature is now contained within the Edge Sidebar and can be managed using the \"HubsSidebarEnabled\" policy. It doesn't work in Microsoft Edge after version 105.\nConfigure this policy to allow/disallow travel assistance.\n\nThe travel assistance feature gives helpful and relevant information to a user who performs a travel-related task within the browser. This feature provides trusted and validated suggestions/information  to the users from across sources gathered by Microsoft.\n\nIf you enable or don't configure this setting, travel assistance is enabled for the users when they are performing travel-related tasks.\n\nIf you disable this setting, travel assistance will be disabled, and  users won't be able to see any travel-related recommendations.",
     "keywords": [
       "Uncategorized"
     ],
@@ -12257,7 +12473,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.videocaptureallowedurls",
     "settingName": "Sites that can access video capture devices without requesting permission",
-    "settingDescription": "Specify websites, based on URL patterns, that can use video capture devices without asking the user for permission. Patterns in this list are matched against the security origin of the requesting URL. If they match, the site is automatically granted access to video capture devices. Note, however, that the pattern \"*\", which matches any URL, is not supported by this policy.",
+    "settingDescription": "Specify websites, based on URL patterns, that can use video capture devices without asking the user for permission. Patterns in this list are matched against the security origin of the requesting URL. If they match, the site is automatically granted access to video capture devices. However, the pattern \"*\", which matches any URL, isn't supported by this policy.",
     "keywords": [
       "Uncategorized"
     ],
@@ -13214,6 +13430,20 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_webappinstallbyuserenabled",
+    "settingName": "Enable User Web App Install From Browser",
+    "settingDescription": "This policy controls whether users can install web apps through Microsoft Edge.\r\nIf you enable or don’t configure this policy, users can install web apps through the browser.\r\nIf you disable this policy, users can’t install web apps through the browser, and the \"apps\" data type is excluded from synchronization.\r\nThis policy doesn't support dynamic refresh. Changes to this policy, whether enabled, disabled, or not configured, take effect only after the browser is restarted.\r\nThis policy doesn't affect the 'WebAppInstallForceList' policy. Web apps specified by that policy are installed regardless of this policy setting.",
+    "keywords": [
+      "WebAppInstallByUserEnabled",
+      "Enable User Web App Install From Browser",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_commandlineflagsecuritywarningsenabled",
     "settingName": "Enable security warnings for command-line flags",
     "settingDescription": "If disabled, this policy prevents security warnings from appearing when Microsoft Edge is launched with potentially dangerous command-line flags.\r\n\r\nIf enabled or unset, security warnings are displayed when these command-line flags are used to launch Microsoft Edge.\r\n\r\nFor example, the --disable-gpu-sandbox flag generates this warning:  You're using an unsupported command-line flag: --disable-gpu-sandbox. This poses stability and security risks.\r\n\r\nOn Windows, this policy is only available on instances that are joined to a Microsoft Active Directory domain, or Windows 10 Pro (or Enterprise) instances that are enrolled for device management.",
@@ -13822,6 +14052,74 @@
       "Security"
     ],
     "categoryName": "Security"
+  },
+  {
+    "settingId": "sirisettings_forceprofanityfilter",
+    "settingName": "Force Profanity Filter",
+    "settingDescription": "If `true`, forces Siri profanity filter.",
+    "keywords": [
+      "Siri Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "intelligencesettings_forceondeviceonlydictation",
+    "settingName": "Force On Device Only Dictation",
+    "settingDescription": "If `true`, forces On-Device Only Dictation.",
+    "keywords": [
+      "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "intelligencesettings_apps_mail_allowsummary",
+    "settingName": "Allow Summary",
+    "settingDescription": "If `false`, disables Mail Summary.",
+    "keywords": [
+      "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "intelligencesettings_allowgenmoji",
+    "settingName": "Allow Genmoji",
+    "settingDescription": "If `false`, disables Genmoji.",
+    "keywords": [
+      "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "intelligencesettings_allowwritingtools",
+    "settingName": "Allow Writing Tools",
+    "settingDescription": "If `false`, disables Writing Tools.",
+    "keywords": [
+      "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "com.apple.applicationaccess_allowrosettausageawareness",
+    "settingName": "Allow Rosetta Usage Awareness",
+    "settingDescription": "If `false`, disables Rosetta usage awareness. When Rosetta usage awareness is active, a pop-up dialog is displayed to the user when an app that is using Rosetta is launched. The pop-up dialog indicates that Rosetta will be removed in a future version of the operating system so that the user can contact the app vendor regarding a replacement for the current app.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev146~policy~microsoft_edge_standardizedbrowserzoomenabled",
+    "settingName": "Enable Standardized Browser Zoom Behavior",
+    "settingDescription": "Configures whether the CSS \"zoom\" property follows the current CSS specification or legacy behavior.\r\n\r\nWhen this policy is enabled or not configured, the CSS \"zoom\" property follows the current specification defined by the CSS Working Group:\r\nhttps://drafts.csswg.org/css-viewport/#zoom-property\r\n\r\nWhen this policy is disabled, the CSS \"zoom\" property uses its legacy, pre-standardized behavior.\r\n\r\nThis policy is temporary and is intended to provide time for organizations to migrate web content to the updated behavior. In a future Microsoft Edge release, this policy will be removed and the standardized behavior will be enforced by default.",
+    "keywords": [
+      "StandardizedBrowserZoomEnabled",
+      "Enable Standardized Browser Zoom Behavior",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "extensionsettings_managedextensions_generickey_keytobereplaced",
@@ -14578,7 +14876,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.edgesidebarappurlhostforcelist",
     "settingName": "Control which apps are forced to be shown in Microsoft Edge sidebar",
-    "settingDescription": "Define a list of sites, based on URL, that are forced to be shown in sidebar.\n\nIf you don't configure this policy, no app is forced to be shown in sidebar.\n\nIf the \"HubsSidebarEnabled\" policy is disabled, this list isn't used and no sidebar can be shown.\n\nFor detailed information about valid url, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2281313\">https://go.microsoft.com/fwlink/?linkid=2281313</a>.\n\nNote: URL patterns are not supported in this policy. You should provide the exact URL of the app.",
+    "settingDescription": "Define a list of sites, based on URL, that are forced to be shown in sidebar.\n\nIf you don't configure this policy, no app is forced to be shown in sidebar.\n\nIf the \"HubsSidebarEnabled\" policy is disabled, this list isn't used, and no sidebar can be shown.\n\nFor detailed information about valid URL, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2281313\">https://go.microsoft.com/fwlink/?linkid=2281313</a>.\n\nNote: URL patterns aren't supported in this policy. You should provide the exact URL of the app.",
     "keywords": [
       "Uncategorized"
     ],
@@ -14767,7 +15065,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.configurefriendlyurlformat",
     "settingName": "Configure the default paste format of URLs copied from Microsoft Edge, and determine if additional formats will be available to users",
-    "settingDescription": "If FriendlyURLs are enabled, Microsoft Edge will compute additional representations of the URL and place them on the clipboard.\n\nThis policy configures what format will be pasted when the user pastes in external applications, or inside Microsoft Edge without the 'Paste as' context menu item.\n\nIf configured, this policy makes a choice on behalf of the user. The options in edge://settings/shareCopyPaste will be grayed out, and the options in the 'Paste As' context menu will not be available.\n\n* Not configured = The user will be able to choose their preferred paste format. By default, this is set to the friendly URL format. The 'Paste As' menu will be available in Microsoft Edge.\n\n* 1 = No additional formats will be stored on the clipboard. There will be no 'Paste as' context menu item in Microsoft Edge and the only format available to paste will be the plain text URL format. Effectively, the friendly URL feature will be disabled.\n\n* 3 = The user will get a friendly URL whenever they paste into surfaces that accept rich text. The plain URL will still be available for non-rich surfaces. There will be no 'Paste As' menu in Microsoft Edge.\n\n* 4 = (Not currently used)\n\nThe richer formats may not be well-supported in some paste destinations and/or websites. In these scenarios, the plain URL option is recommended when configuring this policy.\n\nThe recommended policy is available in Microsoft Edge 105 or later.\n\nPolicy options mapping:\n\n* PlainText (1) = The plain URL without any extra information, such as the page's title. This is the recommended option when this policy is configured. For more information, see the description.\n\n* TitledHyperlink (3) = Titled Hyperlink: A hyperlink that points to the copied URL, but whose visible text is the title of the destination page. This is the Friendly URL format.\n\n* WebPreview (4) = Coming soon. If set, behaves the same as 'Plain URL'.\n\nUse the preceding information when configuring this policy.",
+    "settingDescription": "If FriendlyURLs are enabled, Microsoft Edge computes more representations of the URL and places them on the clipboard.\n\nThis policy configures what format is pasted when the user pastes in external applications or inside Microsoft Edge without the 'Paste as' context menu item.\n\nIf you configure this policy, it makes a choice on behalf of the user. The options in edge://settings/shareCopyPaste will be grayed out, and the options in the 'Paste As' context menu won't be available.\n\n* Not configured = The users are able to choose their preferred paste format. By default, this is set to the friendly URL format. The 'Paste As' menu will be available in Microsoft Edge.\n\n* 1 = No additional formats are stored on the clipboard. There will be no 'Paste as' context menu item in Microsoft Edge, and the only format available to paste will be the plain text URL format. Effectively, the friendly URL feature will be disabled.\n\n* 3 = The user gets a friendly URL whenever they paste into surfaces that accept rich text. The plain URL is still be available for non-rich surfaces. There will be no 'Paste As' menu in Microsoft Edge.\n\n* 4 = (Not currently used)\n\nThe richer formats may not be supported in some paste destinations and/or websites. In these scenarios, the plain URL option is recommended when configuring this policy.\n\nThe recommended policy is available in Microsoft Edge 105 or later.\n\nPolicy options mapping:\n\n* PlainText (1) = The plain URL without any extra information, such as the page's title. This is the recommended option when this policy is configured. For more information, see the description.\n\n* TitledHyperlink (3) = Titled Hyperlink: A hyperlink that points to the copied URL but whose visible text is the title of the destination page. This is the Friendly URL format.\n\n* WebPreview (4) = Coming soon. If set, behaves the same as 'Plain URL'.\n\nUse the preceding information when configuring this policy.",
     "keywords": [
       "Uncategorized"
     ],
@@ -14893,7 +15191,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.smartactionsblocklist",
     "settingName": "Block smart actions for a list of services",
-    "settingDescription": "List specific services, such as PDFs, and websites that don't show smart actions. (Smart actions are actions like \"define\" which are available in full and mini context menus in Microsoft Edge.)\n\nIf you enable the policy:\n   - The smart action in the mini and full context menu will be disabled for all profiles for services that match the given list.\n   - Users will not see the smart action in the mini and full context menu on text selection for services that match the given list.\n   - In Microsoft Edge settings, the smart action in the mini and full context menu will be disabled for services that match the given list.\n\nIf you disable or don't configure this policy:\n   - The smart action in the mini and full context menu will be enabled for all profiles.\n   - Users will see the smart action in the mini and full context menu on text selection.\n   - In Microsoft Edge settings, the smart action in the mini and full context menu will be enabled.\n\nPolicy options mapping:\n\n* smart_actions (smart_actions) = Smart actions in pdfs and on websites\n\n* smart_actions_website (smart_actions_website) = Smart actions on websites\n\n* smart_actions_pdf (smart_actions_pdf) = Smart actions in PDF\n\nUse the preceding information when configuring this policy.",
+    "settingDescription": "List specific services, such as PDFs, and websites that don't show smart actions. (Smart actions are actions like \"define\" which are available in full and mini context menus in Microsoft Edge.)\n\nIf you enable the policy:\n   - The smart action in the mini and full context menu is disabled for all profiles for services that match the given list.\n   - Users won't see the smart action in the mini and full context menu on text selection for services that match the given list.\n   - In Microsoft Edge settings, the smart action in the mini and full context menu is disabled for services that match the given list.\n\nIf you disable or don't configure this policy:\n   - The smart action in the mini and full context menu is enabled for all profiles.\n   - Users will see the smart action in the mini and full context menu on text selection.\n   - In Microsoft Edge settings, the smart action in the mini and full context menu is enabled.\n\nPolicy options mapping:\n\n* smart_actions (smart_actions) = Smart actions in pdfs and on websites\n\n* smart_actions_website (smart_actions_website) = Smart actions on websites\n\n* smart_actions_pdf (smart_actions_pdf) = Smart actions in PDF\n\nUse the preceding information when configuring this policy.",
     "keywords": [
       "Uncategorized"
     ],
@@ -16492,18 +16790,22 @@
     "categoryName": "Security"
   },
   {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_webappinstallbyuserenabled",
-    "settingName": "Enable User Web App Install From Browser (User)",
-    "settingDescription": "This policy controls whether users can install web apps through Microsoft Edge.\r\nIf you enable or don’t configure this policy, users can install web apps through the browser.\r\nIf you disable this policy, users can’t install web apps through the browser, and the \"apps\" data type is excluded from synchronization.\r\nThis policy doesn't support dynamic refresh. Changes to this policy, whether enabled, disabled, or not configured, take effect only after the browser is restarted.\r\nThis policy doesn't affect the 'WebAppInstallForceList' policy. Web apps specified by that policy are installed regardless of this policy setting.",
+    "settingId": "sirisettings_allowwhilelocked",
+    "settingName": "Allow While Locked",
+    "settingDescription": "If `false`, disables Siri while locked.",
     "keywords": [
-      "WebAppInstallByUserEnabled",
-      "Enable User Web App Install From Browser",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
+      "Siri Settings"
     ],
-    "categoryName": "Microsoft Edge"
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "intelligencesettings_apps_safari_allowsummary",
+    "settingName": "Allow Summary",
+    "settingDescription": "If `false`, disables Safari Summary.",
+    "keywords": [
+      "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "com.apple.caldav.account_caldavusessl",
@@ -17271,7 +17573,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.adstransparencyenabled",
     "settingName": "Configure if the ads transparency feature is enabled",
-    "settingDescription": "Lets you decide whether the ads transparency feature is enabled. This behavior only applies to the \"balanced\" mode of tracking prevention, and does not impact \"basic\" or \"strict\" modes. Your users' tracking prevention level can be configured using the \"TrackingPrevention\" policy. AdsTransparencyEnabled will only have an effect if \"TrackingPrevention\" is set to TrackingPreventionBalanced or is not configured.\n\nIf you enable or don't configure this policy, transparency metadata provided by ads will be available to the user when the feature is active.\n\nWhen the feature is enabled, Tracking Prevention will enable exceptions for the associated ad providers that have met Microsoft's privacy standards.\n\nIf you disable this policy, Tracking Prevention will not adjust its behavior even when transparency metadata is provided by ads.",
+    "settingDescription": "Lets you decide whether the ads transparency feature is enabled. This behavior only applies to the \"balanced\" mode of tracking prevention, and doesn't impact \"basic\" or \"strict\" modes. Your users' tracking prevention level can be configured using the \"TrackingPrevention\" policy. AdsTransparencyEnabled will only have an effect if \"TrackingPrevention\" is set to TrackingPreventionBalanced or isn't configured.\n\nIf you enable or don't configure this policy, transparency metadata provided by ads are available to the user when the feature is active.\n\nWhen the feature is enabled, Tracking Prevention enables exceptions for the associated ad providers that have met Microsoft's privacy standards.\n\nIf you disable this policy, Tracking Prevention won't adjust its behavior even when transparency metadata is provided by ads.",
     "keywords": [
       "Uncategorized"
     ],
@@ -17306,7 +17608,7 @@
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.useragentreduction",
-    "settingName": "Enable or disable the User-Agent Reduction (Deprecated)",
+    "settingName": "Enable or disable the User-Agent Reduction (Obsolete)",
     "settingDescription": "The User-Agent HTTP request header has been reduced by default since Microsoft Edge version 119. To continue receiving detailed platform information, migrate to User-Agent Client Hints, which replace the deprecated detailed User-Agent header. For more information, visit: https://web.dev/articles/migrate-to-ua-ch\n\nIf you don't configure this policy or set it to Default, the User-Agent header will be reduced and controlled by experimentation.\n\nSet this policy to 'ForceEnabled' to force the reduced version of the  User-Agent request header for all origins.\n\nSet this policy to 'ForceDisabled' to always use the full (legacy)  User-Agent header.\n\nTo learn more about the User-Agent string, read here:\n\n<a href=\"https://go.microsoft.com/fwlink/?linkid=2186267\">https://go.microsoft.com/fwlink/?linkid=2186267</a>\n\nPolicy options mapping:\n\n* Default (0) = Reduced User Agent, or controlled by experimentation.\n\n* ForceDisabled (1) = Full (legacy) User Agent.\n\n* ForceEnabled (2) = Reduced User Agent.\n\nUse the preceding information when configuring this policy.",
     "keywords": [
       "Uncategorized"
@@ -17352,7 +17654,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.hstspolicybypasslist",
     "settingName": "Configure the list of names that will bypass the HSTS policy check",
-    "settingDescription": "Setting the policy specifies a list of hostnames that bypass preloaded HSTS upgrades from http to https.\n\nOnly single-label hostnames are allowed in this policy, and this policy only applies to static HSTS-preloaded entries (for example, \"app\", \"new\", \"search\", \"play\"). This policy does not prevent HSTS upgrades for servers that have dynamically requested HSTS upgrades using a Strict-Transport-Security response header.\n\nSupplied hostnames must be canonicalized: Any IDNs must be converted to their A-label format, and all ASCII letters must be lowercase. This policy only applies to the specific single-label hostnames specified, not to subdomains of those names.",
+    "settingDescription": "Setting the policy specifies a list of hostnames that bypass preloaded HSTS (HTTP Strict Transport Security) upgrades from http to https.\n\nOnly single-label hostnames are allowed in this policy, and this policy only applies to static HSTS-preloaded entries (for example, \"app\", \"new\", \"search\", and \"play\"). This policy doesn't prevent HSTS upgrades for servers that have dynamically requested HSTS upgrades using a Strict-Transport-Security response header.\n\nSupplied hostnames must be canonicalized: Any IDNs must be converted to their A-label format, and all ASCII letters must be lowercase. This policy only applies to the specific single-label hostnames specified and not to subdomains of those names.",
     "keywords": [
       "Uncategorized"
     ],
@@ -17505,7 +17807,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.organizationalbrandingonworkprofileuienabled_recommended",
     "settingName": "Allow the use of your organization's branding assets from Microsoft Entra on the profile-related UI of a work or school profile (users can override)",
-    "settingDescription": "Allow the use of your organization's branding assets from Entra, if any, on the profile-related UI of a profile that's signed in with an Entra ID (formerly known as Azure Active Directory) account. This requires a browser restart to take effect.\n\nIf you enable this policy, your organization's branding assets from Entra will be used.\n\nIf you disable or don't configure this policy, your organization's branding assets from Entra won't be used.\n\nFor more information about configuring your organization's branding assets on Entra, please visit <a href=\"https://go.microsoft.com/fwlink/?linkid=2254514\">https://go.microsoft.com/fwlink/?linkid=2254514</a>.",
+    "settingDescription": "Allow the use of your organization's branding assets from Entra, if any, on the profile-related UI of a profile that's signed in with an Entra ID (formerly known as Azure Active Directory) account. This requires a browser restart to take effect.\n\nIf you enable this policy, your organization's branding assets from Entra are used.\n\nIf you disable or don't configure this policy, your organization's branding assets from Entra aren't used.\n\nFor more information about configuring your organization's branding assets on Entra, visit <a href=\"https://go.microsoft.com/fwlink/?linkid=2254514\">https://go.microsoft.com/fwlink/?linkid=2254514</a>.",
     "keywords": [
       "Uncategorized"
     ],
@@ -17532,7 +17834,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.copilotcdppagecontext",
     "settingName": "Control Copilot with Commercial Data Protection access to page context for Microsoft Entra ID profiles (Obsolete)",
-    "settingDescription": "This policy has been obsoleted as of Edge 133. Instead of this obsolete policy, we recommend using \"EdgeEntraCopilotPageContext\".\n\nThis policy controls access to page contents for Copilot with Commercial Data Protection in the Edge sidebar. This policy applies only to Microsoft Entra ID profiles. To summarize pages and interact with text selections, it needs to be able to access the page contents. This policy does not apply to MSA profiles. This policy doesn't control access for Copilot without Commercial Data Protection. Access for Copilot without Commercial Data Protection is controlled by the policy CopilotPageContext.\n\nIf you enable this policy, Copilot with Commercial Data Protection will have access to page context.\n\nIf you don't configure this policy, a user can enable access to page context for Copilot with Commercial Data Protection using the setting toggle in Edge.\n\nIf you disable this policy, Copilot with Commercial Data Protection will not be able to access page context.",
+    "settingDescription": "This policy has been obsoleted as of Edge 133. Instead of this obsolete policy, we recommend using \"EdgeEntraCopilotPageContext\".\n\nThis policy controls access to page contents for Copilot with Commercial Data Protection in the Edge sidebar. This policy applies only to Microsoft Entra ID profiles. To summarize pages and interact with text selections, it needs to be able to access the page contents. This policy doesn't apply to MSA profiles. This policy doesn't control access for Copilot without Commercial Data Protection. Access for Copilot without Commercial Data Protection is controlled by the policy CopilotPageContext.\n\nIf you enable this policy, Copilot with Commercial Data Protection will have access to page context.\n\nIf you don't configure this policy, a user can enable access to page context for Copilot with Commercial Data Protection using the setting toggle in Edge.\n\nIf you disable this policy, Copilot with Commercial Data Protection won't be able to access page context.",
     "keywords": [
       "Uncategorized"
     ],
@@ -17559,7 +17861,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.importstartuppagesettings_recommended",
     "settingName": "Allow importing of startup page settings (users can override)",
-    "settingDescription": "Allows users to import Startup settings from another browser into Microsoft Edge.\n\nIf you enable this policy, the Startup settings are always imported.\n\nIf you disable this policy, startup settings are not imported at first run or at manual import.\n\nIf you don't configure this policy, startup settings are imported at first run, and users can choose whether to import this data manually by selecting browser settings option during later browsing sessions.\n\nYou can set this policy as a recommendation. This means that Microsoft Edge will import startup settings on first run, but users can select or clear **browser settings** option during manual import.\n\n**Note**: This policy currently manages importing from Microsoft Edge Legacy and Google Chrome (on Windows 7, 8, and 10) browsers.",
+    "settingDescription": "Allows users to import Startup settings from another browser into Microsoft Edge.\n\nIf you enable this policy, the Startup settings are always imported.\n\nIf you disable this policy, startup settings aren't imported at first run or at manual import.\n\nIf you don't configure this policy, startup settings are imported at first run, and users can choose whether to import this data manually by selecting browser settings option during later browsing sessions.\n\nYou can set this policy as a recommendation. This means that Microsoft Edge will import startup settings on first run, but users can select or clear **browser settings** option during manual import.\n\n**Note**: This policy currently manages importing from Microsoft Edge Legacy and Google Chrome (on Windows 7, 8, and 10) browsers.",
     "keywords": [
       "Uncategorized"
     ],
@@ -17577,7 +17879,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.strictermixedcontenttreatmentenabled",
     "settingName": "Enable stricter treatment for mixed content (Obsolete)",
-    "settingDescription": "This policy doesn't work because it was only intended to be a short-term mechanism to give enterprises more time to update their web content if it was found to be incompatible with stricter mixed content treatment.\n\nThis policy controls the treatment for mixed content (HTTP content in HTTPS sites) in the browser.\n\nIf you set this policy to true or not set, audio and video mixed content will be automatically upgraded to HTTPS (that is, the URL will be rewritten as HTTPS, without a fallback if the resource isn't available over HTTPS) and a 'Not Secure' warning will be shown in the URL bar for image mixed content.\n\nIf you set the policy to false, auto upgrades will be disabled for audio and video, and no warning will be shown for images.\n\nThis policy does not affect other types of mixed content other than audio, video, and images.",
+    "settingDescription": "This policy doesn't work because it was only intended to be a short-term mechanism to give enterprises more time to update their web content if it was found to be incompatible with stricter mixed content treatment.\n\nThis policy controls the treatment for mixed content (HTTP content in HTTPS sites) in the browser.\n\nIf you set this policy to true or not set, audio and video mixed content is automatically upgraded to HTTPS (that is, the URL will be rewritten as HTTPS, without a fallback if the resource isn't available over HTTPS), and a 'Not Secure' warning is shown in the URL bar for image mixed content.\n\nIf you set the policy to false, auto upgrades are disabled for audio and video, and no warning is shown for images.\n\nThis policy doesn't affect other types of mixed content other than audio, video, and images.",
     "keywords": [
       "Uncategorized"
     ],
@@ -18537,6 +18839,20 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_webappinstallbyuserenabled",
+    "settingName": "Enable User Web App Install From Browser (User)",
+    "settingDescription": "This policy controls whether users can install web apps through Microsoft Edge.\r\nIf you enable or don’t configure this policy, users can install web apps through the browser.\r\nIf you disable this policy, users can’t install web apps through the browser, and the \"apps\" data type is excluded from synchronization.\r\nThis policy doesn't support dynamic refresh. Changes to this policy, whether enabled, disabled, or not configured, take effect only after the browser is restarted.\r\nThis policy doesn't affect the 'WebAppInstallForceList' policy. Web apps specified by that policy are installed regardless of this policy setting.",
+    "keywords": [
+      "WebAppInstallByUserEnabled",
+      "Enable User Web App Install From Browser",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_edgecollectionsenabled",
     "settingName": "Enable the Collections feature",
     "settingDescription": "Lets you allow users to access the Collections feature, where they can collect, organize, share, and export content more efficiently and with Office integration.\r\n\r\nIf you enable or don't configure this policy, users can access and use the Collections feature in Microsoft Edge.\r\n\r\nIf you disable this policy, users can't access and use Collections in Microsoft Edge.",
@@ -19301,6 +19617,87 @@
       "Security"
     ],
     "categoryName": "Security"
+  },
+  {
+    "settingId": "sirisettings_allowusergeneratedcontent",
+    "settingName": "Allow User Generated Content",
+    "settingDescription": "If `false`, disables Siri user-generated content.",
+    "keywords": [
+      "Siri Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "externalintelligencesettings_allowsignin",
+    "settingName": "Allow Sign In",
+    "settingDescription": "If `false`, disables sign-in for external intelligence integrations.",
+    "keywords": [
+      "External Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "intelligencesettings_apps_notes",
+    "settingName": "Notes",
+    "settingDescription": "If present, configures Notes Intelligence features.",
+    "keywords": [
+      "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "intelligencesettings_apps_notes_allowtranscriptionsummary",
+    "settingName": "Allow Transcription Summary",
+    "settingDescription": "If `false`, disables Notes Transcription Summary.",
+    "keywords": [
+      "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "keyboardsettings_allowdictation",
+    "settingName": "Allow Dictation",
+    "settingDescription": "If `false`, disables dictation.",
+    "keywords": [
+      "Keyboard Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "keyboardsettings_allowslidetotype",
+    "settingName": "Allow Slide To Type",
+    "settingDescription": "If `false`, disables slide to type.",
+    "keywords": [
+      "Keyboard Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "keyboardsettings_allowspellcheck",
+    "settingName": "Allow Spell Check",
+    "settingDescription": "If `false`, disables spell check.",
+    "keywords": [
+      "Keyboard Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.staticstoragequotaenabled",
+    "settingName": "Control whether storage quota APIs will return static values",
+    "settingDescription": "Controls how the Storage Quota APIs report the available quota to websites.\n\nWhen enabled, the Storage Quota APIs return a static quota value equal to the current usage plus the smaller of 10 GiB or the device's total storage rounded up to the nearest 1 GiB.\n\nWhen disabled, the Storage Quota APIs return a dynamic quota value that reflects the actual available device storage.\n\nWhen unset, the browser uses the default platform behavior.\n\nThis policy does not affect sites with unlimited storage permissions or enforced quota settings.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.webappinstallbyuserenabled",
+    "settingName": "Enable User Web App Install From Browser",
+    "settingDescription": "This policy controls whether users can install web apps through Microsoft Edge.\nIf you enable or don’t configure this policy, users can install web apps through the browser.\nIf you disable this policy, users can’t install web apps through the browser, and the \"apps\" data type is excluded from synchronization.\nThis policy doesn't support dynamic refresh. Changes to this policy, whether enabled, disabled, or not configured, take effect only after the browser is restarted.\nThis policy doesn't affect the 'WebAppInstallForceList' policy. Web apps specified by that policy are installed regardless of this policy setting.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "extensionsettings_managedextensions",
@@ -20194,7 +20591,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.syncdisabled",
     "settingName": "Disable synchronization of data using Microsoft sync services",
-    "settingDescription": "Disables data synchronization in Microsoft Edge. This policy also prevents the sync consent prompt from appearing.\n\nThis policy disables cloud synchronization only and has no impact on the \"RoamingProfileSupportEnabled\" policy.\n\nIf you don't set this policy or apply it as recommended, users are able to turn sync on or off. If you apply this policy as mandatory, users won't be able to turn sync on.",
+    "settingDescription": "Disables data synchronization in Microsoft Edge. This policy also prevents the sync consent prompt from appearing.\n\nThis policy disables cloud synchronization only and has no impact on the \"RoamingProfileSupportEnabled\" policy.\n\nIf you don't set this policy or apply it as recommended, users can turn on or turn off sync. If you apply this policy as mandatory, users won't be able to turn on sync.",
     "keywords": [
       "Uncategorized"
     ],
@@ -20356,7 +20753,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.showmicrosoftrewards_recommended",
     "settingName": "Show Microsoft Rewards experiences (users can override)",
-    "settingDescription": "Show Microsoft Rewards experience and notifications.\nIf you enable this policy:\n   - Microsoft account users (excludes Azure AD accounts) in search, new tab page, and earn markets will see the Microsoft Rewards experience in their Microsoft Edge user profile.\n   - The setting to enable Microsoft Rewards in Microsoft Edge settings will be enabled and toggled on.\n\nIf you disable this policy:\n   - Microsoft account users (excludes Azure AD accounts) in search, new tab page, and earn markets will not see the Microsoft Rewards experience in their Microsoft Edge user profile.\n   - The setting to enable Microsoft Rewards in Microsoft Edge settings will be disabled and toggled off.\n\nIf you don't configure this policy:\n   - Microsoft account users (excludes Azure AD accounts) in search, new tab page, and earn markets will see the Microsoft Rewards experience in their Microsoft Edge user profile.\n   - The setting to enable Microsoft Rewards in Microsoft Edge settings will be enabled and toggled on.",
+    "settingDescription": "Show Microsoft Rewards experience and notifications.\nIf you enable this policy:\n   - Microsoft account users (excludes Azure AD accounts) in search, new tab page, and earn markets see the Microsoft Rewards experience in their Microsoft Edge user profile.\n   - The setting to enable Microsoft Rewards in Microsoft Edge settings is enabled and toggled on.\n\nIf you disable this policy:\n   - Microsoft account users (excludes Azure AD accounts) in search, new tab page, and earn markets won't see the Microsoft Rewards experience in their Microsoft Edge user profile.\n   - The setting to enable Microsoft Rewards in Microsoft Edge settings is disabled and toggled off.\n\nIf you don't configure this policy:\n   - Microsoft account users (excludes Azure AD accounts) in search, new tab page, and earn markets see the Microsoft Rewards experience in their Microsoft Edge user profile.\n   - The setting to enable Microsoft Rewards in Microsoft Edge settings is enabled and toggled on.",
     "keywords": [
       "Uncategorized"
     ],
@@ -20401,7 +20798,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.developertoolsavailability",
     "settingName": "Control where developer tools can be used",
-    "settingDescription": "Control where developer tools can be used.\n\nIf you set this policy to 'DeveloperToolsDisallowedForForceInstalledExtensions' (the default), users can access the developer tools and the JavaScript console in general, but not in the context of extensions installed by enterprise policy.\n\nIf you set this policy to 'DeveloperToolsAllowed', users can access the developer tools and the JavaScript console in all contexts, including extensions installed by enterprise policy.\n\nIf you set this policy to 'DeveloperToolsDisallowed', users can't access the developer tools or inspect website elements. Keyboard shortcuts and menu or context menu entries that open the developer tools or the JavaScript Console are disabled.\n\nAs of Microsoft Edge version 99, this setting also controls entry points for the 'View page source' feature. If you set this policy to 'DeveloperToolsDisallowed', users cannot access source viewing via keyboard shortcut or the context menu. To fully block source viewing, you must also add 'view-source:*' to the \"URLBlocklist\" policy.\n\nAs of Microsoft Edge version 119, this setting also controls whether developer mode for Isolated Web Apps can be activated and used.\n\nAs of Microsoft Edge version 128, this setting will not control developer mode on extensions page if \"ExtensionDeveloperModeSettings\" policy is set.\n\nPolicy options mapping:\n\n* DeveloperToolsDisallowedForForceInstalledExtensions (0) = Block the developer tools on extensions installed by enterprise policy, allow in other contexts\n\n* DeveloperToolsAllowed (1) = Allow using the developer tools\n\n* DeveloperToolsDisallowed (2) = Don't allow using the developer tools\n\nUse the preceding information when configuring this policy.",
+    "settingDescription": "Control where developer tools can be used.\n\nIf you set this policy to 'DeveloperToolsDisallowedForForceInstalledExtensions' (the default), users can access the developer tools and the JavaScript console in general but not in the context of extensions installed by enterprise policy.\n\nIf you set this policy to 'DeveloperToolsAllowed', users can access the developer tools and the JavaScript console in all contexts, including extensions installed by enterprise policy.\n\nIf you set this policy to 'DeveloperToolsDisallowed', users can't access the developer tools or inspect website elements. Keyboard shortcuts and menu or context menu entries that open the developer tools or the JavaScript Console are disabled.\n\nAs of Microsoft Edge version 99, this setting also controls entry points for the 'View page source' feature. If you set this policy to 'DeveloperToolsDisallowed', users can't access source viewing via keyboard shortcut or the context menu. To fully block source viewing, you must also add 'view-source:*' to the \"URLBlocklist\" policy.\n\nAs of Microsoft Edge version 119, this setting also controls whether developer mode for Isolated Web Apps can be activated and used.\n\nAs of Microsoft Edge version 128, this setting won't control developer mode on extensions page if \"ExtensionDeveloperModeSettings\" policy is set.\n\nPolicy options mapping:\n\n* DeveloperToolsDisallowedForForceInstalledExtensions (0) = Block the developer tools on extensions installed by enterprise policy, allow in other contexts\n\n* DeveloperToolsAllowed (1) = Allow using the developer tools\n\n* DeveloperToolsDisallowed (2) = Don't allow using the developer tools\n\nUse the preceding information when configuring this policy.",
     "keywords": [
       "Uncategorized"
     ],
@@ -20446,7 +20843,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.serialaskforurls",
     "settingName": "Allow the Serial API on specific sites",
-    "settingDescription": "Specifies URL patterns for sites that are allowed to request access to a serial port.\n\nIf not configured, Microsoft Edge uses the value from the DefaultSerialGuardSetting policy (if set), or the user's settings.\n\nFor unmatched sites, the following order applies:\n\n1. \"SerialBlockedForUrls\" (if matched).\n\n2. DefaultSerialGuardSetting (if set).\n\n3. User's settings.\n\nIf URL patterns in this policy conflict with those in \"SerialBlockedForUrls\", they will be ignored.\n\nFor detailed information about valid url patterns, please see <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.",
+    "settingDescription": "Specifies URL patterns for sites that are allowed to request access to a serial port.\n\nIf not configured, Microsoft Edge uses the value from the DefaultSerialGuardSetting policy (if set), or the user's settings.\n\nFor unmatched sites, the following order applies:\n\n1. \"SerialBlockedForUrls\" (if matched).\n\n2. DefaultSerialGuardSetting (if set).\n\n3. User's settings.\n\nIf URL patterns in this policy conflict with those in \"SerialBlockedForUrls\", they're ignored.\n\nFor detailed information about valid URL patterns, please see <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.",
     "keywords": [
       "Uncategorized"
     ],
@@ -20482,7 +20879,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.localbrowserdatashareenabled",
     "settingName": "Enable Windows to search local Microsoft Edge browsing data",
-    "settingDescription": "Enables Windows to index Microsoft Edge browsing data stored locally on the user's device and allows users to find and launch previously stored browsing data directly from Windows features such as the search box on the taskbar in Windows.\n\nIf you enable this policy or don't configure it, Microsoft Edge will publish local browsing data to the Windows Indexer.\n\nIf you disable this policy, Microsoft Edge will not share data to the Windows Indexer.\n\nNote that if you disable this policy, Microsoft Edge will remove the data shared with Windows on the device and stop sharing any new browsing data.",
+    "settingDescription": "Enables Windows to index Microsoft Edge browsing data stored locally on the user's device and allows users to find and launch previously stored browsing data directly from Windows features such as the search box on the taskbar in Windows.\n\nIf you enable this policy or don't configure it, Microsoft Edge publishes local browsing data to the Windows Indexer.\n\nIf you disable this policy, Microsoft Edge won't share data to the Windows Indexer.\n\nNote that if you disable this policy, Microsoft Edge removes the data shared with Windows on the device and stops sharing any new browsing data.",
     "keywords": [
       "Uncategorized"
     ],
@@ -20500,7 +20897,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.textpredictionenabled",
     "settingName": "Text prediction enabled by default",
-    "settingDescription": "The Microsoft Turing service uses natural language processing to generate predictions for long-form editable text fields on web pages.\n\nIf you enable or don't configure this policy, text predictions will be provided for eligible text fields.\n\nIf you disable this policy, text predictions will not be provided in eligible text fields. Sites may still provide their own text predictions.",
+    "settingDescription": "The Microsoft Turing service uses natural language processing to generate predictions for long-form editable text fields on web pages.\n\nIf you enable or don't configure this policy, text predictions are provided for eligible text fields.\n\nIf you disable this policy, text predictions aren't provided in eligible text fields. Sites may still provide their own text predictions.",
     "keywords": [
       "Uncategorized"
     ],

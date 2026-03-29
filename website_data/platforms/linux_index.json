@@ -526,6 +526,15 @@
     "categoryName": "Microsoft Defender"
   },
   {
+    "settingId": "com.apple.managedclient.preferences_offlinedefinitionupdatefallbacktocloud",
+    "settingName": "Fallback to Microsoft cloud updates",
+    "settingDescription": "Determine the Defender for Endpoint security intelligence update approach when offline mirror server fails to serve the update request. If set to true, the update is retried via the Microsoft cloud when offline security intelligence update failed.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
     "settingId": "com.apple.managedclient.preferences_exclusions_item_name",
     "settingName": "Name",
     "settingDescription": "Process name, either or full path or file name, wildcards supported",
