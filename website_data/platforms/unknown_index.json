@@ -1,5 +1,17 @@
 [
   {
+    "settingId": "enrollment_autopilot_dpp_forcedenrollment",
+    "settingName": "Hide change account options",
+    "settingDescription": "Options to change account and start over with a different account appear, respectively, during initial device setup on the company sign-in page, and on the domain error page. To hide these options, you must configure company branding in Microsoft Entra ID",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "ForcedEnrollment",
+      "Out-of-box experience settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_authenticationmethod",
     "settingName": "Intune authentication method",
     "settingDescription": "If your organization uses multifactor authentication, select Setup Assistant with modern authentication, which prompts users to authenticate based on settings in Entra.",
@@ -107,6 +119,18 @@
       "File Name",
       "Elevation",
       "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_enablequ",
+    "settingName": "Install Windows updates (might restart the device)",
+    "settingDescription": "",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "EnableQU",
+      "Out-of-box experience settings"
     ],
     "categoryName": "Uncategorized"
   },
@@ -734,7 +758,7 @@
   {
     "settingId": "enrollment_autopilot_dpp_devicerenametemplate",
     "settingName": "Enter a name",
-    "settingDescription": "Create a unique name for your devices. Names must be 15 characters or less, and can contain letters (a-z, A-Z), numbers (0-9), and hyphens. Names must not contain only numbers. Names cannot include a blank space. Use the %SERIAL% macro to add a hardware-specific serial number. Alternatively, use the %RAND:x% macro to add a random string of numbers, where x equals the number of digits to add.",
+    "settingDescription": "Create a unique name for your devices. Names must be 63 characters or less once macros are expanded, and can contain letters (a-z, A-Z), numbers (0-9), and hyphens. Names must not contain only numbers. Names cannot include a blank space. Use the %SERIAL% macro to add a hardware-specific serial number. Alternatively, use the %RAND:x% macro to add a random string of numbers, where x equals the number of digits to add.",
     "keywords": [
       "Autopilot",
       "Device Preparation",
@@ -1498,6 +1522,18 @@
       "Certificate",
       "Elevation",
       "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_enablecue",
+    "settingName": "Automatically launch the Company Portal app and display status for remaining configuration",
+    "settingDescription": "If the Company Portal app is not configured to install in system context, assigned to the Device group, and selected in the list of Apps, it will not launch automatically and display onboarding status.",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "EnableCUE",
+      "Desktop onboarding settings"
     ],
     "categoryName": "Uncategorized"
   },

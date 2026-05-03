@@ -659,8 +659,8 @@
   },
   {
     "settingId": "com.android.devicerestrictionpolicy.locationmode",
-    "settingName": "Block location",
-    "settingDescription": "If 'True', disables the Location setting on the device and prevents users from turning it on. When this setting is disabled, then any other setting that depends on the device location is affected, including the Locate device remote action that admins use. If 'False', Intune doesn't change or update this setting. By default, the OS might allow using location on the device. Available for fully managed, dedicated and corporate-owned work profile devices.",
+    "settingName": "Location",
+    "settingDescription": "Select how location services are managed. 'Device Default' lets users turn location services on or off. 'Location enabled' requires location services to be on and prevents end users from turning it off. 'Location disabled' requires location services to be off and prevents end users from turning it on. When 'Location disabled' is configured, then any other setting that depends on the device location is affected, including the Locate device remote action that admins use. For corporate-owned work profile devices, this setting will only apply to devices running Android 10 or earlier. Available for fully managed, dedicated, and corporate-owned work profile devices.",
     "keywords": [
       "Location",
       "Mode",
