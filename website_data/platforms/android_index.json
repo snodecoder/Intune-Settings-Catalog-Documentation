@@ -12210,41 +12210,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.inprivatemodeurlblocklist",
-    "settingName": "Block access to a list of URLs in InPrivate mode.",
-    "settingDescription": "This policy controls which URLs are blocked from loading in InPrivate mode in Microsoft Edge.\n\nAdministrators can specify a list of URL patterns that are blocked when users browse in InPrivate mode. For information about the supported URL pattern format, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n\nIf both \"InPrivateModeUrlBlocklist\" and \"InPrivateModeUrlAllowlist\" are configured, the allowlist takes precedence.\n- URLs that match the allowlist are allowed.\n- URLs that match the blocklist but not the allowlist are blocked.\n- URLs that match neither list follow the behavior defined by the general \"URLBlocklist\" and \"URLAllowlist\" policies.\n\nIf \"InPrivateModeUrlAllowlist\" is configured and this policy is not configured, only URLs on the allowlist can be opened in InPrivate mode.\n\nIf \"InPrivateModeAvailability\" is set to disallow (value 1) and \"InPrivateModeUrlAllowlist\" is configured, InPrivate mode is available only for URLs that match the allowlist.\n\nThis policy applies only to InPrivate mode. To block URLs across all browsing modes, use \"URLBlocklist\".\n\nThis policy supports up to 1000 entries.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_xsltenabled",
-    "settingName": "Control the availability of the XSLT feature",
-    "settingDescription": "Controls whether the XSLT feature (the XSLTProcessor JavaScript API and the XSL processing instruction) is available in Microsoft Edge.\r\n\r\nIf you enable this policy, XSLT is available regardless of the browser's default configuration.\r\n\r\nIf you disable this policy, XSLT is unavailable regardless of the browser's default configuration.\r\n\r\nIf you don't configure this policy, XSLT availability is determined by the browser's default configuration and any applicable field trials.\r\n\r\nThis policy is temporary and will be removed in a future version of Microsoft Edge.",
-    "keywords": [
-      "XSLTEnabled",
-      "Control the availability of the XSLT feature",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_inprivatemodeurlblocklist_inprivatemodeurlblocklistdesc",
-    "settingName": "Block access to a list of URLs in InPrivate mode. (User)",
-    "settingDescription": "",
-    "keywords": [
-      "InPrivateModeUrlBlocklist",
-      "Block access to a list of URLs in InPrivate mode.",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_inprivatemodeurlallowlist",
     "settingName": "Allow access to a list of URLs in InPrivate mode.",
     "settingDescription": "This policy allows administrators to specify a list of URL patterns that are permitted to open in InPrivate mode. It can be used to create exceptions for URL patterns defined in 'InPrivateModeUrlBlocklist' (Block access to a list of URLs in InPrivate mode.). See how to format a URL pattern (https://go.microsoft.com/fwlink/?linkid=2095322).\r\n\r\nIf both this policy and 'InPrivateModeUrlBlocklist' are configured, the allowlist takes precedence. URLs that match a pattern on this allowlist are allowed. URLs that match the blocklist but not this allowlist are blocked. URLs that match neither list fall back to 'URLBlocklist' (Block access to a list of URLs) and 'URLAllowlist' (Define a list of allowed URLs).\r\n\r\nIf this policy is configured and 'InPrivateModeUrlBlocklist' is not configured, only the URLs specified in this allowlist can be opened in InPrivate mode. All other URLs are blocked.\r\n\r\nIf 'InPrivateModeAvailability' (Configure InPrivate mode availability) is set to disallow (value 1) but this policy is configured, InPrivate mode is available only for URLs that match the allowlist.\r\n\r\nIf this policy is not configured, no exceptions are applied to 'InPrivateModeUrlBlocklist' or 'InPrivateModeAvailability'.\r\n\r\nThis policy applies only to InPrivate mode. To allow URLs across all browsing modes and profiles, use the 'URLAllowlist' policy.\r\n\r\nThis policy supports up to 1000 entries.\r\n\r\nExample value:\r\n\r\nexample.com\r\nhttps://ssl.server.com\r\nhosting.com/bad_path\r\nhttps://server:8080/path\r\n.exact.hostname.com\r\nfile://*\r\ncustom_scheme:*\r\n*",
@@ -12257,34 +12222,6 @@
       "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsallday",
-    "settingName": "Mute notifications all day",
-    "settingDescription": null,
-    "keywords": [
-      "Mute",
-      "Notifications",
-      "Teams",
-      "Outlook",
-      "Allday"
-    ],
-    "categoryName": "Allday"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsallday_daysoftheweek",
-    "settingName": "Days of the week",
-    "settingDescription": null,
-    "keywords": [
-      "Mute",
-      "Notifications",
-      "Outlook",
-      "Allday",
-      "All day",
-      "DaysOfTheWeek",
-      "Days of the week"
-    ],
-    "categoryName": "Allday"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.certificatetransparencyenforcementdisabledforcas",
@@ -12314,42 +12251,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.edgesidebarappurlhostblocklist",
-    "settingName": "Control which apps cannot be opened in Microsoft Edge sidebar",
-    "settingDescription": "Define a list of sites, based on URL patterns, that cannot be opened in sidebar.\n\nIf you don't configure this policy, a user can open any app in sidebar.\n\nIf the \"HubsSidebarEnabled\" policy is disabled, this list isn't used and no sidebar can be opened.\n\nFor detailed information about valid url patterns, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2281313\">https://go.microsoft.com/fwlink/?linkid=2281313</a>.\n\nNote: A blocklist value of '*' means all apps are blocked unless they are explicitly listed in the \"EdgeSidebarAppUrlHostAllowList\" policy.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.donotsilentlyblockprotocolsfromorigins",
-    "settingName": "Define a list of protocols that can not be silently blocked by anti-flood protection",
-    "settingDescription": "Allows you to create a list of protocols and an associated list of allowed origin patterns, for each protocol. These origins aren't silently blocked from launching an external application by anti-flood protection. The trailing separator shouldn't be included when listing the protocol. For example, list \"skype\" instead of \"skype:\" or \"skype://\".\n\nIf you configure this policy, a protocol is only permitted to bypass being silently blocked by anti-flood protection if:\n\n- the protocol is listed\n\n- the origin of the site trying to launch the protocol matches one of the origin patterns in that protocol's allowed_origins list.\n\nIf either condition is false, anti-flood protection protection blocks the external protocol launch.\n\nIf you don't configure this policy, no protocols can bypass being silently blocked.\n\nThe origin-matching patterns use a similar format to those patterns for the \"URLBlocklist\" policy, which are documented at <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n\nHowever, origin-matching patterns for this policy can't contain \"/path\" or \"@query\" elements. Any pattern that contains a \"/path\" or \"@query\" element is ignored.\n\nThis policy doesn't work as expected with file://* wildcards.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.adstransparencyenabled",
-    "settingName": "Configure if the ads transparency feature is enabled",
-    "settingDescription": "Lets you decide whether the ads transparency feature is enabled. This behavior only applies to the \"balanced\" mode of tracking prevention, and doesn't impact \"basic\" or \"strict\" modes. Your users' tracking prevention level can be configured using the \"TrackingPrevention\" policy. AdsTransparencyEnabled will only have an effect if \"TrackingPrevention\" is set to TrackingPreventionBalanced or isn't configured.\n\nIf you enable or don't configure this policy, transparency metadata provided by ads are available to the user when the feature is active.\n\nWhen the feature is enabled, Tracking Prevention enables exceptions for the associated ad providers that have met Microsoft's privacy standards.\n\nIf you disable this policy, Tracking Prevention won't adjust its behavior even when transparency metadata is provided by ads.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autofilladdressenabled",
-    "settingName": "Enable AutoFill for addresses",
-    "settingDescription": "Enables the AutoFill feature and allows users to autocomplete address information in web forms through previously stored information.\n\nIf you have enabled or not configured this policy, users manage AutoFill for addresses in Microsoft Edge settings. AutoFill allows users to complete address fields in web forms using previously saved information.\n\nIf you have disabled this policy, Microsoft Edge doesn't suggest, fill in, or save address information. AutoFill is also disabled for all web forms except payment and password fields, and previously saved addresses aren't available.\n\nIf you disable this policy, then \"EdgeAutofillMlEnabled\" is turned off.\n\nIf you disable this policy, all activities for all web forms are stopped, except payment and password forms. No further entries are saved, and Microsoft Edge doesn't suggest or AutoFill any previous entries.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.edgewalletetreeenabled",
     "settingName": "Edge Wallet E-Tree Enabled",
     "settingDescription": "The Edge Wallet E-Tree feature in Microsoft Edge allows users to plant a E-Tree for their own.\n\nIf you enable or don't configure this policy, users can use the Edge Wallet E-Tree feature.\n\nIf you disable this policy, users can't use the Edge Wallet E-Tree feature.",
@@ -12368,81 +12269,9 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.useragentreduction",
-    "settingName": "Enable or disable the User-Agent Reduction (Obsolete)",
-    "settingDescription": "The User-Agent HTTP request header has been reduced by default since Microsoft Edge version 119. To continue receiving detailed platform information, migrate to User-Agent Client Hints, which replace the deprecated detailed User-Agent header. For more information, visit: https://web.dev/articles/migrate-to-ua-ch\n\nIf you don't configure this policy or set it to Default, the User-Agent header will be reduced and controlled by experimentation.\n\nSet this policy to 'ForceEnabled' to force the reduced version of the  User-Agent request header for all origins.\n\nSet this policy to 'ForceDisabled' to always use the full (legacy)  User-Agent header.\n\nTo learn more about the User-Agent string, read here:\n\n<a href=\"https://go.microsoft.com/fwlink/?linkid=2186267\">https://go.microsoft.com/fwlink/?linkid=2186267</a>\n\nPolicy options mapping:\n\n* Default (0) = Reduced User Agent, or controlled by experimentation.\n\n* ForceDisabled (1) = Full (legacy) User Agent.\n\n* ForceEnabled (2) = Reduced User Agent.\n\nUse the preceding information when configuring this policy.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "com.microsoft.intune.mam.managedbrowser.appproxyredirection",
-    "settingName": "Application proxy redirection",
-    "settingDescription": "Enable App proxy redirection to give users access to corporate links and on-premise web apps.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.allowdeletingbrowserhistory",
-    "settingName": "Enable deleting browser and download history",
-    "settingDescription": "Enables deleting browser history and download history and prevents users from changing this setting.\n\nNote that even with this policy is disabled, the browsing and download history aren't guaranteed to be retained: users can edit or delete the history database files directly, and the browser itself may remove (based on expiration period) or archive any or all history items at any time.\n\nIf you enable this policy or don't configure it, users can delete the browsing and download history.\n\nIf you disable this policy, users can't delete browsing and download history. Disabling this policy will disable history sync and open tab sync.\n\nIf you enable this policy, don't enable the \"ClearBrowsingDataOnExit\" policy, because they both deal with deleting data. If you enable both, the \"ClearBrowsingDataOnExit\" policy takes precedence and deletes all data when Microsoft Edge closes, regardless of how this policy is configured.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.importfavorites_recommended",
-    "settingName": "Allow importing of favorites (users can override)",
-    "settingDescription": "Allows users to import favorites from another browser into Microsoft Edge.\n\nIf you enable this policy, the **Favorites** check box is automatically selected in the **Import browser data** dialog box.\n\nIf you disable this policy, favorites aren't imported at first run, and users can't import them manually.\n\nIf you don't configure this policy, favorites are imported at first run, and users can choose whether to import them manually during later browsing sessions.\n\nYou can also set this policy as a recommendation. This means that Microsoft Edge imports favorites on first run, but users can select or clear the **favorites** option during manual import.\n\n**Note**: This policy currently manages importing from Internet Explorer (on Windows 7, 8, and 10), Google Chrome (on Windows 7, 8, and 10 and on macOS), Mozilla Firefox (on Windows 7, 8, and 10 and on macOS), and Apple Safari (on macOS) browsers.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.browsingdatalifetime",
-    "settingName": "Browsing Data Lifetime Settings",
-    "settingDescription": "This policy controls how long specific types of browsing data are retained.\nIf Sync is enabled, this policy has no effect.\n\nYou can specify the following data types:\n'browsing_history'\n'download_history'\n'cookies_and_other_site_data'\n'cached_images_and_files'\n'password_signin'\n'autofill'\n'site_settings'\n'hosted_app_data'\n\nMicrosoft Edge periodically deletes data of the selected types that is older than the value set by 'time_to_live_in_hours'.\n\nExpired data is removed 15 seconds after browser startup and every hour while the browser is running.\n\nNote: Deleting cookies using this policy does not sign the user out of their profile, the user stays signed in.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.hstspolicybypasslist",
     "settingName": "Configure the list of names that will bypass the HSTS policy check",
     "settingDescription": "Setting the policy specifies a list of hostnames that bypass preloaded HSTS (HTTP Strict Transport Security) upgrades from http to https.\n\nOnly single-label hostnames are allowed in this policy, and this policy only applies to static HSTS-preloaded entries (for example, \"app\", \"new\", \"search\", and \"play\"). This policy doesn't prevent HSTS upgrades for servers that have dynamically requested HSTS upgrades using a Strict-Transport-Security response header.\n\nSupplied hostnames must be canonicalized: Any IDNs must be converted to their A-label format, and all ASCII letters must be lowercase. This policy only applies to the specific single-label hostnames specified and not to subdomains of those names.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.pdfvieweroutofprocessiframeenabled",
-    "settingName": "Use out-of-process iframe PDF Viewer",
-    "settingDescription": "Determines whether the PDF viewer in Microsoft Edge uses an out-of-process iframe (OOPIF).\nThis is the new PDF viewer architecture going forward, as it's simpler in design and makes adding new features easier. The current GuestView PDF viewer, which relies on an outdated and overly complex architecture, is being deprecated.\n\nIf you enable this policy or don't configure it, Microsoft Edge uses the OOPIF PDF viewer architecture. The default behavior will be decided by Microsoft Edge.\n\nIf you disable this policy, Microsoft Edge strictly uses the existing GuestView PDF viewer. This approach embeds a web page with its own separate frame tree into another web page.\n\nThis policy will be removed in the future, after the OOPIF PDF viewer feature has fully rolled out.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.videocaptureallowed",
-    "settingName": "Allow or block video capture",
-    "settingDescription": "Control whether sites can capture video.\n\nIf enabled or not configured (default), the user is asked about video capture access for all sites except sites with URLs configured in the \"VideoCaptureAllowedUrls\" policy list, which is granted without prompting.\n\nIf you disable this policy, the user isn't prompted, and video capture is only available to URLs configured in \"VideoCaptureAllowedUrls\" policy.\n\nThis policy affects all types of video inputs, not only the built-in camera.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autofillcreditcardenabled",
-    "settingName": "Enable AutoFill for payment instruments",
-    "settingDescription": "Enables Microsoft Edge's AutoFill feature and lets users auto complete payment instruments like credit or debit cards in web forms using previously stored information. Includes suggesting new payment instruments like Buy Now Pay Later (BNPL) in web forms and Express Checkout.\n\nIf you enable this policy or don't configure it, users can control AutoFill for payment instruments.\n\nIf you disable this policy, AutoFill never suggests, fills, or recommends new payment Instruments. Additionally, it won't save any payment instrument information that users submit while browsing the web.",
     "keywords": [
       "Uncategorized"
     ],
@@ -12494,15 +12323,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.doubleclickclosetabenabled",
-    "settingName": "Double Click feature in Microsoft Edge enabled (only available in China)",
-    "settingDescription": "This policy lets you configure the double click feature in Microsoft Edge.\n\nDouble Click lets users close a tab by double clicking the left mouse button.\n\nIf you enable or don't configure this policy, you can use the double click feature to close a tab on Microsoft Edge to start using this feature.\n\nIf you disable this policy, you can't use the double click feature in Microsoft Edge.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.microsoftofficemenuenabled",
     "settingName": "Allow users to access the Microsoft Office menu (Deprecated)",
     "settingDescription": "This policy is deprecated because it's been replaced by the Microsoft Edge sidebar. Microsoft Office applications are now available in the sidebar, which can be managed by HubsSidebarEnabled policy.\n\nWhen users can access the Microsoft Office menu, they can get access to Office applications such as Microsoft Word and Microsoft Excel.\n\nIf you enable or don't configure this policy, users can open the Microsoft Office menu.\n\nIf you disable this policy, users won't be able to access the Microsoft Office menu.",
@@ -12548,6 +12368,936 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.edgeshoppingassistantenabled",
+    "settingName": "Shopping in Microsoft Edge Enabled",
+    "settingDescription": "This policy lets users compare the prices of a product they're looking at, get coupons or rebates from the website they're on, autoapply coupons, and help checkout faster using autofill data.\n\nIf you enable or don't configure this policy, shopping features such as price comparison, coupons, rebates, and express checkout are automatically applied for retail domains. Coupons for the current retailer and prices from other retailers are fetched from a server.\n\nIf you disable this policy, shopping features such as price comparison, coupons, rebates, and express checkout aren't automatically found for retail domains.\n\nStarting from version 90.0.818.56, the behavior of the messaging letting users know that there's a coupon, rebate, price comparison, or price history available on shopping domains is also done through a horizontal banner below the address bar. Previously, this messaging was done on the address bar.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.forcegooglesafesearch",
+    "settingName": "Enforce Google SafeSearch",
+    "settingDescription": "Forces queries in Google Web Search to be performed with SafeSearch set to active, and prevents users from changing this setting.\n\nIf you enable this policy, SafeSearch in Google Search is always active.\n\nIf you disable this policy or don't configure it, SafeSearch in Google Search isn't enforced.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.alternateerrorpagesenabled_recommended",
+    "settingName": "Suggest similar pages when a webpage can't be found (users can override)",
+    "settingDescription": "Allow Microsoft Edge to issue a connection to a web service to generate URL and search suggestions for connectivity issues such as DNS errors.\n\nIf you enable this policy, a web service is used to generate url and search suggestions for network errors.\n\nIf you disable this policy, no calls to the web service are made and a standard error page is shown.\n\nIf you don't configure this policy, Microsoft Edge respects the user preference that's set under Services at edge://settings/privacy.\nSpecifically, there's a **Suggest similar pages when a webpage can't be found** toggle, which the user can switch on or off. Note that if you have enable this policy (AlternateErrorPagesEnabled), the Suggest similar pages when a webpage can't be found setting is turned on, but the user can't change the setting by using the toggle. If you disable this policy, the Suggest similar pages when a webpage can't be found setting is turned off, and the user can't change the setting by using the toggle.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.edgeenhanceimagesenabled",
+    "settingName": "Enhance images enabled (Obsolete)",
+    "settingDescription": "The enhance images feature is deprecated and starting in Microsoft Edge version 122, this policy will be removed. Set whether Microsoft Edge can automatically enhance images to show you sharper images with better color, lighting, and contrast.\n\nIf you enable this policy or don't configure the policy, Microsoft Edge automatically enhances images on specific web applications.\n\nIf you disable this policy, Microsoft Edge doesn't enhance images.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_disable3dapis",
+    "settingName": "Disable support for 3D graphics APIs (User)",
+    "settingDescription": "Prevent web pages from accessing the graphics processing unit (GPU). Specifically, web pages can't access the WebGL API and plug-ins can't use the Pepper 3D API.\r\n\r\nIf you don't configure or disable this policy, it potentially allows web pages to use the WebGL API and plug-ins to use the Pepper 3D API. Microsoft Edge might, by default, still require command line arguments to be passed in order to use these APIs.\r\n\r\nIf 'HardwareAccelerationModeEnabled' (Use hardware acceleration when available) policy is set to false, the setting for 'Disable3DAPIs' policy is ignored - it's the equivalent of setting 'Disable3DAPIs' policy to true.",
+    "keywords": [
+      "Disable3DAPIs",
+      "Disable support for 3D graphics APIs",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_diskcachedir",
+    "settingName": "Set disk cache directory",
+    "settingDescription": "Configures the directory to use to store cached files.\r\n\r\nIf you enable this policy, Microsoft Edge uses the provided directory regardless of whether the user has specified the '--disk-cache-dir' flag. To avoid data loss or other unexpected errors, don't configure this policy to a volume's root directory or to a directory used for other purposes, because Microsoft Edge manages its contents.\r\n\r\nSee https://go.microsoft.com/fwlink/?linkid=2095041 for a list of variables you can use when specifying directories and paths.\r\n\r\nIf you don't configure this policy, the default cache directory is used, and users can override that default with the '--disk-cache-dir' command line flag.\r\n\r\nExample value: ${user_home}/Edge_cache",
+    "keywords": [
+      "DiskCacheDir",
+      "Set disk cache directory",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_syncdisabled",
+    "settingName": "Disable synchronization of data using Microsoft sync services",
+    "settingDescription": "Disables data synchronization in Microsoft Edge. This policy also prevents the sync consent prompt from appearing.\r\n\r\nIf you don't set this policy or apply it as recommended, users will be able to turn sync on or off. If you apply this policy as mandatory, users will not be able to turn sync on.",
+    "keywords": [
+      "SyncDisabled",
+      "Disable synchronization of data using Microsoft sync services",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_audiocaptureallowedurls",
+    "settingName": "Sites that can access audio capture devices without requesting permission",
+    "settingDescription": "Specify websites, based on URL patterns, that can use audio capture devices without asking the user for permission. Patterns in this list are matched against the security origin of the requesting URL. If they match, the site is automatically granted access to audio capture devices. Note, however, that the pattern \"*\", which matches any URL, is not supported by this policy.\r\n\r\nExample value:\r\n\r\nhttps://www.contoso.com/\r\nhttps://[*.]contoso.edu/",
+    "keywords": [
+      "AudioCaptureAllowedUrls",
+      "Sites that can access audio capture devices without requesting permission",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_userdatadir_userdatadir",
+    "settingName": "Set the user data directory (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "UserDataDir",
+      "Set the user data directory",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_maxconnectionsperproxy",
+    "settingName": "Maximum number of concurrent connections to the proxy server",
+    "settingDescription": "Specifies the maximum number of simultaneous connections to the proxy server.\r\n\r\nSome proxy servers can't handle a high number of concurrent connections per client - you can solve this by setting this policy to a lower value.\r\n\r\nThe value of this policy should be lower than 100 and higher than 6. The default value is 32.\r\n\r\nSome web apps are known to consume many connections with hanging GETs - lowering the maximum connections below 32 may lead to browser networking hangs if too many of these kind of web apps are open.\r\n\r\nIf you don't configure this policy, the default value (32) is used.",
+    "keywords": [
+      "MaxConnectionsPerProxy",
+      "Maximum number of concurrent connections to the proxy server",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_mediaroutercastallowallips",
+    "settingName": "Allow Google Cast to connect to Cast devices on all IP addresses",
+    "settingDescription": "Enable this policy to let Google Cast connect to Cast devices on all IP addresses, not just RFC1918/RFC4193 private addresses.\r\n\r\nDisable this policy to restrict Google Cast to Cast devices on RFC1918/RFC4193 private addresses.\r\n\r\nIf you don't configure this policy, Google Cast connects to Cast devices on RFC1918/RFC4193 private addresses only, unless you enable the CastAllowAllIPs feature.\r\n\r\nIf the 'EnableMediaRouter' (Enable Google Cast) policy is disabled, then this policy has no effect.",
+    "keywords": [
+      "MediaRouterCastAllowAllIPs",
+      "Allow Google Cast to connect to Cast devices on all IP addresses",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_mediaroutercastallowallips",
+    "settingName": "Allow Google Cast to connect to Cast devices on all IP addresses (User)",
+    "settingDescription": "Enable this policy to let Google Cast connect to Cast devices on all IP addresses, not just RFC1918/RFC4193 private addresses.\r\n\r\nDisable this policy to restrict Google Cast to Cast devices on RFC1918/RFC4193 private addresses.\r\n\r\nIf you don't configure this policy, Google Cast connects to Cast devices on RFC1918/RFC4193 private addresses only, unless you enable the CastAllowAllIPs feature.\r\n\r\nIf the 'EnableMediaRouter' (Enable Google Cast) policy is disabled, then this policy has no effect.",
+    "keywords": [
+      "MediaRouterCastAllowAllIPs",
+      "Allow Google Cast to connect to Cast devices on all IP addresses",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_browsersignin_browsersignin",
+    "settingName": "Browser sign-in settings (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "BrowserSignin",
+      "Browser sign-in settings",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_overridesecurityrestrictionsoninsecureorigin_overridesecurityrestrictionsoninsecureorigindesc",
+    "settingName": "Control where security restrictions on insecure origins apply (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "OverrideSecurityRestrictionsOnInsecureOrigin",
+      "Control where security restrictions on insecure origins apply",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_promotionaltabsenabled",
+    "settingName": "Enable full-tab promotional content (deprecated) (User)",
+    "settingDescription": "DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.\r\n\r\nControl the presentation of full-tab promotional or educational content. This setting controls the presentation of welcome pages that help users sign into Microsoft Edge, choose their default browser, or learn about product features.\r\n\r\nIf you enable this policy (set it true) or don't configure it, Microsoft Edge can show full-tab content to users to provide product information.\r\n\r\nIf you disable (set to false) this policy, Microsoft Edge can't show full-tab content to users.\r\n\r\nThis is deprecated - use ShowRecommendationsEnabled instead.",
+    "keywords": [
+      "PromotionalTabsEnabled",
+      "Enable full-tab promotional content",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev102~policy~microsoft_edge_outlookhubmenuenabled",
+    "settingName": "Allow users to access the Outlook menu",
+    "settingDescription": "This policy is used to manage access to the Outlook menu from Microsoft Edge.\r\n\r\nIf you enable or don't configure this policy, users can access the Outlook menu.\r\nIf you disable this policy, users can't access the Outlook menu.",
+    "keywords": [
+      "OutlookHubMenuEnabled",
+      "Allow users to access the Outlook menu",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev104~policy~microsoft_edge_askbeforecloseenabled",
+    "settingName": "Get user confirmation before closing a browser window with multiple tabs (User)",
+    "settingDescription": "This policy lets you configure whether users see a confirmation dialog before closing a browser window with multiple tabs. This dialog asks users to confirm that the browser window can be closed.\r\n\r\nIf you enable this policy, users will be presented with a confirmation dialog when closing a browser window with multiple tabs.\r\n\r\nIf you disable or don't configure this policy, a browser window with multiple tabs will close immediately without user confirmation.",
+    "keywords": [
+      "AskBeforeCloseEnabled",
+      "Get user confirmation before closing a browser window with multiple tabs",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev105~policy~microsoft_edge_exemptfiletypedownloadwarnings_exemptfiletypedownloadwarnings",
+    "settingName": "Disable download file type extension-based warnings for specified file types on domains (User)",
+    "settingDescription": "",
+    "keywords": [
+      "ExemptFileTypeDownloadWarnings",
+      "Disable download file type extension-based warnings for specified file types on domains",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev109~policy~microsoft_edge_clipboardallowedforurls",
+    "settingName": "Allow clipboard use on specific sites (User)",
+    "settingDescription": "Configure the list of URL patterns that specify which sites can use the clipboard site permission.\r\n\r\nSetting the policy lets you create a list of URL patterns that specify which sites can use the clipboard site permission. This doesn't include all clipboard operations on origins that match the patterns. For example, users will still be able to paste using keyboard shortcuts because this isn't controlled by the clipboard site permission.\r\n\r\nLeaving the policy unset means 'DefaultClipboardSetting' (Default clipboard site permission) applies for all sites if it's set. If it isn't set, the user's personal setting applies.\r\n\r\nFor more information about valid url patterns, see https://go.microsoft.com/fwlink/?linkid=2095322. Wildcards, *, are allowed.\r\n\r\nExample value:\r\n\r\nhttps://www.example.com\r\n[*.]example.edu",
+    "keywords": [
+      "ClipboardAllowedForUrls",
+      "Allow clipboard use on specific sites",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev110~policy~microsoft_edge_searchfiltersenabled",
+    "settingName": "Search Filters Enabled",
+    "settingDescription": "Lets you filter your autosuggestions by selecting a filter from the search filters ribbon. For example, if you select the \"Favorites\" filter, only favorites suggestions will be shown.\r\n\r\nIf you enable or don't configure this policy, the autosuggestion dropdown defaults to displaying the ribbon of available filters.\r\n\r\nIf you disable this policy, the autosuggestion dropdown won't display the ribbon of available filters.",
+    "keywords": [
+      "SearchFiltersEnabled",
+      "Search Filters Enabled",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev114~policy~microsoft_edge_discoverpagecontextenabled",
+    "settingName": "Enable Discover access to page contents for AAD profiles (obsolete)",
+    "settingDescription": "OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 127.\r\n\r\nThis policy has been obsoleted as of Edge 127. Two new Edge Policies have taken its place. Those policies are CopilotPageContext (Control Copilot access to page contents for AAD profiles), and CopilotCDPPageContext (Control Copilot with Commercial Data Protection access to page contents for AAD profiles).\r\n\r\nThis policy did not allow for separate control of Copilot and Copilot with Commercial Data Protection. The new policies allow separate control of these versions of Copilot. The new policies also allow admins to force-enable Copilot access to Edge page contents by enabling the policy, whereas DiscoverPageContextEnabled only allowed force-disabling of Copilot page access.\r\n\r\nThis policy controls Discover access to page contents for AAD profiles. Discover is an extension that hosts Bing Chat. In order to summarize pages and interact with text selections, it needs to be able to access the page contents. When enabled, page contents will be sent to Bing. This policy does not affect MSA profiles.\r\n\r\nIf you enable or don't configure this policy, Discover will have access to page contents.\r\n\r\nIf you disable this policy, Discover will not be able to access page contents.",
+    "keywords": [
+      "DiscoverPageContextEnabled",
+      "Enable Discover access to page contents for AAD profiles",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev117~policy~microsoft_edge_internetexplorerintegrationzoneidentifiermhtfileallowed",
+    "settingName": "Automatically open downloaded MHT or MHTML files from the web in Internet Explorer mode (User)",
+    "settingDescription": "This policy controls whether MHT or MHTML files that are downloaded from the web are automatically opened in Internet Explorer mode.\r\n\r\nIf you enable this policy, the MHT or MHTML files that are downloaded from the web can be opened in both Microsoft Edge and Internet Explorer mode to provide the best user experience.\r\n\r\nIf you disable or don't configure this policy, MHT or MHTML files that are downloaded from the web won't automatically open in Internet Explorer mode.\r\n\r\nTo learn more about Internet Explorer mode, see https://go.microsoft.com/fwlink/?linkid=2094210",
+    "keywords": [
+      "InternetExplorerIntegrationZoneIdentifierMhtFileAllowed",
+      "Automatically open downloaded MHT or MHTML files from the web in Internet Explorer mode",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev120~policy~microsoft_edge_edge3pserptelemetryenabled",
+    "settingName": "Edge 3P SERP Telemetry Enabled",
+    "settingDescription": "Edge3P Telemetry in Microsoft Edge captures the searches user does on third party search providers without identifying the person or the device and captures only if the user has consented to this collection of data. User can turn off the collection at any time in the browser settings.\r\n\r\nIf you enable or don't configure this policy, Edge 3P SERP Telemetry feature will be enabled.\r\n\r\nIf you disable this policy, Edge 3P SERP Telemetry feature will be disabled.",
+    "keywords": [
+      "Edge3PSerpTelemetryEnabled",
+      "Edge 3P SERP Telemetry Enabled",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev123~policy~microsoft_edge_rsakeyusageforlocalanchorsenabled",
+    "settingName": "Check RSA key usage for server certificates issued by local trust anchors (User)",
+    "settingDescription": "The X.509 key usage extension declares how the key in a certificate can be\r\nused. These instructions ensure certificates aren't used in an unintended\r\ncontext, which protects against a class of cross-protocol attacks on HTTPS and\r\nother protocols. HTTPS clients must verify that server certificates match the\r\nconnection's TLS parameters.\r\n\r\nIf this policy is enabled,\r\nMicrosoft Edge will perform this key\r\ncheck. This helps prevent attacks where an attacker manipulates the browser into\r\ninterpreting a key in ways that the certificate owner did not intend.\r\n\r\nIf this policy is set to disabled or not configured,\r\nMicrosoft Edge will skip this key check in\r\nHTTPS connections that negotiate TLS 1.2 and use an RSA certificate that\r\nchains to a local trust anchor. Examples of local trust anchors include\r\npolicy-provided or user-installed root certificates. In all other cases, the\r\ncheck is performed independent of this policy's setting.\r\n\r\nThis policy is available for administrators to preview the behavior of a\r\nfuture release, which will enable this check by default. At that point, this\r\npolicy will remain temporarily available for administrators that need more\r\ntime to update their certificates to meet the new RSA key usage requirements.\r\n\r\nConnections that fail this check will fail with the error\r\nERR_SSL_KEY_USAGE_INCOMPATIBLE. Sites that fail with this error likely have a\r\nmisconfigured certificate. Modern ECDHE_RSA cipher suites use the\r\n\"digitalSignature\" key usage option, while legacy RSA decryption cipher suites\r\nuse the \"keyEncipherment\" key usage option. If uncertain, administrators should\r\ninclude both in RSA certificates meant for HTTPS.",
+    "keywords": [
+      "RSAKeyUsageForLocalAnchorsEnabled",
+      "Check RSA key usage for server certificates issued by local trust anchors",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev128.1~policy~microsoft_edge_applicationboundencryptionenabled",
+    "settingName": "Enable Application Bound Encryption (User)",
+    "settingDescription": "Enabling this policy or leaving it unset binds the encryption keys used for local data storage to Microsoft Edge whenever possible.\r\n\r\nDisabling this policy has a detrimental effect on Microsoft Edge's security because unknown and potentially hostile apps can retrieve the encryption keys used to secure data.\r\n\r\nOnly turn off this policy if there are compatibility issues, such as scenarios where other applications need legitimate access to Microsoft Edge's data. Encrypted user data is expected to be fully portable between different computers or the integrity and location of Microsoft Edge's executable files isn’t consistent.",
+    "keywords": [
+      "ApplicationBoundEncryptionEnabled",
+      "Enable Application Bound Encryption",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev131~policy~microsoft_edge_edgesidebarappurlhostallowlist",
+    "settingName": "Allow specific apps to be opened in Microsoft Edge sidebar",
+    "settingDescription": "Define a list of sites, based on URL patterns, that are not subject to the 'EdgeSidebarAppUrlHostBlockList' (Control which apps cannot be opened in Microsoft Edge sidebar).\r\n\r\nIf you don't configure this policy, a user can open any app in sidebar except the urls listed in 'EdgeSidebarAppUrlHostBlockList'.\r\n\r\nIf you configure this policy, the apps listed in the allow list could be opened in sidebar even if they are listed in the block list.\r\n\r\nBy default, all apps are allowed. However, if you prohibited apps by policy, you can use the list of allowed apps to change that policy.\r\n\r\nFor detailed information about valid url patterns, see https://go.microsoft.com/fwlink/?linkid=2281313.\r\n\r\nExample value:\r\n\r\nhttps://www.contoso.com\r\n[*.]contoso.edu",
+    "keywords": [
+      "EdgeSidebarAppUrlHostAllowList",
+      "Allow specific apps to be opened in Microsoft Edge sidebar",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev133~policy~microsoft_edge_pdfvieweroutofprocessiframeenabled",
+    "settingName": "Use out-of-process iframe PDF Viewer (User)",
+    "settingDescription": "Determines whether the PDF viewer in Microsoft Edge uses an out-of-process iframe (OOPIF).\r\nThis will be the new PDF viewer architecture going forward, as it is simpler in design and makes adding new features easier. The current GuestView PDF viewer, which relies on an outdated and overly complex architecture, is being deprecated.\r\n\r\nWhen this policy is set to Enabled or not set, Microsoft Edge will use the OOPIF PDF viewer architecture. Once Enabled or not set, the default behavior will be decided by Microsoft Edge.\r\n\r\nWhen this policy is set to Disabled, Microsoft Edge will strictly use the existing GuestView PDF viewer. This approach embeds a web page with its own separate frame tree into another web page.\r\n\r\nThis policy will be removed in the future, after the OOPIF PDF viewer feature has fully rolled out.",
+    "keywords": [
+      "PdfViewerOutOfProcessIframeEnabled",
+      "Use out-of-process iframe PDF Viewer",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev133~policy~microsoft_edge_allowwebauthnwithbrokentlscerts",
+    "settingName": "Allow Web Authentication requests on sites with broken TLS certificates.",
+    "settingDescription": "If you enable this policy, Microsoft Edge will allow Web Authentication requests on websites that have TLS certificates with errors (i.e. websites considered not secure).\r\n\r\nIf you disable or don't configure this policy, the default behavior of blocking such requests will apply.",
+    "keywords": [
+      "AllowWebAuthnWithBrokenTlsCerts",
+      "Allow Web Authentication requests on sites with broken TLS certificates.",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev135~policy~microsoft_edge_addressbartrendingsuggestenabled",
+    "settingName": "Enable Microsoft Bing trending suggestions in the address bar (User)",
+    "settingDescription": "This policy controls whether Microsoft Bing trending suggestions appear in the address bar’s suggestion dropdown when users click the address bar while on a New Tab Page.\r\n\r\nIf this policy is enabled or not configured, Microsoft Bing trending suggestions will appear in the address bar suggestion dropdown.\r\n\r\nIf this policy is disabled, Microsoft Edge will not display Microsoft Bing trending suggestions when users click the address bar.",
+    "keywords": [
+      "AddressBarTrendingSuggestEnabled",
+      "Enable Microsoft Bing trending suggestions in the address bar",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev136~policy~microsoft_edge_httpsupgradesenabled",
+    "settingName": "Enable automatic HTTPS upgrades (User)",
+    "settingDescription": "As of Microsoft Edge version 120, Microsoft Edge tries to upgrade HTTP navigations to HTTPS whenever possible to improve security.  Navigations to captive portals, IP addresses, and non-unique hostnames are excluded from automatic upgrades.\r\n\r\nIf this policy is enabled or not configured, automatic HTTPS upgrades are turned on by default.\r\n\r\nIf this policy is disabled, Microsoft Edge won't attempt to upgrade HTTP connections to HTTPS.\r\n\r\nTo exempt specific hostnames or hostname patterns from being upgraded, use the HttpAllowlist policy.",
+    "keywords": [
+      "HttpsUpgradesEnabled",
+      "Enable automatic HTTPS upgrades",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_additionaldnsquerytypesenabled",
+    "settingName": "Allow DNS queries for more DNS record types",
+    "settingDescription": "This policy controls whether Microsoft Edge can query more DNS record types when making insecure (non-Secure DNS) requests.\r\n\r\nIf this policy is unset or set to Enabled, more record types such as HTTPS (DNS type 65) may be queried in addition to A (DNS type 1) and AAAA (DNS type 28).\r\n\r\nIf this policy is set to Disabled, Microsoft Edge will only query A and AAAA record types for insecure DNS requests.\r\n\r\nThis setting doesn't affect DNS queries made via Secure DNS, which may always use more record types.\r\n\r\nNote: This is a temporary policy and is planned for removal in a future version of Microsoft Edge. After removal, Microsoft Edge will always be able to query more DNS types during insecure requests.",
+    "keywords": [
+      "AdditionalDnsQueryTypesEnabled",
+      "Allow DNS queries for more DNS record types",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev143~policy~microsoft_edge_sharebrowsinghistorywithcopilotsearchallowed",
+    "settingName": "Allow sharing tenant-approved browsing history with Microsoft 365 Copilot Search (User)",
+    "settingDescription": "This policy controls whether browsing history in Microsoft Edge is shared with Microsoft 365 Copilot Search to provide more relevant search results. Only tenant-approved, work-related sites are shared.\r\n\r\nThis feature is available only to users who are signed in to Microsoft Edge with an Entra ID account and have an eligible Microsoft 365 Copilot license.\r\n\r\nIf you enable or don't configure this policy, browsing history will be shared with Microsoft 365 Copilot Search by default, and users can turn off sharing using the toggle in Microsoft Edge settings.\r\n\r\nIf you disable this policy, browsing history won't be shared with Microsoft 365 Copilot Search.\r\n\r\nLearn more about how Copilot uses data and consent at https://go.microsoft.com/fwlink/?linkid=2333202",
+    "keywords": [
+      "ShareBrowsingHistoryWithCopilotSearchAllowed",
+      "Allow sharing tenant-approved browsing history with Microsoft 365 Copilot Search",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev144~policy~microsoft_edge_silentprintingenabled",
+    "settingName": "Enable Silent Printing",
+    "settingDescription": "This policy controls whether Microsoft Edge uses silent printing.\r\n\r\nIf you enable this policy, Edge automatically closes the print preview window and prints to the default printer using its default settings. If the default printer is Save as PDF, the file is saved to the user's Downloads folder.\r\n\r\nIf you disable or don't configure this policy, silent printing is disabled. The print preview window stays open and the user must choose print settings as usual.",
+    "keywords": [
+      "SilentPrintingEnabled",
+      "Enable Silent Printing",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_webappinstallbyuserenabled",
+    "settingName": "Enable User Web App Install From Browser (User)",
+    "settingDescription": "This policy controls whether users can install web apps through Microsoft Edge.\r\nIf you enable or don’t configure this policy, users can install web apps through the browser.\r\nIf you disable this policy, users can’t install web apps through the browser, and the \"apps\" data type is excluded from synchronization.\r\nThis policy doesn't support dynamic refresh. Changes to this policy, whether enabled, disabled, or not configured, take effect only after the browser is restarted.\r\nThis policy doesn't affect the 'WebAppInstallForceList' policy. Web apps specified by that policy are installed regardless of this policy setting.",
+    "keywords": [
+      "WebAppInstallByUserEnabled",
+      "Enable User Web App Install From Browser",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_signedhttpexchangeenabled",
+    "settingName": "Enable Signed HTTP Exchange (SXG) support",
+    "settingDescription": "Enable support for Signed HTTP Exchange (SXG).\r\n\r\nIf this policy isn't set or enabled, Microsoft Edge will accept web contents served as Signed HTTP Exchanges.\r\n\r\nIf this policy is set to disabled, Signed HTTP Exchanges can't be loaded.",
+    "keywords": [
+      "SignedHTTPExchangeEnabled",
+      "Enable Signed HTTP Exchange (SXG) support",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_spellchecklanguageblocklist",
+    "settingName": "Force disable spellcheck languages",
+    "settingDescription": "Force-disables spellcheck languages. Unrecognized languages in that list will be ignored.\r\n\r\nIf you enable this policy, spellcheck will be disabled for the languages specified. The user can still enable or disable spellcheck for languages not in the list.\r\n\r\nIf you do not set this policy, or disable it, there will be no change to the user's spellcheck preferences.\r\n\r\nIf the 'SpellcheckEnabled' (Enable spellcheck) policy is set to disabled, this policy will have no effect.\r\n\r\nIf a language is included in both the 'SpellcheckLanguage' (Enable specific spellcheck languages) and the 'SpellcheckLanguageBlocklist' policy, the spellcheck language is enabled.\r\n\r\nThe currently supported languages are: af, bg, ca, cs, da, de, el, en-AU, en-CA, en-GB, en-US, es, es-419, es-AR, es-ES, es-MX, es-US, et, fa, fo, fr, he, hi, hr, hu, id, it, ko, lt, lv, nb, nl, pl, pt-BR, pt-PT, ro, ru, sh, sk, sl, sq, sr, sv, ta, tg, tr, uk, vi.\r\n\r\nExample value:\r\n\r\nfr\r\nes",
+    "keywords": [
+      "SpellcheckLanguageBlocklist",
+      "Force disable spellcheck languages",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_internetexplorerintegrationsitelist_internetexplorerintegrationsitelist",
+    "settingName": "Configure the Enterprise Mode Site List (User)",
+    "settingDescription": "",
+    "keywords": [
+      "InternetExplorerIntegrationSiteList",
+      "Configure the Enterprise Mode Site List",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_internetexplorerintegrationsitelist_internetexplorerintegrationsitelist",
+    "settingName": "Configure the Enterprise Mode Site List (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "InternetExplorerIntegrationSiteList",
+      "Configure the Enterprise Mode Site List",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge_hidefirstrunexperience",
+    "settingName": "Hide the First-run experience and splash screen",
+    "settingDescription": "If you enable this policy, the First-run experience and the splash screen will not be shown to users when they run Microsoft Edge for the first time.\r\n\r\nFor the configuration options shown in the First Run Experience, the browser will default to the following:\r\n\r\n-On the New Tab Page, the feed type will be set to MSN News and the layout to Inspirational.\r\n\r\n-The user will still be automatically signed into Microsoft Edge if the Windows account is of Azure AD or MSA type.\r\n\r\n-Sync will not be enabled by default and users will be able to turn on sync from the sync settings.\r\n\r\nIf you disable or don't configure this policy, the First-run experience and the Splash screen will be shown.\r\n\r\nNote: The specific configuration options shown to the user in the First Run Experience, can also be managed by using other specific policies. You can use the HideFirstRunExperience policy in combination with these policies to configure a specific browser experience on your managed devices. Some of these other policies are:\r\n\r\n-'AutoImportAtFirstRun' (Automatically import another browser's data and settings at first run)\r\n\r\n-'NewTabPageLocation' (Configure the new tab page URL)\r\n\r\n-'NewTabPageSetFeedType' (Configure the Microsoft Edge new tab page experience)\r\n\r\n-'SyncDisabled' (Disable synchronization of data using Microsoft sync services)\r\n\r\n-'BrowserSignin' (Browser sign-in settings)\r\n\r\n-'NonRemovableProfileEnabled' (Configure whether a user always has a default profile automatically signed in with their work or school account)",
+    "keywords": [
+      "HideFirstRunExperience",
+      "Hide the First-run experience and splash screen",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge_dnsinterceptionchecksenabled",
+    "settingName": "DNS interception checks enabled (User)",
+    "settingDescription": "This policy configures a local switch that can be used to disable DNS interception checks. These checks attempt to discover whether the browser is behind a proxy that redirects unknown host names.\r\n\r\nThis detection might not be necessary in an enterprise environment where the network configuration is known. It can be disabled to avoid additional DNS and HTTP traffic on start-up and each DNS configuration change.\r\n\r\nIf you enable or don’t set this policy, the DNS interception checks are performed.\r\n\r\nIf you disable this policy, DNS interception checks aren’t performed.",
+    "keywords": [
+      "DNSInterceptionChecksEnabled",
+      "DNS interception checks enabled",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_audiosandboxenabled",
+    "settingName": "Allow the audio sandbox to run",
+    "settingDescription": "This policy controls the audio process sandbox.\r\n\r\nIf you enable this policy, the audio process will run sandboxed.\r\n\r\nIf you disable this policy, the audio process will run unsandboxed and the WebRTC audio-processing module will run in the renderer process.\r\nThis leaves users open to security risks related to running the audio subsystem unsandboxed.\r\n\r\nIf you don't configure this policy, the default configuration for the audio sandbox will be used, which might differ based on the platform.\r\n\r\nThis policy is intended to give enterprises flexibility to disable the audio sandbox if they use security software setups that interfere with the sandbox.",
+    "keywords": [
+      "AudioSandboxEnabled",
+      "Allow the audio sandbox to run",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_importcookies",
+    "settingName": "Allow importing of Cookies (User)",
+    "settingDescription": "Allows users to import Cookies from another browser into Microsoft Edge.\r\n\r\nIf you disable this policy, Cookies aren't imported on first run.\r\n\r\nIf you don’t configure this policy, Cookies are imported on first run.\r\n\r\nYou can also set this policy as a recommendation. This means that Microsoft Edge imports Cookies on first run.\r\n\r\n**Note**: This policy currently manages importing Google Chrome (on Windows 7, 8, and 10 and on macOS).",
+    "keywords": [
+      "ImportCookies",
+      "Allow importing of Cookies",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_ambientauthenticationinprivatemodesenabled_ambientauthenticationinprivatemodesenabled",
+    "settingName": "Enable Ambient Authentication for InPrivate and Guest profiles (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "AmbientAuthenticationInPrivateModesEnabled",
+      "Enable Ambient Authentication for InPrivate and Guest profiles",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_ambientauthenticationinprivatemodesenabled_ambientauthenticationinprivatemodesenabled",
+    "settingName": "Enable Ambient Authentication for InPrivate and Guest profiles (User)",
+    "settingDescription": "",
+    "keywords": [
+      "AmbientAuthenticationInPrivateModesEnabled",
+      "Enable Ambient Authentication for InPrivate and Guest profiles",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_synctypeslistdisabled_synctypeslistdisableddesc",
+    "settingName": "Configure the list of types that are excluded from synchronization (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "SyncTypesListDisabled",
+      "Configure the list of types that are excluded from synchronization",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_dnsoverhttpstemplates_dnsoverhttpstemplates",
+    "settingName": "Specify URI template of desired DNS-over-HTTPS resolver (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "DnsOverHttpsTemplates",
+      "Specify URI template of desired DNS-over-HTTPS resolver",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_clearcachedimagesandfilesonexit",
+    "settingName": "Clear cached images and files when Microsoft Edge closes (User)",
+    "settingDescription": "Microsoft Edge doesn't clear cached images and files by default when it closes.\r\n\r\nIf you enable this policy, cached images and files will be deleted each time Microsoft Edge closes.\r\n\r\nIf you disable this policy, users cannot configure the cached images and files option in edge://settings/clearBrowsingDataOnClose.\r\n\r\nIf you don't configure this policy, users can choose whether cached images and files are cleared on exit.\r\n\r\nIf you disable this policy, don't enable the 'ClearBrowsingDataOnExit' (Clear browsing data when Microsoft Edge closes) policy, because they both deal with deleting data. If you configure both, the 'ClearBrowsingDataOnExit' policy takes precedence and deletes all data when Microsoft Edge closes, regardless of how you configured 'ClearCachedImagesAndFilesOnExit' (Clear cached images and files when Microsoft Edge closes).",
+    "keywords": [
+      "ClearCachedImagesAndFilesOnExit",
+      "Clear cached images and files when Microsoft Edge closes",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev85diff~policy~microsoft_edge_enablesha1forlocalanchors",
+    "settingName": "Allow certificates signed using SHA-1 when issued by local trust anchors (deprecated) (User)",
+    "settingDescription": "DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.\r\n\r\nWhen this setting is enabled, Microsoft Edge allows connections secured by SHA-1 signed certificates so long as the the certificate chains to a locally-installed root certificate and is otherwise valid.\r\n\r\nNote that this policy depends on the operating system (OS) certificate verification stack allowing SHA-1 signatures. If an OS update changes the OS handling of SHA-1 certificates, this policy might no longer have effect.  Further, this policy is intended as a temporary workaround to give enterprises more time to move away from SHA-1. This policy will be removed in Microsoft Edge 92 releasing in mid 2021.\r\n\r\nIf you don't set this policy or set it to false, or the SHA-1 certificate chains to a publicly trusted certificate root, then Microsoft Edge won't allow certificates signed by SHA-1.\r\n\r\nThis policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.",
+    "keywords": [
+      "EnableSha1ForLocalAnchors",
+      "Allow certificates signed using SHA-1 when issued by local trust anchors (deprecated)",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev85diff~policy~microsoft_edge_autoopenfiletypes_autoopenfiletypesdesc",
+    "settingName": "List of file types that should be automatically opened on download (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "AutoOpenFileTypes",
+      "List of file types that should be automatically opened on download",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev85diff~policy~microsoft_edge_autoopenallowedforurls",
+    "settingName": "URLs where AutoOpenFileTypes can apply (User)",
+    "settingDescription": "A list of URLs to which 'AutoOpenFileTypes' (List of file types that should be automatically opened on download) will apply to. This policy has no impact on automatically open values set by users via the download shelf ... > \"Always open files of this type\" menu entry.\r\n\r\nIf you set URLs in this policy, files will only automatically open by policy if the URL is part of this set and the file type is listed in 'AutoOpenFileTypes'. If either condition is false, the download won't automatically open by policy.\r\n\r\nIf you don't set this policy, all downloads where the file type is in 'AutoOpenFileTypes' will automatically open.\r\n\r\nA URL pattern has to be formatted according to https://go.microsoft.com/fwlink/?linkid=2095322.\r\n\r\nThis policy does not work as expected with file://* wildcards.\r\n\r\nExample value:\r\n\r\nexample.com\r\nhttps://ssl.server.com\r\nhosting.com/good_path\r\nhttps://server:8080/path\r\n.exact.hostname.com",
+    "keywords": [
+      "AutoOpenAllowedForURLs",
+      "URLs where AutoOpenFileTypes can apply",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge_savecookiesonexit",
+    "settingName": "Save cookies when Microsoft Edge closes",
+    "settingDescription": "When this policy is enabled, the specified set of cookies is exempt from deletion when the browser closes. This policy is only effective when:\r\n- The 'Cookies and other site data' toggle is configured in Settings/Privacy and services/Clear browsing data on close or\r\n- The policy 'ClearBrowsingDataOnExit' (Clear browsing data when Microsoft Edge closes) is enabled or\r\n- The policy 'DefaultCookiesSetting' (Configure cookies) is set to 'Keep cookies for the duration of the session'.\r\n\r\nYou can define a list of sites, based on URL patterns, that will have their cookies preserved across sessions.\r\n\r\nNote: Users can still edit the cookie site list to add or remove URLs. However, they can't remove URLs that have been added by an Admin.\r\n\r\nIf you enable this policy, the list of cookies won't be cleared when the browser closes.\r\n\r\nIf you disable or don't configure this policy, the user's personal configuration is used.\r\n\r\nExample value:\r\n\r\nhttps://www.contoso.com\r\n[*.]contoso.edu",
+    "keywords": [
+      "SaveCookiesOnExit",
+      "Save cookies when Microsoft Edge closes",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge_serialblockedforurls_serialblockedforurlsdesc",
+    "settingName": "Block the Serial API on specific sites (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "SerialBlockedForUrls",
+      "Block the Serial API on specific sites",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge_sensorsallowedforurls_sensorsallowedforurlsdesc",
+    "settingName": "Allow access to sensors on specific sites (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "SensorsAllowedForUrls",
+      "Allow access to sensors on specific sites",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge_defaultserialguardsetting_defaultserialguardsetting",
+    "settingName": "Control use of the Serial API (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "DefaultSerialGuardSetting",
+      "Control use of the Serial API",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge_defaultsensorssetting",
+    "settingName": "Default sensors setting (User)",
+    "settingDescription": "Set whether websites can access and use sensors such as motion and light sensors. You can completely block or allow websites to get access to sensors.\r\n\r\nSetting the policy to 1 lets websites access and use sensors. Setting the policy to 2 denies access to sensors.\r\n\r\nYou can override this policy for specific URL patterns by using the 'SensorsAllowedForUrls' (Allow access to sensors on specific sites) and 'SensorsBlockedForUrls' (Block access to sensors on specific sites) policies.\r\n\r\nIf you don't configure this policy, websites can access and use sensors, and users can change this setting. This is the global default for 'SensorsAllowedForUrls' and 'SensorsBlockedForUrls'.\r\n\r\nPolicy options mapping:\r\n\r\n* AllowSensors (1) = Allow sites to access sensors\r\n\r\n* BlockSensors (2) = Do not allow any site to access sensors\r\n\r\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "DefaultSensorsSetting",
+      "Default sensors setting",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge_showmicrosoftrewards",
+    "settingName": "Show Microsoft Rewards experiences",
+    "settingDescription": "Show Microsoft Rewards experience and notifications.\r\nIf you enable this policy:\r\n   - Microsoft account users (excludes Azure AD accounts) in search and earn markets will see the Microsoft Rewards experience in their Microsoft Edge user profile.\r\n   - The setting to enable Microsoft Rewards in Microsoft Edge settings will be enabled and toggled on.\r\n   - The setting to enable Give mode will be enabled and respect the user's setting.\r\n\r\nIf you disable this policy:\r\n   - Microsoft account users (excludes Azure AD accounts) in search and earn markets will not see the Microsoft Rewards experience in their Microsoft Edge user profile.\r\n   - The setting to enable Microsoft Rewards in Microsoft Edge settings will be disabled and toggled off.\r\n\r\nIf you don't configure this policy:\r\n   - Microsoft account users (excludes Azure AD accounts) in search and earn markets will see the Microsoft Rewards experience in their Microsoft Edge user profile.\r\n   - The setting to enable Microsoft Rewards in Microsoft Edge settings will be enabled and toggled on.\r\n   - The setting to enable Give mode will be enabled and respect the user's setting.",
+    "keywords": [
+      "ShowMicrosoftRewards",
+      "Show Microsoft Rewards experiences",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev89~policy~microsoft_edge_browsingdatalifetime",
+    "settingName": "Browsing Data Lifetime Settings",
+    "settingDescription": "Configures browsing data lifetime settings for Microsoft Edge.\r\nThis policy controls the lifetime of selected browsing data. This policy has no effect if Sync is enabled.\r\nThe available data types are the 'browsing_history', 'download_history', 'cookies_and_other_site_data', 'cached_images_and_files', 'password_signin', 'autofill', 'site_settings' and 'hosted_app_data'.\r\nMicrosoft Edge will regularly remove data of selected types that is older than 'time_to_live_in_hours'. Because data deletion only happens at certain intervals, some data might be kept slightly longer but never more than twice its expected 'time_to_live_in_hours'.\r\n\r\n\r\nExample value:\r\n\r\n[\r\n  {\r\n    \"data_types\": [\r\n      \"browsing_history\"\r\n    ], \r\n    \"time_to_live_in_hours\": 24\r\n  }, \r\n  {\r\n    \"data_types\": [\r\n      \"password_signin\", \r\n      \"autofill\"\r\n    ], \r\n    \"time_to_live_in_hours\": 12\r\n  }\r\n]",
+    "keywords": [
+      "BrowsingDataLifetime",
+      "Browsing Data Lifetime Settings",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev91~policy~microsoft_edge_explicitlyallowednetworkports",
+    "settingName": "Explicitly allowed network ports",
+    "settingDescription": "There is a list of restricted ports built into Microsoft Edge. Connections to these ports will fail. This policy allows bypassing that list. The set of ports is defined as a comma-separated list that outgoing connections should be permitted on.\r\n\r\nPorts are restricted to prevent Microsoft Edge from being used as a vector to exploit various network vulnerabilities. Setting this policy may expose your network to attacks. This policy is intended as a temporary workaround for error code \"ERR_UNSAFE_PORT\" while migrating a service running on a blocked port to a standard port (for example port 80 or 443).\r\n\r\nMalicious websites can easily detect that this policy is set, and for which ports, then use that information to target attacks.\r\n\r\nEach port listed in this policy is labeled with a date that it can be unblocked until. After that date the port will be restricted regardless of if it's specified by the value of this policy.\r\n\r\nLeaving the value empty or unset means that all restricted ports will be blocked. Invalid port values set through this policy will be ignored while valid ones will still be applied.\r\n\r\nThis policy overrides the \"--explicitly-allowed-ports\" command-line option.\r\n\r\nPolicy options mapping:\r\n\r\n* 554 (554) = port 554 (can be unblocked until 2021/10/15)\r\n\r\n* 10080 (10080) = port 10080 (can be unblocked until 2022/04/01)\r\n\r\n* 6566 (6566) = port 6566 (can be unblocked until 2021/10/15)\r\n\r\n* 989 (989) = port 989 (can be unblocked until 2022/02/01)\r\n\r\n* 990 (990) = port 990 (can be unblocked until 2022/02/01)\r\n\r\nUse the preceding information when configuring this policy.\r\n\r\nExample value:\r\n\r\n10080",
+    "keywords": [
+      "ExplicitlyAllowedNetworkPorts",
+      "Explicitly allowed network ports",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev93~policy~microsoft_edge_internetexplorerintegrationsitelistrefreshinterval",
+    "settingName": "Configure how frequently the Enterprise Mode Site List is refreshed (User)",
+    "settingDescription": "This setting lets you specify a custom refresh interval for the Enterprise Mode Site List. The refresh interval is specified in minutes. The minimum refresh interval is 30 minutes.\r\n\r\nThis setting is applicable only when the 'InternetExplorerIntegrationSiteList' (Configure the Enterprise Mode Site List) or 'InternetExplorerIntegrationCloudSiteList' (Configure the Enterprise Mode Cloud Site List) setting is configured.\r\n\r\nIf you configure this policy, Microsoft Edge will attempt to retrieve an updated version of the configured Enterprise Mode Site List using the specified refresh interval.\r\n\r\nIf you disable or don't configure this policy, Microsoft Edge will use a default refresh interval, it is 10080 minutes (7 days) starting from version 110 or later, 120 minutes from version 93 to 110, and 30 minutes before version 93.",
+    "keywords": [
+      "InternetExplorerIntegrationSiteListRefreshInterval",
+      "Configure how frequently the Enterprise Mode Site List is refreshed",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev95~policy~microsoft_edge_shadowstackcrashrollbackbehavior_shadowstackcrashrollbackbehavior",
+    "settingName": "Configure ShadowStack crash rollback behavior (User)",
+    "settingDescription": "",
+    "keywords": [
+      "ShadowStackCrashRollbackBehavior",
+      "Configure ShadowStack crash rollback behavior",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev96~policy~microsoft_edge_internetexplorermodetoolbarbuttonenabled",
+    "settingName": "Show the Reload in Internet Explorer mode button in the toolbar",
+    "settingDescription": "Set this policy to show the Reload in Internet Explorer mode button in the toolbar. Users can hide the button in the toolbar through edge://settings/appearance.  The button will only be shown on the toolbar when the 'InternetExplorerIntegrationReloadInIEModeAllowed' (Allow unconfigured sites to be reloaded in Internet Explorer mode) policy is enabled or if the user has chosen to enable \"Allow sites to be reloaded in Internet Explorer mode\".\r\n\r\nIf you enable this policy, the Reload in Internet mode button is pinned to the toolbar.\r\n\r\nIf you disable or don't configure this policy, the Reload in Internet Explorer mode button isn't shown in the toolbar by default. Users can toggle the Show Internet Explorer mode button in edge://settings/appearance.",
+    "keywords": [
+      "InternetExplorerModeToolbarButtonEnabled",
+      "Show the Reload in Internet Explorer mode button in the toolbar",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev96~policy~microsoft_edge_autolaunchprotocolscomponentenabled",
+    "settingName": "AutoLaunch Protocols Component Enabled",
+    "settingDescription": "Specifies whether the AutoLaunch Protocols component should be enabled. This component allows Microsoft to provide a list similar to that of the 'AutoLaunchProtocolsFromOrigins' (Define a list of protocols that can launch an external application from listed origins without prompting the user) policy, allowing certain external protocols to launch without prompt or blocking certain protocols (on specified origins). By default, this component is enabled.\r\n\r\nIf you enable or don't configure this policy, the AutoLaunch Protocols component is enabled.\r\n\r\nIf you disable this policy, the AutoLaunch Protocols component is disabled.",
+    "keywords": [
+      "AutoLaunchProtocolsComponentEnabled",
+      "AutoLaunch Protocols Component Enabled",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev98~policy~microsoft_edge_edgefollowenabled",
+    "settingName": "Enable Follow service in Microsoft Edge (obsolete) (User)",
+    "settingDescription": "OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 126.\r\n\r\nLets Microsoft Edge browser enable Follow service and apply it to users.\r\n\r\nUsers can use the Follow feature for an influencer, site, or topic in Microsoft Edge..\r\n\r\nIf you enable or don't configure this policy, Follow in Microsoft Edge can be applied.\r\n\r\nIf you disable this policy, Microsoft Edge will not communicate with Follow service to provide the follow feature.\r\n\r\nThis policy is obsolete after version 126.",
+    "keywords": [
+      "EdgeFollowEnabled",
+      "Enable Follow service in Microsoft Edge",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.inprivatemodeurlblocklist",
+    "settingName": "Block access to a list of URLs in InPrivate mode.",
+    "settingDescription": "This policy controls which URLs are blocked from loading in InPrivate mode in Microsoft Edge.\n\nAdministrators can specify a list of URL patterns that are blocked when users browse in InPrivate mode. For information about the supported URL pattern format, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n\nIf both \"InPrivateModeUrlBlocklist\" and \"InPrivateModeUrlAllowlist\" are configured, the allowlist takes precedence.\n- URLs that match the allowlist are allowed.\n- URLs that match the blocklist but not the allowlist are blocked.\n- URLs that match neither list follow the behavior defined by the general \"URLBlocklist\" and \"URLAllowlist\" policies.\n\nIf \"InPrivateModeUrlAllowlist\" is configured and this policy is not configured, only URLs on the allowlist can be opened in InPrivate mode.\n\nIf \"InPrivateModeAvailability\" is set to disallow (value 1) and \"InPrivateModeUrlAllowlist\" is configured, InPrivate mode is available only for URLs that match the allowlist.\n\nThis policy applies only to InPrivate mode. To block URLs across all browsing modes, use \"URLBlocklist\".\n\nThis policy supports up to 1000 entries.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_xsltenabled",
+    "settingName": "Control the availability of the XSLT feature",
+    "settingDescription": "Controls whether the XSLT feature (the XSLTProcessor JavaScript API and the XSL processing instruction) is available in Microsoft Edge.\r\n\r\nIf you enable this policy, XSLT is available regardless of the browser's default configuration.\r\n\r\nIf you disable this policy, XSLT is unavailable regardless of the browser's default configuration.\r\n\r\nIf you don't configure this policy, XSLT availability is determined by the browser's default configuration and any applicable field trials.\r\n\r\nThis policy is temporary and will be removed in a future version of Microsoft Edge.",
+    "keywords": [
+      "XSLTEnabled",
+      "Control the availability of the XSLT feature",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_inprivatemodeurlblocklist_inprivatemodeurlblocklistdesc",
+    "settingName": "Block access to a list of URLs in InPrivate mode. (User)",
+    "settingDescription": "",
+    "keywords": [
+      "InPrivateModeUrlBlocklist",
+      "Block access to a list of URLs in InPrivate mode.",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsallday",
+    "settingName": "Mute notifications all day",
+    "settingDescription": null,
+    "keywords": [
+      "Mute",
+      "Notifications",
+      "Teams",
+      "Outlook",
+      "Allday"
+    ],
+    "categoryName": "Allday"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsallday_daysoftheweek",
+    "settingName": "Days of the week",
+    "settingDescription": null,
+    "keywords": [
+      "Mute",
+      "Notifications",
+      "Outlook",
+      "Allday",
+      "All day",
+      "DaysOfTheWeek",
+      "Days of the week"
+    ],
+    "categoryName": "Allday"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.edgesidebarappurlhostblocklist",
+    "settingName": "Control which apps cannot be opened in Microsoft Edge sidebar",
+    "settingDescription": "Define a list of sites, based on URL patterns, that cannot be opened in sidebar.\n\nIf you don't configure this policy, a user can open any app in sidebar.\n\nIf the \"HubsSidebarEnabled\" policy is disabled, this list isn't used and no sidebar can be opened.\n\nFor detailed information about valid url patterns, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2281313\">https://go.microsoft.com/fwlink/?linkid=2281313</a>.\n\nNote: A blocklist value of '*' means all apps are blocked unless they are explicitly listed in the \"EdgeSidebarAppUrlHostAllowList\" policy.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.donotsilentlyblockprotocolsfromorigins",
+    "settingName": "Define a list of protocols that can not be silently blocked by anti-flood protection",
+    "settingDescription": "Allows you to create a list of protocols and an associated list of allowed origin patterns, for each protocol. These origins aren't silently blocked from launching an external application by anti-flood protection. The trailing separator shouldn't be included when listing the protocol. For example, list \"skype\" instead of \"skype:\" or \"skype://\".\n\nIf you configure this policy, a protocol is only permitted to bypass being silently blocked by anti-flood protection if:\n\n- the protocol is listed\n\n- the origin of the site trying to launch the protocol matches one of the origin patterns in that protocol's allowed_origins list.\n\nIf either condition is false, anti-flood protection protection blocks the external protocol launch.\n\nIf you don't configure this policy, no protocols can bypass being silently blocked.\n\nThe origin-matching patterns use a similar format to those patterns for the \"URLBlocklist\" policy, which are documented at <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n\nHowever, origin-matching patterns for this policy can't contain \"/path\" or \"@query\" elements. Any pattern that contains a \"/path\" or \"@query\" element is ignored.\n\nThis policy doesn't work as expected with file://* wildcards.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.adstransparencyenabled",
+    "settingName": "Configure if the ads transparency feature is enabled",
+    "settingDescription": "Lets you decide whether the ads transparency feature is enabled. This behavior only applies to the \"balanced\" mode of tracking prevention, and doesn't impact \"basic\" or \"strict\" modes. Your users' tracking prevention level can be configured using the \"TrackingPrevention\" policy. AdsTransparencyEnabled will only have an effect if \"TrackingPrevention\" is set to TrackingPreventionBalanced or isn't configured.\n\nIf you enable or don't configure this policy, transparency metadata provided by ads are available to the user when the feature is active.\n\nWhen the feature is enabled, Tracking Prevention enables exceptions for the associated ad providers that have met Microsoft's privacy standards.\n\nIf you disable this policy, Tracking Prevention won't adjust its behavior even when transparency metadata is provided by ads.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autofilladdressenabled",
+    "settingName": "Enable AutoFill for addresses",
+    "settingDescription": "Enables the AutoFill feature and allows users to autocomplete address information in web forms through previously stored information.\n\nIf you have enabled or not configured this policy, users manage AutoFill for addresses in Microsoft Edge settings. AutoFill allows users to complete address fields in web forms using previously saved information.\n\nIf you have disabled this policy, Microsoft Edge doesn't suggest, fill in, or save address information. AutoFill is also disabled for all web forms except payment and password fields, and previously saved addresses aren't available.\n\nIf you disable this policy, then \"EdgeAutofillMlEnabled\" is turned off.\n\nIf you disable this policy, all activities for all web forms are stopped, except payment and password forms. No further entries are saved, and Microsoft Edge doesn't suggest or AutoFill any previous entries.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.useragentreduction",
+    "settingName": "Enable or disable the User-Agent Reduction (Obsolete)",
+    "settingDescription": "The User-Agent HTTP request header has been reduced by default since Microsoft Edge version 119. To continue receiving detailed platform information, migrate to User-Agent Client Hints, which replace the deprecated detailed User-Agent header. For more information, visit: https://web.dev/articles/migrate-to-ua-ch\n\nIf you don't configure this policy or set it to Default, the User-Agent header will be reduced and controlled by experimentation.\n\nSet this policy to 'ForceEnabled' to force the reduced version of the  User-Agent request header for all origins.\n\nSet this policy to 'ForceDisabled' to always use the full (legacy)  User-Agent header.\n\nTo learn more about the User-Agent string, read here:\n\n<a href=\"https://go.microsoft.com/fwlink/?linkid=2186267\">https://go.microsoft.com/fwlink/?linkid=2186267</a>\n\nPolicy options mapping:\n\n* Default (0) = Reduced User Agent, or controlled by experimentation.\n\n* ForceDisabled (1) = Full (legacy) User Agent.\n\n* ForceEnabled (2) = Reduced User Agent.\n\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.intune.mam.managedbrowser.appproxyredirection",
+    "settingName": "Application proxy redirection",
+    "settingDescription": "Enable App proxy redirection to give users access to corporate links and on-premise web apps.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.allowdeletingbrowserhistory",
+    "settingName": "Enable deleting browser and download history",
+    "settingDescription": "Enables deleting browser history and download history and prevents users from changing this setting.\n\nNote that even with this policy is disabled, the browsing and download history aren't guaranteed to be retained: users can edit or delete the history database files directly, and the browser itself may remove (based on expiration period) or archive any or all history items at any time.\n\nIf you enable this policy or don't configure it, users can delete the browsing and download history.\n\nIf you disable this policy, users can't delete browsing and download history. Disabling this policy will disable history sync and open tab sync.\n\nIf you enable this policy, don't enable the \"ClearBrowsingDataOnExit\" policy, because they both deal with deleting data. If you enable both, the \"ClearBrowsingDataOnExit\" policy takes precedence and deletes all data when Microsoft Edge closes, regardless of how this policy is configured.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.importfavorites_recommended",
+    "settingName": "Allow importing of favorites (users can override)",
+    "settingDescription": "Allows users to import favorites from another browser into Microsoft Edge.\n\nIf you enable this policy, the **Favorites** check box is automatically selected in the **Import browser data** dialog box.\n\nIf you disable this policy, favorites aren't imported at first run, and users can't import them manually.\n\nIf you don't configure this policy, favorites are imported at first run, and users can choose whether to import them manually during later browsing sessions.\n\nYou can also set this policy as a recommendation. This means that Microsoft Edge imports favorites on first run, but users can select or clear the **favorites** option during manual import.\n\n**Note**: This policy currently manages importing from Internet Explorer (on Windows 7, 8, and 10), Google Chrome (on Windows 7, 8, and 10 and on macOS), Mozilla Firefox (on Windows 7, 8, and 10 and on macOS), and Apple Safari (on macOS) browsers.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.browsingdatalifetime",
+    "settingName": "Browsing Data Lifetime Settings",
+    "settingDescription": "This policy controls how long specific types of browsing data are retained.\nIf Sync is enabled, this policy has no effect.\n\nYou can specify the following data types:\n'browsing_history'\n'download_history'\n'cookies_and_other_site_data'\n'cached_images_and_files'\n'password_signin'\n'autofill'\n'site_settings'\n'hosted_app_data'\n\nMicrosoft Edge periodically deletes data of the selected types that is older than the value set by 'time_to_live_in_hours'.\n\nExpired data is removed 15 seconds after browser startup and every hour while the browser is running.\n\nNote: Deleting cookies using this policy does not sign the user out of their profile, the user stays signed in.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.pdfvieweroutofprocessiframeenabled",
+    "settingName": "Use out-of-process iframe PDF Viewer",
+    "settingDescription": "Determines whether the PDF viewer in Microsoft Edge uses an out-of-process iframe (OOPIF).\nThis is the new PDF viewer architecture going forward, as it's simpler in design and makes adding new features easier. The current GuestView PDF viewer, which relies on an outdated and overly complex architecture, is being deprecated.\n\nIf you enable this policy or don't configure it, Microsoft Edge uses the OOPIF PDF viewer architecture. The default behavior will be decided by Microsoft Edge.\n\nIf you disable this policy, Microsoft Edge strictly uses the existing GuestView PDF viewer. This approach embeds a web page with its own separate frame tree into another web page.\n\nThis policy will be removed in the future, after the OOPIF PDF viewer feature has fully rolled out.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.videocaptureallowed",
+    "settingName": "Allow or block video capture",
+    "settingDescription": "Control whether sites can capture video.\n\nIf enabled or not configured (default), the user is asked about video capture access for all sites except sites with URLs configured in the \"VideoCaptureAllowedUrls\" policy list, which is granted without prompting.\n\nIf you disable this policy, the user isn't prompted, and video capture is only available to URLs configured in \"VideoCaptureAllowedUrls\" policy.\n\nThis policy affects all types of video inputs, not only the built-in camera.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autofillcreditcardenabled",
+    "settingName": "Enable AutoFill for payment instruments",
+    "settingDescription": "Enables Microsoft Edge's AutoFill feature and lets users auto complete payment instruments like credit or debit cards in web forms using previously stored information. Includes suggesting new payment instruments like Buy Now Pay Later (BNPL) in web forms and Express Checkout.\n\nIf you enable this policy or don't configure it, users can control AutoFill for payment instruments.\n\nIf you disable this policy, AutoFill never suggests, fills, or recommends new payment Instruments. Additionally, it won't save any payment instrument information that users submit while browsing the web.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.doubleclickclosetabenabled",
+    "settingName": "Double Click feature in Microsoft Edge enabled (only available in China)",
+    "settingDescription": "This policy lets you configure the double click feature in Microsoft Edge.\n\nDouble Click lets users close a tab by double clicking the left mouse button.\n\nIf you enable or don't configure this policy, you can use the double click feature to close a tab on Microsoft Edge to start using this feature.\n\nIf you disable this policy, you can't use the double click feature in Microsoft Edge.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.pdfsecuremode",
     "settingName": "Secure mode and Certificate-based Digital Signature validation in native PDF reader",
     "settingDescription": "The policy enables Digital Signature validation for PDF files in a secure environment, which shows the correct validation status of the signatures.\n\nIf you enable this policy, PDF files with Certificate-based digital signatures are opened with an option to view and verify the validity of the signatures with high security.\n\nIf you disable or don't configure this policy, the capability to view and verify the signature will not be available.",
@@ -12575,15 +13325,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.edgeshoppingassistantenabled",
-    "settingName": "Shopping in Microsoft Edge Enabled",
-    "settingDescription": "This policy lets users compare the prices of a product they're looking at, get coupons or rebates from the website they're on, autoapply coupons, and help checkout faster using autofill data.\n\nIf you enable or don't configure this policy, shopping features such as price comparison, coupons, rebates, and express checkout are automatically applied for retail domains. Coupons for the current retailer and prices from other retailers are fetched from a server.\n\nIf you disable this policy, shopping features such as price comparison, coupons, rebates, and express checkout aren't automatically found for retail domains.\n\nStarting from version 90.0.818.56, the behavior of the messaging letting users know that there's a coupon, rebate, price comparison, or price history available on shopping domains is also done through a horizontal banner below the address bar. Previously, this messaging was done on the address bar.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.automatichttpsdefault",
     "settingName": "Configure Automatic HTTPS (Obsolete)",
     "settingDescription": "This policy lets you manage settings for \"AutomaticHttpsDefault\", which switches connections from HTTP to HTTPS.\n\nThis feature helps protect against man-in-the-middle attacks by enforcing more secure connections, but users might experience more connection errors.\n\nMicrosoft Edge attempts to upgrade some navigations from HTTP to HTTPS, when possible. This policy can be used to disable this behavior. If set to \"AlwaysUpgrade\" or left unset, this feature is enabled by default.\n\nThe separate HttpAllowlist policy can be used to exempt specific hostnames or hostname patterns from being upgraded to HTTPS by this feature.\n\nThis policy is obsolete, and is replaced with the policy \"HttpsUpgradesEnabled\".\n\nPolicy options mapping:\n\n* DisableAutomaticHttps (0) = Automatic HTTPS functionality is disabled.\n\n* UpgradeCapableDomains (1) = (Deprecated) Navigations delivered over HTTP are switched to HTTPS, only on domains likely to support HTTPS.\n\n* AlwaysUpgrade (2) = All navigations delivered over HTTP are switched to HTTPS. Connection errors might occur more often.\n\nUse the preceding information when configuring this policy.",
@@ -12596,15 +13337,6 @@
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.copilotcdppagecontext",
     "settingName": "Control Copilot with Commercial Data Protection access to page context for Microsoft Entra ID profiles (Obsolete)",
     "settingDescription": "This policy has been obsoleted as of Edge 133. Instead of this obsolete policy, we recommend using \"EdgeEntraCopilotPageContext\".\n\nThis policy controls access to page contents for Copilot with Commercial Data Protection in the Edge sidebar. This policy applies only to Microsoft Entra ID profiles. To summarize pages and interact with text selections, it needs to be able to access the page contents. This policy doesn't apply to MSA profiles. This policy doesn't control access for Copilot without Commercial Data Protection. Access for Copilot without Commercial Data Protection is controlled by the policy CopilotPageContext.\n\nIf you enable this policy, Copilot with Commercial Data Protection will have access to page context.\n\nIf you don't configure this policy, a user can enable access to page context for Copilot with Commercial Data Protection using the setting toggle in Edge.\n\nIf you disable this policy, Copilot with Commercial Data Protection won't be able to access page context.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.forcegooglesafesearch",
-    "settingName": "Enforce Google SafeSearch",
-    "settingDescription": "Forces queries in Google Web Search to be performed with SafeSearch set to active, and prevents users from changing this setting.\n\nIf you enable this policy, SafeSearch in Google Search is always active.\n\nIf you disable this policy or don't configure it, SafeSearch in Google Search isn't enforced.",
     "keywords": [
       "Uncategorized"
     ],
@@ -12629,27 +13361,9 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.alternateerrorpagesenabled_recommended",
-    "settingName": "Suggest similar pages when a webpage can't be found (users can override)",
-    "settingDescription": "Allow Microsoft Edge to issue a connection to a web service to generate URL and search suggestions for connectivity issues such as DNS errors.\n\nIf you enable this policy, a web service is used to generate url and search suggestions for network errors.\n\nIf you disable this policy, no calls to the web service are made and a standard error page is shown.\n\nIf you don't configure this policy, Microsoft Edge respects the user preference that's set under Services at edge://settings/privacy.\nSpecifically, there's a **Suggest similar pages when a webpage can't be found** toggle, which the user can switch on or off. Note that if you have enable this policy (AlternateErrorPagesEnabled), the Suggest similar pages when a webpage can't be found setting is turned on, but the user can't change the setting by using the toggle. If you disable this policy, the Suggest similar pages when a webpage can't be found setting is turned off, and the user can't change the setting by using the toggle.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.strictermixedcontenttreatmentenabled",
     "settingName": "Enable stricter treatment for mixed content (Obsolete)",
     "settingDescription": "This policy doesn't work because it was only intended to be a short-term mechanism to give enterprises more time to update their web content if it was found to be incompatible with stricter mixed content treatment.\n\nThis policy controls the treatment for mixed content (HTTP content in HTTPS sites) in the browser.\n\nIf you set this policy to true or not set, audio and video mixed content is automatically upgraded to HTTPS (that is, the URL will be rewritten as HTTPS, without a fallback if the resource isn't available over HTTPS), and a 'Not Secure' warning is shown in the URL bar for image mixed content.\n\nIf you set the policy to false, auto upgrades are disabled for audio and video, and no warning is shown for images.\n\nThis policy doesn't affect other types of mixed content other than audio, video, and images.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.edgeenhanceimagesenabled",
-    "settingName": "Enhance images enabled (Obsolete)",
-    "settingDescription": "The enhance images feature is deprecated and starting in Microsoft Edge version 122, this policy will be removed. Set whether Microsoft Edge can automatically enhance images to show you sharper images with better color, lighting, and contrast.\n\nIf you enable this policy or don't configure the policy, Microsoft Edge automatically enhances images on specific web applications.\n\nIf you disable this policy, Microsoft Edge doesn't enhance images.",
     "keywords": [
       "Uncategorized"
     ],
@@ -12746,42 +13460,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_disable3dapis",
-    "settingName": "Disable support for 3D graphics APIs (User)",
-    "settingDescription": "Prevent web pages from accessing the graphics processing unit (GPU). Specifically, web pages can't access the WebGL API and plug-ins can't use the Pepper 3D API.\r\n\r\nIf you don't configure or disable this policy, it potentially allows web pages to use the WebGL API and plug-ins to use the Pepper 3D API. Microsoft Edge might, by default, still require command line arguments to be passed in order to use these APIs.\r\n\r\nIf 'HardwareAccelerationModeEnabled' (Use hardware acceleration when available) policy is set to false, the setting for 'Disable3DAPIs' policy is ignored - it's the equivalent of setting 'Disable3DAPIs' policy to true.",
-    "keywords": [
-      "Disable3DAPIs",
-      "Disable support for 3D graphics APIs",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_diskcachedir",
-    "settingName": "Set disk cache directory",
-    "settingDescription": "Configures the directory to use to store cached files.\r\n\r\nIf you enable this policy, Microsoft Edge uses the provided directory regardless of whether the user has specified the '--disk-cache-dir' flag. To avoid data loss or other unexpected errors, don't configure this policy to a volume's root directory or to a directory used for other purposes, because Microsoft Edge manages its contents.\r\n\r\nSee https://go.microsoft.com/fwlink/?linkid=2095041 for a list of variables you can use when specifying directories and paths.\r\n\r\nIf you don't configure this policy, the default cache directory is used, and users can override that default with the '--disk-cache-dir' command line flag.\r\n\r\nExample value: ${user_home}/Edge_cache",
-    "keywords": [
-      "DiskCacheDir",
-      "Set disk cache directory",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_syncdisabled",
-    "settingName": "Disable synchronization of data using Microsoft sync services",
-    "settingDescription": "Disables data synchronization in Microsoft Edge. This policy also prevents the sync consent prompt from appearing.\r\n\r\nIf you don't set this policy or apply it as recommended, users will be able to turn sync on or off. If you apply this policy as mandatory, users will not be able to turn sync on.",
-    "keywords": [
-      "SyncDisabled",
-      "Disable synchronization of data using Microsoft sync services",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_alwaysopenpdfexternally",
     "settingName": "Always open PDF files externally",
     "settingDescription": "Disables the internal PDF viewer in Microsoft Edge.\r\n\r\nIf you enable this policy Microsoft Edge treats PDF files as downloads and lets users open them with the default application.\r\n\r\nIf you don't configure this policy or disable it, Microsoft Edge will open PDF files (unless the user disables it).",
@@ -12794,36 +13472,12 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_audiocaptureallowedurls",
-    "settingName": "Sites that can access audio capture devices without requesting permission",
-    "settingDescription": "Specify websites, based on URL patterns, that can use audio capture devices without asking the user for permission. Patterns in this list are matched against the security origin of the requesting URL. If they match, the site is automatically granted access to audio capture devices. Note, however, that the pattern \"*\", which matches any URL, is not supported by this policy.\r\n\r\nExample value:\r\n\r\nhttps://www.contoso.com/\r\nhttps://[*.]contoso.edu/",
-    "keywords": [
-      "AudioCaptureAllowedUrls",
-      "Sites that can access audio capture devices without requesting permission",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_restrictsignintopattern",
     "settingName": "Restrict which accounts can be used to sign in to Microsoft Edge",
     "settingDescription": "Determines which accounts can be used to sign in to the Microsoft Edge account that's chosen during the Sync opt-in flow.\r\n\r\nYou can configure this policy to match multiple accounts using a Perl style regular expression for the pattern. If a user tries to sign in to the browser with an account whose username doesn't match this pattern, they are blocked and will get the appropriate error message. Note that pattern matches are case sensitive. For more information about the regular expression rules that are used, refer to https://go.microsoft.com/fwlink/p/?linkid=2133903.\r\n\r\nIf you don't configure this policy or leave it blank, users can use any account to sign in to Microsoft Edge.\r\n\r\nNote that signed-in profiles with a username that doesn't match this pattern will be signed out after this policy is enabled.\r\n\r\nExample value: .*@contoso.com",
     "keywords": [
       "RestrictSigninToPattern",
       "Restrict which accounts can be used to sign in to Microsoft Edge",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_userdatadir_userdatadir",
-    "settingName": "Set the user data directory (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "UserDataDir",
-      "Set the user data directory",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],
@@ -12866,18 +13520,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_maxconnectionsperproxy",
-    "settingName": "Maximum number of concurrent connections to the proxy server",
-    "settingDescription": "Specifies the maximum number of simultaneous connections to the proxy server.\r\n\r\nSome proxy servers can't handle a high number of concurrent connections per client - you can solve this by setting this policy to a lower value.\r\n\r\nThe value of this policy should be lower than 100 and higher than 6. The default value is 32.\r\n\r\nSome web apps are known to consume many connections with hanging GETs - lowering the maximum connections below 32 may lead to browser networking hangs if too many of these kind of web apps are open.\r\n\r\nIf you don't configure this policy, the default value (32) is used.",
-    "keywords": [
-      "MaxConnectionsPerProxy",
-      "Maximum number of concurrent connections to the proxy server",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_certificatetransparencyenforcementdisabledforlegacycas_certificatetransparencyenforcementdisabledforlegacycasdesc",
     "settingName": "Disable Certificate Transparency enforcement for a list of legacy certificate authorities (Device)",
     "settingDescription": "",
@@ -12914,18 +13556,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_mediaroutercastallowallips",
-    "settingName": "Allow Google Cast to connect to Cast devices on all IP addresses",
-    "settingDescription": "Enable this policy to let Google Cast connect to Cast devices on all IP addresses, not just RFC1918/RFC4193 private addresses.\r\n\r\nDisable this policy to restrict Google Cast to Cast devices on RFC1918/RFC4193 private addresses.\r\n\r\nIf you don't configure this policy, Google Cast connects to Cast devices on RFC1918/RFC4193 private addresses only, unless you enable the CastAllowAllIPs feature.\r\n\r\nIf the 'EnableMediaRouter' (Enable Google Cast) policy is disabled, then this policy has no effect.",
-    "keywords": [
-      "MediaRouterCastAllowAllIPs",
-      "Allow Google Cast to connect to Cast devices on all IP addresses",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_translateenabled",
     "settingName": "Enable Translate (User)",
     "settingDescription": "Enables the integrated Microsoft translation service on Microsoft Edge.\r\n\r\nIf you enable this policy, Microsoft Edge offers translation functionality to the user by showing an integrated translate flyout when appropriate, and a translate option on the right-click context menu.\r\n\r\nDisable this policy to disable all built-in translate features.\r\n\r\nIf you don't configure the policy, users can choose whether to use the translation functionality or not.",
@@ -12938,48 +13568,12 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_mediaroutercastallowallips",
-    "settingName": "Allow Google Cast to connect to Cast devices on all IP addresses (User)",
-    "settingDescription": "Enable this policy to let Google Cast connect to Cast devices on all IP addresses, not just RFC1918/RFC4193 private addresses.\r\n\r\nDisable this policy to restrict Google Cast to Cast devices on RFC1918/RFC4193 private addresses.\r\n\r\nIf you don't configure this policy, Google Cast connects to Cast devices on RFC1918/RFC4193 private addresses only, unless you enable the CastAllowAllIPs feature.\r\n\r\nIf the 'EnableMediaRouter' (Enable Google Cast) policy is disabled, then this policy has no effect.",
-    "keywords": [
-      "MediaRouterCastAllowAllIPs",
-      "Allow Google Cast to connect to Cast devices on all IP addresses",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_browsersignin_browsersignin",
-    "settingName": "Browser sign-in settings (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "BrowserSignin",
-      "Browser sign-in settings",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_webrtclocalhostiphandling_webrtclocalhostiphandling",
     "settingName": "Restrict exposure of localhost IP address by WebRTC (Device)",
     "settingDescription": "",
     "keywords": [
       "WebRtcLocalhostIpHandling",
       "Restrict exposure of local IP address by WebRTC",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_overridesecurityrestrictionsoninsecureorigin_overridesecurityrestrictionsoninsecureorigindesc",
-    "settingName": "Control where security restrictions on insecure origins apply (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "OverrideSecurityRestrictionsOnInsecureOrigin",
-      "Control where security restrictions on insecure origins apply",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],
@@ -13034,18 +13628,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_promotionaltabsenabled",
-    "settingName": "Enable full-tab promotional content (deprecated) (User)",
-    "settingDescription": "DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.\r\n\r\nControl the presentation of full-tab promotional or educational content. This setting controls the presentation of welcome pages that help users sign into Microsoft Edge, choose their default browser, or learn about product features.\r\n\r\nIf you enable this policy (set it true) or don't configure it, Microsoft Edge can show full-tab content to users to provide product information.\r\n\r\nIf you disable (set to false) this policy, Microsoft Edge can't show full-tab content to users.\r\n\r\nThis is deprecated - use ShowRecommendationsEnabled instead.",
-    "keywords": [
-      "PromotionalTabsEnabled",
-      "Enable full-tab promotional content",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_wpadquickcheckenabled",
     "settingName": "Set WPAD optimization",
     "settingDescription": "Allows you to turn off WPAD (Web Proxy Auto-Discovery) optimization in Microsoft Edge.\r\n\r\nIf you disable this policy, WPAD optimization is disabled, which makes the browser wait longer for DNS-based WPAD servers.\r\n\r\nIf you enable or don't configure the policy, WPAD optimization is enabled.\r\n\r\nIndependent of whether or how this policy is enabled, the WPAD optimization setting cannot be changed by users.",
@@ -13094,18 +13676,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev102~policy~microsoft_edge_outlookhubmenuenabled",
-    "settingName": "Allow users to access the Outlook menu",
-    "settingDescription": "This policy is used to manage access to the Outlook menu from Microsoft Edge.\r\n\r\nIf you enable or don't configure this policy, users can access the Outlook menu.\r\nIf you disable this policy, users can't access the Outlook menu.",
-    "keywords": [
-      "OutlookHubMenuEnabled",
-      "Allow users to access the Outlook menu",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev103~policy~microsoft_edge_internetexplorerzoomdisplay",
     "settingName": "Display zoom in IE Mode tabs with DPI Scale included like it is in Internet Explorer",
     "settingDescription": "Lets you display zoom in IE Mode tabs similar to how it was displayed in Internet Explorer, where the DPI scale of the display is factored in.\r\n\r\nFor example, if you have a page zoomed to 200% on a 100 DPI scale display and you change the display to 150 DPI, Microsoft Edge would still display the zoom as 200%. However, Internet Explorer factors in the DPI scale and displays 300%.\r\n\r\nIf you enable this policy, zoom values will be displayed with the DPI scale included for IE Mode tabs.\r\n\r\nIf you disable or don't configure this policy, zoom values will be displayed without DPI scale included for IE Mode tabs",
@@ -13142,36 +13712,12 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev104~policy~microsoft_edge_askbeforecloseenabled",
-    "settingName": "Get user confirmation before closing a browser window with multiple tabs (User)",
-    "settingDescription": "This policy lets you configure whether users see a confirmation dialog before closing a browser window with multiple tabs. This dialog asks users to confirm that the browser window can be closed.\r\n\r\nIf you enable this policy, users will be presented with a confirmation dialog when closing a browser window with multiple tabs.\r\n\r\nIf you disable or don't configure this policy, a browser window with multiple tabs will close immediately without user confirmation.",
-    "keywords": [
-      "AskBeforeCloseEnabled",
-      "Get user confirmation before closing a browser window with multiple tabs",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev104~policy~microsoft_edge_alloweddomainsforapps",
     "settingName": "Define domains allowed to access Google Workspace",
     "settingDescription": "Setting the policy on Microsoft Edge turns on the restricted sign-in feature in Google Workspace and prevents users from changing this setting. Users can only access Google tools using accounts from the specified domains. To allow gmail or googlemail accounts, add consumer_accounts to the list of domains. This policy is based on the Chrome policy of the same name.\r\n\r\nIf you don't provide a domain name or leave this policy unset, users can access Google Workspace with any account.\r\n\r\nUsers cannot change or override this setting.\r\n\r\nNote: This policy causes the X-GoogApps-Allowed-Domains header to be appended to all HTTP and HTTPS requests to all google.com domains, as described in https://go.microsoft.com/fwlink/?linkid=2197973.\r\n\r\nExample value: example.com",
     "keywords": [
       "AllowedDomainsForApps",
       "Define domains allowed to access Google Workspace",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev105~policy~microsoft_edge_exemptfiletypedownloadwarnings_exemptfiletypedownloadwarnings",
-    "settingName": "Disable download file type extension-based warnings for specified file types on domains (User)",
-    "settingDescription": "",
-    "keywords": [
-      "ExemptFileTypeDownloadWarnings",
-      "Disable download file type extension-based warnings for specified file types on domains",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],
@@ -13190,18 +13736,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev109~policy~microsoft_edge_clipboardallowedforurls",
-    "settingName": "Allow clipboard use on specific sites (User)",
-    "settingDescription": "Configure the list of URL patterns that specify which sites can use the clipboard site permission.\r\n\r\nSetting the policy lets you create a list of URL patterns that specify which sites can use the clipboard site permission. This doesn't include all clipboard operations on origins that match the patterns. For example, users will still be able to paste using keyboard shortcuts because this isn't controlled by the clipboard site permission.\r\n\r\nLeaving the policy unset means 'DefaultClipboardSetting' (Default clipboard site permission) applies for all sites if it's set. If it isn't set, the user's personal setting applies.\r\n\r\nFor more information about valid url patterns, see https://go.microsoft.com/fwlink/?linkid=2095322. Wildcards, *, are allowed.\r\n\r\nExample value:\r\n\r\nhttps://www.example.com\r\n[*.]example.edu",
-    "keywords": [
-      "ClipboardAllowedForUrls",
-      "Allow clipboard use on specific sites",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev109~policy~microsoft_edge_microsoftrootstoreenabled",
     "settingName": "Determines whether the Microsoft Root Store and built-in certificate verifier will be used to verify server certificates (obsolete)",
     "settingDescription": "OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 114.\r\n\r\nWhen this policy is set to enabled, Microsoft Edge will perform verification of server certificates using the built-in certificate verifier with the Microsoft Root Store as the source of public trust.\r\n\r\nWhen this policy is set to disabled, Microsoft Edge will use the system certificate verifier and system root certificates.\r\n\r\nWhen this policy is not set, the Microsoft Root Store or system provided roots may be used.\r\n\r\nThis policy is planned to be removed in Microsoft Edge version\r\n121 for Android devices when support for using the platform supplied roots is planned to be removed.\r\n\r\nThis policy was removed in Microsoft Edge version 115 for\r\nMicrosoft Windows and macOS,\r\nMicrosoft Edge version 120 for\r\nLinux, and\r\nMicrosoft Edge version 121 for\r\nAndroid\r\nwhen support for using the platform supplied certificate verifier and roots was removed.",
@@ -13214,48 +13748,12 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev110~policy~microsoft_edge_searchfiltersenabled",
-    "settingName": "Search Filters Enabled",
-    "settingDescription": "Lets you filter your autosuggestions by selecting a filter from the search filters ribbon. For example, if you select the \"Favorites\" filter, only favorites suggestions will be shown.\r\n\r\nIf you enable or don't configure this policy, the autosuggestion dropdown defaults to displaying the ribbon of available filters.\r\n\r\nIf you disable this policy, the autosuggestion dropdown won't display the ribbon of available filters.",
-    "keywords": [
-      "SearchFiltersEnabled",
-      "Search Filters Enabled",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev114~policy~microsoft_edge_discoverpagecontextenabled",
-    "settingName": "Enable Discover access to page contents for AAD profiles (obsolete)",
-    "settingDescription": "OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 127.\r\n\r\nThis policy has been obsoleted as of Edge 127. Two new Edge Policies have taken its place. Those policies are CopilotPageContext (Control Copilot access to page contents for AAD profiles), and CopilotCDPPageContext (Control Copilot with Commercial Data Protection access to page contents for AAD profiles).\r\n\r\nThis policy did not allow for separate control of Copilot and Copilot with Commercial Data Protection. The new policies allow separate control of these versions of Copilot. The new policies also allow admins to force-enable Copilot access to Edge page contents by enabling the policy, whereas DiscoverPageContextEnabled only allowed force-disabling of Copilot page access.\r\n\r\nThis policy controls Discover access to page contents for AAD profiles. Discover is an extension that hosts Bing Chat. In order to summarize pages and interact with text selections, it needs to be able to access the page contents. When enabled, page contents will be sent to Bing. This policy does not affect MSA profiles.\r\n\r\nIf you enable or don't configure this policy, Discover will have access to page contents.\r\n\r\nIf you disable this policy, Discover will not be able to access page contents.",
-    "keywords": [
-      "DiscoverPageContextEnabled",
-      "Enable Discover access to page contents for AAD profiles",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "user_vendor_msft_policy_config_microsoft_edgev115~policy~microsoft_edge_enhancesecuritymodeindicatoruienabled",
     "settingName": "Manage the indicator UI of the Enhanced Security Mode (ESM) feature in Microsoft Edge (User)",
     "settingDescription": "This policy lets you manage whether the indicator User Interface (UI) for enhanced security mode is shown or not when ESM is turned on.\r\n\r\nIf you enable or don't configure this policy, the indicator UI is on.\r\n\r\nIf you disable this policy, the indicator UI is off.\r\n\r\nNote: If this policy is used, only the indicator User Interface experience is supressed - ESM is still turned on. For more information, see the 'EnhanceSecurityMode' (Enhance the security state in Microsoft Edge) policy.\r\n\r\nFor detailed information about Enhanced Security Mode, see https://go.microsoft.com/fwlink/?linkid=2185895",
     "keywords": [
       "EnhanceSecurityModeIndicatorUIEnabled",
       "Manage the indicator UI of the Enhanced Security Mode (ESM) feature in Microsoft Edge",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev117~policy~microsoft_edge_internetexplorerintegrationzoneidentifiermhtfileallowed",
-    "settingName": "Automatically open downloaded MHT or MHTML files from the web in Internet Explorer mode (User)",
-    "settingDescription": "This policy controls whether MHT or MHTML files that are downloaded from the web are automatically opened in Internet Explorer mode.\r\n\r\nIf you enable this policy, the MHT or MHTML files that are downloaded from the web can be opened in both Microsoft Edge and Internet Explorer mode to provide the best user experience.\r\n\r\nIf you disable or don't configure this policy, MHT or MHTML files that are downloaded from the web won't automatically open in Internet Explorer mode.\r\n\r\nTo learn more about Internet Explorer mode, see https://go.microsoft.com/fwlink/?linkid=2094210",
-    "keywords": [
-      "InternetExplorerIntegrationZoneIdentifierMhtFileAllowed",
-      "Automatically open downloaded MHT or MHTML files from the web in Internet Explorer mode",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],
@@ -13298,30 +13796,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev120~policy~microsoft_edge_edge3pserptelemetryenabled",
-    "settingName": "Edge 3P SERP Telemetry Enabled",
-    "settingDescription": "Edge3P Telemetry in Microsoft Edge captures the searches user does on third party search providers without identifying the person or the device and captures only if the user has consented to this collection of data. User can turn off the collection at any time in the browser settings.\r\n\r\nIf you enable or don't configure this policy, Edge 3P SERP Telemetry feature will be enabled.\r\n\r\nIf you disable this policy, Edge 3P SERP Telemetry feature will be disabled.",
-    "keywords": [
-      "Edge3PSerpTelemetryEnabled",
-      "Edge 3P SERP Telemetry Enabled",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev123~policy~microsoft_edge_rsakeyusageforlocalanchorsenabled",
-    "settingName": "Check RSA key usage for server certificates issued by local trust anchors (User)",
-    "settingDescription": "The X.509 key usage extension declares how the key in a certificate can be\r\nused. These instructions ensure certificates aren't used in an unintended\r\ncontext, which protects against a class of cross-protocol attacks on HTTPS and\r\nother protocols. HTTPS clients must verify that server certificates match the\r\nconnection's TLS parameters.\r\n\r\nIf this policy is enabled,\r\nMicrosoft Edge will perform this key\r\ncheck. This helps prevent attacks where an attacker manipulates the browser into\r\ninterpreting a key in ways that the certificate owner did not intend.\r\n\r\nIf this policy is set to disabled or not configured,\r\nMicrosoft Edge will skip this key check in\r\nHTTPS connections that negotiate TLS 1.2 and use an RSA certificate that\r\nchains to a local trust anchor. Examples of local trust anchors include\r\npolicy-provided or user-installed root certificates. In all other cases, the\r\ncheck is performed independent of this policy's setting.\r\n\r\nThis policy is available for administrators to preview the behavior of a\r\nfuture release, which will enable this check by default. At that point, this\r\npolicy will remain temporarily available for administrators that need more\r\ntime to update their certificates to meet the new RSA key usage requirements.\r\n\r\nConnections that fail this check will fail with the error\r\nERR_SSL_KEY_USAGE_INCOMPATIBLE. Sites that fail with this error likely have a\r\nmisconfigured certificate. Modern ECDHE_RSA cipher suites use the\r\n\"digitalSignature\" key usage option, while legacy RSA decryption cipher suites\r\nuse the \"keyEncipherment\" key usage option. If uncertain, administrators should\r\ninclude both in RSA certificates meant for HTTPS.",
-    "keywords": [
-      "RSAKeyUsageForLocalAnchorsEnabled",
-      "Check RSA key usage for server certificates issued by local trust anchors",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "user_vendor_msft_policy_config_microsoft_edgev124~policy~microsoft_edge_copilotpagecontext",
     "settingName": "Control Copilot access to page context for Microsoft Entra ID profiles (User)",
     "settingDescription": "This policy controls access to page contents for Copilot in the Microsoft Edge sidebar when users are logged into their MSA Copilot account. This policy applies only to Microsoft Entra ID Microsoft Edge profiles. To summarize pages and interact with text selections, it needs to be able to access the page contents. This policy does not apply to MSA Microsoft Edge profiles. This policy doesn't control access for Copilot with enterprise data protection (EDP). Access for Copilot with enterprise data protection (EDP) is controlled by the 'EdgeEntraCopilotPageContext' (Control Copilot access to Microsoft Edge page content for Entra account user profiles when using Copilot in the Microsoft Edge sidepane) policy.\r\n\r\nIf you enable this policy, Copilot will have access to page content when logged in with Entra ID.\r\n\r\nIf this policy is not configured, the default behavior for non-EU countries is that access is initially enabled. For EU countries, the default behavior is that access is initially disabled. In both cases, if the policy is not configured, users can enable or disable Copilot's access to page content using the setting toggle in Microsoft Edge.\r\n\r\nIf you disable this policy, Copilot will not be able to access page context.",
@@ -13358,36 +13832,12 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev128.1~policy~microsoft_edge_applicationboundencryptionenabled",
-    "settingName": "Enable Application Bound Encryption (User)",
-    "settingDescription": "Enabling this policy or leaving it unset binds the encryption keys used for local data storage to Microsoft Edge whenever possible.\r\n\r\nDisabling this policy has a detrimental effect on Microsoft Edge's security because unknown and potentially hostile apps can retrieve the encryption keys used to secure data.\r\n\r\nOnly turn off this policy if there are compatibility issues, such as scenarios where other applications need legitimate access to Microsoft Edge's data. Encrypted user data is expected to be fully portable between different computers or the integrity and location of Microsoft Edge's executable files isn’t consistent.",
-    "keywords": [
-      "ApplicationBoundEncryptionEnabled",
-      "Enable Application Bound Encryption",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "user_vendor_msft_policy_config_microsoft_edgev130~policy~microsoft_edge_edgeentracopilotpagecontext",
     "settingName": "Control Copilot access to Microsoft Edge page content for Entra account user profiles when using Copilot in the Microsoft Edge sidepane (User)",
     "settingDescription": "This policy controls whether Copilot in the Microsoft Edge sidepane can access Microsoft Edge page content. This includes page summarization and similar contextual queries sent to Copilot.\r\n\r\nThis policy only applies to users who are signed in to Microsoft Edge with their Entra account and are using Copilot in the sidepane. This policy applies to all Copilot products in the Microsoft Edge sidepane - namely, Microsoft 365 Copilot Business Chat and Microsoft Copilot with enterprise data protection (EDP).\r\n\r\nIf you enable this policy, Copilot will be able to access Microsoft Edge page content when users ask a contextual query to Copilot in the Microsoft Edge sidepane.\r\n\r\nIf you disable this policy, Copilot will not be able to access Microsoft Edge page content.\r\n\r\nIf you don't configure this policy, the default behavior is as follows:\r\n\r\n- For non-EU countries, access is enabled by default.\r\n\r\n- For EU countries, access is disabled by default.\r\n\r\n- In both cases, if the policy is not configured, users can enable or disable Copilot access to Microsoft Edge page content using the toggle in Microsoft Edge settings.\r\n\r\nExceptions to the preceding behavior include when a page is protected using data loss prevention (DLP) measures. In that case, Copilot will not be able to access Microsoft Edge page content even when this policy is enabled. This behavior is to ensure the integrity of DLP.\r\n\r\nLearn more about Copilot's data usage and consent at https://go.microsoft.com/fwlink/?linkid=2288056",
     "keywords": [
       "EdgeEntraCopilotPageContext",
       "Control access to page content for Entra ID Profiles accessing Microsoft Copilot with Enterprise Data Protection (EDP) from the Microsoft Edge sidebar",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev131~policy~microsoft_edge_edgesidebarappurlhostallowlist",
-    "settingName": "Allow specific apps to be opened in Microsoft Edge sidebar",
-    "settingDescription": "Define a list of sites, based on URL patterns, that are not subject to the 'EdgeSidebarAppUrlHostBlockList' (Control which apps cannot be opened in Microsoft Edge sidebar).\r\n\r\nIf you don't configure this policy, a user can open any app in sidebar except the urls listed in 'EdgeSidebarAppUrlHostBlockList'.\r\n\r\nIf you configure this policy, the apps listed in the allow list could be opened in sidebar even if they are listed in the block list.\r\n\r\nBy default, all apps are allowed. However, if you prohibited apps by policy, you can use the list of allowed apps to change that policy.\r\n\r\nFor detailed information about valid url patterns, see https://go.microsoft.com/fwlink/?linkid=2281313.\r\n\r\nExample value:\r\n\r\nhttps://www.contoso.com\r\n[*.]contoso.edu",
-    "keywords": [
-      "EdgeSidebarAppUrlHostAllowList",
-      "Allow specific apps to be opened in Microsoft Edge sidebar",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],
@@ -13406,18 +13856,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev133~policy~microsoft_edge_pdfvieweroutofprocessiframeenabled",
-    "settingName": "Use out-of-process iframe PDF Viewer (User)",
-    "settingDescription": "Determines whether the PDF viewer in Microsoft Edge uses an out-of-process iframe (OOPIF).\r\nThis will be the new PDF viewer architecture going forward, as it is simpler in design and makes adding new features easier. The current GuestView PDF viewer, which relies on an outdated and overly complex architecture, is being deprecated.\r\n\r\nWhen this policy is set to Enabled or not set, Microsoft Edge will use the OOPIF PDF viewer architecture. Once Enabled or not set, the default behavior will be decided by Microsoft Edge.\r\n\r\nWhen this policy is set to Disabled, Microsoft Edge will strictly use the existing GuestView PDF viewer. This approach embeds a web page with its own separate frame tree into another web page.\r\n\r\nThis policy will be removed in the future, after the OOPIF PDF viewer feature has fully rolled out.",
-    "keywords": [
-      "PdfViewerOutOfProcessIframeEnabled",
-      "Use out-of-process iframe PDF Viewer",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev133~policy~microsoft_edge_edgesidebarappurlhostforcelist",
     "settingName": "Control which apps are forced to be shown in Microsoft Edge sidebar",
     "settingDescription": "Define a list of sites, based on URL, that are forced to be shown in sidebar.\r\n\r\nIf you don't configure this policy, no app is forced to be shown in sidebar.\r\n\r\nIf the 'HubsSidebarEnabled' (Show Hubs Sidebar) policy is disabled, this list isn't used and no sidebar can be shown.\r\n\r\nFor detailed information about valid url, see https://go.microsoft.com/fwlink/?linkid=2281313.\r\n\r\nNote: URL patterns are not supported in this policy. You should provide the exact URL of the app.\r\n\r\nExample value:\r\n\r\nhttps://www.contoso.com",
@@ -13430,48 +13868,12 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev133~policy~microsoft_edge_allowwebauthnwithbrokentlscerts",
-    "settingName": "Allow Web Authentication requests on sites with broken TLS certificates.",
-    "settingDescription": "If you enable this policy, Microsoft Edge will allow Web Authentication requests on websites that have TLS certificates with errors (i.e. websites considered not secure).\r\n\r\nIf you disable or don't configure this policy, the default behavior of blocking such requests will apply.",
-    "keywords": [
-      "AllowWebAuthnWithBrokenTlsCerts",
-      "Allow Web Authentication requests on sites with broken TLS certificates.",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev135~policy~microsoft_edge_addressbartrendingsuggestenabled",
-    "settingName": "Enable Microsoft Bing trending suggestions in the address bar (User)",
-    "settingDescription": "This policy controls whether Microsoft Bing trending suggestions appear in the address bar’s suggestion dropdown when users click the address bar while on a New Tab Page.\r\n\r\nIf this policy is enabled or not configured, Microsoft Bing trending suggestions will appear in the address bar suggestion dropdown.\r\n\r\nIf this policy is disabled, Microsoft Edge will not display Microsoft Bing trending suggestions when users click the address bar.",
-    "keywords": [
-      "AddressBarTrendingSuggestEnabled",
-      "Enable Microsoft Bing trending suggestions in the address bar",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev135~policy~microsoft_edge_webcontentfilteringblockedcategories",
     "settingName": "Configure Web Content Filtering",
     "settingDescription": "You can configure this policy to block certain categories of URLs. Blocking a category prevents users in specified device groups from accessing URLs associated with the category.\r\n\r\nThe list of possible categories, their Category String, and their description are detailed at https://go.microsoft.com/fwlink/?linkid=2249965\r\n\r\nTo block a category, add the Category String of the category to the following List of blocked categories If you leave this policy unset or disable the policy, no URLs will be blocked.\r\n\r\nIf you want to block a specific URL without blocking an entire category, add the URL to the list of blocked URLs using the 'URLBlocklist' (Block access to a list of URLs) policy.\r\n\r\nIf you want a specific URL in a blocked category to be accessible, add the URL to the list of allowed URLs using the 'URLAllowlist' (Define a list of allowed URLs) policy.\r\n\r\nThis Web Content Filtering policy only works on Microsoft Edge on Windows 10 devices or above.\r\n\r\nPolicy options mapping:\r\n\r\n* chat (chat) = Chat\r\n\r\n* child_abuse_images (child_abuse_images) = Child Abuse Images\r\n\r\n* criminal_activity (criminal_activity) = Criminal Activity\r\n\r\n* download_sites (download_sites) = Download Sites\r\n\r\n* gambling (gambling) = Gambling\r\n\r\n* games (games) = Games\r\n\r\n* hacking (hacking) = Hacking\r\n\r\n* hate_and_intolerance (hate_and_intolerance) = Hate and Intolerance\r\n\r\n* illegal_drug (illegal_drug) = Illegal Drug\r\n\r\n* illegal_software (illegal_software) = Illegal Software\r\n\r\n* image_sharing (image_sharing) = Image Sharing\r\n\r\n* instant_messaging (instant_messaging) = Instant Messaging\r\n\r\n* nudity (nudity) = Nudity\r\n\r\n* peer_to_peer (peer_to_peer) = Peer to Peer\r\n\r\n* pornography_or_sexually_explicit (pornography_or_sexually_explicit) = Pornography or Sexually Explicit\r\n\r\n* professional_networking (professional_networking) = Professional Networking\r\n\r\n* self_harm (self_harm) = Self Harm\r\n\r\n* sex_education (sex_education) = Sex Education\r\n\r\n* social_networking (social_networking) = Social Networking\r\n\r\n* streaming_and_downloads (streaming_and_downloads) = Streaming Media and Downloads\r\n\r\n* tasteless (tasteless) = Tasteless\r\n\r\n* violence (violence) = Violence\r\n\r\n* weapons (weapons) = Weapons\r\n\r\n* web_based_email (web_based_email) = Web Based Email\r\n\r\n* none (none) = None\r\n\r\nUse the preceding information when configuring this policy.\r\n\r\nExample value:\r\n\r\ngambling\r\nstreaming_and_downloads\r\ngames",
     "keywords": [
       "WebContentFilteringBlockedCategories",
       "Configure Web Content Filtering",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev136~policy~microsoft_edge_httpsupgradesenabled",
-    "settingName": "Enable automatic HTTPS upgrades (User)",
-    "settingDescription": "As of Microsoft Edge version 120, Microsoft Edge tries to upgrade HTTP navigations to HTTPS whenever possible to improve security.  Navigations to captive portals, IP addresses, and non-unique hostnames are excluded from automatic upgrades.\r\n\r\nIf this policy is enabled or not configured, automatic HTTPS upgrades are turned on by default.\r\n\r\nIf this policy is disabled, Microsoft Edge won't attempt to upgrade HTTP connections to HTTPS.\r\n\r\nTo exempt specific hostnames or hostname patterns from being upgraded, use the HttpAllowlist policy.",
-    "keywords": [
-      "HttpsUpgradesEnabled",
-      "Enable automatic HTTPS upgrades",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],
@@ -13514,18 +13916,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_additionaldnsquerytypesenabled",
-    "settingName": "Allow DNS queries for more DNS record types",
-    "settingDescription": "This policy controls whether Microsoft Edge can query more DNS record types when making insecure (non-Secure DNS) requests.\r\n\r\nIf this policy is unset or set to Enabled, more record types such as HTTPS (DNS type 65) may be queried in addition to A (DNS type 1) and AAAA (DNS type 28).\r\n\r\nIf this policy is set to Disabled, Microsoft Edge will only query A and AAAA record types for insecure DNS requests.\r\n\r\nThis setting doesn't affect DNS queries made via Secure DNS, which may always use more record types.\r\n\r\nNote: This is a temporary policy and is planned for removal in a future version of Microsoft Edge. After removal, Microsoft Edge will always be able to query more DNS types during insecure requests.",
-    "keywords": [
-      "AdditionalDnsQueryTypesEnabled",
-      "Allow DNS queries for more DNS record types",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "user_vendor_msft_policy_config_microsoft_edgev140~policy~microsoft_edge_serviceworkerautopreloadenabled",
     "settingName": "Allow ServiceWorker to dispatch navigation requests without waiting for its startup (User)",
     "settingDescription": "This policy controls whether Microsoft Edge enables the ServiceWorkerAutoPreload feature.\r\n\r\nWhen enabled or not configured, Microsoft Edge may initiate the main resource network request concurrently with the Service Worker bootstrap process. This can improve performance in scenarios where the Service Worker is not already running.\r\n\r\nIf you disable this policy, Microsoft Edge will wait to dispatch the navigation request until after the Service Worker has started.\r\n\r\nThis is a temporary policy and will be removed in version 144 of Microsoft Edge.\r\n\r\nFor more details on the feature, see https://github.com/WICG/service-worker-auto-preload.",
@@ -13562,102 +13952,12 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev143~policy~microsoft_edge_sharebrowsinghistorywithcopilotsearchallowed",
-    "settingName": "Allow sharing tenant-approved browsing history with Microsoft 365 Copilot Search (User)",
-    "settingDescription": "This policy controls whether browsing history in Microsoft Edge is shared with Microsoft 365 Copilot Search to provide more relevant search results. Only tenant-approved, work-related sites are shared.\r\n\r\nThis feature is available only to users who are signed in to Microsoft Edge with an Entra ID account and have an eligible Microsoft 365 Copilot license.\r\n\r\nIf you enable or don't configure this policy, browsing history will be shared with Microsoft 365 Copilot Search by default, and users can turn off sharing using the toggle in Microsoft Edge settings.\r\n\r\nIf you disable this policy, browsing history won't be shared with Microsoft 365 Copilot Search.\r\n\r\nLearn more about how Copilot uses data and consent at https://go.microsoft.com/fwlink/?linkid=2333202",
-    "keywords": [
-      "ShareBrowsingHistoryWithCopilotSearchAllowed",
-      "Allow sharing tenant-approved browsing history with Microsoft 365 Copilot Search",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev144~policy~microsoft_edge_silentprintingenabled",
-    "settingName": "Enable Silent Printing",
-    "settingDescription": "This policy controls whether Microsoft Edge uses silent printing.\r\n\r\nIf you enable this policy, Edge automatically closes the print preview window and prints to the default printer using its default settings. If the default printer is Save as PDF, the file is saved to the user's Downloads folder.\r\n\r\nIf you disable or don't configure this policy, silent printing is disabled. The print preview window stays open and the user must choose print settings as usual.",
-    "keywords": [
-      "SilentPrintingEnabled",
-      "Enable Silent Printing",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev145~policy~microsoft_edge_webappinstallbyuserenabled",
-    "settingName": "Enable User Web App Install From Browser (User)",
-    "settingDescription": "This policy controls whether users can install web apps through Microsoft Edge.\r\nIf you enable or don’t configure this policy, users can install web apps through the browser.\r\nIf you disable this policy, users can’t install web apps through the browser, and the \"apps\" data type is excluded from synchronization.\r\nThis policy doesn't support dynamic refresh. Changes to this policy, whether enabled, disabled, or not configured, take effect only after the browser is restarted.\r\nThis policy doesn't affect the 'WebAppInstallForceList' policy. Web apps specified by that policy are installed regardless of this policy setting.",
-    "keywords": [
-      "WebAppInstallByUserEnabled",
-      "Enable User Web App Install From Browser",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_edgecollectionsenabled",
     "settingName": "Enable the Collections feature",
     "settingDescription": "Lets you allow users to access the Collections feature, where they can collect, organize, share, and export content more efficiently and with Office integration.\r\n\r\nIf you enable or don't configure this policy, users can access and use the Collections feature in Microsoft Edge.\r\n\r\nIf you disable this policy, users can't access and use Collections in Microsoft Edge.",
     "keywords": [
       "EdgeCollectionsEnabled",
       "Enable the Collections feature",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_signedhttpexchangeenabled",
-    "settingName": "Enable Signed HTTP Exchange (SXG) support",
-    "settingDescription": "Enable support for Signed HTTP Exchange (SXG).\r\n\r\nIf this policy isn't set or enabled, Microsoft Edge will accept web contents served as Signed HTTP Exchanges.\r\n\r\nIf this policy is set to disabled, Signed HTTP Exchanges can't be loaded.",
-    "keywords": [
-      "SignedHTTPExchangeEnabled",
-      "Enable Signed HTTP Exchange (SXG) support",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_spellchecklanguageblocklist",
-    "settingName": "Force disable spellcheck languages",
-    "settingDescription": "Force-disables spellcheck languages. Unrecognized languages in that list will be ignored.\r\n\r\nIf you enable this policy, spellcheck will be disabled for the languages specified. The user can still enable or disable spellcheck for languages not in the list.\r\n\r\nIf you do not set this policy, or disable it, there will be no change to the user's spellcheck preferences.\r\n\r\nIf the 'SpellcheckEnabled' (Enable spellcheck) policy is set to disabled, this policy will have no effect.\r\n\r\nIf a language is included in both the 'SpellcheckLanguage' (Enable specific spellcheck languages) and the 'SpellcheckLanguageBlocklist' policy, the spellcheck language is enabled.\r\n\r\nThe currently supported languages are: af, bg, ca, cs, da, de, el, en-AU, en-CA, en-GB, en-US, es, es-419, es-AR, es-ES, es-MX, es-US, et, fa, fo, fr, he, hi, hr, hu, id, it, ko, lt, lv, nb, nl, pl, pt-BR, pt-PT, ro, ru, sh, sk, sl, sq, sr, sv, ta, tg, tr, uk, vi.\r\n\r\nExample value:\r\n\r\nfr\r\nes",
-    "keywords": [
-      "SpellcheckLanguageBlocklist",
-      "Force disable spellcheck languages",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_internetexplorerintegrationsitelist_internetexplorerintegrationsitelist",
-    "settingName": "Configure the Enterprise Mode Site List (User)",
-    "settingDescription": "",
-    "keywords": [
-      "InternetExplorerIntegrationSiteList",
-      "Configure the Enterprise Mode Site List",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_internetexplorerintegrationsitelist_internetexplorerintegrationsitelist",
-    "settingName": "Configure the Enterprise Mode Site List (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "InternetExplorerIntegrationSiteList",
-      "Configure the Enterprise Mode Site List",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],
@@ -13688,36 +13988,12 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge_hidefirstrunexperience",
-    "settingName": "Hide the First-run experience and splash screen",
-    "settingDescription": "If you enable this policy, the First-run experience and the splash screen will not be shown to users when they run Microsoft Edge for the first time.\r\n\r\nFor the configuration options shown in the First Run Experience, the browser will default to the following:\r\n\r\n-On the New Tab Page, the feed type will be set to MSN News and the layout to Inspirational.\r\n\r\n-The user will still be automatically signed into Microsoft Edge if the Windows account is of Azure AD or MSA type.\r\n\r\n-Sync will not be enabled by default and users will be able to turn on sync from the sync settings.\r\n\r\nIf you disable or don't configure this policy, the First-run experience and the Splash screen will be shown.\r\n\r\nNote: The specific configuration options shown to the user in the First Run Experience, can also be managed by using other specific policies. You can use the HideFirstRunExperience policy in combination with these policies to configure a specific browser experience on your managed devices. Some of these other policies are:\r\n\r\n-'AutoImportAtFirstRun' (Automatically import another browser's data and settings at first run)\r\n\r\n-'NewTabPageLocation' (Configure the new tab page URL)\r\n\r\n-'NewTabPageSetFeedType' (Configure the Microsoft Edge new tab page experience)\r\n\r\n-'SyncDisabled' (Disable synchronization of data using Microsoft sync services)\r\n\r\n-'BrowserSignin' (Browser sign-in settings)\r\n\r\n-'NonRemovableProfileEnabled' (Configure whether a user always has a default profile automatically signed in with their work or school account)",
-    "keywords": [
-      "HideFirstRunExperience",
-      "Hide the First-run experience and splash screen",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "user_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge_webrtclocalipsallowedurls_webrtclocalipsallowedurlsdesc",
     "settingName": "Manage exposure of local IP addressess by WebRTC (User)",
     "settingDescription": "",
     "keywords": [
       "WebRtcLocalIpsAllowedUrls",
       "Manage exposure of local IP addressess by WebRTC",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev80diff~policy~microsoft_edge_dnsinterceptionchecksenabled",
-    "settingName": "DNS interception checks enabled (User)",
-    "settingDescription": "This policy configures a local switch that can be used to disable DNS interception checks. These checks attempt to discover whether the browser is behind a proxy that redirects unknown host names.\r\n\r\nThis detection might not be necessary in an enterprise environment where the network configuration is known. It can be disabled to avoid additional DNS and HTTP traffic on start-up and each DNS configuration change.\r\n\r\nIf you enable or don’t set this policy, the DNS interception checks are performed.\r\n\r\nIf you disable this policy, DNS interception checks aren’t performed.",
-    "keywords": [
-      "DNSInterceptionChecksEnabled",
-      "DNS interception checks enabled",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],
@@ -13748,60 +14024,12 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_audiosandboxenabled",
-    "settingName": "Allow the audio sandbox to run",
-    "settingDescription": "This policy controls the audio process sandbox.\r\n\r\nIf you enable this policy, the audio process will run sandboxed.\r\n\r\nIf you disable this policy, the audio process will run unsandboxed and the WebRTC audio-processing module will run in the renderer process.\r\nThis leaves users open to security risks related to running the audio subsystem unsandboxed.\r\n\r\nIf you don't configure this policy, the default configuration for the audio sandbox will be used, which might differ based on the platform.\r\n\r\nThis policy is intended to give enterprises flexibility to disable the audio sandbox if they use security software setups that interfere with the sandbox.",
-    "keywords": [
-      "AudioSandboxEnabled",
-      "Allow the audio sandbox to run",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_importcookies",
-    "settingName": "Allow importing of Cookies (User)",
-    "settingDescription": "Allows users to import Cookies from another browser into Microsoft Edge.\r\n\r\nIf you disable this policy, Cookies aren't imported on first run.\r\n\r\nIf you don’t configure this policy, Cookies are imported on first run.\r\n\r\nYou can also set this policy as a recommendation. This means that Microsoft Edge imports Cookies on first run.\r\n\r\n**Note**: This policy currently manages importing Google Chrome (on Windows 7, 8, and 10 and on macOS).",
-    "keywords": [
-      "ImportCookies",
-      "Allow importing of Cookies",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_importcookies",
     "settingName": "Allow importing of Cookies",
     "settingDescription": "Allows users to import Cookies from another browser into Microsoft Edge.\r\n\r\nIf you disable this policy, Cookies aren't imported on first run.\r\n\r\nIf you don’t configure this policy, Cookies are imported on first run.\r\n\r\nYou can also set this policy as a recommendation. This means that Microsoft Edge imports Cookies on first run.\r\n\r\n**Note**: This policy currently manages importing Google Chrome (on Windows 7, 8, and 10 and on macOS).",
     "keywords": [
       "ImportCookies",
       "Allow importing of Cookies",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_ambientauthenticationinprivatemodesenabled_ambientauthenticationinprivatemodesenabled",
-    "settingName": "Enable Ambient Authentication for InPrivate and Guest profiles (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "AmbientAuthenticationInPrivateModesEnabled",
-      "Enable Ambient Authentication for InPrivate and Guest profiles",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev81diff~policy~microsoft_edge_ambientauthenticationinprivatemodesenabled_ambientauthenticationinprivatemodesenabled",
-    "settingName": "Enable Ambient Authentication for InPrivate and Guest profiles (User)",
-    "settingDescription": "",
-    "keywords": [
-      "AmbientAuthenticationInPrivateModesEnabled",
-      "Enable Ambient Authentication for InPrivate and Guest profiles",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],
@@ -13832,54 +14060,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_synctypeslistdisabled_synctypeslistdisableddesc",
-    "settingName": "Configure the list of types that are excluded from synchronization (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "SyncTypesListDisabled",
-      "Configure the list of types that are excluded from synchronization",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_dnsoverhttpstemplates_dnsoverhttpstemplates",
-    "settingName": "Specify URI template of desired DNS-over-HTTPS resolver (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "DnsOverHttpsTemplates",
-      "Specify URI template of desired DNS-over-HTTPS resolver",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev83diff~policy~microsoft_edge_clearcachedimagesandfilesonexit",
-    "settingName": "Clear cached images and files when Microsoft Edge closes (User)",
-    "settingDescription": "Microsoft Edge doesn't clear cached images and files by default when it closes.\r\n\r\nIf you enable this policy, cached images and files will be deleted each time Microsoft Edge closes.\r\n\r\nIf you disable this policy, users cannot configure the cached images and files option in edge://settings/clearBrowsingDataOnClose.\r\n\r\nIf you don't configure this policy, users can choose whether cached images and files are cleared on exit.\r\n\r\nIf you disable this policy, don't enable the 'ClearBrowsingDataOnExit' (Clear browsing data when Microsoft Edge closes) policy, because they both deal with deleting data. If you configure both, the 'ClearBrowsingDataOnExit' policy takes precedence and deletes all data when Microsoft Edge closes, regardless of how you configured 'ClearCachedImagesAndFilesOnExit' (Clear cached images and files when Microsoft Edge closes).",
-    "keywords": [
-      "ClearCachedImagesAndFilesOnExit",
-      "Clear cached images and files when Microsoft Edge closes",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev85diff~policy~microsoft_edge_enablesha1forlocalanchors",
-    "settingName": "Allow certificates signed using SHA-1 when issued by local trust anchors (deprecated) (User)",
-    "settingDescription": "DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.\r\n\r\nWhen this setting is enabled, Microsoft Edge allows connections secured by SHA-1 signed certificates so long as the the certificate chains to a locally-installed root certificate and is otherwise valid.\r\n\r\nNote that this policy depends on the operating system (OS) certificate verification stack allowing SHA-1 signatures. If an OS update changes the OS handling of SHA-1 certificates, this policy might no longer have effect.  Further, this policy is intended as a temporary workaround to give enterprises more time to move away from SHA-1. This policy will be removed in Microsoft Edge 92 releasing in mid 2021.\r\n\r\nIf you don't set this policy or set it to false, or the SHA-1 certificate chains to a publicly trusted certificate root, then Microsoft Edge won't allow certificates signed by SHA-1.\r\n\r\nThis policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.",
-    "keywords": [
-      "EnableSha1ForLocalAnchors",
-      "Allow certificates signed using SHA-1 when issued by local trust anchors (deprecated)",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev85diff~policy~microsoft_edge_autoopenfiletypes",
     "settingName": "List of file types that should be automatically opened on download",
     "settingDescription": "This policy sets a list of file types that should be automatically opened on download. Note: The leading separator should not be included when listing the file type, so list \"txt\" instead of \".txt\".\r\n\r\nBy default, these file types will be automatically opened on all URLs. You can use the 'AutoOpenAllowedForURLs' (URLs where AutoOpenFileTypes can apply) policy to restrict the URLs for which these file types will be automatically opened on.\r\n\r\nFiles with types that should be automatically opened will still be subject to the enabled Microsoft Defender SmartScreen checks and won't be opened if they fail those checks.\r\n\r\nFile types that a user has already specified to automatically be opened will continue to do so when downloaded. The user will continue to be able to specify other file types to be automatically opened.\r\n\r\nIf you don't set this policy, only file types that a user has already specified to automatically be opened will do so when downloaded.\r\n\r\nThis policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, joined to Microsoft Azure Active Directory or instances that enrolled for device management.\r\n\r\nExample value:\r\n\r\nexe\r\ntxt",
@@ -13904,33 +14084,9 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev85diff~policy~microsoft_edge_autoopenfiletypes_autoopenfiletypesdesc",
-    "settingName": "List of file types that should be automatically opened on download (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "AutoOpenFileTypes",
-      "List of file types that should be automatically opened on download",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev85diff~policy~microsoft_edge_autoopenallowedforurls_autoopenallowedforurlsdesc",
     "settingName": "URLs where AutoOpenFileTypes can apply (Device)",
     "settingDescription": "",
-    "keywords": [
-      "AutoOpenAllowedForURLs",
-      "URLs where AutoOpenFileTypes can apply",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev85diff~policy~microsoft_edge_autoopenallowedforurls",
-    "settingName": "URLs where AutoOpenFileTypes can apply (User)",
-    "settingDescription": "A list of URLs to which 'AutoOpenFileTypes' (List of file types that should be automatically opened on download) will apply to. This policy has no impact on automatically open values set by users via the download shelf ... > \"Always open files of this type\" menu entry.\r\n\r\nIf you set URLs in this policy, files will only automatically open by policy if the URL is part of this set and the file type is listed in 'AutoOpenFileTypes'. If either condition is false, the download won't automatically open by policy.\r\n\r\nIf you don't set this policy, all downloads where the file type is in 'AutoOpenFileTypes' will automatically open.\r\n\r\nA URL pattern has to be formatted according to https://go.microsoft.com/fwlink/?linkid=2095322.\r\n\r\nThis policy does not work as expected with file://* wildcards.\r\n\r\nExample value:\r\n\r\nexample.com\r\nhttps://ssl.server.com\r\nhosting.com/good_path\r\nhttps://server:8080/path\r\n.exact.hostname.com",
     "keywords": [
       "AutoOpenAllowedForURLs",
       "URLs where AutoOpenFileTypes can apply",
@@ -13946,30 +14102,6 @@
     "keywords": [
       "InternetExplorerIntegrationTestingAllowed",
       "Allow Internet Explorer mode testing",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge_savecookiesonexit",
-    "settingName": "Save cookies when Microsoft Edge closes",
-    "settingDescription": "When this policy is enabled, the specified set of cookies is exempt from deletion when the browser closes. This policy is only effective when:\r\n- The 'Cookies and other site data' toggle is configured in Settings/Privacy and services/Clear browsing data on close or\r\n- The policy 'ClearBrowsingDataOnExit' (Clear browsing data when Microsoft Edge closes) is enabled or\r\n- The policy 'DefaultCookiesSetting' (Configure cookies) is set to 'Keep cookies for the duration of the session'.\r\n\r\nYou can define a list of sites, based on URL patterns, that will have their cookies preserved across sessions.\r\n\r\nNote: Users can still edit the cookie site list to add or remove URLs. However, they can't remove URLs that have been added by an Admin.\r\n\r\nIf you enable this policy, the list of cookies won't be cleared when the browser closes.\r\n\r\nIf you disable or don't configure this policy, the user's personal configuration is used.\r\n\r\nExample value:\r\n\r\nhttps://www.contoso.com\r\n[*.]contoso.edu",
-    "keywords": [
-      "SaveCookiesOnExit",
-      "Save cookies when Microsoft Edge closes",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge_serialblockedforurls_serialblockedforurlsdesc",
-    "settingName": "Block the Serial API on specific sites (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "SerialBlockedForUrls",
-      "Block the Serial API on specific sites",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],
@@ -14000,18 +14132,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge_sensorsallowedforurls_sensorsallowedforurlsdesc",
-    "settingName": "Allow access to sensors on specific sites (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "SensorsAllowedForUrls",
-      "Allow access to sensors on specific sites",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "user_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge_insecureformswarningsenabled",
     "settingName": "Enable warnings for insecure forms (deprecated) (User)",
     "settingDescription": "DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.\r\n\r\nThis policy controls the handling of insecure forms (forms submitted over HTTP) embedded in secure (HTTPS) sites in the browser.\r\nIf you enable this policy or don't set it, a full page warning will be shown when an insecure form is submitted. Additionally, a warning bubble will be shown next to the form fields when they are focused, and autofill will be disabled for those forms.\r\nIf you disable this policy, warnings will not be shown for insecure forms, and autofill will work normally.\r\n\r\nThis policy may be removed as soon as Edge 132. The feature is enabled by default since Edge 131.",
@@ -14030,30 +14150,6 @@
     "keywords": [
       "UserAgentClientHintsEnabled",
       "Enable the User-Agent Client Hints feature (deprecated)",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge_defaultserialguardsetting_defaultserialguardsetting",
-    "settingName": "Control use of the Serial API (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "DefaultSerialGuardSetting",
-      "Control use of the Serial API",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge_defaultsensorssetting",
-    "settingName": "Default sensors setting (User)",
-    "settingDescription": "Set whether websites can access and use sensors such as motion and light sensors. You can completely block or allow websites to get access to sensors.\r\n\r\nSetting the policy to 1 lets websites access and use sensors. Setting the policy to 2 denies access to sensors.\r\n\r\nYou can override this policy for specific URL patterns by using the 'SensorsAllowedForUrls' (Allow access to sensors on specific sites) and 'SensorsBlockedForUrls' (Block access to sensors on specific sites) policies.\r\n\r\nIf you don't configure this policy, websites can access and use sensors, and users can change this setting. This is the global default for 'SensorsAllowedForUrls' and 'SensorsBlockedForUrls'.\r\n\r\nPolicy options mapping:\r\n\r\n* AllowSensors (1) = Allow sites to access sensors\r\n\r\n* BlockSensors (2) = Do not allow any site to access sensors\r\n\r\nUse the preceding information when configuring this policy.",
-    "keywords": [
-      "DefaultSensorsSetting",
-      "Default sensors setting",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],
@@ -14084,18 +14180,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge_showmicrosoftrewards",
-    "settingName": "Show Microsoft Rewards experiences",
-    "settingDescription": "Show Microsoft Rewards experience and notifications.\r\nIf you enable this policy:\r\n   - Microsoft account users (excludes Azure AD accounts) in search and earn markets will see the Microsoft Rewards experience in their Microsoft Edge user profile.\r\n   - The setting to enable Microsoft Rewards in Microsoft Edge settings will be enabled and toggled on.\r\n   - The setting to enable Give mode will be enabled and respect the user's setting.\r\n\r\nIf you disable this policy:\r\n   - Microsoft account users (excludes Azure AD accounts) in search and earn markets will not see the Microsoft Rewards experience in their Microsoft Edge user profile.\r\n   - The setting to enable Microsoft Rewards in Microsoft Edge settings will be disabled and toggled off.\r\n\r\nIf you don't configure this policy:\r\n   - Microsoft account users (excludes Azure AD accounts) in search and earn markets will see the Microsoft Rewards experience in their Microsoft Edge user profile.\r\n   - The setting to enable Microsoft Rewards in Microsoft Edge settings will be enabled and toggled on.\r\n   - The setting to enable Give mode will be enabled and respect the user's setting.",
-    "keywords": [
-      "ShowMicrosoftRewards",
-      "Show Microsoft Rewards experiences",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "user_vendor_msft_policy_config_microsoft_edgev89~policy~microsoft_edge_smartactionsblocklist_smartactionsblocklistdesc",
     "settingName": "Block smart actions  for a list of services (User)",
     "settingDescription": "",
@@ -14120,36 +14204,12 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev89~policy~microsoft_edge_browsingdatalifetime",
-    "settingName": "Browsing Data Lifetime Settings",
-    "settingDescription": "Configures browsing data lifetime settings for Microsoft Edge.\r\nThis policy controls the lifetime of selected browsing data. This policy has no effect if Sync is enabled.\r\nThe available data types are the 'browsing_history', 'download_history', 'cookies_and_other_site_data', 'cached_images_and_files', 'password_signin', 'autofill', 'site_settings' and 'hosted_app_data'.\r\nMicrosoft Edge will regularly remove data of selected types that is older than 'time_to_live_in_hours'. Because data deletion only happens at certain intervals, some data might be kept slightly longer but never more than twice its expected 'time_to_live_in_hours'.\r\n\r\n\r\nExample value:\r\n\r\n[\r\n  {\r\n    \"data_types\": [\r\n      \"browsing_history\"\r\n    ], \r\n    \"time_to_live_in_hours\": 24\r\n  }, \r\n  {\r\n    \"data_types\": [\r\n      \"password_signin\", \r\n      \"autofill\"\r\n    ], \r\n    \"time_to_live_in_hours\": 12\r\n  }\r\n]",
-    "keywords": [
-      "BrowsingDataLifetime",
-      "Browsing Data Lifetime Settings",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev90~policy~microsoft_edge_quickviewofficefilesenabled",
     "settingName": "Manage QuickView Office files capability in Microsoft Edge",
     "settingDescription": "Allows you to set whether users can view publicly accessible Office files on the web that aren't on OneDrive or SharePoint. (For example: Word documents, PowerPoint presentations, and Excel spreadsheets)\r\n\r\nIf you enable or don't configure this policy, these files can be viewed in Microsoft Edge using Office Viewer instead of downloading the files.\r\n\r\nIf you disable this policy, these files will be downloaded to be viewed.",
     "keywords": [
       "QuickViewOfficeFilesEnabled",
       "Manage QuickView Office files capability in Microsoft Edge",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev91~policy~microsoft_edge_explicitlyallowednetworkports",
-    "settingName": "Explicitly allowed network ports",
-    "settingDescription": "There is a list of restricted ports built into Microsoft Edge. Connections to these ports will fail. This policy allows bypassing that list. The set of ports is defined as a comma-separated list that outgoing connections should be permitted on.\r\n\r\nPorts are restricted to prevent Microsoft Edge from being used as a vector to exploit various network vulnerabilities. Setting this policy may expose your network to attacks. This policy is intended as a temporary workaround for error code \"ERR_UNSAFE_PORT\" while migrating a service running on a blocked port to a standard port (for example port 80 or 443).\r\n\r\nMalicious websites can easily detect that this policy is set, and for which ports, then use that information to target attacks.\r\n\r\nEach port listed in this policy is labeled with a date that it can be unblocked until. After that date the port will be restricted regardless of if it's specified by the value of this policy.\r\n\r\nLeaving the value empty or unset means that all restricted ports will be blocked. Invalid port values set through this policy will be ignored while valid ones will still be applied.\r\n\r\nThis policy overrides the \"--explicitly-allowed-ports\" command-line option.\r\n\r\nPolicy options mapping:\r\n\r\n* 554 (554) = port 554 (can be unblocked until 2021/10/15)\r\n\r\n* 10080 (10080) = port 10080 (can be unblocked until 2022/04/01)\r\n\r\n* 6566 (6566) = port 6566 (can be unblocked until 2021/10/15)\r\n\r\n* 989 (989) = port 989 (can be unblocked until 2022/02/01)\r\n\r\n* 990 (990) = port 990 (can be unblocked until 2022/02/01)\r\n\r\nUse the preceding information when configuring this policy.\r\n\r\nExample value:\r\n\r\n10080",
-    "keywords": [
-      "ExplicitlyAllowedNetworkPorts",
-      "Explicitly allowed network ports",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],
@@ -14204,30 +14264,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev93~policy~microsoft_edge_internetexplorerintegrationsitelistrefreshinterval",
-    "settingName": "Configure how frequently the Enterprise Mode Site List is refreshed (User)",
-    "settingDescription": "This setting lets you specify a custom refresh interval for the Enterprise Mode Site List. The refresh interval is specified in minutes. The minimum refresh interval is 30 minutes.\r\n\r\nThis setting is applicable only when the 'InternetExplorerIntegrationSiteList' (Configure the Enterprise Mode Site List) or 'InternetExplorerIntegrationCloudSiteList' (Configure the Enterprise Mode Cloud Site List) setting is configured.\r\n\r\nIf you configure this policy, Microsoft Edge will attempt to retrieve an updated version of the configured Enterprise Mode Site List using the specified refresh interval.\r\n\r\nIf you disable or don't configure this policy, Microsoft Edge will use a default refresh interval, it is 10080 minutes (7 days) starting from version 110 or later, 120 minutes from version 93 to 110, and 30 minutes before version 93.",
-    "keywords": [
-      "InternetExplorerIntegrationSiteListRefreshInterval",
-      "Configure how frequently the Enterprise Mode Site List is refreshed",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev95~policy~microsoft_edge_shadowstackcrashrollbackbehavior_shadowstackcrashrollbackbehavior",
-    "settingName": "Configure ShadowStack crash rollback behavior (User)",
-    "settingDescription": "",
-    "keywords": [
-      "ShadowStackCrashRollbackBehavior",
-      "Configure ShadowStack crash rollback behavior",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev95~policy~microsoft_edge_visualsearchenabled",
     "settingName": "Visual search enabled",
     "settingDescription": "Visual search lets you quickly explore more related content about entities in an image.\r\n\r\nIf you enable or don't configure this policy, visual search will be enabled via image hover, context menu, and search in sidebar.\r\n\r\nIf you disable this policy, visual search will be disabled and you won't be able to get more info about images via hover, context menu, and search in sidebar.\r\n\r\nNote: Visual Search in Web Capture is still managed by 'WebCaptureEnabled' (Enable the Screenshot (previously named Web Capture) feature in Microsoft Edge) policy.",
@@ -14276,30 +14312,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev96~policy~microsoft_edge_internetexplorermodetoolbarbuttonenabled",
-    "settingName": "Show the Reload in Internet Explorer mode button in the toolbar",
-    "settingDescription": "Set this policy to show the Reload in Internet Explorer mode button in the toolbar. Users can hide the button in the toolbar through edge://settings/appearance.  The button will only be shown on the toolbar when the 'InternetExplorerIntegrationReloadInIEModeAllowed' (Allow unconfigured sites to be reloaded in Internet Explorer mode) policy is enabled or if the user has chosen to enable \"Allow sites to be reloaded in Internet Explorer mode\".\r\n\r\nIf you enable this policy, the Reload in Internet mode button is pinned to the toolbar.\r\n\r\nIf you disable or don't configure this policy, the Reload in Internet Explorer mode button isn't shown in the toolbar by default. Users can toggle the Show Internet Explorer mode button in edge://settings/appearance.",
-    "keywords": [
-      "InternetExplorerModeToolbarButtonEnabled",
-      "Show the Reload in Internet Explorer mode button in the toolbar",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev96~policy~microsoft_edge_autolaunchprotocolscomponentenabled",
-    "settingName": "AutoLaunch Protocols Component Enabled",
-    "settingDescription": "Specifies whether the AutoLaunch Protocols component should be enabled. This component allows Microsoft to provide a list similar to that of the 'AutoLaunchProtocolsFromOrigins' (Define a list of protocols that can launch an external application from listed origins without prompting the user) policy, allowing certain external protocols to launch without prompt or blocking certain protocols (on specified origins). By default, this component is enabled.\r\n\r\nIf you enable or don't configure this policy, the AutoLaunch Protocols component is enabled.\r\n\r\nIf you disable this policy, the AutoLaunch Protocols component is disabled.",
-    "keywords": [
-      "AutoLaunchProtocolsComponentEnabled",
-      "AutoLaunch Protocols Component Enabled",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev96~policy~microsoft_edge_forcesynctypes",
     "settingName": "Configure the list of types that are included for synchronization",
     "settingDescription": "If you enable this policy all the specified data types will be included for synchronization for Azure AD/Azure AD-Degraded user profiles. This policy can be used to ensure the type of data uploaded to the Microsoft Edge synchronization service.\r\n\r\nYou can provide one of the following data types for this policy: \"favorites\", \"settings\", \"passwords\", \"addressesAndMore\", \"extensions\", \"history\", \"openTabs\", \"edgeWallet\", \"collections\", \"apps\", and \"edgeFeatureUsage\". The \"edgeFeatureUsage\" data type will be supported starting in Microsoft Edge version 134. Note that these data type names are case sensitive.\r\n\r\nUsers will not be able to override the enabled data types.\r\n\r\nExample value:\r\n\r\nfavorites",
@@ -14318,18 +14330,6 @@
     "keywords": [
       "EnhanceSecurityModeBypassListDomains",
       "Configure the list of domains for which enhance security mode will not be enforced",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev98~policy~microsoft_edge_edgefollowenabled",
-    "settingName": "Enable Follow service in Microsoft Edge (obsolete) (User)",
-    "settingDescription": "OBSOLETE: This policy is obsolete and doesn't work after Microsoft Edge 126.\r\n\r\nLets Microsoft Edge browser enable Follow service and apply it to users.\r\n\r\nUsers can use the Follow feature for an influencer, site, or topic in Microsoft Edge..\r\n\r\nIf you enable or don't configure this policy, Follow in Microsoft Edge can be applied.\r\n\r\nIf you disable this policy, Microsoft Edge will not communicate with Follow service to provide the follow feature.\r\n\r\nThis policy is obsolete after version 126.",
-    "keywords": [
-      "EdgeFollowEnabled",
-      "Enable Follow service in Microsoft Edge",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],

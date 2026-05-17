@@ -868,18 +868,6 @@
     "categoryName": "Device Restriction"
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.storageallowusb",
-    "settingName": "Allow USB storage",
-    "settingDescription": "If 'True', allow users to access USB storage on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might prevent access to USB storage. Available for fully managed and dedicated devices.",
-    "keywords": [
-      "Storage",
-      "Allow",
-      "Usb",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordminimumuppercasecharacters",
     "settingName": "Number of uppercase characters required",
     "settingDescription": "Enter the number of uppercase characters the work profile password must have, between 1 and 16 characters. Available for corporate-owned work profile devices (at work profile level).",
@@ -909,6 +897,30 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.passwordminimumlength",
+    "settingName": "Minimum password length",
+    "settingDescription": "Enter the minimum number of digits or characters the password must have, between 4 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Password",
+      "Passcode",
+      "Password Length",
+      "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.storageallowusb",
+    "settingName": "Allow USB storage",
+    "settingDescription": "If 'True', allow users to access USB storage on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might prevent access to USB storage. Available for fully managed and dedicated devices.",
+    "keywords": [
+      "Storage",
+      "Allow",
+      "Usb",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.passwordminimumlettercharacters",
     "settingName": "Number of characters required",
     "settingDescription": "Enter the number of characters the password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
@@ -917,18 +929,6 @@
       "Minimum",
       "Letter",
       "Characters",
-      "Device password"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.passwordminimumlength",
-    "settingName": "Minimum password length",
-    "settingDescription": "Enter the minimum number of digits or characters the password must have, between 4 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "Password",
-      "Passcode",
-      "Password Length",
       "Device password"
     ],
     "categoryName": "Device Restriction"

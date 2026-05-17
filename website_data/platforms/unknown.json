@@ -18197,6 +18197,382 @@
     "dependencies": []
   },
   {
+    "settingId": "enrollment_autopilot_dpp_skipeula",
+    "settingName": "Hide Microsoft Software License Terms",
+    "settingDescription": "Specify whether to show the end-user license agreement to users.",
+    "categoryId": "72e4d72b-e01e-427c-a3b6-05bdcf04ef8d",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "SkipEula",
+      "Out-of-box experience settings"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/autopilot/DevicePreparation",
+    "offsetUri": "/OobeSettings/SkipEula",
+    "settingUsage": "configuration",
+    "uxBehavior": "dropdown",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "enrollment_autopilot_dpp_skipeula_1",
+    "applicability": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+      "description": null,
+      "platform": "windows10",
+      "deviceMode": "none",
+      "technologies": "enrollment",
+      "configurationServiceProviderVersion": "1.0",
+      "maximumSupportedVersion": null,
+      "minimumSupportedVersion": null,
+      "windowsSkus": [],
+      "requiresAzureAd": false,
+      "requiredAzureAdTrustType": "none"
+    },
+    "options": [
+      {
+        "itemId": "enrollment_autopilot_dpp_skipeula_0",
+        "description": null,
+        "helpText": null,
+        "name": "No",
+        "displayName": "No",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "enrollment_autopilot_dpp_skipeula_1",
+        "description": null,
+        "helpText": null,
+        "name": "Yes",
+        "displayName": "Yes",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639118729572626080",
+    "helpText": "",
+    "name": "SkipEula",
+    "rootDefinitionId": "enrollment_autopilot_dpp_skipeula",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "enrollment_autopilot_dpp_skipeula_0",
+        "description": null,
+        "helpText": null,
+        "name": "No",
+        "displayName": "No",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "enrollment_autopilot_dpp_skipeula_1",
+        "description": null,
+        "helpText": null,
+        "name": "Yes",
+        "displayName": "Yes",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_jointype",
+    "settingName": "Join type",
+    "settingDescription": "Specify how devices join an identity provider in your organization.",
+    "categoryId": "47b863f6-8116-432b-9fc1-9e487fdaa203",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "Join type",
+      "Deployment settings"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/autopilot/DevicePreparation",
+    "offsetUri": "/DeploymentSettings/JoinType",
+    "settingUsage": "configuration",
+    "uxBehavior": "dropdown",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "enrollment_autopilot_dpp_jointype_0",
+    "applicability": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+      "description": null,
+      "platform": "windows10",
+      "deviceMode": "none",
+      "technologies": "enrollment",
+      "configurationServiceProviderVersion": "1.0",
+      "maximumSupportedVersion": null,
+      "minimumSupportedVersion": null,
+      "windowsSkus": [],
+      "requiresAzureAd": false,
+      "requiredAzureAdTrustType": "none"
+    },
+    "options": [
+      {
+        "itemId": "enrollment_autopilot_dpp_jointype_0",
+        "description": "Cloud-only without an on-premises Windows Server Active Directory",
+        "helpText": null,
+        "name": "EntraIdJoined",
+        "displayName": "Microsoft Entra joined",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639118729572626080",
+    "helpText": "",
+    "name": "JoinType",
+    "rootDefinitionId": "enrollment_autopilot_dpp_jointype",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "enrollment_autopilot_dpp_jointype_0",
+        "description": "Cloud-only without an on-premises Windows Server Active Directory",
+        "helpText": null,
+        "name": "EntraIdJoined",
+        "displayName": "Microsoft Entra joined",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_customconfig_script",
+    "settingName": "Execution Script",
+    "settingDescription": "Select the file containing the script to execute.",
+    "categoryId": "36716a4c-cedb-47bb-8f4b-5783fedc7c47",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "Linux Custom Configuration"
+    ],
+    "infoUrls": [
+      "https://go.microsoft.com/fwlink/?linkid=2218882"
+    ],
+    "baseUri": "com.microsoft.manage.LinuxMdm",
+    "offsetUri": "/CustomConfig/Script",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "linuxMdm"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "bashScript",
+      "inputValidationSchema": null,
+      "maximumLength": 87516,
+      "minimumLength": 1,
+      "isSecret": false,
+      "fileTypes": [
+        "sh"
+      ]
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
+    "accessTypes": "get",
+    "version": "639118729572626080",
+    "helpText": null,
+    "name": "CustomConfig_Script",
+    "rootDefinitionId": "linux_customconfig_script",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "device_vendor_msft_laps_policies_passwordexpirationprotectionenabled",
+    "settingName": "Password Expiration Protection Enabled ",
+    "settingDescription": "Use this setting to configure additional enforcement of maximum password age for the managed local administrator account.\n\nWhen this setting is enabled, planned password expiration that would result in a password age greater than that dictated by \"PasswordAgeDays\" policy is NOT allowed. When such expiration is detected, the password is changed immediately and the new password expiration date is set according to policy.\n\nIf not specified, this setting defaults to True.\r\n ",
+    "categoryId": "f1dcf7b6-2d89-41bf-b5eb-02a879c6db5d",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "Password Expiration Protection Enabled",
+      "LAPS"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/windows/client-management/mdm/LAPS-csp/"
+    ],
+    "baseUri": "./Device/Vendor/MSFT/LAPS",
+    "offsetUri": "/Policies/PasswordExpirationProtectionEnabled",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "device_vendor_msft_laps_policies_passwordexpirationprotectionenabled_true",
+    "applicability": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+      "description": null,
+      "platform": "windows10",
+      "deviceMode": "none",
+      "technologies": "mdm",
+      "configurationServiceProviderVersion": "1.0",
+      "maximumSupportedVersion": null,
+      "minimumSupportedVersion": "10.0.17763.4244",
+      "windowsSkus": [
+        "windowsEnterprise",
+        "windowsProfessional",
+        "windowsHome",
+        "surfaceHub",
+        "windowsEducation",
+        "holoLens",
+        "holographicForBusiness",
+        "windowsMultiSession",
+        "iotEnterprise",
+        "windowsCloudN",
+        "windows11SE"
+      ],
+      "requiresAzureAd": false,
+      "requiredAzureAdTrustType": "none"
+    },
+    "options": [
+      {
+        "itemId": "device_vendor_msft_laps_policies_passwordexpirationprotectionenabled_false",
+        "description": "Allow configured password expiriration timestamp to exceed maximum password age",
+        "helpText": null,
+        "name": "Allow configured password expiriration timestamp to exceed maximum password age",
+        "displayName": "Allow configured password expiriration timestamp to exceed maximum password age",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "device_vendor_msft_laps_policies_backupdirectory_2",
+            "parentSettingId": "device_vendor_msft_laps_policies_backupdirectory"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "device_vendor_msft_laps_policies_passwordexpirationprotectionenabled_true",
+        "description": "Do not allow configured password expiriration timestamp to exceed maximum password age",
+        "helpText": null,
+        "name": "Do not allow configured password expiriration timestamp to exceed maximum password age",
+        "displayName": "Do not allow configured password expiriration timestamp to exceed maximum password age",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "device_vendor_msft_laps_policies_backupdirectory_2",
+            "parentSettingId": "device_vendor_msft_laps_policies_backupdirectory"
+          }
+        ],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639118729572626080",
+    "helpText": "",
+    "name": "PasswordExpirationProtectionEnabled",
+    "rootDefinitionId": "device_vendor_msft_laps_policies_backupdirectory",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "device_vendor_msft_laps_policies_passwordexpirationprotectionenabled_false",
+        "description": "Allow configured password expiriration timestamp to exceed maximum password age",
+        "helpText": null,
+        "name": "Allow configured password expiriration timestamp to exceed maximum password age",
+        "displayName": "Allow configured password expiriration timestamp to exceed maximum password age",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "device_vendor_msft_laps_policies_backupdirectory_2",
+            "parentSettingId": "device_vendor_msft_laps_policies_backupdirectory"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "device_vendor_msft_laps_policies_passwordexpirationprotectionenabled_true",
+        "description": "Do not allow configured password expiriration timestamp to exceed maximum password age",
+        "helpText": null,
+        "name": "Do not allow configured password expiriration timestamp to exceed maximum password age",
+        "displayName": "Do not allow configured password expiriration timestamp to exceed maximum password age",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "device_vendor_msft_laps_policies_backupdirectory_2",
+            "parentSettingId": "device_vendor_msft_laps_policies_backupdirectory"
+          }
+        ],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
     "settingId": "ade_setupassistant_enablelockdownmode",
     "settingName": "Enable Lock down Mode",
     "settingDescription": null,
@@ -18597,112 +18973,6 @@
     "dependencies": []
   },
   {
-    "settingId": "enrollment_autopilot_dpp_skipeula",
-    "settingName": "Hide Microsoft Software License Terms",
-    "settingDescription": "Specify whether to show the end-user license agreement to users.",
-    "categoryId": "72e4d72b-e01e-427c-a3b6-05bdcf04ef8d",
-    "categoryName": "Uncategorized",
-    "keywords": [
-      "Autopilot",
-      "Device Preparation",
-      "SkipEula",
-      "Out-of-box experience settings"
-    ],
-    "infoUrls": [],
-    "baseUri": "./enrollment/autopilot/DevicePreparation",
-    "offsetUri": "/OobeSettings/SkipEula",
-    "settingUsage": "configuration",
-    "uxBehavior": "dropdown",
-    "visibility": "template",
-    "riskLevel": "low",
-    "defaultOptionId": "enrollment_autopilot_dpp_skipeula_1",
-    "applicability": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
-      "description": null,
-      "platform": "windows10",
-      "deviceMode": "none",
-      "technologies": "enrollment",
-      "configurationServiceProviderVersion": "1.0",
-      "maximumSupportedVersion": null,
-      "minimumSupportedVersion": null,
-      "windowsSkus": [],
-      "requiresAzureAd": false,
-      "requiredAzureAdTrustType": "none"
-    },
-    "options": [
-      {
-        "itemId": "enrollment_autopilot_dpp_skipeula_0",
-        "description": null,
-        "helpText": null,
-        "name": "No",
-        "displayName": "No",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 0
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "enrollment_autopilot_dpp_skipeula_1",
-        "description": null,
-        "helpText": null,
-        "name": "Yes",
-        "displayName": "Yes",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 1
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "639118729572626080",
-    "helpText": "",
-    "name": "SkipEula",
-    "rootDefinitionId": "enrollment_autopilot_dpp_skipeula",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "enrollment_autopilot_dpp_skipeula_0",
-        "description": null,
-        "helpText": null,
-        "name": "No",
-        "displayName": "No",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 0
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "enrollment_autopilot_dpp_skipeula_1",
-        "description": null,
-        "helpText": null,
-        "name": "Yes",
-        "displayName": "Yes",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 1
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
     "settingId": "enrollment_autopilot_dpp_skipkeyboard",
     "settingName": "Automatically configure keyboard",
     "settingDescription": "If true, skip the keyboard selection page if Language is set.",
@@ -18806,138 +19076,6 @@
         "dependedOnBy": []
       }
     ],
-    "dependencies": []
-  },
-  {
-    "settingId": "enrollment_autopilot_dpp_jointype",
-    "settingName": "Join type",
-    "settingDescription": "Specify how devices join an identity provider in your organization.",
-    "categoryId": "47b863f6-8116-432b-9fc1-9e487fdaa203",
-    "categoryName": "Uncategorized",
-    "keywords": [
-      "Autopilot",
-      "Device Preparation",
-      "Join type",
-      "Deployment settings"
-    ],
-    "infoUrls": [],
-    "baseUri": "./enrollment/autopilot/DevicePreparation",
-    "offsetUri": "/DeploymentSettings/JoinType",
-    "settingUsage": "configuration",
-    "uxBehavior": "dropdown",
-    "visibility": "template",
-    "riskLevel": "low",
-    "defaultOptionId": "enrollment_autopilot_dpp_jointype_0",
-    "applicability": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
-      "description": null,
-      "platform": "windows10",
-      "deviceMode": "none",
-      "technologies": "enrollment",
-      "configurationServiceProviderVersion": "1.0",
-      "maximumSupportedVersion": null,
-      "minimumSupportedVersion": null,
-      "windowsSkus": [],
-      "requiresAzureAd": false,
-      "requiredAzureAdTrustType": "none"
-    },
-    "options": [
-      {
-        "itemId": "enrollment_autopilot_dpp_jointype_0",
-        "description": "Cloud-only without an on-premises Windows Server Active Directory",
-        "helpText": null,
-        "name": "EntraIdJoined",
-        "displayName": "Microsoft Entra joined",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 0
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "639118729572626080",
-    "helpText": "",
-    "name": "JoinType",
-    "rootDefinitionId": "enrollment_autopilot_dpp_jointype",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "enrollment_autopilot_dpp_jointype_0",
-        "description": "Cloud-only without an on-premises Windows Server Active Directory",
-        "helpText": null,
-        "name": "EntraIdJoined",
-        "displayName": "Microsoft Entra joined",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-          "settingValueTemplateReference": null,
-          "value": 0
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "linux_customconfig_script",
-    "settingName": "Execution Script",
-    "settingDescription": "Select the file containing the script to execute.",
-    "categoryId": "36716a4c-cedb-47bb-8f4b-5783fedc7c47",
-    "categoryName": "Uncategorized",
-    "keywords": [
-      "Linux Custom Configuration"
-    ],
-    "infoUrls": [
-      "https://go.microsoft.com/fwlink/?linkid=2218882"
-    ],
-    "baseUri": "com.microsoft.manage.LinuxMdm",
-    "offsetUri": "/CustomConfig/Script",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "linuxMdm"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
-      "format": "bashScript",
-      "inputValidationSchema": null,
-      "maximumLength": 87516,
-      "minimumLength": 1,
-      "isSecret": false,
-      "fileTypes": [
-        "sh"
-      ]
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-      "settingValueTemplateReference": null,
-      "value": ""
-    },
-    "accessTypes": "get",
-    "version": "639118729572626080",
-    "helpText": null,
-    "name": "CustomConfig_Script",
-    "rootDefinitionId": "linux_customconfig_script",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
     "dependencies": []
   },
   {
@@ -19653,144 +19791,6 @@
           "value": 11
         },
         "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "device_vendor_msft_laps_policies_passwordexpirationprotectionenabled",
-    "settingName": "Password Expiration Protection Enabled ",
-    "settingDescription": "Use this setting to configure additional enforcement of maximum password age for the managed local administrator account.\n\nWhen this setting is enabled, planned password expiration that would result in a password age greater than that dictated by \"PasswordAgeDays\" policy is NOT allowed. When such expiration is detected, the password is changed immediately and the new password expiration date is set according to policy.\n\nIf not specified, this setting defaults to True.\r\n ",
-    "categoryId": "f1dcf7b6-2d89-41bf-b5eb-02a879c6db5d",
-    "categoryName": "Uncategorized",
-    "keywords": [
-      "Password Expiration Protection Enabled",
-      "LAPS"
-    ],
-    "infoUrls": [
-      "https://docs.microsoft.com/windows/client-management/mdm/LAPS-csp/"
-    ],
-    "baseUri": "./Device/Vendor/MSFT/LAPS",
-    "offsetUri": "/Policies/PasswordExpirationProtectionEnabled",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "template",
-    "riskLevel": "low",
-    "defaultOptionId": "device_vendor_msft_laps_policies_passwordexpirationprotectionenabled_true",
-    "applicability": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
-      "description": null,
-      "platform": "windows10",
-      "deviceMode": "none",
-      "technologies": "mdm",
-      "configurationServiceProviderVersion": "1.0",
-      "maximumSupportedVersion": null,
-      "minimumSupportedVersion": "10.0.17763.4244",
-      "windowsSkus": [
-        "windowsEnterprise",
-        "windowsProfessional",
-        "windowsHome",
-        "surfaceHub",
-        "windowsEducation",
-        "holoLens",
-        "holographicForBusiness",
-        "windowsMultiSession",
-        "iotEnterprise",
-        "windowsCloudN",
-        "windows11SE"
-      ],
-      "requiresAzureAd": false,
-      "requiredAzureAdTrustType": "none"
-    },
-    "options": [
-      {
-        "itemId": "device_vendor_msft_laps_policies_passwordexpirationprotectionenabled_false",
-        "description": "Allow configured password expiriration timestamp to exceed maximum password age",
-        "helpText": null,
-        "name": "Allow configured password expiriration timestamp to exceed maximum password age",
-        "displayName": "Allow configured password expiriration timestamp to exceed maximum password age",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "device_vendor_msft_laps_policies_backupdirectory_2",
-            "parentSettingId": "device_vendor_msft_laps_policies_backupdirectory"
-          }
-        ],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "device_vendor_msft_laps_policies_passwordexpirationprotectionenabled_true",
-        "description": "Do not allow configured password expiriration timestamp to exceed maximum password age",
-        "helpText": null,
-        "name": "Do not allow configured password expiriration timestamp to exceed maximum password age",
-        "displayName": "Do not allow configured password expiriration timestamp to exceed maximum password age",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "device_vendor_msft_laps_policies_backupdirectory_2",
-            "parentSettingId": "device_vendor_msft_laps_policies_backupdirectory"
-          }
-        ],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "639118729572626080",
-    "helpText": "",
-    "name": "PasswordExpirationProtectionEnabled",
-    "rootDefinitionId": "device_vendor_msft_laps_policies_backupdirectory",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "device_vendor_msft_laps_policies_passwordexpirationprotectionenabled_false",
-        "description": "Allow configured password expiriration timestamp to exceed maximum password age",
-        "helpText": null,
-        "name": "Allow configured password expiriration timestamp to exceed maximum password age",
-        "displayName": "Allow configured password expiriration timestamp to exceed maximum password age",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "device_vendor_msft_laps_policies_backupdirectory_2",
-            "parentSettingId": "device_vendor_msft_laps_policies_backupdirectory"
-          }
-        ],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "device_vendor_msft_laps_policies_passwordexpirationprotectionenabled_true",
-        "description": "Do not allow configured password expiriration timestamp to exceed maximum password age",
-        "helpText": null,
-        "name": "Do not allow configured password expiriration timestamp to exceed maximum password age",
-        "displayName": "Do not allow configured password expiriration timestamp to exceed maximum password age",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "device_vendor_msft_laps_policies_backupdirectory_2",
-            "parentSettingId": "device_vendor_msft_laps_policies_backupdirectory"
-          }
-        ],
         "dependedOnBy": []
       }
     ],

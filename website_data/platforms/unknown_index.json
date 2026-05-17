@@ -1317,6 +1317,49 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "enrollment_autopilot_dpp_skipeula",
+    "settingName": "Hide Microsoft Software License Terms",
+    "settingDescription": "Specify whether to show the end-user license agreement to users.",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "SkipEula",
+      "Out-of-box experience settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_jointype",
+    "settingName": "Join type",
+    "settingDescription": "Specify how devices join an identity provider in your organization.",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "Join type",
+      "Deployment settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "linux_customconfig_script",
+    "settingName": "Execution Script",
+    "settingDescription": "Select the file containing the script to execute.",
+    "keywords": [
+      "Linux Custom Configuration"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_laps_policies_passwordexpirationprotectionenabled",
+    "settingName": "Password Expiration Protection Enabled ",
+    "settingDescription": "Use this setting to configure additional enforcement of maximum password age for the managed local administrator account.\n\nWhen this setting is enabled, planned password expiration that would result in a password age greater than that dictated by \"PasswordAgeDays\" policy is NOT allowed. When such expiration is detected, the password is changed immediately and the new password expiration date is set according to policy.\n\nIf not specified, this setting defaults to True.\r\n ",
+    "keywords": [
+      "Password Expiration Protection Enabled",
+      "LAPS"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_setupassistant_enablelockdownmode",
     "settingName": "Enable Lock down Mode",
     "settingDescription": null,
@@ -1362,18 +1405,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "enrollment_autopilot_dpp_skipeula",
-    "settingName": "Hide Microsoft Software License Terms",
-    "settingDescription": "Specify whether to show the end-user license agreement to users.",
-    "keywords": [
-      "Autopilot",
-      "Device Preparation",
-      "SkipEula",
-      "Out-of-box experience settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "enrollment_autopilot_dpp_skipkeyboard",
     "settingName": "Automatically configure keyboard",
     "settingDescription": "If true, skip the keyboard selection page if Language is set.",
@@ -1382,27 +1413,6 @@
       "Device Preparation",
       "SkipKeyboard",
       "Out-of-box experience settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "enrollment_autopilot_dpp_jointype",
-    "settingName": "Join type",
-    "settingDescription": "Specify how devices join an identity provider in your organization.",
-    "keywords": [
-      "Autopilot",
-      "Device Preparation",
-      "Join type",
-      "Deployment settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "linux_customconfig_script",
-    "settingName": "Execution Script",
-    "settingDescription": "Select the file containing the script to execute.",
-    "keywords": [
-      "Linux Custom Configuration"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1478,16 +1488,6 @@
     "settingDescription": "Use this setting to specify the actions to take upon expiration of the configured grace period.\n\nIf not specified, this setting will default to 3 (Reset the password and logoff the managed account).\n              \r\n ",
     "keywords": [
       "Post Authentication Actions",
-      "LAPS"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_laps_policies_passwordexpirationprotectionenabled",
-    "settingName": "Password Expiration Protection Enabled ",
-    "settingDescription": "Use this setting to configure additional enforcement of maximum password age for the managed local administrator account.\n\nWhen this setting is enabled, planned password expiration that would result in a password age greater than that dictated by \"PasswordAgeDays\" policy is NOT allowed. When such expiration is detected, the password is changed immediately and the new password expiration date is set according to policy.\n\nIf not specified, this setting defaults to True.\r\n ",
-    "keywords": [
-      "Password Expiration Protection Enabled",
       "LAPS"
     ],
     "categoryName": "Uncategorized"

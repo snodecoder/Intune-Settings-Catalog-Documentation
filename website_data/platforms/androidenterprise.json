@@ -6772,105 +6772,6 @@
     "dependencies": []
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.storageallowusb",
-    "settingName": "Allow USB storage",
-    "settingDescription": "If 'True', allow users to access USB storage on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might prevent access to USB storage. Available for fully managed and dedicated devices.",
-    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
-    "categoryName": "Device Restriction",
-    "keywords": [
-      "Storage",
-      "Allow",
-      "Usb",
-      "General"
-    ],
-    "infoUrls": [],
-    "baseUri": "/com.android.deviceRestrictionPolicy/",
-    "offsetUri": "/storageAllowUsb/",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "com.android.devicerestrictionpolicy.storageallowusb_false",
-    "applicability": {
-      "description": null,
-      "platform": "androidEnterprise",
-      "deviceMode": "none",
-      "technologies": "android"
-    },
-    "options": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.storageallowusb_true",
-        "description": "true",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.storageallowusb_false",
-        "description": "false",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "add,delete,get,replace",
-    "version": "639118729572626080",
-    "helpText": null,
-    "name": "StorageAllowUsb",
-    "rootDefinitionId": "com.android.devicerestrictionpolicy.storageallowusb",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "com.android.devicerestrictionpolicy.storageallowusb_true",
-        "description": "true",
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.android.devicerestrictionpolicy.storageallowusb_false",
-        "description": "false",
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordminimumuppercasecharacters",
     "settingName": "Number of uppercase characters required",
     "settingDescription": "Enter the number of uppercase characters the work profile password must have, between 1 and 16 characters. Available for corporate-owned work profile devices (at work profile level).",
@@ -6974,6 +6875,154 @@
     "dependencies": []
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.passwordminimumlength",
+    "settingName": "Minimum password length",
+    "settingDescription": "Enter the minimum number of digits or characters the password must have, between 4 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "categoryId": "f350f9a2-3a91-4d6d-90ed-7e3849b0d5f1",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Password",
+      "Passcode",
+      "Password Length",
+      "Device password"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/passwordMinimumLength/",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 16,
+      "minimumValue": 4
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 4
+    },
+    "accessTypes": "add,delete,get,replace",
+    "version": "639118729572626080",
+    "helpText": "Enter a number (4-16)",
+    "name": "PasswordMinimumLength",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.storageallowusb",
+    "settingName": "Allow USB storage",
+    "settingDescription": "If 'True', allow users to access USB storage on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might prevent access to USB storage. Available for fully managed and dedicated devices.",
+    "categoryId": "b6733d23-eadc-486a-abfc-62b78698a16c",
+    "categoryName": "Device Restriction",
+    "keywords": [
+      "Storage",
+      "Allow",
+      "Usb",
+      "General"
+    ],
+    "infoUrls": [],
+    "baseUri": "/com.android.deviceRestrictionPolicy/",
+    "offsetUri": "/storageAllowUsb/",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.android.devicerestrictionpolicy.storageallowusb_false",
+    "applicability": {
+      "description": null,
+      "platform": "androidEnterprise",
+      "deviceMode": "none",
+      "technologies": "android"
+    },
+    "options": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.storageallowusb_true",
+        "description": "true",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.storageallowusb_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639118729572626080",
+    "helpText": null,
+    "name": "StorageAllowUsb",
+    "rootDefinitionId": "com.android.devicerestrictionpolicy.storageallowusb",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.android.devicerestrictionpolicy.storageallowusb_true",
+        "description": "true",
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.android.devicerestrictionpolicy.storageallowusb_false",
+        "description": "false",
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.passwordminimumlettercharacters",
     "settingName": "Number of characters required",
     "settingDescription": "Enter the number of characters the password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
@@ -7016,55 +7065,6 @@
     "version": "639118729572626080",
     "helpText": "Enter a number (1-16)",
     "name": "PasswordMinimumLetterCharacters",
-    "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.passwordminimumlength",
-    "settingName": "Minimum password length",
-    "settingDescription": "Enter the minimum number of digits or characters the password must have, between 4 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
-    "categoryId": "f350f9a2-3a91-4d6d-90ed-7e3849b0d5f1",
-    "categoryName": "Device Restriction",
-    "keywords": [
-      "Password",
-      "Passcode",
-      "Password Length",
-      "Device password"
-    ],
-    "infoUrls": [],
-    "baseUri": "/com.android.deviceRestrictionPolicy/",
-    "offsetUri": "/passwordMinimumLength/",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "androidEnterprise",
-      "deviceMode": "none",
-      "technologies": "android"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
-      "maximumValue": 16,
-      "minimumValue": 4
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-      "settingValueTemplateReference": null,
-      "value": 4
-    },
-    "accessTypes": "add,delete,get,replace",
-    "version": "639118729572626080",
-    "helpText": "Enter a number (4-16)",
-    "name": "PasswordMinimumLength",
     "rootDefinitionId": "com.android.devicerestrictionpolicy.passwordrequiredtype",
     "settingDefinitionId": null,
     "definitionDescription": null,
