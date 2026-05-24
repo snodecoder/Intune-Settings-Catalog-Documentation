@@ -1,13 +1,34 @@
 [
   {
-    "settingId": "enrollment_autopilot_dpp_forcedenrollment",
-    "settingName": "Hide change account options",
-    "settingDescription": "Options to change account and start over with a different account appear, respectively, during initial device setup on the company sign-in page, and on the domain error page. To hide these options, you must configure company branding in Microsoft Entra ID",
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories_directorypath",
+    "settingName": "Directory",
+    "settingDescription": "The filesystem directory path.",
     "keywords": [
-      "Autopilot",
-      "Device Preparation",
-      "ForcedEnrollment",
-      "Out-of-box experience settings"
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution",
+    "settingName": "Allow agent tool execution",
+    "settingDescription": "When enabled, the agent is allowed to execute tools with the specified resource policies.",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser",
+    "settingName": "Agent user",
+    "settingDescription": "Specifies how the agent user identity is determined.",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
     ],
     "categoryName": "Uncategorized"
   },
@@ -32,6 +53,18 @@
       "allowuser",
       "change setting",
       "End User Overrides"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_forcedenrollment",
+    "settingName": "Hide change account options",
+    "settingDescription": "Options to change account and start over with a different account appear, respectively, during initial device setup on the company sign-in page, and on the domain error page. To hide these options, you must configure company branding in Microsoft Entra ID",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "ForcedEnrollment",
+      "Out-of-box experience settings"
     ],
     "categoryName": "Uncategorized"
   },
@@ -123,14 +156,24 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "enrollment_autopilot_dpp_enablequ",
-    "settingName": "Install Windows updates (might restart the device)",
-    "settingDescription": "",
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories_accesslevel",
+    "settingName": "Access level",
+    "settingDescription": "The level of filesystem access granted for this directory.",
     "keywords": [
-      "Autopilot",
-      "Device Preparation",
-      "EnableQU",
-      "Out-of-box experience settings"
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser_userprofile",
+    "settingName": "User profile",
+    "settingDescription": "The Entra user profile (UPN or SID) to run the agent as.",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
     ],
     "categoryName": "Uncategorized"
   },
@@ -175,6 +218,18 @@
       "end time",
       "endtime",
       "Range Settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_enablequ",
+    "settingName": "Install Windows updates (might restart the device)",
+    "settingDescription": "",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "EnableQU",
+      "Out-of-box experience settings"
     ],
     "categoryName": "Uncategorized"
   },
@@ -605,6 +660,28 @@
       "Elevation",
       "Rule type",
       "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance",
+    "settingName": "Agent Governance",
+    "settingDescription": "Agent Governance policy for configuring AI agent containment settings.",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories",
+    "settingName": "Allowed filesystem directories",
+    "settingDescription": "A collection of filesystem directory rules.",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1175,6 +1252,17 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allownetworkaccess",
+    "settingName": "Allow network access",
+    "settingDescription": "Controls whether the contained agent can access the network. 0=blocked, 1=allowed.",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_awaitconfiguration_basic",
     "settingName": "Await final configuration",
     "settingDescription": "Keeps the device in Setup Assistant until the first sync between the device and Intune installs policies.",
@@ -1526,14 +1614,13 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "enrollment_autopilot_dpp_enablecue",
-    "settingName": "Automatically launch the Company Portal app and display status for remaining configuration",
-    "settingDescription": "If the Company Portal app is not configured to install in system context, assigned to the Device group, and selected in the list of Apps, it will not launch automatically and display onboarding status.",
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_targetedagentid",
+    "settingName": "Targeted agent",
+    "settingDescription": "The MSIX package family name of the targeted agent.",
     "keywords": [
-      "Autopilot",
-      "Device Preparation",
-      "EnableCUE",
-      "Desktop onboarding settings"
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1611,6 +1698,18 @@
       "ADE profile",
       "enrollment",
       "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_enablecue",
+    "settingName": "Automatically launch the Company Portal app and display status for remaining configuration",
+    "settingDescription": "If the Company Portal app is not configured to install in system context, assigned to the Device group, and selected in the list of Apps, it will not launch automatically and display onboarding status.",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "EnableCUE",
+      "Desktop onboarding settings"
     ],
     "categoryName": "Uncategorized"
   },

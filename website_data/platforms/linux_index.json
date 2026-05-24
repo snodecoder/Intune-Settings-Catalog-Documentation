@@ -1,32 +1,5 @@
 [
   {
-    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_scantype",
-    "settingName": "Weekly Scheduled scan type",
-    "settingDescription": "Selects whether to perform a quick scan or full scan. Quick scan checks the most likely locations where malware could be registered to start with the system. Full scan checks all files and running programs on your hard disk.",
-    "keywords": [
-      "Schedule Scan"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_weeklytimeofday",
-    "settingName": "Weekly Schedule scan time",
-    "settingDescription": "Selects the time of day that the Defender weekly scan should run. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120.",
-    "keywords": [
-      "Schedule Scan"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_cloudservice_definitionupdatesinterval",
-    "settingName": "Security intelligence Update time interval (seconds)",
-    "settingDescription": "Allows setting the time interval at which offline security intelligence updates are triggered on endpoints.",
-    "keywords": [
-      "Cloud delivered protection preferences"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
     "settingId": "com.apple.managedclient.preferences_passivemode",
     "settingName": "Enable passive mode (deprecated)",
     "settingDescription": "Whether the antivirus engine runs in passive mode or not.",
@@ -94,20 +67,38 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "linux_mdatp_managed_cloudservice_cloudblocklevel",
-    "settingName": "Configure cloud block level",
-    "settingDescription": "Determines how aggressive Defender for Endpoint is in blocking and scanning suspicious files.",
+    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_scantype",
+    "settingName": "Weekly Scheduled scan type",
+    "settingDescription": "Selects whether to perform a quick scan or full scan. Quick scan checks the most likely locations where malware could be registered to start with the system. Full scan checks all files and running programs on your hard disk.",
+    "keywords": [
+      "Schedule Scan"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_weeklytimeofday",
+    "settingName": "Weekly Schedule scan time",
+    "settingDescription": "Selects the time of day that the Defender weekly scan should run. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120.",
+    "keywords": [
+      "Schedule Scan"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_cloudservice_definitionupdatesinterval",
+    "settingName": "Security intelligence Update time interval (seconds)",
+    "settingDescription": "Allows setting the time interval at which offline security intelligence updates are triggered on endpoints.",
     "keywords": [
       "Cloud delivered protection preferences"
     ],
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_dayofweek",
-    "settingName": "Weekly Schedule scan day",
-    "settingDescription": "Specify the day of the week when the scheduled scan should run. Select Daily to run the scan every day, or choose a specific weekday. Sunday is represented by 1, Monday by 2, and so on.",
+    "settingId": "linux_mdatp_managed_cloudservice_cloudblocklevel",
+    "settingName": "Configure cloud block level",
+    "settingDescription": "Determines how aggressive Defender for Endpoint is in blocking and scanning suspicious files.",
     "keywords": [
-      "Schedule Scan"
+      "Cloud delivered protection preferences"
     ],
     "categoryName": "Microsoft Defender"
   },
@@ -197,38 +188,20 @@
     "categoryName": "Microsoft Defender"
   },
   {
+    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_dayofweek",
+    "settingName": "Weekly Schedule scan day",
+    "settingDescription": "Specify the day of the week when the scheduled scan should run. Select Daily to run the scan every day, or choose a specific weekday. Sunday is represented by 1, Monday by 2, and so on.",
+    "keywords": [
+      "Schedule Scan"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
     "settingId": "linux_mdatp_managed_exclusionsettings_exclusions_item_path",
     "settingName": "Path",
     "settingDescription": "Path to exclude, wildcards are NOT supported",
     "keywords": [
       "Exclusion Settings"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "mde_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud",
-    "settingName": "Offline Definition Update Fallback To Cloud",
-    "settingDescription": "Whether to fall back to cloud updates if offline updates fail.",
-    "keywords": [
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_checkfordefinitionsupdate",
-    "settingName": "Schedule Signature Updates Before Running Scan",
-    "settingDescription": "This policy setting allows you to manage whether a check for new security intelligence definitions will occur before running a schedule scan. If you enable this setting, a check for new definitions will occur before running a scan. If you disable this setting or do not configure this setting, the scan will start using the existing definitions.",
-    "keywords": [
-      "Schedule Scan"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_runscanwhenidle",
-    "settingName": "Run scan when device is idle",
-    "settingDescription": "When enabled, the scheduled scan will only start when the device is considered idle- meaning minimal CPU usage and no active user sessions. This helps reduce performance impact during peak usage hours. If the device remains busy, the scan will be deferred until idle conditions are met.",
-    "keywords": [
-      "Schedule Scan"
     ],
     "categoryName": "Microsoft Defender"
   },
@@ -289,12 +262,39 @@
     "categoryName": "Microsoft Defender"
   },
   {
+    "settingId": "mde_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud",
+    "settingName": "Offline Definition Update Fallback To Cloud",
+    "settingDescription": "Whether to fall back to cloud updates if offline updates fail.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
     "settingId": "linux_mdatp_managed_antivirusengine_disallowedthreatactions",
     "settingName": "Disallowed threat actions",
     "settingDescription": "Restricts the actions that the local user of a device can take when threats are detected. The actions included in this list are not displayed in the user interface.",
     "keywords": [
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_checkfordefinitionsupdate",
+    "settingName": "Schedule Signature Updates Before Running Scan",
+    "settingDescription": "This policy setting allows you to manage whether a check for new security intelligence definitions will occur before running a schedule scan. If you enable this setting, a check for new definitions will occur before running a scan. If you disable this setting or do not configure this setting, the scan will start using the existing definitions.",
+    "keywords": [
+      "Schedule Scan"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_runscanwhenidle",
+    "settingName": "Run scan when device is idle",
+    "settingDescription": "When enabled, the scheduled scan will only start when the device is considered idle- meaning minimal CPU usage and no active user sessions. This helps reduce performance impact during peak usage hours. If the device remains busy, the scan will be deferred until idle conditions are met.",
+    "keywords": [
+      "Schedule Scan"
     ],
     "categoryName": "Microsoft Defender"
   },
@@ -313,24 +313,6 @@
     "settingDescription": "Global exclusions apply to both Antivirus and Endpoint detection and response to exclude at a much lower level closer to sensors. Usage: Tackling performance issues. Risk: Significantly risks protection",
     "keywords": [
       "Exclusion Settings"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_lowpriorityscheduledscan",
-    "settingName": "Run with low CPU priority",
-    "settingDescription": "This policy setting allows you to enable or disable low CPU priority for scheduled scans. If you enable this setting, low CPU priority will be used during scheduled scans. If you disable or do not configure this setting, not changes will be made to CPU priority for scheduled scans.",
-    "keywords": [
-      "Schedule Scan"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_timeofday",
-    "settingName": "Daily Schedule scan time",
-    "settingDescription": "Selects the time of day that the Defender daily scan should run. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120.",
-    "keywords": [
-      "Schedule Scan"
     ],
     "categoryName": "Microsoft Defender"
   },
@@ -403,36 +385,18 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "mde_managed_antivirusengine_offlinedefinitionupdate",
-    "settingName": "Enable offline definition update",
-    "settingDescription": "Determines whether offline definition updates are enabled for antivirus.",
-    "keywords": [
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdateurl",
-    "settingName": "Offline security intelligence update URL or directory",
-    "settingDescription": "The URL or directory path where offline security intelligence updates are served.",
-    "keywords": [
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_ignoreexclusions",
-    "settingName": "Ignore Exclusions",
-    "settingDescription": "This setting allows you to select whether to ignore exclusions set on the client while running schedule scans",
+    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_lowpriorityscheduledscan",
+    "settingName": "Run with low CPU priority",
+    "settingDescription": "This policy setting allows you to enable or disable low CPU priority for scheduled scans. If you enable this setting, low CPU priority will be used during scheduled scans. If you disable or do not configure this setting, not changes will be made to CPU priority for scheduled scans.",
     "keywords": [
       "Schedule Scan"
     ],
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_interval",
-    "settingName": "Daily Schedule quick scan interval (hours)",
-    "settingDescription": "This setting is only applicable if you have selcted scan type as quick scan. Select the interval at which you want to run quick scans. Quick scans can be run multiple times a day.  0 (never), every 1 (hour) to every 24 (hours, one scan per day).",
+    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_timeofday",
+    "settingName": "Daily Schedule scan time",
+    "settingDescription": "Selects the time of day that the Defender daily scan should run. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120.",
     "keywords": [
       "Schedule Scan"
     ],
@@ -489,6 +453,15 @@
     "categoryName": "Microsoft Defender"
   },
   {
+    "settingId": "mde_managed_antivirusengine_offlinedefinitionupdate",
+    "settingName": "Enable offline definition update",
+    "settingDescription": "Determines whether offline definition updates are enabled for antivirus.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
     "settingId": "linux_mdatp_managed_antivirusengine_scanhistorymaximumitems",
     "settingName": "Scan history size",
     "settingDescription": "Specify the maximum number of entries to keep in the scan history. Entries include all on-demand scans performed in the past and all antivirus detections.",
@@ -518,6 +491,33 @@
     "categoryName": "Microsoft Defender"
   },
   {
+    "settingId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdateurl",
+    "settingName": "Offline security intelligence update URL or directory",
+    "settingDescription": "The URL or directory path where offline security intelligence updates are served.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_ignoreexclusions",
+    "settingName": "Ignore Exclusions",
+    "settingDescription": "This setting allows you to select whether to ignore exclusions set on the client while running schedule scans",
+    "keywords": [
+      "Schedule Scan"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_interval",
+    "settingName": "Daily Schedule quick scan interval (hours)",
+    "settingDescription": "This setting is only applicable if you have selcted scan type as quick scan. Select the interval at which you want to run quick scans. Quick scans can be run multiple times a day.  0 (never), every 1 (hour) to every 24 (hours, one scan per day).",
+    "keywords": [
+      "Schedule Scan"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
     "settingId": "linux_mdatp_managed_cloudservice_enabled",
     "settingName": "Enable cloud delivered protection",
     "settingDescription": "Provides increased, faster protection with access to the latest protection data in the cloud. Works best with automatic sample submission turned on",
@@ -534,15 +534,6 @@
     "keywords": [
       "Microsoft Defender - Cloud delivered protection preferences",
       "Cloud delivered protection preferences"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud",
-    "settingName": "Offline security intelligence update fallback to cloud",
-    "settingDescription": "Whether to fall back to cloud updates if offline security intelligence updates fail.",
-    "keywords": [
-      "Antivirus engine"
     ],
     "categoryName": "Microsoft Defender"
   },
@@ -623,6 +614,15 @@
     "categoryName": "Microsoft Defender"
   },
   {
+    "settingId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud",
+    "settingName": "Offline security intelligence update fallback to cloud",
+    "settingDescription": "Whether to fall back to cloud updates if offline security intelligence updates fail.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
     "settingId": "linux_mdatp_managed_antivirusengine_threattypesettings_item_key",
     "settingName": "Threat type",
     "settingDescription": "Type of the threat for which the behavior is configured.",
@@ -648,24 +648,6 @@
     "keywords": [
       "Microsoft Defender - Cloud delivered protection preferences",
       "Cloud delivered protection preferences"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "mde_managed_antivirusengine_offlinedefinitionupdateurl",
-    "settingName": "Offline Definition Update URL or Directory",
-    "settingDescription": "The URL or directory path where offline definition updates are served.",
-    "keywords": [
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_randomizescanstarttime",
-    "settingName": "Randomize scan start time",
-    "settingDescription": "Only applicable for daily quick scans or weekly quick/full scans. Randomize the start time of the scan by up to specified number of hours. For example, if a scan is scheduled for 2 p.m and randomizeScanStartTime is set to 2, the scan commences at a random time between 2 p.m and 4 p.m. Set to 0 to disable randomization.",
-    "keywords": [
-      "Schedule Scan"
     ],
     "categoryName": "Microsoft Defender"
   },
@@ -747,11 +729,29 @@
     "categoryName": "Microsoft Defender"
   },
   {
+    "settingId": "mde_managed_antivirusengine_offlinedefinitionupdateurl",
+    "settingName": "Offline Definition Update URL or Directory",
+    "settingDescription": "The URL or directory path where offline definition updates are served.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
     "settingId": "linux_mdatp_managed_antivirusengine_scanafterdefinitionupdate",
     "settingName": "Enable scanning after definition update",
     "settingDescription": "Specifies whether to start a process scan after new security intelligence updates are downloaded on the device.",
     "keywords": [
       "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_randomizescanstarttime",
+    "settingName": "Randomize scan start time",
+    "settingDescription": "Only applicable for daily quick scans or weekly quick/full scans. Randomize the start time of the scan by up to specified number of hours. For example, if a scan is scheduled for 2 p.m and randomizeScanStartTime is set to 2, the scan commences at a random time between 2 p.m and 4 p.m. Set to 0 to disable randomization.",
+    "keywords": [
+      "Schedule Scan"
     ],
     "categoryName": "Microsoft Defender"
   },
@@ -807,15 +807,6 @@
     "settingDescription": "Converts warn determinations into blocks",
     "keywords": [
       "Network protection"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate",
-    "settingName": "Enable offline security intelligence update",
-    "settingDescription": "Determines whether offline security intelligence updates are enabled for antivirus.",
-    "keywords": [
-      "Antivirus engine"
     ],
     "categoryName": "Microsoft Defender"
   },
@@ -909,6 +900,15 @@
     "settingDescription": "Locates and stops malware from installing or running on your device. You can turn off this setting for a short time before it turns back on automatically.",
     "keywords": [
       "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate",
+    "settingName": "Enable offline security intelligence update",
+    "settingDescription": "Determines whether offline security intelligence updates are enabled for antivirus.",
+    "keywords": [
       "Antivirus engine"
     ],
     "categoryName": "Microsoft Defender"

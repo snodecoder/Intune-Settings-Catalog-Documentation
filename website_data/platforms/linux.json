@@ -1,199 +1,5 @@
 [
   {
-    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_scantype",
-    "settingName": "Weekly Scheduled scan type",
-    "settingDescription": "Selects whether to perform a quick scan or full scan. Quick scan checks the most likely locations where malware could be registered to start with the system. Full scan checks all files and running programs on your hard disk.",
-    "categoryId": "0e1122f8-2bbf-475b-bce0-9e43a2f5e475",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Schedule Scan"
-    ],
-    "infoUrls": [
-      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#scheduled-scan"
-    ],
-    "baseUri": "PayloadContent/scheduledScan",
-    "offsetUri": "weeklyConfiguration/scanType",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "linux_mdatp_managed_antivirusengine_scheduledscan_scantype_quick",
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "microsoftSense"
-    },
-    "options": [
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_scantype_quick",
-        "description": null,
-        "helpText": null,
-        "name": "Quick scan",
-        "displayName": "Quick scan",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "quick"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_scantype_full",
-        "description": null,
-        "helpText": null,
-        "name": "Full scan",
-        "displayName": "Full scan",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "full"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": null,
-    "name": "scheduledScan/scanType",
-    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_scantype",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_scantype_quick",
-        "description": null,
-        "helpText": null,
-        "name": "Quick scan",
-        "displayName": "Quick scan",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "quick"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_scantype_full",
-        "description": null,
-        "helpText": null,
-        "name": "Full scan",
-        "displayName": "Full scan",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "full"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_weeklytimeofday",
-    "settingName": "Weekly Schedule scan time",
-    "settingDescription": "Selects the time of day that the Defender weekly scan should run. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120.",
-    "categoryId": "0e1122f8-2bbf-475b-bce0-9e43a2f5e475",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Schedule Scan"
-    ],
-    "infoUrls": [
-      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#scheduled-scan"
-    ],
-    "baseUri": "PayloadContent/scheduledScan",
-    "offsetUri": "weeklyConfiguration/timeOfDay",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "microsoftSense"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
-      "maximumValue": 1380,
-      "minimumValue": 0
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-      "settingValueTemplateReference": null,
-      "value": 120
-    },
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": null,
-    "name": "scheduledScan/weeklyConfiguration/timeOfDay",
-    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_weeklytimeofday",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "linux_mdatp_managed_cloudservice_definitionupdatesinterval",
-    "settingName": "Security intelligence Update time interval (seconds)",
-    "settingDescription": "Allows setting the time interval at which offline security intelligence updates are triggered on endpoints.",
-    "categoryId": "93099bd4-c685-434b-9d72-f0cb6db5e753",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Cloud delivered protection preferences"
-    ],
-    "infoUrls": [
-      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#definitionupd…"
-    ],
-    "baseUri": "PayloadContent/cloudService",
-    "offsetUri": "definitionUpdatesInterval",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "microsoftSense"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
-      "maximumValue": 86400,
-      "minimumValue": 0
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-      "settingValueTemplateReference": null,
-      "value": 60
-    },
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": "Allows to set the time interval at which the security intelligence updates will be downloaded on the endpoint from the cloud or local server if offline security intelligence is turned ON.",
-    "name": "definitionUpdatesInterval",
-    "rootDefinitionId": "linux_mdatp_managed_cloudservice_definitionupdatesinterval",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
     "settingId": "com.apple.managedclient.preferences_passivemode",
     "settingName": "Enable passive mode (deprecated)",
     "settingDescription": "Whether the antivirus engine runs in passive mode or not.",
@@ -253,7 +59,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "passiveMode",
     "rootDefinitionId": "com.apple.managedclient.preferences_passivemode",
@@ -352,7 +158,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "enabled",
     "rootDefinitionId": "com.apple.managedclient.preferences_enabled",
@@ -448,7 +254,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "disableFtpParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disableftpparsing",
@@ -517,7 +323,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "tags",
     "rootDefinitionId": "linux_mdatp_managed_edr_tags",
@@ -565,7 +371,7 @@
       "value": 2
     },
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "maximumOnDemandScanThreads",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_maximumondemandscanthreads",
@@ -635,7 +441,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "passiveMode",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_passivemode",
@@ -715,10 +521,204 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "exclusions_item_extension",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_exclusions",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_scantype",
+    "settingName": "Weekly Scheduled scan type",
+    "settingDescription": "Selects whether to perform a quick scan or full scan. Quick scan checks the most likely locations where malware could be registered to start with the system. Full scan checks all files and running programs on your hard disk.",
+    "categoryId": "0e1122f8-2bbf-475b-bce0-9e43a2f5e475",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Schedule Scan"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#scheduled-scan"
+    ],
+    "baseUri": "PayloadContent/scheduledScan",
+    "offsetUri": "weeklyConfiguration/scanType",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "linux_mdatp_managed_antivirusengine_scheduledscan_scantype_quick",
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_scantype_quick",
+        "description": null,
+        "helpText": null,
+        "name": "Quick scan",
+        "displayName": "Quick scan",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "quick"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_scantype_full",
+        "description": null,
+        "helpText": null,
+        "name": "Full scan",
+        "displayName": "Full scan",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "full"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": null,
+    "name": "scheduledScan/scanType",
+    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_scantype",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_scantype_quick",
+        "description": null,
+        "helpText": null,
+        "name": "Quick scan",
+        "displayName": "Quick scan",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "quick"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_scantype_full",
+        "description": null,
+        "helpText": null,
+        "name": "Full scan",
+        "displayName": "Full scan",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "full"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_weeklytimeofday",
+    "settingName": "Weekly Schedule scan time",
+    "settingDescription": "Selects the time of day that the Defender weekly scan should run. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120.",
+    "categoryId": "0e1122f8-2bbf-475b-bce0-9e43a2f5e475",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Schedule Scan"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#scheduled-scan"
+    ],
+    "baseUri": "PayloadContent/scheduledScan",
+    "offsetUri": "weeklyConfiguration/timeOfDay",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 1380,
+      "minimumValue": 0
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 120
+    },
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": null,
+    "name": "scheduledScan/weeklyConfiguration/timeOfDay",
+    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_weeklytimeofday",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_mdatp_managed_cloudservice_definitionupdatesinterval",
+    "settingName": "Security intelligence Update time interval (seconds)",
+    "settingDescription": "Allows setting the time interval at which offline security intelligence updates are triggered on endpoints.",
+    "categoryId": "93099bd4-c685-434b-9d72-f0cb6db5e753",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Cloud delivered protection preferences"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#definitionupd…"
+    ],
+    "baseUri": "PayloadContent/cloudService",
+    "offsetUri": "definitionUpdatesInterval",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 86400,
+      "minimumValue": 0
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 60
+    },
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": "Allows to set the time interval at which the security intelligence updates will be downloaded on the endpoint from the cloud or local server if offline security intelligence is turned ON.",
+    "name": "definitionUpdatesInterval",
+    "rootDefinitionId": "linux_mdatp_managed_cloudservice_definitionupdatesinterval",
     "settingDefinitionId": null,
     "definitionDescription": null,
     "dataType": null,
@@ -826,7 +826,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "cloudBlockLevel",
     "rootDefinitionId": "linux_mdatp_managed_cloudservice_cloudblocklevel",
@@ -905,6 +905,828 @@
         "dependedOnBy": []
       }
     ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_exclusionsmergepolicy",
+    "settingName": "Exclusions merge",
+    "settingDescription": "Specify the merge policy for exclusions. This can be a combination of administrator-defined and user-defined exclusions (merge) or only administrator-defined exclusions (admin_only). This setting can be used to restrict local users from defining their own exclusions.",
+    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#exclusion-merge-policy"
+    ],
+    "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
+    "offsetUri": "exclusionsMergePolicy",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.apple.managedclient.preferences_exclusionsmergepolicy_0",
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "mdm,appleRemoteManagement"
+    },
+    "options": [
+      {
+        "itemId": "com.apple.managedclient.preferences_exclusionsmergepolicy_0",
+        "description": null,
+        "helpText": null,
+        "name": "merge",
+        "displayName": "merge",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "merge"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.apple.managedclient.preferences_exclusionsmergepolicy_1",
+        "description": null,
+        "helpText": null,
+        "name": "admin_only",
+        "displayName": "admin_only",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "admin_only"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": null,
+    "name": "exclusionsMergePolicy",
+    "rootDefinitionId": "com.apple.managedclient.preferences_exclusionsmergepolicy",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.apple.managedclient.preferences_exclusionsmergepolicy_0",
+        "description": null,
+        "helpText": null,
+        "name": "merge",
+        "displayName": "merge",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "merge"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.apple.managedclient.preferences_exclusionsmergepolicy_1",
+        "description": null,
+        "helpText": null,
+        "name": "admin_only",
+        "displayName": "admin_only",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "admin_only"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine",
+    "settingName": "Enforcement level",
+    "settingDescription": "Antivirus engine enforcement mode",
+    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "infoUrls": [
+      "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-preferences#enforcement-level-for-antivirus-engine"
+    ],
+    "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
+    "offsetUri": "enforcementLevel",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine_2",
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "mdm,appleRemoteManagement"
+    },
+    "options": [
+      {
+        "itemId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine_0",
+        "description": null,
+        "helpText": null,
+        "name": "passive",
+        "displayName": "passive",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "passive"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine_1",
+        "description": null,
+        "helpText": null,
+        "name": "on_demand",
+        "displayName": "on_demand",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "on_demand"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine_2",
+        "description": null,
+        "helpText": null,
+        "name": "real_time",
+        "displayName": "real_time",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "real_time"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": null,
+    "name": "enforcementLevel",
+    "rootDefinitionId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine_0",
+        "description": null,
+        "helpText": null,
+        "name": "passive",
+        "displayName": "passive",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "passive"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine_1",
+        "description": null,
+        "helpText": null,
+        "name": "on_demand",
+        "displayName": "on_demand",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "on_demand"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine_2",
+        "description": null,
+        "helpText": null,
+        "name": "real_time",
+        "displayName": "real_time",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "real_time"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_exclusions_item_extension",
+    "settingName": "File extension",
+    "settingDescription": null,
+    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "infoUrls": [],
+    "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
+    "offsetUri": "exclusions/[{0}]/extension",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "mdm,appleRemoteManagement,microsoftSense"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 1032,
+      "minimumLength": 1,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": null,
+    "name": "exclusions_item_extension",
+    "rootDefinitionId": "com.apple.managedclient.preferences_exclusions",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent",
+    "settingName": "Automatic sample submission Consent",
+    "settingDescription": "Sends sample files to Microsoft to help protect device users and your organization from potential threats",
+    "categoryId": "93099bd4-c685-434b-9d72-f0cb6db5e753",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Cloud delivered protection preferences"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#enable--disable-automatic-sample-submissions"
+    ],
+    "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/cloudService",
+    "offsetUri": "automaticSampleSubmissionConsent",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent_1",
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "mdm,appleRemoteManagement,microsoftSense"
+    },
+    "options": [
+      {
+        "itemId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent_0",
+        "description": null,
+        "helpText": null,
+        "name": "none",
+        "displayName": "none",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "none"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent_1",
+        "description": null,
+        "helpText": null,
+        "name": "safe",
+        "displayName": "safe",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "safe"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent_2",
+        "description": null,
+        "helpText": null,
+        "name": "all",
+        "displayName": "all",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "all"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": null,
+    "name": "automaticSampleSubmissionConsent",
+    "rootDefinitionId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent_0",
+        "description": null,
+        "helpText": null,
+        "name": "none",
+        "displayName": "none",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "none"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent_1",
+        "description": null,
+        "helpText": null,
+        "name": "safe",
+        "displayName": "safe",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "safe"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent_2",
+        "description": null,
+        "helpText": null,
+        "name": "all",
+        "displayName": "all",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "all"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disablednsparsing",
+    "settingName": "Disable DNS parsing",
+    "settingDescription": "Disables parsing of DNS traffic",
+    "categoryId": "269c487f-8902-486a-88dd-db9b9b4454b8",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Network protection"
+    ],
+    "infoUrls": [],
+    "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/networkProtection",
+    "offsetUri": "disableDnsParsing",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "com.apple.managedclient.preferences_disablednsparsing_false",
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "mdm,appleRemoteManagement,microsoftSense"
+    },
+    "options": [
+      {
+        "itemId": "com.apple.managedclient.preferences_disablednsparsing_false",
+        "description": null,
+        "helpText": null,
+        "name": "Disabled",
+        "displayName": "Disabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.apple.managedclient.preferences_disablednsparsing_true",
+        "description": null,
+        "helpText": null,
+        "name": "Enabled",
+        "displayName": "Enabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": null,
+    "name": "disableDnsParsing",
+    "rootDefinitionId": "com.apple.managedclient.preferences_disablednsparsing",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "com.apple.managedclient.preferences_disablednsparsing_false",
+        "description": null,
+        "helpText": null,
+        "name": "Disabled",
+        "displayName": "Disabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "com.apple.managedclient.preferences_disablednsparsing_true",
+        "description": null,
+        "helpText": null,
+        "name": "Enabled",
+        "displayName": "Enabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_enforcementlevel",
+    "settingName": "Enforcement Level",
+    "settingDescription": "Specifies the enforcement preference of antivirus engine. Real-time: Real-time protection (scan files as they're modified) is enabled. On-demand: Files are scanned only on demand and real-time protection is turned off. Passive: Runs the antivirus engine in passive mode.",
+    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "infoUrls": [
+      "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/linux-preferences?view=o365-worldwide#enforcement-level-for-antivirus-engine"
+    ],
+    "baseUri": "PayloadContent/antivirusEngine",
+    "offsetUri": "enforcementLevel",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "linux_mdatp_managed_antivirusengine_enforcementlevel_2",
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_enforcementlevel_0",
+        "description": null,
+        "helpText": null,
+        "name": "Realtime",
+        "displayName": "Realtime",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "real_time"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_enforcementlevel_1",
+        "description": null,
+        "helpText": null,
+        "name": "OnDemand",
+        "displayName": "OnDemand",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "on_demand"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_enforcementlevel_2",
+        "description": null,
+        "helpText": null,
+        "name": "Passive",
+        "displayName": "Passive",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "passive"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": null,
+    "name": "enforcementLevel",
+    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_enforcementlevel",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_enforcementlevel_0",
+        "description": null,
+        "helpText": null,
+        "name": "Realtime",
+        "displayName": "Realtime",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "real_time"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_enforcementlevel_1",
+        "description": null,
+        "helpText": null,
+        "name": "OnDemand",
+        "displayName": "OnDemand",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "on_demand"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_enforcementlevel_2",
+        "description": null,
+        "helpText": null,
+        "name": "Passive",
+        "displayName": "Passive",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "passive"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_behaviormonitoring",
+    "settingName": "Enable behavior monitoring",
+    "settingDescription": "Whether the antivirus engine runs behavior monitoring and blocking or not.",
+    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "infoUrls": [
+      "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/linux-preferences?view=o365-worldwide#enabledisable-behavior-monitoring"
+    ],
+    "baseUri": "PayloadContent/antivirusEngine",
+    "offsetUri": "behaviorMonitoring",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "linux_mdatp_managed_antivirusengine_behaviormonitoring_0",
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_behaviormonitoring_0",
+        "description": null,
+        "helpText": null,
+        "name": "Disabled",
+        "displayName": "Disabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "disabled"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_behaviormonitoring_1",
+        "description": null,
+        "helpText": null,
+        "name": "Enabled",
+        "displayName": "Enabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "enabled"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": null,
+    "name": "behaviorMonitoring",
+    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_behaviormonitoring",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_behaviormonitoring_0",
+        "description": null,
+        "helpText": null,
+        "name": "Disabled",
+        "displayName": "Disabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "disabled"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_behaviormonitoring_1",
+        "description": null,
+        "helpText": null,
+        "name": "Enabled",
+        "displayName": "Enabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "enabled"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scanresultsretentiondays",
+    "settingName": "Scan results retention",
+    "settingDescription": "Specify the number of days that results are retained in the scan history on the device. Old scan results are removed from the history. Old quarantined files that are also removed from the disk.",
+    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#antivirus-scan-history-retention-in-days"
+    ],
+    "baseUri": "PayloadContent/antivirusEngine",
+    "offsetUri": "scanResultsRetentionDays",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 180,
+      "minimumValue": 1
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 90
+    },
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": null,
+    "name": "scanResultsRetentionDays",
+    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scanresultsretentiondays",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_exclusions_item_name",
+    "settingName": "File name",
+    "settingDescription": "Process name, either or full path or file name, wildcards supported",
+    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "infoUrls": [],
+    "baseUri": "PayloadContent/antivirusEngine",
+    "offsetUri": "exclusions/[{0}]/name",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 0,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": null,
+    "name": "exclusions_item_name",
+    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_exclusions",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
     "dependencies": []
   },
   {
@@ -1064,7 +1886,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "scheduledScan/dayOfWeek",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_dayofweek",
@@ -1202,828 +2024,6 @@
     "dependencies": []
   },
   {
-    "settingId": "com.apple.managedclient.preferences_exclusionsmergepolicy",
-    "settingName": "Exclusions merge",
-    "settingDescription": "Specify the merge policy for exclusions. This can be a combination of administrator-defined and user-defined exclusions (merge) or only administrator-defined exclusions (admin_only). This setting can be used to restrict local users from defining their own exclusions.",
-    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "infoUrls": [
-      "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#exclusion-merge-policy"
-    ],
-    "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
-    "offsetUri": "exclusionsMergePolicy",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "com.apple.managedclient.preferences_exclusionsmergepolicy_0",
-    "applicability": {
-      "description": null,
-      "platform": "macOS",
-      "deviceMode": "none",
-      "technologies": "mdm,appleRemoteManagement"
-    },
-    "options": [
-      {
-        "itemId": "com.apple.managedclient.preferences_exclusionsmergepolicy_0",
-        "description": null,
-        "helpText": null,
-        "name": "merge",
-        "displayName": "merge",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "merge"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.apple.managedclient.preferences_exclusionsmergepolicy_1",
-        "description": null,
-        "helpText": null,
-        "name": "admin_only",
-        "displayName": "admin_only",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "admin_only"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": null,
-    "name": "exclusionsMergePolicy",
-    "rootDefinitionId": "com.apple.managedclient.preferences_exclusionsmergepolicy",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "com.apple.managedclient.preferences_exclusionsmergepolicy_0",
-        "description": null,
-        "helpText": null,
-        "name": "merge",
-        "displayName": "merge",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "merge"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.apple.managedclient.preferences_exclusionsmergepolicy_1",
-        "description": null,
-        "helpText": null,
-        "name": "admin_only",
-        "displayName": "admin_only",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "admin_only"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine",
-    "settingName": "Enforcement level",
-    "settingDescription": "Antivirus engine enforcement mode",
-    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Antivirus engine"
-    ],
-    "infoUrls": [
-      "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-preferences#enforcement-level-for-antivirus-engine"
-    ],
-    "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
-    "offsetUri": "enforcementLevel",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine_2",
-    "applicability": {
-      "description": null,
-      "platform": "macOS",
-      "deviceMode": "none",
-      "technologies": "mdm,appleRemoteManagement"
-    },
-    "options": [
-      {
-        "itemId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine_0",
-        "description": null,
-        "helpText": null,
-        "name": "passive",
-        "displayName": "passive",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "passive"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine_1",
-        "description": null,
-        "helpText": null,
-        "name": "on_demand",
-        "displayName": "on_demand",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "on_demand"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine_2",
-        "description": null,
-        "helpText": null,
-        "name": "real_time",
-        "displayName": "real_time",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "real_time"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": null,
-    "name": "enforcementLevel",
-    "rootDefinitionId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine_0",
-        "description": null,
-        "helpText": null,
-        "name": "passive",
-        "displayName": "passive",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "passive"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine_1",
-        "description": null,
-        "helpText": null,
-        "name": "on_demand",
-        "displayName": "on_demand",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "on_demand"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine_2",
-        "description": null,
-        "helpText": null,
-        "name": "real_time",
-        "displayName": "real_time",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "real_time"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_exclusions_item_extension",
-    "settingName": "File extension",
-    "settingDescription": null,
-    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "infoUrls": [],
-    "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/antivirusEngine",
-    "offsetUri": "exclusions/[{0}]/extension",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "macOS",
-      "deviceMode": "none",
-      "technologies": "mdm,appleRemoteManagement,microsoftSense"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
-      "format": "none",
-      "inputValidationSchema": null,
-      "maximumLength": 1032,
-      "minimumLength": 1,
-      "isSecret": false,
-      "fileTypes": []
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-      "settingValueTemplateReference": null,
-      "value": ""
-    },
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": null,
-    "name": "exclusions_item_extension",
-    "rootDefinitionId": "com.apple.managedclient.preferences_exclusions",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent",
-    "settingName": "Automatic sample submission Consent",
-    "settingDescription": "Sends sample files to Microsoft to help protect device users and your organization from potential threats",
-    "categoryId": "93099bd4-c685-434b-9d72-f0cb6db5e753",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Cloud delivered protection preferences"
-    ],
-    "infoUrls": [
-      "https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/mac-preferences#enable--disable-automatic-sample-submissions"
-    ],
-    "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/cloudService",
-    "offsetUri": "automaticSampleSubmissionConsent",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent_1",
-    "applicability": {
-      "description": null,
-      "platform": "macOS",
-      "deviceMode": "none",
-      "technologies": "mdm,appleRemoteManagement,microsoftSense"
-    },
-    "options": [
-      {
-        "itemId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent_0",
-        "description": null,
-        "helpText": null,
-        "name": "none",
-        "displayName": "none",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "none"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent_1",
-        "description": null,
-        "helpText": null,
-        "name": "safe",
-        "displayName": "safe",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "safe"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent_2",
-        "description": null,
-        "helpText": null,
-        "name": "all",
-        "displayName": "all",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "all"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": null,
-    "name": "automaticSampleSubmissionConsent",
-    "rootDefinitionId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent_0",
-        "description": null,
-        "helpText": null,
-        "name": "none",
-        "displayName": "none",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "none"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent_1",
-        "description": null,
-        "helpText": null,
-        "name": "safe",
-        "displayName": "safe",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "safe"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent_2",
-        "description": null,
-        "helpText": null,
-        "name": "all",
-        "displayName": "all",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "all"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_disablednsparsing",
-    "settingName": "Disable DNS parsing",
-    "settingDescription": "Disables parsing of DNS traffic",
-    "categoryId": "269c487f-8902-486a-88dd-db9b9b4454b8",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Network protection"
-    ],
-    "infoUrls": [],
-    "baseUri": "PayloadContent/com.microsoft.wdav/Forced/[0]/mcx_preference_settings/networkProtection",
-    "offsetUri": "disableDnsParsing",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "com.apple.managedclient.preferences_disablednsparsing_false",
-    "applicability": {
-      "description": null,
-      "platform": "macOS",
-      "deviceMode": "none",
-      "technologies": "mdm,appleRemoteManagement,microsoftSense"
-    },
-    "options": [
-      {
-        "itemId": "com.apple.managedclient.preferences_disablednsparsing_false",
-        "description": null,
-        "helpText": null,
-        "name": "Disabled",
-        "displayName": "Disabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.apple.managedclient.preferences_disablednsparsing_true",
-        "description": null,
-        "helpText": null,
-        "name": "Enabled",
-        "displayName": "Enabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": null,
-    "name": "disableDnsParsing",
-    "rootDefinitionId": "com.apple.managedclient.preferences_disablednsparsing",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "com.apple.managedclient.preferences_disablednsparsing_false",
-        "description": null,
-        "helpText": null,
-        "name": "Disabled",
-        "displayName": "Disabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "com.apple.managedclient.preferences_disablednsparsing_true",
-        "description": null,
-        "helpText": null,
-        "name": "Enabled",
-        "displayName": "Enabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_enforcementlevel",
-    "settingName": "Enforcement Level",
-    "settingDescription": "Specifies the enforcement preference of antivirus engine. Real-time: Real-time protection (scan files as they're modified) is enabled. On-demand: Files are scanned only on demand and real-time protection is turned off. Passive: Runs the antivirus engine in passive mode.",
-    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Antivirus engine"
-    ],
-    "infoUrls": [
-      "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/linux-preferences?view=o365-worldwide#enforcement-level-for-antivirus-engine"
-    ],
-    "baseUri": "PayloadContent/antivirusEngine",
-    "offsetUri": "enforcementLevel",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "linux_mdatp_managed_antivirusengine_enforcementlevel_2",
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "microsoftSense"
-    },
-    "options": [
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_enforcementlevel_0",
-        "description": null,
-        "helpText": null,
-        "name": "Realtime",
-        "displayName": "Realtime",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "real_time"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_enforcementlevel_1",
-        "description": null,
-        "helpText": null,
-        "name": "OnDemand",
-        "displayName": "OnDemand",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "on_demand"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_enforcementlevel_2",
-        "description": null,
-        "helpText": null,
-        "name": "Passive",
-        "displayName": "Passive",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "passive"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": null,
-    "name": "enforcementLevel",
-    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_enforcementlevel",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_enforcementlevel_0",
-        "description": null,
-        "helpText": null,
-        "name": "Realtime",
-        "displayName": "Realtime",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "real_time"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_enforcementlevel_1",
-        "description": null,
-        "helpText": null,
-        "name": "OnDemand",
-        "displayName": "OnDemand",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "on_demand"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_enforcementlevel_2",
-        "description": null,
-        "helpText": null,
-        "name": "Passive",
-        "displayName": "Passive",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "passive"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_behaviormonitoring",
-    "settingName": "Enable behavior monitoring",
-    "settingDescription": "Whether the antivirus engine runs behavior monitoring and blocking or not.",
-    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Antivirus engine"
-    ],
-    "infoUrls": [
-      "https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/linux-preferences?view=o365-worldwide#enabledisable-behavior-monitoring"
-    ],
-    "baseUri": "PayloadContent/antivirusEngine",
-    "offsetUri": "behaviorMonitoring",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "linux_mdatp_managed_antivirusengine_behaviormonitoring_0",
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "microsoftSense"
-    },
-    "options": [
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_behaviormonitoring_0",
-        "description": null,
-        "helpText": null,
-        "name": "Disabled",
-        "displayName": "Disabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "disabled"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_behaviormonitoring_1",
-        "description": null,
-        "helpText": null,
-        "name": "Enabled",
-        "displayName": "Enabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "enabled"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": null,
-    "name": "behaviorMonitoring",
-    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_behaviormonitoring",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_behaviormonitoring_0",
-        "description": null,
-        "helpText": null,
-        "name": "Disabled",
-        "displayName": "Disabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "disabled"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_behaviormonitoring_1",
-        "description": null,
-        "helpText": null,
-        "name": "Enabled",
-        "displayName": "Enabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "enabled"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_scanresultsretentiondays",
-    "settingName": "Scan results retention",
-    "settingDescription": "Specify the number of days that results are retained in the scan history on the device. Old scan results are removed from the history. Old quarantined files that are also removed from the disk.",
-    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "infoUrls": [
-      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#antivirus-scan-history-retention-in-days"
-    ],
-    "baseUri": "PayloadContent/antivirusEngine",
-    "offsetUri": "scanResultsRetentionDays",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "microsoftSense"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
-      "maximumValue": 180,
-      "minimumValue": 1
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-      "settingValueTemplateReference": null,
-      "value": 90
-    },
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": null,
-    "name": "scanResultsRetentionDays",
-    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scanresultsretentiondays",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_exclusions_item_name",
-    "settingName": "File name",
-    "settingDescription": "Process name, either or full path or file name, wildcards supported",
-    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "infoUrls": [],
-    "baseUri": "PayloadContent/antivirusEngine",
-    "offsetUri": "exclusions/[{0}]/name",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "microsoftSense"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
-      "format": "none",
-      "inputValidationSchema": null,
-      "maximumLength": 0,
-      "minimumLength": 0,
-      "isSecret": false,
-      "fileTypes": []
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-      "settingValueTemplateReference": null,
-      "value": ""
-    },
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": null,
-    "name": "exclusions_item_name",
-    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_exclusions",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
     "settingId": "linux_mdatp_managed_exclusionsettings_exclusions_item_path",
     "settingName": "Path",
     "settingDescription": "Path to exclude, wildcards are NOT supported",
@@ -2063,7 +2063,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "exclusions_item_path",
     "rootDefinitionId": "linux_mdatp_managed_exclusionsettings_exclusions",
@@ -2071,320 +2071,6 @@
     "definitionDescription": null,
     "dataType": null,
     "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "mde_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud",
-    "settingName": "Offline Definition Update Fallback To Cloud",
-    "settingDescription": "Whether to fall back to cloud updates if offline updates fail.",
-    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Antivirus engine"
-    ],
-    "infoUrls": [
-      "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/offline-Definition-Update-FallbackToCloud"
-    ],
-    "baseUri": "PayloadContent/antivirusEngine",
-    "offsetUri": "offlineDefinitionUpdateFallbackToCloud",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "mde_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud_false",
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "microsoftSense"
-    },
-    "options": [
-      {
-        "itemId": "mde_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud_false",
-        "description": null,
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "mde_managed_antivirusengine_offlinedefinitionupdate_true",
-            "parentSettingId": "mde_managed_antivirusengine_offlinedefinitionupdate"
-          }
-        ],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "mde_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud_true",
-        "description": null,
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "mde_managed_antivirusengine_offlinedefinitionupdate_true",
-            "parentSettingId": "mde_managed_antivirusengine_offlinedefinitionupdate"
-          }
-        ],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": "Choose True to allow fallback to cloud update when offline update fails.",
-    "name": "offlineDefinitionUpdateFallbackToCloud",
-    "rootDefinitionId": "mde_managed_antivirusengine_offlinedefinitionupdate",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "mde_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud_false",
-        "description": null,
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "mde_managed_antivirusengine_offlinedefinitionupdate_true",
-            "parentSettingId": "mde_managed_antivirusengine_offlinedefinitionupdate"
-          }
-        ],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "mde_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud_true",
-        "description": null,
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "mde_managed_antivirusengine_offlinedefinitionupdate_true",
-            "parentSettingId": "mde_managed_antivirusengine_offlinedefinitionupdate"
-          }
-        ],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_checkfordefinitionsupdate",
-    "settingName": "Schedule Signature Updates Before Running Scan",
-    "settingDescription": "This policy setting allows you to manage whether a check for new security intelligence definitions will occur before running a schedule scan. If you enable this setting, a check for new definitions will occur before running a scan. If you disable this setting or do not configure this setting, the scan will start using the existing definitions.",
-    "categoryId": "0e1122f8-2bbf-475b-bce0-9e43a2f5e475",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Schedule Scan"
-    ],
-    "infoUrls": [
-      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#scheduled-scan"
-    ],
-    "baseUri": "PayloadContent/scheduledScan",
-    "offsetUri": "checkForDefinitionsUpdate",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "linux_mdatp_managed_antivirusengine_scheduledscan_checkfordefinitionsupdate_false",
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "microsoftSense"
-    },
-    "options": [
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_checkfordefinitionsupdate_false",
-        "description": null,
-        "helpText": null,
-        "name": "Disabled",
-        "displayName": "Disabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_checkfordefinitionsupdate_true",
-        "description": null,
-        "helpText": null,
-        "name": "Enabled",
-        "displayName": "Enabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": null,
-    "name": "scheduledScan/checkForDefinitionsUpdate",
-    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_checkfordefinitionsupdate",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_checkfordefinitionsupdate_false",
-        "description": null,
-        "helpText": null,
-        "name": "Disabled",
-        "displayName": "Disabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_checkfordefinitionsupdate_true",
-        "description": null,
-        "helpText": null,
-        "name": "Enabled",
-        "displayName": "Enabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_runscanwhenidle",
-    "settingName": "Run scan when device is idle",
-    "settingDescription": "When enabled, the scheduled scan will only start when the device is considered idle- meaning minimal CPU usage and no active user sessions. This helps reduce performance impact during peak usage hours. If the device remains busy, the scan will be deferred until idle conditions are met.",
-    "categoryId": "0e1122f8-2bbf-475b-bce0-9e43a2f5e475",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Schedule Scan"
-    ],
-    "infoUrls": [
-      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#scheduled-scan"
-    ],
-    "baseUri": "PayloadContent/scheduledScan",
-    "offsetUri": "runScanWhenIdle",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "linux_mdatp_managed_antivirusengine_scheduledscan_runscanwhenidle_false",
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "microsoftSense"
-    },
-    "options": [
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_runscanwhenidle_false",
-        "description": null,
-        "helpText": null,
-        "name": "Disabled",
-        "displayName": "Disabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_runscanwhenidle_true",
-        "description": null,
-        "helpText": null,
-        "name": "Enabled",
-        "displayName": "Enabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": null,
-    "name": "scheduledScan/runScanWhenIdle",
-    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_runscanwhenidle",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_runscanwhenidle_false",
-        "description": null,
-        "helpText": null,
-        "name": "Disabled",
-        "displayName": "Disabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_runscanwhenidle_true",
-        "description": null,
-        "helpText": null,
-        "name": "Enabled",
-        "displayName": "Enabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
     "dependencies": []
   },
   {
@@ -2426,7 +2112,7 @@
       "value": 90
     },
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "scanResultsRetentionDays",
     "rootDefinitionId": "com.apple.managedclient.preferences_scanresultsretentiondays",
@@ -2495,7 +2181,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "scanArchives",
     "rootDefinitionId": "com.apple.managedclient.preferences_scanarchives",
@@ -2621,7 +2307,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "threatTypeSettings_item_value",
     "rootDefinitionId": "com.apple.managedclient.preferences_threattypesettings",
@@ -2748,7 +2434,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "scanAfterDefinitionUpdate",
     "rootDefinitionId": "com.apple.managedclient.preferences_scanafterdefinitionupdate",
@@ -2844,7 +2530,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "disableRdpParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disablerdpparsing",
@@ -2923,7 +2609,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "tags_item_value",
     "rootDefinitionId": "linux_mdatp_managed_edr_tags",
@@ -2931,6 +2617,124 @@
     "definitionDescription": null,
     "dataType": null,
     "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "mde_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud",
+    "settingName": "Offline Definition Update Fallback To Cloud",
+    "settingDescription": "Whether to fall back to cloud updates if offline updates fail.",
+    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "infoUrls": [
+      "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/offline-Definition-Update-FallbackToCloud"
+    ],
+    "baseUri": "PayloadContent/antivirusEngine",
+    "offsetUri": "offlineDefinitionUpdateFallbackToCloud",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "mde_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud_false",
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [
+      {
+        "itemId": "mde_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud_false",
+        "description": null,
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "mde_managed_antivirusengine_offlinedefinitionupdate_true",
+            "parentSettingId": "mde_managed_antivirusengine_offlinedefinitionupdate"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "mde_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud_true",
+        "description": null,
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "mde_managed_antivirusengine_offlinedefinitionupdate_true",
+            "parentSettingId": "mde_managed_antivirusengine_offlinedefinitionupdate"
+          }
+        ],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": "Choose True to allow fallback to cloud update when offline update fails.",
+    "name": "offlineDefinitionUpdateFallbackToCloud",
+    "rootDefinitionId": "mde_managed_antivirusengine_offlinedefinitionupdate",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "mde_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud_false",
+        "description": null,
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "mde_managed_antivirusengine_offlinedefinitionupdate_true",
+            "parentSettingId": "mde_managed_antivirusengine_offlinedefinitionupdate"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "mde_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud_true",
+        "description": null,
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "mde_managed_antivirusengine_offlinedefinitionupdate_true",
+            "parentSettingId": "mde_managed_antivirusengine_offlinedefinitionupdate"
+          }
+        ],
+        "dependedOnBy": []
+      }
+    ],
     "dependencies": []
   },
   {
@@ -2976,7 +2780,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "disallowedThreatActions",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_disallowedthreatactions",
@@ -2984,6 +2788,202 @@
     "definitionDescription": null,
     "dataType": null,
     "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_checkfordefinitionsupdate",
+    "settingName": "Schedule Signature Updates Before Running Scan",
+    "settingDescription": "This policy setting allows you to manage whether a check for new security intelligence definitions will occur before running a schedule scan. If you enable this setting, a check for new definitions will occur before running a scan. If you disable this setting or do not configure this setting, the scan will start using the existing definitions.",
+    "categoryId": "0e1122f8-2bbf-475b-bce0-9e43a2f5e475",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Schedule Scan"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#scheduled-scan"
+    ],
+    "baseUri": "PayloadContent/scheduledScan",
+    "offsetUri": "checkForDefinitionsUpdate",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "linux_mdatp_managed_antivirusengine_scheduledscan_checkfordefinitionsupdate_false",
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_checkfordefinitionsupdate_false",
+        "description": null,
+        "helpText": null,
+        "name": "Disabled",
+        "displayName": "Disabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_checkfordefinitionsupdate_true",
+        "description": null,
+        "helpText": null,
+        "name": "Enabled",
+        "displayName": "Enabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": null,
+    "name": "scheduledScan/checkForDefinitionsUpdate",
+    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_checkfordefinitionsupdate",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_checkfordefinitionsupdate_false",
+        "description": null,
+        "helpText": null,
+        "name": "Disabled",
+        "displayName": "Disabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_checkfordefinitionsupdate_true",
+        "description": null,
+        "helpText": null,
+        "name": "Enabled",
+        "displayName": "Enabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_runscanwhenidle",
+    "settingName": "Run scan when device is idle",
+    "settingDescription": "When enabled, the scheduled scan will only start when the device is considered idle- meaning minimal CPU usage and no active user sessions. This helps reduce performance impact during peak usage hours. If the device remains busy, the scan will be deferred until idle conditions are met.",
+    "categoryId": "0e1122f8-2bbf-475b-bce0-9e43a2f5e475",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Schedule Scan"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#scheduled-scan"
+    ],
+    "baseUri": "PayloadContent/scheduledScan",
+    "offsetUri": "runScanWhenIdle",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "linux_mdatp_managed_antivirusengine_scheduledscan_runscanwhenidle_false",
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_runscanwhenidle_false",
+        "description": null,
+        "helpText": null,
+        "name": "Disabled",
+        "displayName": "Disabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_runscanwhenidle_true",
+        "description": null,
+        "helpText": null,
+        "name": "Enabled",
+        "displayName": "Enabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": null,
+    "name": "scheduledScan/runScanWhenIdle",
+    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_runscanwhenidle",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_runscanwhenidle_false",
+        "description": null,
+        "helpText": null,
+        "name": "Disabled",
+        "displayName": "Disabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_runscanwhenidle_true",
+        "description": null,
+        "helpText": null,
+        "name": "Enabled",
+        "displayName": "Enabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
     "dependencies": []
   },
   {
@@ -3026,7 +3026,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "exclusions_item_name",
     "rootDefinitionId": "linux_mdatp_managed_exclusionsettings_exclusions",
@@ -3066,156 +3066,10 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "exclusions",
     "rootDefinitionId": "linux_mdatp_managed_exclusionsettings_exclusions",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_lowpriorityscheduledscan",
-    "settingName": "Run with low CPU priority",
-    "settingDescription": "This policy setting allows you to enable or disable low CPU priority for scheduled scans. If you enable this setting, low CPU priority will be used during scheduled scans. If you disable or do not configure this setting, not changes will be made to CPU priority for scheduled scans.",
-    "categoryId": "0e1122f8-2bbf-475b-bce0-9e43a2f5e475",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Schedule Scan"
-    ],
-    "infoUrls": [
-      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#scheduled-scan"
-    ],
-    "baseUri": "PayloadContent/scheduledScan",
-    "offsetUri": "lowPriorityScheduledScan",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "linux_mdatp_managed_antivirusengine_scheduledscan_lowpriorityscheduledscan_false",
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "microsoftSense"
-    },
-    "options": [
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_lowpriorityscheduledscan_false",
-        "description": null,
-        "helpText": null,
-        "name": "Disabled",
-        "displayName": "Disabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_lowpriorityscheduledscan_true",
-        "description": null,
-        "helpText": null,
-        "name": "Enabled",
-        "displayName": "Enabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": null,
-    "name": "scheduledScan/lowPriorityScheduledScan",
-    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_lowpriorityscheduledscan",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_lowpriorityscheduledscan_false",
-        "description": null,
-        "helpText": null,
-        "name": "Disabled",
-        "displayName": "Disabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_lowpriorityscheduledscan_true",
-        "description": null,
-        "helpText": null,
-        "name": "Enabled",
-        "displayName": "Enabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_timeofday",
-    "settingName": "Daily Schedule scan time",
-    "settingDescription": "Selects the time of day that the Defender daily scan should run. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120.",
-    "categoryId": "0e1122f8-2bbf-475b-bce0-9e43a2f5e475",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Schedule Scan"
-    ],
-    "infoUrls": [
-      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#scheduled-scan"
-    ],
-    "baseUri": "PayloadContent/scheduledScan",
-    "offsetUri": "dailyConfiguration/timeOfDay",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "microsoftSense"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
-      "maximumValue": 1380,
-      "minimumValue": 0
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-      "settingValueTemplateReference": null,
-      "value": 120
-    },
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": null,
-    "name": "scheduledScan/dailyConfiguration/timeOfDay",
-    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_timeofday",
     "settingDefinitionId": null,
     "definitionDescription": null,
     "dataType": null,
@@ -3265,7 +3119,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "allowedThreats",
     "rootDefinitionId": "com.apple.managedclient.preferences_allowedthreats",
@@ -3343,7 +3197,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "threatTypeSettings_item_key",
     "rootDefinitionId": "com.apple.managedclient.preferences_threattypesettings",
@@ -3452,7 +3306,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "threatTypeSettingsMergePolicy",
     "rootDefinitionId": "com.apple.managedclient.preferences_threattypesettingsmergepolicy",
@@ -3550,7 +3404,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "enableFileHashComputation",
     "rootDefinitionId": "com.apple.managedclient.preferences_enablefilehashcomputation",
@@ -3631,7 +3485,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "unmonitoredFilesystems",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_unmonitoredfilesystems",
@@ -3701,7 +3555,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "threatTypeSettingsMergePolicy",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_threattypesettingsmergepolicy",
@@ -3781,7 +3635,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "exclusions_item_path",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_exclusions",
@@ -3792,24 +3646,24 @@
     "dependencies": []
   },
   {
-    "settingId": "mde_managed_antivirusengine_offlinedefinitionupdate",
-    "settingName": "Enable offline definition update",
-    "settingDescription": "Determines whether offline definition updates are enabled for antivirus.",
-    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
+    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_lowpriorityscheduledscan",
+    "settingName": "Run with low CPU priority",
+    "settingDescription": "This policy setting allows you to enable or disable low CPU priority for scheduled scans. If you enable this setting, low CPU priority will be used during scheduled scans. If you disable or do not configure this setting, not changes will be made to CPU priority for scheduled scans.",
+    "categoryId": "0e1122f8-2bbf-475b-bce0-9e43a2f5e475",
     "categoryName": "Microsoft Defender",
     "keywords": [
-      "Antivirus engine"
+      "Schedule Scan"
     ],
     "infoUrls": [
-      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#enable--offlineDefinitionUpdate"
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#scheduled-scan"
     ],
-    "baseUri": "PayloadContent/antivirusEngine",
-    "offsetUri": "offlineDefinitionUpdate",
+    "baseUri": "PayloadContent/scheduledScan",
+    "offsetUri": "lowPriorityScheduledScan",
     "settingUsage": "configuration",
     "uxBehavior": "toggle",
     "visibility": "settingsCatalog,template",
     "riskLevel": "low",
-    "defaultOptionId": "mde_managed_antivirusengine_offlinedefinitionupdate_true",
+    "defaultOptionId": "linux_mdatp_managed_antivirusengine_scheduledscan_lowpriorityscheduledscan_false",
     "applicability": {
       "description": null,
       "platform": "linux",
@@ -3818,7 +3672,7 @@
     },
     "options": [
       {
-        "itemId": "mde_managed_antivirusengine_offlinedefinitionupdate_false",
+        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_lowpriorityscheduledscan_false",
         "description": null,
         "helpText": null,
         "name": "Disabled",
@@ -3832,7 +3686,7 @@
         "dependedOnBy": []
       },
       {
-        "itemId": "mde_managed_antivirusengine_offlinedefinitionupdate_true",
+        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_lowpriorityscheduledscan_true",
         "description": null,
         "helpText": null,
         "name": "Enabled",
@@ -3843,32 +3697,23 @@
           "value": "true"
         },
         "dependentOn": [],
-        "dependedOnBy": [
-          {
-            "dependedOnBy": "mde_managed_antivirusengine_offlinedefinitionupdateurl",
-            "required": false
-          },
-          {
-            "dependedOnBy": "mde_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud",
-            "required": false
-          }
-        ]
+        "dependedOnBy": []
       }
     ],
     "referredSettingInformationList": [],
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
-    "name": "offlineDefinitionUpdate",
-    "rootDefinitionId": "mde_managed_antivirusengine_offlinedefinitionupdate",
+    "name": "scheduledScan/lowPriorityScheduledScan",
+    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_lowpriorityscheduledscan",
     "settingDefinitionId": null,
     "definitionDescription": null,
     "dataType": null,
     "valueOptions": [
       {
-        "itemId": "mde_managed_antivirusengine_offlinedefinitionupdate_false",
+        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_lowpriorityscheduledscan_false",
         "description": null,
         "helpText": null,
         "name": "Disabled",
@@ -3882,7 +3727,7 @@
         "dependedOnBy": []
       },
       {
-        "itemId": "mde_managed_antivirusengine_offlinedefinitionupdate_true",
+        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_lowpriorityscheduledscan_true",
         "description": null,
         "helpText": null,
         "name": "Enabled",
@@ -3893,76 +3738,15 @@
           "value": "true"
         },
         "dependentOn": [],
-        "dependedOnBy": [
-          {
-            "dependedOnBy": "mde_managed_antivirusengine_offlinedefinitionupdateurl",
-            "required": false
-          },
-          {
-            "dependedOnBy": "mde_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud",
-            "required": false
-          }
-        ]
+        "dependedOnBy": []
       }
     ],
     "dependencies": []
   },
   {
-    "settingId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdateurl",
-    "settingName": "Offline security intelligence update URL or directory",
-    "settingDescription": "The URL or directory path where offline security intelligence updates are served.",
-    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Antivirus engine"
-    ],
-    "infoUrls": [
-      "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/offline-definition-update-Url"
-    ],
-    "baseUri": "PayloadContent/antivirusEngine",
-    "offsetUri": "offlineDefinitionUpdateUrl",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "microsoftSense"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
-      "format": "none",
-      "inputValidationSchema": "{\"type\": \"string\", \"anyOf\": [{\"format\": \"uri\", \"pattern\": \"^https?://.*\"}, {\"pattern\": \"^/.*\"}], \"examples\": [\"http://172.22.199.67:8000/linux/production/\", \"/tmp/wdav-update/linux/production\"], \"minLength\": 1}",
-      "maximumLength": 0,
-      "minimumLength": 0,
-      "isSecret": false,
-      "fileTypes": []
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-      "settingValueTemplateReference": null,
-      "value": ""
-    },
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": "Specify the location where security intelligence updates are served. This can either be a local server URL (e.g., http://172.22.199.67:8000/linux/production/) or an absolute directory path (e.g., /tmp/wdav-update/linux/production).",
-    "name": "offlineDefinitionUpdateUrl",
-    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_ignoreexclusions",
-    "settingName": "Ignore Exclusions",
-    "settingDescription": "This setting allows you to select whether to ignore exclusions set on the client while running schedule scans",
+    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_timeofday",
+    "settingName": "Daily Schedule scan time",
+    "settingDescription": "Selects the time of day that the Defender daily scan should run. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120.",
     "categoryId": "0e1122f8-2bbf-475b-bce0-9e43a2f5e475",
     "categoryName": "Microsoft Defender",
     "keywords": [
@@ -3972,105 +3756,7 @@
       "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#scheduled-scan"
     ],
     "baseUri": "PayloadContent/scheduledScan",
-    "offsetUri": "ignoreExclusions",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "linux_mdatp_managed_antivirusengine_scheduledscan_ignoreexclusions_false",
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "microsoftSense"
-    },
-    "options": [
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_ignoreexclusions_false",
-        "description": null,
-        "helpText": null,
-        "name": "Disable",
-        "displayName": "Disable",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_ignoreexclusions_true",
-        "description": null,
-        "helpText": null,
-        "name": "Enable",
-        "displayName": "Enable",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": null,
-    "name": "scheduledScan/ignoreExclusions",
-    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_ignoreexclusions",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_ignoreexclusions_false",
-        "description": null,
-        "helpText": null,
-        "name": "Disable",
-        "displayName": "Disable",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_ignoreexclusions_true",
-        "description": null,
-        "helpText": null,
-        "name": "Enable",
-        "displayName": "Enable",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_interval",
-    "settingName": "Daily Schedule quick scan interval (hours)",
-    "settingDescription": "This setting is only applicable if you have selcted scan type as quick scan. Select the interval at which you want to run quick scans. Quick scans can be run multiple times a day.  0 (never), every 1 (hour) to every 24 (hours, one scan per day).",
-    "categoryId": "0e1122f8-2bbf-475b-bce0-9e43a2f5e475",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Schedule Scan"
-    ],
-    "infoUrls": [
-      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#scheduled-scan"
-    ],
-    "baseUri": "PayloadContent/scheduledScan",
-    "offsetUri": "dailyConfiguration/interval",
+    "offsetUri": "dailyConfiguration/timeOfDay",
     "settingUsage": "configuration",
     "uxBehavior": "default",
     "visibility": "settingsCatalog,template",
@@ -4086,19 +3772,19 @@
     "referredSettingInformationList": [],
     "valueDefinition": {
       "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
-      "maximumValue": 24,
+      "maximumValue": 1380,
       "minimumValue": 0
     },
     "defaultValue": {
       "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
       "settingValueTemplateReference": null,
-      "value": 24
+      "value": 120
     },
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
-    "name": "scheduledScan/interval",
-    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_interval",
+    "name": "scheduledScan/dailyConfiguration/timeOfDay",
+    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_timeofday",
     "settingDefinitionId": null,
     "definitionDescription": null,
     "dataType": null,
@@ -4211,7 +3897,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "exclusions_item_$type",
     "rootDefinitionId": "com.apple.managedclient.preferences_exclusions",
@@ -4341,7 +4027,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "disallowedThreatActions",
     "rootDefinitionId": "com.apple.managedclient.preferences_disallowedthreatactions",
@@ -4411,7 +4097,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "exclusionsMergePolicy",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_exclusionsmergepolicy",
@@ -4481,7 +4167,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "threatTypeSettings",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_threattypesettings",
@@ -4559,7 +4245,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "exclusions_item_isDirectory",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_exclusions",
@@ -4609,6 +4295,122 @@
     "dependencies": []
   },
   {
+    "settingId": "mde_managed_antivirusengine_offlinedefinitionupdate",
+    "settingName": "Enable offline definition update",
+    "settingDescription": "Determines whether offline definition updates are enabled for antivirus.",
+    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#enable--offlineDefinitionUpdate"
+    ],
+    "baseUri": "PayloadContent/antivirusEngine",
+    "offsetUri": "offlineDefinitionUpdate",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "mde_managed_antivirusengine_offlinedefinitionupdate_true",
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [
+      {
+        "itemId": "mde_managed_antivirusengine_offlinedefinitionupdate_false",
+        "description": null,
+        "helpText": null,
+        "name": "Disabled",
+        "displayName": "Disabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "mde_managed_antivirusengine_offlinedefinitionupdate_true",
+        "description": null,
+        "helpText": null,
+        "name": "Enabled",
+        "displayName": "Enabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "mde_managed_antivirusengine_offlinedefinitionupdateurl",
+            "required": false
+          },
+          {
+            "dependedOnBy": "mde_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud",
+            "required": false
+          }
+        ]
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": null,
+    "name": "offlineDefinitionUpdate",
+    "rootDefinitionId": "mde_managed_antivirusengine_offlinedefinitionupdate",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "mde_managed_antivirusengine_offlinedefinitionupdate_false",
+        "description": null,
+        "helpText": null,
+        "name": "Disabled",
+        "displayName": "Disabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "mde_managed_antivirusengine_offlinedefinitionupdate_true",
+        "description": null,
+        "helpText": null,
+        "name": "Enabled",
+        "displayName": "Enabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "mde_managed_antivirusengine_offlinedefinitionupdateurl",
+            "required": false
+          },
+          {
+            "dependedOnBy": "mde_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud",
+            "required": false
+          }
+        ]
+      }
+    ],
+    "dependencies": []
+  },
+  {
     "settingId": "linux_mdatp_managed_antivirusengine_scanhistorymaximumitems",
     "settingName": "Scan history size",
     "settingDescription": "Specify the maximum number of entries to keep in the scan history. Entries include all on-demand scans performed in the past and all antivirus detections.",
@@ -4647,7 +4449,7 @@
       "value": 10000
     },
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "scanHistoryMaximumItems",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scanhistorymaximumitems",
@@ -4688,7 +4490,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "exclusions",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_exclusions",
@@ -4757,7 +4559,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "enableFileHashComputation",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_enablefilehashcomputation",
@@ -4794,6 +4596,204 @@
         "dependedOnBy": []
       }
     ],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdateurl",
+    "settingName": "Offline security intelligence update URL or directory",
+    "settingDescription": "The URL or directory path where offline security intelligence updates are served.",
+    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "infoUrls": [
+      "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/offline-definition-update-Url"
+    ],
+    "baseUri": "PayloadContent/antivirusEngine",
+    "offsetUri": "offlineDefinitionUpdateUrl",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": "{\"type\": \"string\", \"anyOf\": [{\"format\": \"uri\", \"pattern\": \"^https?://.*\"}, {\"pattern\": \"^/.*\"}], \"examples\": [\"http://172.22.199.67:8000/linux/production/\", \"/tmp/wdav-update/linux/production\"], \"minLength\": 1}",
+      "maximumLength": 0,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": "Specify the location where security intelligence updates are served. This can either be a local server URL (e.g., http://172.22.199.67:8000/linux/production/) or an absolute directory path (e.g., /tmp/wdav-update/linux/production).",
+    "name": "offlineDefinitionUpdateUrl",
+    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_ignoreexclusions",
+    "settingName": "Ignore Exclusions",
+    "settingDescription": "This setting allows you to select whether to ignore exclusions set on the client while running schedule scans",
+    "categoryId": "0e1122f8-2bbf-475b-bce0-9e43a2f5e475",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Schedule Scan"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#scheduled-scan"
+    ],
+    "baseUri": "PayloadContent/scheduledScan",
+    "offsetUri": "ignoreExclusions",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "linux_mdatp_managed_antivirusengine_scheduledscan_ignoreexclusions_false",
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_ignoreexclusions_false",
+        "description": null,
+        "helpText": null,
+        "name": "Disable",
+        "displayName": "Disable",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_ignoreexclusions_true",
+        "description": null,
+        "helpText": null,
+        "name": "Enable",
+        "displayName": "Enable",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": null,
+    "name": "scheduledScan/ignoreExclusions",
+    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_ignoreexclusions",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_ignoreexclusions_false",
+        "description": null,
+        "helpText": null,
+        "name": "Disable",
+        "displayName": "Disable",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_scheduledscan_ignoreexclusions_true",
+        "description": null,
+        "helpText": null,
+        "name": "Enable",
+        "displayName": "Enable",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_interval",
+    "settingName": "Daily Schedule quick scan interval (hours)",
+    "settingDescription": "This setting is only applicable if you have selcted scan type as quick scan. Select the interval at which you want to run quick scans. Quick scans can be run multiple times a day.  0 (never), every 1 (hour) to every 24 (hours, one scan per day).",
+    "categoryId": "0e1122f8-2bbf-475b-bce0-9e43a2f5e475",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Schedule Scan"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#scheduled-scan"
+    ],
+    "baseUri": "PayloadContent/scheduledScan",
+    "offsetUri": "dailyConfiguration/interval",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 24,
+      "minimumValue": 0
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 24
+    },
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": null,
+    "name": "scheduledScan/interval",
+    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_interval",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
     "dependencies": []
   },
   {
@@ -4856,7 +4856,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "enabled",
     "rootDefinitionId": "linux_mdatp_managed_cloudservice_enabled",
@@ -4955,7 +4955,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "automaticDefinitionUpdateEnabled",
     "rootDefinitionId": "linux_mdatp_managed_cloudservice_automaticdefinitionupdateenabled",
@@ -4995,124 +4995,6 @@
     "dependencies": []
   },
   {
-    "settingId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud",
-    "settingName": "Offline security intelligence update fallback to cloud",
-    "settingDescription": "Whether to fall back to cloud updates if offline security intelligence updates fail.",
-    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Antivirus engine"
-    ],
-    "infoUrls": [
-      "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/offline-Definition-Update-FallbackToCloud"
-    ],
-    "baseUri": "PayloadContent/antivirusEngine",
-    "offsetUri": "offlineDefinitionUpdateFallbackToCloud",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud_false",
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "microsoftSense"
-    },
-    "options": [
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud_false",
-        "description": null,
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate_enabled",
-            "parentSettingId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate"
-          }
-        ],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud_true",
-        "description": null,
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate_enabled",
-            "parentSettingId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate"
-          }
-        ],
-        "dependedOnBy": []
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": "Choose True to allow fallback to cloud update when offline security intelligence update fails.",
-    "name": "offlineDefinitionUpdateFallbackToCloud",
-    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud_false",
-        "description": null,
-        "helpText": null,
-        "name": "False",
-        "displayName": "False",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "false"
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate_enabled",
-            "parentSettingId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate"
-          }
-        ],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud_true",
-        "description": null,
-        "helpText": null,
-        "name": "True",
-        "displayName": "True",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "true"
-        },
-        "dependentOn": [
-          {
-            "dependentOn": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate_enabled",
-            "parentSettingId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate"
-          }
-        ],
-        "dependedOnBy": []
-      }
-    ],
-    "dependencies": []
-  },
-  {
     "settingId": "com.apple.managedclient.preferences_threattypesettings",
     "settingName": "Threat type settings",
     "settingDescription": "The threatTypeSettings preference in the antivirus engine is used to control how certain threat types are handled by the product.",
@@ -5143,7 +5025,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "threatTypeSettings",
     "rootDefinitionId": "com.apple.managedclient.preferences_threattypesettings",
@@ -5221,7 +5103,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "exclusions_item_isDirectory",
     "rootDefinitionId": "com.apple.managedclient.preferences_exclusions",
@@ -5312,7 +5194,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "proxy",
     "rootDefinitionId": "com.apple.managedclient.preferences_proxy",
@@ -5382,7 +5264,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "diagnosticLevel",
     "rootDefinitionId": "com.apple.managedclient.preferences_diagnosticlevel",
@@ -5459,7 +5341,7 @@
       "value": 7
     },
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "definitionUpdateDue",
     "rootDefinitionId": "com.apple.managedclient.preferences_definitionupdatedue",
@@ -5526,7 +5408,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "disableSmtpParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disablesmtpparsing",
@@ -5613,7 +5495,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "tags_item_key",
     "rootDefinitionId": "linux_mdatp_managed_edr_tags",
@@ -5686,7 +5568,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "allowedThreats",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_allowedthreats",
@@ -5694,6 +5576,124 @@
     "definitionDescription": null,
     "dataType": null,
     "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud",
+    "settingName": "Offline security intelligence update fallback to cloud",
+    "settingDescription": "Whether to fall back to cloud updates if offline security intelligence updates fail.",
+    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "infoUrls": [
+      "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/offline-Definition-Update-FallbackToCloud"
+    ],
+    "baseUri": "PayloadContent/antivirusEngine",
+    "offsetUri": "offlineDefinitionUpdateFallbackToCloud",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud_false",
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud_false",
+        "description": null,
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate_enabled",
+            "parentSettingId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud_true",
+        "description": null,
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate_enabled",
+            "parentSettingId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate"
+          }
+        ],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": "Choose True to allow fallback to cloud update when offline security intelligence update fails.",
+    "name": "offlineDefinitionUpdateFallbackToCloud",
+    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud_false",
+        "description": null,
+        "helpText": null,
+        "name": "False",
+        "displayName": "False",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "false"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate_enabled",
+            "parentSettingId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud_true",
+        "description": null,
+        "helpText": null,
+        "name": "True",
+        "displayName": "True",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "true"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate_enabled",
+            "parentSettingId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate"
+          }
+        ],
+        "dependedOnBy": []
+      }
+    ],
     "dependencies": []
   },
   {
@@ -5764,7 +5764,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "threatTypeSettings_item_key",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_threattypesettings",
@@ -5872,7 +5872,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "scanArchives",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scanarchives",
@@ -5985,7 +5985,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "automaticSampleSubmissionConsent",
     "rootDefinitionId": "linux_mdatp_managed_cloudservice_automaticsamplesubmissionconsent",
@@ -6039,106 +6039,6 @@
     "dependencies": []
   },
   {
-    "settingId": "mde_managed_antivirusengine_offlinedefinitionupdateurl",
-    "settingName": "Offline Definition Update URL or Directory",
-    "settingDescription": "The URL or directory path where offline definition updates are served.",
-    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Antivirus engine"
-    ],
-    "infoUrls": [
-      "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/offline-definition-update-Url"
-    ],
-    "baseUri": "PayloadContent/antivirusEngine",
-    "offsetUri": "offlineDefinitionUpdateUrl",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "microsoftSense"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
-      "format": "none",
-      "inputValidationSchema": "{\"type\": \"string\", \"anyOf\": [{\"format\": \"uri\", \"pattern\": \"^https?://.*\"}, {\"pattern\": \"^/.*\"}], \"examples\": [\"http://172.22.199.67:8000/linux/production/\", \"/tmp/wdav-update/linux/production\"], \"minLength\": 1}",
-      "maximumLength": 0,
-      "minimumLength": 0,
-      "isSecret": false,
-      "fileTypes": []
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-      "settingValueTemplateReference": null,
-      "value": ""
-    },
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": "Specify the location where security intelligence updates are served. This can either be a local server URL (e.g., http://172.22.199.67:8000/linux/production/) or an absolute directory path (e.g., /tmp/wdav-update/linux/production).",
-    "name": "offlineDefinitionUpdateUrl",
-    "rootDefinitionId": "mde_managed_antivirusengine_offlinedefinitionupdate",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_randomizescanstarttime",
-    "settingName": "Randomize scan start time",
-    "settingDescription": "Only applicable for daily quick scans or weekly quick/full scans. Randomize the start time of the scan by up to specified number of hours. For example, if a scan is scheduled for 2 p.m and randomizeScanStartTime is set to 2, the scan commences at a random time between 2 p.m and 4 p.m. Set to 0 to disable randomization.",
-    "categoryId": "0e1122f8-2bbf-475b-bce0-9e43a2f5e475",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Schedule Scan"
-    ],
-    "infoUrls": [
-      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#scheduled-scan"
-    ],
-    "baseUri": "PayloadContent/scheduledScan",
-    "offsetUri": "randomizeScanStartTime",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "microsoftSense"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
-      "maximumValue": 23,
-      "minimumValue": 0
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-      "settingValueTemplateReference": null,
-      "value": 0
-    },
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": "Sets the number of hours (0–23) by which the scan start time is randomized. 0 disables randomization.",
-    "name": "scheduledScan/randomizeScanStartTime",
-    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_randomizescanstarttime",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
     "settingId": "com.apple.managedclient.preferences_exclusions_item_path",
     "settingName": "Path",
     "settingDescription": "Path to exclude, wildcards are supported",
@@ -6179,7 +6079,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "exclusions_item_path",
     "rootDefinitionId": "com.apple.managedclient.preferences_exclusions",
@@ -6227,7 +6127,7 @@
       "value": 2
     },
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "maximumOnDemandScanThreads",
     "rootDefinitionId": "com.apple.managedclient.preferences_maximumondemandscanthreads",
@@ -6276,7 +6176,7 @@
       "value": 10000
     },
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "scanHistoryMaximumItems",
     "rootDefinitionId": "com.apple.managedclient.preferences_scanhistorymaximumitems",
@@ -6345,7 +6245,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "offlineDefinitionUpdateFallbackToCloud",
     "rootDefinitionId": "com.apple.managedclient.preferences_offlinedefinitionupdatefallbacktocloud",
@@ -6444,7 +6344,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "automaticDefinitionUpdateEnabled",
     "rootDefinitionId": "com.apple.managedclient.preferences_automaticdefinitionupdateenabled",
@@ -6543,7 +6443,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "automaticSampleSubmission",
     "rootDefinitionId": "com.apple.managedclient.preferences_automaticsamplesubmission",
@@ -6639,7 +6539,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "disableHttpParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disablehttpparsing",
@@ -6784,7 +6684,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "exclusions_item_$type",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_exclusions",
@@ -6872,6 +6772,58 @@
     "dependencies": []
   },
   {
+    "settingId": "mde_managed_antivirusengine_offlinedefinitionupdateurl",
+    "settingName": "Offline Definition Update URL or Directory",
+    "settingDescription": "The URL or directory path where offline definition updates are served.",
+    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "infoUrls": [
+      "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/offline-definition-update-Url"
+    ],
+    "baseUri": "PayloadContent/antivirusEngine",
+    "offsetUri": "offlineDefinitionUpdateUrl",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": "{\"type\": \"string\", \"anyOf\": [{\"format\": \"uri\", \"pattern\": \"^https?://.*\"}, {\"pattern\": \"^/.*\"}], \"examples\": [\"http://172.22.199.67:8000/linux/production/\", \"/tmp/wdav-update/linux/production\"], \"minLength\": 1}",
+      "maximumLength": 0,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": "Specify the location where security intelligence updates are served. This can either be a local server URL (e.g., http://172.22.199.67:8000/linux/production/) or an absolute directory path (e.g., /tmp/wdav-update/linux/production).",
+    "name": "offlineDefinitionUpdateUrl",
+    "rootDefinitionId": "mde_managed_antivirusengine_offlinedefinitionupdate",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
     "settingId": "linux_mdatp_managed_antivirusengine_scanafterdefinitionupdate",
     "settingName": "Enable scanning after definition update",
     "settingDescription": "Specifies whether to start a process scan after new security intelligence updates are downloaded on the device.",
@@ -6930,7 +6882,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "scanAfterDefinitionUpdate",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scanafterdefinitionupdate",
@@ -6967,6 +6919,54 @@
         "dependedOnBy": []
       }
     ],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_randomizescanstarttime",
+    "settingName": "Randomize scan start time",
+    "settingDescription": "Only applicable for daily quick scans or weekly quick/full scans. Randomize the start time of the scan by up to specified number of hours. For example, if a scan is scheduled for 2 p.m and randomizeScanStartTime is set to 2, the scan commences at a random time between 2 p.m and 4 p.m. Set to 0 to disable randomization.",
+    "categoryId": "0e1122f8-2bbf-475b-bce0-9e43a2f5e475",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Schedule Scan"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#scheduled-scan"
+    ],
+    "baseUri": "PayloadContent/scheduledScan",
+    "offsetUri": "randomizeScanStartTime",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 23,
+      "minimumValue": 0
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 0
+    },
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": "Sets the number of hours (0–23) by which the scan start time is randomized. 0 disables randomization.",
+    "name": "scheduledScan/randomizeScanStartTime",
+    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_randomizescanstarttime",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
     "dependencies": []
   },
   {
@@ -7010,7 +7010,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "exclusions_item_name",
     "rootDefinitionId": "com.apple.managedclient.preferences_exclusions",
@@ -7121,7 +7121,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "cloudBlockLevel",
     "rootDefinitionId": "com.apple.managedclient.preferences_cloudblocklevel",
@@ -7240,7 +7240,7 @@
       "value": 28800
     },
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "definitionUpdatesInterval",
     "rootDefinitionId": "com.apple.managedclient.preferences_definitionupdatesinterval",
@@ -7307,7 +7307,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "disableInboundConnectionFiltering",
     "rootDefinitionId": "com.apple.managedclient.preferences_disableinboundconnectionfiltering",
@@ -7403,7 +7403,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "disableIcmpParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disableicmpparsing",
@@ -7499,7 +7499,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "enableSetWarnToBlock",
     "rootDefinitionId": "com.apple.managedclient.preferences_enablesetwarntoblock",
@@ -7539,122 +7539,6 @@
     "dependencies": []
   },
   {
-    "settingId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate",
-    "settingName": "Enable offline security intelligence update",
-    "settingDescription": "Determines whether offline security intelligence updates are enabled for antivirus.",
-    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
-    "categoryName": "Microsoft Defender",
-    "keywords": [
-      "Antivirus engine"
-    ],
-    "infoUrls": [
-      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#enable--offlineDefinitionUpdate"
-    ],
-    "baseUri": "PayloadContent/antivirusEngine",
-    "offsetUri": "offlineDefinitionUpdate",
-    "settingUsage": "configuration",
-    "uxBehavior": "toggle",
-    "visibility": "settingsCatalog,template",
-    "riskLevel": "low",
-    "defaultOptionId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate_disabled",
-    "applicability": {
-      "description": null,
-      "platform": "linux",
-      "deviceMode": "none",
-      "technologies": "microsoftSense"
-    },
-    "options": [
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate_disabled",
-        "description": null,
-        "helpText": null,
-        "name": "Disabled",
-        "displayName": "Disabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "disabled"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate_enabled",
-        "description": null,
-        "helpText": null,
-        "name": "Enabled",
-        "displayName": "Enabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "enabled"
-        },
-        "dependentOn": [],
-        "dependedOnBy": [
-          {
-            "dependedOnBy": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdateurl",
-            "required": false
-          },
-          {
-            "dependedOnBy": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud",
-            "required": false
-          }
-        ]
-      }
-    ],
-    "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
-    "accessTypes": "none",
-    "version": "639118729572626080",
-    "helpText": null,
-    "name": "offlineDefinitionUpdate",
-    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate_disabled",
-        "description": null,
-        "helpText": null,
-        "name": "Disabled",
-        "displayName": "Disabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "disabled"
-        },
-        "dependentOn": [],
-        "dependedOnBy": []
-      },
-      {
-        "itemId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate_enabled",
-        "description": null,
-        "helpText": null,
-        "name": "Enabled",
-        "displayName": "Enabled",
-        "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-          "settingValueTemplateReference": null,
-          "value": "enabled"
-        },
-        "dependentOn": [],
-        "dependedOnBy": [
-          {
-            "dependedOnBy": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdateurl",
-            "required": false
-          },
-          {
-            "dependedOnBy": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud",
-            "required": false
-          }
-        ]
-      }
-    ],
-    "dependencies": []
-  },
-  {
     "settingId": "com.apple.managedclient.preferences_exclusions",
     "settingName": "Scan exclusions",
     "settingDescription": "Entities that have been excluded from the scan. Exclusions can be specified by full paths, extensions, or file names.",
@@ -7685,7 +7569,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "exclusions",
     "rootDefinitionId": "com.apple.managedclient.preferences_exclusions",
@@ -7755,7 +7639,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "enableRealTimeProtection",
     "rootDefinitionId": "com.apple.managedclient.preferences_enablerealtimeprotection",
@@ -7836,7 +7720,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "offlineDefinitionUpdateUrl",
     "rootDefinitionId": "com.apple.managedclient.preferences_offlinedefinitionupdateurl",
@@ -7905,7 +7789,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "offlineDefinitionUpdate",
     "rootDefinitionId": "com.apple.managedclient.preferences_offlinedefinitionupdate",
@@ -8001,7 +7885,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "disableDnsOverTcpParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disablednsovertcpparsing",
@@ -8097,7 +7981,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "disableSshParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disablesshparsing",
@@ -8193,7 +8077,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "disableTlsParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disabletlsparsing",
@@ -8304,7 +8188,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "enforcementLevel",
     "rootDefinitionId": "com.apple.managedclient.preferences_enforcementlevel",
@@ -8416,7 +8300,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "nonExecMountPolicy",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_nonexecmountpolicy",
@@ -8515,7 +8399,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "enableRealTimeProtection",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_enablerealtimeprotection",
@@ -8550,6 +8434,122 @@
         },
         "dependentOn": [],
         "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate",
+    "settingName": "Enable offline security intelligence update",
+    "settingDescription": "Determines whether offline security intelligence updates are enabled for antivirus.",
+    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "infoUrls": [
+      "https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#enable--offlineDefinitionUpdate"
+    ],
+    "baseUri": "PayloadContent/antivirusEngine",
+    "offsetUri": "offlineDefinitionUpdate",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate_disabled",
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate_disabled",
+        "description": null,
+        "helpText": null,
+        "name": "Disabled",
+        "displayName": "Disabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "disabled"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate_enabled",
+        "description": null,
+        "helpText": null,
+        "name": "Enabled",
+        "displayName": "Enabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "enabled"
+        },
+        "dependentOn": [],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdateurl",
+            "required": false
+          },
+          {
+            "dependedOnBy": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud",
+            "required": false
+          }
+        ]
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639141423527581363",
+    "helpText": null,
+    "name": "offlineDefinitionUpdate",
+    "rootDefinitionId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate_disabled",
+        "description": null,
+        "helpText": null,
+        "name": "Disabled",
+        "displayName": "Disabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "disabled"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate_enabled",
+        "description": null,
+        "helpText": null,
+        "name": "Enabled",
+        "displayName": "Enabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "enabled"
+        },
+        "dependentOn": [],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdateurl",
+            "required": false
+          },
+          {
+            "dependedOnBy": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud",
+            "required": false
+          }
+        ]
       }
     ],
     "dependencies": []
@@ -8641,7 +8641,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "threatTypeSettings_item_value",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_threattypesettings",
@@ -8769,7 +8769,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "diagnosticLevel",
     "rootDefinitionId": "linux_mdatp_managed_cloudservice_diagnosticlevel",
@@ -8889,7 +8889,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "exclusions_item_$type",
     "rootDefinitionId": "linux_mdatp_managed_exclusionsettings_exclusions",
@@ -9019,7 +9019,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "exclusions_item_isDirectory",
     "rootDefinitionId": "linux_mdatp_managed_exclusionsettings_exclusions",
@@ -9141,7 +9141,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639118729572626080",
+    "version": "639141423527581363",
     "helpText": null,
     "name": "enforcementLevel",
     "rootDefinitionId": "linux_mdatp_managed_networkprotection_enforcementlevel",

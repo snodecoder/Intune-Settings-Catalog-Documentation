@@ -1,31 +1,5 @@
 [
   {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_inprivatemodeurlallowlist",
-    "settingName": "Allow access to a list of URLs in InPrivate mode. (User)",
-    "settingDescription": "This policy allows administrators to specify a list of URL patterns that are permitted to open in InPrivate mode. It can be used to create exceptions for URL patterns defined in 'InPrivateModeUrlBlocklist' (Block access to a list of URLs in InPrivate mode.). See how to format a URL pattern (https://go.microsoft.com/fwlink/?linkid=2095322).\r\n\r\nIf both this policy and 'InPrivateModeUrlBlocklist' are configured, the allowlist takes precedence. URLs that match a pattern on this allowlist are allowed. URLs that match the blocklist but not this allowlist are blocked. URLs that match neither list fall back to 'URLBlocklist' (Block access to a list of URLs) and 'URLAllowlist' (Define a list of allowed URLs).\r\n\r\nIf this policy is configured and 'InPrivateModeUrlBlocklist' is not configured, only the URLs specified in this allowlist can be opened in InPrivate mode. All other URLs are blocked.\r\n\r\nIf 'InPrivateModeAvailability' (Configure InPrivate mode availability) is set to disallow (value 1) but this policy is configured, InPrivate mode is available only for URLs that match the allowlist.\r\n\r\nIf this policy is not configured, no exceptions are applied to 'InPrivateModeUrlBlocklist' or 'InPrivateModeAvailability'.\r\n\r\nThis policy applies only to InPrivate mode. To allow URLs across all browsing modes and profiles, use the 'URLAllowlist' policy.\r\n\r\nThis policy supports up to 1000 entries.\r\n\r\nExample value:\r\n\r\nexample.com\r\nhttps://ssl.server.com\r\nhosting.com/bad_path\r\nhttps://server:8080/path\r\n.exact.hostname.com\r\nfile://*\r\ncustom_scheme:*\r\n*",
-    "keywords": [
-      "InPrivateModeUrlAllowlist",
-      "Allow access to a list of URLs in InPrivate mode.",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_inprivatemodeurlallowlist_inprivatemodeurlallowlistdesc",
-    "settingName": "Allow access to a list of URLs in InPrivate mode. (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "InPrivateModeUrlAllowlist",
-      "Allow access to a list of URLs in InPrivate mode.",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsdaily_daysoftheweek",
     "settingName": "Days of the week",
     "settingDescription": null,
@@ -1261,6 +1235,32 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_inprivatemodeurlallowlist",
+    "settingName": "Allow access to a list of URLs in InPrivate mode. (User)",
+    "settingDescription": "This policy allows administrators to specify a list of URL patterns that are permitted to open in InPrivate mode. It can be used to create exceptions for URL patterns defined in 'InPrivateModeUrlBlocklist' (Block access to a list of URLs in InPrivate mode.). See how to format a URL pattern (https://go.microsoft.com/fwlink/?linkid=2095322).\r\n\r\nIf both this policy and 'InPrivateModeUrlBlocklist' are configured, the allowlist takes precedence. URLs that match a pattern on this allowlist are allowed. URLs that match the blocklist but not this allowlist are blocked. URLs that match neither list fall back to 'URLBlocklist' (Block access to a list of URLs) and 'URLAllowlist' (Define a list of allowed URLs).\r\n\r\nIf this policy is configured and 'InPrivateModeUrlBlocklist' is not configured, only the URLs specified in this allowlist can be opened in InPrivate mode. All other URLs are blocked.\r\n\r\nIf 'InPrivateModeAvailability' (Configure InPrivate mode availability) is set to disallow (value 1) but this policy is configured, InPrivate mode is available only for URLs that match the allowlist.\r\n\r\nIf this policy is not configured, no exceptions are applied to 'InPrivateModeUrlBlocklist' or 'InPrivateModeAvailability'.\r\n\r\nThis policy applies only to InPrivate mode. To allow URLs across all browsing modes and profiles, use the 'URLAllowlist' policy.\r\n\r\nThis policy supports up to 1000 entries.\r\n\r\nExample value:\r\n\r\nexample.com\r\nhttps://ssl.server.com\r\nhosting.com/bad_path\r\nhttps://server:8080/path\r\n.exact.hostname.com\r\nfile://*\r\ncustom_scheme:*\r\n*",
+    "keywords": [
+      "InPrivateModeUrlAllowlist",
+      "Allow access to a list of URLs in InPrivate mode.",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_inprivatemodeurlallowlist_inprivatemodeurlallowlistdesc",
+    "settingName": "Allow access to a list of URLs in InPrivate mode. (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "InPrivateModeUrlAllowlist",
+      "Allow access to a list of URLs in InPrivate mode.",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_trackingprevention",
     "settingName": "Block tracking of users' web-browsing activity",
     "settingDescription": "Lets you decide whether to block websites from tracking users' web-browsing activity.\r\n\r\nIf you enable this policy, you have the following options for setting the level of tracking prevention:\r\n\r\n* 0 = Off (no tracking prevention)\r\n\r\n* 1 = Basic (blocks harmful trackers, content and ads will be personalized)\r\n\r\n* 2 = Balanced (blocks harmful trackers and trackers from sites user has not visited; content and ads will be less personalized)\r\n\r\n* 3 = Strict (blocks harmful trackers and majority of trackers from all sites; content and ads will have minimal personalization. Some parts of sites might not work)\r\n\r\nIf you disable this policy or don't configure it, users can set their own level of tracking prevention.",
@@ -2077,15 +2077,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.xsltenabled",
-    "settingName": "Control the availability of the XSLT feature",
-    "settingDescription": "Controls whether the XSLT feature (the XSLTProcessor JavaScript API and the XSL processing instruction) is available in Microsoft Edge.\n\nIf you enable this policy, XSLT is available regardless of the browser's default configuration.\n\nIf you disable this policy, XSLT is unavailable regardless of the browser's default configuration.\n\nIf you don't configure this policy, XSLT availability is determined by the browser's default configuration and any applicable field trials.\n\nThis policy is temporary and will be removed in a future version of Microsoft Edge.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.sharedworkerbloburlfixenabled",
     "settingName": "Make SharedWorker blob URL behavior aligned with the specification",
     "settingDescription": "According to Service Worker specification\nhttps://w3c.github.io/ServiceWorker/#control-and-use-worker-client, workers\nshould inherit controllers for blob URLs. Currently, only DedicatedWorkers\ninherit the controller, while SharedWorkers do not.\n\nEnabled/Unset: Microsoft Edge inherits\nthe controller for SharedWorker blob URLs, aligning with the specification.\n\nDisabled: Behavior remains unchanged, not aligning with the specification.\n\nThis policy is temporary and will be removed in a future update.",
@@ -2134,6 +2125,15 @@
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.allowbackforwardcacheforcachecontrolnostorepageenabled",
     "settingName": "Allow pages with Cache-Control: no-store header to enter back/forward cache",
     "settingDescription": "This policy controls whether a page with Cache-Control: no-store header can be stored in back/forward cache. The website setting in this header may not expect the page to be restored from back/forward cache since some sensitive information could still be displayed after the restoration even if it's no longer accessible.\n\nIf you enable or don't configure this policy, the page with Cache-Control: no-store header is restored from back/forward cache unless the cache eviction is triggered (for example, when there's HTTP-only cookie change to the site).\n\nIf you disable this policy, the page with Cache-Control: no-store header isn't stored in back/forward cache.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.xsltenabled",
+    "settingName": "Control the availability of the XSLT feature",
+    "settingDescription": "Controls whether the XSLT feature (the XSLTProcessor JavaScript API and the XSL processing instruction) is available in Microsoft Edge.\n\nIf you enable this policy, XSLT is available regardless of the browser's default configuration.\n\nIf you disable this policy, XSLT is unavailable regardless of the browser's default configuration.\n\nIf you don't configure this policy, XSLT availability is determined by the browser's default configuration and any applicable field trials.\n\nThis policy is temporary and will be removed in a future version of Microsoft Edge.",
     "keywords": [
       "Uncategorized"
     ],
@@ -4137,29 +4137,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.standardizedbrowserzoomenabled",
-    "settingName": "Enable Standardized Browser Zoom Behavior",
-    "settingDescription": "Configures whether the CSS \"zoom\" property follows the current CSS specification or legacy behavior.\n\nWhen this policy is enabled or not configured, the CSS \"zoom\" property follows the current specification defined by the CSS Working Group:\nhttps://drafts.csswg.org/css-viewport/#zoom-property\n\nWhen this policy is disabled, the CSS \"zoom\" property uses its legacy, pre-standardized behavior.\n\nThis policy is temporary and is intended to provide time for organizations to migrate web content to the updated behavior. In a future Microsoft Edge release, this policy will be removed and the standardized behavior will be enforced by default.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_browserguestmodeenforced",
-    "settingName": "Enforce Edge guest mode",
-    "settingDescription": "Controls whether Microsoft Edge enforces Guest-only browsing.\r\n\r\nIf you enable this policy, Microsoft Edge enforces Guest sessions and prevents profile sign-in. Guest sessions run in InPrivate mode.\r\n\r\nIf you disable or don't configure this policy, users can create and use profiles. Guest mode can also be controlled separately using the BrowserGuestModeEnabled policy.",
-    "keywords": [
-      "BrowserGuestModeEnforced",
-      "Enforce Edge guest mode",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsdaily",
     "settingName": "Mute notifications daily",
     "settingDescription": null,
@@ -4447,6 +4424,15 @@
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.forcemajorversiontominorpositioninuseragent",
     "settingName": "Enable or disable freezing the User-Agent string at major version 99 (Obsolete)",
     "settingDescription": "This policy was removed in Microsoft Edge 118 and is ignored if configured.\n\nThis policy controls whether the User-Agent string major\nversion should be frozen at 99.\n\nThe User-Agent request header lets websites identify the application,\noperating system, vendor, and/or version of the requesting user agent.\nSome websites make assumptions about how this header is formatted and may\nencounter issues with version strings that include three digits in the\nmajor position (for example, 100.0.0.0).\n\nIf you set this policy to 'Default' or don't configure it, then it defaults to\nbrowser settings for the User-Agent string major version.\nIf you set this policy to 'ForceEnabled', the User-Agent string will always report the\nmajor version as 99 and include the browser's major version in the minor\nposition. For example, browser version 101.0.0.0 would send a User-Agent\nrequest header that reports version 99.101.0.0.\nIf you set this policy to 'ForceDisabled', the User-Agent string won't freeze the\nmajor version.\n\nThis policy is temporary and will be deprecated in the future. If this policy and\nUser-Agent Reduction are\nboth enabled, the User-Agent version string will always be 99.0.0.0.\n\nPolicy options mapping:\n\n* Default (0) = Default to browser settings for User-Agent string version.\n\n* ForceDisabled (1) = The User-Agent string won't freeze the major version.\n\n* ForceEnabled (2) = The User-Agent string will freeze the major version as 99 and include the browser's major version in the minor position.\n\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.standardizedbrowserzoomenabled",
+    "settingName": "Enable Standardized Browser Zoom Behavior",
+    "settingDescription": "Configures whether the CSS \"zoom\" property follows the current CSS specification or legacy behavior.\n\nWhen this policy is enabled or not configured, the CSS \"zoom\" property follows the current specification defined by the CSS Working Group:\nhttps://drafts.csswg.org/css-viewport/#zoom-property\n\nWhen this policy is disabled, the CSS \"zoom\" property uses its legacy, pre-standardized behavior.\n\nThis policy is temporary and is intended to provide time for organizations to migrate web content to the updated behavior. In a future Microsoft Edge release, this policy will be removed and the standardized behavior will be enforced by default.",
     "keywords": [
       "Uncategorized"
     ],
@@ -5373,6 +5359,20 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_browserguestmodeenforced",
+    "settingName": "Enforce Edge guest mode",
+    "settingDescription": "Controls whether Microsoft Edge enforces Guest-only browsing.\r\n\r\nIf you enable this policy, Microsoft Edge enforces Guest sessions and prevents profile sign-in. Guest sessions run in InPrivate mode.\r\n\r\nIf you disable or don't configure this policy, users can create and use profiles. Guest mode can also be controlled separately using the BrowserGuestModeEnabled policy.",
+    "keywords": [
+      "BrowserGuestModeEnforced",
+      "Enforce Edge guest mode",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_allowtrackingforurls_allowtrackingforurlsdesc",
     "settingName": "Configure tracking prevention exceptions for specific sites (Device)",
     "settingDescription": "",
@@ -6112,20 +6112,6 @@
       "DoNotSilentlyBlockProtocolsFromOrigins",
       "Define a list of protocols that can not be silently blocked by anti-flood protection",
       "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_inprivatemodeurlblocklist",
-    "settingName": "Block access to a list of URLs in InPrivate mode.",
-    "settingDescription": "This policy controls which URLs are blocked from loading in InPrivate mode in Microsoft Edge.\r\n\r\nAdministrators can specify a list of URL patterns that are blocked when users browse in InPrivate mode. For information about the supported URL pattern format, see https://go.microsoft.com/fwlink/?linkid=2095322.\r\n\r\nIf both 'InPrivateModeUrlBlocklist' (Block access to a list of URLs in InPrivate mode.) and 'InPrivateModeUrlAllowlist' (Allow access to a list of URLs in InPrivate mode.) are configured, the allowlist takes precedence.\r\n- URLs that match the allowlist are allowed.\r\n- URLs that match the blocklist but not the allowlist are blocked.\r\n- URLs that match neither list follow the behavior defined by the general 'URLBlocklist' (Block access to a list of URLs) and 'URLAllowlist' (Define a list of allowed URLs) policies.\r\n\r\nIf 'InPrivateModeUrlAllowlist' is configured and this policy is not configured, only URLs on the allowlist can be opened in InPrivate mode.\r\n\r\nIf 'InPrivateModeAvailability' (Configure InPrivate mode availability) is set to disallow (value 1) and 'InPrivateModeUrlAllowlist' is configured, InPrivate mode is available only for URLs that match the allowlist.\r\n\r\nThis policy applies only to InPrivate mode. To block URLs across all browsing modes, use 'URLBlocklist'.\r\n\r\nThis policy supports up to 1000 entries.\r\n\r\nExample value:\r\n\r\nexample.com\r\nhttps://ssl.server.com\r\nhosting.com/bad_path\r\nhttps://server:8080/path\r\n.exact.hostname.com\r\nfile://*\r\ncustom_scheme:*\r\n*",
-    "keywords": [
-      "InPrivateModeUrlBlocklist",
-      "Block access to a list of URLs in InPrivate mode.",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
       "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
@@ -7462,6 +7448,20 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_inprivatemodeurlblocklist",
+    "settingName": "Block access to a list of URLs in InPrivate mode.",
+    "settingDescription": "This policy controls which URLs are blocked from loading in InPrivate mode in Microsoft Edge.\r\n\r\nAdministrators can specify a list of URL patterns that are blocked when users browse in InPrivate mode. For information about the supported URL pattern format, see https://go.microsoft.com/fwlink/?linkid=2095322.\r\n\r\nIf both 'InPrivateModeUrlBlocklist' (Block access to a list of URLs in InPrivate mode.) and 'InPrivateModeUrlAllowlist' (Allow access to a list of URLs in InPrivate mode.) are configured, the allowlist takes precedence.\r\n- URLs that match the allowlist are allowed.\r\n- URLs that match the blocklist but not the allowlist are blocked.\r\n- URLs that match neither list follow the behavior defined by the general 'URLBlocklist' (Block access to a list of URLs) and 'URLAllowlist' (Define a list of allowed URLs) policies.\r\n\r\nIf 'InPrivateModeUrlAllowlist' is configured and this policy is not configured, only URLs on the allowlist can be opened in InPrivate mode.\r\n\r\nIf 'InPrivateModeAvailability' (Configure InPrivate mode availability) is set to disallow (value 1) and 'InPrivateModeUrlAllowlist' is configured, InPrivate mode is available only for URLs that match the allowlist.\r\n\r\nThis policy applies only to InPrivate mode. To block URLs across all browsing modes, use 'URLBlocklist'.\r\n\r\nThis policy supports up to 1000 entries.\r\n\r\nExample value:\r\n\r\nexample.com\r\nhttps://ssl.server.com\r\nhosting.com/bad_path\r\nhttps://server:8080/path\r\n.exact.hostname.com\r\nfile://*\r\ncustom_scheme:*\r\n*",
+    "keywords": [
+      "InPrivateModeUrlBlocklist",
+      "Block access to a list of URLs in InPrivate mode.",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "user_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_allowtrackingforurls_allowtrackingforurlsdesc",
     "settingName": "Configure tracking prevention exceptions for specific sites (User)",
     "settingDescription": "",
@@ -8230,41 +8230,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.inprivatemodeurlallowlist",
-    "settingName": "Allow access to a list of URLs in InPrivate mode.",
-    "settingDescription": "This policy allows administrators to specify a list of URL patterns that are permitted to open in InPrivate mode. It can be used to create exceptions for URL patterns defined in \"InPrivateModeUrlBlocklist\". See how to format a URL pattern (<a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>).\n\nIf both this policy and \"InPrivateModeUrlBlocklist\" are configured, the allowlist takes precedence. URLs that match a pattern on this allowlist are allowed. URLs that match the blocklist but not this allowlist are blocked. URLs that match neither list fall back to \"URLBlocklist\" and \"URLAllowlist\".\n\nIf this policy is configured and \"InPrivateModeUrlBlocklist\" is not configured, only the URLs specified in this allowlist can be opened in InPrivate mode. All other URLs are blocked.\n\nIf \"InPrivateModeAvailability\" is set to disallow (value 1) but this policy is configured, InPrivate mode is available only for URLs that match the allowlist.\n\nIf this policy is not configured, no exceptions are applied to \"InPrivateModeUrlBlocklist\" or \"InPrivateModeAvailability\".\n\nThis policy applies only to InPrivate mode. To allow URLs across all browsing modes and profiles, use the \"URLAllowlist\" policy.\n\nThis policy supports up to 1000 entries.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_forceforegroundpriorityforalltabs",
-    "settingName": "Force foreground priority for all tabs",
-    "settingDescription": "This policy controls whether background web content runs at foreground priority.\r\n\r\nBy default, the browser optimizes resource usage by lowering the scheduling\r\npriority of content in background tabs. This helps improve overall system\r\nresponsiveness and performance for the active tab.\r\n\r\nIf you enable this policy, background web content runs at the same foreground\r\npriority as the active tab, regardless of visibility state.\r\n\r\nIf you disable or don't configure this policy, the browser determines the\r\npriority of web content based on standard heuristics. For example, content\r\nthat is not visible, not playing audio, and not participating in video calls\r\nmay be deprioritized.",
-    "keywords": [
-      "ForceForegroundPriorityForAllTabs",
-      "Force foreground priority for all tabs",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_inprivatemodeurlblocklist_inprivatemodeurlblocklistdesc",
-    "settingName": "Block access to a list of URLs in InPrivate mode. (Device)",
-    "settingDescription": "",
-    "keywords": [
-      "InPrivateModeUrlBlocklist",
-      "Block access to a list of URLs in InPrivate mode.",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autolaunchprotocolsfromorigins",
     "settingName": "Define a list of protocols that can launch an external application from listed origins without prompting the user",
     "settingDescription": "Allows you to set a list of protocols, and for each protocol an associated list of allowed origin patterns, that can launch an external application without prompting the user. The trailing separator shouldn't be included when listing the protocol and the protocol should be all lower case. For example, list \"skype\" instead of \"skype:\", \"skype://\" or \"Skype\".\n\nIf you configure this policy, a protocol is only permitted to launch an external application without prompting by policy if:\n\n- the protocol is listed\n\n- the origin of the site trying to launch the protocol matches one of the origin patterns in that protocol's allowed_origins list.\n\nIf either condition is false, the external protocol launch prompt isn't omitted, by policy.\n\nIf you don't configure this policy, no protocols can launch without a prompt. Users can opt out of prompts on a per-protocol/per-site basis unless the \"ExternalProtocolDialogShowAlwaysOpenCheckbox\" policy is set to Disabled. This policy has no impact on per-protocol/per-site prompt exemptions set by users.\n\nThe origin-matching patterns use a similar format to those for the \"URLBlocklist\" policy, which are documented at <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n\nHowever, origin-matching patterns for this policy can't contain \"/path\" or \"@query\" elements. Any pattern that contains a \"/path\" or \"@query\" element is ignored.\n\nThis policy doesn't work as expected with file://* wildcards.",
@@ -8385,6 +8350,15 @@
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.importstartuppagesettings",
     "settingName": "Allow importing of startup page settings",
     "settingDescription": "Allows users to import Startup settings from another browser into Microsoft Edge.\n\nIf you enable this policy, the Startup settings are always imported.\n\nIf you disable this policy, startup settings aren't imported at first run or at manual import.\n\nIf you don't configure this policy, startup settings are imported at first run, and users can choose whether to import this data manually by selecting browser settings option during later browsing sessions.\n\nYou can set this policy as a recommendation. This means that Microsoft Edge will import startup settings on first run, but users can select or clear **browser settings** option during manual import.\n\n**Note**: This policy currently manages importing from Microsoft Edge Legacy and Google Chrome (on Windows 7, 8, and 10) browsers.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.inprivatemodeurlallowlist",
+    "settingName": "Allow access to a list of URLs in InPrivate mode.",
+    "settingDescription": "This policy allows administrators to specify a list of URL patterns that are permitted to open in InPrivate mode. It can be used to create exceptions for URL patterns defined in \"InPrivateModeUrlBlocklist\". See how to format a URL pattern (<a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>).\n\nIf both this policy and \"InPrivateModeUrlBlocklist\" are configured, the allowlist takes precedence. URLs that match a pattern on this allowlist are allowed. URLs that match the blocklist but not this allowlist are blocked. URLs that match neither list fall back to \"URLBlocklist\" and \"URLAllowlist\".\n\nIf this policy is configured and \"InPrivateModeUrlBlocklist\" is not configured, only the URLs specified in this allowlist can be opened in InPrivate mode. All other URLs are blocked.\n\nIf \"InPrivateModeAvailability\" is set to disallow (value 1) but this policy is configured, InPrivate mode is available only for URLs that match the allowlist.\n\nIf this policy is not configured, no exceptions are applied to \"InPrivateModeUrlBlocklist\" or \"InPrivateModeAvailability\".\n\nThis policy applies only to InPrivate mode. To allow URLs across all browsing modes and profiles, use the \"URLAllowlist\" policy.\n\nThis policy supports up to 1000 entries.",
     "keywords": [
       "Uncategorized"
     ],
@@ -9578,6 +9552,32 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_forceforegroundpriorityforalltabs",
+    "settingName": "Force foreground priority for all tabs",
+    "settingDescription": "This policy controls whether background web content runs at foreground priority.\r\n\r\nBy default, the browser optimizes resource usage by lowering the scheduling\r\npriority of content in background tabs. This helps improve overall system\r\nresponsiveness and performance for the active tab.\r\n\r\nIf you enable this policy, background web content runs at the same foreground\r\npriority as the active tab, regardless of visibility state.\r\n\r\nIf you disable or don't configure this policy, the browser determines the\r\npriority of web content based on standard heuristics. For example, content\r\nthat is not visible, not playing audio, and not participating in video calls\r\nmay be deprioritized.",
+    "keywords": [
+      "ForceForegroundPriorityForAllTabs",
+      "Force foreground priority for all tabs",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_inprivatemodeurlblocklist_inprivatemodeurlblocklistdesc",
+    "settingName": "Block access to a list of URLs in InPrivate mode. (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "InPrivateModeUrlBlocklist",
+      "Block access to a list of URLs in InPrivate mode.",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_commandlineflagsecuritywarningsenabled",
     "settingName": "Enable security warnings for command-line flags",
     "settingDescription": "If disabled, this policy prevents security warnings from appearing when Microsoft Edge is launched with potentially dangerous command-line flags.\r\n\r\nIf enabled or unset, security warnings are displayed when these command-line flags are used to launch Microsoft Edge.\r\n\r\nFor example, the --disable-gpu-sandbox flag generates this warning:  You're using an unsupported command-line flag: --disable-gpu-sandbox. This poses stability and security risks.\r\n\r\nOn Windows, this policy is only available on instances that are joined to a Microsoft Active Directory domain, or Windows 10 Pro (or Enterprise) instances that are enrolled for device management.",
@@ -10173,74 +10173,6 @@
       "SandboxExternalProtocolBlocked",
       "Allow Microsoft Edge to block navigations to external protocols in a sandboxed iframe",
       "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_inprivatemodeurlblocklist",
-    "settingName": "Block access to a list of URLs in InPrivate mode. (User)",
-    "settingDescription": "This policy controls which URLs are blocked from loading in InPrivate mode in Microsoft Edge.\r\n\r\nAdministrators can specify a list of URL patterns that are blocked when users browse in InPrivate mode. For information about the supported URL pattern format, see https://go.microsoft.com/fwlink/?linkid=2095322.\r\n\r\nIf both 'InPrivateModeUrlBlocklist' (Block access to a list of URLs in InPrivate mode.) and 'InPrivateModeUrlAllowlist' (Allow access to a list of URLs in InPrivate mode.) are configured, the allowlist takes precedence.\r\n- URLs that match the allowlist are allowed.\r\n- URLs that match the blocklist but not the allowlist are blocked.\r\n- URLs that match neither list follow the behavior defined by the general 'URLBlocklist' (Block access to a list of URLs) and 'URLAllowlist' (Define a list of allowed URLs) policies.\r\n\r\nIf 'InPrivateModeUrlAllowlist' is configured and this policy is not configured, only URLs on the allowlist can be opened in InPrivate mode.\r\n\r\nIf 'InPrivateModeAvailability' (Configure InPrivate mode availability) is set to disallow (value 1) and 'InPrivateModeUrlAllowlist' is configured, InPrivate mode is available only for URLs that match the allowlist.\r\n\r\nThis policy applies only to InPrivate mode. To block URLs across all browsing modes, use 'URLBlocklist'.\r\n\r\nThis policy supports up to 1000 entries.\r\n\r\nExample value:\r\n\r\nexample.com\r\nhttps://ssl.server.com\r\nhosting.com/bad_path\r\nhttps://server:8080/path\r\n.exact.hostname.com\r\nfile://*\r\ncustom_scheme:*\r\n*",
-    "keywords": [
-      "InPrivateModeUrlBlocklist",
-      "Block access to a list of URLs in InPrivate mode.",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_forceforegroundpriorityforalltabs",
-    "settingName": "Force foreground priority for all tabs (User)",
-    "settingDescription": "This policy controls whether background web content runs at foreground priority.\r\n\r\nBy default, the browser optimizes resource usage by lowering the scheduling\r\npriority of content in background tabs. This helps improve overall system\r\nresponsiveness and performance for the active tab.\r\n\r\nIf you enable this policy, background web content runs at the same foreground\r\npriority as the active tab, regardless of visibility state.\r\n\r\nIf you disable or don't configure this policy, the browser determines the\r\npriority of web content based on standard heuristics. For example, content\r\nthat is not visible, not playing audio, and not participating in video calls\r\nmay be deprioritized.",
-    "keywords": [
-      "ForceForegroundPriorityForAllTabs",
-      "Force foreground priority for all tabs",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_browserguestmodeenforced",
-    "settingName": "Enforce Edge guest mode (User)",
-    "settingDescription": "Controls whether Microsoft Edge enforces Guest-only browsing.\r\n\r\nIf you enable this policy, Microsoft Edge enforces Guest sessions and prevents profile sign-in. Guest sessions run in InPrivate mode.\r\n\r\nIf you disable or don't configure this policy, users can create and use profiles. Guest mode can also be controlled separately using the BrowserGuestModeEnabled policy.",
-    "keywords": [
-      "BrowserGuestModeEnforced",
-      "Enforce Edge guest mode",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_inprivatemodeurlallowlist_inprivatemodeurlallowlistdesc",
-    "settingName": "Allow access to a list of URLs in InPrivate mode. (User)",
-    "settingDescription": "",
-    "keywords": [
-      "InPrivateModeUrlAllowlist",
-      "Allow access to a list of URLs in InPrivate mode.",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_xsltenabled",
-    "settingName": "Control the availability of the XSLT feature (User)",
-    "settingDescription": "Controls whether the XSLT feature (the XSLTProcessor JavaScript API and the XSL processing instruction) is available in Microsoft Edge.\r\n\r\nIf you enable this policy, XSLT is available regardless of the browser's default configuration.\r\n\r\nIf you disable this policy, XSLT is unavailable regardless of the browser's default configuration.\r\n\r\nIf you don't configure this policy, XSLT availability is determined by the browser's default configuration and any applicable field trials.\r\n\r\nThis policy is temporary and will be removed in a future version of Microsoft Edge.",
-    "keywords": [
-      "XSLTEnabled",
-      "Control the availability of the XSLT feature",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
       "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
@@ -11502,6 +11434,74 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_inprivatemodeurlblocklist",
+    "settingName": "Block access to a list of URLs in InPrivate mode. (User)",
+    "settingDescription": "This policy controls which URLs are blocked from loading in InPrivate mode in Microsoft Edge.\r\n\r\nAdministrators can specify a list of URL patterns that are blocked when users browse in InPrivate mode. For information about the supported URL pattern format, see https://go.microsoft.com/fwlink/?linkid=2095322.\r\n\r\nIf both 'InPrivateModeUrlBlocklist' (Block access to a list of URLs in InPrivate mode.) and 'InPrivateModeUrlAllowlist' (Allow access to a list of URLs in InPrivate mode.) are configured, the allowlist takes precedence.\r\n- URLs that match the allowlist are allowed.\r\n- URLs that match the blocklist but not the allowlist are blocked.\r\n- URLs that match neither list follow the behavior defined by the general 'URLBlocklist' (Block access to a list of URLs) and 'URLAllowlist' (Define a list of allowed URLs) policies.\r\n\r\nIf 'InPrivateModeUrlAllowlist' is configured and this policy is not configured, only URLs on the allowlist can be opened in InPrivate mode.\r\n\r\nIf 'InPrivateModeAvailability' (Configure InPrivate mode availability) is set to disallow (value 1) and 'InPrivateModeUrlAllowlist' is configured, InPrivate mode is available only for URLs that match the allowlist.\r\n\r\nThis policy applies only to InPrivate mode. To block URLs across all browsing modes, use 'URLBlocklist'.\r\n\r\nThis policy supports up to 1000 entries.\r\n\r\nExample value:\r\n\r\nexample.com\r\nhttps://ssl.server.com\r\nhosting.com/bad_path\r\nhttps://server:8080/path\r\n.exact.hostname.com\r\nfile://*\r\ncustom_scheme:*\r\n*",
+    "keywords": [
+      "InPrivateModeUrlBlocklist",
+      "Block access to a list of URLs in InPrivate mode.",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_forceforegroundpriorityforalltabs",
+    "settingName": "Force foreground priority for all tabs (User)",
+    "settingDescription": "This policy controls whether background web content runs at foreground priority.\r\n\r\nBy default, the browser optimizes resource usage by lowering the scheduling\r\npriority of content in background tabs. This helps improve overall system\r\nresponsiveness and performance for the active tab.\r\n\r\nIf you enable this policy, background web content runs at the same foreground\r\npriority as the active tab, regardless of visibility state.\r\n\r\nIf you disable or don't configure this policy, the browser determines the\r\npriority of web content based on standard heuristics. For example, content\r\nthat is not visible, not playing audio, and not participating in video calls\r\nmay be deprioritized.",
+    "keywords": [
+      "ForceForegroundPriorityForAllTabs",
+      "Force foreground priority for all tabs",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_browserguestmodeenforced",
+    "settingName": "Enforce Edge guest mode (User)",
+    "settingDescription": "Controls whether Microsoft Edge enforces Guest-only browsing.\r\n\r\nIf you enable this policy, Microsoft Edge enforces Guest sessions and prevents profile sign-in. Guest sessions run in InPrivate mode.\r\n\r\nIf you disable or don't configure this policy, users can create and use profiles. Guest mode can also be controlled separately using the BrowserGuestModeEnabled policy.",
+    "keywords": [
+      "BrowserGuestModeEnforced",
+      "Enforce Edge guest mode",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_inprivatemodeurlallowlist_inprivatemodeurlallowlistdesc",
+    "settingName": "Allow access to a list of URLs in InPrivate mode. (User)",
+    "settingDescription": "",
+    "keywords": [
+      "InPrivateModeUrlAllowlist",
+      "Allow access to a list of URLs in InPrivate mode.",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_xsltenabled",
+    "settingName": "Control the availability of the XSLT feature (User)",
+    "settingDescription": "Controls whether the XSLT feature (the XSLTProcessor JavaScript API and the XSL processing instruction) is available in Microsoft Edge.\r\n\r\nIf you enable this policy, XSLT is available regardless of the browser's default configuration.\r\n\r\nIf you disable this policy, XSLT is unavailable regardless of the browser's default configuration.\r\n\r\nIf you don't configure this policy, XSLT availability is determined by the browser's default configuration and any applicable field trials.\r\n\r\nThis policy is temporary and will be removed in a future version of Microsoft Edge.",
+    "keywords": [
+      "XSLTEnabled",
+      "Control the availability of the XSLT feature",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "user_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_directinvokeenabled",
     "settingName": "Allow users to open files using the DirectInvoke protocol (User)",
     "settingDescription": "Allow users to open files using the DirectInvoke protocol. The DirectInvoke protocol allows websites to request that the browser open files from a specific URL using a specific file handler on the user's computer or device.\r\n\r\nIf you enable or don't configure this policy, users can open files using the DirectInvoke protocol.\r\n\r\nIf you disable this policy, users can't open files using the DirectInvoke protocol. Instead, the file will be saved to the file system.\r\n\r\nNote: Disabling DirectInvoke may prevent certain Microsoft SharePoint Online features from working as expected.\r\n\r\nFor more information about DirectInvoke, see https://go.microsoft.com/fwlink/?linkid=2103872 and https://go.microsoft.com/fwlink/?linkid=2099871.",
@@ -12210,20 +12210,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_inprivatemodeurlallowlist",
-    "settingName": "Allow access to a list of URLs in InPrivate mode.",
-    "settingDescription": "This policy allows administrators to specify a list of URL patterns that are permitted to open in InPrivate mode. It can be used to create exceptions for URL patterns defined in 'InPrivateModeUrlBlocklist' (Block access to a list of URLs in InPrivate mode.). See how to format a URL pattern (https://go.microsoft.com/fwlink/?linkid=2095322).\r\n\r\nIf both this policy and 'InPrivateModeUrlBlocklist' are configured, the allowlist takes precedence. URLs that match a pattern on this allowlist are allowed. URLs that match the blocklist but not this allowlist are blocked. URLs that match neither list fall back to 'URLBlocklist' (Block access to a list of URLs) and 'URLAllowlist' (Define a list of allowed URLs).\r\n\r\nIf this policy is configured and 'InPrivateModeUrlBlocklist' is not configured, only the URLs specified in this allowlist can be opened in InPrivate mode. All other URLs are blocked.\r\n\r\nIf 'InPrivateModeAvailability' (Configure InPrivate mode availability) is set to disallow (value 1) but this policy is configured, InPrivate mode is available only for URLs that match the allowlist.\r\n\r\nIf this policy is not configured, no exceptions are applied to 'InPrivateModeUrlBlocklist' or 'InPrivateModeAvailability'.\r\n\r\nThis policy applies only to InPrivate mode. To allow URLs across all browsing modes and profiles, use the 'URLAllowlist' policy.\r\n\r\nThis policy supports up to 1000 entries.\r\n\r\nExample value:\r\n\r\nexample.com\r\nhttps://ssl.server.com\r\nhosting.com/bad_path\r\nhttps://server:8080/path\r\n.exact.hostname.com\r\nfile://*\r\ncustom_scheme:*\r\n*",
-    "keywords": [
-      "InPrivateModeUrlAllowlist",
-      "Allow access to a list of URLs in InPrivate mode.",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.certificatetransparencyenforcementdisabledforcas",
     "settingName": "Disable Certificate Transparency enforcement for a list of subjectPublicKeyInfo hashes",
     "settingDescription": "Disables enforcement of Certificate Transparency requirements for a list of subjectPublicKeyInfo hashes.\n\nThis policy lets you disable Certificate Transparency disclosure requirements for certificate chains that contain certificates with one of the specified subjectPublicKeyInfo hashes. This allows certificates that would otherwise be untrusted because they weren't properly publicly disclosed to still be used for Enterprise hosts.\n\nTo disable Certificate Transparency enforcement when this policy is set, one of the following sets of conditions must be met:\n1. The hash is of the server certificate's subjectPublicKeyInfo.\n2. The hash is of a subjectPublicKeyInfo that appears in a CA certificate in the certificate chain, that CA certificate is constrained via the X.509v3 nameConstraints extension, one or more directoryName nameConstraints are present in the permittedSubtrees, and the directoryName contains an organizationName attribute.\n3. The hash is of a subjectPublicKeyInfo that appears in a CA certificate in the certificate chain, the CA certificate has one or more organizationName attributes in the certificate Subject, and the server's certificate contains the same number of organizationName attributes, in the same order, and with byte-for-byte identical values.\n\nA subjectPublicKeyInfo hash is specified by concatenating the hash algorithm name, the \"/\" character, and the Base64 encoding of that hash algorithm applied to the DER-encoded subjectPublicKeyInfo of the specified certificate. This Base64 encoding is the same format as an SPKI Fingerprint, as defined in RFC 7469, Section 2.4. Unrecognized hash algorithms are ignored. The only supported hash algorithm at this time is \"sha256\".\n\nIf you disable this policy or don't configure it, any certificate required to be disclosed via Certificate Transparency is treated as untrusted if not disclosed according to the Certificate Transparency policy.",
@@ -12770,6 +12756,20 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_inprivatemodeurlallowlist",
+    "settingName": "Allow access to a list of URLs in InPrivate mode.",
+    "settingDescription": "This policy allows administrators to specify a list of URL patterns that are permitted to open in InPrivate mode. It can be used to create exceptions for URL patterns defined in 'InPrivateModeUrlBlocklist' (Block access to a list of URLs in InPrivate mode.). See how to format a URL pattern (https://go.microsoft.com/fwlink/?linkid=2095322).\r\n\r\nIf both this policy and 'InPrivateModeUrlBlocklist' are configured, the allowlist takes precedence. URLs that match a pattern on this allowlist are allowed. URLs that match the blocklist but not this allowlist are blocked. URLs that match neither list fall back to 'URLBlocklist' (Block access to a list of URLs) and 'URLAllowlist' (Define a list of allowed URLs).\r\n\r\nIf this policy is configured and 'InPrivateModeUrlBlocklist' is not configured, only the URLs specified in this allowlist can be opened in InPrivate mode. All other URLs are blocked.\r\n\r\nIf 'InPrivateModeAvailability' (Configure InPrivate mode availability) is set to disallow (value 1) but this policy is configured, InPrivate mode is available only for URLs that match the allowlist.\r\n\r\nIf this policy is not configured, no exceptions are applied to 'InPrivateModeUrlBlocklist' or 'InPrivateModeAvailability'.\r\n\r\nThis policy applies only to InPrivate mode. To allow URLs across all browsing modes and profiles, use the 'URLAllowlist' policy.\r\n\r\nThis policy supports up to 1000 entries.\r\n\r\nExample value:\r\n\r\nexample.com\r\nhttps://ssl.server.com\r\nhosting.com/bad_path\r\nhttps://server:8080/path\r\n.exact.hostname.com\r\nfile://*\r\ncustom_scheme:*\r\n*",
+    "keywords": [
+      "InPrivateModeUrlAllowlist",
+      "Allow access to a list of URLs in InPrivate mode.",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_signedhttpexchangeenabled",
     "settingName": "Enable Signed HTTP Exchange (SXG) support",
     "settingDescription": "Enable support for Signed HTTP Exchange (SXG).\r\n\r\nIf this policy isn't set or enabled, Microsoft Edge will accept web contents served as Signed HTTP Exchanges.\r\n\r\nIf this policy is set to disabled, Signed HTTP Exchanges can't be loaded.",
@@ -13118,41 +13118,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.inprivatemodeurlblocklist",
-    "settingName": "Block access to a list of URLs in InPrivate mode.",
-    "settingDescription": "This policy controls which URLs are blocked from loading in InPrivate mode in Microsoft Edge.\n\nAdministrators can specify a list of URL patterns that are blocked when users browse in InPrivate mode. For information about the supported URL pattern format, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n\nIf both \"InPrivateModeUrlBlocklist\" and \"InPrivateModeUrlAllowlist\" are configured, the allowlist takes precedence.\n- URLs that match the allowlist are allowed.\n- URLs that match the blocklist but not the allowlist are blocked.\n- URLs that match neither list follow the behavior defined by the general \"URLBlocklist\" and \"URLAllowlist\" policies.\n\nIf \"InPrivateModeUrlAllowlist\" is configured and this policy is not configured, only URLs on the allowlist can be opened in InPrivate mode.\n\nIf \"InPrivateModeAvailability\" is set to disallow (value 1) and \"InPrivateModeUrlAllowlist\" is configured, InPrivate mode is available only for URLs that match the allowlist.\n\nThis policy applies only to InPrivate mode. To block URLs across all browsing modes, use \"URLBlocklist\".\n\nThis policy supports up to 1000 entries.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_xsltenabled",
-    "settingName": "Control the availability of the XSLT feature",
-    "settingDescription": "Controls whether the XSLT feature (the XSLTProcessor JavaScript API and the XSL processing instruction) is available in Microsoft Edge.\r\n\r\nIf you enable this policy, XSLT is available regardless of the browser's default configuration.\r\n\r\nIf you disable this policy, XSLT is unavailable regardless of the browser's default configuration.\r\n\r\nIf you don't configure this policy, XSLT availability is determined by the browser's default configuration and any applicable field trials.\r\n\r\nThis policy is temporary and will be removed in a future version of Microsoft Edge.",
-    "keywords": [
-      "XSLTEnabled",
-      "Control the availability of the XSLT feature",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_inprivatemodeurlblocklist_inprivatemodeurlblocklistdesc",
-    "settingName": "Block access to a list of URLs in InPrivate mode. (User)",
-    "settingDescription": "",
-    "keywords": [
-      "InPrivateModeUrlBlocklist",
-      "Block access to a list of URLs in InPrivate mode.",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsallday",
     "settingName": "Mute notifications all day",
     "settingDescription": null,
@@ -13283,6 +13248,15 @@
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autofillcreditcardenabled",
     "settingName": "Enable AutoFill for payment instruments",
     "settingDescription": "Enables Microsoft Edge's AutoFill feature and lets users auto complete payment instruments like credit or debit cards in web forms using previously stored information. Includes suggesting new payment instruments like Buy Now Pay Later (BNPL) in web forms and Express Checkout.\n\nIf you enable this policy or don't configure it, users can control AutoFill for payment instruments.\n\nIf you disable this policy, AutoFill never suggests, fills, or recommends new payment Instruments. Additionally, it won't save any payment instrument information that users submit while browsing the web.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.inprivatemodeurlblocklist",
+    "settingName": "Block access to a list of URLs in InPrivate mode.",
+    "settingDescription": "This policy controls which URLs are blocked from loading in InPrivate mode in Microsoft Edge.\n\nAdministrators can specify a list of URL patterns that are blocked when users browse in InPrivate mode. For information about the supported URL pattern format, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n\nIf both \"InPrivateModeUrlBlocklist\" and \"InPrivateModeUrlAllowlist\" are configured, the allowlist takes precedence.\n- URLs that match the allowlist are allowed.\n- URLs that match the blocklist but not the allowlist are blocked.\n- URLs that match neither list follow the behavior defined by the general \"URLBlocklist\" and \"URLAllowlist\" policies.\n\nIf \"InPrivateModeUrlAllowlist\" is configured and this policy is not configured, only URLs on the allowlist can be opened in InPrivate mode.\n\nIf \"InPrivateModeAvailability\" is set to disallow (value 1) and \"InPrivateModeUrlAllowlist\" is configured, InPrivate mode is available only for URLs that match the allowlist.\n\nThis policy applies only to InPrivate mode. To block URLs across all browsing modes, use \"URLBlocklist\".\n\nThis policy supports up to 1000 entries.",
     "keywords": [
       "Uncategorized"
     ],
@@ -13946,6 +13920,32 @@
     "keywords": [
       "RelaunchFastIfOutdated",
       "Relaunch browser quickly when the current version is outdated",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_xsltenabled",
+    "settingName": "Control the availability of the XSLT feature",
+    "settingDescription": "Controls whether the XSLT feature (the XSLTProcessor JavaScript API and the XSL processing instruction) is available in Microsoft Edge.\r\n\r\nIf you enable this policy, XSLT is available regardless of the browser's default configuration.\r\n\r\nIf you disable this policy, XSLT is unavailable regardless of the browser's default configuration.\r\n\r\nIf you don't configure this policy, XSLT availability is determined by the browser's default configuration and any applicable field trials.\r\n\r\nThis policy is temporary and will be removed in a future version of Microsoft Edge.",
+    "keywords": [
+      "XSLTEnabled",
+      "Control the availability of the XSLT feature",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev147~policy~microsoft_edge_inprivatemodeurlblocklist_inprivatemodeurlblocklistdesc",
+    "settingName": "Block access to a list of URLs in InPrivate mode. (User)",
+    "settingDescription": "",
+    "keywords": [
+      "InPrivateModeUrlBlocklist",
+      "Block access to a list of URLs in InPrivate mode.",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],
