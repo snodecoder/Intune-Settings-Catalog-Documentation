@@ -25833,6 +25833,153 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_copilotnewtabpageenabled",
+    "settingName": "Enable the Copilot new tab page",
+    "settingDescription": "This policy configures the availability of the Copilot new tab page in Microsoft Edge for Business.\r\n\r\nThe Copilot new tab page combines search and chat into a single input box and includes personalized cards that provide quick access to relevant files, calendar events, and suggested Copilot prompts. Users who do not have a Microsoft 365 Copilot license might experience limited relevance in Copilot prompt card content.\r\n\r\nMost policies that customize the New Tab Page are supported on the Copilot new tab page. For a complete list of supported and unsupported policies, see https://go.microsoft.com/fwlink/?linkid=2330462.\r\n\r\nThis policy applies only to Microsoft Entra ID profiles and controls the Copilot new tab page experience in Microsoft Edge for Business. This policy does not apply to the Copilot new tab page on MSA profiles.\r\n\r\nIf you enable this policy, the Copilot new tab page is turned on.\r\n\r\nIf you disable or don't configure this policy, the Copilot new tab page is turned off. When the policy is not configured, users can turn it on via user settings.",
+    "keywords": [
+      "CopilotNewTabPageEnabled",
+      "Enable the Copilot new tab page",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_recommended~startup_recommended_setntpdefaultfeedtab_recommended_setntpdefaultfeedtab",
+    "settingName": "Set the default New Tab Page feed tab to Work or Discover (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "SetNTPDefaultFeedTab_recommended",
+      "Set the default New Tab Page feed tab to Work or Discover",
+      "\\Microsoft Edge - Default Settings (users can override)\\Startup, home page and new tab page",
+      "Microsoft Edge - Default Settings (users can override)\\Startup, home page and new tab page",
+      "Startup, home page and new tab page"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_developertoolsavailabilityblocklist_developertoolsavailabilityblocklistdesc",
+    "settingName": "List of URL patterns for which developer tools are blocked (User)",
+    "settingDescription": "",
+    "keywords": [
+      "DeveloperToolsAvailabilityBlocklist",
+      "List of URL patterns for which developer tools are blocked",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_browsingwithcopilotblocklist_browsingwithcopilotblocklistdesc",
+    "settingName": "Browsing with Copilot Blocked URLs (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "BrowsingWithCopilotBlockList",
+      "Browsing with Copilot Blocked URLs",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge~startup_setntpdefaultfeedtab_setntpdefaultfeedtab",
+    "settingName": "Set the default New Tab Page feed tab to Work or Discover (User)",
+    "settingDescription": "",
+    "keywords": [
+      "SetNTPDefaultFeedTab",
+      "Set the default New Tab Page feed tab to Work or Discover",
+      "\\Microsoft Edge\\Startup, home page and new tab page",
+      "Microsoft Edge\\Startup, home page and new tab page",
+      "Startup, home page and new tab page"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_browsingwithcopilotallowlist",
+    "settingName": "Browsing with Copilot Allowed URLs",
+    "settingDescription": "Allows you to define a list of URLs where browsing with Copilot is available. Users cannot modify this list.\r\n\r\nIf you enable this policy, browsing with Copilot is available only on the sites specified in the list. To allow a broader set of sites while blocking specific exceptions, configure this policy together with the 'BrowsingWithCopilotBlockList' (Browsing with Copilot Blocked URLs) policy. For example, you can include '*' to allow all sites, and then use the block list to restrict access to specific URLs.\r\n\r\nYou can define exceptions based on schemes, subdomains, ports, or origins. When multiple filters apply, the most specific match determines whether a URL is allowed or blocked. The block list takes precedence over the allow list.\r\n\r\nIf you disable or do not configure this policy, browsing with Copilot is unavailable on all sites, even if the 'AllowBrowsingWithCopilot' (Controls the availability of browsing with Copilot in Microsoft Edge.) policy is enabled.\r\n\r\nBrowsing with Copilot supports only HTTP and HTTPS protocols. Wildcards (*) are supported, and subdomains are matched even without wildcards. This policy applies only to the site origin; any path specified in the URL pattern is ignored. For guidance on formatting URL patterns, see https://go.microsoft.com/fwlink/?linkid=2095322.\r\n\r\nExample value:\r\n\r\nhttps://www.contoso.com\r\n[*.]contoso.edu\r\ncontoso.net\r\nlogin.contoso.us",
+    "keywords": [
+      "BrowsingWithCopilotAllowList",
+      "Browsing with Copilot Allowed URLs",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_browsingwithcopilotblocklist",
+    "settingName": "Browsing with Copilot Blocked URLs (User)",
+    "settingDescription": "Controls the list of URLs where browsing with Copilot is blocked. Users can't modify this list.\r\n\r\nUse this policy to define exceptions to broader allowlists. For example, you can set 'BrowsingWithCopilotAllowList' (Browsing with Copilot Allowed URLs) to '*' to allow all sites, and then use this policy to block access to specific URLs.\r\n\r\nThis policy supports blocking by scheme, subdomain, or port. When multiple URL patterns apply, the most specific match determines whether access is allowed or blocked. Blocklist entries take precedence over allowlist entries.\r\n\r\nIf you don't configure this policy, no exceptions are applied to 'BrowsingWithCopilotAllowList'.\r\n\r\nBrowsing with Copilot supports only HTTP and HTTPS protocols. Wildcards (*) are supported, and subdomains are matched even without wildcards. URL matching is based on the site origin only; any path specified in the pattern is ignored.\r\n\r\nFor information about URL pattern format, see https://go.microsoft.com/fwlink/?linkid=2095322.\r\n\r\nExample value:\r\n\r\nhttps://www.contoso.com\r\n[*.]contoso.edu\r\ncontoso.net\r\nlogin.contoso.us",
+    "keywords": [
+      "BrowsingWithCopilotBlockList",
+      "Browsing with Copilot Blocked URLs",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_developertoolsavailabilityblocklist_developertoolsavailabilityblocklistdesc",
+    "settingName": "List of URL patterns for which developer tools are blocked (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "DeveloperToolsAvailabilityBlocklist",
+      "List of URL patterns for which developer tools are blocked",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge~manageability_mamwithdevicedlpenabled",
+    "settingName": "Allow MAM enrollment when managed device has Purview DLP policy configured (User)",
+    "settingDescription": "Controls whether Microsoft Edge allows Mobile Application Management (MAM) enrollment on managed devices when Microsoft Purview Data Loss Prevention (DLP) is configured.\r\n\r\nIf you enable this policy, MAM enrollment is allowed even when Purview DLP is detected on the device.\r\n\r\nIf you disable or don't configure this policy, MAM enrollment is blocked when Purview DLP is detected on the device.",
+    "keywords": [
+      "MAMWithDeviceDLPEnabled",
+      "Allow MAM enrollment when managed device has Purview DLP policy configured",
+      "\\Microsoft Edge\\Manageability",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Manageability"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge~startup_configurentpfeedtabvisibility",
+    "settingName": "Configure whether the Discover or Work feed tabs are shown on the New Tab Page. (User)",
+    "settingDescription": "This policy configures whether the Discover or Work feed tabs are shown on the New Tab Page. By default, both Work and Discover tabs are enabled.\r\n\r\nIf you set this policy to 'EnableBothWorkDiscover' (0) or do not configure this policy, Microsoft Edge shows both the Work and Discover feed tabs on the new tab page.\r\n\r\nIf you set this policy to 'EnableOnlyWork' (1), Microsoft Edge shows only the Work feed tab on the new tab page.\r\n\r\nIf you set this policy to 'EnableOnlyDiscover' (2), Microsoft Edge shows only the Discover feed tab on the new tab page.\r\n\r\nThis policy works with the SetNTPDefaultFeedTab policy, which controls which feed tab is selected by default when both tabs are available.\r\n\r\nPolicy options mapping:\r\n\r\n* EnableBothWorkDiscover (0) = Enable both Work and Discover tabs\r\n\r\n* EnableOnlyWork (1) = Enable only Work tab\r\n\r\n* EnableOnlyDiscover (2) = Enable only Discover tab\r\n\r\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "ConfigureNTPFeedTabVisibility",
+      "Configure whether the Discover or Work feed tabs are shown on the New Tab Page.",
+      "\\Microsoft Edge\\Startup, home page and new tab page",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Startup, home page and new tab page"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_office16v23~policy~l_microsoftofficesystem~l_securitysettings_l_blockinsecureprotocols",
+    "settingName": "Block Insecure Protocols (User)",
+    "settingDescription": "\r\n\t\t\tThis policy setting allows you to control which protocols can be used when opening documents in Microsoft 365 apps.\r\n\r\n\t\t\tIf you enable this policy setting, non-HTTPS links will be blocked when opening documents in Microsoft 365 apps.\r\n\r\n\t\t\tIf you disable this policy setting, all protocols and links will be allowed when opening documents in Microsoft 365 apps.\r\n\r\n\t\t\tIf you don't configure this policy setting, all protocols and links will be allowed when opening documents in Microsoft 365 apps.\r\n\t\t",
+    "keywords": [
+      "L_BlockInsecureProtocols",
+      "Block Insecure Protocols",
+      "\\Microsoft Office 2016\\Security Settings",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\common\\fileio",
+      "blockinsecureprotocols",
+      "Security Settings"
+    ],
+    "categoryName": "Microsoft Office 2016"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.cacertificateswithconstraints",
     "settingName": "TLS certificates that should be trusted by Microsoft Edge for server authentication with constraints",
     "settingDescription": "This policy enables a list of TLS certificates that should be trusted by Microsoft Edge for server authentication, with constraints added outside the certificate. If no constraint of a certain type is present, then any name of that type is allowed.\nCertificates should be base64-encoded. At least one constraint must be specified for each certificate.\n\nThe permitted_dns_names field is a list of DNS names that are allowed for the certificate. If the DNS name in the certificate request doesn't match one of the specified DNS names, the certificate isn't trusted.\n\nThe permitted_cidrs field is a list of CIDR (Classless Inter-Domain Routing) ranges that will be allowed for the certificate. If the IP address in the certificate request doesn't fall within one of the permitted CIDR ranges, the certificate isn't trusted.",
@@ -38925,7 +39072,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_fileexplorer_disablegraphrecentitems",
     "settingName": "Disable Graph Recent Items",
-    "settingDescription": "Turning off files from Office.com will prevent File Explorer from requesting recent cloud file metadata and displaying it in the Quick access view.",
+    "settingDescription": "Turning off this setting will prevent File Explorer from displaying files based on account and cloud provider activity.",
     "keywords": [
       "Disable Graph Recent Items",
       "File Explorer"
@@ -51193,6 +51340,72 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_recommended~startup_recommended_setntpdefaultfeedtab_recommended_setntpdefaultfeedtab",
+    "settingName": "Set the default New Tab Page feed tab to Work or Discover (User)",
+    "settingDescription": "",
+    "keywords": [
+      "SetNTPDefaultFeedTab_recommended",
+      "Set the default New Tab Page feed tab to Work or Discover",
+      "\\Microsoft Edge - Default Settings (users can override)\\Startup, home page and new tab page",
+      "Microsoft Edge - Default Settings (users can override)\\Startup, home page and new tab page",
+      "Startup, home page and new tab page"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge~startup_configurentpfeedtabvisibility_configurentpfeedtabvisibility",
+    "settingName": "Configure whether the Discover or Work feed tabs are shown on the New Tab Page. (User)",
+    "settingDescription": "",
+    "keywords": [
+      "ConfigureNTPFeedTabVisibility",
+      "Configure whether the Discover or Work feed tabs are shown on the New Tab Page.",
+      "\\Microsoft Edge\\Startup, home page and new tab page",
+      "Microsoft Edge\\Startup, home page and new tab page",
+      "Startup, home page and new tab page"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_browsingwithcopilotallowlist_browsingwithcopilotallowlistdesc",
+    "settingName": "Browsing with Copilot Allowed URLs (User)",
+    "settingDescription": "",
+    "keywords": [
+      "BrowsingWithCopilotAllowList",
+      "Browsing with Copilot Allowed URLs",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_m365linksautoopencopilotenabled",
+    "settingName": "Automatically open Copilot side pane with contextual insights for links opened from Outlook",
+    "settingDescription": "This policy controls whether Microsoft Edge automatically opens the Microsoft Copilot side pane when users open web links from Outlook emails sent from the same tenant.\r\n\r\nStarting in Microsoft Edge version 148, when users open eligible links from Outlook emails sent from the same tenant, Microsoft Edge automatically opens the Copilot side pane with contextual insights. Copilot can use the originating Outlook email as context to surface relevant insights and suggested next steps alongside the web content.\r\n\r\nIf you enable this policy or don't configure it, the Copilot side pane opens automatically when users open links from Outlook emails sent from the same tenant.\r\n\r\nIf you disable this policy, the Copilot side pane doesn't open automatically when users open links from Outlook emails sent from the same tenant.\r\n\r\nThis feature applies only to links opened from Outlook emails sent from the same tenant and requires Microsoft Copilot to be available for the user in Microsoft Edge.\r\n\r\nThis feature is disabled if the 'CopilotPageContext' (Control Copilot access to page context for Microsoft Entra ID profiles) policy or the 'EdgeEntraCopilotPageContext' (Control Copilot access to Microsoft Edge page content for Entra account user profiles when using Copilot in the Microsoft Edge sidepane) policy is disabled, regardless of this policy's configuration. Copilot requires access to page content to provide contextual insights.",
+    "keywords": [
+      "M365LinksAutoOpenCopilotEnabled",
+      "Automatically open Copilot side pane with contextual insights for links opened from Outlook",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_ppt16v5~policy~l_microsoftofficepowerpoint~l_powerpointoptions~l_security_l_oleactions",
+    "settingName": "OLE Active Content (User)",
+    "settingDescription": "This policy setting controls the prompting and activation behavior for the \"OLE Active Content\" option in PowerPoint.\r\n\r\nIf you enable this policy setting, you can choose from three options to control how the \"OLE Active Content\" option functions:\r\n\r\n- Disable (don't activate any OLE Active Content). If users click an action button with the \"Object action\" action assigned to it, nothing will happen.\r\n\r\n- Enable (prompt user before activating OLE Active Content). If users click an action button with the \"Object action\" action assigned to it, PowerPoint will prompt them to continue before activating the action. This option enforces the default configuration in PowerPoint.\r\n\r\n- Enable all (allow activating OLE Active Content without prompting). If users click an action button with the \"Object action\" action assigned to it. PowerPoint will activate the action automatically, without prompting.\r\n\r\nIf you do not configure this policy setting, PowerPoint follows the Enable (prompt user before activating OLE Active Content) option.",
+    "keywords": [
+      "L_OLEActions",
+      "OLE Active Content",
+      "\\Microsoft PowerPoint 2016\\PowerPoint Options\\Security",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\powerpoint\\security",
+      "Security"
+    ],
+    "categoryName": "Microsoft PowerPoint 2016"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.screencaptureallowedbyorigins",
@@ -75587,6 +75800,34 @@
       "Trust Center"
     ],
     "categoryName": "Microsoft Word 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_recommended~startup_recommended_setntpdefaultfeedtab_recommended",
+    "settingName": "Set the default New Tab Page feed tab to Work or Discover (User)",
+    "settingDescription": "This policy sets the default feed tab on the New Tab Page to Work or Discover.\r\n\r\nIf you set this policy to 'Work' (0) or don't configure this policy, Microsoft Edge sets the default feed tab to Work.\r\n\r\nIf you set this policy to 'Discover' (1), Microsoft Edge sets the default feed tab to Discover.\r\n\r\nThis policy only takes effect when 'ConfigureNTPFeedTabVisibility' (Configure whether the Discover or Work feed tabs are shown on the New Tab Page.) is set to 'EnableBothWorkDiscover' (0) or is not configured. If only one tab is visible, this policy has no effect.\r\n\r\nPolicy options mapping:\r\n\r\n* NTPDefaultFeedTabWork (0) = Work\r\n\r\n* NTPDefaultFeedTabDiscover (1) = Discover\r\n\r\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "SetNTPDefaultFeedTab_recommended",
+      "Set the default New Tab Page feed tab to Work or Discover",
+      "\\Microsoft Edge - Default Settings (users can override)\\Startup, home page and new tab page",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge\\Recommended",
+      "Startup, home page and new tab page"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_sharedworkerextendedlifetimeenabled",
+    "settingName": "Enable the extended lifetime option for SharedWorkers (User)",
+    "settingDescription": "Controls whether Microsoft Edge allows SharedWorkers to use the extendedLifetime option.\r\n\r\nIf you enable or don't configure this policy, SharedWorkers can use the extended lifetime option in the SharedWorker constructor.\r\n\r\nIf you disable this policy, the extended lifetime option is ignored, even if it is requested by the page.\r\n\r\nThis policy is temporary and will be removed in a future release.",
+    "keywords": [
+      "SharedWorkerExtendedLifetimeEnabled",
+      "Enable the extended lifetime option for SharedWorkers",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.loopbacknetworkblockedforurls",
@@ -100362,6 +100603,188 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_recommended_allowbrowsingwithcopilot_recommended",
+    "settingName": "Controls the availability of browsing with Copilot in Microsoft Edge. (User)",
+    "settingDescription": "When browsing with Copilot is enabled, users can explicitly invoke it for a query. It isn't invoked automatically.\r\n\r\nBrowsing with Copilot is available only on domains specified in the 'BrowsingWithCopilotAllowList' (Browsing with Copilot Allowed URLs) policy and is blocked on domains specified in the 'BrowsingWithCopilotBlockList' (Browsing with Copilot Blocked URLs) policy. If no domains are configured in the allow list, browsing with Copilot is effectively disabled.\r\n\r\nThis feature is available only to users with an active Microsoft 365 Copilot subscription.\r\n\r\nFor more information about configuring browsing with Copilot, see https://go.microsoft.com/fwlink/?linkid=2346300.\r\n\r\nIf you enable this policy, browsing with Copilot is turned on for all users who receive the policy, and users can't turn it off.\r\n\r\nIf you disable this policy, browsing with Copilot is turned off for all users who receive the policy, and users can't turn it on.\r\n\r\nIf you don't configure this policy, browsing with Copilot is off by default, and users can turn it on.",
+    "keywords": [
+      "AllowBrowsingWithCopilot_recommended",
+      "Controls the availability of browsing with Copilot in Microsoft Edge.",
+      "\\Microsoft Edge - Default Settings (users can override)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge\\Recommended",
+      "AllowBrowsingWithCopilot",
+      "Microsoft Edge - Default Settings (users can override)"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_developertoolsavailabilityallowlist_developertoolsavailabilityallowlistdesc",
+    "settingName": "List of URL patterns for which developer tools are allowed to be opened (User)",
+    "settingDescription": "",
+    "keywords": [
+      "DeveloperToolsAvailabilityAllowlist",
+      "List of URL patterns for which developer tools are allowed to be opened",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_sharedworkerextendedlifetimeenabled",
+    "settingName": "Enable the extended lifetime option for SharedWorkers",
+    "settingDescription": "Controls whether Microsoft Edge allows SharedWorkers to use the extendedLifetime option.\r\n\r\nIf you enable or don't configure this policy, SharedWorkers can use the extended lifetime option in the SharedWorker constructor.\r\n\r\nIf you disable this policy, the extended lifetime option is ignored, even if it is requested by the page.\r\n\r\nThis policy is temporary and will be removed in a future release.",
+    "keywords": [
+      "SharedWorkerExtendedLifetimeEnabled",
+      "Enable the extended lifetime option for SharedWorkers",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge~identity_m365authpopupsinworkenabled",
+    "settingName": "Allow M365 authentication popups in work profiles (User)",
+    "settingDescription": "This policy controls whether Microsoft Edge allows Microsoft 365 authentication pop-ups to bypass the pop-up blocker in work profiles.\r\n\r\nWhen users are signed in with a work account, some Microsoft 365 sites (for example, microsoft.com, cloud.microsoft, and visualstudio.com) may open authentication pop-ups to login.microsoftonline.com, login.live.com, or login.microsoft.com. These pop-ups are required to complete sign-in.\r\n\r\nIf you enable this policy or don't configure it, Microsoft 365 authentication pop-ups are allowed in work profiles.\r\n\r\nIf you disable this policy, Microsoft 365 authentication pop-ups follow the default settings like other pop-ups.",
+    "keywords": [
+      "M365AuthPopupsInWorkEnabled",
+      "Allow M365 authentication popups in work profiles",
+      "\\Microsoft Edge\\Identity and sign-in",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Identity and sign-in"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_developertoolsavailabilityallowlist",
+    "settingName": "List of URL patterns for which developer tools are allowed to be opened (User)",
+    "settingDescription": "This policy controls where developer tools can be used in Microsoft Edge by specifying an allowlist of URL patterns.\r\n\r\nURL patterns are matched against the URL of every frame on the page being inspected.\r\n\r\nIf you configure this policy and do not configure the 'DeveloperToolsAvailabilityBlocklist' (List of URL patterns for which developer tools are blocked) policy, developer tools are available only when every frame on the page matches a pattern in this allowlist. If any frame does not match, developer tools are blocked for the entire page. For information on the URL format, see https://go.microsoft.com/fwlink/?linkid=2095322 .\r\n\r\nIf you configure both this policy and the 'DeveloperToolsAvailabilityBlocklist' policy, this allowlist takes precedence. URLs that match this allowlist are allowed even if they also match the blocklist. URLs that match the blocklist but not this allowlist are blocked. URLs that match neither are governed by the 'DeveloperToolsAvailability' (Control where developer tools can be used) policy.\r\n\r\nIf you disable or do not configure this policy, developer tools availability is determined by the 'DeveloperToolsAvailabilityBlocklist' and 'DeveloperToolsAvailability' policies.\r\n\r\nThis policy applies to developer tools opened for websites, extensions, and web applications.\r\n\r\nThis policy supports up to 1,000 entries.\r\n\r\nExample value:\r\n\r\ncontoso.com\r\nhttps://ssl.server.com\r\ncontoso.com/good_path\r\nhttps://server.contoso.com:8080/path\r\n.exact.hostname.com\r\nfile://*",
+    "keywords": [
+      "DeveloperToolsAvailabilityAllowlist",
+      "List of URL patterns for which developer tools are allowed to be opened",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_browsingwithcopilotallowlist_browsingwithcopilotallowlistdesc",
+    "settingName": "Browsing with Copilot Allowed URLs (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "BrowsingWithCopilotAllowList",
+      "Browsing with Copilot Allowed URLs",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge~manageability_mamwithdevicedlpenabled",
+    "settingName": "Allow MAM enrollment when managed device has Purview DLP policy configured",
+    "settingDescription": "Controls whether Microsoft Edge allows Mobile Application Management (MAM) enrollment on managed devices when Microsoft Purview Data Loss Prevention (DLP) is configured.\r\n\r\nIf you enable this policy, MAM enrollment is allowed even when Purview DLP is detected on the device.\r\n\r\nIf you disable or don't configure this policy, MAM enrollment is blocked when Purview DLP is detected on the device.",
+    "keywords": [
+      "MAMWithDeviceDLPEnabled",
+      "Allow MAM enrollment when managed device has Purview DLP policy configured",
+      "\\Microsoft Edge\\Manageability",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Manageability"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_recommended~startup_recommended_setntpdefaultfeedtab_recommended",
+    "settingName": "Set the default New Tab Page feed tab to Work or Discover",
+    "settingDescription": "This policy sets the default feed tab on the New Tab Page to Work or Discover.\r\n\r\nIf you set this policy to 'Work' (0) or don't configure this policy, Microsoft Edge sets the default feed tab to Work.\r\n\r\nIf you set this policy to 'Discover' (1), Microsoft Edge sets the default feed tab to Discover.\r\n\r\nThis policy only takes effect when 'ConfigureNTPFeedTabVisibility' (Configure whether the Discover or Work feed tabs are shown on the New Tab Page.) is set to 'EnableBothWorkDiscover' (0) or is not configured. If only one tab is visible, this policy has no effect.\r\n\r\nPolicy options mapping:\r\n\r\n* NTPDefaultFeedTabWork (0) = Work\r\n\r\n* NTPDefaultFeedTabDiscover (1) = Discover\r\n\r\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "SetNTPDefaultFeedTab_recommended",
+      "Set the default New Tab Page feed tab to Work or Discover",
+      "\\Microsoft Edge - Default Settings (users can override)\\Startup, home page and new tab page",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge\\Recommended",
+      "Startup, home page and new tab page"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge~startup_configurentpfeedtabvisibility",
+    "settingName": "Configure whether the Discover or Work feed tabs are shown on the New Tab Page.",
+    "settingDescription": "This policy configures whether the Discover or Work feed tabs are shown on the New Tab Page. By default, both Work and Discover tabs are enabled.\r\n\r\nIf you set this policy to 'EnableBothWorkDiscover' (0) or do not configure this policy, Microsoft Edge shows both the Work and Discover feed tabs on the new tab page.\r\n\r\nIf you set this policy to 'EnableOnlyWork' (1), Microsoft Edge shows only the Work feed tab on the new tab page.\r\n\r\nIf you set this policy to 'EnableOnlyDiscover' (2), Microsoft Edge shows only the Discover feed tab on the new tab page.\r\n\r\nThis policy works with the SetNTPDefaultFeedTab policy, which controls which feed tab is selected by default when both tabs are available.\r\n\r\nPolicy options mapping:\r\n\r\n* EnableBothWorkDiscover (0) = Enable both Work and Discover tabs\r\n\r\n* EnableOnlyWork (1) = Enable only Work tab\r\n\r\n* EnableOnlyDiscover (2) = Enable only Discover tab\r\n\r\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "ConfigureNTPFeedTabVisibility",
+      "Configure whether the Discover or Work feed tabs are shown on the New Tab Page.",
+      "\\Microsoft Edge\\Startup, home page and new tab page",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Startup, home page and new tab page"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_recommended_copilotnewtabpageenabled_recommended",
+    "settingName": "Enable the Copilot new tab page",
+    "settingDescription": "This policy configures the availability of the Copilot new tab page in Microsoft Edge for Business.\r\n\r\nThe Copilot new tab page combines search and chat into a single input box and includes personalized cards that provide quick access to relevant files, calendar events, and suggested Copilot prompts. Users who do not have a Microsoft 365 Copilot license might experience limited relevance in Copilot prompt card content.\r\n\r\nMost policies that customize the New Tab Page are supported on the Copilot new tab page. For a complete list of supported and unsupported policies, see https://go.microsoft.com/fwlink/?linkid=2330462.\r\n\r\nThis policy applies only to Microsoft Entra ID profiles and controls the Copilot new tab page experience in Microsoft Edge for Business. This policy does not apply to the Copilot new tab page on MSA profiles.\r\n\r\nIf you enable this policy, the Copilot new tab page is turned on.\r\n\r\nIf you disable or don't configure this policy, the Copilot new tab page is turned off. When the policy is not configured, users can turn it on via user settings.",
+    "keywords": [
+      "CopilotNewTabPageEnabled_recommended",
+      "Enable the Copilot new tab page",
+      "\\Microsoft Edge - Default Settings (users can override)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge\\Recommended",
+      "CopilotNewTabPageEnabled",
+      "Microsoft Edge - Default Settings (users can override)"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge~identity_m365authpopupsinworkenabled",
+    "settingName": "Allow M365 authentication popups in work profiles",
+    "settingDescription": "This policy controls whether Microsoft Edge allows Microsoft 365 authentication pop-ups to bypass the pop-up blocker in work profiles.\r\n\r\nWhen users are signed in with a work account, some Microsoft 365 sites (for example, microsoft.com, cloud.microsoft, and visualstudio.com) may open authentication pop-ups to login.microsoftonline.com, login.live.com, or login.microsoft.com. These pop-ups are required to complete sign-in.\r\n\r\nIf you enable this policy or don't configure it, Microsoft 365 authentication pop-ups are allowed in work profiles.\r\n\r\nIf you disable this policy, Microsoft 365 authentication pop-ups follow the default settings like other pop-ups.",
+    "keywords": [
+      "M365AuthPopupsInWorkEnabled",
+      "Allow M365 authentication popups in work profiles",
+      "\\Microsoft Edge\\Identity and sign-in",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Identity and sign-in"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_office16v23~policy~l_microsoftofficesystem~l_securitysettings_l_blockolegraph",
+    "settingName": "Block OLE Graph (User)",
+    "settingDescription": "This policy setting allows you to control whether Object Linking and Embedding (OLE) Graph functionality runs in Microsoft 365 apps.\r\n\r\nIf you enable this policy setting, OLE Graph, including MSGraph.Application and MSGraph.Chart, will not run in any Microsoft 365 app. Instead, a static image will render in its place.\r\n\r\nIf you disable this policy setting, OLE Graph will run in Microsoft 365 apps.\r\n\r\nIf you don't configure this policy setting, OLE Graph will run in Microsoft 365 apps.",
+    "keywords": [
+      "L_BlockOLEGraph",
+      "Block OLE Graph",
+      "\\Microsoft Office 2016\\Security Settings",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\common\\security",
+      "blockolegraph",
+      "Security Settings"
+    ],
+    "categoryName": "Microsoft Office 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_office16v23~policy~l_microsoftofficesystem~l_securitysettings_l_blockwecfallback",
+    "settingName": "Restrict Apps from FPRPC Fallback (User)",
+    "settingDescription": "\r\n\t\t\tThis policy setting allows you to control the fallback behavior of Microsoft 365 apps when using FrontPage Server Extensions Remote Procedure Call Protocol (FPRPC).\r\n\r\n\t\t\tIf you enable this policy setting, Microsoft 365 apps will not use FPRPC.\r\n\r\n\t\t\tIf you disable this policy setting, Microsoft 365 apps will continue to use FPRPC.\r\n\r\n\t\t\tIf you don't configure this policy setting, Microsoft 365 apps will continue to use FPRPC.\r\n\t\t",
+    "keywords": [
+      "L_BlockWecFallback",
+      "Restrict Apps from FPRPC Fallback",
+      "\\Microsoft Office 2016\\Security Settings",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\common\\fileio",
+      "blockwecfallback",
+      "Security Settings"
+    ],
+    "categoryName": "Microsoft Office 2016"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autolaunchprotocolsfromorigins",
@@ -125244,6 +125667,168 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_allowbrowsingwithcopilot",
+    "settingName": "Controls the availability of browsing with Copilot in Microsoft Edge.",
+    "settingDescription": "When browsing with Copilot is enabled, users can explicitly invoke it for a query. It isn't invoked automatically.\r\n\r\nBrowsing with Copilot is available only on domains specified in the 'BrowsingWithCopilotAllowList' (Browsing with Copilot Allowed URLs) policy and is blocked on domains specified in the 'BrowsingWithCopilotBlockList' (Browsing with Copilot Blocked URLs) policy. If no domains are configured in the allow list, browsing with Copilot is effectively disabled.\r\n\r\nThis feature is available only to users with an active Microsoft 365 Copilot subscription.\r\n\r\nFor more information about configuring browsing with Copilot, see https://go.microsoft.com/fwlink/?linkid=2346300.\r\n\r\nIf you enable this policy, browsing with Copilot is turned on for all users who receive the policy, and users can't turn it off.\r\n\r\nIf you disable this policy, browsing with Copilot is turned off for all users who receive the policy, and users can't turn it on.\r\n\r\nIf you don't configure this policy, browsing with Copilot is off by default, and users can turn it on.",
+    "keywords": [
+      "AllowBrowsingWithCopilot",
+      "Controls the availability of browsing with Copilot in Microsoft Edge.",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_maxconnectionsperproxyforwebsocket",
+    "settingName": "Maximum number of concurrent connections to the proxy server for WebSocket requests (User)",
+    "settingDescription": "Specifies the maximum number of simultaneous connections to a proxy server for WebSocket requests.\r\n\r\nTo configure limits for non-WebSocket requests, see the 'MaxConnectionsPerProxy' (Maximum number of concurrent connections to the proxy server) policy.\r\n\r\nIf you don't configure this policy, the default value of 32 is used.\r\n\r\nSome web applications maintain multiple concurrent connections (for example, long-lived or hanging requests). Setting a value lower than the default may cause networking delays when many such applications are open.\r\n\r\nSome proxy servers cannot handle a high number of concurrent connections per client. In these cases, reducing the value of this policy may improve reliability.\r\n\r\nThe supported range is 6 to 256:\r\n- Values less than 6 are treated as 6.\r\n- Values greater than 256 are treated as 256.\r\n\r\nWe recommend modifying this value only if required by your proxy server configuration or network environment.",
+    "keywords": [
+      "MaxConnectionsPerProxyForWebSocket",
+      "Maximum number of concurrent connections to the proxy server for WebSocket requests",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_recommended_copilotnewtabpageenabled_recommended",
+    "settingName": "Enable the Copilot new tab page (User)",
+    "settingDescription": "This policy configures the availability of the Copilot new tab page in Microsoft Edge for Business.\r\n\r\nThe Copilot new tab page combines search and chat into a single input box and includes personalized cards that provide quick access to relevant files, calendar events, and suggested Copilot prompts. Users who do not have a Microsoft 365 Copilot license might experience limited relevance in Copilot prompt card content.\r\n\r\nMost policies that customize the New Tab Page are supported on the Copilot new tab page. For a complete list of supported and unsupported policies, see https://go.microsoft.com/fwlink/?linkid=2330462.\r\n\r\nThis policy applies only to Microsoft Entra ID profiles and controls the Copilot new tab page experience in Microsoft Edge for Business. This policy does not apply to the Copilot new tab page on MSA profiles.\r\n\r\nIf you enable this policy, the Copilot new tab page is turned on.\r\n\r\nIf you disable or don't configure this policy, the Copilot new tab page is turned off. When the policy is not configured, users can turn it on via user settings.",
+    "keywords": [
+      "CopilotNewTabPageEnabled_recommended",
+      "Enable the Copilot new tab page",
+      "\\Microsoft Edge - Default Settings (users can override)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge\\Recommended",
+      "CopilotNewTabPageEnabled",
+      "Microsoft Edge - Default Settings (users can override)"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_developertoolsavailabilityallowlist",
+    "settingName": "List of URL patterns for which developer tools are allowed to be opened",
+    "settingDescription": "This policy controls where developer tools can be used in Microsoft Edge by specifying an allowlist of URL patterns.\r\n\r\nURL patterns are matched against the URL of every frame on the page being inspected.\r\n\r\nIf you configure this policy and do not configure the 'DeveloperToolsAvailabilityBlocklist' (List of URL patterns for which developer tools are blocked) policy, developer tools are available only when every frame on the page matches a pattern in this allowlist. If any frame does not match, developer tools are blocked for the entire page. For information on the URL format, see https://go.microsoft.com/fwlink/?linkid=2095322 .\r\n\r\nIf you configure both this policy and the 'DeveloperToolsAvailabilityBlocklist' policy, this allowlist takes precedence. URLs that match this allowlist are allowed even if they also match the blocklist. URLs that match the blocklist but not this allowlist are blocked. URLs that match neither are governed by the 'DeveloperToolsAvailability' (Control where developer tools can be used) policy.\r\n\r\nIf you disable or do not configure this policy, developer tools availability is determined by the 'DeveloperToolsAvailabilityBlocklist' and 'DeveloperToolsAvailability' policies.\r\n\r\nThis policy applies to developer tools opened for websites, extensions, and web applications.\r\n\r\nThis policy supports up to 1,000 entries.\r\n\r\nExample value:\r\n\r\ncontoso.com\r\nhttps://ssl.server.com\r\ncontoso.com/good_path\r\nhttps://server.contoso.com:8080/path\r\n.exact.hostname.com\r\nfile://*",
+    "keywords": [
+      "DeveloperToolsAvailabilityAllowlist",
+      "List of URL patterns for which developer tools are allowed to be opened",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_developertoolsavailabilityblocklist",
+    "settingName": "List of URL patterns for which developer tools are blocked",
+    "settingDescription": "This policy specifies URL patterns where developer tools are blocked. For information on the URL format, see https://go.microsoft.com/fwlink/?linkid=2095322.\r\n\r\nURL patterns are evaluated against the URL of every frame on the page being inspected. If any frame matches a pattern in this policy, developer tools are blocked for the entire page.\r\n\r\nIf you configure this policy and do not configure the 'DeveloperToolsAvailabilityAllowlist' (List of URL patterns for which developer tools are allowed to be opened) policy, developer tools are blocked when any frame matches a pattern in this policy. If no frames match, availability is determined by the 'DeveloperToolsAvailability' (Control where developer tools can be used) policy.\r\n\r\nIf you configure both this policy and the 'DeveloperToolsAvailabilityAllowlist' policy, the allowlist takes precedence. URLs that match the allowlist are allowed, even if they also match this policy. URLs that match this policy (but not the allowlist) are blocked. If a URL matches neither, the 'DeveloperToolsAvailability' policy determines availability.\r\n\r\nIf you disable or do not configure this policy, developer tools availability is determined by the 'DeveloperToolsAvailabilityAllowlist' and 'DeveloperToolsAvailability' policies.\r\n\r\nThis policy supports up to 1,000 entries.\r\n\r\nExample value:\r\n\r\nhttps://contoso.com\r\ncontoso.com\r\nhttps://ssl.server.com\r\ncontoso.com/bad_path\r\nhttps://server.contoso.com:8080/path\r\n.exact.hostname.com\r\n*\r\nfile://*",
+    "keywords": [
+      "DeveloperToolsAvailabilityBlocklist",
+      "List of URL patterns for which developer tools are blocked",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_copilotnewtabpageenabled",
+    "settingName": "Enable the Copilot new tab page (User)",
+    "settingDescription": "This policy configures the availability of the Copilot new tab page in Microsoft Edge for Business.\r\n\r\nThe Copilot new tab page combines search and chat into a single input box and includes personalized cards that provide quick access to relevant files, calendar events, and suggested Copilot prompts. Users who do not have a Microsoft 365 Copilot license might experience limited relevance in Copilot prompt card content.\r\n\r\nMost policies that customize the New Tab Page are supported on the Copilot new tab page. For a complete list of supported and unsupported policies, see https://go.microsoft.com/fwlink/?linkid=2330462.\r\n\r\nThis policy applies only to Microsoft Entra ID profiles and controls the Copilot new tab page experience in Microsoft Edge for Business. This policy does not apply to the Copilot new tab page on MSA profiles.\r\n\r\nIf you enable this policy, the Copilot new tab page is turned on.\r\n\r\nIf you disable or don't configure this policy, the Copilot new tab page is turned off. When the policy is not configured, users can turn it on via user settings.",
+    "keywords": [
+      "CopilotNewTabPageEnabled",
+      "Enable the Copilot new tab page",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_maxconnectionsperproxyforwebsocket_maxconnectionsperproxyforwebsocket",
+    "settingName": "Maximum number of concurrent connections to the proxy server for WebSocket requests: (User)",
+    "settingDescription": "",
+    "keywords": [
+      "MaxConnectionsPerProxyForWebSocket",
+      "Maximum number of concurrent connections to the proxy server for WebSocket requests",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_browsingwithcopilotblocklist_browsingwithcopilotblocklistdesc",
+    "settingName": "Browsing with Copilot Blocked URLs (User)",
+    "settingDescription": "",
+    "keywords": [
+      "BrowsingWithCopilotBlockList",
+      "Browsing with Copilot Blocked URLs",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_browsingwithcopilotallowlist",
+    "settingName": "Browsing with Copilot Allowed URLs (User)",
+    "settingDescription": "Allows you to define a list of URLs where browsing with Copilot is available. Users cannot modify this list.\r\n\r\nIf you enable this policy, browsing with Copilot is available only on the sites specified in the list. To allow a broader set of sites while blocking specific exceptions, configure this policy together with the 'BrowsingWithCopilotBlockList' (Browsing with Copilot Blocked URLs) policy. For example, you can include '*' to allow all sites, and then use the block list to restrict access to specific URLs.\r\n\r\nYou can define exceptions based on schemes, subdomains, ports, or origins. When multiple filters apply, the most specific match determines whether a URL is allowed or blocked. The block list takes precedence over the allow list.\r\n\r\nIf you disable or do not configure this policy, browsing with Copilot is unavailable on all sites, even if the 'AllowBrowsingWithCopilot' (Controls the availability of browsing with Copilot in Microsoft Edge.) policy is enabled.\r\n\r\nBrowsing with Copilot supports only HTTP and HTTPS protocols. Wildcards (*) are supported, and subdomains are matched even without wildcards. This policy applies only to the site origin; any path specified in the URL pattern is ignored. For guidance on formatting URL patterns, see https://go.microsoft.com/fwlink/?linkid=2095322.\r\n\r\nExample value:\r\n\r\nhttps://www.contoso.com\r\n[*.]contoso.edu\r\ncontoso.net\r\nlogin.contoso.us",
+    "keywords": [
+      "BrowsingWithCopilotAllowList",
+      "Browsing with Copilot Allowed URLs",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge~startup_setntpdefaultfeedtab",
+    "settingName": "Set the default New Tab Page feed tab to Work or Discover (User)",
+    "settingDescription": "This policy sets the default feed tab on the New Tab Page to Work or Discover.\r\n\r\nIf you set this policy to 'Work' (0) or don't configure this policy, Microsoft Edge sets the default feed tab to Work.\r\n\r\nIf you set this policy to 'Discover' (1), Microsoft Edge sets the default feed tab to Discover.\r\n\r\nThis policy only takes effect when 'ConfigureNTPFeedTabVisibility' (Configure whether the Discover or Work feed tabs are shown on the New Tab Page.) is set to 'EnableBothWorkDiscover' (0) or is not configured. If only one tab is visible, this policy has no effect.\r\n\r\nPolicy options mapping:\r\n\r\n* NTPDefaultFeedTabWork (0) = Work\r\n\r\n* NTPDefaultFeedTabDiscover (1) = Discover\r\n\r\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "SetNTPDefaultFeedTab",
+      "Set the default New Tab Page feed tab to Work or Discover",
+      "\\Microsoft Edge\\Startup, home page and new tab page",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Startup, home page and new tab page"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_developertoolsavailabilityallowlist_developertoolsavailabilityallowlistdesc",
+    "settingName": "List of URL patterns for which developer tools are allowed to be opened (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "DeveloperToolsAvailabilityAllowlist",
+      "List of URL patterns for which developer tools are allowed to be opened",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_ppt16v5~policy~l_microsoftofficepowerpoint~l_powerpointoptions~l_security_l_oleactions_l_empty",
+    "settingName": "",
+    "settingDescription": "",
+    "keywords": [
+      "L_OLEActions",
+      "OLE Active Content",
+      "\\Microsoft PowerPoint 2016\\PowerPoint Options\\Security",
+      "Microsoft PowerPoint 2016\\PowerPoint Options\\Security",
+      "Security"
+    ],
+    "categoryName": "Microsoft PowerPoint 2016"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchprovidersearchurl",
     "settingName": "Default search provider search URL",
     "settingDescription": "Specifies the URL of the search engine used for a default search. The URL contains the string '{searchTerms}', which is replaced at query time by the terms the user is searching for.\n\nSpecify Bing's search URL as:\n\n'{bing:baseURL}search?q={searchTerms}'.\n\nSpecify Google's search URL as: '{google:baseURL}search?q={searchTerms}&{google:RLZ}{google:originalQueryForSuggestion}{google:assistedQueryStats}{google:searchFieldtrialParameter}{google:searchClient}{google:sourceId}ie={inputEncoding}'.\n\nThis policy is required when you enable the \"DefaultSearchProviderEnabled\" policy; if you don't enable the latter policy, this policy is ignored.\n\nStarting in Microsoft Edge 84, you can set this policy as a recommended policy. If the user has already set a default search provider, the default search provider configured by this recommended policy won't be added to the list of search providers the user can choose from. If this is the desired behavior, use the \"ManagedSearchEngines\" policy.",
@@ -149991,6 +150576,59 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_maxconnectionsperproxyforwebsocket_maxconnectionsperproxyforwebsocket",
+    "settingName": "Maximum number of concurrent connections to the proxy server for WebSocket requests: (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "MaxConnectionsPerProxyForWebSocket",
+      "Maximum number of concurrent connections to the proxy server for WebSocket requests",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_maxconnectionsperproxyforwebsocket",
+    "settingName": "Maximum number of concurrent connections to the proxy server for WebSocket requests",
+    "settingDescription": "Specifies the maximum number of simultaneous connections to a proxy server for WebSocket requests.\r\n\r\nTo configure limits for non-WebSocket requests, see the 'MaxConnectionsPerProxy' (Maximum number of concurrent connections to the proxy server) policy.\r\n\r\nIf you don't configure this policy, the default value of 32 is used.\r\n\r\nSome web applications maintain multiple concurrent connections (for example, long-lived or hanging requests). Setting a value lower than the default may cause networking delays when many such applications are open.\r\n\r\nSome proxy servers cannot handle a high number of concurrent connections per client. In these cases, reducing the value of this policy may improve reliability.\r\n\r\nThe supported range is 6 to 256:\r\n- Values less than 6 are treated as 6.\r\n- Values greater than 256 are treated as 256.\r\n\r\nWe recommend modifying this value only if required by your proxy server configuration or network environment.",
+    "keywords": [
+      "MaxConnectionsPerProxyForWebSocket",
+      "Maximum number of concurrent connections to the proxy server for WebSocket requests",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge~startup_setntpdefaultfeedtab",
+    "settingName": "Set the default New Tab Page feed tab to Work or Discover",
+    "settingDescription": "This policy sets the default feed tab on the New Tab Page to Work or Discover.\r\n\r\nIf you set this policy to 'Work' (0) or don't configure this policy, Microsoft Edge sets the default feed tab to Work.\r\n\r\nIf you set this policy to 'Discover' (1), Microsoft Edge sets the default feed tab to Discover.\r\n\r\nThis policy only takes effect when 'ConfigureNTPFeedTabVisibility' (Configure whether the Discover or Work feed tabs are shown on the New Tab Page.) is set to 'EnableBothWorkDiscover' (0) or is not configured. If only one tab is visible, this policy has no effect.\r\n\r\nPolicy options mapping:\r\n\r\n* NTPDefaultFeedTabWork (0) = Work\r\n\r\n* NTPDefaultFeedTabDiscover (1) = Discover\r\n\r\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "SetNTPDefaultFeedTab",
+      "Set the default New Tab Page feed tab to Work or Discover",
+      "\\Microsoft Edge\\Startup, home page and new tab page",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Startup, home page and new tab page"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge~startup_setntpdefaultfeedtab_setntpdefaultfeedtab",
+    "settingName": "Set the default New Tab Page feed tab to Work or Discover (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "SetNTPDefaultFeedTab",
+      "Set the default New Tab Page feed tab to Work or Discover",
+      "\\Microsoft Edge\\Startup, home page and new tab page",
+      "Microsoft Edge\\Startup, home page and new tab page",
+      "Startup, home page and new tab page"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.extensioninstalltypeblocklist",
     "settingName": "Blocklist for extension install types",
     "settingDescription": "The blocklist controls which extension install types are disallowed.\n\nSetting the \"command_line\" will block an extension from being loaded from command line.\n\nPolicy options mapping:\n\n* command_line (command_line) = Blocks extensions from being loaded from command line\n\nUse the preceding information when configuring this policy.",
@@ -162966,6 +163604,20 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_m365linksautoopencopilotenabled",
+    "settingName": "Automatically open Copilot side pane with contextual insights for links opened from Outlook (User)",
+    "settingDescription": "This policy controls whether Microsoft Edge automatically opens the Microsoft Copilot side pane when users open web links from Outlook emails sent from the same tenant.\r\n\r\nStarting in Microsoft Edge version 148, when users open eligible links from Outlook emails sent from the same tenant, Microsoft Edge automatically opens the Copilot side pane with contextual insights. Copilot can use the originating Outlook email as context to surface relevant insights and suggested next steps alongside the web content.\r\n\r\nIf you enable this policy or don't configure it, the Copilot side pane opens automatically when users open links from Outlook emails sent from the same tenant.\r\n\r\nIf you disable this policy, the Copilot side pane doesn't open automatically when users open links from Outlook emails sent from the same tenant.\r\n\r\nThis feature applies only to links opened from Outlook emails sent from the same tenant and requires Microsoft Copilot to be available for the user in Microsoft Edge.\r\n\r\nThis feature is disabled if the 'CopilotPageContext' (Control Copilot access to page context for Microsoft Entra ID profiles) policy or the 'EdgeEntraCopilotPageContext' (Control Copilot access to Microsoft Edge page content for Entra account user profiles when using Copilot in the Microsoft Edge sidepane) policy is disabled, regardless of this policy's configuration. Copilot requires access to page content to provide contextual insights.",
+    "keywords": [
+      "M365LinksAutoOpenCopilotEnabled",
+      "Automatically open Copilot side pane with contextual insights for links opened from Outlook",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchproviderkeyword_recommended",
@@ -176332,6 +176984,91 @@
       "Advanced"
     ],
     "categoryName": "Microsoft Word 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_developertoolsavailabilityblocklist",
+    "settingName": "List of URL patterns for which developer tools are blocked (User)",
+    "settingDescription": "This policy specifies URL patterns where developer tools are blocked. For information on the URL format, see https://go.microsoft.com/fwlink/?linkid=2095322.\r\n\r\nURL patterns are evaluated against the URL of every frame on the page being inspected. If any frame matches a pattern in this policy, developer tools are blocked for the entire page.\r\n\r\nIf you configure this policy and do not configure the 'DeveloperToolsAvailabilityAllowlist' (List of URL patterns for which developer tools are allowed to be opened) policy, developer tools are blocked when any frame matches a pattern in this policy. If no frames match, availability is determined by the 'DeveloperToolsAvailability' (Control where developer tools can be used) policy.\r\n\r\nIf you configure both this policy and the 'DeveloperToolsAvailabilityAllowlist' policy, the allowlist takes precedence. URLs that match the allowlist are allowed, even if they also match this policy. URLs that match this policy (but not the allowlist) are blocked. If a URL matches neither, the 'DeveloperToolsAvailability' policy determines availability.\r\n\r\nIf you disable or do not configure this policy, developer tools availability is determined by the 'DeveloperToolsAvailabilityAllowlist' and 'DeveloperToolsAvailability' policies.\r\n\r\nThis policy supports up to 1,000 entries.\r\n\r\nExample value:\r\n\r\nhttps://contoso.com\r\ncontoso.com\r\nhttps://ssl.server.com\r\ncontoso.com/bad_path\r\nhttps://server.contoso.com:8080/path\r\n.exact.hostname.com\r\n*\r\nfile://*",
+    "keywords": [
+      "DeveloperToolsAvailabilityBlocklist",
+      "List of URL patterns for which developer tools are blocked",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge~startup_configurentpfeedtabvisibility_configurentpfeedtabvisibility",
+    "settingName": "Configure whether the Discover or Work feed tabs are shown on the New Tab Page. (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "ConfigureNTPFeedTabVisibility",
+      "Configure whether the Discover or Work feed tabs are shown on the New Tab Page.",
+      "\\Microsoft Edge\\Startup, home page and new tab page",
+      "Microsoft Edge\\Startup, home page and new tab page",
+      "Startup, home page and new tab page"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_allowbrowsingwithcopilot",
+    "settingName": "Controls the availability of browsing with Copilot in Microsoft Edge. (User)",
+    "settingDescription": "When browsing with Copilot is enabled, users can explicitly invoke it for a query. It isn't invoked automatically.\r\n\r\nBrowsing with Copilot is available only on domains specified in the 'BrowsingWithCopilotAllowList' (Browsing with Copilot Allowed URLs) policy and is blocked on domains specified in the 'BrowsingWithCopilotBlockList' (Browsing with Copilot Blocked URLs) policy. If no domains are configured in the allow list, browsing with Copilot is effectively disabled.\r\n\r\nThis feature is available only to users with an active Microsoft 365 Copilot subscription.\r\n\r\nFor more information about configuring browsing with Copilot, see https://go.microsoft.com/fwlink/?linkid=2346300.\r\n\r\nIf you enable this policy, browsing with Copilot is turned on for all users who receive the policy, and users can't turn it off.\r\n\r\nIf you disable this policy, browsing with Copilot is turned off for all users who receive the policy, and users can't turn it on.\r\n\r\nIf you don't configure this policy, browsing with Copilot is off by default, and users can turn it on.",
+    "keywords": [
+      "AllowBrowsingWithCopilot",
+      "Controls the availability of browsing with Copilot in Microsoft Edge.",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_browsingwithcopilotblocklist",
+    "settingName": "Browsing with Copilot Blocked URLs",
+    "settingDescription": "Controls the list of URLs where browsing with Copilot is blocked. Users can't modify this list.\r\n\r\nUse this policy to define exceptions to broader allowlists. For example, you can set 'BrowsingWithCopilotAllowList' (Browsing with Copilot Allowed URLs) to '*' to allow all sites, and then use this policy to block access to specific URLs.\r\n\r\nThis policy supports blocking by scheme, subdomain, or port. When multiple URL patterns apply, the most specific match determines whether access is allowed or blocked. Blocklist entries take precedence over allowlist entries.\r\n\r\nIf you don't configure this policy, no exceptions are applied to 'BrowsingWithCopilotAllowList'.\r\n\r\nBrowsing with Copilot supports only HTTP and HTTPS protocols. Wildcards (*) are supported, and subdomains are matched even without wildcards. URL matching is based on the site origin only; any path specified in the pattern is ignored.\r\n\r\nFor information about URL pattern format, see https://go.microsoft.com/fwlink/?linkid=2095322.\r\n\r\nExample value:\r\n\r\nhttps://www.contoso.com\r\n[*.]contoso.edu\r\ncontoso.net\r\nlogin.contoso.us",
+    "keywords": [
+      "BrowsingWithCopilotBlockList",
+      "Browsing with Copilot Blocked URLs",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_recommended_allowbrowsingwithcopilot_recommended",
+    "settingName": "Controls the availability of browsing with Copilot in Microsoft Edge.",
+    "settingDescription": "When browsing with Copilot is enabled, users can explicitly invoke it for a query. It isn't invoked automatically.\r\n\r\nBrowsing with Copilot is available only on domains specified in the 'BrowsingWithCopilotAllowList' (Browsing with Copilot Allowed URLs) policy and is blocked on domains specified in the 'BrowsingWithCopilotBlockList' (Browsing with Copilot Blocked URLs) policy. If no domains are configured in the allow list, browsing with Copilot is effectively disabled.\r\n\r\nThis feature is available only to users with an active Microsoft 365 Copilot subscription.\r\n\r\nFor more information about configuring browsing with Copilot, see https://go.microsoft.com/fwlink/?linkid=2346300.\r\n\r\nIf you enable this policy, browsing with Copilot is turned on for all users who receive the policy, and users can't turn it off.\r\n\r\nIf you disable this policy, browsing with Copilot is turned off for all users who receive the policy, and users can't turn it on.\r\n\r\nIf you don't configure this policy, browsing with Copilot is off by default, and users can turn it on.",
+    "keywords": [
+      "AllowBrowsingWithCopilot_recommended",
+      "Controls the availability of browsing with Copilot in Microsoft Edge.",
+      "\\Microsoft Edge - Default Settings (users can override)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge\\Recommended",
+      "AllowBrowsingWithCopilot",
+      "Microsoft Edge - Default Settings (users can override)"
+    ],
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_office16v23~policy~l_microsoftofficesystem~l_securitysettings_l_blockorgchart",
+    "settingName": "Block OrgChart (User)",
+    "settingDescription": "This policy setting allows you to control whether Organization Chart (OrgChart) Add-in for Microsoft Office programs runs in Microsoft 365 apps.\r\n\r\nIf you enable this policy setting, OrgChart will not run in any Microsoft 365 app. Instead, a static image will render in its place.\r\n\r\nIf you disable this policy setting, OrgChart will run in Microsoft 365 apps.\r\n\r\nIf you don't configure this policy setting, OrgChart will run in Microsoft 365 apps.",
+    "keywords": [
+      "L_BlockOrgChart",
+      "Block OrgChart",
+      "\\Microsoft Office 2016\\Security Settings",
+      "User",
+      "software\\policies\\microsoft\\office\\16.0\\common\\security",
+      "blockorgchart",
+      "Security Settings"
+    ],
+    "categoryName": "Microsoft Office 2016"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.adssettingforintrusiveadssites",

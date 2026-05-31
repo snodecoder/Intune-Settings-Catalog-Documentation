@@ -1,34 +1,34 @@
 [
   {
-    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories_directorypath",
-    "settingName": "Directory",
-    "settingDescription": "The filesystem directory path.",
+    "settingId": "ade_setupassistant_filevault",
+    "settingName": "FileVault",
+    "settingDescription": null,
     "keywords": [
-      "AgentGovernance",
-      "Agent Governance",
-      "Container Policy"
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
     ],
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution",
-    "settingName": "Allow agent tool execution",
-    "settingDescription": "When enabled, the agent is allowed to execute tools with the specified resource policies.",
+    "settingId": "ade_setupassistant_safetyandhandling",
+    "settingName": "Safety and handling",
+    "settingDescription": null,
     "keywords": [
-      "AgentGovernance",
-      "Agent Governance",
-      "Container Policy"
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
     ],
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser",
-    "settingName": "Agent user",
-    "settingDescription": "Specifies how the agent user identity is determined.",
+    "settingId": "ade_setupassistant_unlockwithwatch",
+    "settingName": "Auto unlock with Apple Watch",
+    "settingDescription": null,
     "keywords": [
-      "AgentGovernance",
-      "Agent Governance",
-      "Container Policy"
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
     ],
     "categoryName": "Uncategorized"
   },
@@ -77,6 +77,39 @@
       "Default Elevation Response",
       "Privilege Management",
       "Privilege Management Elevation Client Settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories_directorypath",
+    "settingName": "Directory",
+    "settingDescription": "The filesystem directory path to which this access rule applies. Supports absolute paths and environment variables (e.g. D:\\Repos, %USERPROFILE%).",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution",
+    "settingName": "Allow agent execution in container",
+    "settingDescription": "Controls whether agent tools and loops can execute. The specific behavior depends on the selected agent.",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser",
+    "settingName": "Agent user account",
+    "settingDescription": "",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
     ],
     "categoryName": "Uncategorized"
   },
@@ -156,24 +189,13 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories_accesslevel",
-    "settingName": "Access level",
-    "settingDescription": "The level of filesystem access granted for this directory.",
+    "settingId": "ade_setupassistant_webcontentfiltering",
+    "settingName": "Web Content Filtering",
+    "settingDescription": null,
     "keywords": [
-      "AgentGovernance",
-      "Agent Governance",
-      "Container Policy"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser_userprofile",
-    "settingName": "User profile",
-    "settingDescription": "The Entra user profile (UPN or SID) to run the agent as.",
-    "keywords": [
-      "AgentGovernance",
-      "Agent Governance",
-      "Container Policy"
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
     ],
     "categoryName": "Uncategorized"
   },
@@ -266,6 +288,28 @@
       "Automatically detect elevations",
       "Privilege Management",
       "Privilege management elevation client settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories_accesslevel",
+    "settingName": "Access level",
+    "settingDescription": "Level of filesystem access granted for this directory. Subdirectories inherit the same access level unless they have their own rule.",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser_userprofile",
+    "settingName": "Identity profile",
+    "settingDescription": "The Entra user profile (UPN or SID) to run the agent as.",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
     ],
     "categoryName": "Uncategorized"
   },
@@ -365,6 +409,39 @@
       "Rule type",
       "Privilege Management",
       "Business Justification"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_macos_authenticationmethod",
+    "settingName": "Intune authentication method",
+    "settingDescription": "If your organization uses multifactor authentication, select Setup Assistant with modern authentication, which prompts users to authenticate based on settings in Entra.",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Management settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_appstore",
+    "settingName": "App Store",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_multitasking",
+    "settingName": "Multitasking",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
     ],
     "categoryName": "Uncategorized"
   },
@@ -664,24 +741,79 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "user_vendor_msft_agentgovernance",
-    "settingName": "Agent Governance",
-    "settingDescription": "Agent Governance policy for configuring AI agent containment settings.",
+    "settingId": "ade_accountsettings_adminaccountname",
+    "settingName": "Admin account username",
+    "settingDescription": "The account name for the administrator account. This field is to be defaulted to 'Admin'.",
     "keywords": [
-      "AgentGovernance",
-      "Agent Governance",
-      "Container Policy"
+      "ADE profile",
+      "enrollment",
+      "Account settings"
     ],
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories",
-    "settingName": "Allowed filesystem directories",
-    "settingDescription": "A collection of filesystem directory rules.",
+    "settingId": "ade_accountsettings_restrictediting",
+    "settingName": "Restrict editing",
+    "settingDescription": "Prevent the end user from editing the full name and account name",
     "keywords": [
-      "AgentGovernance",
-      "Agent Governance",
-      "Container Policy"
+      "ADE profile",
+      "enrollment",
+      "Account settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_accountsettings_createlocalprimary",
+    "settingName": "Create a local primary account",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Account settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_accountsettings_adminaccountpasswordrotation",
+    "settingName": "Admin account password rotation period (days)",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Account settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_accountsettings_adminaccountfullname",
+    "settingName": "Admin account full name",
+    "settingDescription": "The full name for the administrator account. This field is to be defaulted to 'Admin'.",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Account settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_appleconfiguratorcertificates",
+    "settingName": "Apple Configurator certificates",
+    "settingDescription": "Required to sync data with a supervised device. Make sure you save a local copy of the certificate that you can access later. You won't be able to make changes to the uploaded copy.",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Management settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_icloudstorage",
+    "settingName": "iCloud Storage",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
     ],
     "categoryName": "Uncategorized"
   },
@@ -699,7 +831,7 @@
   {
     "settingId": "ade_lockedenrollment",
     "settingName": "Locked enrollment",
-    "settingDescription": "Blocks the user from removing the management profile through the iOS/iPadOS Settings menu.",
+    "settingDescription": "Blocks the user from removing the management profile through the Settings menu.",
     "keywords": [
       "ADE profile",
       "enrollment",
@@ -854,6 +986,28 @@
       "Validation",
       "Privilege Management",
       "Privilege Management Elevation Client Settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance",
+    "settingName": "Agent Governance",
+    "settingDescription": "Agent Governance policy for configuring AI agent containment settings.",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories",
+    "settingName": "Allowed filesystem directories",
+    "settingDescription": "Specifies filesystem directories the contained agent can access. If no directories are configured, filesystem access is denied by default.",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1014,6 +1168,50 @@
       "Certificate",
       "Elevation",
       "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_accountsettings_primaryaccountfullname",
+    "settingName": "Primary account full name",
+    "settingDescription": "The full name for the account. Setup Assistant will user this value to prefill the Full Name field if 'Prefill account info' is set to 'Not configured'. This field is to be defaulted to the variable, {{username}}, for example, 'John Doe'.",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Account settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_macos_useraffinity",
+    "settingName": "User affinity",
+    "settingDescription": "User affinity associates devices with users. Users must authenticate to enroll with user affinity.",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Management settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_camerabutton",
+    "settingName": "Camera button",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_osshowcase",
+    "settingName": "OS showcase",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1252,13 +1450,24 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allownetworkaccess",
-    "settingName": "Allow network access",
-    "settingDescription": "Controls whether the contained agent can access the network. 0=blocked, 1=allowed.",
+    "settingId": "ade_accountsettings_createlocaladmin",
+    "settingName": "Create a local admin account",
+    "settingDescription": null,
     "keywords": [
-      "AgentGovernance",
-      "Agent Governance",
-      "Container Policy"
+      "ADE profile",
+      "enrollment",
+      "Account settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_accessibility",
+    "settingName": "Accessibility",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1348,6 +1557,17 @@
       "Reporting scope",
       "Privilege Management",
       "Privilege Management Elevation Client Settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allownetworkaccess",
+    "settingName": "Allow network access",
+    "settingDescription": "Controls whether the contained agent is allowed to access the network. 0=blocked, 1=allowed.",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1444,6 +1664,39 @@
     "keywords": [
       "Password Expiration Protection Enabled",
       "LAPS"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_accountsettings_prefillaccountinfo",
+    "settingName": "Prefill account info",
+    "settingDescription": "If you select 'Yes', the account name and full name must be configured. Not configured allows the end user to configure these fields.",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Account settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_macos_awaitconfiguration",
+    "settingName": "Await final configuration",
+    "settingDescription": "Keeps the device in Setup Assistant until the first sync between the device and Intune installs policies.",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Management settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_iclouddiagnostics",
+    "settingName": "iCloud Diagnostics",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1614,13 +1867,24 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_targetedagentid",
-    "settingName": "Targeted agent",
-    "settingDescription": "The MSIX package family name of the targeted agent.",
+    "settingId": "ade_accountsettings_hideusersgroups",
+    "settingName": "Hide in Users and Groups",
+    "settingDescription": "Make the admin account hidden in the login window and Users & Groups.",
     "keywords": [
-      "AgentGovernance",
-      "Agent Governance",
-      "Container Policy"
+      "ADE profile",
+      "enrollment",
+      "Account settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_accountsettings_primaryaccountname",
+    "settingName": "Primary account name",
+    "settingDescription": "The account name for the account. Setup Assistant will use this value to prefill the Account Name field if 'Prefill account info' is set to 'Not configured'. This field is to be defaulted to the variable, {{partialupn}}, for example, 'John'.",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Account settings"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1767,6 +2031,17 @@
       "Elevation",
       "Privilege Management",
       "Privilege Management Elevation Client Settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_targetedagentid",
+    "settingName": "Targeted agent",
+    "settingDescription": "The MSIX package family name of the targeted agent.",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
     ],
     "categoryName": "Uncategorized"
   },

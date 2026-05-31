@@ -2077,6 +2077,84 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_copilotnewtabpageenabled",
+    "settingName": "Enable the Copilot new tab page",
+    "settingDescription": "This policy configures the availability of the Copilot new tab page in Microsoft Edge for Business.\r\n\r\nThe Copilot new tab page combines search and chat into a single input box and includes personalized cards that provide quick access to relevant files, calendar events, and suggested Copilot prompts. Users who do not have a Microsoft 365 Copilot license might experience limited relevance in Copilot prompt card content.\r\n\r\nMost policies that customize the New Tab Page are supported on the Copilot new tab page. For a complete list of supported and unsupported policies, see https://go.microsoft.com/fwlink/?linkid=2330462.\r\n\r\nThis policy applies only to Microsoft Entra ID profiles and controls the Copilot new tab page experience in Microsoft Edge for Business. This policy does not apply to the Copilot new tab page on MSA profiles.\r\n\r\nIf you enable this policy, the Copilot new tab page is turned on.\r\n\r\nIf you disable or don't configure this policy, the Copilot new tab page is turned off. When the policy is not configured, users can turn it on via user settings.",
+    "keywords": [
+      "CopilotNewTabPageEnabled",
+      "Enable the Copilot new tab page",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_developertoolsavailabilityblocklist_developertoolsavailabilityblocklistdesc",
+    "settingName": "List of URL patterns for which developer tools are blocked (User)",
+    "settingDescription": "",
+    "keywords": [
+      "DeveloperToolsAvailabilityBlocklist",
+      "List of URL patterns for which developer tools are blocked",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_browsingwithcopilotblocklist_browsingwithcopilotblocklistdesc",
+    "settingName": "Browsing with Copilot Blocked URLs (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "BrowsingWithCopilotBlockList",
+      "Browsing with Copilot Blocked URLs",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_browsingwithcopilotallowlist",
+    "settingName": "Browsing with Copilot Allowed URLs",
+    "settingDescription": "Allows you to define a list of URLs where browsing with Copilot is available. Users cannot modify this list.\r\n\r\nIf you enable this policy, browsing with Copilot is available only on the sites specified in the list. To allow a broader set of sites while blocking specific exceptions, configure this policy together with the 'BrowsingWithCopilotBlockList' (Browsing with Copilot Blocked URLs) policy. For example, you can include '*' to allow all sites, and then use the block list to restrict access to specific URLs.\r\n\r\nYou can define exceptions based on schemes, subdomains, ports, or origins. When multiple filters apply, the most specific match determines whether a URL is allowed or blocked. The block list takes precedence over the allow list.\r\n\r\nIf you disable or do not configure this policy, browsing with Copilot is unavailable on all sites, even if the 'AllowBrowsingWithCopilot' (Controls the availability of browsing with Copilot in Microsoft Edge.) policy is enabled.\r\n\r\nBrowsing with Copilot supports only HTTP and HTTPS protocols. Wildcards (*) are supported, and subdomains are matched even without wildcards. This policy applies only to the site origin; any path specified in the URL pattern is ignored. For guidance on formatting URL patterns, see https://go.microsoft.com/fwlink/?linkid=2095322.\r\n\r\nExample value:\r\n\r\nhttps://www.contoso.com\r\n[*.]contoso.edu\r\ncontoso.net\r\nlogin.contoso.us",
+    "keywords": [
+      "BrowsingWithCopilotAllowList",
+      "Browsing with Copilot Allowed URLs",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_browsingwithcopilotblocklist",
+    "settingName": "Browsing with Copilot Blocked URLs (User)",
+    "settingDescription": "Controls the list of URLs where browsing with Copilot is blocked. Users can't modify this list.\r\n\r\nUse this policy to define exceptions to broader allowlists. For example, you can set 'BrowsingWithCopilotAllowList' (Browsing with Copilot Allowed URLs) to '*' to allow all sites, and then use this policy to block access to specific URLs.\r\n\r\nThis policy supports blocking by scheme, subdomain, or port. When multiple URL patterns apply, the most specific match determines whether access is allowed or blocked. Blocklist entries take precedence over allowlist entries.\r\n\r\nIf you don't configure this policy, no exceptions are applied to 'BrowsingWithCopilotAllowList'.\r\n\r\nBrowsing with Copilot supports only HTTP and HTTPS protocols. Wildcards (*) are supported, and subdomains are matched even without wildcards. URL matching is based on the site origin only; any path specified in the pattern is ignored.\r\n\r\nFor information about URL pattern format, see https://go.microsoft.com/fwlink/?linkid=2095322.\r\n\r\nExample value:\r\n\r\nhttps://www.contoso.com\r\n[*.]contoso.edu\r\ncontoso.net\r\nlogin.contoso.us",
+    "keywords": [
+      "BrowsingWithCopilotBlockList",
+      "Browsing with Copilot Blocked URLs",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_developertoolsavailabilityblocklist_developertoolsavailabilityblocklistdesc",
+    "settingName": "List of URL patterns for which developer tools are blocked (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "DeveloperToolsAvailabilityBlocklist",
+      "List of URL patterns for which developer tools are blocked",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.sharedworkerbloburlfixenabled",
     "settingName": "Make SharedWorker blob URL behavior aligned with the specification",
     "settingDescription": "According to Service Worker specification\nhttps://w3c.github.io/ServiceWorker/#control-and-use-worker-client, workers\nshould inherit controllers for blob URLs. Currently, only DedicatedWorkers\ninherit the controller, while SharedWorkers do not.\n\nEnabled/Unset: Microsoft Edge inherits\nthe controller for SharedWorker blob URLs, aligning with the specification.\n\nDisabled: Behavior remains unchanged, not aligning with the specification.\n\nThis policy is temporary and will be removed in a future update.",
@@ -4137,6 +4215,32 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_browsingwithcopilotallowlist_browsingwithcopilotallowlistdesc",
+    "settingName": "Browsing with Copilot Allowed URLs (User)",
+    "settingDescription": "",
+    "keywords": [
+      "BrowsingWithCopilotAllowList",
+      "Browsing with Copilot Allowed URLs",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_m365linksautoopencopilotenabled",
+    "settingName": "Automatically open Copilot side pane with contextual insights for links opened from Outlook",
+    "settingDescription": "This policy controls whether Microsoft Edge automatically opens the Microsoft Copilot side pane when users open web links from Outlook emails sent from the same tenant.\r\n\r\nStarting in Microsoft Edge version 148, when users open eligible links from Outlook emails sent from the same tenant, Microsoft Edge automatically opens the Copilot side pane with contextual insights. Copilot can use the originating Outlook email as context to surface relevant insights and suggested next steps alongside the web content.\r\n\r\nIf you enable this policy or don't configure it, the Copilot side pane opens automatically when users open links from Outlook emails sent from the same tenant.\r\n\r\nIf you disable this policy, the Copilot side pane doesn't open automatically when users open links from Outlook emails sent from the same tenant.\r\n\r\nThis feature applies only to links opened from Outlook emails sent from the same tenant and requires Microsoft Copilot to be available for the user in Microsoft Edge.\r\n\r\nThis feature is disabled if the 'CopilotPageContext' (Control Copilot access to page context for Microsoft Entra ID profiles) policy or the 'EdgeEntraCopilotPageContext' (Control Copilot access to Microsoft Edge page content for Entra account user profiles when using Copilot in the Microsoft Edge sidepane) policy is disabled, regardless of this policy's configuration. Copilot requires access to page content to provide contextual insights.",
+    "keywords": [
+      "M365LinksAutoOpenCopilotEnabled",
+      "Automatically open Copilot side pane with contextual insights for links opened from Outlook",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsdaily",
     "settingName": "Mute notifications daily",
     "settingDescription": null,
@@ -6112,6 +6216,20 @@
       "DoNotSilentlyBlockProtocolsFromOrigins",
       "Define a list of protocols that can not be silently blocked by anti-flood protection",
       "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_sharedworkerextendedlifetimeenabled",
+    "settingName": "Enable the extended lifetime option for SharedWorkers (User)",
+    "settingDescription": "Controls whether Microsoft Edge allows SharedWorkers to use the extendedLifetime option.\r\n\r\nIf you enable or don't configure this policy, SharedWorkers can use the extended lifetime option in the SharedWorker constructor.\r\n\r\nIf you disable this policy, the extended lifetime option is ignored, even if it is requested by the page.\r\n\r\nThis policy is temporary and will be removed in a future release.",
+    "keywords": [
+      "SharedWorkerExtendedLifetimeEnabled",
+      "Enable the extended lifetime option for SharedWorkers",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
       "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
@@ -8230,6 +8348,58 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_developertoolsavailabilityallowlist_developertoolsavailabilityallowlistdesc",
+    "settingName": "List of URL patterns for which developer tools are allowed to be opened (User)",
+    "settingDescription": "",
+    "keywords": [
+      "DeveloperToolsAvailabilityAllowlist",
+      "List of URL patterns for which developer tools are allowed to be opened",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_sharedworkerextendedlifetimeenabled",
+    "settingName": "Enable the extended lifetime option for SharedWorkers",
+    "settingDescription": "Controls whether Microsoft Edge allows SharedWorkers to use the extendedLifetime option.\r\n\r\nIf you enable or don't configure this policy, SharedWorkers can use the extended lifetime option in the SharedWorker constructor.\r\n\r\nIf you disable this policy, the extended lifetime option is ignored, even if it is requested by the page.\r\n\r\nThis policy is temporary and will be removed in a future release.",
+    "keywords": [
+      "SharedWorkerExtendedLifetimeEnabled",
+      "Enable the extended lifetime option for SharedWorkers",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_developertoolsavailabilityallowlist",
+    "settingName": "List of URL patterns for which developer tools are allowed to be opened (User)",
+    "settingDescription": "This policy controls where developer tools can be used in Microsoft Edge by specifying an allowlist of URL patterns.\r\n\r\nURL patterns are matched against the URL of every frame on the page being inspected.\r\n\r\nIf you configure this policy and do not configure the 'DeveloperToolsAvailabilityBlocklist' (List of URL patterns for which developer tools are blocked) policy, developer tools are available only when every frame on the page matches a pattern in this allowlist. If any frame does not match, developer tools are blocked for the entire page. For information on the URL format, see https://go.microsoft.com/fwlink/?linkid=2095322 .\r\n\r\nIf you configure both this policy and the 'DeveloperToolsAvailabilityBlocklist' policy, this allowlist takes precedence. URLs that match this allowlist are allowed even if they also match the blocklist. URLs that match the blocklist but not this allowlist are blocked. URLs that match neither are governed by the 'DeveloperToolsAvailability' (Control where developer tools can be used) policy.\r\n\r\nIf you disable or do not configure this policy, developer tools availability is determined by the 'DeveloperToolsAvailabilityBlocklist' and 'DeveloperToolsAvailability' policies.\r\n\r\nThis policy applies to developer tools opened for websites, extensions, and web applications.\r\n\r\nThis policy supports up to 1,000 entries.\r\n\r\nExample value:\r\n\r\ncontoso.com\r\nhttps://ssl.server.com\r\ncontoso.com/good_path\r\nhttps://server.contoso.com:8080/path\r\n.exact.hostname.com\r\nfile://*",
+    "keywords": [
+      "DeveloperToolsAvailabilityAllowlist",
+      "List of URL patterns for which developer tools are allowed to be opened",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_browsingwithcopilotallowlist_browsingwithcopilotallowlistdesc",
+    "settingName": "Browsing with Copilot Allowed URLs (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "BrowsingWithCopilotAllowList",
+      "Browsing with Copilot Allowed URLs",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autolaunchprotocolsfromorigins",
     "settingName": "Define a list of protocols that can launch an external application from listed origins without prompting the user",
     "settingDescription": "Allows you to set a list of protocols, and for each protocol an associated list of allowed origin patterns, that can launch an external application without prompting the user. The trailing separator shouldn't be included when listing the protocol and the protocol should be all lower case. For example, list \"skype\" instead of \"skype:\", \"skype://\" or \"Skype\".\n\nIf you configure this policy, a protocol is only permitted to launch an external application without prompting by policy if:\n\n- the protocol is listed\n\n- the origin of the site trying to launch the protocol matches one of the origin patterns in that protocol's allowed_origins list.\n\nIf either condition is false, the external protocol launch prompt isn't omitted, by policy.\n\nIf you don't configure this policy, no protocols can launch without a prompt. Users can opt out of prompts on a per-protocol/per-site basis unless the \"ExternalProtocolDialogShowAlwaysOpenCheckbox\" policy is set to Disabled. This policy has no impact on per-protocol/per-site prompt exemptions set by users.\n\nThe origin-matching patterns use a similar format to those for the \"URLBlocklist\" policy, which are documented at <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n\nHowever, origin-matching patterns for this policy can't contain \"/path\" or \"@query\" elements. Any pattern that contains a \"/path\" or \"@query\" element is ignored.\n\nThis policy doesn't work as expected with file://* wildcards.",
@@ -10172,6 +10342,126 @@
     "keywords": [
       "SandboxExternalProtocolBlocked",
       "Allow Microsoft Edge to block navigations to external protocols in a sandboxed iframe",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_allowbrowsingwithcopilot",
+    "settingName": "Controls the availability of browsing with Copilot in Microsoft Edge.",
+    "settingDescription": "When browsing with Copilot is enabled, users can explicitly invoke it for a query. It isn't invoked automatically.\r\n\r\nBrowsing with Copilot is available only on domains specified in the 'BrowsingWithCopilotAllowList' (Browsing with Copilot Allowed URLs) policy and is blocked on domains specified in the 'BrowsingWithCopilotBlockList' (Browsing with Copilot Blocked URLs) policy. If no domains are configured in the allow list, browsing with Copilot is effectively disabled.\r\n\r\nThis feature is available only to users with an active Microsoft 365 Copilot subscription.\r\n\r\nFor more information about configuring browsing with Copilot, see https://go.microsoft.com/fwlink/?linkid=2346300.\r\n\r\nIf you enable this policy, browsing with Copilot is turned on for all users who receive the policy, and users can't turn it off.\r\n\r\nIf you disable this policy, browsing with Copilot is turned off for all users who receive the policy, and users can't turn it on.\r\n\r\nIf you don't configure this policy, browsing with Copilot is off by default, and users can turn it on.",
+    "keywords": [
+      "AllowBrowsingWithCopilot",
+      "Controls the availability of browsing with Copilot in Microsoft Edge.",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_maxconnectionsperproxyforwebsocket",
+    "settingName": "Maximum number of concurrent connections to the proxy server for WebSocket requests (User)",
+    "settingDescription": "Specifies the maximum number of simultaneous connections to a proxy server for WebSocket requests.\r\n\r\nTo configure limits for non-WebSocket requests, see the 'MaxConnectionsPerProxy' (Maximum number of concurrent connections to the proxy server) policy.\r\n\r\nIf you don't configure this policy, the default value of 32 is used.\r\n\r\nSome web applications maintain multiple concurrent connections (for example, long-lived or hanging requests). Setting a value lower than the default may cause networking delays when many such applications are open.\r\n\r\nSome proxy servers cannot handle a high number of concurrent connections per client. In these cases, reducing the value of this policy may improve reliability.\r\n\r\nThe supported range is 6 to 256:\r\n- Values less than 6 are treated as 6.\r\n- Values greater than 256 are treated as 256.\r\n\r\nWe recommend modifying this value only if required by your proxy server configuration or network environment.",
+    "keywords": [
+      "MaxConnectionsPerProxyForWebSocket",
+      "Maximum number of concurrent connections to the proxy server for WebSocket requests",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_developertoolsavailabilityallowlist",
+    "settingName": "List of URL patterns for which developer tools are allowed to be opened",
+    "settingDescription": "This policy controls where developer tools can be used in Microsoft Edge by specifying an allowlist of URL patterns.\r\n\r\nURL patterns are matched against the URL of every frame on the page being inspected.\r\n\r\nIf you configure this policy and do not configure the 'DeveloperToolsAvailabilityBlocklist' (List of URL patterns for which developer tools are blocked) policy, developer tools are available only when every frame on the page matches a pattern in this allowlist. If any frame does not match, developer tools are blocked for the entire page. For information on the URL format, see https://go.microsoft.com/fwlink/?linkid=2095322 .\r\n\r\nIf you configure both this policy and the 'DeveloperToolsAvailabilityBlocklist' policy, this allowlist takes precedence. URLs that match this allowlist are allowed even if they also match the blocklist. URLs that match the blocklist but not this allowlist are blocked. URLs that match neither are governed by the 'DeveloperToolsAvailability' (Control where developer tools can be used) policy.\r\n\r\nIf you disable or do not configure this policy, developer tools availability is determined by the 'DeveloperToolsAvailabilityBlocklist' and 'DeveloperToolsAvailability' policies.\r\n\r\nThis policy applies to developer tools opened for websites, extensions, and web applications.\r\n\r\nThis policy supports up to 1,000 entries.\r\n\r\nExample value:\r\n\r\ncontoso.com\r\nhttps://ssl.server.com\r\ncontoso.com/good_path\r\nhttps://server.contoso.com:8080/path\r\n.exact.hostname.com\r\nfile://*",
+    "keywords": [
+      "DeveloperToolsAvailabilityAllowlist",
+      "List of URL patterns for which developer tools are allowed to be opened",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_developertoolsavailabilityblocklist",
+    "settingName": "List of URL patterns for which developer tools are blocked",
+    "settingDescription": "This policy specifies URL patterns where developer tools are blocked. For information on the URL format, see https://go.microsoft.com/fwlink/?linkid=2095322.\r\n\r\nURL patterns are evaluated against the URL of every frame on the page being inspected. If any frame matches a pattern in this policy, developer tools are blocked for the entire page.\r\n\r\nIf you configure this policy and do not configure the 'DeveloperToolsAvailabilityAllowlist' (List of URL patterns for which developer tools are allowed to be opened) policy, developer tools are blocked when any frame matches a pattern in this policy. If no frames match, availability is determined by the 'DeveloperToolsAvailability' (Control where developer tools can be used) policy.\r\n\r\nIf you configure both this policy and the 'DeveloperToolsAvailabilityAllowlist' policy, the allowlist takes precedence. URLs that match the allowlist are allowed, even if they also match this policy. URLs that match this policy (but not the allowlist) are blocked. If a URL matches neither, the 'DeveloperToolsAvailability' policy determines availability.\r\n\r\nIf you disable or do not configure this policy, developer tools availability is determined by the 'DeveloperToolsAvailabilityAllowlist' and 'DeveloperToolsAvailability' policies.\r\n\r\nThis policy supports up to 1,000 entries.\r\n\r\nExample value:\r\n\r\nhttps://contoso.com\r\ncontoso.com\r\nhttps://ssl.server.com\r\ncontoso.com/bad_path\r\nhttps://server.contoso.com:8080/path\r\n.exact.hostname.com\r\n*\r\nfile://*",
+    "keywords": [
+      "DeveloperToolsAvailabilityBlocklist",
+      "List of URL patterns for which developer tools are blocked",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_copilotnewtabpageenabled",
+    "settingName": "Enable the Copilot new tab page (User)",
+    "settingDescription": "This policy configures the availability of the Copilot new tab page in Microsoft Edge for Business.\r\n\r\nThe Copilot new tab page combines search and chat into a single input box and includes personalized cards that provide quick access to relevant files, calendar events, and suggested Copilot prompts. Users who do not have a Microsoft 365 Copilot license might experience limited relevance in Copilot prompt card content.\r\n\r\nMost policies that customize the New Tab Page are supported on the Copilot new tab page. For a complete list of supported and unsupported policies, see https://go.microsoft.com/fwlink/?linkid=2330462.\r\n\r\nThis policy applies only to Microsoft Entra ID profiles and controls the Copilot new tab page experience in Microsoft Edge for Business. This policy does not apply to the Copilot new tab page on MSA profiles.\r\n\r\nIf you enable this policy, the Copilot new tab page is turned on.\r\n\r\nIf you disable or don't configure this policy, the Copilot new tab page is turned off. When the policy is not configured, users can turn it on via user settings.",
+    "keywords": [
+      "CopilotNewTabPageEnabled",
+      "Enable the Copilot new tab page",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_maxconnectionsperproxyforwebsocket_maxconnectionsperproxyforwebsocket",
+    "settingName": "Maximum number of concurrent connections to the proxy server for WebSocket requests: (User)",
+    "settingDescription": "",
+    "keywords": [
+      "MaxConnectionsPerProxyForWebSocket",
+      "Maximum number of concurrent connections to the proxy server for WebSocket requests",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_browsingwithcopilotblocklist_browsingwithcopilotblocklistdesc",
+    "settingName": "Browsing with Copilot Blocked URLs (User)",
+    "settingDescription": "",
+    "keywords": [
+      "BrowsingWithCopilotBlockList",
+      "Browsing with Copilot Blocked URLs",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_browsingwithcopilotallowlist",
+    "settingName": "Browsing with Copilot Allowed URLs (User)",
+    "settingDescription": "Allows you to define a list of URLs where browsing with Copilot is available. Users cannot modify this list.\r\n\r\nIf you enable this policy, browsing with Copilot is available only on the sites specified in the list. To allow a broader set of sites while blocking specific exceptions, configure this policy together with the 'BrowsingWithCopilotBlockList' (Browsing with Copilot Blocked URLs) policy. For example, you can include '*' to allow all sites, and then use the block list to restrict access to specific URLs.\r\n\r\nYou can define exceptions based on schemes, subdomains, ports, or origins. When multiple filters apply, the most specific match determines whether a URL is allowed or blocked. The block list takes precedence over the allow list.\r\n\r\nIf you disable or do not configure this policy, browsing with Copilot is unavailable on all sites, even if the 'AllowBrowsingWithCopilot' (Controls the availability of browsing with Copilot in Microsoft Edge.) policy is enabled.\r\n\r\nBrowsing with Copilot supports only HTTP and HTTPS protocols. Wildcards (*) are supported, and subdomains are matched even without wildcards. This policy applies only to the site origin; any path specified in the URL pattern is ignored. For guidance on formatting URL patterns, see https://go.microsoft.com/fwlink/?linkid=2095322.\r\n\r\nExample value:\r\n\r\nhttps://www.contoso.com\r\n[*.]contoso.edu\r\ncontoso.net\r\nlogin.contoso.us",
+    "keywords": [
+      "BrowsingWithCopilotAllowList",
+      "Browsing with Copilot Allowed URLs",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_developertoolsavailabilityallowlist_developertoolsavailabilityallowlistdesc",
+    "settingName": "List of URL patterns for which developer tools are allowed to be opened (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "DeveloperToolsAvailabilityAllowlist",
+      "List of URL patterns for which developer tools are allowed to be opened",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],
@@ -12210,6 +12500,32 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_maxconnectionsperproxyforwebsocket_maxconnectionsperproxyforwebsocket",
+    "settingName": "Maximum number of concurrent connections to the proxy server for WebSocket requests: (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "MaxConnectionsPerProxyForWebSocket",
+      "Maximum number of concurrent connections to the proxy server for WebSocket requests",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_maxconnectionsperproxyforwebsocket",
+    "settingName": "Maximum number of concurrent connections to the proxy server for WebSocket requests",
+    "settingDescription": "Specifies the maximum number of simultaneous connections to a proxy server for WebSocket requests.\r\n\r\nTo configure limits for non-WebSocket requests, see the 'MaxConnectionsPerProxy' (Maximum number of concurrent connections to the proxy server) policy.\r\n\r\nIf you don't configure this policy, the default value of 32 is used.\r\n\r\nSome web applications maintain multiple concurrent connections (for example, long-lived or hanging requests). Setting a value lower than the default may cause networking delays when many such applications are open.\r\n\r\nSome proxy servers cannot handle a high number of concurrent connections per client. In these cases, reducing the value of this policy may improve reliability.\r\n\r\nThe supported range is 6 to 256:\r\n- Values less than 6 are treated as 6.\r\n- Values greater than 256 are treated as 256.\r\n\r\nWe recommend modifying this value only if required by your proxy server configuration or network environment.",
+    "keywords": [
+      "MaxConnectionsPerProxyForWebSocket",
+      "Maximum number of concurrent connections to the proxy server for WebSocket requests",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.certificatetransparencyenforcementdisabledforcas",
     "settingName": "Disable Certificate Transparency enforcement for a list of subjectPublicKeyInfo hashes",
     "settingDescription": "Disables enforcement of Certificate Transparency requirements for a list of subjectPublicKeyInfo hashes.\n\nThis policy lets you disable Certificate Transparency disclosure requirements for certificate chains that contain certificates with one of the specified subjectPublicKeyInfo hashes. This allows certificates that would otherwise be untrusted because they weren't properly publicly disclosed to still be used for Enterprise hosts.\n\nTo disable Certificate Transparency enforcement when this policy is set, one of the following sets of conditions must be met:\n1. The hash is of the server certificate's subjectPublicKeyInfo.\n2. The hash is of a subjectPublicKeyInfo that appears in a CA certificate in the certificate chain, that CA certificate is constrained via the X.509v3 nameConstraints extension, one or more directoryName nameConstraints are present in the permittedSubtrees, and the directoryName contains an organizationName attribute.\n3. The hash is of a subjectPublicKeyInfo that appears in a CA certificate in the certificate chain, the CA certificate has one or more organizationName attributes in the certificate Subject, and the server's certificate contains the same number of organizationName attributes, in the same order, and with byte-for-byte identical values.\n\nA subjectPublicKeyInfo hash is specified by concatenating the hash algorithm name, the \"/\" character, and the Base64 encoding of that hash algorithm applied to the DER-encoded subjectPublicKeyInfo of the specified certificate. This Base64 encoding is the same format as an SPKI Fingerprint, as defined in RFC 7469, Section 2.4. Unrecognized hash algorithms are ignored. The only supported hash algorithm at this time is \"sha256\".\n\nIf you disable this policy or don't configure it, any certificate required to be disclosed via Certificate Transparency is treated as untrusted if not disclosed according to the Certificate Transparency policy.",
@@ -13113,6 +13429,20 @@
       "EdgeFollowEnabled",
       "Enable Follow service in Microsoft Edge",
       "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_m365linksautoopencopilotenabled",
+    "settingName": "Automatically open Copilot side pane with contextual insights for links opened from Outlook (User)",
+    "settingDescription": "This policy controls whether Microsoft Edge automatically opens the Microsoft Copilot side pane when users open web links from Outlook emails sent from the same tenant.\r\n\r\nStarting in Microsoft Edge version 148, when users open eligible links from Outlook emails sent from the same tenant, Microsoft Edge automatically opens the Copilot side pane with contextual insights. Copilot can use the originating Outlook email as context to surface relevant insights and suggested next steps alongside the web content.\r\n\r\nIf you enable this policy or don't configure it, the Copilot side pane opens automatically when users open links from Outlook emails sent from the same tenant.\r\n\r\nIf you disable this policy, the Copilot side pane doesn't open automatically when users open links from Outlook emails sent from the same tenant.\r\n\r\nThis feature applies only to links opened from Outlook emails sent from the same tenant and requires Microsoft Copilot to be available for the user in Microsoft Edge.\r\n\r\nThis feature is disabled if the 'CopilotPageContext' (Control Copilot access to page context for Microsoft Entra ID profiles) policy or the 'EdgeEntraCopilotPageContext' (Control Copilot access to Microsoft Edge page content for Entra account user profiles when using Copilot in the Microsoft Edge sidepane) policy is disabled, regardless of this policy's configuration. Copilot requires access to page content to provide contextual insights.",
+    "keywords": [
+      "M365LinksAutoOpenCopilotEnabled",
+      "Automatically open Copilot side pane with contextual insights for links opened from Outlook",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
       "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
@@ -14355,6 +14685,48 @@
       "UserAgentReduction",
       "Enable or disable the User-Agent Reduction",
       "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_developertoolsavailabilityblocklist",
+    "settingName": "List of URL patterns for which developer tools are blocked (User)",
+    "settingDescription": "This policy specifies URL patterns where developer tools are blocked. For information on the URL format, see https://go.microsoft.com/fwlink/?linkid=2095322.\r\n\r\nURL patterns are evaluated against the URL of every frame on the page being inspected. If any frame matches a pattern in this policy, developer tools are blocked for the entire page.\r\n\r\nIf you configure this policy and do not configure the 'DeveloperToolsAvailabilityAllowlist' (List of URL patterns for which developer tools are allowed to be opened) policy, developer tools are blocked when any frame matches a pattern in this policy. If no frames match, availability is determined by the 'DeveloperToolsAvailability' (Control where developer tools can be used) policy.\r\n\r\nIf you configure both this policy and the 'DeveloperToolsAvailabilityAllowlist' policy, the allowlist takes precedence. URLs that match the allowlist are allowed, even if they also match this policy. URLs that match this policy (but not the allowlist) are blocked. If a URL matches neither, the 'DeveloperToolsAvailability' policy determines availability.\r\n\r\nIf you disable or do not configure this policy, developer tools availability is determined by the 'DeveloperToolsAvailabilityAllowlist' and 'DeveloperToolsAvailability' policies.\r\n\r\nThis policy supports up to 1,000 entries.\r\n\r\nExample value:\r\n\r\nhttps://contoso.com\r\ncontoso.com\r\nhttps://ssl.server.com\r\ncontoso.com/bad_path\r\nhttps://server.contoso.com:8080/path\r\n.exact.hostname.com\r\n*\r\nfile://*",
+    "keywords": [
+      "DeveloperToolsAvailabilityBlocklist",
+      "List of URL patterns for which developer tools are blocked",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_allowbrowsingwithcopilot",
+    "settingName": "Controls the availability of browsing with Copilot in Microsoft Edge. (User)",
+    "settingDescription": "When browsing with Copilot is enabled, users can explicitly invoke it for a query. It isn't invoked automatically.\r\n\r\nBrowsing with Copilot is available only on domains specified in the 'BrowsingWithCopilotAllowList' (Browsing with Copilot Allowed URLs) policy and is blocked on domains specified in the 'BrowsingWithCopilotBlockList' (Browsing with Copilot Blocked URLs) policy. If no domains are configured in the allow list, browsing with Copilot is effectively disabled.\r\n\r\nThis feature is available only to users with an active Microsoft 365 Copilot subscription.\r\n\r\nFor more information about configuring browsing with Copilot, see https://go.microsoft.com/fwlink/?linkid=2346300.\r\n\r\nIf you enable this policy, browsing with Copilot is turned on for all users who receive the policy, and users can't turn it off.\r\n\r\nIf you disable this policy, browsing with Copilot is turned off for all users who receive the policy, and users can't turn it on.\r\n\r\nIf you don't configure this policy, browsing with Copilot is off by default, and users can turn it on.",
+    "keywords": [
+      "AllowBrowsingWithCopilot",
+      "Controls the availability of browsing with Copilot in Microsoft Edge.",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev148~policy~microsoft_edge_browsingwithcopilotblocklist",
+    "settingName": "Browsing with Copilot Blocked URLs",
+    "settingDescription": "Controls the list of URLs where browsing with Copilot is blocked. Users can't modify this list.\r\n\r\nUse this policy to define exceptions to broader allowlists. For example, you can set 'BrowsingWithCopilotAllowList' (Browsing with Copilot Allowed URLs) to '*' to allow all sites, and then use this policy to block access to specific URLs.\r\n\r\nThis policy supports blocking by scheme, subdomain, or port. When multiple URL patterns apply, the most specific match determines whether access is allowed or blocked. Blocklist entries take precedence over allowlist entries.\r\n\r\nIf you don't configure this policy, no exceptions are applied to 'BrowsingWithCopilotAllowList'.\r\n\r\nBrowsing with Copilot supports only HTTP and HTTPS protocols. Wildcards (*) are supported, and subdomains are matched even without wildcards. URL matching is based on the site origin only; any path specified in the pattern is ignored.\r\n\r\nFor information about URL pattern format, see https://go.microsoft.com/fwlink/?linkid=2095322.\r\n\r\nExample value:\r\n\r\nhttps://www.contoso.com\r\n[*.]contoso.edu\r\ncontoso.net\r\nlogin.contoso.us",
+    "keywords": [
+      "BrowsingWithCopilotBlockList",
+      "Browsing with Copilot Blocked URLs",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
       "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"

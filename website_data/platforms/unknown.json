@@ -1,320 +1,294 @@
 [
   {
-    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories_directorypath",
-    "settingName": "Directory",
-    "settingDescription": "The filesystem directory path.",
-    "categoryId": "ea5fabb0-6eec-4c3e-8c6d-7523739207c3",
+    "settingId": "ade_setupassistant_filevault",
+    "settingName": "FileVault",
+    "settingDescription": null,
+    "categoryId": "0d23daec-d948-4eee-8ee5-89ab1c59e440",
     "categoryName": "Uncategorized",
     "keywords": [
-      "AgentGovernance",
-      "Agent Governance",
-      "Container Policy"
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
     ],
     "infoUrls": [],
-    "baseUri": "./User/Vendor/MSFT/AgentGovernance",
-    "offsetUri": "/{PolicyId}_{TargetAgentId}/ResourcePolicy",
-    "settingUsage": "configuration",
-    "uxBehavior": "default",
-    "visibility": "template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
-      "description": null,
-      "platform": "windows10",
-      "deviceMode": "none",
-      "technologies": "mdm",
-      "configurationServiceProviderVersion": "1.0",
-      "maximumSupportedVersion": null,
-      "minimumSupportedVersion": "10.0.26100",
-      "windowsSkus": [
-        "windowsEnterprise",
-        "windowsProfessional",
-        "windowsEducation",
-        "iotEnterprise",
-        "windowsCloudN",
-        "windows11SE"
-      ],
-      "requiresAzureAd": false,
-      "requiredAzureAdTrustType": "none"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
-      "format": "none",
-      "inputValidationSchema": null,
-      "maximumLength": 2048,
-      "minimumLength": 1,
-      "isSecret": false,
-      "fileTypes": []
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-      "settingValueTemplateReference": null,
-      "value": null
-    },
-    "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
-    "helpText": "e.g. C:\\Repos\\**",
-    "name": "DirectoryPath",
-    "rootDefinitionId": "user_vendor_msft_agentgovernance",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
-    "dependencies": []
-  },
-  {
-    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution",
-    "settingName": "Allow agent tool execution",
-    "settingDescription": "When enabled, the agent is allowed to execute tools with the specified resource policies.",
-    "categoryId": "ea5fabb0-6eec-4c3e-8c6d-7523739207c3",
-    "categoryName": "Uncategorized",
-    "keywords": [
-      "AgentGovernance",
-      "Agent Governance",
-      "Container Policy"
-    ],
-    "infoUrls": [],
-    "baseUri": "./User/Vendor/MSFT/AgentGovernance",
-    "offsetUri": "/{PolicyId}_{TargetAgentId}/ResourcePolicy",
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/fileVault",
     "settingUsage": "configuration",
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_0",
+    "defaultOptionId": "ade_setupassistant_filevault_0",
     "applicability": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
       "description": null,
-      "platform": "windows10",
+      "platform": "macOS",
       "deviceMode": "none",
-      "technologies": "mdm",
-      "configurationServiceProviderVersion": "1.0",
-      "maximumSupportedVersion": null,
-      "minimumSupportedVersion": "10.0.26100",
-      "windowsSkus": [
-        "windowsEnterprise",
-        "windowsProfessional",
-        "windowsEducation",
-        "iotEnterprise",
-        "windowsCloudN",
-        "windows11SE"
-      ],
-      "requiresAzureAd": false,
-      "requiredAzureAdTrustType": "none"
+      "technologies": "enrollment"
     },
     "options": [
       {
-        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_0",
-        "description": "Agent tool execution is not allowed",
+        "itemId": "ade_setupassistant_filevault_0",
+        "description": null,
         "helpText": null,
-        "name": "Deny",
-        "displayName": "Don't allow",
+        "name": "Hide",
+        "displayName": "Hide",
         "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
           "settingValueTemplateReference": null,
-          "value": "0"
+          "value": 0
         },
-        "dependentOn": [
-          {
-            "dependentOn": "user_vendor_msft_agentgovernance",
-            "parentSettingId": "user_vendor_msft_agentgovernance"
-          }
-        ],
+        "dependentOn": [],
         "dependedOnBy": []
       },
       {
-        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_1",
-        "description": "Agent tool execution is allowed with configured resource policies",
+        "itemId": "ade_setupassistant_filevault_1",
+        "description": null,
         "helpText": null,
-        "name": "Allow",
-        "displayName": "Allow",
+        "name": "Show",
+        "displayName": "Show",
         "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
           "settingValueTemplateReference": null,
-          "value": "1"
+          "value": 1
         },
-        "dependentOn": [
-          {
-            "dependentOn": "user_vendor_msft_agentgovernance",
-            "parentSettingId": "user_vendor_msft_agentgovernance"
-          }
-        ],
-        "dependedOnBy": [
-          {
-            "dependedOnBy": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories",
-            "required": false
-          },
-          {
-            "dependedOnBy": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allownetworkaccess",
-            "required": false
-          }
-        ]
+        "dependentOn": [],
+        "dependedOnBy": []
       }
     ],
     "referredSettingInformationList": [],
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
-    "helpText": "",
-    "name": "AllowAgentToolExecution",
-    "rootDefinitionId": "user_vendor_msft_agentgovernance",
+    "version": "639150686251400134",
+    "helpText": null,
+    "name": "FileVault",
+    "rootDefinitionId": "ade_setupassistant_filevault",
     "settingDefinitionId": null,
     "definitionDescription": null,
     "dataType": null,
     "valueOptions": [
       {
-        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_0",
-        "description": "Agent tool execution is not allowed",
+        "itemId": "ade_setupassistant_filevault_0",
+        "description": null,
         "helpText": null,
-        "name": "Deny",
-        "displayName": "Don't allow",
+        "name": "Hide",
+        "displayName": "Hide",
         "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
           "settingValueTemplateReference": null,
-          "value": "0"
+          "value": 0
         },
-        "dependentOn": [
-          {
-            "dependentOn": "user_vendor_msft_agentgovernance",
-            "parentSettingId": "user_vendor_msft_agentgovernance"
-          }
-        ],
+        "dependentOn": [],
         "dependedOnBy": []
       },
       {
-        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_1",
-        "description": "Agent tool execution is allowed with configured resource policies",
+        "itemId": "ade_setupassistant_filevault_1",
+        "description": null,
         "helpText": null,
-        "name": "Allow",
-        "displayName": "Allow",
+        "name": "Show",
+        "displayName": "Show",
         "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
           "settingValueTemplateReference": null,
-          "value": "1"
+          "value": 1
         },
-        "dependentOn": [
-          {
-            "dependentOn": "user_vendor_msft_agentgovernance",
-            "parentSettingId": "user_vendor_msft_agentgovernance"
-          }
-        ],
-        "dependedOnBy": [
-          {
-            "dependedOnBy": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories",
-            "required": false
-          },
-          {
-            "dependedOnBy": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allownetworkaccess",
-            "required": false
-          }
-        ]
+        "dependentOn": [],
+        "dependedOnBy": []
       }
     ],
     "dependencies": []
   },
   {
-    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser",
-    "settingName": "Agent user",
-    "settingDescription": "Specifies how the agent user identity is determined.",
-    "categoryId": "ea5fabb0-6eec-4c3e-8c6d-7523739207c3",
+    "settingId": "ade_setupassistant_safetyandhandling",
+    "settingName": "Safety and handling",
+    "settingDescription": null,
+    "categoryId": "0d23daec-d948-4eee-8ee5-89ab1c59e440",
     "categoryName": "Uncategorized",
     "keywords": [
-      "AgentGovernance",
-      "Agent Governance",
-      "Container Policy"
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
     ],
     "infoUrls": [],
-    "baseUri": "./User/Vendor/MSFT/AgentGovernance",
-    "offsetUri": "/{PolicyId}_{TargetAgentId}/ResourcePolicy",
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/setupAssistant/safetyAndHandling",
     "settingUsage": "configuration",
-    "uxBehavior": "default",
+    "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": null,
+    "defaultOptionId": "ade_setupassistant_safetyandhandling_0",
     "applicability": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
       "description": null,
-      "platform": "windows10",
+      "platform": "iOS",
       "deviceMode": "none",
-      "technologies": "mdm",
-      "configurationServiceProviderVersion": "1.0",
-      "maximumSupportedVersion": null,
-      "minimumSupportedVersion": "10.0.26100",
-      "windowsSkus": [
-        "windowsEnterprise",
-        "windowsProfessional",
-        "windowsEducation",
-        "iotEnterprise",
-        "windowsCloudN",
-        "windows11SE"
-      ],
-      "requiresAzureAd": false,
-      "requiredAzureAdTrustType": "none"
+      "technologies": "enrollment"
     },
     "options": [
       {
-        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser_0",
-        "description": "Use Entra identity profile to identify the agent user",
+        "itemId": "ade_setupassistant_safetyandhandling_0",
+        "description": null,
         "helpText": null,
-        "name": "EntraUserProfile",
-        "displayName": "Entra identity profile",
+        "name": "Hide",
+        "displayName": "Hide",
         "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
           "settingValueTemplateReference": null,
-          "value": "0"
+          "value": 0
         },
-        "dependentOn": [
-          {
-            "dependentOn": "user_vendor_msft_agentgovernance",
-            "parentSettingId": "user_vendor_msft_agentgovernance"
-          }
-        ],
-        "dependedOnBy": [
-          {
-            "dependedOnBy": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser_userprofile",
-            "required": true
-          }
-        ]
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_setupassistant_safetyandhandling_1",
+        "description": null,
+        "helpText": null,
+        "name": "Show",
+        "displayName": "Show",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
       }
     ],
     "referredSettingInformationList": [],
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
-    "helpText": "",
-    "name": "AgentUser",
-    "rootDefinitionId": "user_vendor_msft_agentgovernance",
+    "version": "639150686251400134",
+    "helpText": null,
+    "name": "SafetyAndHandling",
+    "rootDefinitionId": "ade_setupassistant_safetyandhandling",
     "settingDefinitionId": null,
     "definitionDescription": null,
     "dataType": null,
     "valueOptions": [
       {
-        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser_0",
-        "description": "Use Entra identity profile to identify the agent user",
+        "itemId": "ade_setupassistant_safetyandhandling_0",
+        "description": null,
         "helpText": null,
-        "name": "EntraUserProfile",
-        "displayName": "Entra identity profile",
+        "name": "Hide",
+        "displayName": "Hide",
         "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
           "settingValueTemplateReference": null,
-          "value": "0"
+          "value": 0
         },
-        "dependentOn": [
-          {
-            "dependentOn": "user_vendor_msft_agentgovernance",
-            "parentSettingId": "user_vendor_msft_agentgovernance"
-          }
-        ],
-        "dependedOnBy": [
-          {
-            "dependedOnBy": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser_userprofile",
-            "required": true
-          }
-        ]
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_setupassistant_safetyandhandling_1",
+        "description": null,
+        "helpText": null,
+        "name": "Show",
+        "displayName": "Show",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "ade_setupassistant_unlockwithwatch",
+    "settingName": "Auto unlock with Apple Watch",
+    "settingDescription": null,
+    "categoryId": "0d23daec-d948-4eee-8ee5-89ab1c59e440",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/setupAssistant/unlockWithWatch",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "ade_setupassistant_unlockwithwatch_0",
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [
+      {
+        "itemId": "ade_setupassistant_unlockwithwatch_0",
+        "description": null,
+        "helpText": null,
+        "name": "Hide",
+        "displayName": "Hide",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_setupassistant_unlockwithwatch_1",
+        "description": null,
+        "helpText": null,
+        "name": "Show",
+        "displayName": "Show",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": null,
+    "name": "UnlockWithWatch",
+    "rootDefinitionId": "ade_setupassistant_unlockwithwatch",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "ade_setupassistant_unlockwithwatch_0",
+        "description": null,
+        "helpText": null,
+        "name": "Hide",
+        "displayName": "Hide",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_setupassistant_unlockwithwatch_1",
+        "description": null,
+        "helpText": null,
+        "name": "Show",
+        "displayName": "Show",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
       }
     ],
     "dependencies": []
@@ -374,7 +348,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "AuthenticationMethod",
     "rootDefinitionId": "ade_useraffinity",
@@ -471,7 +445,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "get",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "AllowUserToChangeSetting",
     "rootDefinitionId": "device_vendor_msft_policy_config_quiettime_allowusertochangesetting",
@@ -577,7 +551,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "ForcedEnrollment",
     "rootDefinitionId": "enrollment_autopilot_dpp_forcedenrollment",
@@ -722,7 +696,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "DefaultElevationResponse",
     "rootDefinitionId": "device_vendor_msft_policy_elevationclientsettings_enableepm",
@@ -796,6 +770,364 @@
     "dependencies": []
   },
   {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories_directorypath",
+    "settingName": "Directory",
+    "settingDescription": "The filesystem directory path to which this access rule applies. Supports absolute paths and environment variables (e.g. D:\\Repos, %USERPROFILE%).",
+    "categoryId": "ea5fabb0-6eec-4c3e-8c6d-7523739207c3",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
+    ],
+    "infoUrls": [],
+    "baseUri": "./User/Vendor/MSFT/AgentGovernance",
+    "offsetUri": "/{PolicyId}_{TargetAgentId}/ResourcePolicy",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+      "description": null,
+      "platform": "windows10",
+      "deviceMode": "none",
+      "technologies": "mdm",
+      "configurationServiceProviderVersion": "1.0",
+      "maximumSupportedVersion": null,
+      "minimumSupportedVersion": "10.0.26100",
+      "windowsSkus": [
+        "windowsEnterprise",
+        "windowsProfessional",
+        "windowsEducation",
+        "iotEnterprise",
+        "windowsCloudN",
+        "windows11SE"
+      ],
+      "requiresAzureAd": false,
+      "requiredAzureAdTrustType": "none"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 2048,
+      "minimumLength": 1,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": "",
+    "name": "DirectoryPath",
+    "rootDefinitionId": "user_vendor_msft_agentgovernance",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution",
+    "settingName": "Allow agent execution in container",
+    "settingDescription": "Controls whether agent tools and loops can execute. The specific behavior depends on the selected agent.",
+    "categoryId": "ea5fabb0-6eec-4c3e-8c6d-7523739207c3",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
+    ],
+    "infoUrls": [],
+    "baseUri": "./User/Vendor/MSFT/AgentGovernance",
+    "offsetUri": "/{PolicyId}_{TargetAgentId}/ResourcePolicy",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_0",
+    "applicability": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+      "description": null,
+      "platform": "windows10",
+      "deviceMode": "none",
+      "technologies": "mdm",
+      "configurationServiceProviderVersion": "1.0",
+      "maximumSupportedVersion": null,
+      "minimumSupportedVersion": "10.0.26100",
+      "windowsSkus": [
+        "windowsEnterprise",
+        "windowsProfessional",
+        "windowsEducation",
+        "iotEnterprise",
+        "windowsCloudN",
+        "windows11SE"
+      ],
+      "requiresAzureAd": false,
+      "requiredAzureAdTrustType": "none"
+    },
+    "options": [
+      {
+        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_0",
+        "description": "Agent tool execution is not allowed",
+        "helpText": null,
+        "name": "Deny",
+        "displayName": "Don't allow",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "0"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "user_vendor_msft_agentgovernance",
+            "parentSettingId": "user_vendor_msft_agentgovernance"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_1",
+        "description": "Agent tool execution is allowed with configured resource policies",
+        "helpText": null,
+        "name": "Allow",
+        "displayName": "Allow",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "1"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "user_vendor_msft_agentgovernance",
+            "parentSettingId": "user_vendor_msft_agentgovernance"
+          }
+        ],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories",
+            "required": false
+          },
+          {
+            "dependedOnBy": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allownetworkaccess",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": "",
+    "name": "AllowAgentToolExecution",
+    "rootDefinitionId": "user_vendor_msft_agentgovernance",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_0",
+        "description": "Agent tool execution is not allowed",
+        "helpText": null,
+        "name": "Deny",
+        "displayName": "Don't allow",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "0"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "user_vendor_msft_agentgovernance",
+            "parentSettingId": "user_vendor_msft_agentgovernance"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_1",
+        "description": "Agent tool execution is allowed with configured resource policies",
+        "helpText": null,
+        "name": "Allow",
+        "displayName": "Allow",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "1"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "user_vendor_msft_agentgovernance",
+            "parentSettingId": "user_vendor_msft_agentgovernance"
+          }
+        ],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories",
+            "required": false
+          },
+          {
+            "dependedOnBy": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allownetworkaccess",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser",
+    "settingName": "Agent user account",
+    "settingDescription": "",
+    "categoryId": "ea5fabb0-6eec-4c3e-8c6d-7523739207c3",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
+    ],
+    "infoUrls": [],
+    "baseUri": "./User/Vendor/MSFT/AgentGovernance",
+    "offsetUri": "/{PolicyId}_{TargetAgentId}/ResourcePolicy",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser_",
+    "applicability": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+      "description": null,
+      "platform": "windows10",
+      "deviceMode": "none",
+      "technologies": "mdm",
+      "configurationServiceProviderVersion": "1.0",
+      "maximumSupportedVersion": null,
+      "minimumSupportedVersion": "10.0.26100",
+      "windowsSkus": [
+        "windowsEnterprise",
+        "windowsProfessional",
+        "windowsEducation",
+        "iotEnterprise",
+        "windowsCloudN",
+        "windows11SE"
+      ],
+      "requiresAzureAd": false,
+      "requiredAzureAdTrustType": "none"
+    },
+    "options": [
+      {
+        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser_",
+        "description": "No agent user identity specified",
+        "helpText": null,
+        "name": "None",
+        "displayName": "None",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": ""
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "user_vendor_msft_agentgovernance",
+            "parentSettingId": "user_vendor_msft_agentgovernance"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser_0",
+        "description": "Use Entra identity profile to identify the agent user",
+        "helpText": null,
+        "name": "EntraUserProfile",
+        "displayName": "Entra identity profile",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "0"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "user_vendor_msft_agentgovernance",
+            "parentSettingId": "user_vendor_msft_agentgovernance"
+          }
+        ],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser_userprofile",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": "",
+    "name": "AgentUser",
+    "rootDefinitionId": "user_vendor_msft_agentgovernance",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser_",
+        "description": "No agent user identity specified",
+        "helpText": null,
+        "name": "None",
+        "displayName": "None",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": ""
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "user_vendor_msft_agentgovernance",
+            "parentSettingId": "user_vendor_msft_agentgovernance"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser_0",
+        "description": "Use Entra identity profile to identify the agent user",
+        "helpText": null,
+        "name": "EntraUserProfile",
+        "displayName": "Entra identity profile",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "0"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "user_vendor_msft_agentgovernance",
+            "parentSettingId": "user_vendor_msft_agentgovernance"
+          }
+        ],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser_userprofile",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "dependencies": []
+  },
+  {
     "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry",
     "settingName": "Access",
     "settingDescription": "",
@@ -845,7 +1177,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "Entry",
     "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
@@ -1021,7 +1353,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "Options",
     "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
@@ -1243,7 +1575,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "SaveFilesToHost",
     "rootDefinitionId": "device_vendor_msft_windowsdefenderapplicationguard_settings_allowwindowsdefenderapplicationguard",
@@ -1362,7 +1694,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "AdministratorAccountName",
     "rootDefinitionId": "device_vendor_msft_laps_policies_administratoraccountname",
@@ -1430,7 +1762,7 @@
       "value": 0
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "ADEncryptedPasswordHistorySize",
     "rootDefinitionId": "device_vendor_msft_laps_policies_backupdirectory",
@@ -1540,7 +1872,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "ChildProcessBehavior",
     "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
@@ -1662,7 +1994,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "FileName",
     "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
@@ -1673,81 +2005,57 @@
     "dependencies": []
   },
   {
-    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories_accesslevel",
-    "settingName": "Access level",
-    "settingDescription": "The level of filesystem access granted for this directory.",
-    "categoryId": "ea5fabb0-6eec-4c3e-8c6d-7523739207c3",
+    "settingId": "ade_setupassistant_webcontentfiltering",
+    "settingName": "Web Content Filtering",
+    "settingDescription": null,
+    "categoryId": "0d23daec-d948-4eee-8ee5-89ab1c59e440",
     "categoryName": "Uncategorized",
     "keywords": [
-      "AgentGovernance",
-      "Agent Governance",
-      "Container Policy"
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
     ],
     "infoUrls": [],
-    "baseUri": "./User/Vendor/MSFT/AgentGovernance",
-    "offsetUri": "/{PolicyId}_{TargetAgentId}/ResourcePolicy",
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/setupAssistant/webContentFiltering",
     "settingUsage": "configuration",
-    "uxBehavior": "default",
+    "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories_accesslevel_1",
+    "defaultOptionId": "ade_setupassistant_webcontentfiltering_0",
     "applicability": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
       "description": null,
-      "platform": "windows10",
+      "platform": "iOS",
       "deviceMode": "none",
-      "technologies": "mdm",
-      "configurationServiceProviderVersion": "1.0",
-      "maximumSupportedVersion": null,
-      "minimumSupportedVersion": "10.0.26100",
-      "windowsSkus": [
-        "windowsEnterprise",
-        "windowsProfessional",
-        "windowsEducation",
-        "iotEnterprise",
-        "windowsCloudN",
-        "windows11SE"
-      ],
-      "requiresAzureAd": false,
-      "requiredAzureAdTrustType": "none"
+      "technologies": "enrollment"
     },
     "options": [
       {
-        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories_accesslevel_0",
-        "description": "Read-only access",
+        "itemId": "ade_setupassistant_webcontentfiltering_0",
+        "description": null,
         "helpText": null,
-        "name": "Read",
-        "displayName": "Read",
+        "name": "Hide",
+        "displayName": "Hide",
         "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
           "settingValueTemplateReference": null,
-          "value": "0"
+          "value": 0
         },
-        "dependentOn": [
-          {
-            "dependentOn": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories",
-            "parentSettingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories"
-          }
-        ],
+        "dependentOn": [],
         "dependedOnBy": []
       },
       {
-        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories_accesslevel_1",
-        "description": "Read and write access",
+        "itemId": "ade_setupassistant_webcontentfiltering_1",
+        "description": null,
         "helpText": null,
-        "name": "ReadWrite",
-        "displayName": "Read/Write",
+        "name": "Show",
+        "displayName": "Show",
         "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
           "settingValueTemplateReference": null,
-          "value": "1"
+          "value": 1
         },
-        "dependentOn": [
-          {
-            "dependentOn": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories",
-            "parentSettingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories"
-          }
-        ],
+        "dependentOn": [],
         "dependedOnBy": []
       }
     ],
@@ -1755,119 +2063,43 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
-    "helpText": "",
-    "name": "AccessLevel",
-    "rootDefinitionId": "user_vendor_msft_agentgovernance",
+    "version": "639150686251400134",
+    "helpText": null,
+    "name": "WebContentFiltering",
+    "rootDefinitionId": "ade_setupassistant_webcontentfiltering",
     "settingDefinitionId": null,
     "definitionDescription": null,
     "dataType": null,
     "valueOptions": [
       {
-        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories_accesslevel_0",
-        "description": "Read-only access",
+        "itemId": "ade_setupassistant_webcontentfiltering_0",
+        "description": null,
         "helpText": null,
-        "name": "Read",
-        "displayName": "Read",
+        "name": "Hide",
+        "displayName": "Hide",
         "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
           "settingValueTemplateReference": null,
-          "value": "0"
+          "value": 0
         },
-        "dependentOn": [
-          {
-            "dependentOn": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories",
-            "parentSettingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories"
-          }
-        ],
+        "dependentOn": [],
         "dependedOnBy": []
       },
       {
-        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories_accesslevel_1",
-        "description": "Read and write access",
+        "itemId": "ade_setupassistant_webcontentfiltering_1",
+        "description": null,
         "helpText": null,
-        "name": "ReadWrite",
-        "displayName": "Read/Write",
+        "name": "Show",
+        "displayName": "Show",
         "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
           "settingValueTemplateReference": null,
-          "value": "1"
+          "value": 1
         },
-        "dependentOn": [
-          {
-            "dependentOn": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories",
-            "parentSettingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories"
-          }
-        ],
+        "dependentOn": [],
         "dependedOnBy": []
       }
     ],
-    "dependencies": []
-  },
-  {
-    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser_userprofile",
-    "settingName": "User profile",
-    "settingDescription": "The Entra user profile (UPN or SID) to run the agent as.",
-    "categoryId": "ea5fabb0-6eec-4c3e-8c6d-7523739207c3",
-    "categoryName": "Uncategorized",
-    "keywords": [
-      "AgentGovernance",
-      "Agent Governance",
-      "Container Policy"
-    ],
-    "infoUrls": [],
-    "baseUri": "./User/Vendor/MSFT/AgentGovernance",
-    "offsetUri": "/{PolicyId}_{TargetAgentId}/ResourcePolicy",
-    "settingUsage": "configuration",
-    "uxBehavior": "contextPane",
-    "visibility": "template",
-    "riskLevel": "low",
-    "defaultOptionId": null,
-    "applicability": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
-      "description": null,
-      "platform": "windows10",
-      "deviceMode": "none",
-      "technologies": "mdm",
-      "configurationServiceProviderVersion": "1.0",
-      "maximumSupportedVersion": null,
-      "minimumSupportedVersion": "10.0.26100",
-      "windowsSkus": [
-        "windowsEnterprise",
-        "windowsProfessional",
-        "windowsEducation",
-        "iotEnterprise",
-        "windowsCloudN",
-        "windows11SE"
-      ],
-      "requiresAzureAd": false,
-      "requiredAzureAdTrustType": "none"
-    },
-    "options": [],
-    "referredSettingInformationList": [],
-    "valueDefinition": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
-      "format": "none",
-      "inputValidationSchema": null,
-      "maximumLength": 512,
-      "minimumLength": 1,
-      "isSecret": false,
-      "fileTypes": []
-    },
-    "defaultValue": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-      "settingValueTemplateReference": null,
-      "value": null
-    },
-    "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
-    "helpText": "",
-    "name": "UserProfile",
-    "rootDefinitionId": "user_vendor_msft_agentgovernance",
-    "settingDefinitionId": null,
-    "definitionDescription": null,
-    "dataType": null,
-    "valueOptions": [],
     "dependencies": []
   },
   {
@@ -1912,7 +2144,7 @@
       "value": "http://activation.carrier.net"
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "http://activation.carrier.net",
     "name": "activateCellularData",
     "rootDefinitionId": "ade_activatecellulardatachoices",
@@ -2029,7 +2261,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "UserAffinity",
     "rootDefinitionId": "ade_useraffinity",
@@ -2154,7 +2386,7 @@
       "value": 0
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "Enter value",
     "name": "MaximumSecondsInactivityUntilUserLogsOut",
     "rootDefinitionId": "ade_useraffinity",
@@ -2207,7 +2439,7 @@
       "value": null
     },
     "accessTypes": "get",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "EndTimeDateTime",
     "rootDefinitionId": "device_vendor_msft_policy_config_quiettime_rangesettings_endtime",
@@ -2284,7 +2516,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "EnableQU",
     "rootDefinitionId": "enrollment_autopilot_dpp_enablequ",
@@ -2369,7 +2601,7 @@
       "value": 60
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "Timeout",
     "rootDefinitionId": "enrollment_autopilot_dpp_timeout",
@@ -2429,7 +2661,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "AllowedPolicyIds",
     "rootDefinitionId": "enrollment_autopilot_dpp_allowedpolicyids",
@@ -2521,7 +2753,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "When set to Yes, applications that need elevated permissions to run will automatically be elevated (based on the rules you set). Otherwise, the system only evaluates requests through the right-click menu or if they are set for automatic elevation.",
     "name": "AllowElevationDetection",
     "rootDefinitionId": "device_vendor_msft_policy_elevationclientsettings_enableepm",
@@ -2568,6 +2800,204 @@
         "dependedOnBy": []
       }
     ],
+    "dependencies": []
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories_accesslevel",
+    "settingName": "Access level",
+    "settingDescription": "Level of filesystem access granted for this directory. Subdirectories inherit the same access level unless they have their own rule.",
+    "categoryId": "ea5fabb0-6eec-4c3e-8c6d-7523739207c3",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
+    ],
+    "infoUrls": [],
+    "baseUri": "./User/Vendor/MSFT/AgentGovernance",
+    "offsetUri": "/{PolicyId}_{TargetAgentId}/ResourcePolicy",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories_accesslevel_1",
+    "applicability": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+      "description": null,
+      "platform": "windows10",
+      "deviceMode": "none",
+      "technologies": "mdm",
+      "configurationServiceProviderVersion": "1.0",
+      "maximumSupportedVersion": null,
+      "minimumSupportedVersion": "10.0.26100",
+      "windowsSkus": [
+        "windowsEnterprise",
+        "windowsProfessional",
+        "windowsEducation",
+        "iotEnterprise",
+        "windowsCloudN",
+        "windows11SE"
+      ],
+      "requiresAzureAd": false,
+      "requiredAzureAdTrustType": "none"
+    },
+    "options": [
+      {
+        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories_accesslevel_0",
+        "description": "Read-only access",
+        "helpText": null,
+        "name": "Read",
+        "displayName": "Read",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "0"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories",
+            "parentSettingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories_accesslevel_1",
+        "description": "Read and write access",
+        "helpText": null,
+        "name": "ReadWrite",
+        "displayName": "Read/Write",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "1"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories",
+            "parentSettingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories"
+          }
+        ],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": "",
+    "name": "AccessLevel",
+    "rootDefinitionId": "user_vendor_msft_agentgovernance",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories_accesslevel_0",
+        "description": "Read-only access",
+        "helpText": null,
+        "name": "Read",
+        "displayName": "Read",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "0"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories",
+            "parentSettingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories_accesslevel_1",
+        "description": "Read and write access",
+        "helpText": null,
+        "name": "ReadWrite",
+        "displayName": "Read/Write",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "1"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories",
+            "parentSettingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories"
+          }
+        ],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser_userprofile",
+    "settingName": "Identity profile",
+    "settingDescription": "The Entra user profile (UPN or SID) to run the agent as.",
+    "categoryId": "ea5fabb0-6eec-4c3e-8c6d-7523739207c3",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
+    ],
+    "infoUrls": [],
+    "baseUri": "./User/Vendor/MSFT/AgentGovernance",
+    "offsetUri": "/{PolicyId}_{TargetAgentId}/ResourcePolicy",
+    "settingUsage": "configuration",
+    "uxBehavior": "contextPane",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+      "description": null,
+      "platform": "windows10",
+      "deviceMode": "none",
+      "technologies": "mdm",
+      "configurationServiceProviderVersion": "1.0",
+      "maximumSupportedVersion": null,
+      "minimumSupportedVersion": "10.0.26100",
+      "windowsSkus": [
+        "windowsEnterprise",
+        "windowsProfessional",
+        "windowsEducation",
+        "iotEnterprise",
+        "windowsCloudN",
+        "windows11SE"
+      ],
+      "requiresAzureAd": false,
+      "requiredAzureAdTrustType": "none"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 512,
+      "minimumLength": 1,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": "",
+    "name": "UserProfile",
+    "rootDefinitionId": "user_vendor_msft_agentgovernance",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
     "dependencies": []
   },
   {
@@ -2712,7 +3142,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "ClipboardSettings",
     "rootDefinitionId": "device_vendor_msft_windowsdefenderapplicationguard_settings_allowwindowsdefenderapplicationguard",
@@ -2891,7 +3321,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "get,execute",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "InstallWindowsDefenderApplicationGuard",
     "rootDefinitionId": "device_vendor_msft_windowsdefenderapplicationguard_settings_allowwindowsdefenderapplicationguard",
@@ -3106,7 +3536,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "AllowWindowsDefenderApplicationGuard",
     "rootDefinitionId": "device_vendor_msft_windowsdefenderapplicationguard_settings_allowwindowsdefenderapplicationguard",
@@ -3302,7 +3732,7 @@
       "value": 30
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "PasswordAgeDays",
     "rootDefinitionId": "device_vendor_msft_laps_policies_backupdirectory",
@@ -3401,7 +3831,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "ADPasswordEncryptionEnabled",
     "rootDefinitionId": "device_vendor_msft_laps_policies_backupdirectory",
@@ -3504,7 +3934,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "Name",
     "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
@@ -3568,7 +3998,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "FilePath",
     "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
@@ -3632,7 +4062,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "ProductName",
     "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
@@ -3706,7 +4136,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "AdditionalValidationRequirements",
     "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
@@ -3731,6 +4161,282 @@
             "parentSettingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_ruletype"
           }
         ],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "ade_macos_authenticationmethod",
+    "settingName": "Intune authentication method",
+    "settingDescription": "If your organization uses multifactor authentication, select Setup Assistant with modern authentication, which prompts users to authenticate based on settings in Entra.",
+    "categoryId": "75e27534-3163-45b1-b34e-ca79b077b286",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Management settings"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/AppleMacOSAuthenticationMethod",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "ade_macos_authenticationmethod_2",
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [
+      {
+        "itemId": "ade_macos_authenticationmethod_2",
+        "description": null,
+        "helpText": null,
+        "name": "SetupAssistantLegacyModernAuth",
+        "displayName": "Setup Assistant with modern authentication",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "2"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_macos_useraffinity_1",
+            "parentSettingId": "ade_macos_useraffinity"
+          }
+        ],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": "",
+    "name": "AppleMacOSAuthenticationMethod",
+    "rootDefinitionId": "ade_macos_useraffinity",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "ade_macos_authenticationmethod_2",
+        "description": null,
+        "helpText": null,
+        "name": "SetupAssistantLegacyModernAuth",
+        "displayName": "Setup Assistant with modern authentication",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "2"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_macos_useraffinity_1",
+            "parentSettingId": "ade_macos_useraffinity"
+          }
+        ],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "ade_setupassistant_appstore",
+    "settingName": "App Store",
+    "settingDescription": null,
+    "categoryId": "0d23daec-d948-4eee-8ee5-89ab1c59e440",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/setupAssistant/appStore",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "ade_setupassistant_appstore_0",
+    "applicability": {
+      "description": null,
+      "platform": "iOS,macOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [
+      {
+        "itemId": "ade_setupassistant_appstore_0",
+        "description": null,
+        "helpText": null,
+        "name": "Hide",
+        "displayName": "Hide",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_setupassistant_appstore_1",
+        "description": null,
+        "helpText": null,
+        "name": "Show",
+        "displayName": "Show",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": null,
+    "name": "AppStore",
+    "rootDefinitionId": "ade_setupassistant_appstore",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "ade_setupassistant_appstore_0",
+        "description": null,
+        "helpText": null,
+        "name": "Hide",
+        "displayName": "Hide",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_setupassistant_appstore_1",
+        "description": null,
+        "helpText": null,
+        "name": "Show",
+        "displayName": "Show",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "ade_setupassistant_multitasking",
+    "settingName": "Multitasking",
+    "settingDescription": null,
+    "categoryId": "0d23daec-d948-4eee-8ee5-89ab1c59e440",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/setupAssistant/multitasking",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "ade_setupassistant_multitasking_0",
+    "applicability": {
+      "description": null,
+      "platform": "iOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [
+      {
+        "itemId": "ade_setupassistant_multitasking_0",
+        "description": null,
+        "helpText": null,
+        "name": "Hide",
+        "displayName": "Hide",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_setupassistant_multitasking_1",
+        "description": null,
+        "helpText": null,
+        "name": "Show",
+        "displayName": "Show",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": null,
+    "name": "Multitasking",
+    "rootDefinitionId": "ade_setupassistant_multitasking",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "ade_setupassistant_multitasking_0",
+        "description": null,
+        "helpText": null,
+        "name": "Hide",
+        "displayName": "Hide",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_setupassistant_multitasking_1",
+        "description": null,
+        "helpText": null,
+        "name": "Show",
+        "displayName": "Show",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
         "dependedOnBy": []
       }
     ],
@@ -3805,7 +4511,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "ModernAuth_Awaitfinalconfiguration",
     "rootDefinitionId": "ade_useraffinity",
@@ -3931,7 +4637,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "Useraffinity_Awaitfinalconfiguration",
     "rootDefinitionId": "ade_useraffinity",
@@ -4006,7 +4712,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_applepay_1",
+    "defaultOptionId": "ade_setupassistant_applepay_0",
     "applicability": {
       "description": null,
       "platform": "iOS,macOS",
@@ -4047,7 +4753,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "ApplePay",
     "rootDefinitionId": "ade_setupassistant_applepay",
@@ -4104,7 +4810,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_imessagefacetime_1",
+    "defaultOptionId": "ade_setupassistant_imessagefacetime_0",
     "applicability": {
       "description": null,
       "platform": "iOS",
@@ -4145,7 +4851,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "IMessageFacetime",
     "rootDefinitionId": "ade_setupassistant_imessagefacetime",
@@ -4202,7 +4908,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_safety_1",
+    "defaultOptionId": "ade_setupassistant_safety_0",
     "applicability": {
       "description": null,
       "platform": "iOS",
@@ -4243,7 +4949,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "ade_SetupAssistant_Safety_0",
     "rootDefinitionId": "ade_setupassistant_safety",
@@ -4300,7 +5006,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_termsandconditions_1",
+    "defaultOptionId": "ade_setupassistant_termsandconditions_0",
     "applicability": {
       "description": null,
       "platform": "iOS,macOS",
@@ -4341,7 +5047,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "TermsAndConditions",
     "rootDefinitionId": "ade_setupassistant_termsandconditions",
@@ -4398,7 +5104,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_termsofaddress_1",
+    "defaultOptionId": "ade_setupassistant_termsofaddress_0",
     "applicability": {
       "description": null,
       "platform": "iOS,macOS",
@@ -4439,7 +5145,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "TermsOfAddress",
     "rootDefinitionId": "ade_setupassistant_termsofaddress",
@@ -4496,7 +5202,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_voiceselection_1",
+    "defaultOptionId": "ade_setupassistant_voiceselection_0",
     "applicability": {
       "description": null,
       "platform": "iOS",
@@ -4537,7 +5243,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "VoiceSelection",
     "rootDefinitionId": "ade_setupassistant_voiceselection",
@@ -4648,7 +5354,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "ApplyDeviceRenameTemplate",
     "rootDefinitionId": "enrollment_autopilot_dpp_applydevicerenametemplate",
@@ -4745,7 +5451,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "DeploymentMode",
     "rootDefinitionId": "enrollment_autopilot_dpp_deploymentmode",
@@ -4858,7 +5564,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "get",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "CustomConfigExecutionRetries",
     "rootDefinitionId": "linux_customconfig_executionretries",
@@ -5011,7 +5717,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "ConfigureApplicationControlSelectAdditionalRulesForTrustingApps",
     "rootDefinitionId": "device_vendor_msft_policy_config_applicationcontrol_policies_{policyguid}_policiesoptions",
@@ -5121,7 +5827,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "Enter path of xml data",
     "rootDefinitionId": "device_vendor_msft_policy_config_applicationcontrol_policies_{policyguid}_policiesoptions",
@@ -5178,7 +5884,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "ConfigureApplicationControlBuiltInControls",
     "rootDefinitionId": "device_vendor_msft_policy_config_applicationcontrol_policies_{policyguid}_policiesoptions",
@@ -5238,7 +5944,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "ruleid",
     "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
@@ -5298,7 +6004,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "ExcludedIdList",
     "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
@@ -5366,7 +6072,7 @@
       "value": 24
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "PostAuthenticationResetDelay",
     "rootDefinitionId": "device_vendor_msft_laps_policies_postauthenticationresetdelay",
@@ -5434,7 +6140,7 @@
       "value": 30
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "PasswordAgeDays",
     "rootDefinitionId": "device_vendor_msft_laps_policies_backupdirectory",
@@ -5605,7 +6311,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "desc",
     "rootDefinitionId": "device_vendor_msft_policy_config_localusersandgroups_configure",
@@ -5834,7 +6540,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "action",
     "rootDefinitionId": "device_vendor_msft_policy_config_localusersandgroups_configure",
@@ -5957,7 +6663,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "ArgumentList",
     "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
@@ -6009,7 +6715,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "ElevationRuleName",
     "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
@@ -6081,7 +6787,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "AppliesTo",
     "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
@@ -6165,7 +6871,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "Description",
     "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
@@ -6229,7 +6935,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "FileVersion",
     "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
@@ -6328,7 +7034,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "CertificateType",
     "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
@@ -6448,7 +7154,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "UserConfirmedUserElevationTypeValidation",
     "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
@@ -6479,53 +7185,51 @@
     "dependencies": []
   },
   {
-    "settingId": "user_vendor_msft_agentgovernance",
-    "settingName": "Agent Governance",
-    "settingDescription": "Agent Governance policy for configuring AI agent containment settings.",
-    "categoryId": "ea5fabb0-6eec-4c3e-8c6d-7523739207c3",
+    "settingId": "ade_accountsettings_adminaccountname",
+    "settingName": "Admin account username",
+    "settingDescription": "The account name for the administrator account. This field is to be defaulted to 'Admin'.",
+    "categoryId": "6c217eb1-e939-4a7d-8a27-da4b6dbf9513",
     "categoryName": "Uncategorized",
     "keywords": [
-      "AgentGovernance",
-      "Agent Governance",
-      "Container Policy"
+      "ADE profile",
+      "enrollment",
+      "Account settings"
     ],
     "infoUrls": [],
-    "baseUri": "./User/Vendor/MSFT/AgentGovernance",
-    "offsetUri": "",
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/accountSettings/adminAccountName",
     "settingUsage": "configuration",
-    "uxBehavior": "default",
+    "uxBehavior": "smallTextBox",
     "visibility": "template",
     "riskLevel": "low",
     "defaultOptionId": null,
     "applicability": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
       "description": null,
-      "platform": "windows10",
+      "platform": "macOS",
       "deviceMode": "none",
-      "technologies": "mdm",
-      "configurationServiceProviderVersion": "1.0",
-      "maximumSupportedVersion": null,
-      "minimumSupportedVersion": "10.0.26100",
-      "windowsSkus": [
-        "windowsEnterprise",
-        "windowsProfessional",
-        "windowsEducation",
-        "iotEnterprise",
-        "windowsCloudN",
-        "windows11SE"
-      ],
-      "requiresAzureAd": false,
-      "requiredAzureAdTrustType": "none"
+      "technologies": "enrollment"
     },
     "options": [],
     "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": "^[^!@#$%^&*()<>?+=:\"|,]+$",
+      "maximumLength": 255,
+      "minimumLength": 1,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": "admin"
+    },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
-    "name": "AgentGovernance",
-    "rootDefinitionId": "user_vendor_msft_agentgovernance",
+    "name": "AdminAccountName",
+    "rootDefinitionId": "ade_macos_awaitconfiguration",
     "settingDefinitionId": null,
     "definitionDescription": null,
     "dataType": null,
@@ -6533,57 +7237,565 @@
     "dependencies": []
   },
   {
-    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories",
-    "settingName": "Allowed filesystem directories",
-    "settingDescription": "A collection of filesystem directory rules.",
-    "categoryId": "ea5fabb0-6eec-4c3e-8c6d-7523739207c3",
+    "settingId": "ade_accountsettings_restrictediting",
+    "settingName": "Restrict editing",
+    "settingDescription": "Prevent the end user from editing the full name and account name",
+    "categoryId": "6c217eb1-e939-4a7d-8a27-da4b6dbf9513",
     "categoryName": "Uncategorized",
     "keywords": [
-      "AgentGovernance",
-      "Agent Governance",
-      "Container Policy"
+      "ADE profile",
+      "enrollment",
+      "Account settings"
     ],
     "infoUrls": [],
-    "baseUri": "./User/Vendor/MSFT/AgentGovernance",
-    "offsetUri": "/{PolicyId}_{TargetAgentId}/ResourcePolicy",
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/accountSettings/restrictEditing",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "ade_accountsettings_restrictediting_1",
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [
+      {
+        "itemId": "ade_accountsettings_restrictediting_0",
+        "description": null,
+        "helpText": null,
+        "name": "NotConfigured",
+        "displayName": "Not configured",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_accountsettings_prefillaccountinfo_1",
+            "parentSettingId": "ade_accountsettings_prefillaccountinfo"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_accountsettings_restrictediting_1",
+        "description": null,
+        "helpText": null,
+        "name": "Yes",
+        "displayName": "Yes",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_accountsettings_prefillaccountinfo_1",
+            "parentSettingId": "ade_accountsettings_prefillaccountinfo"
+          }
+        ],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": null,
+    "name": "RestrictEditing",
+    "rootDefinitionId": "ade_macos_awaitconfiguration",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "ade_accountsettings_restrictediting_0",
+        "description": null,
+        "helpText": null,
+        "name": "NotConfigured",
+        "displayName": "Not configured",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_accountsettings_prefillaccountinfo_1",
+            "parentSettingId": "ade_accountsettings_prefillaccountinfo"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_accountsettings_restrictediting_1",
+        "description": null,
+        "helpText": null,
+        "name": "Yes",
+        "displayName": "Yes",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_accountsettings_prefillaccountinfo_1",
+            "parentSettingId": "ade_accountsettings_prefillaccountinfo"
+          }
+        ],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "ade_accountsettings_createlocalprimary",
+    "settingName": "Create a local primary account",
+    "settingDescription": null,
+    "categoryId": "6c217eb1-e939-4a7d-8a27-da4b6dbf9513",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Account settings"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/accountSettings/createLocalPrimary",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "ade_accountsettings_createlocalprimary_0",
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [
+      {
+        "itemId": "ade_accountsettings_createlocalprimary_0",
+        "description": null,
+        "helpText": null,
+        "name": "No",
+        "displayName": "No",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_accountsettings_createlocaladmin_0",
+            "parentSettingId": "ade_accountsettings_createlocaladmin"
+          },
+          {
+            "dependentOn": "ade_accountsettings_createlocaladmin_1",
+            "parentSettingId": "ade_accountsettings_createlocaladmin"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_accountsettings_createlocalprimary_1",
+        "description": null,
+        "helpText": null,
+        "name": "YesStandardAccountType",
+        "displayName": "Yes - Standard Account Type",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_accountsettings_createlocaladmin_1",
+            "parentSettingId": "ade_accountsettings_createlocaladmin"
+          }
+        ],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "ade_accountsettings_prefillaccountinfo",
+            "required": true
+          }
+        ]
+      },
+      {
+        "itemId": "ade_accountsettings_createlocalprimary_2",
+        "description": null,
+        "helpText": null,
+        "name": "YesAdministratorAccountType",
+        "displayName": "Yes - Administrator Account Type",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 2
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_accountsettings_createlocaladmin_0",
+            "parentSettingId": "ade_accountsettings_createlocaladmin"
+          },
+          {
+            "dependentOn": "ade_accountsettings_createlocaladmin_1",
+            "parentSettingId": "ade_accountsettings_createlocaladmin"
+          }
+        ],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "ade_accountsettings_prefillaccountinfo",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": "",
+    "name": "CreateLocalPrimary",
+    "rootDefinitionId": "ade_macos_awaitconfiguration",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "ade_accountsettings_createlocalprimary_0",
+        "description": null,
+        "helpText": null,
+        "name": "No",
+        "displayName": "No",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_accountsettings_createlocaladmin_0",
+            "parentSettingId": "ade_accountsettings_createlocaladmin"
+          },
+          {
+            "dependentOn": "ade_accountsettings_createlocaladmin_1",
+            "parentSettingId": "ade_accountsettings_createlocaladmin"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_accountsettings_createlocalprimary_1",
+        "description": null,
+        "helpText": null,
+        "name": "YesStandardAccountType",
+        "displayName": "Yes - Standard Account Type",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_accountsettings_createlocaladmin_1",
+            "parentSettingId": "ade_accountsettings_createlocaladmin"
+          }
+        ],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "ade_accountsettings_prefillaccountinfo",
+            "required": true
+          }
+        ]
+      },
+      {
+        "itemId": "ade_accountsettings_createlocalprimary_2",
+        "description": null,
+        "helpText": null,
+        "name": "YesAdministratorAccountType",
+        "displayName": "Yes - Administrator Account Type",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 2
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_accountsettings_createlocaladmin_0",
+            "parentSettingId": "ade_accountsettings_createlocaladmin"
+          },
+          {
+            "dependentOn": "ade_accountsettings_createlocaladmin_1",
+            "parentSettingId": "ade_accountsettings_createlocaladmin"
+          }
+        ],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "ade_accountsettings_prefillaccountinfo",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "ade_accountsettings_adminaccountpasswordrotation",
+    "settingName": "Admin account password rotation period (days)",
+    "settingDescription": null,
+    "categoryId": "6c217eb1-e939-4a7d-8a27-da4b6dbf9513",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Account settings"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/accountSettings/adminAccountPasswordRotation",
+    "settingUsage": "configuration",
+    "uxBehavior": "smallTextBox",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValueDefinition",
+      "maximumValue": 180,
+      "minimumValue": 0
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+      "settingValueTemplateReference": null,
+      "value": 0
+    },
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": null,
+    "name": "AdminAccountPasswordRotation",
+    "rootDefinitionId": "ade_macos_awaitconfiguration",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "ade_accountsettings_adminaccountfullname",
+    "settingName": "Admin account full name",
+    "settingDescription": "The full name for the administrator account. This field is to be defaulted to 'Admin'.",
+    "categoryId": "6c217eb1-e939-4a7d-8a27-da4b6dbf9513",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Account settings"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/accountSettings/adminAccountFullName",
+    "settingUsage": "configuration",
+    "uxBehavior": "smallTextBox",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": "^[^!@#$%^&*()<>?+=:\"|,]+$",
+      "maximumLength": 255,
+      "minimumLength": 1,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": "Admin"
+    },
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": "",
+    "name": "AdminAccountFullName",
+    "rootDefinitionId": "ade_macos_awaitconfiguration",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "ade_appleconfiguratorcertificates",
+    "settingName": "Apple Configurator certificates",
+    "settingDescription": "Required to sync data with a supervised device. Make sure you save a local copy of the certificate that you can access later. You won't be able to make changes to the uploaded copy.",
+    "categoryId": "75e27534-3163-45b1-b34e-ca79b077b286",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Management settings"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/appleConfiguratorCertificates",
     "settingUsage": "configuration",
     "uxBehavior": "default",
     "visibility": "template",
     "riskLevel": "low",
     "defaultOptionId": null,
     "applicability": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
       "description": null,
-      "platform": "windows10",
+      "platform": "iOS",
       "deviceMode": "none",
-      "technologies": "mdm",
-      "configurationServiceProviderVersion": "1.0",
-      "maximumSupportedVersion": null,
-      "minimumSupportedVersion": "10.0.26100",
-      "windowsSkus": [
-        "windowsEnterprise",
-        "windowsProfessional",
-        "windowsEducation",
-        "iotEnterprise",
-        "windowsCloudN",
-        "windows11SE"
-      ],
-      "requiresAzureAd": false,
-      "requiredAzureAdTrustType": "none"
+      "technologies": "enrollment"
     },
     "options": [],
     "referredSettingInformationList": [],
-    "valueDefinition": [],
-    "defaultValue": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "base64",
+      "inputValidationSchema": null,
+      "maximumLength": 8192,
+      "minimumLength": 0,
+      "isSecret": false,
+      "fileTypes": [
+        "cer"
+      ]
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
-    "name": "AllowedFilesystemDirectories",
-    "rootDefinitionId": "user_vendor_msft_agentgovernance",
+    "name": "AppleConfiguratorCertificates",
+    "rootDefinitionId": "ade_appleconfiguratorcertificates",
     "settingDefinitionId": null,
     "definitionDescription": null,
     "dataType": null,
     "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "ade_setupassistant_icloudstorage",
+    "settingName": "iCloud Storage",
+    "settingDescription": null,
+    "categoryId": "0d23daec-d948-4eee-8ee5-89ab1c59e440",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/setupAssistant/iCloudStorage",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "ade_setupassistant_icloudstorage_0",
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [
+      {
+        "itemId": "ade_setupassistant_icloudstorage_0",
+        "description": null,
+        "helpText": null,
+        "name": "Hide",
+        "displayName": "Hide",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_setupassistant_icloudstorage_1",
+        "description": null,
+        "helpText": null,
+        "name": "Show",
+        "displayName": "Show",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": null,
+    "name": "iCloudStorage",
+    "rootDefinitionId": "ade_setupassistant_icloudstorage",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "ade_setupassistant_icloudstorage_0",
+        "description": null,
+        "helpText": null,
+        "name": "Hide",
+        "displayName": "Hide",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_setupassistant_icloudstorage_1",
+        "description": null,
+        "helpText": null,
+        "name": "Show",
+        "displayName": "Show",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
     "dependencies": []
   },
   {
@@ -6628,7 +7840,7 @@
       "value": "{{DEVICETYPE}}-{{SERIAL}}"
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "{{DEVICETYPE}}-{{SERIAL}}",
     "name": "DeivceNameTemplate",
     "rootDefinitionId": "ade_devicenametemplatechoices",
@@ -6641,7 +7853,7 @@
   {
     "settingId": "ade_lockedenrollment",
     "settingName": "Locked enrollment",
-    "settingDescription": "Blocks the user from removing the management profile through the iOS/iPadOS Settings menu.",
+    "settingDescription": "Blocks the user from removing the management profile through the Settings menu.",
     "categoryId": "75e27534-3163-45b1-b34e-ca79b077b286",
     "categoryName": "Uncategorized",
     "keywords": [
@@ -6697,7 +7909,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "LockedEnrollment",
     "rootDefinitionId": "ade_lockedenrollment",
@@ -6774,7 +7986,7 @@
       "value": 10
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "MaximumCachedUsers",
     "rootDefinitionId": "ade_useraffinity",
@@ -6802,7 +8014,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_appearance_1",
+    "defaultOptionId": "ade_setupassistant_appearance_0",
     "applicability": {
       "description": null,
       "platform": "iOS,macOS",
@@ -6843,7 +8055,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "Appearance",
     "rootDefinitionId": "ade_setupassistant_appearance",
@@ -6900,7 +8112,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_appleid_1",
+    "defaultOptionId": "ade_setupassistant_appleid_0",
     "applicability": {
       "description": null,
       "platform": "iOS,macOS",
@@ -6941,7 +8153,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "AppleId",
     "rootDefinitionId": "ade_setupassistant_appleid",
@@ -7022,7 +8234,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "Appears to users on About Configuration screen",
     "name": "DepartmentPhone",
     "rootDefinitionId": "ade_setupassistant_departmentphone",
@@ -7050,7 +8262,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_diagnosticsdata_1",
+    "defaultOptionId": "ade_setupassistant_diagnosticsdata_0",
     "applicability": {
       "description": null,
       "platform": "iOS,macOS",
@@ -7091,7 +8303,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "DiagnosticsData",
     "rootDefinitionId": "ade_setupassistant_diagnosticsdata",
@@ -7148,7 +8360,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_screentime_1",
+    "defaultOptionId": "ade_setupassistant_screentime_0",
     "applicability": {
       "description": null,
       "platform": "iOS,macOS",
@@ -7189,7 +8401,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "ScreenTime",
     "rootDefinitionId": "ade_setupassistant_screentime",
@@ -7246,7 +8458,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_softwareupdate_1",
+    "defaultOptionId": "ade_setupassistant_softwareupdate_0",
     "applicability": {
       "description": null,
       "platform": "iOS,macOS",
@@ -7287,7 +8499,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "SoftwareUpdate",
     "rootDefinitionId": "ade_setupassistant_softwareupdate",
@@ -7344,7 +8556,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_watchmigration_1",
+    "defaultOptionId": "ade_setupassistant_watchmigration_0",
     "applicability": {
       "description": null,
       "platform": "iOS",
@@ -7385,7 +8597,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "WatchMigration",
     "rootDefinitionId": "ade_setupassistant_watchmigration",
@@ -7472,7 +8684,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "get",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "MuteNotificationsClockedout",
     "rootDefinitionId": "device_vendor_msft_policy_config_quiettime_mutenotificationsclockedout",
@@ -7564,7 +8776,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "SkipExpress",
     "rootDefinitionId": "enrollment_autopilot_dpp_skipexpress",
@@ -7653,7 +8865,7 @@
       "value": "Contact your organization’s support person for help."
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "CustomErrorMessage",
     "rootDefinitionId": "enrollment_autopilot_dpp_customerrormessage",
@@ -7713,7 +8925,7 @@
       "value": "MyCompany-%RAND:4%"
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "DeviceRenameTemplate",
     "rootDefinitionId": "enrollment_autopilot_dpp_applydevicerenametemplate",
@@ -7806,7 +9018,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "DefaultBehaviorValidation",
     "rootDefinitionId": "device_vendor_msft_policy_elevationclientsettings_enableepm",
@@ -7853,6 +9065,114 @@
         "dependedOnBy": []
       }
     ],
+    "dependencies": []
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance",
+    "settingName": "Agent Governance",
+    "settingDescription": "Agent Governance policy for configuring AI agent containment settings.",
+    "categoryId": "ea5fabb0-6eec-4c3e-8c6d-7523739207c3",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
+    ],
+    "infoUrls": [],
+    "baseUri": "./User/Vendor/MSFT/AgentGovernance",
+    "offsetUri": "",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+      "description": null,
+      "platform": "windows10",
+      "deviceMode": "none",
+      "technologies": "mdm",
+      "configurationServiceProviderVersion": "1.0",
+      "maximumSupportedVersion": null,
+      "minimumSupportedVersion": "10.0.26100",
+      "windowsSkus": [
+        "windowsEnterprise",
+        "windowsProfessional",
+        "windowsEducation",
+        "iotEnterprise",
+        "windowsCloudN",
+        "windows11SE"
+      ],
+      "requiresAzureAd": false,
+      "requiredAzureAdTrustType": "none"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": "",
+    "name": "AgentGovernance",
+    "rootDefinitionId": "user_vendor_msft_agentgovernance",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories",
+    "settingName": "Allowed filesystem directories",
+    "settingDescription": "Specifies filesystem directories the contained agent can access. If no directories are configured, filesystem access is denied by default.",
+    "categoryId": "ea5fabb0-6eec-4c3e-8c6d-7523739207c3",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
+    ],
+    "infoUrls": [],
+    "baseUri": "./User/Vendor/MSFT/AgentGovernance",
+    "offsetUri": "/{PolicyId}_{TargetAgentId}/ResourcePolicy",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+      "description": null,
+      "platform": "windows10",
+      "deviceMode": "none",
+      "technologies": "mdm",
+      "configurationServiceProviderVersion": "1.0",
+      "maximumSupportedVersion": null,
+      "minimumSupportedVersion": "10.0.26100",
+      "windowsSkus": [
+        "windowsEnterprise",
+        "windowsProfessional",
+        "windowsEducation",
+        "iotEnterprise",
+        "windowsCloudN",
+        "windows11SE"
+      ],
+      "requiresAzureAd": false,
+      "requiredAzureAdTrustType": "none"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": "",
+    "name": "AllowedFilesystemDirectories",
+    "rootDefinitionId": "user_vendor_msft_agentgovernance",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
     "dependencies": []
   },
   {
@@ -7941,7 +9261,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "ConfigureApplicationControlEnableAppControlPolicy",
     "rootDefinitionId": "device_vendor_msft_policy_config_applicationcontrol_policies_{policyguid}_policiesoptions",
@@ -8137,7 +9457,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "Type",
     "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
@@ -8310,7 +9630,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "GroupId",
     "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
@@ -8382,7 +9702,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "Name",
     "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
@@ -8511,7 +9831,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "ClipboardFileType",
     "rootDefinitionId": "device_vendor_msft_windowsdefenderapplicationguard_settings_allowwindowsdefenderapplicationguard",
@@ -8652,7 +9972,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "CertificateThumbprints",
     "rootDefinitionId": "device_vendor_msft_windowsdefenderapplicationguard_settings_certificatethumbprints",
@@ -8751,7 +10071,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "AutomaticAccountManagementTarget",
     "rootDefinitionId": "device_vendor_msft_laps_policies_automaticaccountmanagementenabled",
@@ -8896,7 +10216,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "AutomaticAccountManagementEnabled",
     "rootDefinitionId": "device_vendor_msft_laps_policies_automaticaccountmanagementenabled",
@@ -9041,7 +10361,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "AutomaticAccountManagementRandomizeName",
     "rootDefinitionId": "device_vendor_msft_laps_policies_automaticaccountmanagementenabled",
@@ -9152,7 +10472,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "AutomaticAccountManagementNameOrPrefix",
     "rootDefinitionId": "device_vendor_msft_laps_policies_automaticaccountmanagementenabled",
@@ -9208,7 +10528,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "accessgroup",
     "rootDefinitionId": "device_vendor_msft_policy_config_localusersandgroups_configure",
@@ -9313,7 +10633,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "userselectiontype",
     "rootDefinitionId": "device_vendor_msft_policy_config_localusersandgroups_configure",
@@ -9430,7 +10750,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "CertificatePayloadWithReusableSetting",
     "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
@@ -9494,7 +10814,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "InternalName",
     "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
@@ -9560,7 +10880,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "CertificateFileUpload",
     "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
@@ -9568,6 +10888,362 @@
     "definitionDescription": null,
     "dataType": null,
     "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "ade_accountsettings_primaryaccountfullname",
+    "settingName": "Primary account full name",
+    "settingDescription": "The full name for the account. Setup Assistant will user this value to prefill the Full Name field if 'Prefill account info' is set to 'Not configured'. This field is to be defaulted to the variable, {{username}}, for example, 'John Doe'.",
+    "categoryId": "6c217eb1-e939-4a7d-8a27-da4b6dbf9513",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Account settings"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/accountSettings/primaryAccountFullName",
+    "settingUsage": "configuration",
+    "uxBehavior": "smallTextBox",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": "^[^!@#$%^&*()<>?+=:\"|,]+$",
+      "maximumLength": 255,
+      "minimumLength": 1,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": "{{username}}"
+    },
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": null,
+    "name": "PrimaryAccountFullName",
+    "rootDefinitionId": "ade_macos_awaitconfiguration",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "ade_macos_useraffinity",
+    "settingName": "User affinity",
+    "settingDescription": "User affinity associates devices with users. Users must authenticate to enroll with user affinity.",
+    "categoryId": "75e27534-3163-45b1-b34e-ca79b077b286",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Management settings"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/AppleMacOSUserAffinity",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "ade_macos_useraffinity_1",
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [
+      {
+        "itemId": "ade_macos_useraffinity_1",
+        "description": null,
+        "helpText": null,
+        "name": "EnrollWithUserAffinity",
+        "displayName": "Enroll with user affinity",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "1"
+        },
+        "dependentOn": [],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "ade_macos_authenticationmethod",
+            "required": true
+          }
+        ]
+      },
+      {
+        "itemId": "ade_macos_useraffinity_0",
+        "description": null,
+        "helpText": null,
+        "name": "EnrollWithoutUserAffinity",
+        "displayName": "Enroll without user affinity",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "0"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": "",
+    "name": "AppleMacOSUserAffinity",
+    "rootDefinitionId": "ade_macos_useraffinity",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "ade_macos_useraffinity_1",
+        "description": null,
+        "helpText": null,
+        "name": "EnrollWithUserAffinity",
+        "displayName": "Enroll with user affinity",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "1"
+        },
+        "dependentOn": [],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "ade_macos_authenticationmethod",
+            "required": true
+          }
+        ]
+      },
+      {
+        "itemId": "ade_macos_useraffinity_0",
+        "description": null,
+        "helpText": null,
+        "name": "EnrollWithoutUserAffinity",
+        "displayName": "Enroll without user affinity",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "0"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "ade_setupassistant_camerabutton",
+    "settingName": "Camera button",
+    "settingDescription": null,
+    "categoryId": "0d23daec-d948-4eee-8ee5-89ab1c59e440",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/setupAssistant/cameraButton",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "ade_setupassistant_camerabutton_0",
+    "applicability": {
+      "description": null,
+      "platform": "iOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [
+      {
+        "itemId": "ade_setupassistant_camerabutton_0",
+        "description": null,
+        "helpText": null,
+        "name": "Hide",
+        "displayName": "Hide",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_setupassistant_camerabutton_1",
+        "description": null,
+        "helpText": null,
+        "name": "Show",
+        "displayName": "Show",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": null,
+    "name": "CameraButton",
+    "rootDefinitionId": "ade_setupassistant_camerabutton",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "ade_setupassistant_camerabutton_0",
+        "description": null,
+        "helpText": null,
+        "name": "Hide",
+        "displayName": "Hide",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_setupassistant_camerabutton_1",
+        "description": null,
+        "helpText": null,
+        "name": "Show",
+        "displayName": "Show",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "ade_setupassistant_osshowcase",
+    "settingName": "OS showcase",
+    "settingDescription": null,
+    "categoryId": "0d23daec-d948-4eee-8ee5-89ab1c59e440",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/setupAssistant/oSShowcase",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "ade_setupassistant_osshowcase_0",
+    "applicability": {
+      "description": null,
+      "platform": "iOS,macOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [
+      {
+        "itemId": "ade_setupassistant_osshowcase_0",
+        "description": null,
+        "helpText": null,
+        "name": "Hide",
+        "displayName": "Hide",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_setupassistant_osshowcase_1",
+        "description": null,
+        "helpText": null,
+        "name": "Show",
+        "displayName": "Show",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": null,
+    "name": "OSShowcase",
+    "rootDefinitionId": "ade_setupassistant_osshowcase",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "ade_setupassistant_osshowcase_0",
+        "description": null,
+        "helpText": null,
+        "name": "Hide",
+        "displayName": "Hide",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_setupassistant_osshowcase_1",
+        "description": null,
+        "helpText": null,
+        "name": "Show",
+        "displayName": "Show",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
     "dependencies": []
   },
   {
@@ -9634,7 +11310,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "AppleDeivceNameTemplateChoices",
     "rootDefinitionId": "ade_devicenametemplatechoices",
@@ -9716,7 +11392,7 @@
       "value": 0
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "Enter value",
     "name": "MaximumSecondsInactivityUntilTemporarySessionLogsOut",
     "rootDefinitionId": "ade_useraffinity",
@@ -9744,7 +11420,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_actionbutton_1",
+    "defaultOptionId": "ade_setupassistant_actionbutton_0",
     "applicability": {
       "description": null,
       "platform": "iOS",
@@ -9785,7 +11461,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "ActionButton",
     "rootDefinitionId": "ade_setupassistant_actionbutton",
@@ -9842,7 +11518,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_androidmigration_1",
+    "defaultOptionId": "ade_setupassistant_androidmigration_0",
     "applicability": {
       "description": null,
       "platform": "iOS",
@@ -9883,7 +11559,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "AndroidMigration",
     "rootDefinitionId": "ade_setupassistant_androidmigration",
@@ -9940,7 +11616,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_getstarted_1",
+    "defaultOptionId": "ade_setupassistant_getstarted_0",
     "applicability": {
       "description": null,
       "platform": "iOS",
@@ -9981,7 +11657,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "GetStarted",
     "rootDefinitionId": "ade_setupassistant_getstarted",
@@ -10038,7 +11714,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_intelligence_1",
+    "defaultOptionId": "ade_setupassistant_intelligence_0",
     "applicability": {
       "description": null,
       "platform": "iOS,macOS",
@@ -10079,7 +11755,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "ade_SetupAssistant_Intelligence_0",
     "rootDefinitionId": "ade_setupassistant_intelligence",
@@ -10136,7 +11812,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_locationservices_1",
+    "defaultOptionId": "ade_setupassistant_locationservices_0",
     "applicability": {
       "description": null,
       "platform": "iOS,macOS",
@@ -10177,7 +11853,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "LocationServices",
     "rootDefinitionId": "ade_setupassistant_locationservices",
@@ -10234,7 +11910,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_siri_1",
+    "defaultOptionId": "ade_setupassistant_siri_0",
     "applicability": {
       "description": null,
       "platform": "iOS,macOS",
@@ -10275,7 +11951,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "Siri",
     "rootDefinitionId": "ade_setupassistant_siri",
@@ -13265,7 +14941,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "Language",
     "rootDefinitionId": "enrollment_autopilot_dpp_language",
@@ -16255,7 +17931,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "A link will be displayed for users to collect diagnostic logs if deployment fails.",
     "name": "AllowDiagnostics",
     "rootDefinitionId": "enrollment_autopilot_dpp_allowdiagnostics",
@@ -16344,7 +18020,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "AllowedApplicationIds",
     "rootDefinitionId": "enrollment_autopilot_dpp_allowedappids",
@@ -16421,7 +18097,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "AccountType",
     "rootDefinitionId": "enrollment_autopilot_dpp_accountype",
@@ -16547,7 +18223,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "SendDataToMicrosoft",
     "rootDefinitionId": "device_vendor_msft_policy_elevationclientsettings_enableepm",
@@ -16663,7 +18339,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "Id",
     "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
@@ -16723,7 +18399,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "IncludedIdList",
     "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
@@ -16829,7 +18505,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "AllowPersistence",
     "rootDefinitionId": "device_vendor_msft_windowsdefenderapplicationguard_settings_allowwindowsdefenderapplicationguard",
@@ -16982,7 +18658,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "AllowVirtualGPU",
     "rootDefinitionId": "device_vendor_msft_windowsdefenderapplicationguard_settings_allowwindowsdefenderapplicationguard",
@@ -17217,7 +18893,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "PasswordComplexity",
     "rootDefinitionId": "device_vendor_msft_laps_policies_passwordcomplexity",
@@ -17417,7 +19093,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "ADPasswordEncryptionPrincipal",
     "rootDefinitionId": "device_vendor_msft_laps_policies_backupdirectory",
@@ -17481,7 +19157,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "FileHash",
     "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
@@ -17545,7 +19221,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "FileDescription",
     "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
@@ -17556,81 +19232,227 @@
     "dependencies": []
   },
   {
-    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allownetworkaccess",
-    "settingName": "Allow network access",
-    "settingDescription": "Controls whether the contained agent can access the network. 0=blocked, 1=allowed.",
-    "categoryId": "ea5fabb0-6eec-4c3e-8c6d-7523739207c3",
+    "settingId": "ade_accountsettings_createlocaladmin",
+    "settingName": "Create a local admin account",
+    "settingDescription": null,
+    "categoryId": "6c217eb1-e939-4a7d-8a27-da4b6dbf9513",
     "categoryName": "Uncategorized",
     "keywords": [
-      "AgentGovernance",
-      "Agent Governance",
-      "Container Policy"
+      "ADE profile",
+      "enrollment",
+      "Account settings"
     ],
     "infoUrls": [],
-    "baseUri": "./User/Vendor/MSFT/AgentGovernance",
-    "offsetUri": "/{PolicyId}_{TargetAgentId}/ResourcePolicy",
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/accountSettings/createLocalAdmin",
     "settingUsage": "configuration",
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allownetworkaccess_0",
+    "defaultOptionId": "ade_accountsettings_createlocaladmin_0",
     "applicability": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
       "description": null,
-      "platform": "windows10",
+      "platform": "macOS",
       "deviceMode": "none",
-      "technologies": "mdm",
-      "configurationServiceProviderVersion": "1.0",
-      "maximumSupportedVersion": null,
-      "minimumSupportedVersion": "10.0.26100",
-      "windowsSkus": [
-        "windowsEnterprise",
-        "windowsProfessional",
-        "windowsEducation",
-        "iotEnterprise",
-        "windowsCloudN",
-        "windows11SE"
-      ],
-      "requiresAzureAd": false,
-      "requiredAzureAdTrustType": "none"
+      "technologies": "enrollment"
     },
     "options": [
       {
-        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allownetworkaccess_0",
-        "description": "Network access is blocked",
+        "itemId": "ade_accountsettings_createlocaladmin_0",
+        "description": null,
         "helpText": null,
-        "name": "Deny",
-        "displayName": "Deny",
+        "name": "No",
+        "displayName": "No",
         "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
           "settingValueTemplateReference": null,
-          "value": "0"
+          "value": 0
         },
         "dependentOn": [
           {
-            "dependentOn": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_1",
-            "parentSettingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution"
+            "dependentOn": "ade_macos_awaitconfiguration_1",
+            "parentSettingId": "ade_macos_awaitconfiguration"
           }
         ],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "ade_accountsettings_createlocalprimary",
+            "required": true
+          }
+        ]
+      },
+      {
+        "itemId": "ade_accountsettings_createlocaladmin_1",
+        "description": null,
+        "helpText": null,
+        "name": "Yes",
+        "displayName": "Yes",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_macos_awaitconfiguration_1",
+            "parentSettingId": "ade_macos_awaitconfiguration"
+          }
+        ],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "ade_accountsettings_adminaccountname",
+            "required": true
+          },
+          {
+            "dependedOnBy": "ade_accountsettings_adminaccountfullname",
+            "required": true
+          },
+          {
+            "dependedOnBy": "ade_accountsettings_hideusersgroups",
+            "required": true
+          },
+          {
+            "dependedOnBy": "ade_accountsettings_adminaccountpasswordrotation",
+            "required": true
+          },
+          {
+            "dependedOnBy": "ade_accountsettings_createlocalprimary",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": "",
+    "name": "CreateLocalAdmin",
+    "rootDefinitionId": "ade_macos_awaitconfiguration",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "ade_accountsettings_createlocaladmin_0",
+        "description": null,
+        "helpText": null,
+        "name": "No",
+        "displayName": "No",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_macos_awaitconfiguration_1",
+            "parentSettingId": "ade_macos_awaitconfiguration"
+          }
+        ],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "ade_accountsettings_createlocalprimary",
+            "required": true
+          }
+        ]
+      },
+      {
+        "itemId": "ade_accountsettings_createlocaladmin_1",
+        "description": null,
+        "helpText": null,
+        "name": "Yes",
+        "displayName": "Yes",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_macos_awaitconfiguration_1",
+            "parentSettingId": "ade_macos_awaitconfiguration"
+          }
+        ],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "ade_accountsettings_adminaccountname",
+            "required": true
+          },
+          {
+            "dependedOnBy": "ade_accountsettings_adminaccountfullname",
+            "required": true
+          },
+          {
+            "dependedOnBy": "ade_accountsettings_hideusersgroups",
+            "required": true
+          },
+          {
+            "dependedOnBy": "ade_accountsettings_adminaccountpasswordrotation",
+            "required": true
+          },
+          {
+            "dependedOnBy": "ade_accountsettings_createlocalprimary",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "ade_setupassistant_accessibility",
+    "settingName": "Accessibility",
+    "settingDescription": null,
+    "categoryId": "0d23daec-d948-4eee-8ee5-89ab1c59e440",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/setupAssistant/accessibility",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "ade_setupassistant_accessibility_0",
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [
+      {
+        "itemId": "ade_setupassistant_accessibility_0",
+        "description": null,
+        "helpText": null,
+        "name": "Hide",
+        "displayName": "Hide",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
         "dependedOnBy": []
       },
       {
-        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allownetworkaccess_1",
-        "description": "Network access is allowed",
+        "itemId": "ade_setupassistant_accessibility_1",
+        "description": null,
         "helpText": null,
-        "name": "Allow",
-        "displayName": "Allow",
+        "name": "Show",
+        "displayName": "Show",
         "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
           "settingValueTemplateReference": null,
-          "value": "1"
+          "value": 1
         },
-        "dependentOn": [
-          {
-            "dependentOn": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_1",
-            "parentSettingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution"
-          }
-        ],
+        "dependentOn": [],
         "dependedOnBy": []
       }
     ],
@@ -17638,50 +19460,40 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
-    "helpText": "",
-    "name": "AllowNetworkAccess",
-    "rootDefinitionId": "user_vendor_msft_agentgovernance",
+    "version": "639150686251400134",
+    "helpText": null,
+    "name": "Accessibility",
+    "rootDefinitionId": "ade_setupassistant_accessibility",
     "settingDefinitionId": null,
     "definitionDescription": null,
     "dataType": null,
     "valueOptions": [
       {
-        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allownetworkaccess_0",
-        "description": "Network access is blocked",
+        "itemId": "ade_setupassistant_accessibility_0",
+        "description": null,
         "helpText": null,
-        "name": "Deny",
-        "displayName": "Deny",
+        "name": "Hide",
+        "displayName": "Hide",
         "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
           "settingValueTemplateReference": null,
-          "value": "0"
+          "value": 0
         },
-        "dependentOn": [
-          {
-            "dependentOn": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_1",
-            "parentSettingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution"
-          }
-        ],
+        "dependentOn": [],
         "dependedOnBy": []
       },
       {
-        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allownetworkaccess_1",
-        "description": "Network access is allowed",
+        "itemId": "ade_setupassistant_accessibility_1",
+        "description": null,
         "helpText": null,
-        "name": "Allow",
-        "displayName": "Allow",
+        "name": "Show",
+        "displayName": "Show",
         "optionValue": {
-          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
           "settingValueTemplateReference": null,
-          "value": "1"
+          "value": 1
         },
-        "dependentOn": [
-          {
-            "dependentOn": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_1",
-            "parentSettingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution"
-          }
-        ],
+        "dependentOn": [],
         "dependedOnBy": []
       }
     ],
@@ -17746,7 +19558,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "AwaitConfiguration_Basic_1",
     "rootDefinitionId": "ade_awaitconfiguration_basic",
@@ -17872,7 +19684,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "RequireSharedIPadTemporarySessionOnly",
     "rootDefinitionId": "ade_useraffinity",
@@ -17977,7 +19789,7 @@
       "value": 0
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "Enter value",
     "name": "MaximumSecondsAfterScreenLockBeofrePasswordIsRequired",
     "rootDefinitionId": "ade_useraffinity",
@@ -18005,7 +19817,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_privacy_1",
+    "defaultOptionId": "ade_setupassistant_privacy_0",
     "applicability": {
       "description": null,
       "platform": "iOS,macOS",
@@ -18046,7 +19858,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "Privacy",
     "rootDefinitionId": "ade_setupassistant_privacy",
@@ -18103,7 +19915,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_restorecompleted_1",
+    "defaultOptionId": "ade_setupassistant_restorecompleted_0",
     "applicability": {
       "description": null,
       "platform": "iOS",
@@ -18144,7 +19956,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "RestoreCompleted",
     "rootDefinitionId": "ade_setupassistant_restorecompleted",
@@ -18226,7 +20038,7 @@
       "value": null
     },
     "accessTypes": "get",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "StartTimeDateTime",
     "rootDefinitionId": "device_vendor_msft_policy_config_quiettime_rangesettings_starttime",
@@ -18288,7 +20100,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "DeploymentType",
     "rootDefinitionId": "enrollment_autopilot_dpp_deploymenttype",
@@ -18414,7 +20226,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "ReportingScope",
     "rootDefinitionId": "device_vendor_msft_policy_elevationclientsettings_enableepm",
@@ -18475,6 +20287,138 @@
           {
             "dependentOn": "device_vendor_msft_policy_elevationclientsettings_senddata_1",
             "parentSettingId": "device_vendor_msft_policy_elevationclientsettings_senddata"
+          }
+        ],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allownetworkaccess",
+    "settingName": "Allow network access",
+    "settingDescription": "Controls whether the contained agent is allowed to access the network. 0=blocked, 1=allowed.",
+    "categoryId": "ea5fabb0-6eec-4c3e-8c6d-7523739207c3",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
+    ],
+    "infoUrls": [],
+    "baseUri": "./User/Vendor/MSFT/AgentGovernance",
+    "offsetUri": "/{PolicyId}_{TargetAgentId}/ResourcePolicy",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allownetworkaccess_0",
+    "applicability": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+      "description": null,
+      "platform": "windows10",
+      "deviceMode": "none",
+      "technologies": "mdm",
+      "configurationServiceProviderVersion": "1.0",
+      "maximumSupportedVersion": null,
+      "minimumSupportedVersion": "10.0.26100",
+      "windowsSkus": [
+        "windowsEnterprise",
+        "windowsProfessional",
+        "windowsEducation",
+        "iotEnterprise",
+        "windowsCloudN",
+        "windows11SE"
+      ],
+      "requiresAzureAd": false,
+      "requiredAzureAdTrustType": "none"
+    },
+    "options": [
+      {
+        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allownetworkaccess_0",
+        "description": "Network access is blocked",
+        "helpText": null,
+        "name": "Disabled",
+        "displayName": "Disabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "0"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_1",
+            "parentSettingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allownetworkaccess_1",
+        "description": "Network access is allowed",
+        "helpText": null,
+        "name": "Enabled",
+        "displayName": "Enabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "1"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_1",
+            "parentSettingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution"
+          }
+        ],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": "",
+    "name": "AllowNetworkAccess",
+    "rootDefinitionId": "user_vendor_msft_agentgovernance",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allownetworkaccess_0",
+        "description": "Network access is blocked",
+        "helpText": null,
+        "name": "Disabled",
+        "displayName": "Disabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "0"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_1",
+            "parentSettingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allownetworkaccess_1",
+        "description": "Network access is allowed",
+        "helpText": null,
+        "name": "Enabled",
+        "displayName": "Enabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "1"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_1",
+            "parentSettingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution"
           }
         ],
         "dependedOnBy": []
@@ -18544,7 +20488,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "Sid",
     "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
@@ -18610,7 +20554,7 @@
       "value": 0
     },
     "accessTypes": "get",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "PlatformStatus",
     "rootDefinitionId": "device_vendor_msft_windowsdefenderapplicationguard_platformstatus",
@@ -18739,7 +20683,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "BackupDirectory",
     "rootDefinitionId": "device_vendor_msft_laps_policies_backupdirectory",
@@ -18876,7 +20820,7 @@
       "value": 6
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "PassphraseLength",
     "rootDefinitionId": "device_vendor_msft_laps_policies_passwordcomplexity",
@@ -18944,7 +20888,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "member",
     "rootDefinitionId": "device_vendor_msft_policy_config_localusersandgroups_configure",
@@ -19021,7 +20965,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "SkipEula",
     "rootDefinitionId": "enrollment_autopilot_dpp_skipeula",
@@ -19113,7 +21057,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "JoinType",
     "rootDefinitionId": "enrollment_autopilot_dpp_jointype",
@@ -19182,7 +21126,7 @@
       "value": ""
     },
     "accessTypes": "get",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "CustomConfig_Script",
     "rootDefinitionId": "linux_customconfig_script",
@@ -19281,7 +21225,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "PasswordExpirationProtectionEnabled",
     "rootDefinitionId": "device_vendor_msft_laps_policies_backupdirectory",
@@ -19331,6 +21275,372 @@
     "dependencies": []
   },
   {
+    "settingId": "ade_accountsettings_prefillaccountinfo",
+    "settingName": "Prefill account info",
+    "settingDescription": "If you select 'Yes', the account name and full name must be configured. Not configured allows the end user to configure these fields.",
+    "categoryId": "6c217eb1-e939-4a7d-8a27-da4b6dbf9513",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Account settings"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/accountSettings/prefillAccountInfo",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "ade_accountsettings_prefillaccountinfo_0",
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [
+      {
+        "itemId": "ade_accountsettings_prefillaccountinfo_0",
+        "description": null,
+        "helpText": null,
+        "name": "NotConfigured",
+        "displayName": "Not Configured",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_accountsettings_createlocalprimary_1",
+            "parentSettingId": "ade_accountsettings_createlocalprimary"
+          },
+          {
+            "dependentOn": "ade_accountsettings_createlocalprimary_2",
+            "parentSettingId": "ade_accountsettings_createlocalprimary"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_accountsettings_prefillaccountinfo_1",
+        "description": null,
+        "helpText": null,
+        "name": "Yes",
+        "displayName": "Yes",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_accountsettings_createlocalprimary_1",
+            "parentSettingId": "ade_accountsettings_createlocalprimary"
+          },
+          {
+            "dependentOn": "ade_accountsettings_createlocalprimary_2",
+            "parentSettingId": "ade_accountsettings_createlocalprimary"
+          }
+        ],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "ade_accountsettings_primaryaccountname",
+            "required": true
+          },
+          {
+            "dependedOnBy": "ade_accountsettings_primaryaccountfullname",
+            "required": true
+          },
+          {
+            "dependedOnBy": "ade_accountsettings_restrictediting",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": null,
+    "name": "PrefillAccountInfo",
+    "rootDefinitionId": "ade_macos_awaitconfiguration",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "ade_accountsettings_prefillaccountinfo_0",
+        "description": null,
+        "helpText": null,
+        "name": "NotConfigured",
+        "displayName": "Not Configured",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_accountsettings_createlocalprimary_1",
+            "parentSettingId": "ade_accountsettings_createlocalprimary"
+          },
+          {
+            "dependentOn": "ade_accountsettings_createlocalprimary_2",
+            "parentSettingId": "ade_accountsettings_createlocalprimary"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_accountsettings_prefillaccountinfo_1",
+        "description": null,
+        "helpText": null,
+        "name": "Yes",
+        "displayName": "Yes",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_accountsettings_createlocalprimary_1",
+            "parentSettingId": "ade_accountsettings_createlocalprimary"
+          },
+          {
+            "dependentOn": "ade_accountsettings_createlocalprimary_2",
+            "parentSettingId": "ade_accountsettings_createlocalprimary"
+          }
+        ],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "ade_accountsettings_primaryaccountname",
+            "required": true
+          },
+          {
+            "dependedOnBy": "ade_accountsettings_primaryaccountfullname",
+            "required": true
+          },
+          {
+            "dependedOnBy": "ade_accountsettings_restrictediting",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "ade_macos_awaitconfiguration",
+    "settingName": "Await final configuration",
+    "settingDescription": "Keeps the device in Setup Assistant until the first sync between the device and Intune installs policies.",
+    "categoryId": "75e27534-3163-45b1-b34e-ca79b077b286",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Management settings"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/AppleMacOSAwaitConfiguration",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "ade_macos_awaitconfiguration_1",
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [
+      {
+        "itemId": "ade_macos_awaitconfiguration_0",
+        "description": null,
+        "helpText": null,
+        "name": "No",
+        "displayName": "No",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_macos_awaitconfiguration_1",
+        "description": null,
+        "helpText": null,
+        "name": "Yes",
+        "displayName": "Yes",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "ade_accountsettings_createlocaladmin",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": "",
+    "name": "AppleMacOSAwaitConfiguration",
+    "rootDefinitionId": "ade_macos_awaitconfiguration",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "ade_macos_awaitconfiguration_0",
+        "description": null,
+        "helpText": null,
+        "name": "No",
+        "displayName": "No",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_macos_awaitconfiguration_1",
+        "description": null,
+        "helpText": null,
+        "name": "Yes",
+        "displayName": "Yes",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "ade_accountsettings_createlocaladmin",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "ade_setupassistant_iclouddiagnostics",
+    "settingName": "iCloud Diagnostics",
+    "settingDescription": null,
+    "categoryId": "0d23daec-d948-4eee-8ee5-89ab1c59e440",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/setupAssistant/iCloudDiagnostics",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "ade_setupassistant_iclouddiagnostics_0",
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [
+      {
+        "itemId": "ade_setupassistant_iclouddiagnostics_0",
+        "description": null,
+        "helpText": null,
+        "name": "Hide",
+        "displayName": "Hide",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_setupassistant_iclouddiagnostics_1",
+        "description": null,
+        "helpText": null,
+        "name": "Show",
+        "displayName": "Show",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": null,
+    "name": "iCloudDiagnostics",
+    "rootDefinitionId": "ade_setupassistant_iclouddiagnostics",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "ade_setupassistant_iclouddiagnostics_0",
+        "description": null,
+        "helpText": null,
+        "name": "Hide",
+        "displayName": "Hide",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_setupassistant_iclouddiagnostics_1",
+        "description": null,
+        "helpText": null,
+        "name": "Show",
+        "displayName": "Show",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
     "settingId": "ade_setupassistant_enablelockdownmode",
     "settingName": "Enable Lock down Mode",
     "settingDescription": null,
@@ -19348,7 +21658,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_enablelockdownmode_1",
+    "defaultOptionId": "ade_setupassistant_enablelockdownmode_0",
     "applicability": {
       "description": null,
       "platform": "iOS,macOS",
@@ -19389,7 +21699,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "EnableLockdownMode",
     "rootDefinitionId": "ade_setupassistant_enablelockdownmode",
@@ -19446,7 +21756,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_passcode_1",
+    "defaultOptionId": "ade_setupassistant_passcode_0",
     "applicability": {
       "description": null,
       "platform": "iOS",
@@ -19487,7 +21797,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "Passcode",
     "rootDefinitionId": "ade_setupassistant_passcode",
@@ -19544,7 +21854,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_softwareupdatecompleted_1",
+    "defaultOptionId": "ade_setupassistant_softwareupdatecompleted_0",
     "applicability": {
       "description": null,
       "platform": "iOS,macOS",
@@ -19585,7 +21895,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "SoftwareUpdateCompleted",
     "rootDefinitionId": "ade_setupassistant_softwareupdatecompleted",
@@ -19691,7 +22001,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "AllowSkip",
     "rootDefinitionId": "enrollment_autopilot_dpp_allowskip",
@@ -19797,7 +22107,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "SkipKeyboard",
     "rootDefinitionId": "enrollment_autopilot_dpp_skipkeyboard",
@@ -19886,7 +22196,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "PolicyRule",
     "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
@@ -19962,7 +22272,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "GroupId",
     "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
@@ -20034,7 +22344,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "ComputerSid",
     "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
@@ -20100,7 +22410,7 @@
       "value": 0
     },
     "accessTypes": "get",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "Status",
     "rootDefinitionId": "device_vendor_msft_windowsdefenderapplicationguard_status",
@@ -20206,7 +22516,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "AllowCameraMicrophoneRedirection",
     "rootDefinitionId": "device_vendor_msft_windowsdefenderapplicationguard_settings_allowwindowsdefenderapplicationguard",
@@ -20341,7 +22651,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "AuditApplicationGuard",
     "rootDefinitionId": "device_vendor_msft_windowsdefenderapplicationguard_audit_auditapplicationguard",
@@ -20487,7 +22797,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "PostAuthenticationActions",
     "rootDefinitionId": "device_vendor_msft_laps_policies_postauthenticationactions",
@@ -20643,7 +22953,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "AutomaticAccountManagementEnableAccount",
     "rootDefinitionId": "device_vendor_msft_laps_policies_automaticaccountmanagementenabled",
@@ -20774,7 +23084,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "ElevationTypeValidation",
     "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
@@ -20922,7 +23232,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "SignatureSource",
     "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
@@ -20990,51 +23300,155 @@
     "dependencies": []
   },
   {
-    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_targetedagentid",
-    "settingName": "Targeted agent",
-    "settingDescription": "The MSIX package family name of the targeted agent.",
-    "categoryId": "ea5fabb0-6eec-4c3e-8c6d-7523739207c3",
+    "settingId": "ade_accountsettings_hideusersgroups",
+    "settingName": "Hide in Users and Groups",
+    "settingDescription": "Make the admin account hidden in the login window and Users & Groups.",
+    "categoryId": "6c217eb1-e939-4a7d-8a27-da4b6dbf9513",
     "categoryName": "Uncategorized",
     "keywords": [
-      "AgentGovernance",
-      "Agent Governance",
-      "Container Policy"
+      "ADE profile",
+      "enrollment",
+      "Account settings"
     ],
     "infoUrls": [],
-    "baseUri": "./User/Vendor/MSFT/AgentGovernance",
-    "offsetUri": "/{PolicyId}_{TargetAgentId}/ResourcePolicy",
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/accountSettings/hideUsersGroups",
     "settingUsage": "configuration",
-    "uxBehavior": "contextPane",
+    "uxBehavior": "toggle",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": "ade_accountsettings_hideusersgroups_0",
+    "applicability": {
+      "description": null,
+      "platform": "macOS",
+      "deviceMode": "none",
+      "technologies": "enrollment"
+    },
+    "options": [
+      {
+        "itemId": "ade_accountsettings_hideusersgroups_0",
+        "description": null,
+        "helpText": null,
+        "name": "NotConfigured",
+        "displayName": "Not Configured",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_accountsettings_createlocaladmin_1",
+            "parentSettingId": "ade_accountsettings_createlocaladmin"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_accountsettings_hideusersgroups_1",
+        "description": null,
+        "helpText": null,
+        "name": "Yes",
+        "displayName": "Yes",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_accountsettings_createlocaladmin_1",
+            "parentSettingId": "ade_accountsettings_createlocaladmin"
+          }
+        ],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": null,
+    "name": "HideUsersGroups",
+    "rootDefinitionId": "ade_macos_awaitconfiguration",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "ade_accountsettings_hideusersgroups_0",
+        "description": null,
+        "helpText": null,
+        "name": "NotConfigured",
+        "displayName": "Not Configured",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 0
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_accountsettings_createlocaladmin_1",
+            "parentSettingId": "ade_accountsettings_createlocaladmin"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "ade_accountsettings_hideusersgroups_1",
+        "description": null,
+        "helpText": null,
+        "name": "Yes",
+        "displayName": "Yes",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "ade_accountsettings_createlocaladmin_1",
+            "parentSettingId": "ade_accountsettings_createlocaladmin"
+          }
+        ],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "ade_accountsettings_primaryaccountname",
+    "settingName": "Primary account name",
+    "settingDescription": "The account name for the account. Setup Assistant will use this value to prefill the Account Name field if 'Prefill account info' is set to 'Not configured'. This field is to be defaulted to the variable, {{partialupn}}, for example, 'John'.",
+    "categoryId": "6c217eb1-e939-4a7d-8a27-da4b6dbf9513",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Account settings"
+    ],
+    "infoUrls": [],
+    "baseUri": "./enrollment/ade",
+    "offsetUri": "/accountSettings/primaryAccountName",
+    "settingUsage": "configuration",
+    "uxBehavior": "smallTextBox",
     "visibility": "template",
     "riskLevel": "low",
     "defaultOptionId": null,
     "applicability": {
-      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
       "description": null,
-      "platform": "windows10",
+      "platform": "macOS",
       "deviceMode": "none",
-      "technologies": "mdm",
-      "configurationServiceProviderVersion": "1.0",
-      "maximumSupportedVersion": null,
-      "minimumSupportedVersion": "10.0.26100",
-      "windowsSkus": [
-        "windowsEnterprise",
-        "windowsProfessional",
-        "windowsEducation",
-        "iotEnterprise",
-        "windowsCloudN",
-        "windows11SE"
-      ],
-      "requiresAzureAd": false,
-      "requiredAzureAdTrustType": "none"
+      "technologies": "enrollment"
     },
     "options": [],
     "referredSettingInformationList": [],
     "valueDefinition": {
       "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
       "format": "none",
-      "inputValidationSchema": null,
-      "maximumLength": 512,
+      "inputValidationSchema": "^[^!@#$%^&*()<>?+=:\"|,]+$",
+      "maximumLength": 255,
       "minimumLength": 1,
       "isSecret": false,
       "fileTypes": []
@@ -21042,13 +23456,13 @@
     "defaultValue": {
       "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
       "settingValueTemplateReference": null,
-      "value": null
+      "value": "{{partialupn}}"
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
-    "helpText": "",
-    "name": "TargetedAgentId",
-    "rootDefinitionId": "user_vendor_msft_agentgovernance",
+    "version": "639150686251400134",
+    "helpText": null,
+    "name": "PrimaryAccountName",
+    "rootDefinitionId": "ade_macos_awaitconfiguration",
     "settingDefinitionId": null,
     "definitionDescription": null,
     "dataType": null,
@@ -21119,7 +23533,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "ActivateCellularDataChoices",
     "rootDefinitionId": "ade_activatecellulardatachoices",
@@ -21208,7 +23622,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "UserAffinity_Basic",
     "rootDefinitionId": "ade_useraffinitybasic",
@@ -21275,7 +23689,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "Appears to users on About Configuration screen",
     "name": "Department",
     "rootDefinitionId": "ade_setupassistant_department",
@@ -21303,7 +23717,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_devicemigration_1",
+    "defaultOptionId": "ade_setupassistant_devicemigration_0",
     "applicability": {
       "description": null,
       "platform": "iOS",
@@ -21344,7 +23758,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "DeviceMigration",
     "rootDefinitionId": "ade_setupassistant_devicemigration",
@@ -21401,7 +23815,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_restore_1",
+    "defaultOptionId": "ade_setupassistant_restore_0",
     "applicability": {
       "description": null,
       "platform": "iOS,macOS",
@@ -21442,7 +23856,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "Restore",
     "rootDefinitionId": "ade_setupassistant_restore",
@@ -21499,7 +23913,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_simsetup_1",
+    "defaultOptionId": "ade_setupassistant_simsetup_0",
     "applicability": {
       "description": null,
       "platform": "iOS",
@@ -21540,7 +23954,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "SimSetup",
     "rootDefinitionId": "ade_setupassistant_simsetup",
@@ -21597,7 +24011,7 @@
     "uxBehavior": "toggle",
     "visibility": "template",
     "riskLevel": "low",
-    "defaultOptionId": "ade_setupassistant_touchfaceid_1",
+    "defaultOptionId": "ade_setupassistant_touchfaceid_0",
     "applicability": {
       "description": null,
       "platform": "iOS,macOS",
@@ -21638,7 +24052,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "TouchFaceId",
     "rootDefinitionId": "ade_setupassistant_touchfaceid",
@@ -21744,7 +24158,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "EnableCUE",
     "rootDefinitionId": "enrollment_autopilot_dpp_enablecue",
@@ -21848,7 +24262,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "BlockMDMEnrollment",
     "rootDefinitionId": "enrollment_restriction_blockmdmenrollment",
@@ -21937,7 +24351,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "AllowedScriptIds",
     "rootDefinitionId": "enrollment_autopilot_dpp_allowedscriptids",
@@ -22009,7 +24423,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "get",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "CustomConfigExecutionContext",
     "rootDefinitionId": "linux_customconfig_executioncontext",
@@ -22207,7 +24621,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "get",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "CustomConfigExecutionFrequency",
     "rootDefinitionId": "linux_customconfig_executionfrequency",
@@ -22429,7 +24843,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "EndpointPrivilegeManagement",
     "rootDefinitionId": "device_vendor_msft_policy_elevationclientsettings_enableepm",
@@ -22479,6 +24893,72 @@
         "dependedOnBy": []
       }
     ],
+    "dependencies": []
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_targetedagentid",
+    "settingName": "Targeted agent",
+    "settingDescription": "The MSIX package family name of the targeted agent.",
+    "categoryId": "ea5fabb0-6eec-4c3e-8c6d-7523739207c3",
+    "categoryName": "Uncategorized",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
+    ],
+    "infoUrls": [],
+    "baseUri": "./User/Vendor/MSFT/AgentGovernance",
+    "offsetUri": "/{PolicyId}_{TargetAgentId}/ResourcePolicy",
+    "settingUsage": "configuration",
+    "uxBehavior": "contextPane",
+    "visibility": "template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationWindowsSettingApplicability",
+      "description": null,
+      "platform": "windows10",
+      "deviceMode": "none",
+      "technologies": "mdm",
+      "configurationServiceProviderVersion": "1.0",
+      "maximumSupportedVersion": null,
+      "minimumSupportedVersion": "10.0.26100",
+      "windowsSkus": [
+        "windowsEnterprise",
+        "windowsProfessional",
+        "windowsEducation",
+        "iotEnterprise",
+        "windowsCloudN",
+        "windows11SE"
+      ],
+      "requiresAzureAd": false,
+      "requiredAzureAdTrustType": "none"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": null,
+      "maximumLength": 512,
+      "minimumLength": 1,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": null
+    },
+    "accessTypes": "add,delete,get,replace",
+    "version": "639150686251400134",
+    "helpText": "",
+    "name": "TargetedAgentId",
+    "rootDefinitionId": "user_vendor_msft_agentgovernance",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
     "dependencies": []
   },
   {
@@ -22567,7 +25047,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "ConfigureApplicationControlOptions",
     "rootDefinitionId": "device_vendor_msft_policy_config_applicationcontrol_policies_{policyguid}_policiesoptions",
@@ -22800,7 +25280,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "AccessMask",
     "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
@@ -23006,7 +25486,7 @@
       "value": null
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "Id",
     "rootDefinitionId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}",
@@ -23182,7 +25662,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "PrintingSettings",
     "rootDefinitionId": "device_vendor_msft_windowsdefenderapplicationguard_settings_allowwindowsdefenderapplicationguard",
@@ -23366,7 +25846,7 @@
       "value": 14
     },
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "PasswordLength",
     "rootDefinitionId": "device_vendor_msft_laps_policies_passwordlength",
@@ -23422,7 +25902,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": "",
     "name": "GroupConfiguration",
     "rootDefinitionId": "device_vendor_msft_policy_config_localusersandgroups_configure",
@@ -23584,7 +26064,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "Elevationtype",
     "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
@@ -23771,7 +26251,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "add,delete,get,replace",
-    "version": "639141423527581363",
+    "version": "639150686251400134",
     "helpText": null,
     "name": "RestrictArguments",
     "rootDefinitionId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}",
