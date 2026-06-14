@@ -1,5 +1,16 @@
 [
   {
+    "settingId": "ade_authenticationmethod",
+    "settingName": "Intune authentication method",
+    "settingDescription": "If your organization uses multifactor authentication, select Setup Assistant with modern authentication, which prompts users to authenticate based on settings in Entra.",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Management settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_setupassistant_filevault",
     "settingName": "FileVault",
     "settingDescription": null,
@@ -29,17 +40,6 @@
       "ADE profile",
       "enrollment",
       "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_authenticationmethod",
-    "settingName": "Intune authentication method",
-    "settingDescription": "If your organization uses multifactor authentication, select Setup Assistant with modern authentication, which prompts users to authenticate based on settings in Entra.",
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Management settings"
     ],
     "categoryName": "Uncategorized"
   },
@@ -189,17 +189,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "ade_setupassistant_webcontentfiltering",
-    "settingName": "Web Content Filtering",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_activatecellulardata",
     "settingName": "Carrier activation server URL",
     "settingDescription": "",
@@ -229,6 +218,17 @@
       "ADE profile",
       "enrollment",
       "Management settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_webcontentfiltering",
+    "settingName": "Web Content Filtering",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
     ],
     "categoryName": "Uncategorized"
   },
@@ -424,28 +424,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "ade_setupassistant_appstore",
-    "settingName": "App Store",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_setupassistant_multitasking",
-    "settingName": "Multitasking",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_modernauth_awaitfinalconfiguration",
     "settingName": "Await final configuration",
     "settingDescription": "Keeps the device in Setup Assistant until the first sync between the device and Intune installs policies.",
@@ -479,8 +457,30 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "ade_setupassistant_appstore",
+    "settingName": "App Store",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_setupassistant_imessagefacetime",
     "settingName": "iMessage and FaceTime",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_multitasking",
+    "settingName": "Multitasking",
     "settingDescription": null,
     "keywords": [
       "ADE profile",
@@ -807,17 +807,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "ade_setupassistant_icloudstorage",
-    "settingName": "iCloud Storage",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_appledevicenametemplate",
     "settingName": "Device name template",
     "settingDescription": "Create a unique name for your devices. Names must be 63 characters or less, and can contain letters (a-z, A-Z), numbers (0-9), and hyphens.Variables supported: {{SERIAL}}, {{DEVICETYPE}}",
@@ -886,6 +875,17 @@
   {
     "settingId": "ade_setupassistant_diagnosticsdata",
     "settingName": "Diagnostics Data",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_icloudstorage",
+    "settingName": "iCloud Storage",
     "settingDescription": null,
     "keywords": [
       "ADE profile",
@@ -1183,9 +1183,9 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "ade_macos_useraffinity",
-    "settingName": "User affinity",
-    "settingDescription": "User affinity associates devices with users. Users must authenticate to enroll with user affinity.",
+    "settingId": "ade_devicenametemplatechoices",
+    "settingName": "Apple device name template",
+    "settingDescription": "You can create a standard naming format to make it easier to name devices as they enroll in Intune. By default, Apple uses the device type (such as iPad or iPhone) and serial number to name ADE devices.",
     "keywords": [
       "ADE profile",
       "enrollment",
@@ -1194,31 +1194,9 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "ade_setupassistant_camerabutton",
-    "settingName": "Camera button",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_setupassistant_osshowcase",
-    "settingName": "OS showcase",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_devicenametemplatechoices",
-    "settingName": "Apple device name template",
-    "settingDescription": "You can create a standard naming format to make it easier to name devices as they enroll in Intune. By default, Apple uses the device type (such as iPad or iPhone) and serial number to name ADE devices.",
+    "settingId": "ade_macos_useraffinity",
+    "settingName": "User affinity",
+    "settingDescription": "User affinity associates devices with users. Users must authenticate to enroll with user affinity.",
     "keywords": [
       "ADE profile",
       "enrollment",
@@ -1260,6 +1238,17 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "ade_setupassistant_camerabutton",
+    "settingName": "Camera button",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_setupassistant_getstarted",
     "settingName": "Get Started",
     "settingDescription": null,
@@ -1284,6 +1273,17 @@
   {
     "settingId": "ade_setupassistant_locationservices",
     "settingName": "Location services",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_osshowcase",
+    "settingName": "OS showcase",
     "settingDescription": null,
     "keywords": [
       "ADE profile",
@@ -1461,17 +1461,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "ade_setupassistant_accessibility",
-    "settingName": "Accessibility",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_awaitconfiguration_basic",
     "settingName": "Await final configuration",
     "settingDescription": "Keeps the device in Setup Assistant until the first sync between the device and Intune installs policies.",
@@ -1501,6 +1490,17 @@
       "ADE profile",
       "enrollment",
       "Management settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_accessibility",
+    "settingName": "Accessibility",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1690,8 +1690,8 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "ade_setupassistant_iclouddiagnostics",
-    "settingName": "iCloud Diagnostics",
+    "settingId": "ade_setupassistant_enablelockdownmode",
+    "settingName": "Enable Lock down Mode",
     "settingDescription": null,
     "keywords": [
       "ADE profile",
@@ -1701,8 +1701,8 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "ade_setupassistant_enablelockdownmode",
-    "settingName": "Enable Lock down Mode",
+    "settingId": "ade_setupassistant_iclouddiagnostics",
+    "settingName": "iCloud Diagnostics",
     "settingDescription": null,
     "keywords": [
       "ADE profile",
