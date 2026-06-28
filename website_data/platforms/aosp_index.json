@@ -40,6 +40,24 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.userinitiatedaddesimsettings",
+    "settingName": "Block users from adding eSIM profiles",
+    "settingDescription": "If 'True', users cannot add eSIM profiles to the device. If 'False', Intune doesn't change or update this setting. By default, the OS allows users to add eSIM profiles. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "eSIM",
+      "embedded SIM",
+      "SIM",
+      "SIM card",
+      "carrier profile",
+      "cellular",
+      "mobile network",
+      "add SIM",
+      "network profile",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.appsblockinstallfromunknownsourcesaosp",
     "settingName": "Block user from turning on unknown sources",
     "settingDescription": "If 'True', prevents users from sideloading apps. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to sideload apps from unknown sources.",
@@ -180,6 +198,18 @@
       "DateTime",
       "Configuration",
       "Block",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.setwallpaperblocked",
+    "settingName": "Block setting wallpaper",
+    "settingDescription": "If 'True', the device is prevented from changing the wallpaper. If 'False', Intune doesn't change or update this setting. By default, the OS might allow the user to set a wallpaper. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "wallpaper",
+      "lockscreen",
+      "picture",
       "General"
     ],
     "categoryName": "Device Restriction"
@@ -503,6 +533,19 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.setusericonblocked",
+    "settingName": "Block setting user icon",
+    "settingDescription": "If 'True', the device is prevented from changing the user icon. If 'False', Intune doesn't change or update this setting. By default, the OS might allow the user to change their icon. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "user icon",
+      "profile picture",
+      "icon",
+      "user circle",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.wifidirectsettings",
     "settingName": "Block Wi-Fi Direct",
     "settingDescription": "If 'True', blocks Wi-Fi Direct (a direct, peer-to-peer connection between devices using Wi-Fi frequencies). If set to 'False', Intune doesn't change or update this setting. By default, the OS might allow Wi-Fi Direct. Available for fully managed, dedicated, and corporate-owned work profile devices.",
@@ -513,6 +556,21 @@
       "Wi-Fi direct",
       "direct",
       "Wi-Fi",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.printingpolicy",
+    "settingName": "Block printing",
+    "settingDescription": "If 'True', the device is prevented from printing documents. If 'False', Intune doesn't change or update this setting. By default, the OS follows the default printing behavior. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "print",
+      "printing",
+      "block printing",
+      "disable printing",
+      "document",
+      "documents",
       "General"
     ],
     "categoryName": "Device Restriction"

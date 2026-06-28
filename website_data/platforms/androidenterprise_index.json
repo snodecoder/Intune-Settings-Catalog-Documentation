@@ -40,6 +40,24 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.userinitiatedaddesimsettings",
+    "settingName": "Block users from adding eSIM profiles",
+    "settingDescription": "If 'True', users cannot add eSIM profiles to the device. If 'False', Intune doesn't change or update this setting. By default, the OS allows users to add eSIM profiles. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "eSIM",
+      "embedded SIM",
+      "SIM",
+      "SIM card",
+      "carrier profile",
+      "cellular",
+      "mobile network",
+      "add SIM",
+      "network profile",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.appsblockinstallfromunknownsourcesaosp",
     "settingName": "Block user from turning on unknown sources",
     "settingDescription": "If 'True', prevents users from sideloading apps. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to sideload apps from unknown sources.",
@@ -259,6 +277,18 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.setwallpaperblocked",
+    "settingName": "Block setting wallpaper",
+    "settingDescription": "If 'True', the device is prevented from changing the wallpaper. If 'False', Intune doesn't change or update this setting. By default, the OS might allow the user to set a wallpaper. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "wallpaper",
+      "lockscreen",
+      "picture",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.personalprofileappsallowinstallfromunknownsources",
     "settingName": "Allow users to enable app installation from unknown sources in the personal profile",
     "settingDescription": "If 'True, allows users to install apps from unknown sources in the personal profile. It allows users to install apps from sources other than the Google Play Store. If 'False', Intune doesn't change or update this setting. By default, the OS might prevent users from installing apps from unknown sources in the personal profile. Available for corporate-owned work profile devices (at personal profile level).",
@@ -272,6 +302,20 @@
       "Unknown",
       "Sources",
       "Personal Profile"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.workprofilewidgetsdefault",
+    "settingName": "Block widgets from work profile apps",
+    "settingDescription": "If 'True', prevents users from adding widgets exposed by work profile apps to the home screen. If set to 'False', Intune doesn't change or update this setting. By default, the OS might allow adding work profile widgets to the home screen. Available for corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Widget",
+      "View",
+      "App",
+      "Work Profile",
+      "Work profile apps",
+      "Applications"
     ],
     "categoryName": "Device Restriction"
   },
@@ -300,6 +344,33 @@
       "Update",
       "Policy",
       "Applications"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.outgoingcallsblocked",
+    "settingName": "Block outgoing calls",
+    "settingDescription": "If 'True', the device is prevented from making outgoing phone calls. If 'False', Intune doesn't change or update this setting. By default, the OS might allow outgoing calls. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "mobile network",
+      "cell",
+      "call",
+      "mobile data",
+      "phone call",
+      "Connectivity"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.networkresetblocked",
+    "settingName": "Block network reset",
+    "settingDescription": "If 'True', the device is prevented from performing a network settings reset. If 'False', Intune doesn't change or update this setting. By default, the OS might allow the user to reset network settings. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "network reset",
+      "network",
+      "reset",
+      "mobile device network",
+      "Connectivity"
     ],
     "categoryName": "Device Restriction"
   },
@@ -461,6 +532,37 @@
       "Minimum",
       "Length",
       "Work profile password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.minimumwifisecuritylevel",
+    "settingName": "Select minimum Wi-Fi security level",
+    "settingDescription": "Select what Wi-Fi security levels are required to connect to Wi-Fi networks. 'Open network security' allows the device to connect to all types of Wi-Fi networks. 'Personal network security' requires personal networks such as WEP, WPA2-PSK. 'Enterprise network security' requires enterprise EAP networks. 'Enterprise 192-bit network security' requires 192-bit networks. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "wi-fi",
+      "wifi",
+      "wifi security level",
+      "security level",
+      "enterprise wi-fi",
+      "wep",
+      "wpa2-psk",
+      "eap",
+      "192-bit",
+      "Connectivity"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.cellulartwogblocked",
+    "settingName": "Block cellular 2G",
+    "settingDescription": "If 'True', the device prevents cellular 2G functionality, restricting user access to the setting. If 'False', Intune doesn't change or update this setting. By default, the OS follows the default cellular 2G behavior. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "cellular",
+      "mobile network",
+      "cellular 2G",
+      "2G",
+      "Connectivity"
     ],
     "categoryName": "Device Restriction"
   },
@@ -711,6 +813,34 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.airplanemodeblocked",
+    "settingName": "Block airplane mode",
+    "settingDescription": "If 'True', the device is prevented from enabling airplane mode. If 'False', Intune doesn't change or update this setting. By default, the OS follows the default airplane mode behavior. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "airplane mode",
+      "airplane",
+      "block airplane mode",
+      "disable airplane mode",
+      "Connectivity"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.preferentialnetworkservice",
+    "settingName": "Allow selection of a preferential network service",
+    "settingDescription": "If 'True', the device will give priority to the specified network service over other available options (e.g., enterprise slice on 5G networks). If 'False', Intune doesn't change or update this setting. By default, the device connects using its default network selection process. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "choose network",
+      "network",
+      "cellular data",
+      "preferential network",
+      "5G",
+      "network slicing",
+      "Connectivity"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.passwordrequireunlock",
     "settingName": "Required unlock frequency",
     "settingDescription": "Select how long users have before they're required to unlock the device using a strong authentication method (password, PIN, or pattern). Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
@@ -735,6 +865,19 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.setusericonblocked",
+    "settingName": "Block setting user icon",
+    "settingDescription": "If 'True', the device is prevented from changing the user icon. If 'False', Intune doesn't change or update this setting. By default, the OS might allow the user to change their icon. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "user icon",
+      "profile picture",
+      "icon",
+      "user circle",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.wifidirectsettings",
     "settingName": "Block Wi-Fi Direct",
     "settingDescription": "If 'True', blocks Wi-Fi Direct (a direct, peer-to-peer connection between devices using Wi-Fi frequencies). If set to 'False', Intune doesn't change or update this setting. By default, the OS might allow Wi-Fi Direct. Available for fully managed, dedicated, and corporate-owned work profile devices.",
@@ -745,6 +888,21 @@
       "Wi-Fi direct",
       "direct",
       "Wi-Fi",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.printingpolicy",
+    "settingName": "Block printing",
+    "settingDescription": "If 'True', the device is prevented from printing documents. If 'False', Intune doesn't change or update this setting. By default, the OS follows the default printing behavior. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "print",
+      "printing",
+      "block printing",
+      "disable printing",
+      "document",
+      "documents",
       "General"
     ],
     "categoryName": "Device Restriction"
@@ -799,6 +957,46 @@
       "Symbol",
       "Characters",
       "Work profile password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.appfunctions",
+    "settingName": "Block apps from exposing app functions",
+    "settingDescription": "If 'True', apps on fully managed devices, and apps in the work profile on corporate-owned devices with a work profile, are blocked from exposing app functions. If 'False', apps are allowed to expose app functions, which is the default OS behavior. Available for fully managed, dedicated, and corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "App functions",
+      "App function",
+      "Expose app functions",
+      "Block app functions",
+      "Applications"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.smsblocked",
+    "settingName": "Block SMS",
+    "settingDescription": "If 'True', the device is prevented from sending and receiving SMS messages. If 'False', Intune doesn't change or update this setting. By default, the OS might allow SMS messaging. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "SMS",
+      "text message",
+      "messaging",
+      "communication",
+      "block SMS",
+      "Connectivity"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.mobilenetworksconfigblocked",
+    "settingName": "Block configuring mobile networks",
+    "settingDescription": "If 'True', the device is prevented from configuring mobile network settings. If 'False', Intune doesn't change or update this setting. By default, the OS might allow mobile network configuration. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "mobile network",
+      "mobile networks",
+      "cell network",
+      "network configuration",
+      "Connectivity"
     ],
     "categoryName": "Device Restriction"
   },
@@ -1052,6 +1250,45 @@
       "Letter",
       "Characters",
       "Work profile password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.ultrawidebandblocked",
+    "settingName": "Block ultra wideband",
+    "settingDescription": "If 'True', the device prevents ultra wideband functionality, restricting user access to the setting. If 'False', Intune doesn't change or update this setting. By default, the OS follows the default ultra wideband behavior. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "ultra wideband",
+      "ultra wideband state",
+      "connectivity",
+      "UWB"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.vpnconfigblocked",
+    "settingName": "Block configuring VPN",
+    "settingDescription": "If 'True', the device is prevented from configuring VPN connections. If 'False', Intune doesn't change or update this setting. By default, the OS might allow VPN configuration. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "configure VPN",
+      "VPN connection",
+      "VPN",
+      "VPNs",
+      "change VPN",
+      "Connectivity"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.cellbroadcastsconfigblocked",
+    "settingName": "Block configuring cell broadcasts",
+    "settingDescription": "If 'True', the device is prevented from configuring cell broadcast messages. If 'False', Intune doesn't change or update this setting. By default, the OS might allow cell broadcast configuration. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "cell broadcast",
+      "emergency notifications",
+      "location based",
+      "CB",
+      "Connectivity"
     ],
     "categoryName": "Device Restriction"
   },
