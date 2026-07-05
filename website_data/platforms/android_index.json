@@ -4251,15 +4251,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.forceforegroundpriorityforurls",
-    "settingName": "Force foreground priority for specific URLs",
-    "settingDescription": "This policy allows you to specify a list of URL patterns for which background web content is forced to run at foreground priority.\n\nIf the ForceForegroundPriorityForAllTabs policy is enabled, this policy is ignored because all tabs are already forced to run at foreground priority.\n\nIf the ForceForegroundPriorityForAllTabs policy is disabled or not configured, only background content that matches the URL patterns in this list is forced to run at foreground priority.\n\nFor more information about valid URL patterns, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n\nIf you don’t configure this policy or the list is empty, no background content is forced to run at foreground priority.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsdaily",
     "settingName": "Mute notifications daily",
     "settingDescription": null,
@@ -4385,6 +4376,15 @@
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.tabservicesenabled",
     "settingName": "Enable tab organization suggestions",
     "settingDescription": "This policy controls whether Microsoft Edge can use its tab organization service to help name or suggest tab groups to increase productivity.\n\nIf you enable or don't configure this policy, when a user creates a tab group or activates certain \"Group Similar Tabs\" features Microsoft Edge sends tab data to its tab organization service. This data includes URLs, page titles, and existing group information. The service uses this data to return suggestions for better groupings and group names.\n\nIf you disable this policy, no data is sent to the tab organization service. Microsoft Edge can't suggest group names when a group is created and certain \"Group Similar Tabs\" features that rely on the service aren't available.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.forceforegroundpriorityforurls",
+    "settingName": "Force foreground priority for specific URLs",
+    "settingDescription": "This policy allows you to specify a list of URL patterns for which background web content is forced to run at foreground priority.\n\nIf the ForceForegroundPriorityForAllTabs policy is enabled, this policy is ignored because all tabs are already forced to run at foreground priority.\n\nIf the ForceForegroundPriorityForAllTabs policy is disabled or not configured, only background content that matches the URL patterns in this list is forced to run at foreground priority.\n\nFor more information about valid URL patterns, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n\nIf you don’t configure this policy or the list is empty, no background content is forced to run at foreground priority.",
     "keywords": [
       "Uncategorized"
     ],
@@ -6266,15 +6266,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.cpuperformancetieroverride",
-    "settingName": "Override for the CPU performance tier",
-    "settingDescription": "This policy allows you to override the value returned by the CPU Performance API (that is, navigator.cpuPerformance).\n\nIf you enable this policy, the value of navigator.cpuPerformance is overridden with the specified value.\n\nIf you don’t configure this policy, the default performance tier calculation is used.\n\nYou can specify a value from 0 through 4.\n\nFor more information, see https://github.com/WICG/cpu-performance.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsdaily_starttime",
     "settingName": "Start time",
     "settingDescription": null,
@@ -6523,6 +6514,15 @@
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.configurekeyboardshortcuts",
     "settingName": "Configure the list of commands for which to disable keyboard shortcuts",
     "settingDescription": "Configure the list of Microsoft Edge commands for which keyboard shortcuts must be disabled.\n\nSee <a href=\"https://go.microsoft.com/fwlink/?linkid=2186950\">https://go.microsoft.com/fwlink/?linkid=2186950</a> for a list of possible commands to disable.\n\nIf you enable this policy, commands in the 'disabled' list are no longer activated by keyboard shortcuts.\n\nIf you disable this policy, all keyboard shortcuts behave as usual.\n\nNote: Disabling a command only removes its shortcut mapping. Commands in the 'disabled' list still function if accessed via browser UI.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.cpuperformancetieroverride",
+    "settingName": "Override for the CPU performance tier",
+    "settingDescription": "This policy allows you to override the value returned by the CPU Performance API (that is, navigator.cpuPerformance).\n\nIf you enable this policy, the value of navigator.cpuPerformance is overridden with the specified value.\n\nIf you don’t configure this policy, the default performance tier calculation is used.\n\nYou can specify a value from 0 through 4.\n\nFor more information, see https://github.com/WICG/cpu-performance.",
     "keywords": [
       "Uncategorized"
     ],
@@ -13542,15 +13542,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.copilotaddressbarsuggestionsenabled",
-    "settingName": "Enable Copilot address bar suggestions",
-    "settingDescription": "This policy controls whether Copilot chat suggestions appear in the address bar of Microsoft Edge.\n\nIf you enable this policy or don't configure it, Copilot chat suggestions appear in the address bar.\n\nIf you disable this policy, Copilot chat suggestions don't appear in the address bar.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsallday",
     "settingName": "Mute notifications all day",
     "settingDescription": null,
@@ -13699,6 +13690,15 @@
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.doubleclickclosetabenabled",
     "settingName": "Double Click feature in Microsoft Edge enabled (only available in China)",
     "settingDescription": "This policy lets you configure the double click feature in Microsoft Edge.\n\nDouble Click lets users close a tab by double clicking the left mouse button.\n\nIf you enable or don't configure this policy, you can use the double click feature to close a tab on Microsoft Edge to start using this feature.\n\nIf you disable this policy, you can't use the double click feature in Microsoft Edge.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.copilotaddressbarsuggestionsenabled",
+    "settingName": "Enable Copilot address bar suggestions",
+    "settingDescription": "This policy controls whether Copilot chat suggestions appear in the address bar of Microsoft Edge.\n\nIf you enable this policy or don't configure it, Copilot chat suggestions appear in the address bar.\n\nIf you disable this policy, Copilot chat suggestions don't appear in the address bar.",
     "keywords": [
       "Uncategorized"
     ],
@@ -14807,15 +14807,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.dataurlinwebworkeropaqueoriginenabled",
-    "settingName": "Enable opaque origins for data URLs in Web Workers",
-    "settingDescription": "This policy controls whether Web Workers created from data URLs are assigned\na unique opaque origin.\n\nWeb Workers can be created using a data URL that contains the worker script.\nPreviously, these workers inherited the origin of the page that created them,\nwhich allowed them to access the same origin-bound data, such as local\nstorage and cookies.\n\nStarting in Microsoft Edge version\n149, Web Workers created from data URLs are assigned a unique opaque origin\nby default. This behavior improves security and aligns with the HTML\nspecification by isolating these workers from the page that created them.\n\nIf you enable this policy or don't configure it, Web Workers created from\ndata URLs are assigned a unique opaque origin.\n\nIf you disable this policy, Web Workers created from data URLs inherit the\norigin of the page that created them. Use this setting only as a temporary\nmitigation for compatibility issues with internal applications that depend\non the legacy behavior.\n\nThis policy is temporary and will be removed in Microsoft Edge\nversion 157.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsdaily_endtime",
     "settingName": "End time",
     "settingDescription": null,
@@ -15028,6 +15019,15 @@
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.staticstoragequotaenabled",
     "settingName": "Control whether storage quota APIs will return static values",
     "settingDescription": "Controls how the Storage Quota APIs report the available quota to websites.\n\nWhen enabled, the Storage Quota APIs return a static quota value equal to the current usage plus the smaller of 10 GiB or the device's total storage rounded up to the nearest 1 GiB.\n\nWhen disabled, the Storage Quota APIs return a dynamic quota value that reflects the actual available device storage.\n\nWhen unset, the browser uses the default platform behavior.\n\nThis policy does not affect sites with unlimited storage permissions or enforced quota settings.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.dataurlinwebworkeropaqueoriginenabled",
+    "settingName": "Enable opaque origins for data URLs in Web Workers",
+    "settingDescription": "This policy controls whether Web Workers created from data URLs are assigned\na unique opaque origin.\n\nWeb Workers can be created using a data URL that contains the worker script.\nPreviously, these workers inherited the origin of the page that created them,\nwhich allowed them to access the same origin-bound data, such as local\nstorage and cookies.\n\nStarting in Microsoft Edge version\n149, Web Workers created from data URLs are assigned a unique opaque origin\nby default. This behavior improves security and aligns with the HTML\nspecification by isolating these workers from the page that created them.\n\nIf you enable this policy or don't configure it, Web Workers created from\ndata URLs are assigned a unique opaque origin.\n\nIf you disable this policy, Web Workers created from data URLs inherit the\norigin of the page that created them. Use this setting only as a temporary\nmitigation for compatibility issues with internal applications that depend\non the legacy behavior.\n\nThis policy is temporary and will be removed in Microsoft Edge\nversion 157.",
     "keywords": [
       "Uncategorized"
     ],

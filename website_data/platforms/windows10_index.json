@@ -51397,15 +51397,6 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.forceforegroundpriorityforurls",
-    "settingName": "Force foreground priority for specific URLs",
-    "settingDescription": "This policy allows you to specify a list of URL patterns for which background web content is forced to run at foreground priority.\n\nIf the ForceForegroundPriorityForAllTabs policy is enabled, this policy is ignored because all tabs are already forced to run at foreground priority.\n\nIf the ForceForegroundPriorityForAllTabs policy is disabled or not configured, only background content that matches the URL patterns in this list is forced to run at foreground priority.\n\nFor more information about valid URL patterns, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n\nIf you don’t configure this policy or the list is empty, no background content is forced to run at foreground priority.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.configurentpfeedtabvisibility",
     "settingName": "Configure whether the Discover or Work feed tabs are shown on the New Tab Page.",
     "settingDescription": "This policy configures whether the Discover or Work feed tabs are shown on the New Tab Page. By default, both Work and Discover tabs are enabled.\n\nIf you set this policy to 'EnableBothWorkDiscover' (0) or do not configure this policy, Microsoft Edge shows both the Work and Discover feed tabs on the new tab page.\n\nIf you set this policy to 'EnableOnlyWork' (1), Microsoft Edge shows only the Work feed tab on the new tab page.\n\nIf you set this policy to 'EnableOnlyDiscover' (2), Microsoft Edge shows only the Discover feed tab on the new tab page.\n\nThis policy works with the SetNTPDefaultFeedTab policy, which controls which feed tab is selected by default when both tabs are available.\n\nPolicy options mapping:\n\n* EnableBothWorkDiscover (0) = Enable both Work and Discover tabs\n\n* EnableOnlyWork (1) = Enable only Work tab\n\n* EnableOnlyDiscover (2) = Enable only Discover tab\n\nUse the preceding information when configuring this policy.",
@@ -51607,6 +51598,15 @@
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.tabservicesenabled",
     "settingName": "Enable tab organization suggestions",
     "settingDescription": "This policy controls whether Microsoft Edge can use its tab organization service to help name or suggest tab groups to increase productivity.\n\nIf you enable or don't configure this policy, when a user creates a tab group or activates certain \"Group Similar Tabs\" features Microsoft Edge sends tab data to its tab organization service. This data includes URLs, page titles, and existing group information. The service uses this data to return suggestions for better groupings and group names.\n\nIf you disable this policy, no data is sent to the tab organization service. Microsoft Edge can't suggest group names when a group is created and certain \"Group Similar Tabs\" features that rely on the service aren't available.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.forceforegroundpriorityforurls",
+    "settingName": "Force foreground priority for specific URLs",
+    "settingDescription": "This policy allows you to specify a list of URL patterns for which background web content is forced to run at foreground priority.\n\nIf the ForceForegroundPriorityForAllTabs policy is enabled, this policy is ignored because all tabs are already forced to run at foreground priority.\n\nIf the ForceForegroundPriorityForAllTabs policy is disabled or not configured, only background content that matches the URL patterns in this list is forced to run at foreground priority.\n\nFor more information about valid URL patterns, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n\nIf you don’t configure this policy or the list is empty, no background content is forced to run at foreground priority.",
     "keywords": [
       "Uncategorized"
     ],
@@ -75884,15 +75884,6 @@
     "categoryName": "Microsoft Word 2016"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.cpuperformancetieroverride",
-    "settingName": "Override for the CPU performance tier",
-    "settingDescription": "This policy allows you to override the value returned by the CPU Performance API (that is, navigator.cpuPerformance).\n\nIf you enable this policy, the value of navigator.cpuPerformance is overridden with the specified value.\n\nIf you don’t configure this policy, the default performance tier calculation is used.\n\nYou can specify a value from 0 through 4.\n\nFor more information, see https://github.com/WICG/cpu-performance.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.loopbacknetworkblockedforurls",
     "settingName": "Block sites from making network requests to the local device.",
     "settingDescription": "Specifies a list of URL patterns for which requests initiated from matching origins to loopback addresses (127.0.0.1, ::1, localhost) are blocked from issuing Local Network Access requests.\n\nIf a requesting origin matches a URL pattern specified in this policy, requests to loopback addresses are blocked.\n\nFor origins not covered by this policy, the user's personal settings and local network access restrictions apply.\n\nMultiple policies can specify origins that affect requests to the local device. If an origin matches more than one of the following policies, they are applied in the following order of precedence:\n- LoopbackNetworkBlockedForUrls\n- LoopbackNetworkAllowedForUrls\n- LocalNetworkAccessBlockedForUrls\n- LocalNetworkAccessAllowedForUrls\n\nNote: This policy improves local network security by blocking specified public websites from accessing loopback addresses. It helps prevent unauthorized external sites from reaching local services running on the device unless explicitly permitted.\n\nFor more information about Local Network Access, see https://wicg.github.io/local-network-access/",
@@ -76301,6 +76292,15 @@
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.configurekeyboardshortcuts",
     "settingName": "Configure the list of commands for which to disable keyboard shortcuts",
     "settingDescription": "Configure the list of Microsoft Edge commands for which keyboard shortcuts must be disabled.\n\nSee <a href=\"https://go.microsoft.com/fwlink/?linkid=2186950\">https://go.microsoft.com/fwlink/?linkid=2186950</a> for a list of possible commands to disable.\n\nIf you enable this policy, commands in the 'disabled' list are no longer activated by keyboard shortcuts.\n\nIf you disable this policy, all keyboard shortcuts behave as usual.\n\nNote: Disabling a command only removes its shortcut mapping. Commands in the 'disabled' list still function if accessed via browser UI.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.cpuperformancetieroverride",
+    "settingName": "Override for the CPU performance tier",
+    "settingDescription": "This policy allows you to override the value returned by the CPU Performance API (that is, navigator.cpuPerformance).\n\nIf you enable this policy, the value of navigator.cpuPerformance is overridden with the specified value.\n\nIf you don’t configure this policy, the default performance tier calculation is used.\n\nYou can specify a value from 0 through 4.\n\nFor more information, see https://github.com/WICG/cpu-performance.",
     "keywords": [
       "Uncategorized"
     ],
@@ -100714,15 +100714,6 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultlocalfontssetting",
-    "settingName": "Default Local Fonts permission setting",
-    "settingDescription": "Setting this policy controls the default behavior for the local fonts permission.\n\nIf you set the policy to BlockLocalFonts (value 2), access to local fonts is denied by default. Sites are prevented from accessing information about local fonts.\n\nIf you set the policy to AskLocalFonts (value 3), users are prompted when a site requests access to local fonts. If permission is granted, the site can access information about local fonts.\n\nIf a site is included in \"LocalFontsAllowedForUrls\" or \"LocalFontsBlockedForUrls\", then that setting overrides the value set for this policy.\n\nIf you don't configure this policy, users are prompted by default and can change this setting.\n\nPolicy options mapping:\n\n* BlockLocalFonts (2) = Denies the Local Fonts permission on all sites by default\n\n* AskLocalFonts (3) = Ask every time a site wants to obtain the Local Fonts permission\n\nUse the preceding information when configuring this policy.",
-    "keywords": [
-      "Content settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autolaunchprotocolsfromorigins",
     "settingName": "Define a list of protocols that can launch an external application from listed origins without prompting the user",
     "settingDescription": "Allows you to set a list of protocols, and for each protocol an associated list of allowed origin patterns, that can launch an external application without prompting the user. The trailing separator shouldn't be included when listing the protocol and the protocol should be all lower case. For example, list \"skype\" instead of \"skype:\", \"skype://\" or \"Skype\".\n\nIf you configure this policy, a protocol is only permitted to launch an external application without prompting by policy if:\n\n- the protocol is listed\n\n- the origin of the site trying to launch the protocol matches one of the origin patterns in that protocol's allowed_origins list.\n\nIf either condition is false, the external protocol launch prompt isn't omitted, by policy.\n\nIf you don't configure this policy, no protocols can launch without a prompt. Users can opt out of prompts on a per-protocol/per-site basis unless the \"ExternalProtocolDialogShowAlwaysOpenCheckbox\" policy is set to Disabled. This policy has no impact on per-protocol/per-site prompt exemptions set by users.\n\nThe origin-matching patterns use a similar format to those for the \"URLBlocklist\" policy, which are documented at <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n\nHowever, origin-matching patterns for this policy can't contain \"/path\" or \"@query\" elements. Any pattern that contains a \"/path\" or \"@query\" element is ignored.\n\nThis policy doesn't work as expected with file://* wildcards.",
@@ -101266,6 +101257,15 @@
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultgeolocationsetting",
     "settingName": "Default geolocation setting",
     "settingDescription": "Set whether websites can track users' physical locations. You can allow tracking by default ('AllowGeolocation'), deny it by default ('BlockGeolocation'), or ask the user each time a website requests their location ('AskGeolocation').\n\nIf you don't configure this policy, 'AskGeolocation' is used and the user can change it.\n\nPolicy options mapping:\n\n* AllowGeolocation (1) = Allow sites to track users' physical location\n\n* BlockGeolocation (2) = Don't allow any site to track users' physical location\n\n* AskGeolocation (3) = Ask whenever a site wants to track users' physical location\n\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultlocalfontssetting",
+    "settingName": "Default Local Fonts permission setting",
+    "settingDescription": "Setting this policy controls the default behavior for the local fonts permission.\n\nIf you set the policy to BlockLocalFonts (value 2), access to local fonts is denied by default. Sites are prevented from accessing information about local fonts.\n\nIf you set the policy to AskLocalFonts (value 3), users are prompted when a site requests access to local fonts. If permission is granted, the site can access information about local fonts.\n\nIf a site is included in \"LocalFontsAllowedForUrls\" or \"LocalFontsBlockedForUrls\", then that setting overrides the value set for this policy.\n\nIf you don't configure this policy, users are prompted by default and can change this setting.\n\nPolicy options mapping:\n\n* BlockLocalFonts (2) = Denies the Local Fonts permission on all sites by default\n\n* AskLocalFonts (3) = Ask every time a site wants to obtain the Local Fonts permission\n\nUse the preceding information when configuring this policy.",
     "keywords": [
       "Content settings"
     ],
@@ -125810,6 +125810,16 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_camera_configurecameraoptions",
+    "settingName": "Configure Camera Options",
+    "settingDescription": "This policy will allow camera mode to be managed by IT admins and enable camera to run in safe or auto share mode.",
+    "keywords": [
+      "Configure Camera Options",
+      "Camera"
+    ],
+    "categoryName": "Camera"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchprovidersearchurl",
@@ -163769,15 +163779,6 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.copilotaddressbarsuggestionsenabled",
-    "settingName": "Enable Copilot address bar suggestions",
-    "settingDescription": "This policy controls whether Copilot chat suggestions appear in the address bar of Microsoft Edge.\n\nIf you enable this policy or don't configure it, Copilot chat suggestions appear in the address bar.\n\nIf you disable this policy, Copilot chat suggestions don't appear in the address bar.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchproviderkeyword_recommended",
     "settingName": "Default search provider keyword (users can override)",
     "settingDescription": "Specifies the keyword, which is the shortcut used in the Address Bar to trigger the search for this provider.\n\nThis policy is optional. If you don't configure it, no keyword activates the search provider.\n\nThis policy is applied only if you enable the \"DefaultSearchProviderEnabled\" and \"DefaultSearchProviderSearchURL\" policies.\n\nStarting in Microsoft Edge version 84, you can set this policy as a recommended policy. If the user set a default search provider, the default search provider configured by this recommended policy can't be added to the list of search providers the user can choose from. If this is the desired behavior, use the \"ManagedSearchEngines\" policy.",
@@ -163999,6 +164000,15 @@
     "settingDescription": "This policy allows you to control the default state of the Allow extensions from other stores setting.\nThis policy can't be used to stop installation of extensions from other stores such as Chrome Web Store.\nTo stop installation of extensions from other stores, use the Extension Settings policy: <a href=\"https://go.microsoft.com/fwlink/?linkid=2187098\">https://go.microsoft.com/fwlink/?linkid=2187098</a>.\n\nWhen enabled, Allow extensions from other stores are turned on. So, users don't have to turn on the flag manually\nwhile installing extensions from other supported stores such as Chrome Web Store. However a user can override this setting.\nIf the user turned on the setting and then turned it off, this setting may not work.\nIf the Admin first sets the policy as Enabled, but then changes it to not configured or disabled, it has no impact on\nuser settings and the setting remains as it is.\n\nWhen disabled or not configured, the user can manage the Allow extensions from other store setting.",
     "keywords": [
       "Extensions"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.copilotaddressbarsuggestionsenabled",
+    "settingName": "Enable Copilot address bar suggestions",
+    "settingDescription": "This policy controls whether Copilot chat suggestions appear in the address bar of Microsoft Edge.\n\nIf you enable this policy or don't configure it, Copilot chat suggestions appear in the address bar.\n\nIf you disable this policy, Copilot chat suggestions don't appear in the address bar.",
+    "keywords": [
+      "Uncategorized"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -177158,33 +177168,6 @@
     "categoryName": "Microsoft Word 2016"
   },
   {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.dataurlinwebworkeropaqueoriginenabled",
-    "settingName": "Enable opaque origins for data URLs in Web Workers",
-    "settingDescription": "This policy controls whether Web Workers created from data URLs are assigned\na unique opaque origin.\n\nWeb Workers can be created using a data URL that contains the worker script.\nPreviously, these workers inherited the origin of the page that created them,\nwhich allowed them to access the same origin-bound data, such as local\nstorage and cookies.\n\nStarting in Microsoft Edge version\n149, Web Workers created from data URLs are assigned a unique opaque origin\nby default. This behavior improves security and aligns with the HTML\nspecification by isolating these workers from the page that created them.\n\nIf you enable this policy or don't configure it, Web Workers created from\ndata URLs are assigned a unique opaque origin.\n\nIf you disable this policy, Web Workers created from data URLs inherit the\norigin of the page that created them. Use this setting only as a temporary\nmitigation for compatibility issues with internal applications that depend\non the legacy behavior.\n\nThis policy is temporary and will be removed in Microsoft Edge\nversion 157.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.localfontsallowedforurls",
-    "settingName": "Allow Local Fonts permission on these sites",
-    "settingDescription": "Specifies a list of site URL patterns for which the local fonts permission is automatically granted. Sites in this list can access information about local fonts.\n\nFor detailed information about valid URL patterns, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>. Wildcards, *, are supported. This policy matches based on origin only; any path in the URL pattern is ignored.\n\nIf a site isn't included in this policy, the \"DefaultLocalFontsSetting\" policy applies if configured. Otherwise, the browser default behavior applies, and users can choose the permission on a per-site basis.",
-    "keywords": [
-      "Content settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.localfontsblockedforurls",
-    "settingName": "Block Local Fonts permission on these sites",
-    "settingDescription": "Specifies a list of site URL patterns for which the local fonts permission is automatically denied. Sites in this list are prevented from accessing information about local fonts.\n\nFor detailed information about valid URL patterns, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>. Wildcards, *, are supported. This policy matches based on origin only; any path in the URL pattern is ignored.\n\nIf a site isn't included in this policy, the \"DefaultLocalFontsSetting\" policy applies if configured. Otherwise, the browser default behavior applies, and users can choose the permission on a per-site basis.",
-    "keywords": [
-      "Content settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.adssettingforintrusiveadssites",
     "settingName": "Ads setting for sites with intrusive ads",
     "settingDescription": "Controls whether ads are blocked on sites with intrusive ads.\n\nPolicy options mapping:\n\n* AllowAds (1) = Allow ads on all sites\n\n* BlockAds (2) = Block ads on sites with intrusive ads. (Default value)\n\nUse the preceding information when configuring this policy.",
@@ -177491,6 +177474,15 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.dataurlinwebworkeropaqueoriginenabled",
+    "settingName": "Enable opaque origins for data URLs in Web Workers",
+    "settingDescription": "This policy controls whether Web Workers created from data URLs are assigned\na unique opaque origin.\n\nWeb Workers can be created using a data URL that contains the worker script.\nPreviously, these workers inherited the origin of the page that created them,\nwhich allowed them to access the same origin-bound data, such as local\nstorage and cookies.\n\nStarting in Microsoft Edge version\n149, Web Workers created from data URLs are assigned a unique opaque origin\nby default. This behavior improves security and aligns with the HTML\nspecification by isolating these workers from the page that created them.\n\nIf you enable this policy or don't configure it, Web Workers created from\ndata URLs are assigned a unique opaque origin.\n\nIf you disable this policy, Web Workers created from data URLs inherit the\norigin of the page that created them. Use this setting only as a temporary\nmitigation for compatibility issues with internal applications that depend\non the legacy behavior.\n\nThis policy is temporary and will be removed in Microsoft Edge\nversion 157.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.exemptdomainfiletypepairsfromfiletypedownloadwarnings",
     "settingName": "Disable download file type extension-based warnings for specified file types on domains (Obsolete)",
     "settingDescription": "This policy is obsoleted in favor of \"ExemptFileTypeDownloadWarnings\" because of a type mismatch that caused errors in Mac.\n\nYou can enable this policy to create a dictionary of file type extensions with a corresponding list of domains that are exempted from file type extension-based download warnings. This exemption lets enterprise administrators block file type extension-based download warnings for files that are associated with a listed domain. For example, if  the \"jnlp\" extension is associated with \"website1.com\", users don't see a warning when downloading \"jnlp\" files from \"website1.com\" but see a download warning when downloading \"jnlp\" files from \"website2.com\".\n\nFiles with file type extensions specified for domains identified by this policy are still subject to nonfile type extension-based security warnings such as mixed-content download warnings and Microsoft Defender SmartScreen warnings.\n\nIf you disable this policy or don't configure it, file types that trigger extension-based download warnings show warnings to the user.\n\nIf you enable this policy:\n\n* The URL pattern should be formatted according to <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n* The file type extension entered must be in lower-cased ASCII. The leading separator shouldn't be included when listing the file type extension; so, list \"jnlp\" should be used instead of \".jnlp\".\n\nExample:\n\nThe following example value prevents file type extension-based download warnings on swf, exe, and jnlp extensions for *.contoso.com domains. It shows the user a file type extension-based download warning on any other domain for exe and jnlp files but not for swf files.\n\n[\n  { \"file_extension\": \"jnlp\", \"domains\": [\"contoso.com\"] },\n  { \"file_extension\": \"exe\", \"domains\": [\"contoso.com\"] },\n  { \"file_extension\": \"swf\", \"domains\": [\"*\"] }\n]\n\nWhile the preceding example shows the suppression of file type extension-based download warnings for \"swf\" files for all domains, applying suppression of such warnings for all domains for any dangerous file type extension isn't recommended due to security concerns. It's shown in the example merely to demonstrate the ability to do so.",
@@ -177739,6 +177731,24 @@
     "settingDescription": "This policy enables defining a list of certificate public keys that should be distrusted by Microsoft Edge for TLS server\nauthentication.\n\nThe policy value is a list of base64-encoded X.509 certificates. Any\ncertificate with a matching SPKI (SubjectPublicKeyInfo) is distrusted.",
     "keywords": [
       "Certificate management settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.localfontsallowedforurls",
+    "settingName": "Allow Local Fonts permission on these sites",
+    "settingDescription": "Specifies a list of site URL patterns for which the local fonts permission is automatically granted. Sites in this list can access information about local fonts.\n\nFor detailed information about valid URL patterns, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>. Wildcards, *, are supported. This policy matches based on origin only; any path in the URL pattern is ignored.\n\nIf a site isn't included in this policy, the \"DefaultLocalFontsSetting\" policy applies if configured. Otherwise, the browser default behavior applies, and users can choose the permission on a per-site basis.",
+    "keywords": [
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.localfontsblockedforurls",
+    "settingName": "Block Local Fonts permission on these sites",
+    "settingDescription": "Specifies a list of site URL patterns for which the local fonts permission is automatically denied. Sites in this list are prevented from accessing information about local fonts.\n\nFor detailed information about valid URL patterns, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>. Wildcards, *, are supported. This policy matches based on origin only; any path in the URL pattern is ignored.\n\nIf a site isn't included in this policy, the \"DefaultLocalFontsSetting\" policy applies if configured. Otherwise, the browser default behavior applies, and users can choose the permission on a per-site basis.",
+    "keywords": [
+      "Content settings"
     ],
     "categoryName": "Microsoft Edge"
   },
