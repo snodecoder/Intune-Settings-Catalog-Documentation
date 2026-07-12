@@ -1,5 +1,16 @@
 [
   {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_description",
+    "settingName": "Description",
+    "settingDescription": "Specifies the description of the system setting rule.",
+    "keywords": [
+      "Description",
+      "System Setting",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_authenticationmethod",
     "settingName": "Intune authentication method",
     "settingDescription": "If your organization uses multifactor authentication, select Setup Assistant with modern authentication, which prompts users to authenticate based on settings in Entra.",
@@ -195,6 +206,17 @@
     "keywords": [
       "File Name",
       "Elevation",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_userapplicabilitytype",
+    "settingName": "User applicability",
+    "settingDescription": "Specifies which users this system setting rule applies to.",
+    "keywords": [
+      "User Applicability",
+      "System Setting",
       "Privilege Management"
     ],
     "categoryName": "Uncategorized"
@@ -431,6 +453,18 @@
       "Rule type",
       "Privilege Management",
       "Business Justification"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_userapplicability",
+    "settingName": "User applicability list",
+    "settingDescription": "JSON array of AAD user GUIDs that this system setting rule applies to. Only used when UserApplicabilityType is NamedUser.",
+    "keywords": [
+      "User Applicability",
+      "Named User",
+      "System Setting",
+      "Privilege Management"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1238,6 +1272,17 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_name",
+    "settingName": "Rule name",
+    "settingDescription": null,
+    "keywords": [
+      "Name",
+      "System Setting",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_accountsettings_primaryaccountfullname",
     "settingName": "Primary account full name",
     "settingDescription": "The full name for the account. Setup Assistant will user this value to prefill the Full Name field if 'Prefill account info' is set to 'Not configured'. This field is to be defaulted to the variable, {{username}}, for example, 'John Doe'.",
@@ -1516,6 +1561,17 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_elevationaction",
+    "settingName": "Elevation action",
+    "settingDescription": "Specifies the elevation action for this system setting rule.",
+    "keywords": [
+      "Elevation Action",
+      "System Setting",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_accountsettings_createlocaladmin",
     "settingName": "Create a local admin account",
     "settingDescription": null,
@@ -1734,6 +1790,28 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_elevationvalidation",
+    "settingName": "Validation",
+    "settingDescription": "",
+    "keywords": [
+      "Elevation Validation",
+      "System Setting",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_settingtype",
+    "settingName": "Setting type",
+    "settingDescription": "Specifies the type of system setting this rule applies to.",
+    "keywords": [
+      "Setting Type",
+      "System Setting",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_accountsettings_prefillaccountinfo",
     "settingName": "Prefill account info",
     "settingDescription": "If you select 'Yes', the account name and full name must be configured. Not configured allows the end user to configure these fields.",
@@ -1933,17 +2011,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "ade_accountsettings_hideusersgroups",
-    "settingName": "Hide in Users and Groups",
-    "settingDescription": "Make the admin account hidden in the login window and Users & Groups.",
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Account settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_accountsettings_primaryaccountname",
     "settingName": "Primary account name",
     "settingDescription": "The account name for the account. Setup Assistant will use this value to prefill the Account Name field if 'Prefill account info' is set to 'Not configured'. This field is to be defaulted to the variable, {{partialupn}}, for example, 'John'.",
@@ -1951,17 +2018,6 @@
       "ADE profile",
       "enrollment",
       "Account settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_activatecellulardatachoices",
-    "settingName": "Activate cellular data",
-    "settingDescription": "Activates cellular data plans for devices enabled for eSIM. The carrier must enable activation for devices before you can use this command. You can also activate any time after device enrollment.",
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Management settings"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1979,28 +2035,6 @@
   {
     "settingId": "ade_setupassistant_department",
     "settingName": "Department",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_setupassistant_devicemigration",
-    "settingName": "Device to device migration",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_setupassistant_restore",
-    "settingName": "Restore",
     "settingDescription": null,
     "keywords": [
       "ADE profile",
@@ -2044,16 +2078,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "enrollment_restriction_blockmdmenrollment",
-    "settingName": "Block MDM enrollment",
-    "settingDescription": "Choose to block enrollment based on filters. Add a filter in the Assignments tab. To create a new filter, go to Filters section under Tenant admin.",
-    "keywords": [
-      "Block MDM enrollment",
-      "enrollment"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "enrollment_autopilot_dpp_allowedscriptids",
     "settingName": "Allowed scripts",
     "settingDescription": "Select up to 10 Windows PowerShell scripts to install during this deployment. These scripts should be already assigned to the device group selected earlier. You can check the installation status for these scripts in the Autopilot device preparation deployment report.",
@@ -2062,6 +2086,104 @@
       "Device Preparation",
       "AllowedScriptIds",
       "Scripts"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_targetedagentid",
+    "settingName": "Targeted agent",
+    "settingDescription": "The MSIX package family name of the targeted agent.",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask",
+    "settingName": "Access mask",
+    "settingDescription": "Defines the access.",
+    "keywords": [
+      "Defender",
+      "DeviceControl",
+      "Device Control"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_id",
+    "settingName": "ID",
+    "settingDescription": "One PolicyRule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.",
+    "keywords": [
+      "Defender",
+      "DeviceControl",
+      "Device Control"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}",
+    "settingName": "System Setting Rule Name",
+    "settingDescription": "Unique alpha numeric identifier for the system setting rule. The rule name must not include a forward slash (/).",
+    "keywords": [
+      "System Setting Rule",
+      "Endpoint Privilege Management",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_accountsettings_hideusersgroups",
+    "settingName": "Hide in Users and Groups",
+    "settingDescription": "Make the admin account hidden in the login window and Users & Groups.",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Account settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_activatecellulardatachoices",
+    "settingName": "Activate cellular data",
+    "settingDescription": "Activates cellular data plans for devices enabled for eSIM. The carrier must enable activation for devices before you can use this command. You can also activate any time after device enrollment.",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Management settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_devicemigration",
+    "settingName": "Device to device migration",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_restore",
+    "settingName": "Restore",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_restriction_blockmdmenrollment",
+    "settingName": "Block MDM enrollment",
+    "settingDescription": "Choose to block enrollment based on filters. Add a filter in the Assignments tab. To create a new filter, go to Filters section under Tenant admin.",
+    "keywords": [
+      "Block MDM enrollment",
+      "enrollment"
     ],
     "categoryName": "Uncategorized"
   },
@@ -2101,45 +2223,12 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_targetedagentid",
-    "settingName": "Targeted agent",
-    "settingDescription": "The MSIX package family name of the targeted agent.",
-    "keywords": [
-      "AgentGovernance",
-      "Agent Governance",
-      "Container Policy"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_applicationcontrol_policies_{policyguid}_policiesoptions",
     "settingName": "Configuration settings format",
     "settingDescription": "Select Enter XML data to type or paste an XML property list that contains your App Control for Business policy. Select Use built-in controls to choose from toggles exposed in this App Control for Business policy. Setting this to Not Configured will result in default behaviour on the device with no added options from the ApplicationControl CSP on the device.",
     "keywords": [
       "Application Control",
       "App Control for Business"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_accesmask",
-    "settingName": "Access mask",
-    "settingDescription": "Defines the access.",
-    "keywords": [
-      "Defender",
-      "DeviceControl",
-      "Device Control"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_id",
-    "settingName": "ID",
-    "settingDescription": "One PolicyRule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.",
-    "keywords": [
-      "Defender",
-      "DeviceControl",
-      "Device Control"
     ],
     "categoryName": "Uncategorized"
   },

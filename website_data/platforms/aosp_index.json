@@ -716,17 +716,6 @@
     "categoryName": "Device Restriction"
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.locationmode",
-    "settingName": "Location",
-    "settingDescription": "Select how location services are managed. 'Device Default' lets users turn location services on or off. 'Location enabled' requires location services to be on and prevents end users from turning it off. 'Location disabled' requires location services to be off and prevents end users from turning it on. When 'Location disabled' is configured, then any other setting that depends on the device location is affected, including the Locate device remote action that admins use. For corporate-owned work profile devices, this setting will only apply to devices running Android 10 or earlier. Available for fully managed, dedicated, and corporate-owned work profile devices.",
-    "keywords": [
-      "Location",
-      "Mode",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.storageblockexternalmedia",
     "settingName": "Block mounting of external media",
     "settingDescription": "If 'True', prevents using or connecting any external media on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow external media on the device. Available for fully managed, dedicated and corporate-owned work profile devices.",
@@ -734,6 +723,57 @@
       "Block",
       "External Media",
       "External Media Block",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.assistcontentpolicy",
+    "settingName": "Block assist content sharing with privileged apps",
+    "settingDescription": "If 'True', blocks assist content (such as screenshots and app details) to be sent to a privileged app, like an assistant app. The setting can be used to block Circle to Search (AI feature). If set to 'False', Intune doesn't change or update this setting. By default, the OS might allow sharing assist content with privileged apps. Available for fully managed, dedicated, and corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "AI",
+      "Circle to Search",
+      "Privileged Apps",
+      "Content",
+      "AI setting",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.passwordminimumnonlettercharacters",
+    "settingName": "Number of non-letter characters required",
+    "settingDescription": "Enter the number of non-letters (anything other than letters in the alphabet) the password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Password",
+      "Minimum",
+      "Non",
+      "Letter",
+      "Characters",
+      "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.passwordexpirationdays",
+    "settingName": "Number of days until password expires",
+    "settingDescription": "Enter the number of days, until the device password must be changed, from 1-365. For example, enter 90 to expire the password after 90 days. When the password expires, users are prompted to create a new password. If the value is blank, Intune doesn't change or update this setting. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Password",
+      "Expiration",
+      "Days",
+      "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.locationmode",
+    "settingName": "Location",
+    "settingDescription": "Select how location services are managed. 'Device Default' lets users turn location services on or off. 'Location enabled' requires location services to be on and prevents end users from turning it off. 'Location disabled' requires location services to be off and prevents end users from turning it on. When 'Location disabled' is configured, then any other setting that depends on the device location is affected, including the Locate device remote action that admins use. For corporate-owned work profile devices, this setting will only apply to devices running Android 10 or earlier. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "Location",
+      "Mode",
       "General"
     ],
     "categoryName": "Device Restriction"
@@ -777,20 +817,6 @@
     "categoryName": "Device Restriction"
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.assistcontentpolicy",
-    "settingName": "Block assist content sharing with privileged apps",
-    "settingDescription": "If 'True', blocks assist content (such as screenshots and app details) to be sent to a privileged app, like an assistant app. The setting can be used to block Circle to Search (AI feature). If set to 'False', Intune doesn't change or update this setting. By default, the OS might allow sharing assist content with privileged apps. Available for fully managed, dedicated, and corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "AI",
-      "Circle to Search",
-      "Privileged Apps",
-      "Content",
-      "AI setting",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.bluetoothblocksharing",
     "settingName": "Block Bluetooth sharing",
     "settingDescription": "If 'True', the device cannot share content over Bluetooth. If set to 'False', Intune doesn't change or update this setting. By default, the OS might allow Bluetooth sharing. Available for fully managed, dedicated, and corporate-owned work profile devices.",
@@ -802,32 +828,6 @@
       "File transfer",
       "Nearby sharing",
       "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.passwordminimumnonlettercharacters",
-    "settingName": "Number of non-letter characters required",
-    "settingDescription": "Enter the number of non-letters (anything other than letters in the alphabet) the password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "Password",
-      "Minimum",
-      "Non",
-      "Letter",
-      "Characters",
-      "Device password"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.passwordexpirationdays",
-    "settingName": "Number of days until password expires",
-    "settingDescription": "Enter the number of days, until the device password must be changed, from 1-365. For example, enter 90 to expire the password after 90 days. When the password expires, users are prompted to create a new password. If the value is blank, Intune doesn't change or update this setting. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "Password",
-      "Expiration",
-      "Days",
-      "Device password"
     ],
     "categoryName": "Device Restriction"
   }

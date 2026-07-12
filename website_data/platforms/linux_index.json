@@ -821,28 +821,9 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "com.apple.managedclient.preferences_enablerealtimeprotection",
-    "settingName": "Enable real-time protection (deprecated)",
-    "settingDescription": "Whether real-time protection (scan files as they are accessed) is enabled or not.",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
     "settingId": "com.apple.managedclient.preferences_offlinedefinitionupdateurl",
     "settingName": "URL for a security intelligence updates mirror server",
     "settingDescription": "Sets the URL for a local offline security intelligence updates mirror server. When the feature is enabled Defender will use it to update the signatures.",
-    "keywords": [
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_offlinedefinitionupdate",
-    "settingName": "Enable offline security intelligence updates",
-    "settingDescription": "Enables or disables offline security intelligence updates feature. When this feature is enabled Defender will use a local mirror server to update the signatures.",
     "keywords": [
       "Antivirus engine"
     ],
@@ -867,34 +848,6 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "com.apple.managedclient.preferences_disabletlsparsing",
-    "settingName": "Disable TLS parsing",
-    "settingDescription": "Disables parsing of TLS traffic",
-    "keywords": [
-      "Network protection"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_enforcementlevel",
-    "settingName": "Enforcement level",
-    "settingDescription": "Specifies if network protection is disabled, in audit mode, or enforced",
-    "keywords": [
-      "Microsoft Defender - Network protection",
-      "Network protection"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_nonexecmountpolicy",
-    "settingName": "non execute mount mute",
-    "settingDescription": "Specifies the behavior of RTP on mount point marked as nonexec. ",
-    "keywords": [
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
     "settingId": "linux_mdatp_managed_antivirusengine_enablerealtimeprotection",
     "settingName": "Enable real-time protection (deprecated)",
     "settingDescription": "Locates and stops malware from installing or running on your device. You can turn off this setting for a short time before it turns back on automatically.",
@@ -909,16 +862,6 @@
     "settingName": "Enable offline security intelligence update",
     "settingDescription": "Determines whether offline security intelligence updates are enabled for antivirus.",
     "keywords": [
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_threattypesettings_item_value",
-    "settingName": "Action to take",
-    "settingDescription": "Action to take when coming across a threat of the type specified in the preceding section.",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
     "categoryName": "Microsoft Defender"
@@ -957,6 +900,63 @@
     "settingDescription": "Specifies if network protection is disabled, in audit mode, or enforced",
     "keywords": [
       "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_enablerealtimeprotection",
+    "settingName": "Enable real-time protection (deprecated)",
+    "settingDescription": "Whether real-time protection (scan files as they are accessed) is enabled or not.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_offlinedefinitionupdate",
+    "settingName": "Enable offline security intelligence updates",
+    "settingDescription": "Enables or disables offline security intelligence updates feature. When this feature is enabled Defender will use a local mirror server to update the signatures.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disabletlsparsing",
+    "settingName": "Disable TLS parsing",
+    "settingDescription": "Disables parsing of TLS traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_enforcementlevel",
+    "settingName": "Enforcement level",
+    "settingDescription": "Specifies if network protection is disabled, in audit mode, or enforced",
+    "keywords": [
+      "Microsoft Defender - Network protection",
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_nonexecmountpolicy",
+    "settingName": "non execute mount mute",
+    "settingDescription": "Specifies the behavior of RTP on mount point marked as nonexec. ",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_threattypesettings_item_value",
+    "settingName": "Action to take",
+    "settingDescription": "Action to take when coming across a threat of the type specified in the preceding section.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
     ],
     "categoryName": "Microsoft Defender"
   }

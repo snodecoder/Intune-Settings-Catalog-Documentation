@@ -1132,58 +1132,9 @@
     "categoryName": "Device Restriction"
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.locationmode",
-    "settingName": "Location",
-    "settingDescription": "Select how location services are managed. 'Device Default' lets users turn location services on or off. 'Location enabled' requires location services to be on and prevents end users from turning it off. 'Location disabled' requires location services to be off and prevents end users from turning it on. When 'Location disabled' is configured, then any other setting that depends on the device location is affected, including the Locate device remote action that admins use. For corporate-owned work profile devices, this setting will only apply to devices running Android 10 or earlier. Available for fully managed, dedicated, and corporate-owned work profile devices.",
-    "keywords": [
-      "Location",
-      "Mode",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.storageblockexternalmedia",
     "settingName": "Block mounting of external media",
     "settingDescription": "If 'True', prevents using or connecting any external media on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow external media on the device. Available for fully managed, dedicated and corporate-owned work profile devices.",
-    "keywords": [
-      "Block",
-      "External Media",
-      "External Media Block",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.usbdataaccess",
-    "settingName": "USB access",
-    "settingDescription": "Select what files and/or data can be transferred via USB. If you block file transfer, only files will be blocked from being transferred and other connection (such as mouse) will still be allowed. If you block USB data transfer, all data will be blocked. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "USB",
-      "USB Data Access",
-      "File Transfer",
-      "Data Transfer",
-      "Data Access",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.bluetoothblockconfiguration",
-    "settingName": "Block Bluetooth configuration",
-    "settingDescription": "If 'True', prevents users from configuring Bluetooth on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow using Bluetooth on the device. Available for fully managed, dedicated and corporate-owned work profile devices. ",
-    "keywords": [
-      "Block",
-      "Bluetooth",
-      "Bluetooth Configuration",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.storageblockexternalmediaaosp",
-    "settingName": "Block mounting of external media",
-    "settingDescription": "If 'True', prevents users from using or connecting any external media on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to connect external media.",
     "keywords": [
       "Block",
       "External Media",
@@ -1202,21 +1153,6 @@
       "Privileged Apps",
       "Content",
       "AI setting",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.bluetoothblocksharing",
-    "settingName": "Block Bluetooth sharing",
-    "settingDescription": "If 'True', the device cannot share content over Bluetooth. If set to 'False', Intune doesn't change or update this setting. By default, the OS might allow Bluetooth sharing. Available for fully managed, dedicated, and corporate-owned work profile devices.",
-    "keywords": [
-      "Bluetooth",
-      "Bluetooth sharing",
-      "Content Sharing",
-      "Sharing",
-      "File transfer",
-      "Nearby sharing",
       "General"
     ],
     "categoryName": "Device Restriction"
@@ -1280,19 +1216,6 @@
     "categoryName": "Device Restriction"
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.cellbroadcastsconfigblocked",
-    "settingName": "Block configuring cell broadcasts",
-    "settingDescription": "If 'True', the device is prevented from configuring cell broadcast messages. If 'False', Intune doesn't change or update this setting. By default, the OS might allow cell broadcast configuration. Available for fully managed, dedicated, and corporate-owned work profile devices.",
-    "keywords": [
-      "cell broadcast",
-      "emergency notifications",
-      "location based",
-      "CB",
-      "Connectivity"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.passwordminimumnonlettercharacters",
     "settingName": "Number of non-letter characters required",
     "settingDescription": "Enter the number of non-letters (anything other than letters in the alphabet) the password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
@@ -1315,6 +1238,83 @@
       "Expiration",
       "Days",
       "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.locationmode",
+    "settingName": "Location",
+    "settingDescription": "Select how location services are managed. 'Device Default' lets users turn location services on or off. 'Location enabled' requires location services to be on and prevents end users from turning it off. 'Location disabled' requires location services to be off and prevents end users from turning it on. When 'Location disabled' is configured, then any other setting that depends on the device location is affected, including the Locate device remote action that admins use. For corporate-owned work profile devices, this setting will only apply to devices running Android 10 or earlier. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "Location",
+      "Mode",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.usbdataaccess",
+    "settingName": "USB access",
+    "settingDescription": "Select what files and/or data can be transferred via USB. If you block file transfer, only files will be blocked from being transferred and other connection (such as mouse) will still be allowed. If you block USB data transfer, all data will be blocked. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "USB",
+      "USB Data Access",
+      "File Transfer",
+      "Data Transfer",
+      "Data Access",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.bluetoothblockconfiguration",
+    "settingName": "Block Bluetooth configuration",
+    "settingDescription": "If 'True', prevents users from configuring Bluetooth on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow using Bluetooth on the device. Available for fully managed, dedicated and corporate-owned work profile devices. ",
+    "keywords": [
+      "Block",
+      "Bluetooth",
+      "Bluetooth Configuration",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.storageblockexternalmediaaosp",
+    "settingName": "Block mounting of external media",
+    "settingDescription": "If 'True', prevents users from using or connecting any external media on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to connect external media.",
+    "keywords": [
+      "Block",
+      "External Media",
+      "External Media Block",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.bluetoothblocksharing",
+    "settingName": "Block Bluetooth sharing",
+    "settingDescription": "If 'True', the device cannot share content over Bluetooth. If set to 'False', Intune doesn't change or update this setting. By default, the OS might allow Bluetooth sharing. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "Bluetooth",
+      "Bluetooth sharing",
+      "Content Sharing",
+      "Sharing",
+      "File transfer",
+      "Nearby sharing",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.cellbroadcastsconfigblocked",
+    "settingName": "Block configuring cell broadcasts",
+    "settingDescription": "If 'True', the device is prevented from configuring cell broadcast messages. If 'False', Intune doesn't change or update this setting. By default, the OS might allow cell broadcast configuration. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "cell broadcast",
+      "emergency notifications",
+      "location based",
+      "CB",
+      "Connectivity"
     ],
     "categoryName": "Device Restriction"
   }
