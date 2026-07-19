@@ -1,16 +1,5 @@
 [
   {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_description",
-    "settingName": "Description",
-    "settingDescription": "Specifies the description of the system setting rule.",
-    "keywords": [
-      "Description",
-      "System Setting",
-      "Privilege Management"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_authenticationmethod",
     "settingName": "Intune authentication method",
     "settingDescription": "If your organization uses multifactor authentication, select Setup Assistant with modern authentication, which prompts users to authenticate based on settings in Entra.",
@@ -211,11 +200,11 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_userapplicabilitytype",
-    "settingName": "User applicability",
-    "settingDescription": "Specifies which users this system setting rule applies to.",
+    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_description",
+    "settingName": "Description",
+    "settingDescription": "Specifies the description of the system setting rule.",
     "keywords": [
-      "User Applicability",
+      "Description",
       "System Setting",
       "Privilege Management"
     ],
@@ -411,6 +400,17 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_userapplicabilitytype",
+    "settingName": "User applicability",
+    "settingDescription": "Specifies which users this system setting rule applies to.",
+    "keywords": [
+      "User Applicability",
+      "System Setting",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_name",
     "settingName": "Rule name",
     "settingDescription": null,
@@ -453,18 +453,6 @@
       "Rule type",
       "Privilege Management",
       "Business Justification"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_userapplicability",
-    "settingName": "User applicability list",
-    "settingDescription": "JSON array of AAD user GUIDs that this system setting rule applies to. Only used when UserApplicabilityType is NamedUser.",
-    "keywords": [
-      "User Applicability",
-      "Named User",
-      "System Setting",
-      "Privilege Management"
     ],
     "categoryName": "Uncategorized"
   },
@@ -802,6 +790,18 @@
     "keywords": [
       "Certificate",
       "Elevation",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_userapplicability",
+    "settingName": "User applicability list",
+    "settingDescription": "JSON array of AAD user GUIDs that this system setting rule applies to. Only used when UserApplicabilityType is NamedUser.",
+    "keywords": [
+      "User Applicability",
+      "Named User",
+      "System Setting",
       "Privilege Management"
     ],
     "categoryName": "Uncategorized"
@@ -1272,17 +1272,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_name",
-    "settingName": "Rule name",
-    "settingDescription": null,
-    "keywords": [
-      "Name",
-      "System Setting",
-      "Privilege Management"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_accountsettings_primaryaccountfullname",
     "settingName": "Primary account full name",
     "settingDescription": "The full name for the account. Setup Assistant will user this value to prefill the Full Name field if 'Prefill account info' is set to 'Not configured'. This field is to be defaulted to the variable, {{username}}, for example, 'John Doe'.",
@@ -1539,6 +1528,17 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_name",
+    "settingName": "Rule name",
+    "settingDescription": null,
+    "keywords": [
+      "Name",
+      "System Setting",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_filehash",
     "settingName": "File hash",
     "settingDescription": "Hash of the file that should be elevated",
@@ -1556,17 +1556,6 @@
     "keywords": [
       "File Description",
       "Elevation",
-      "Privilege Management"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_elevationaction",
-    "settingName": "Elevation action",
-    "settingDescription": "Specifies the elevation action for this system setting rule.",
-    "keywords": [
-      "Elevation Action",
-      "System Setting",
       "Privilege Management"
     ],
     "categoryName": "Uncategorized"
@@ -1747,6 +1736,17 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_elevationaction",
+    "settingName": "Elevation action",
+    "settingDescription": "Specifies the elevation action for this system setting rule.",
+    "keywords": [
+      "Elevation Action",
+      "System Setting",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "enrollment_autopilot_dpp_skipeula",
     "settingName": "Hide Microsoft Software License Terms",
     "settingDescription": "Specify whether to show the end-user license agreement to users.",
@@ -1786,28 +1786,6 @@
     "keywords": [
       "Password Expiration Protection Enabled",
       "LAPS"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_elevationvalidation",
-    "settingName": "Validation",
-    "settingDescription": "",
-    "keywords": [
-      "Elevation Validation",
-      "System Setting",
-      "Privilege Management"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_settingtype",
-    "settingName": "Setting type",
-    "settingDescription": "Specifies the type of system setting this rule applies to.",
-    "keywords": [
-      "Setting Type",
-      "System Setting",
-      "Privilege Management"
     ],
     "categoryName": "Uncategorized"
   },
@@ -2000,12 +1978,34 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_elevationvalidation",
+    "settingName": "Validation",
+    "settingDescription": "",
+    "keywords": [
+      "Elevation Validation",
+      "System Setting",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_signaturesource",
     "settingName": "Signature source",
     "settingDescription": "",
     "keywords": [
       "Certificate",
       "Elevation",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_settingtype",
+    "settingName": "Setting type",
+    "settingDescription": "Specifies the type of system setting this rule applies to.",
+    "keywords": [
+      "Setting Type",
+      "System Setting",
       "Privilege Management"
     ],
     "categoryName": "Uncategorized"
@@ -2119,17 +2119,6 @@
       "Defender",
       "DeviceControl",
       "Device Control"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}",
-    "settingName": "System Setting Rule Name",
-    "settingDescription": "Unique alpha numeric identifier for the system setting rule. The rule name must not include a forward slash (/).",
-    "keywords": [
-      "System Setting Rule",
-      "Endpoint Privilege Management",
-      "Privilege Management"
     ],
     "categoryName": "Uncategorized"
   },
@@ -2271,6 +2260,17 @@
     "keywords": [
       "Certificate",
       "Elevation",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}",
+    "settingName": "System Setting Rule Name",
+    "settingDescription": "Unique alpha numeric identifier for the system setting rule. The rule name must not include a forward slash (/).",
+    "keywords": [
+      "System Setting Rule",
+      "Endpoint Privilege Management",
       "Privilege Management"
     ],
     "categoryName": "Uncategorized"

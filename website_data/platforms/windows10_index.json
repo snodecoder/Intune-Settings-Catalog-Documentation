@@ -1,5 +1,71 @@
 [
   {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_bingnews",
+    "settingName": "Microsoft News (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_windowsnotepad",
+    "settingName": "Windows Notepad ** (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_todo",
+    "settingName": "Microsoft To Do (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_bingweather",
+    "settingName": "MSN Weather (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_wslv4~policy~wsl~wslcontainer_wslcontainerregistryallowlist",
+    "settingName": "Allowlist for WSL container registries",
+    "settingDescription": "When enabled, WSL container will only be allowed to pull images from the registries listed here. This affects both the WSL container CLI and all applications using the WSL container API.",
+    "keywords": [
+      "WSLContainerRegistryAllowlist",
+      "Allowlist for WSL container registries",
+      "\\Windows Subsystem for Linux\\WSL container",
+      "Machine",
+      "Software\\Policies\\WSL",
+      "WSL container"
+    ],
+    "categoryName": "Windows Subsystem For Linux"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.importsearchengine_recommended",
     "settingName": "Allow importing of search engine settings (users can override)",
     "settingDescription": "Allows users to import search engine settings from another browser into Microsoft Edge.\n\nIf you enable, this policy, the option to import search engine settings is automatically selected.\n\nIf you disable this policy, search engine settings aren't imported at first run, and users can't import them manually.\n\nIf you don't configure this policy, search engine settings are imported at first run, and users can choose whether to import this data manually during later browsing sessions.\n\nYou can set this policy as a recommendation. This option means that Microsoft Edge imports search engine settings on first run, but users can select or clear the **search engine** option during manual import.\n\n**Note**: This policy currently manages importing from Internet Explorer (on Windows 7, 8, and 10).",
@@ -25879,6 +25945,68 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_xboxtcui",
+    "settingName": "Xbox TCUI * (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_microsoftofficehub",
+    "settingName": "Microsoft 365 Copilot (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_microsoftstickynotes",
+    "settingName": "Microsoft Sticky Notes (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_keyboardfilter_disablekeyboardfilterforadministrators",
+    "settingName": "Disable Keyboard Filter For Administrators (Windows Insiders only)",
+    "settingDescription": "Determines if Keyboard Filter should be disabled for administrators. Defaults to false. If an admin is currently signed in when this value is set, it will take effect on the next sign-in. \r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Disable Keyboard Filter For Administrators",
+      "Keyboard Filter"
+    ],
+    "categoryName": "Keyboard Filter"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_wslv4~policy~wsl~wslcontainer_wslcontainerregistryallowlist_wslcontainerregistryallowlist_input",
+    "settingName": "Allowed registries (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "WSLContainerRegistryAllowlist",
+      "Allowlist for WSL container registries",
+      "\\Windows Subsystem for Linux\\WSL container",
+      "Windows Subsystem for Linux\\WSL container",
+      "WSL container"
+    ],
+    "categoryName": "Windows Subsystem For Linux"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.cacertificateswithconstraints",
     "settingName": "TLS certificates that should be trusted by Microsoft Edge for server authentication with constraints",
     "settingDescription": "This policy enables a list of TLS certificates that should be trusted by Microsoft Edge for server authentication, with constraints added outside the certificate. If no constraint of a certain type is present, then any name of that type is allowed.\nCertificates should be base64-encoded. At least one constraint must be specified for each certificate.\n\nThe permitted_dns_names field is a list of DNS names that are allowed for the certificate. If the DNS name in the certificate request doesn't match one of the specified DNS names, the certificate isn't trusted.\n\nThe permitted_cidrs field is a list of CIDR (Classless Inter-Domain Routing) ranges that will be allowed for the certificate. If the IP address in the certificate request doesn't fall within one of the permitted CIDR ranges, the certificate isn't trusted.",
@@ -51397,6 +51525,34 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2",
+    "settingName": "Remove Microsoft Store apps with dynamic list",
+    "settingDescription": "Removes Default Microsoft Store packages from the system.\r\n\r\nIf you enable this policy, the selected Microsoft Store apps in the provided list will be uninstalled from the system. You can make adjustments to the default settings.\r\n\r\nUnselected apps in the list will not be removed.\r\n\r\n* This is a headless app (no UI)\r\n\r\n** This app is the default handler for a common file type or protocol. Removing this app might result in a degraded user experience. We do not recommend removing this app.\r\n\r\nIf you enable this policy, you can also remove an app by entering the app's package family name(e.g., Microsoft.WindowsCalculator_8wekyb3d8bbwe) in the dynamic list under \"Specify additional package family names to remove.\".\r\n\r\nIf this policy is enabled, reinstallation of a previously removed app requires de-selecting the app from the provided list or removing the app's package family name from the dynamic list.\r\n\r\nYou cannot remove Windows System components via the dynamic app removal list.\r\n\r\nValidation of package family names in the dynamic app removal list occurs upon user login, not at policy configuration time.\r\n\r\nDefault is 'disabled' (key not present).\r\n\r\nIf the policy is disabled or not configured, no Default apps will be removed from the system.\r\n      ",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Machine",
+      "Software\\Policies\\Microsoft\\Windows\\Appx\\RemoveDefaultMicrosoftStorePackages",
+      "Enabled",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_gamingapp",
+    "settingName": "Xbox Gaming App (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.configurentpfeedtabvisibility",
     "settingName": "Configure whether the Discover or Work feed tabs are shown on the New Tab Page.",
     "settingDescription": "This policy configures whether the Discover or Work feed tabs are shown on the New Tab Page. By default, both Work and Discover tabs are enabled.\n\nIf you set this policy to 'EnableBothWorkDiscover' (0) or do not configure this policy, Microsoft Edge shows both the Work and Discover feed tabs on the new tab page.\n\nIf you set this policy to 'EnableOnlyWork' (1), Microsoft Edge shows only the Work feed tab on the new tab page.\n\nIf you set this policy to 'EnableOnlyDiscover' (2), Microsoft Edge shows only the Discover feed tab on the new tab page.\n\nThis policy works with the SetNTPDefaultFeedTab policy, which controls which feed tab is selected by default when both tabs are available.\n\nPolicy options mapping:\n\n* EnableBothWorkDiscover (0) = Enable both Work and Discover tabs\n\n* EnableOnlyWork (1) = Enable only Work tab\n\n* EnableOnlyDiscover (2) = Enable only Discover tab\n\nUse the preceding information when configuring this policy.",
@@ -75882,6 +76038,19 @@
       "Trust Center"
     ],
     "categoryName": "Microsoft Word 2016"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_photos",
+    "settingName": "Microsoft Photos ** (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.loopbacknetworkblockedforurls",
@@ -100712,6 +100881,68 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_msteams",
+    "settingName": "Microsoft Teams (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_dynamicremovallist",
+    "settingName": "Specify additional package family names to remove (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_xboxspeechtotextoverlay",
+    "settingName": "Xbox Speech To Text Overlay * (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_windowssoundrecorder",
+    "settingName": "Windows Sound Recorder (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_keyboardfilter_breakoutkeyscancode",
+    "settingName": "Breakout Key Scancode (Windows Insiders only)",
+    "settingDescription": "Get or set the scancode that forces the device to the login screen when pressed five times consecutively. The value is the string representation of the hexadecimal scancode (without the \"0x\" prefix). Defaults to \"5b\", the scancode for the \"left windows key\". Only set a single scancode; scancode combinations are not supported. After setting this value, a reboot is required for the change to take effect.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Breakout Key Scancode",
+      "Keyboard Filter"
+    ],
+    "categoryName": "Keyboard Filter"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autolaunchprotocolsfromorigins",
@@ -125810,6 +126041,81 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_microsoftsolitairecollection",
+    "settingName": "Microsoft Solitaire Collection (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_paint",
+    "settingName": "Paint (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_windowsterminal",
+    "settingName": "Windows Terminal (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_outlookforwindows",
+    "settingName": "Outlook for Windows (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_xboxidentityprovider",
+    "settingName": "Xbox Identity Provider * (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_keyboardfilter_blockedscancodes",
+    "settingName": "Blocked Scancodes (Windows Insiders only)",
+    "settingDescription": "Get operations return a comma-delimited string of scancodes and modifier+scancode combinations that are currently blocked in hexadecimal format without the \"0x\" prefix. Returned list does not include keys that have been blocked. Use GetBlockedKeys to retrieve blocked keys and key combinations.\nReplace operations expect a comma-delimited string of scancodes or modifier(s)+scancode values in hexadecimal and sets them as blocked scancodes. When specifying hexadecimal values, do not include the \"0x\" prefix. Invalid inputs result in an error. Examples of modifier names can be found here: https://learn.microsoft.com/en-us/windows/configuration/keyboard-filter/keyboardfilter-key-names. Valid scancodes can be found here: https://learn.microsoft.com/en-us/windows/win32/inputdev/about-keyboard-input#scan-codes\n\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Blocked Scancodes",
+      "Keyboard Filter"
+    ],
+    "categoryName": "Keyboard Filter"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchprovidersearchurl",
@@ -163779,6 +164085,68 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_windowscamera",
+    "settingName": "Windows Camera ** (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_windowsfeedbackhub",
+    "settingName": "Feedback Hub (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_mediaplayer",
+    "settingName": "Windows Media Player ** (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_quickassist",
+    "settingName": "Quick Assist (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_keyboardfilter_disableaccessibilitysettings",
+    "settingName": "Disable Accessibility Settings (Windows Insiders only)",
+    "settingDescription": "Determines if Accessibility settings (e.g. Ease of Access) are disabled. Defaults to false.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Disable Accessibility Settings",
+      "Keyboard Filter"
+    ],
+    "categoryName": "Keyboard Filter"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchproviderkeyword_recommended",
     "settingName": "Default search provider keyword (users can override)",
     "settingDescription": "Specifies the keyword, which is the shortcut used in the Address Bar to trigger the search for this provider.\n\nThis policy is optional. If you don't configure it, no keyword activates the search provider.\n\nThis policy is applied only if you enable the \"DefaultSearchProviderEnabled\" and \"DefaultSearchProviderSearchURL\" policies.\n\nStarting in Microsoft Edge version 84, you can set this policy as a recommended policy. If the user set a default search provider, the default search provider configured by this recommended policy can't be added to the list of search providers the user can choose from. If this is the desired behavior, use the \"ManagedSearchEngines\" policy.",
@@ -177168,6 +177536,43 @@
     "categoryName": "Microsoft Word 2016"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_clipchamp",
+    "settingName": "Microsoft Clipchamp (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_keyboardfilter_blockedkeys",
+    "settingName": "Blocked Keys (Windows Insiders only)",
+    "settingDescription": "Get operations return a comma-delimited string of keys and key combinations that are currently blocked. Returned list does not include scancodes that have been blocked. Use BlockedScancodes to retrieve blocked scancodes and modifier+scancode combinations.\nReplace operations expect a comma-delimited string of keys or modifier(s)+key values and sets them as blocked keys. Invalid keys result in an error. All keys are case-insensitive; to block upper-case letters, specify shift+letter. To block comma, space, tab, or other special characters, specify the key name. Examples of valid key names and modifier names can be found here: https://learn.microsoft.com/en-us/windows/configuration/keyboard-filter/keyboardfilter-key-names \n\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Blocked Keys",
+      "Keyboard Filter"
+    ],
+    "categoryName": "Keyboard Filter"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_wslv4~policy~wsl~wslcontainer_allowwslcontainer",
+    "settingName": "Allow WSL container",
+    "settingDescription": "This policy controls whether WSL container can be used on this machine. When enabled or not configured, users and Windows applications can run Linux containers via WSL. When set to disabled, WSL container is blocked for all users and Windows apps cannot run Linux containers. Warning: Setting this to 'Disabled' can break Windows apps that depend on Linux containers.",
+    "keywords": [
+      "AllowWSLContainer",
+      "Allow WSL container",
+      "\\Windows Subsystem for Linux\\WSL container",
+      "Machine",
+      "Software\\Policies\\WSL",
+      "WSL container"
+    ],
+    "categoryName": "Windows Subsystem For Linux"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.adssettingforintrusiveadssites",
     "settingName": "Ads setting for sites with intrusive ads",
     "settingDescription": "Controls whether ads are blocked on sites with intrusive ads.\n\nPolicy options mapping:\n\n* AllowAds (1) = Allow ads on all sites\n\n* BlockAds (2) = Block ads on sites with intrusive ads. (Default value)\n\nUse the preceding information when configuring this policy.",
@@ -189980,6 +190385,45 @@
       "software\\policies\\microsoft\\office\\16.0\\common\\mailsettings"
     ],
     "categoryName": "Microsoft Word 2016"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_copilot",
+    "settingName": "Microsoft Copilot (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_screensketch",
+    "settingName": "Snipping Tool (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_applicationmanagement_removedefaultmicrosoftstorepackages_2_windowscalculator",
+    "settingName": "Windows Calculator (Device)",
+    "settingDescription": "",
+    "keywords": [
+      "RemoveDefaultMicrosoftStorePackages_2",
+      "Remove Default Microsoft Store packages from the system.",
+      "\\Windows Components\\App Package Deployment",
+      "Administrative Templates\\Windows Components\\App Package Deployment",
+      "App Package Deployment"
+    ],
+    "categoryName": "Administrative Templates"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autolaunchprotocolscomponentenabled",
