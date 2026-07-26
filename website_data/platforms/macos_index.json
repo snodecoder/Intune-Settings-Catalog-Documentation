@@ -1,5 +1,45 @@
 [
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsblockedforurls",
+    "settingName": "Block Local Fonts permission on these sites (User)",
+    "settingDescription": "Specifies a list of site URL patterns for which the local fonts permission is automatically denied. Sites in this list are prevented from accessing information about local fonts.\n\nFor detailed information about valid URL patterns, see https://go.microsoft.com/fwlink/?linkid=2095322. Wildcards, *, are supported. This policy matches based on origin only; any path in the URL pattern is ignored.\n\nIf a site isn't included in this policy, the 'DefaultLocalFontsSetting' (Default Local Fonts permission setting) policy applies if configured. Otherwise, the browser default behavior applies, and users can choose the permission on a per-site basis.\n\nExample value:\n\nhttps://www.example.com\n[*.]example.edu",
+    "keywords": [
+      "LocalFontsBlockedForUrls",
+      "Block Local Fonts permission on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsblockedforurls_localfontsblockedforurlsdesc",
+    "settingName": "Block Local Fonts permission on these sites",
+    "settingDescription": "",
+    "keywords": [
+      "LocalFontsBlockedForUrls",
+      "Block Local Fonts permission on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Microsoft Edge\\Content settings",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsallowedforurls_localfontsallowedforurlsdesc",
+    "settingName": "Allow Local Fonts permission on these sites (User)",
+    "settingDescription": "",
+    "keywords": [
+      "LocalFontsAllowedForUrls",
+      "Allow Local Fonts permission on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Microsoft Edge\\Content settings",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_state",
     "settingName": "State",
     "settingDescription": "Controls whether an extension is allowed.\n* Allowed - The user is allowed to turn the extension on or off\n* AlwaysOn - The extension will always be on\n* AlwaysOff - The extension will always be off",
@@ -5996,6 +6036,19 @@
       "Security"
     ],
     "categoryName": "Security"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsallowedforurls_localfontsallowedforurlsdesc",
+    "settingName": "Allow Local Fonts permission on these sites",
+    "settingDescription": "",
+    "keywords": [
+      "LocalFontsAllowedForUrls",
+      "Allow Local Fonts permission on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Microsoft Edge\\Content settings",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "extensionsettings_extensionsettings",
@@ -12297,6 +12350,33 @@
       "Privacy"
     ],
     "categoryName": "Privacy"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsblockedforurls_localfontsblockedforurlsdesc",
+    "settingName": "Block Local Fonts permission on these sites (User)",
+    "settingDescription": "",
+    "keywords": [
+      "LocalFontsBlockedForUrls",
+      "Block Local Fonts permission on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Microsoft Edge\\Content settings",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsblockedforurls",
+    "settingName": "Block Local Fonts permission on these sites",
+    "settingDescription": "Specifies a list of site URL patterns for which the local fonts permission is automatically denied. Sites in this list are prevented from accessing information about local fonts.\n\nFor detailed information about valid URL patterns, see https://go.microsoft.com/fwlink/?linkid=2095322. Wildcards, *, are supported. This policy matches based on origin only; any path in the URL pattern is ignored.\n\nIf a site isn't included in this policy, the 'DefaultLocalFontsSetting' (Default Local Fonts permission setting) policy applies if configured. Otherwise, the browser default behavior applies, and users can choose the permission on a per-site basis.\n\nExample value:\n\nhttps://www.example.com\n[*.]example.edu",
+    "keywords": [
+      "LocalFontsBlockedForUrls",
+      "Block Local Fonts permission on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "extensionsettings_managedextensions_generickey_privatebrowsing",
@@ -18767,6 +18847,20 @@
       "Privacy"
     ],
     "categoryName": "Privacy"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_copilotaddressbarsuggestionsenabled",
+    "settingName": "Enable Copilot address bar suggestions",
+    "settingDescription": "This policy controls whether Copilot chat suggestions appear in the address bar of Microsoft Edge.\n\nIf you enable this policy or don't configure it, Copilot chat suggestions appear in the address bar.\n\nIf you disable this policy, Copilot chat suggestions don't appear in the address bar.",
+    "keywords": [
+      "CopilotAddressBarSuggestionsEnabled",
+      "Enable Copilot address bar suggestions",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "extensionsettings_managedextensions_generickey_denieddomains",
@@ -38282,6 +38376,20 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_dataurlinwebworkeropaqueoriginenabled",
+    "settingName": "Enable opaque origins for data URLs in Web Workers (User)",
+    "settingDescription": "This policy controls whether Web Workers created from data URLs are assigned\na unique opaque origin.\n\nWeb Workers can be created using a data URL that contains the worker script.\nPreviously, these workers inherited the origin of the page that created them,\nwhich allowed them to access the same origin-bound data, such as local\nstorage and cookies.\n\nStarting in Microsoft Edge version\n149, Web Workers created from data URLs are assigned a unique opaque origin\nby default. This behavior improves security and aligns with the HTML\nspecification by isolating these workers from the page that created them.\n\nIf you enable this policy or don't configure it, Web Workers created from\ndata URLs are assigned a unique opaque origin.\n\nIf you disable this policy, Web Workers created from data URLs inherit the\norigin of the page that created them. Use this setting only as a temporary\nmitigation for compatibility issues with internal applications that depend\non the legacy behavior.\n\nThis policy is temporary and will be removed in Microsoft Edge\nversion 157.",
+    "keywords": [
+      "DataUrlInWebWorkerOpaqueOriginEnabled",
+      "Enable opaque origins for data URLs in Web Workers",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.apple.mcx_disableguestaccount",
     "settingName": "Disable Guest Account",
     "settingDescription": "If true, disables the guest account. This property has no effect if Enable Guest Account is true.",
@@ -41469,6 +41577,20 @@
       "Security"
     ],
     "categoryName": "Security"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_dataurlinwebworkeropaqueoriginenabled",
+    "settingName": "Enable opaque origins for data URLs in Web Workers",
+    "settingDescription": "This policy controls whether Web Workers created from data URLs are assigned\na unique opaque origin.\n\nWeb Workers can be created using a data URL that contains the worker script.\nPreviously, these workers inherited the origin of the page that created them,\nwhich allowed them to access the same origin-bound data, such as local\nstorage and cookies.\n\nStarting in Microsoft Edge version\n149, Web Workers created from data URLs are assigned a unique opaque origin\nby default. This behavior improves security and aligns with the HTML\nspecification by isolating these workers from the page that created them.\n\nIf you enable this policy or don't configure it, Web Workers created from\ndata URLs are assigned a unique opaque origin.\n\nIf you disable this policy, Web Workers created from data URLs inherit the\norigin of the page that created them. Use this setting only as a temporary\nmitigation for compatibility issues with internal applications that depend\non the legacy behavior.\n\nThis policy is temporary and will be removed in Microsoft Edge\nversion 157.",
+    "keywords": [
+      "DataUrlInWebWorkerOpaqueOriginEnabled",
+      "Enable opaque origins for data URLs in Web Workers",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.apple.familycontrols.timelimits.v2_time-limits_weekend-curfew_end",
@@ -44735,6 +44857,34 @@
     "categoryName": "Privacy"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsallowedforurls",
+    "settingName": "Allow Local Fonts permission on these sites (User)",
+    "settingDescription": "Specifies a list of site URL patterns for which the local fonts permission is automatically granted. Sites in this list can access information about local fonts.\n\nFor detailed information about valid URL patterns, see https://go.microsoft.com/fwlink/?linkid=2095322. Wildcards, *, are supported. This policy matches based on origin only; any path in the URL pattern is ignored.\n\nIf a site isn't included in this policy, the 'DefaultLocalFontsSetting' (Default Local Fonts permission setting) policy applies if configured. Otherwise, the browser default behavior applies, and users can choose the permission on a per-site basis.\n\nExample value:\n\nhttps://www.example.com\n[*.]example.edu",
+    "keywords": [
+      "LocalFontsAllowedForUrls",
+      "Allow Local Fonts permission on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsallowedforurls",
+    "settingName": "Allow Local Fonts permission on these sites",
+    "settingDescription": "Specifies a list of site URL patterns for which the local fonts permission is automatically granted. Sites in this list can access information about local fonts.\n\nFor detailed information about valid URL patterns, see https://go.microsoft.com/fwlink/?linkid=2095322. Wildcards, *, are supported. This policy matches based on origin only; any path in the URL pattern is ignored.\n\nIf a site isn't included in this policy, the 'DefaultLocalFontsSetting' (Default Local Fonts permission setting) policy applies if configured. Otherwise, the browser default behavior applies, and users can choose the permission on a per-site basis.\n\nExample value:\n\nhttps://www.example.com\n[*.]example.edu",
+    "keywords": [
+      "LocalFontsAllowedForUrls",
+      "Allow Local Fonts permission on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.apple.caldav.account_caldavprincipalurl",
     "settingName": "Cal DAV Principal URL",
     "settingDescription": "The base URL to the user’s calendar.",
@@ -47927,6 +48077,20 @@
       "Security"
     ],
     "categoryName": "Security"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_copilotaddressbarsuggestionsenabled",
+    "settingName": "Enable Copilot address bar suggestions (User)",
+    "settingDescription": "This policy controls whether Copilot chat suggestions appear in the address bar of Microsoft Edge.\n\nIf you enable this policy or don't configure it, Copilot chat suggestions appear in the address bar.\n\nIf you disable this policy, Copilot chat suggestions don't appear in the address bar.",
+    "keywords": [
+      "CopilotAddressBarSuggestionsEnabled",
+      "Enable Copilot address bar suggestions",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "extensionsettings_managedextensions",

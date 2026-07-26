@@ -1,5 +1,17 @@
 [
   {
+    "settingId": "device_vendor_msft_policy_config_winre_enablewinre",
+    "settingName": "Enable Windows Recovery Environment",
+    "settingDescription": "",
+    "keywords": [
+      "WinRE",
+      "Recovery",
+      "Configuration",
+      "Win RE"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_authenticationmethod",
     "settingName": "Intune authentication method",
     "settingDescription": "If your organization uses multifactor authentication, select Setup Assistant with modern authentication, which prompts users to authenticate based on settings in Entra.",
@@ -821,7 +833,7 @@
   {
     "settingId": "ade_accountsettings_adminaccountname",
     "settingName": "Admin account username",
-    "settingDescription": "The account name for the administrator account. This field is to be defaulted to 'Admin'.",
+    "settingDescription": "The account name for the administrator account. This field is to be defaulted to 'Admin'. For macOS ADE enrollment policies without user device affinity, we recommend configuring {{serialNumber}} as the unique identifier of userless devices.",
     "keywords": [
       "ADE profile",
       "enrollment",
@@ -1790,6 +1802,19 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_winre_quickmachinerecovery_allowautoremediation",
+    "settingName": "Allow auto remediation",
+    "settingDescription": "",
+    "keywords": [
+      "WinRE",
+      "Recovery",
+      "Quick Machine Recovery",
+      "Auto Remediation",
+      "Win RE"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_accountsettings_prefillaccountinfo",
     "settingName": "Prefill account info",
     "settingDescription": "If you select 'Yes', the account name and full name must be configured. Not configured allows the end user to configure these fields.",
@@ -2013,7 +2038,7 @@
   {
     "settingId": "ade_accountsettings_primaryaccountname",
     "settingName": "Primary account name",
-    "settingDescription": "The account name for the account. Setup Assistant will use this value to prefill the Account Name field if 'Prefill account info' is set to 'Not configured'. This field is to be defaulted to the variable, {{partialupn}}, for example, 'John'.",
+    "settingDescription": "The account name for the account. Setup Assistant will use this value to prefill the Account Name field if 'Prefill account info' is set to 'Not configured'. This field is to be defaulted to the variable, {{partialupn}}, for example, 'John'. For macOS ADE enrollment policies without user device affinity, we recommend configuring {{serialNumber}} as the unique identifier of userless devices.",
     "keywords": [
       "ADE profile",
       "enrollment",
