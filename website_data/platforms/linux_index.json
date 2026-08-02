@@ -47,6 +47,15 @@
     "categoryName": "Microsoft Defender"
   },
   {
+    "settingId": "linux_advancedsettings_memoryscan",
+    "settingName": "Memory scan (preview)",
+    "settingDescription": "Provides visibility in Passive/Realtime/OnDemand enforcement and protection requires behaviour monitoring to be enabled",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
     "settingId": "linux_mdatp_managed_antivirusengine_passivemode",
     "settingName": "Enable passive mode (deprecated)",
     "settingDescription": "Whether the antivirus engine runs in passive mode or not.",
@@ -81,6 +90,15 @@
     "settingDescription": "Selects the time of day that the Defender weekly scan should run. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120.",
     "keywords": [
       "Schedule Scan"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_platformupdatecontrols_schedule_months",
+    "settingName": "Platform Update Schedule Month",
+    "settingDescription": "Specifies in which months platform updates are allowed. Select 'Every Month' for no restriction, or choose a specific month.",
+    "keywords": [
+      "Platform Update"
     ],
     "categoryName": "Microsoft Defender"
   },
@@ -160,8 +178,8 @@
   },
   {
     "settingId": "linux_mdatp_managed_antivirusengine_behaviormonitoring",
-    "settingName": "Enable behavior monitoring",
-    "settingDescription": "Whether the antivirus engine runs behavior monitoring and blocking or not.",
+    "settingName": "Enable behavior monitoring (Requires Realtime/Audit Enforcement level)",
+    "settingDescription": "Detects and blocks malicious processes and suspicious behaviours",
     "keywords": [
       "Antivirus engine"
     ],
@@ -299,6 +317,15 @@
     "categoryName": "Microsoft Defender"
   },
   {
+    "settingId": "linux_platformupdatecontrols_schedule_daysofmonth",
+    "settingName": "Platform Update Schedule Day of Month",
+    "settingDescription": "Specifies on which day of the month platform updates are allowed. Select 'Every Day' for no restriction, or choose a specific day (1-31).",
+    "keywords": [
+      "Platform Update"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
     "settingId": "linux_mdatp_managed_exclusionsettings_exclusions_item_name",
     "settingName": "Process name",
     "settingDescription": "Process name, either or full path or file name, wildcards NOT supported",
@@ -403,6 +430,15 @@
     "categoryName": "Microsoft Defender"
   },
   {
+    "settingId": "linux_platformupdatecontrols_version_fixedvalue",
+    "settingName": "Platform Update Fixed Version",
+    "settingDescription": "Specify the exact platform version to pin to, e.g. 101.26021.0002",
+    "keywords": [
+      "Platform Update"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
     "settingId": "com.apple.managedclient.preferences_exclusions_item_$type",
     "settingName": "Type",
     "settingDescription": null,
@@ -438,6 +474,15 @@
     "settingDescription": "The threatTypeSettings preference in the antivirus engine is used to control how certain threat types are handled by the product.",
     "keywords": [
       "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_advancedsettings",
+    "settingName": "Advanced settings",
+    "settingDescription": "Advanced antivirus engine settings.",
+    "keywords": [
       "Antivirus engine"
     ],
     "categoryName": "Microsoft Defender"
@@ -514,6 +559,42 @@
     "settingDescription": "This setting is only applicable if you have selcted scan type as quick scan. Select the interval at which you want to run quick scans. Quick scans can be run multiple times a day.  0 (never), every 1 (hour) to every 24 (hours, one scan per day).",
     "keywords": [
       "Schedule Scan"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_platformupdatecontrols_schedule_endtime",
+    "settingName": "Platform Update Window End Time",
+    "settingDescription": "Specifies the end of the allowed time window for platform updates (24-hour clock). Select 'All Day' for no restriction. Use together with start time to define an update window.",
+    "keywords": [
+      "Platform Update"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_platformupdatecontrols_schedule_starttime",
+    "settingName": "Platform Update Window Start Time",
+    "settingDescription": "Specifies the start of the allowed time window for platform updates (24-hour clock). Select 'All Day' for no restriction. Use together with end time to define an update window.",
+    "keywords": [
+      "Platform Update"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_features_platformupdatecontrols",
+    "settingName": "Platform Update Controls",
+    "settingDescription": "Enable or disable platform update controls. Must be set to Enabled for platform update settings to take effect.",
+    "keywords": [
+      "Platform Update"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_platformupdatecontrols_version",
+    "settingName": "Platform Update Version",
+    "settingDescription": "Specifies the update channel for platform updates. 'N' is the latest version, 'N-1' is the previous version, 'N-2' is two versions back. Select 'Fixed' to pin to a specific version number.",
+    "keywords": [
+      "Platform Update"
     ],
     "categoryName": "Microsoft Defender"
   },
@@ -638,6 +719,15 @@
     "settingDescription": "Specifies whether to scan archives during on-demand antivirus scans.",
     "keywords": [
       "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_platformupdatecontrols_schedule_daysofweek",
+    "settingName": "Platform Update Schedule Day of Week",
+    "settingDescription": "Specifies on which day of the week platform updates are allowed. Select 'Every Day' for no restriction, or choose a specific weekday.",
+    "keywords": [
+      "Platform Update"
     ],
     "categoryName": "Microsoft Defender"
   },

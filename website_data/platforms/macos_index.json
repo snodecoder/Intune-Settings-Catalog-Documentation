@@ -1,45 +1,5 @@
 [
   {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsblockedforurls",
-    "settingName": "Block Local Fonts permission on these sites (User)",
-    "settingDescription": "Specifies a list of site URL patterns for which the local fonts permission is automatically denied. Sites in this list are prevented from accessing information about local fonts.\n\nFor detailed information about valid URL patterns, see https://go.microsoft.com/fwlink/?linkid=2095322. Wildcards, *, are supported. This policy matches based on origin only; any path in the URL pattern is ignored.\n\nIf a site isn't included in this policy, the 'DefaultLocalFontsSetting' (Default Local Fonts permission setting) policy applies if configured. Otherwise, the browser default behavior applies, and users can choose the permission on a per-site basis.\n\nExample value:\n\nhttps://www.example.com\n[*.]example.edu",
-    "keywords": [
-      "LocalFontsBlockedForUrls",
-      "Block Local Fonts permission on these sites",
-      "\\Microsoft Edge\\Content settings",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Content settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsblockedforurls_localfontsblockedforurlsdesc",
-    "settingName": "Block Local Fonts permission on these sites",
-    "settingDescription": "",
-    "keywords": [
-      "LocalFontsBlockedForUrls",
-      "Block Local Fonts permission on these sites",
-      "\\Microsoft Edge\\Content settings",
-      "Microsoft Edge\\Content settings",
-      "Content settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsallowedforurls_localfontsallowedforurlsdesc",
-    "settingName": "Allow Local Fonts permission on these sites (User)",
-    "settingDescription": "",
-    "keywords": [
-      "LocalFontsAllowedForUrls",
-      "Allow Local Fonts permission on these sites",
-      "\\Microsoft Edge\\Content settings",
-      "Microsoft Edge\\Content settings",
-      "Content settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "extensionsettings_managedextensions_generickey_state",
     "settingName": "State",
     "settingDescription": "Controls whether an extension is allowed.\n* Allowed - The user is allowed to turn the extension on or off\n* AlwaysOn - The extension will always be on\n* AlwaysOff - The extension will always be off",
@@ -830,7 +790,7 @@
   {
     "settingId": "settings_item_mdmoptions_mdmoptions_idlerebootallowed",
     "settingName": "Idle Reboot Allowed",
-    "settingDescription": "If `true`, the device automatically reboots while locked after several days of inactivity. This is set to `false` by default when a supervised device enrolls.",
+    "settingDescription": "If `true`, the device automatically reboots while locked after several days of inactivity. The device sets this to `false` by default for a supervised enrollment. Starting in iOS 26.6 and iPadOS 26.6, changing the effective value from reboot allowed to reboot disallowed requires a reboot or a device unlock before the change takes effect.",
     "keywords": [
       "MDM Options"
     ],
@@ -964,8 +924,8 @@
   },
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways",
-    "settingName": "Bluetooth Always",
-    "settingDescription": "Specifies the policies for the app to access Bluetooth devices.",
+    "settingName": "Bluetooth Always (deprecated)",
+    "settingDescription": "Specifies the policies for the app to access Bluetooth devices.\n\nDeprecated: use the `Privacy` key in the declarative management `com.apple.configuration.app-settings` configuration.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -1307,7 +1267,7 @@
   {
     "settingId": "com.apple.system-extension-policy_allowedsystemextensions_generickey",
     "settingName": "Allowed System Extensions",
-    "settingDescription": "The mapping of team identifiers to arrays of bundle identifiers, where the bundle identifier is that of the system extension to be installed.",
+    "settingDescription": "The mapping of team identifiers to arrays of bundle identifiers, where the bundle identifier defines the system extension to install.",
     "keywords": [
       "System Extensions"
     ],
@@ -1827,6 +1787,42 @@
     "categoryName": "Restrictions"
   },
   {
+    "settingId": "app_allowed_allowedbinaries",
+    "settingName": "Allowed Binaries",
+    "settingDescription": "If present, the device only allows binaries that match the binary identifier properties to run. A binary only matches when all the binary identifiers match. The device always runs system critical processes. Use \"codesign -dvvv <path_to_binary>\" to show the information you need to generate these values.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "app_app",
+    "settingName": "com.apple.configuration.app.settings",
+    "settingDescription": "Synthetic Top Level Setting Group Collection",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "app_privacy_permissiondefaults_generickey_location",
+    "settingName": "Location",
+    "settingDescription": "Controls whether an app privacy permission default is set.\n* `None`: No app privacy permission default is set for access to location.\n* `WhileUsing`: The app privacy permission default is set to allow access to location only while the user is using the app In macOS, this is equivalent to `Always`.\n* `Always`: The app privacy permission default is set to allow access to location always.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "app_privacy_permissiondefaults_generickey_organizationjustification",
+    "settingName": "Organization Justification",
+    "settingDescription": "Text you provide that clearly explains to the user the reason why the organization requires these app permission defaults. The device includes this text in the permission consent prompt it displays when it launches the app.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "com.apple.universalaccess_slowkey",
     "settingName": "Slow Key",
     "settingDescription": "If true, enables \"Slow Keys\" in the Keyboard options.",
@@ -2189,6 +2185,24 @@
       "Dock"
     ],
     "categoryName": "User Experience"
+  },
+  {
+    "settingId": "safari_privacy",
+    "settingName": "Privacy",
+    "settingDescription": "The dictionary of website privacy settings.",
+    "keywords": [
+      "Safari Browser"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "safari_privacy_permissiondefaults_generickey",
+    "settingName": "ANY",
+    "settingDescription": "The dictionary that defines the website privacy permission defaults. Each key represents a website.",
+    "keywords": [
+      "Safari Browser"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "keyboardsettings_keyboardsettings",
@@ -2929,6 +2943,15 @@
     "categoryName": "Microsoft Defender"
   },
   {
+    "settingId": "linux_advancedsettings_memoryscan",
+    "settingName": "Memory scan (preview)",
+    "settingDescription": "Provides visibility in Passive/Realtime/OnDemand enforcement and protection requires behaviour monitoring to be enabled",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
     "settingId": "linux_mdatp_managed_antivirusengine_passivemode",
     "settingName": "Enable passive mode (deprecated)",
     "settingDescription": "Whether the antivirus engine runs in passive mode or not.",
@@ -3005,6 +3028,60 @@
       "Authentication"
     ],
     "categoryName": "Authentication"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_cpuperformancetieroverride",
+    "settingName": "Override for the CPU performance tier (User)",
+    "settingDescription": "This policy allows you to override the value returned by the CPU Performance API (that is, navigator.cpuPerformance).\n\nIf you enable this policy, the value of navigator.cpuPerformance is overridden with the specified value.\n\nIf you don’t configure this policy, the default performance tier calculation is used.\n\nYou can specify a value from 0 through 4.\n\nFor more information, see https://github.com/WICG/cpu-performance.",
+    "keywords": [
+      "CpuPerformanceTierOverride",
+      "Override for the CPU performance tier",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsblockedforurls",
+    "settingName": "Block Local Fonts permission on these sites (User)",
+    "settingDescription": "Specifies a list of site URL patterns for which the local fonts permission is automatically denied. Sites in this list are prevented from accessing information about local fonts.\n\nFor detailed information about valid URL patterns, see https://go.microsoft.com/fwlink/?linkid=2095322. Wildcards, *, are supported. This policy matches based on origin only; any path in the URL pattern is ignored.\n\nIf a site isn't included in this policy, the 'DefaultLocalFontsSetting' (Default Local Fonts permission setting) policy applies if configured. Otherwise, the browser default behavior applies, and users can choose the permission on a per-site basis.\n\nExample value:\n\nhttps://www.example.com\n[*.]example.edu",
+    "keywords": [
+      "LocalFontsBlockedForUrls",
+      "Block Local Fonts permission on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsblockedforurls_localfontsblockedforurlsdesc",
+    "settingName": "Block Local Fonts permission on these sites",
+    "settingDescription": "",
+    "keywords": [
+      "LocalFontsBlockedForUrls",
+      "Block Local Fonts permission on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Microsoft Edge\\Content settings",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsallowedforurls_localfontsallowedforurlsdesc",
+    "settingName": "Allow Local Fonts permission on these sites (User)",
+    "settingDescription": "",
+    "keywords": [
+      "LocalFontsAllowedForUrls",
+      "Allow Local Fonts permission on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Microsoft Edge\\Content settings",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_developertoolsavailability_developertoolsavailability",
@@ -6038,19 +6115,6 @@
     "categoryName": "Security"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsallowedforurls_localfontsallowedforurlsdesc",
-    "settingName": "Allow Local Fonts permission on these sites",
-    "settingDescription": "",
-    "keywords": [
-      "LocalFontsAllowedForUrls",
-      "Allow Local Fonts permission on these sites",
-      "\\Microsoft Edge\\Content settings",
-      "Microsoft Edge\\Content settings",
-      "Content settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "extensionsettings_extensionsettings",
     "settingName": "com.apple.configuration.safari.extensions.settings",
     "settingDescription": "Synthetic Top Level Setting Group Collection",
@@ -7103,8 +7167,8 @@
   },
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_accessibility",
-    "settingName": "Accessibility",
-    "settingDescription": "Specifies the policies for the app via the Accessibility subsystem. The ability to grant access by this profile is deprecated as of macOS 26.2, and will be removed in macOS 27.0.",
+    "settingName": "Accessibility (deprecated)",
+    "settingDescription": "Specifies the policies for the app via the Accessibility subsystem. This profile deprecated its ability to grant access as of macOS 26.2, and removes that ability in macOS 27.0.\n\nDeprecated: use the `Privacy` key in the declarative management `com.apple.configuration.app-settings` configuration.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -7121,8 +7185,8 @@
   },
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_camera",
-    "settingName": "Camera",
-    "settingDescription": "A system camera. Access to the camera can't be given in a profile; it can only be denied.",
+    "settingName": "Camera (deprecated)",
+    "settingDescription": "A system camera. A profile can't grant access to the camera; it can only deny it.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -7251,6 +7315,15 @@
     "settingDescription": "Controls whether the mode is enabled.",
     "keywords": [
       "Math Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "sirisettings_forcereducesensitivecontent",
+    "settingName": "Force Reduce Sensitive Content",
+    "settingDescription": "If `true`, forces Siri to reduce sensitive content.",
+    "keywords": [
+      "Siri Settings"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -7411,7 +7484,7 @@
   {
     "settingId": "com.apple.system-extension-policy_allowedsystemextensiontypes_generickey",
     "settingName": "Allowed System Extension Types",
-    "settingDescription": "The mapping of team identifier to an array of strings, where each string is a type of system extension that may be installed for that team identifier.",
+    "settingDescription": "The mapping of team identifier to an array of strings, where each string is a type of system extension that you can install for that team identifier.",
     "keywords": [
       "System Extensions"
     ],
@@ -8040,6 +8113,78 @@
     "categoryName": "Restrictions"
   },
   {
+    "settingId": "app_allowed",
+    "settingName": "Allowed",
+    "settingDescription": "The dictionary of allowed app settings.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "app_allowed_alwaysallowmanagedapps",
+    "settingName": "Always Allow Managed Apps",
+    "settingDescription": "If `true`, the device implicitly includes managed apps in the effective allow list when `AllowedApps` or `AllowedBinaries` is present.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "app_allowed_deniedapps",
+    "settingName": "Denied Apps",
+    "settingDescription": "If present, the device prevents showing or launching apps with bundle IDs in the\narray. Include the value `com.apple.webapp` to restrict all webclips. This applies to\nApp Store apps, marketplace apps, and locally installed apps (using Configurator,\nXcode, and so forth).\n> Note:\n> Denying system apps may disable other functionality. For example, denying the App\nStore app may prevent users from accepting the terms and conditions for the user-based\nVolume Purchase Program (VPP).",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "app_allowed_allowedbinaries_item_signingid",
+    "settingName": "Signing ID",
+    "settingDescription": "The code signature signing identifier of the binary.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "app_allowed_deniedbinaries_item_pathprefix",
+    "settingName": "Path Prefix",
+    "settingDescription": "The file system path prefix to match binaries.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "app_privacy_permissiondefaults_generickey_keytobereplaced",
+    "settingName": "Permission Defaults",
+    "settingDescription": "The dictionary of app privacy permission defaults. Each key in the dictionary is an app identifier. The dictionary values represent the permission defaults that the device applies for each matching app.\n\nIn iOS, the app identifier is a bundle ID, for example, \"com.example.app\".\n\nIn macOS, the app identifier is a composed identifier. The format of the composed identifier is either \"Bundle-ID\", \"Bundle-ID (Team-ID)\", or \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the app. \"Team-ID\" is the team identifier from the app's code signature. \"Designated-Requirement\" is the designated requirement string from the code signature of the app. For example, \"com.example.app\" for the bundle ID format, \"com.example.app (ABCD1234)\" for the team ID format, or \"com.example.app {anchor apple generic}\" for the designated requirement format. The device only applies defaults for an app if its code signature matches the composed identifier.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "app_privacy_permissiondefaults_generickey_accessibility",
+    "settingName": "Accessibility",
+    "settingDescription": "Controls whether an app privacy permission default is set.\n* `None`: No app privacy permission default is set for use of accessibility.\n* `Allow`: The app privacy permission default is set to allow use of accessibility.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "app_allowed_allowedbinaries_item_signingstate",
+    "settingName": "Signing State",
+    "settingDescription": "The code signing state to match binaries.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "com.apple.universalaccess_stickykeyshowwindow",
     "settingName": "Sticky Key Show Window",
     "settingDescription": "If true, enables \"Display pressed keys on screen\" for Sticky Keys.",
@@ -8367,6 +8512,15 @@
     "categoryName": "User Experience"
   },
   {
+    "settingId": "safari_privacy_permissiondefaults_generickey_microphone",
+    "settingName": "Microphone",
+    "settingDescription": "Controls whether a website privacy permission default is set.\n* `None`: Safari sets no website privacy permission default for use of the microphone.\n* `Allow`: Safari sets the website privacy permission default to allow use of the microphone.",
+    "keywords": [
+      "Safari Browser"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "safari_acceptcookies",
     "settingName": "Accept Cookies",
     "settingDescription": "The policy Safari uses for managing cookies:\n\n- `Never`: Safari always blocks cookies.\n- `CurrentWebsite`: Safari allows cookies only from the current website.\n- `VisitedWebsites`: Safari allows cookies only from visited websites.\n- `Always`: Safari always allows cookies.",
@@ -8379,6 +8533,15 @@
     "settingId": "safari_newtabstartpage_pagetype",
     "settingName": "Page Type",
     "settingDescription": "Sets the start page type in Safari:\n\n- `Start` - Safari uses the default start page. Safari disables the Homepage.\n- `Home` - Safari uses the page specified by `HomepageURL`, and Safari also sets that as the Homepage.\n- `Extension` - Safari uses the page specified by the Safari extension whose identifier is `ExtensionIdentifier`. Safari disables the Homepage.",
+    "keywords": [
+      "Safari Browser"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "safari_privacy_permissiondefaults_generickey_camera",
+    "settingName": "Camera",
+    "settingDescription": "Controls whether a website privacy permission default is set.\n* `None`: Safari sets no website privacy permission default for use of the camera.\n* `Allow`: Safari sets the website privacy permission default to allow use of the camera.",
     "keywords": [
       "Safari Browser"
     ],
@@ -9197,8 +9360,8 @@
   },
   {
     "settingId": "linux_mdatp_managed_antivirusengine_behaviormonitoring",
-    "settingName": "Enable behavior monitoring",
-    "settingDescription": "Whether the antivirus engine runs behavior monitoring and blocking or not.",
+    "settingName": "Enable behavior monitoring (Requires Realtime/Audit Enforcement level)",
+    "settingDescription": "Detects and blocks malicious processes and suspicious behaviours",
     "keywords": [
       "Antivirus engine"
     ],
@@ -9235,6 +9398,19 @@
     "categoryName": "Accounts"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsallowedforurls_localfontsallowedforurlsdesc",
+    "settingName": "Allow Local Fonts permission on these sites",
+    "settingDescription": "",
+    "keywords": [
+      "LocalFontsAllowedForUrls",
+      "Allow Local Fonts permission on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Microsoft Edge\\Content settings",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~extensions_extensioninstallsources_extensioninstallsourcesdesc",
     "settingName": "URL patterns to allow extension, app, and user script installs from (User)",
     "settingDescription": "",
@@ -9255,6 +9431,20 @@
       "RelaunchNotificationPeriod",
       "Set the time period for update notifications",
       "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_restrictbackgroundfetchfromserviceworkerenabled",
+    "settingName": "Restrict Background Fetch API when called from a Service Worker",
+    "settingDescription": "This policy controls whether background fetch requests from Service Workers are restricted. If a feature that downloads files in the background is affected, this policy may be relevant.\n\nIf you enable this policy or don't configure it, the restriction is active, and background fetch requests from Service Worker contexts may be blocked.\n\nIf you disable this policy, the restriction is bypassed, allowing Service Workers to make background fetch requests.\n\nThis policy is temporary and will be removed after Microsoft Edge version 152.",
+    "keywords": [
+      "RestrictBackgroundFetchFromServiceWorkerEnabled",
+      "Restrict Background Fetch API when called from a Service Worker",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
       "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
@@ -12352,33 +12542,6 @@
     "categoryName": "Privacy"
   },
   {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsblockedforurls_localfontsblockedforurlsdesc",
-    "settingName": "Block Local Fonts permission on these sites (User)",
-    "settingDescription": "",
-    "keywords": [
-      "LocalFontsBlockedForUrls",
-      "Block Local Fonts permission on these sites",
-      "\\Microsoft Edge\\Content settings",
-      "Microsoft Edge\\Content settings",
-      "Content settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsblockedforurls",
-    "settingName": "Block Local Fonts permission on these sites",
-    "settingDescription": "Specifies a list of site URL patterns for which the local fonts permission is automatically denied. Sites in this list are prevented from accessing information about local fonts.\n\nFor detailed information about valid URL patterns, see https://go.microsoft.com/fwlink/?linkid=2095322. Wildcards, *, are supported. This policy matches based on origin only; any path in the URL pattern is ignored.\n\nIf a site isn't included in this policy, the 'DefaultLocalFontsSetting' (Default Local Fonts permission setting) policy applies if configured. Otherwise, the browser default behavior applies, and users can choose the permission on a per-site basis.\n\nExample value:\n\nhttps://www.example.com\n[*.]example.edu",
-    "keywords": [
-      "LocalFontsBlockedForUrls",
-      "Block Local Fonts permission on these sites",
-      "\\Microsoft Edge\\Content settings",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Content settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "extensionsettings_managedextensions_generickey_privatebrowsing",
     "settingName": "Private Browsing",
     "settingDescription": "Controls whether an extension is allowed in Private Browsing.\n* Allowed - The user is allowed to turn the extension on or off in Private Browsing\n* AlwaysOn - The extension will always be on in Private Browsing if the extension is on outside of Private Browsing\n* AlwaysOff - The extension will never be on in Private Browsing",
@@ -13959,6 +14122,15 @@
     "categoryName": "Declarative Device Management (DDM)"
   },
   {
+    "settingId": "intelligencesettings_apps_calendar",
+    "settingName": "Calendar",
+    "settingDescription": "If present, configures Calendar and Reminders Intelligence features.",
+    "keywords": [
+      "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "intelligencesettings_apps_safari",
     "settingName": "Safari",
     "settingDescription": "If present, configures Safari intelligence features.",
@@ -13989,6 +14161,15 @@
     "settingId": "intelligencesettings_allowvisualintelligencesummary",
     "settingName": "Allow Visual Intelligence Summary",
     "settingDescription": "If `false`, disables Visual Intelligence Summary.",
+    "keywords": [
+      "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "intelligencesettings_apps_calendar_allownaturallanguageediting",
+    "settingName": "Allow Natural Language Editing",
+    "settingDescription": "If `false`, disables Natural Language Editing in Calendar and Reminders.",
     "keywords": [
       "Intelligence Settings"
     ],
@@ -14383,6 +14564,60 @@
       "Restrictions"
     ],
     "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "app_allowed_deniedbinaries_item_signingid",
+    "settingName": "Signing ID",
+    "settingDescription": "The code signature signing identifier of the binary.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "app_privacy_permissiondefaults_generickey_microphone",
+    "settingName": "Microphone",
+    "settingDescription": "Controls whether an app privacy permission default is set.\n* `None`: No app privacy permission default is set for use of the microphone.\n* `Allow`: The app privacy permission default is set to allow use of the microphone.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "app_privacy_permissiondefaults_generickey_locationaccuracy",
+    "settingName": "Location Accuracy",
+    "settingDescription": "Controls whether an app privacy permission default is set.\n* `None`: No app privacy permission default is set for access to precise location.\n* `Approximate`: The app privacy permission default is set to allow approximate access to location.\n* `Precise`: The app privacy permission default is set to allow precise access to location.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "app_privacy_permissiondefaults_generickey",
+    "settingName": "ANY",
+    "settingDescription": "The dictionary that defines the app privacy permission defaults. Each key is an app identifier.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "app_allowed_allowedbinaries_item_cdhash",
+    "settingName": "CD Hash",
+    "settingDescription": "The code signature code directory hash of the binary.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "app_privacy_permissiondefaults_generickey_bluetooth",
+    "settingName": "Bluetooth",
+    "settingDescription": "Controls whether an app privacy permission default is set.\n* `None`: No app privacy permission default is set for use of Bluetooth.\n* `Allow`: The app privacy permission default is set to allow use of Bluetooth.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "com.apple.universalaccess_stickykey",
@@ -14835,6 +15070,15 @@
     "settingId": "safari_allowsummary",
     "settingName": "Allow Summary",
     "settingDescription": "If `false`, the system disables summarization of content in Safari.",
+    "keywords": [
+      "Safari Browser"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "safari_privacy_permissiondefaults_generickey_organizationjustification",
+    "settingName": "Organization Justification",
+    "settingDescription": "Text that clearly explains to the Safari user the reason why the organization requires these website privacy permission defaults. Safari includes this text in the permission consent prompt it displays when it first displays the website.",
     "keywords": [
       "Safari Browser"
     ],
@@ -15519,6 +15763,47 @@
     "categoryName": "Authentication"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsblockedforurls_localfontsblockedforurlsdesc",
+    "settingName": "Block Local Fonts permission on these sites (User)",
+    "settingDescription": "",
+    "keywords": [
+      "LocalFontsBlockedForUrls",
+      "Block Local Fonts permission on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Microsoft Edge\\Content settings",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_defaultlocalfontssetting",
+    "settingName": "Default Local Fonts permission setting (User)",
+    "settingDescription": "Setting this policy controls the default behavior for the local fonts permission.\n\nIf you set the policy to BlockLocalFonts (value 2), access to local fonts is denied by default. Sites are prevented from accessing information about local fonts.\n\nIf you set the policy to AskLocalFonts (value 3), users are prompted when a site requests access to local fonts. If permission is granted, the site can access information about local fonts.\n\nIf a site is included in 'LocalFontsAllowedForUrls' (Allow Local Fonts permission on these sites) or 'LocalFontsBlockedForUrls' (Block Local Fonts permission on these sites), then that setting overrides the value set for this policy.\n\nIf you don't configure this policy, users are prompted by default and can change this setting.\n\nPolicy options mapping:\n\n* BlockLocalFonts (2) = Denies the Local Fonts permission on all sites by default\n\n* AskLocalFonts (3) = Ask every time a site wants to obtain the Local Fonts permission\n\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "DefaultLocalFontsSetting",
+      "Default Local Fonts permission setting",
+      "\\Microsoft Edge\\Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsblockedforurls",
+    "settingName": "Block Local Fonts permission on these sites",
+    "settingDescription": "Specifies a list of site URL patterns for which the local fonts permission is automatically denied. Sites in this list are prevented from accessing information about local fonts.\n\nFor detailed information about valid URL patterns, see https://go.microsoft.com/fwlink/?linkid=2095322. Wildcards, *, are supported. This policy matches based on origin only; any path in the URL pattern is ignored.\n\nIf a site isn't included in this policy, the 'DefaultLocalFontsSetting' (Default Local Fonts permission setting) policy applies if configured. Otherwise, the browser default behavior applies, and users can choose the permission on a per-site basis.\n\nExample value:\n\nhttps://www.example.com\n[*.]example.edu",
+    "keywords": [
+      "LocalFontsBlockedForUrls",
+      "Block Local Fonts permission on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~passwordmanager_passwordmanagerenabled",
     "settingName": "Enable saving passwords to the password manager",
     "settingDescription": "Enable Microsoft Edge to save user passwords.\r\n\r\nIf you enable this policy, users can save their passwords in Microsoft Edge. The next time they visit the site, Microsoft Edge will enter the password automatically.\r\n\r\nIf you disable this policy, users can't save new passwords, but they can still use previously saved passwords.\r\n\r\nIf you enable or disable this policy, users can't change or override it in Microsoft Edge. If you don't configure it, users can save passwords, as well as turn this feature off.",
@@ -15880,6 +16165,20 @@
       "\\Microsoft Edge\\Extensions",
       "Microsoft Edge\\Extensions",
       "Extensions"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~identity_nonmicrosoftaccountsigninenabled",
+    "settingName": "Enable sign-in to Microsoft Edge using non-Microsoft accounts (User)",
+    "settingDescription": "This policy controls whether users can sign in to Microsoft Edge using non-Microsoft accounts, such as Google or Apple accounts.\n\nIf you enable this policy or don't configure it, users can sign in to Microsoft Edge with non-Microsoft accounts when the feature is available. Related sign-in entry points, such as Google or Apple sign-in buttons in the profile flyout and unified sign-in experience, are shown when available.\n\nIf you disable this policy, users can't sign in to Microsoft Edge with non-Microsoft accounts. Related sign-in entry points and code paths are hidden and disabled, regardless of related feature flag settings.\n\nUsers can still sign in with Microsoft accounts.",
+    "keywords": [
+      "NonMicrosoftAccountSignInEnabled",
+      "Enable sign-in to Microsoft Edge using non-Microsoft accounts",
+      "\\Microsoft Edge\\Identity and sign-in",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Identity and sign-in"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -18431,6 +18730,21 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edgev96~policy~microsoft_edge~typosquattingchecker_typosquattingcheckerenabled",
+    "settingName": "Configure Edge Website Typo Protection",
+    "settingDescription": "This policy setting lets you configure whether to turn on Edge Website Typo Protection. Edge Website Typo Protection provides warning messages to help protect your users from potential typosquatting sites. By default, Edge Website Typo Protection is turned on.\r\n\r\nIf you enable this policy, Edge Website Typo Protection is turned on.\r\n\r\nIf you disable this policy, Edge Website Typo Protection is turned off.\r\n\r\nIf you don't configure this policy, Edge Website Typo Protection is turned on but users can choose whether to use Edge Website Typo Protection.",
+    "keywords": [
+      "TyposquattingCheckerEnabled",
+      "Configure Edge TyposquattingChecker",
+      "Configure Edge Website Typo Protection",
+      "\\Microsoft Edge\\TyposquattingChecker settings",
+      "Microsoft Edge\\TyposquattingChecker settings",
+      "Typosquatting Checker settings",
+      "Edge Website Typo Protection settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "user_vendor_msft_policy_config_microsoft_edgev96~policy~microsoft_edge_internetexplorerintegrationcomplexnavdatatypes",
     "settingName": "Configure whether form data and HTTP headers will be sent when entering or exiting Internet Explorer mode (User)",
     "settingDescription": "Starting with Microsoft Edge version 96, navigations that switch between Internet Explorer mode and Microsoft Edge will include form data.\r\n\r\nIf you enable this policy, you can specify which data types should be included in navigations between Microsoft Edge and Internet Explorer mode.\r\n\r\nIf you disable or don't configure this policy, Microsoft Edge will use the new behavior of including form data in navigations that change modes.\r\n\r\nTo learn more, see https://go.microsoft.com/fwlink/?linkid=2174004\r\n\r\nPolicy options mapping:\r\n\r\n* IncludeNone (0) = Do not send form data or headers\r\n\r\n* IncludeFormDataOnly (1) = Send form data only\r\n\r\n* IncludeHeadersOnly (2) = Send additional headers only\r\n\r\n* IncludeFormDataAndHeaders (3) = Send form data and additional headers\r\n\r\nUse the preceding information when configuring this policy.",
@@ -18847,20 +19161,6 @@
       "Privacy"
     ],
     "categoryName": "Privacy"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_copilotaddressbarsuggestionsenabled",
-    "settingName": "Enable Copilot address bar suggestions",
-    "settingDescription": "This policy controls whether Copilot chat suggestions appear in the address bar of Microsoft Edge.\n\nIf you enable this policy or don't configure it, Copilot chat suggestions appear in the address bar.\n\nIf you disable this policy, Copilot chat suggestions don't appear in the address bar.",
-    "keywords": [
-      "CopilotAddressBarSuggestionsEnabled",
-      "Enable Copilot address bar suggestions",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "extensionsettings_managedextensions_generickey_denieddomains",
@@ -19889,7 +20189,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_listenevent",
     "settingName": "Listen Event",
-    "settingDescription": "Allows the application to use CoreGraphics and HID APIs to listen to (receive) CGEvents and HID events from all processes. Access to these events can't be given in a profile; it can only be denied.",
+    "settingDescription": "Allows the application to use CoreGraphics and HID APIs to listen to (receive) CGEvents and HID events from all processes. A profile can't grant access to these events; it can only deny it.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -20595,7 +20895,7 @@
   {
     "settingId": "com.apple.applicationaccess_allowvisualintelligencesummary",
     "settingName": "Allow Visual Intelligence Summary (Deprecated)",
-    "settingDescription": "If `false`, the system disables visual intelligence summarization.",
+    "settingDescription": "If `false`, the system disables visual intelligence summarization.\n\nDeprecated: use the declarative management `com.apple.configuration.intelligence.settings` configuration.",
     "keywords": [
       "Restrictions"
     ],
@@ -20825,6 +21125,15 @@
       "Restrictions"
     ],
     "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "app_allowed_deniedbinaries_item_teamid",
+    "settingName": "Team ID",
+    "settingDescription": "The code signature team identifier of the binary. Use the value \"*APPLE*\" instead of an empty string for Apple binaries with an empty team identifier.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "com.apple.universalaccess_com.apple.universalaccess",
@@ -22033,6 +22342,60 @@
     "categoryName": "Authentication"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_copilotaddressbarsuggestionsenabled",
+    "settingName": "Enable Copilot address bar suggestions",
+    "settingDescription": "This policy controls whether Copilot chat suggestions appear in the address bar of Microsoft Edge.\n\nIf you enable this policy or don't configure it, Copilot chat suggestions appear in the address bar.\n\nIf you disable this policy, Copilot chat suggestions don't appear in the address bar.",
+    "keywords": [
+      "CopilotAddressBarSuggestionsEnabled",
+      "Enable Copilot address bar suggestions",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_cpuperformancetieroverride_cpuperformancetieroverride",
+    "settingName": "Override for the CPU performance tier: (User)",
+    "settingDescription": "",
+    "keywords": [
+      "CpuPerformanceTierOverride",
+      "Override for the CPU performance tier",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_cpuperformancetieroverride",
+    "settingName": "Override for the CPU performance tier",
+    "settingDescription": "This policy allows you to override the value returned by the CPU Performance API (that is, navigator.cpuPerformance).\n\nIf you enable this policy, the value of navigator.cpuPerformance is overridden with the specified value.\n\nIf you don’t configure this policy, the default performance tier calculation is used.\n\nYou can specify a value from 0 through 4.\n\nFor more information, see https://github.com/WICG/cpu-performance.",
+    "keywords": [
+      "CpuPerformanceTierOverride",
+      "Override for the CPU performance tier",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_restrictbackgroundfetchfromserviceworkerenabled",
+    "settingName": "Restrict Background Fetch API when called from a Service Worker (User)",
+    "settingDescription": "This policy controls whether background fetch requests from Service Workers are restricted. If a feature that downloads files in the background is affected, this policy may be relevant.\n\nIf you enable this policy or don't configure it, the restriction is active, and background fetch requests from Service Worker contexts may be blocked.\n\nIf you disable this policy, the restriction is bypassed, allowing Service Workers to make background fetch requests.\n\nThis policy is temporary and will be removed after Microsoft Edge version 152.",
+    "keywords": [
+      "RestrictBackgroundFetchFromServiceWorkerEnabled",
+      "Restrict Background Fetch API when called from a Service Worker",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~extensions_extensionallowedtypes_extensionallowedtypesdesc",
     "settingName": "Types of extensions/apps that are allowed to be installed (User)",
     "settingDescription": "",
@@ -22373,6 +22736,20 @@
       "ComponentUpdatesEnabled",
       "Enable component updates in Microsoft Edge",
       "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_strictmimetypecheckforworkerscriptsenabled",
+    "settingName": "Enable strict MIME type checking for worker scripts",
+    "settingDescription": "This policy controls whether strict MIME type checking is used for worker scripts.\n\nIf you enable or don't configure this policy, worker scripts use strict MIME type checking for JavaScript. Worker scripts that use legacy MIME types are rejected.\n\nIf you disable this policy, worker scripts use lax MIME type checking. This allows worker scripts that use legacy MIME types, such as text/ascii, to continue to load and run.\n\nBrowsers traditionally used lax MIME type checking, which allowed JavaScript resources to load with several legacy MIME types. This behavior can create security risks by allowing resources to load as scripts when they weren't intended to be used that way.\n\nMicrosoft Edge uses strict MIME type checking by default. Enabling this policy follows the default behavior. Disabling this policy lets admins temporarily retain the legacy behavior for compatibility.\n\nFor more information about JavaScript and ECMAScript media types, see https://html.spec.whatwg.org/multipage/scripting.html#scriptingLanguage.",
+    "keywords": [
+      "StrictMimetypeCheckForWorkerScriptsEnabled",
+      "Enable strict MIME type checking for worker scripts",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
       "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
@@ -27026,6 +27403,15 @@
     "categoryName": "Restrictions"
   },
   {
+    "settingId": "app_allowed_deniedbinaries",
+    "settingName": "Denied Binaries",
+    "settingDescription": "If present, the device doesn't allow binaries that match the binary identifier properties to run. A binary only matches when all the binary identifiers match.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "com.apple.universalaccess_mousedrivermaxspeed",
     "settingName": "Mouse Driver Max Speed",
     "settingDescription": "The maximum speed for the cursor when using Mouse Keys.",
@@ -27440,6 +27826,15 @@
     "settingId": "safari_newtabstartpage_homepageurl",
     "settingName": "Homepage URL",
     "settingDescription": "The URL of the homepage which needs to start with `https://` or `http://`. Required when setting `PageType` to `Home`.",
+    "keywords": [
+      "Safari Browser"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "safari_privacy_permissiondefaults",
+    "settingName": "Permission Defaults",
+    "settingDescription": "The dictionary of website permission defaults. Each key in the dictionary represents a single website, or a website and its sub-domains. The dictionary values represent the permission defaults that Safari applies for each website that matches the key.\n\nSafari supports the following patterns for the website key:\n\n- A specific domain such as \"example.com\" or \"www.example.com\". The permission defaults apply to that website only.\n- A wildcard domain that uses a single \"\\*\" character as a prefix for the domain, such as \"\\*example.com\". The permission defaults apply to both the exact domain \"example.com\", and any sub-domains such as \"www.example.com\". It won't match other domains with a similar string suffix such as \"myexample.com\".\n\nWhen multiple patterns match a website, Safari uses the most precise pattern. For example, for the website \"www.example.com\", if rules \"www.example.com\" and \"*example.com\" match, Safari uses the former.",
     "keywords": [
       "Safari Browser"
     ],
@@ -28231,6 +28626,15 @@
     "categoryName": "Microsoft Defender"
   },
   {
+    "settingId": "linux_advancedsettings",
+    "settingName": "Advanced settings",
+    "settingDescription": "Advanced antivirus engine settings.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
     "settingId": "linux_mdatp_managed_antivirusengine_exclusions_item_isdirectory",
     "settingName": "Is directory",
     "settingDescription": "Directory if selected, or file if not selected",
@@ -28910,6 +29314,20 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_allowsocketpoolsizerandomizationforproxies",
+    "settingName": "Allow socket pool size randomization for proxies",
+    "settingDescription": "Controls whether Microsoft Edge randomizes socket pool sizes for proxy connections.\n\nSocket pool size randomization is a security mechanism that helps prevent attackers from using deterministic connection limits to infer cross-site information. For example, if the configured proxy socket pool limit is 128, Microsoft Edge can randomly set the effective limit between 128 and 256. This can allow up to twice as many proxy connections, though the expected increase is closer to 1.2x in practice.\n\nThis policy affects the limits configured by the 'MaxConnectionsPerProxy' (Maximum number of concurrent connections to the proxy server for non-WebSocket requests) and 'MaxConnectionsPerProxyForWebSocket' (Maximum number of concurrent connections to the proxy server for WebSocket requests) policies. When this policy is enabled, the effective upper limit can be randomized up to 2x the values configured by those policies.\n\nIf you enable this policy or don't configure it, Microsoft Edge enables socket pool size randomization for proxy connections.\n\nIf you disable this policy, Microsoft Edge disables socket pool size randomization for proxy connections. The values configured by 'MaxConnectionsPerProxy' and 'MaxConnectionsPerProxyForWebSocket' are used as the upper limits without randomization.",
+    "keywords": [
+      "AllowSocketPoolSizeRandomizationForProxies",
+      "Allow socket pool size randomization for proxies",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_allowdeletingbrowserhistory",
     "settingName": "Enable deleting browser and download history",
     "settingDescription": "Enables deleting browser history and download history and prevents users from changing this setting.\r\n\r\nNote that even with this policy is disabled, the browsing and download history aren't guaranteed to be retained: users can edit or delete the history database files directly, and the browser itself may remove (based on expiration period) or archive any or all history items at any time.\r\n\r\nIf you enable this policy or don't configure it, users can delete the browsing and download history.\r\n\r\nIf you disable this policy, users can't delete browsing and download history.\r\n\r\nIf you enable this policy, don't enable the 'ClearBrowsingDataOnExit' (Clear browsing data when Microsoft Edge closes) policy, because they both deal with deleting data. If you enable both, the 'ClearBrowsingDataOnExit' policy takes precedence and deletes all data when Microsoft Edge closes, regardless of how this policy is configured.",
@@ -28996,6 +29414,20 @@
       "Websites or domains that don't need permission to use direct Security Key attestation",
       "\\Microsoft Edge",
       "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~identity_nonmicrosoftaccountsigninenabled",
+    "settingName": "Enable sign-in to Microsoft Edge using non-Microsoft accounts",
+    "settingDescription": "This policy controls whether users can sign in to Microsoft Edge using non-Microsoft accounts, such as Google or Apple accounts.\n\nIf you enable this policy or don't configure it, users can sign in to Microsoft Edge with non-Microsoft accounts when the feature is available. Related sign-in entry points, such as Google or Apple sign-in buttons in the profile flyout and unified sign-in experience, are shown when available.\n\nIf you disable this policy, users can't sign in to Microsoft Edge with non-Microsoft accounts. Related sign-in entry points and code paths are hidden and disabled, regardless of related feature flag settings.\n\nUsers can still sign in with Microsoft accounts.",
+    "keywords": [
+      "NonMicrosoftAccountSignInEnabled",
+      "Enable sign-in to Microsoft Edge using non-Microsoft accounts",
+      "\\Microsoft Edge\\Identity and sign-in",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Identity and sign-in"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -32699,8 +33131,8 @@
   },
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_speechrecognition",
-    "settingName": "Speech Recognition",
-    "settingDescription": "Allows the application to use the system Speech Recognition facility and to send speech data to Apple.",
+    "settingName": "Speech Recognition (deprecated)",
+    "settingDescription": "Allows the application to use the system Speech Recognition facility and to send speech data to Apple.\n\nDeprecated: use the `Privacy` key in the declarative management `com.apple.configuration.app-settings` configuration.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -33512,7 +33944,7 @@
   {
     "settingId": "com.apple.applicationaccess_allownotestranscriptionsummary",
     "settingName": "Allow Notes Transcription Summary (Deprecated)",
-    "settingDescription": "If `false`, disables transcription summarization in Notes.",
+    "settingDescription": "If `false`, disables transcription summarization in Notes.\n\nDeprecated: use the declarative management `com.apple.configuration.intelligence.settings` configuration.",
     "keywords": [
       "Restrictions"
     ],
@@ -33573,6 +34005,15 @@
     "categoryName": "Restrictions"
   },
   {
+    "settingId": "com.apple.applicationaccess_forcecaptiveportalconnectionfromlockscreen",
+    "settingName": "Force Captive Portal Connection From Lock Screen",
+    "settingDescription": "If `true`, the system allows use of the captive WiFi portal at login or unlock.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
     "settingId": "com.apple.applicationaccess_allowfilesusbdriveaccess",
     "settingName": "Allow Files USB Drive Access",
     "settingDescription": "If false, prevents connecting to any connected USB devices in the Files app. Requires a supervised device. Available in iOS 13.1 and later.",
@@ -33593,7 +34034,7 @@
   {
     "settingId": "com.apple.applicationaccess_allowedexternalintelligenceworkspaceids",
     "settingName": "Allowed External Intelligence Workspace IDs (Deprecated)",
-    "settingDescription": "An array of strings, but currently restricted to a single element. If present, Apple Intelligence allows use of only the given external integration workspace ID, and requires a sign-in to make requests. The user is required to sign in to integrations that support signing in. Multiple payloads combine using an intersect operation. This means the allowed set of workspace IDs can become the empty set if multiple payloads specify conflicting values.",
+    "settingDescription": "An array of strings, but currently restricted to a single element. If present, Apple Intelligence allows use of only the given external integration workspace ID, and requires a sign-in to make requests. The user is required to sign in to integrations that support signing in. Multiple payloads combine using an intersect operation. This means the allowed set of workspace IDs can become the empty set if multiple payloads specify conflicting values.\n\nDeprecated: use the declarative management `com.apple.configuration.external-intelligence.settings` configuration.",
     "keywords": [
       "Restrictions"
     ],
@@ -33728,7 +34169,7 @@
   {
     "settingId": "com.apple.applicationaccess_allowrosettausageawareness",
     "settingName": "Allow Rosetta Usage Awareness",
-    "settingDescription": "If `false`, disables Rosetta usage awareness. When Rosetta usage awareness is active, a pop-up dialog is displayed to the user when an app that is using Rosetta is launched. The pop-up dialog indicates that Rosetta will be removed in a future version of the operating system so that the user can contact the app vendor regarding a replacement for the current app.",
+    "settingDescription": "If `false`, disables Rosetta usage awareness. When Rosetta usage awareness is active, the device displays a pop-up dialog to the user when launching an app that uses Rosetta. The pop-up dialog indicates that Rosetta will be removed in a future version of the operating system so that the user can contact the app vendor regarding a replacement for the current app.",
     "keywords": [
       "Restrictions"
     ],
@@ -33742,6 +34183,42 @@
       "Restrictions"
     ],
     "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "app_allowed_allowedapps",
+    "settingName": "Allowed Apps",
+    "settingDescription": "If present, the device only shows or launches apps with bundle IDs in the array. Include the value `com.apple.webapp` to allow all webclips. This applies to App Store apps, marketplace apps, and locally installed apps (using Configurator, Xcode, and so forth).",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "app_allowed_allowedbinaries_item_pathprefix",
+    "settingName": "Path Prefix",
+    "settingDescription": "The file system path prefix to match binaries.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "app_privacy_permissiondefaults_generickey_localnetwork",
+    "settingName": "Local Network",
+    "settingDescription": "Controls whether an app privacy permission default is set.\n* `None`: No app privacy permission default is set for use of the local network.\n* `Allow`: The app privacy permission default is set to allow use of the local network.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "app_privacy_permissiondefaults_generickey_camera",
+    "settingName": "Camera",
+    "settingDescription": "Controls whether an app privacy permission default is set.\n* `None`: No app privacy permission default is set for use of the camera.\n* `Allow`: The app privacy permission default is set to allow use of the camera.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "com.apple.universalaccess_flashscreen",
@@ -34076,7 +34553,7 @@
   {
     "settingId": "com.apple.fileproviderd_managementknownfoldersyncingallowlist",
     "settingName": "Management Known Folder Syncing Allow List",
-    "settingDescription": "An array of strings representing the composed identifiers of apps. The device allows the corresponding apps to use File Provider extension desktop and documents synchronization. If present, and `ManagementAllowsKnownFolderSyncing` is set to `true`, the device allows only the apps in this list to use desktop and documents synchronization. This key is ignored if `ManagementAllowsKnownFolderSyncing` is set to `false`. This setting does not impact the ability for apps to use File Provider extension volume access. The format of the app identifiers is \"Bundle-ID (Team-ID)\", for example `com.example.app (ABCD1234)`.",
+    "settingDescription": "An array of strings representing the composed identifiers of apps. The device allows the corresponding apps to use File Provider extension desktop and documents synchronization. If present, and `ManagementAllowsKnownFolderSyncing` is set to `true`, the device allows only the apps in this list to use desktop and documents synchronization. This key is ignored if `ManagementAllowsKnownFolderSyncing` is set to `false`. This setting doesn't impact the ability for apps to use File Provider extension volume access. The format of the app identifiers is \"Bundle-ID (Team-ID)\", for example `com.example.app (ABCD1234)`.",
     "keywords": [
       "File Provider"
     ],
@@ -35667,6 +36144,20 @@
       "WebRtcUdpPortRange",
       "Restrict the range of local UDP ports used by WebRTC",
       "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_allowsocketpoolsizerandomizationforproxies",
+    "settingName": "Allow socket pool size randomization for proxies (User)",
+    "settingDescription": "Controls whether Microsoft Edge randomizes socket pool sizes for proxy connections.\n\nSocket pool size randomization is a security mechanism that helps prevent attackers from using deterministic connection limits to infer cross-site information. For example, if the configured proxy socket pool limit is 128, Microsoft Edge can randomly set the effective limit between 128 and 256. This can allow up to twice as many proxy connections, though the expected increase is closer to 1.2x in practice.\n\nThis policy affects the limits configured by the 'MaxConnectionsPerProxy' (Maximum number of concurrent connections to the proxy server for non-WebSocket requests) and 'MaxConnectionsPerProxyForWebSocket' (Maximum number of concurrent connections to the proxy server for WebSocket requests) policies. When this policy is enabled, the effective upper limit can be randomized up to 2x the values configured by those policies.\n\nIf you enable this policy or don't configure it, Microsoft Edge enables socket pool size randomization for proxy connections.\n\nIf you disable this policy, Microsoft Edge disables socket pool size randomization for proxy connections. The values configured by 'MaxConnectionsPerProxy' and 'MaxConnectionsPerProxyForWebSocket' are used as the upper limits without randomization.",
+    "keywords": [
+      "AllowSocketPoolSizeRandomizationForProxies",
+      "Allow socket pool size randomization for proxies",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
       "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
@@ -38037,6 +38528,21 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edgev96~policy~microsoft_edge~typosquattingchecker_typosquattingcheckerenabled",
+    "settingName": "Configure Edge Website Typo Protection (User)",
+    "settingDescription": "This policy setting lets you configure whether to turn on Edge Website Typo Protection. Edge Website Typo Protection provides warning messages to help protect your users from potential typosquatting sites. By default, Edge Website Typo Protection is turned on.\r\n\r\nIf you enable this policy, Edge Website Typo Protection is turned on.\r\n\r\nIf you disable this policy, Edge Website Typo Protection is turned off.\r\n\r\nIf you don't configure this policy, Edge Website Typo Protection is turned on but users can choose whether to use Edge Website Typo Protection.",
+    "keywords": [
+      "TyposquattingCheckerEnabled",
+      "Configure Edge TyposquattingChecker",
+      "Configure Edge Website Typo Protection",
+      "\\Microsoft Edge\\TyposquattingChecker settings",
+      "Microsoft Edge\\TyposquattingChecker settings",
+      "Typosquatting Checker settings",
+      "Edge Website Typo Protection settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "user_vendor_msft_policy_config_microsoft_edgev96~policy~microsoft_edge~printing_printrasterizepdfdpi",
     "settingName": "Print Rasterize PDF DPI (User)",
     "settingDescription": "Controls print image resolution when Microsoft Edge prints PDFs with rasterization.\r\n\r\nWhen printing a PDF using the Print to image option, it can be beneficial to specify a print resolution other than a device's printer setting or the PDF default.  A high resolution will significantly increase the processing and printing time while a low resolution can lead to poor imaging quality.\r\n\r\nIf you set this policy, it allows a particular resolution to be specified for use when rasterizing PDFs for printing.\r\n\r\nIf you set this policy to zero or don't configure it, the system default resolution will be used during rasterization of page images.",
@@ -38374,20 +38880,6 @@
       "Security"
     ],
     "categoryName": "Security"
-  },
-  {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_dataurlinwebworkeropaqueoriginenabled",
-    "settingName": "Enable opaque origins for data URLs in Web Workers (User)",
-    "settingDescription": "This policy controls whether Web Workers created from data URLs are assigned\na unique opaque origin.\n\nWeb Workers can be created using a data URL that contains the worker script.\nPreviously, these workers inherited the origin of the page that created them,\nwhich allowed them to access the same origin-bound data, such as local\nstorage and cookies.\n\nStarting in Microsoft Edge version\n149, Web Workers created from data URLs are assigned a unique opaque origin\nby default. This behavior improves security and aligns with the HTML\nspecification by isolating these workers from the page that created them.\n\nIf you enable this policy or don't configure it, Web Workers created from\ndata URLs are assigned a unique opaque origin.\n\nIf you disable this policy, Web Workers created from data URLs inherit the\norigin of the page that created them. Use this setting only as a temporary\nmitigation for compatibility issues with internal applications that depend\non the legacy behavior.\n\nThis policy is temporary and will be removed in Microsoft Edge\nversion 157.",
-    "keywords": [
-      "DataUrlInWebWorkerOpaqueOriginEnabled",
-      "Enable opaque origins for data URLs in Web Workers",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.apple.mcx_disableguestaccount",
@@ -39440,6 +39932,42 @@
     "categoryName": "Restrictions"
   },
   {
+    "settingId": "app_privacy",
+    "settingName": "Privacy",
+    "settingDescription": "The dictionary of app settings.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "app_privacy_permissiondefaults",
+    "settingName": "Permission Defaults",
+    "settingDescription": "The dictionary of app privacy permission defaults. Each key in the dictionary is an app identifier. The dictionary values represent the permission defaults that the device applies for each matching app.\n\nIn iOS, the app identifier is a bundle ID, for example, \"com.example.app\".\n\nIn macOS, the app identifier is a composed identifier. The format of the composed identifier is either \"Bundle-ID\", \"Bundle-ID (Team-ID)\", or \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the app. \"Team-ID\" is the team identifier from the app's code signature. \"Designated-Requirement\" is the designated requirement string from the code signature of the app. For example, \"com.example.app\" for the bundle ID format, \"com.example.app (ABCD1234)\" for the team ID format, or \"com.example.app {anchor apple generic}\" for the designated requirement format. The device only applies defaults for an app if its code signature matches the composed identifier.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "app_allowed_deniedbinaries_item_signingstate",
+    "settingName": "Signing State",
+    "settingDescription": "The code signing state to match binaries.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "app_allowed_deniedbinaries_item_cdhash",
+    "settingName": "CD Hash",
+    "settingDescription": "The code signature code directory hash of the binary.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "com.apple.universalaccess_mousedriver",
     "settingName": "Mouse Driver",
     "settingDescription": "If true, enables Mouse Keys in the Mouse & Trackpad options.",
@@ -39643,7 +40171,7 @@
   {
     "settingId": "com.apple.fileproviderd_managementallowsknownfoldersyncing",
     "settingName": "Management Allows Known Folder Syncing",
-    "settingDescription": "If `false`, the device prevents the File Provider extension from using desktop and documents synchronization in any app. This does not impact the ability for apps to utilize the File Provider extension for file and folder syncing with remote storage.",
+    "settingDescription": "If `false`, the device prevents the File Provider extension from using desktop and documents synchronization in any app. This doesn't impact the ability for apps to utilize the File Provider extension for file and folder syncing with remote storage.",
     "keywords": [
       "File Provider"
     ],
@@ -40117,6 +40645,60 @@
       "Antivirus engine"
     ],
     "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_dataurlinwebworkeropaqueoriginenabled",
+    "settingName": "Enable opaque origins for data URLs in Web Workers (User)",
+    "settingDescription": "This policy controls whether Web Workers created from data URLs are assigned\na unique opaque origin.\n\nWeb Workers can be created using a data URL that contains the worker script.\nPreviously, these workers inherited the origin of the page that created them,\nwhich allowed them to access the same origin-bound data, such as local\nstorage and cookies.\n\nStarting in Microsoft Edge version\n149, Web Workers created from data URLs are assigned a unique opaque origin\nby default. This behavior improves security and aligns with the HTML\nspecification by isolating these workers from the page that created them.\n\nIf you enable this policy or don't configure it, Web Workers created from\ndata URLs are assigned a unique opaque origin.\n\nIf you disable this policy, Web Workers created from data URLs inherit the\norigin of the page that created them. Use this setting only as a temporary\nmitigation for compatibility issues with internal applications that depend\non the legacy behavior.\n\nThis policy is temporary and will be removed in Microsoft Edge\nversion 157.",
+    "keywords": [
+      "DataUrlInWebWorkerOpaqueOriginEnabled",
+      "Enable opaque origins for data URLs in Web Workers",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_defaultlocalfontssetting_defaultlocalfontssetting",
+    "settingName": "Default Local Fonts permission setting",
+    "settingDescription": "",
+    "keywords": [
+      "DefaultLocalFontsSetting",
+      "Default Local Fonts permission setting",
+      "\\Microsoft Edge\\Content settings",
+      "Microsoft Edge\\Content settings",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_defaultlocalfontssetting_defaultlocalfontssetting",
+    "settingName": "Default Local Fonts permission setting (User)",
+    "settingDescription": "",
+    "keywords": [
+      "DefaultLocalFontsSetting",
+      "Default Local Fonts permission setting",
+      "\\Microsoft Edge\\Content settings",
+      "Microsoft Edge\\Content settings",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_defaultlocalfontssetting",
+    "settingName": "Default Local Fonts permission setting",
+    "settingDescription": "Setting this policy controls the default behavior for the local fonts permission.\n\nIf you set the policy to BlockLocalFonts (value 2), access to local fonts is denied by default. Sites are prevented from accessing information about local fonts.\n\nIf you set the policy to AskLocalFonts (value 3), users are prompted when a site requests access to local fonts. If permission is granted, the site can access information about local fonts.\n\nIf a site is included in 'LocalFontsAllowedForUrls' (Allow Local Fonts permission on these sites) or 'LocalFontsBlockedForUrls' (Block Local Fonts permission on these sites), then that setting overrides the value set for this policy.\n\nIf you don't configure this policy, users are prompted by default and can change this setting.\n\nPolicy options mapping:\n\n* BlockLocalFonts (2) = Denies the Local Fonts permission on all sites by default\n\n* AskLocalFonts (3) = Ask every time a site wants to obtain the Local Fonts permission\n\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "DefaultLocalFontsSetting",
+      "Default Local Fonts permission setting",
+      "\\Microsoft Edge\\Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~smartscreen_smartscreenallowlistdomains",
@@ -41579,20 +42161,6 @@
     "categoryName": "Security"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_dataurlinwebworkeropaqueoriginenabled",
-    "settingName": "Enable opaque origins for data URLs in Web Workers",
-    "settingDescription": "This policy controls whether Web Workers created from data URLs are assigned\na unique opaque origin.\n\nWeb Workers can be created using a data URL that contains the worker script.\nPreviously, these workers inherited the origin of the page that created them,\nwhich allowed them to access the same origin-bound data, such as local\nstorage and cookies.\n\nStarting in Microsoft Edge version\n149, Web Workers created from data URLs are assigned a unique opaque origin\nby default. This behavior improves security and aligns with the HTML\nspecification by isolating these workers from the page that created them.\n\nIf you enable this policy or don't configure it, Web Workers created from\ndata URLs are assigned a unique opaque origin.\n\nIf you disable this policy, Web Workers created from data URLs inherit the\norigin of the page that created them. Use this setting only as a temporary\nmitigation for compatibility issues with internal applications that depend\non the legacy behavior.\n\nThis policy is temporary and will be removed in Microsoft Edge\nversion 157.",
-    "keywords": [
-      "DataUrlInWebWorkerOpaqueOriginEnabled",
-      "Enable opaque origins for data URLs in Web Workers",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.apple.familycontrols.timelimits.v2_time-limits_weekend-curfew_end",
     "settingName": "End",
     "settingDescription": "The curfew end time, in the format %d:%d:%d.",
@@ -42055,6 +42623,15 @@
     "categoryName": "Preferences"
   },
   {
+    "settingId": "sirisettings_allowsiriai",
+    "settingName": "Allow Siri AI",
+    "settingDescription": "If `false`, disables the Siri AI specific features of Siri.",
+    "keywords": [
+      "Siri Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "sirisettings_allowwhilelocked",
     "settingName": "Allow While Locked",
     "settingDescription": "If `false`, disables Siri while locked.",
@@ -42479,7 +43056,7 @@
   {
     "settingId": "com.apple.extensiblesso_teamidentifier",
     "settingName": "Team Identifier",
-    "settingDescription": "The team identifier of the app extension. This key is required on macOS and ignored elsewhere.",
+    "settingDescription": "The team identifier of the app extension. The device requires this key on macOS and ignores it elsewhere.",
     "keywords": [
       "Extensible Single Sign On",
       "Extensible Single Sign On (SSO)"
@@ -42955,6 +43532,20 @@
       "Authentication"
     ],
     "categoryName": "Authentication"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_dataurlinwebworkeropaqueoriginenabled",
+    "settingName": "Enable opaque origins for data URLs in Web Workers",
+    "settingDescription": "This policy controls whether Web Workers created from data URLs are assigned\na unique opaque origin.\n\nWeb Workers can be created using a data URL that contains the worker script.\nPreviously, these workers inherited the origin of the page that created them,\nwhich allowed them to access the same origin-bound data, such as local\nstorage and cookies.\n\nStarting in Microsoft Edge version\n149, Web Workers created from data URLs are assigned a unique opaque origin\nby default. This behavior improves security and aligns with the HTML\nspecification by isolating these workers from the page that created them.\n\nIf you enable this policy or don't configure it, Web Workers created from\ndata URLs are assigned a unique opaque origin.\n\nIf you disable this policy, Web Workers created from data URLs inherit the\norigin of the page that created them. Use this setting only as a temporary\nmitigation for compatibility issues with internal applications that depend\non the legacy behavior.\n\nThis policy is temporary and will be removed in Microsoft Edge\nversion 157.",
+    "keywords": [
+      "DataUrlInWebWorkerOpaqueOriginEnabled",
+      "Enable opaque origins for data URLs in Web Workers",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_relaunchnotification_relaunchnotification",
@@ -44857,34 +45448,6 @@
     "categoryName": "Privacy"
   },
   {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsallowedforurls",
-    "settingName": "Allow Local Fonts permission on these sites (User)",
-    "settingDescription": "Specifies a list of site URL patterns for which the local fonts permission is automatically granted. Sites in this list can access information about local fonts.\n\nFor detailed information about valid URL patterns, see https://go.microsoft.com/fwlink/?linkid=2095322. Wildcards, *, are supported. This policy matches based on origin only; any path in the URL pattern is ignored.\n\nIf a site isn't included in this policy, the 'DefaultLocalFontsSetting' (Default Local Fonts permission setting) policy applies if configured. Otherwise, the browser default behavior applies, and users can choose the permission on a per-site basis.\n\nExample value:\n\nhttps://www.example.com\n[*.]example.edu",
-    "keywords": [
-      "LocalFontsAllowedForUrls",
-      "Allow Local Fonts permission on these sites",
-      "\\Microsoft Edge\\Content settings",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Content settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsallowedforurls",
-    "settingName": "Allow Local Fonts permission on these sites",
-    "settingDescription": "Specifies a list of site URL patterns for which the local fonts permission is automatically granted. Sites in this list can access information about local fonts.\n\nFor detailed information about valid URL patterns, see https://go.microsoft.com/fwlink/?linkid=2095322. Wildcards, *, are supported. This policy matches based on origin only; any path in the URL pattern is ignored.\n\nIf a site isn't included in this policy, the 'DefaultLocalFontsSetting' (Default Local Fonts permission setting) policy applies if configured. Otherwise, the browser default behavior applies, and users can choose the permission on a per-site basis.\n\nExample value:\n\nhttps://www.example.com\n[*.]example.edu",
-    "keywords": [
-      "LocalFontsAllowedForUrls",
-      "Allow Local Fonts permission on these sites",
-      "\\Microsoft Edge\\Content settings",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Content settings"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.apple.caldav.account_caldavprincipalurl",
     "settingName": "Cal DAV Principal URL",
     "settingDescription": "The base URL to the user’s calendar.",
@@ -45342,8 +45905,8 @@
   },
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_microphone",
-    "settingName": "Microphone",
-    "settingDescription": "A system microphone. Access to the microphone can't be given in a profile; it can only be denied.",
+    "settingName": "Microphone (deprecated)",
+    "settingDescription": "A system microphone. A profile can't grant access to the microphone; it can only deny it.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -45861,6 +46424,15 @@
     "categoryName": "Restrictions"
   },
   {
+    "settingId": "app_privacy_permissiondefaults_generickey_dictation",
+    "settingName": "Dictation",
+    "settingDescription": "Controls whether an app privacy permission default is set.\n* `None`: No app privacy permission default is set for use of dictation.\n* `Allow`: The app privacy permission default is set to allow use of dictation.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "com.apple.universalaccess_contrast",
     "settingName": "Contrast",
     "settingDescription": "The contrast value in the Display options.",
@@ -46059,6 +46631,15 @@
       "Dock"
     ],
     "categoryName": "User Experience"
+  },
+  {
+    "settingId": "safari_privacy_permissiondefaults_generickey_keytobereplaced",
+    "settingName": "Permission Defaults",
+    "settingDescription": "The dictionary of website permission defaults. Each key in the dictionary represents a single website, or a website and its sub-domains. The dictionary values represent the permission defaults that Safari applies for each website that matches the key.\n\nSafari supports the following patterns for the website key:\n\n- A specific domain such as \"example.com\" or \"www.example.com\". The permission defaults apply to that website only.\n- A wildcard domain that uses a single \"\\*\" character as a prefix for the domain, such as \"\\*example.com\". The permission defaults apply to both the exact domain \"example.com\", and any sub-domains such as \"www.example.com\". It won't match other domains with a similar string suffix such as \"myexample.com\".\n\nWhen multiple patterns match a website, Safari uses the most precise pattern. For example, for the website \"www.example.com\", if rules \"www.example.com\" and \"*example.com\" match, Safari uses the former.",
+    "keywords": [
+      "Safari Browser"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "keyboardsettings_allowspellcheck",
@@ -46493,6 +47074,34 @@
       "Network protection"
     ],
     "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsallowedforurls",
+    "settingName": "Allow Local Fonts permission on these sites (User)",
+    "settingDescription": "Specifies a list of site URL patterns for which the local fonts permission is automatically granted. Sites in this list can access information about local fonts.\n\nFor detailed information about valid URL patterns, see https://go.microsoft.com/fwlink/?linkid=2095322. Wildcards, *, are supported. This policy matches based on origin only; any path in the URL pattern is ignored.\n\nIf a site isn't included in this policy, the 'DefaultLocalFontsSetting' (Default Local Fonts permission setting) policy applies if configured. Otherwise, the browser default behavior applies, and users can choose the permission on a per-site basis.\n\nExample value:\n\nhttps://www.example.com\n[*.]example.edu",
+    "keywords": [
+      "LocalFontsAllowedForUrls",
+      "Allow Local Fonts permission on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~contentsettings_localfontsallowedforurls",
+    "settingName": "Allow Local Fonts permission on these sites",
+    "settingDescription": "Specifies a list of site URL patterns for which the local fonts permission is automatically granted. Sites in this list can access information about local fonts.\n\nFor detailed information about valid URL patterns, see https://go.microsoft.com/fwlink/?linkid=2095322. Wildcards, *, are supported. This policy matches based on origin only; any path in the URL pattern is ignored.\n\nIf a site isn't included in this policy, the 'DefaultLocalFontsSetting' (Default Local Fonts permission setting) policy applies if configured. Otherwise, the browser default behavior applies, and users can choose the permission on a per-site basis.\n\nExample value:\n\nhttps://www.example.com\n[*.]example.edu",
+    "keywords": [
+      "LocalFontsAllowedForUrls",
+      "Allow Local Fonts permission on these sites",
+      "\\Microsoft Edge\\Content settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Content settings"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_enabledeprecatedwebplatformfeatures_enabledeprecatedwebplatformfeaturesdesc",
@@ -48079,20 +48688,6 @@
     "categoryName": "Security"
   },
   {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_copilotaddressbarsuggestionsenabled",
-    "settingName": "Enable Copilot address bar suggestions (User)",
-    "settingDescription": "This policy controls whether Copilot chat suggestions appear in the address bar of Microsoft Edge.\n\nIf you enable this policy or don't configure it, Copilot chat suggestions appear in the address bar.\n\nIf you disable this policy, Copilot chat suggestions don't appear in the address bar.",
-    "keywords": [
-      "CopilotAddressBarSuggestionsEnabled",
-      "Enable Copilot address bar suggestions",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "extensionsettings_managedextensions",
     "settingName": "Managed Extensions",
     "settingDescription": "Extensions being managed",
@@ -48549,7 +49144,7 @@
   {
     "settingId": "com.apple.tcc.configuration-profile-policy_services_screencapture",
     "settingName": "Screen Capture",
-    "settingDescription": "Allows the application to capture (read) the contents of the system display. Access to the contents can't be given in a profile; it can only be denied.",
+    "settingDescription": "Allows the application to capture (read) the contents of the system display. A profile can't grant access to the contents; it can only deny it.",
     "keywords": [
       "Privacy Preferences Policy Control"
     ],
@@ -48948,6 +49543,15 @@
     "categoryName": "Restrictions"
   },
   {
+    "settingId": "com.apple.applicationaccess_forcewificonfigurationonlockscreen",
+    "settingName": "Force Wifi Configuration On Lock Screen",
+    "settingDescription": "If `true`, the system allows the user to select WiFi networks at login or unlock.",
+    "keywords": [
+      "Restrictions"
+    ],
+    "categoryName": "Restrictions"
+  },
+  {
     "settingId": "com.apple.applicationaccess_enforcedfingerprinttimeout",
     "settingName": "Enforced Fingerprint Timeout",
     "settingDescription": "The value, in seconds, after which the fingerprint unlock will require a password to authenticate. The default value is 48 hours.",
@@ -48955,6 +49559,15 @@
       "Restrictions"
     ],
     "categoryName": "Restrictions"
+  },
+  {
+    "settingId": "app_allowed_allowedbinaries_item_teamid",
+    "settingName": "Team ID",
+    "settingDescription": "The code signature team identifier of the binary. Use the value \"*APPLE*\" instead of an empty string for Apple binaries with an empty team identifier.",
+    "keywords": [
+      "App Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "com.apple.universalaccess_slowkeydelay",
@@ -49608,6 +50221,32 @@
     "categoryName": "Authentication"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_cpuperformancetieroverride_cpuperformancetieroverride",
+    "settingName": "Override for the CPU performance tier:",
+    "settingDescription": "",
+    "keywords": [
+      "CpuPerformanceTierOverride",
+      "Override for the CPU performance tier",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_copilotaddressbarsuggestionsenabled",
+    "settingName": "Enable Copilot address bar suggestions (User)",
+    "settingDescription": "This policy controls whether Copilot chat suggestions appear in the address bar of Microsoft Edge.\n\nIf you enable this policy or don't configure it, Copilot chat suggestions appear in the address bar.\n\nIf you disable this policy, Copilot chat suggestions don't appear in the address bar.",
+    "keywords": [
+      "CopilotAddressBarSuggestionsEnabled",
+      "Enable Copilot address bar suggestions",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~passwordmanager_passwordprotectionwarningtrigger",
     "settingName": "Configure password protection warning trigger",
     "settingDescription": "Allows you to control when to trigger password protection warning. Password protection alerts users when they reuse their protected password on potentially suspicious sites.\r\n\r\nYou can use the 'PasswordProtectionLoginURLs' (Configure the list of enterprise login URLs where password protection service should capture fingerprint of password) and 'PasswordProtectionChangePasswordURL' (Configure the change password URL) policies to configure which passwords to protect.\r\n\r\nExemptions: Passwords for the sites listed in 'PasswordProtectionLoginURLs' and 'PasswordProtectionChangePasswordURL', as well as for the sites listed in 'SmartScreenAllowListDomains' (Configure the list of domains for which Microsoft Defender SmartScreen won't trigger warnings), will not trigger a password-protection warning.\r\n\r\nSet to 'PasswordProtectionWarningOff' (0) to not show password protection warningss.\r\n\r\nSet to 'PasswordProtectionWarningOnPasswordReuse' (1) to show password protection warnings when the user reuses their protected password on a non-allowlisted site.\r\n\r\nIf you disable or don't configure this policy, then the warning trigger is not shown.\r\n\r\n* 0 = Password protection warning is off.\r\n\r\n* 1 = Password protection warning is triggered by password reuse.",
@@ -49868,6 +50507,20 @@
       "\\Microsoft Edge\\Extensions",
       "Microsoft Edge\\Extensions",
       "Extensions"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_strictmimetypecheckforworkerscriptsenabled",
+    "settingName": "Enable strict MIME type checking for worker scripts (User)",
+    "settingDescription": "This policy controls whether strict MIME type checking is used for worker scripts.\n\nIf you enable or don't configure this policy, worker scripts use strict MIME type checking for JavaScript. Worker scripts that use legacy MIME types are rejected.\n\nIf you disable this policy, worker scripts use lax MIME type checking. This allows worker scripts that use legacy MIME types, such as text/ascii, to continue to load and run.\n\nBrowsers traditionally used lax MIME type checking, which allowed JavaScript resources to load with several legacy MIME types. This behavior can create security risks by allowing resources to load as scripts when they weren't intended to be used that way.\n\nMicrosoft Edge uses strict MIME type checking by default. Enabling this policy follows the default behavior. Disabling this policy lets admins temporarily retain the legacy behavior for compatibility.\n\nFor more information about JavaScript and ECMAScript media types, see https://html.spec.whatwg.org/multipage/scripting.html#scriptingLanguage.",
+    "keywords": [
+      "StrictMimetypeCheckForWorkerScriptsEnabled",
+      "Enable strict MIME type checking for worker scripts",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
   },

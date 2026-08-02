@@ -1,17 +1,5 @@
 [
   {
-    "settingId": "device_vendor_msft_policy_config_winre_enablewinre",
-    "settingName": "Enable Windows Recovery Environment",
-    "settingDescription": "",
-    "keywords": [
-      "WinRE",
-      "Recovery",
-      "Configuration",
-      "Win RE"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_authenticationmethod",
     "settingName": "Intune authentication method",
     "settingDescription": "If your organization uses multifactor authentication, select Setup Assistant with modern authentication, which prompts users to authenticate based on settings in Entra.",
@@ -219,6 +207,18 @@
       "Description",
       "System Setting",
       "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_winre_enablewinre",
+    "settingName": "Enable Windows Recovery Environment",
+    "settingDescription": "",
+    "keywords": [
+      "WinRE",
+      "Recovery",
+      "Configuration",
+      "Win RE"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1089,6 +1089,15 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "linux_mdatp_managed_advancedsettings_memoryscan",
+    "settingName": "Memory scan (preview) (Requires Behavior Monitoring for protection)",
+    "settingDescription": "Detects and blocks fileless and in-memory threats at runtime",
+    "keywords": [
+      "Advanced Protection"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "device_vendor_msft_policy_privilegemanagement_elevationclientsettings_defaultelevationresponse_validation",
     "settingName": "Validation",
     "settingDescription": "",
@@ -1802,19 +1811,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_winre_quickmachinerecovery_allowautoremediation",
-    "settingName": "Allow auto remediation",
-    "settingDescription": "",
-    "keywords": [
-      "WinRE",
-      "Recovery",
-      "Quick Machine Recovery",
-      "Auto Remediation",
-      "Win RE"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_accountsettings_prefillaccountinfo",
     "settingName": "Prefill account info",
     "settingDescription": "If you select 'Yes', the account name and full name must be configured. Not configured allows the end user to configure these fields.",
@@ -2032,6 +2028,19 @@
       "Setting Type",
       "System Setting",
       "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_winre_quickmachinerecovery_allowautoremediation",
+    "settingName": "Allow auto remediation",
+    "settingDescription": "",
+    "keywords": [
+      "WinRE",
+      "Recovery",
+      "Quick Machine Recovery",
+      "Auto Remediation",
+      "Win RE"
     ],
     "categoryName": "Uncategorized"
   },

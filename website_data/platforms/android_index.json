@@ -420,6 +420,20 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_cpuperformancetieroverride",
+    "settingName": "Override for the CPU performance tier (User)",
+    "settingDescription": "This policy allows you to override the value returned by the CPU Performance API (that is, navigator.cpuPerformance).\n\nIf you enable this policy, the value of navigator.cpuPerformance is overridden with the specified value.\n\nIf you don’t configure this policy, the default performance tier calculation is used.\n\nYou can specify a value from 0 through 4.\n\nFor more information, see https://github.com/WICG/cpu-performance.",
+    "keywords": [
+      "CpuPerformanceTierOverride",
+      "Override for the CPU performance tier",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_developertoolsavailability_developertoolsavailability",
     "settingName": "Control where developer tools can be used (Device)",
     "settingDescription": "",
@@ -2498,6 +2512,20 @@
       "RelaunchNotificationPeriod",
       "Set the time period for update notifications",
       "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_restrictbackgroundfetchfromserviceworkerenabled",
+    "settingName": "Restrict Background Fetch API when called from a Service Worker",
+    "settingDescription": "This policy controls whether background fetch requests from Service Workers are restricted. If a feature that downloads files in the background is affected, this policy may be relevant.\n\nIf you enable this policy or don't configure it, the restriction is active, and background fetch requests from Service Worker contexts may be blocked.\n\nIf you disable this policy, the restriction is bypassed, allowing Service Workers to make background fetch requests.\n\nThis policy is temporary and will be removed after Microsoft Edge version 152.",
+    "keywords": [
+      "RestrictBackgroundFetchFromServiceWorkerEnabled",
+      "Restrict Background Fetch API when called from a Service Worker",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
       "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
@@ -6266,20 +6294,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_copilotaddressbarsuggestionsenabled",
-    "settingName": "Enable Copilot address bar suggestions",
-    "settingDescription": "This policy controls whether Copilot chat suggestions appear in the address bar of Microsoft Edge.\n\nIf you enable this policy or don't configure it, Copilot chat suggestions appear in the address bar.\n\nIf you disable this policy, Copilot chat suggestions don't appear in the address bar.",
-    "keywords": [
-      "CopilotAddressBarSuggestionsEnabled",
-      "Enable Copilot address bar suggestions",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsdaily_starttime",
     "settingName": "Start time",
     "settingDescription": null,
@@ -6750,6 +6764,60 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_copilotaddressbarsuggestionsenabled",
+    "settingName": "Enable Copilot address bar suggestions",
+    "settingDescription": "This policy controls whether Copilot chat suggestions appear in the address bar of Microsoft Edge.\n\nIf you enable this policy or don't configure it, Copilot chat suggestions appear in the address bar.\n\nIf you disable this policy, Copilot chat suggestions don't appear in the address bar.",
+    "keywords": [
+      "CopilotAddressBarSuggestionsEnabled",
+      "Enable Copilot address bar suggestions",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_cpuperformancetieroverride_cpuperformancetieroverride",
+    "settingName": "Override for the CPU performance tier: (User)",
+    "settingDescription": "",
+    "keywords": [
+      "CpuPerformanceTierOverride",
+      "Override for the CPU performance tier",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_cpuperformancetieroverride",
+    "settingName": "Override for the CPU performance tier",
+    "settingDescription": "This policy allows you to override the value returned by the CPU Performance API (that is, navigator.cpuPerformance).\n\nIf you enable this policy, the value of navigator.cpuPerformance is overridden with the specified value.\n\nIf you don’t configure this policy, the default performance tier calculation is used.\n\nYou can specify a value from 0 through 4.\n\nFor more information, see https://github.com/WICG/cpu-performance.",
+    "keywords": [
+      "CpuPerformanceTierOverride",
+      "Override for the CPU performance tier",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_restrictbackgroundfetchfromserviceworkerenabled",
+    "settingName": "Restrict Background Fetch API when called from a Service Worker (User)",
+    "settingDescription": "This policy controls whether background fetch requests from Service Workers are restricted. If a feature that downloads files in the background is affected, this policy may be relevant.\n\nIf you enable this policy or don't configure it, the restriction is active, and background fetch requests from Service Worker contexts may be blocked.\n\nIf you disable this policy, the restriction is bypassed, allowing Service Workers to make background fetch requests.\n\nThis policy is temporary and will be removed after Microsoft Edge version 152.",
+    "keywords": [
+      "RestrictBackgroundFetchFromServiceWorkerEnabled",
+      "Restrict Background Fetch API when called from a Service Worker",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_securitykeypermitattestation_securitykeypermitattestationdesc",
     "settingName": "Websites or domains that don't need permission to use direct Security Key attestation (User)",
     "settingDescription": "",
@@ -6901,6 +6969,20 @@
       "ComponentUpdatesEnabled",
       "Enable component updates in Microsoft Edge",
       "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_strictmimetypecheckforworkerscriptsenabled",
+    "settingName": "Enable strict MIME type checking for worker scripts",
+    "settingDescription": "This policy controls whether strict MIME type checking is used for worker scripts.\n\nIf you enable or don't configure this policy, worker scripts use strict MIME type checking for JavaScript. Worker scripts that use legacy MIME types are rejected.\n\nIf you disable this policy, worker scripts use lax MIME type checking. This allows worker scripts that use legacy MIME types, such as text/ascii, to continue to load and run.\n\nBrowsers traditionally used lax MIME type checking, which allowed JavaScript resources to load with several legacy MIME types. This behavior can create security risks by allowing resources to load as scripts when they weren't intended to be used that way.\n\nMicrosoft Edge uses strict MIME type checking by default. Enabling this policy follows the default behavior. Disabling this policy lets admins temporarily retain the legacy behavior for compatibility.\n\nFor more information about JavaScript and ECMAScript media types, see https://html.spec.whatwg.org/multipage/scripting.html#scriptingLanguage.",
+    "keywords": [
+      "StrictMimetypeCheckForWorkerScriptsEnabled",
+      "Enable strict MIME type checking for worker scripts",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
       "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
@@ -9124,6 +9206,20 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_allowsocketpoolsizerandomizationforproxies",
+    "settingName": "Allow socket pool size randomization for proxies",
+    "settingDescription": "Controls whether Microsoft Edge randomizes socket pool sizes for proxy connections.\n\nSocket pool size randomization is a security mechanism that helps prevent attackers from using deterministic connection limits to infer cross-site information. For example, if the configured proxy socket pool limit is 128, Microsoft Edge can randomly set the effective limit between 128 and 256. This can allow up to twice as many proxy connections, though the expected increase is closer to 1.2x in practice.\n\nThis policy affects the limits configured by the 'MaxConnectionsPerProxy' (Maximum number of concurrent connections to the proxy server for non-WebSocket requests) and 'MaxConnectionsPerProxyForWebSocket' (Maximum number of concurrent connections to the proxy server for WebSocket requests) policies. When this policy is enabled, the effective upper limit can be randomized up to 2x the values configured by those policies.\n\nIf you enable this policy or don't configure it, Microsoft Edge enables socket pool size randomization for proxy connections.\n\nIf you disable this policy, Microsoft Edge disables socket pool size randomization for proxy connections. The values configured by 'MaxConnectionsPerProxy' and 'MaxConnectionsPerProxyForWebSocket' are used as the upper limits without randomization.",
+    "keywords": [
+      "AllowSocketPoolSizeRandomizationForProxies",
+      "Allow socket pool size randomization for proxies",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_allowdeletingbrowserhistory",
     "settingName": "Enable deleting browser and download history",
     "settingDescription": "Enables deleting browser history and download history and prevents users from changing this setting.\r\n\r\nNote that even with this policy is disabled, the browsing and download history aren't guaranteed to be retained: users can edit or delete the history database files directly, and the browser itself may remove (based on expiration period) or archive any or all history items at any time.\r\n\r\nIf you enable this policy or don't configure it, users can delete the browsing and download history.\r\n\r\nIf you disable this policy, users can't delete browsing and download history.\r\n\r\nIf you enable this policy, don't enable the 'ClearBrowsingDataOnExit' (Clear browsing data when Microsoft Edge closes) policy, because they both deal with deleting data. If you enable both, the 'ClearBrowsingDataOnExit' policy takes precedence and deletes all data when Microsoft Edge closes, regardless of how this policy is configured.",
@@ -11184,6 +11280,20 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_allowsocketpoolsizerandomizationforproxies",
+    "settingName": "Allow socket pool size randomization for proxies (User)",
+    "settingDescription": "Controls whether Microsoft Edge randomizes socket pool sizes for proxy connections.\n\nSocket pool size randomization is a security mechanism that helps prevent attackers from using deterministic connection limits to infer cross-site information. For example, if the configured proxy socket pool limit is 128, Microsoft Edge can randomly set the effective limit between 128 and 256. This can allow up to twice as many proxy connections, though the expected increase is closer to 1.2x in practice.\n\nThis policy affects the limits configured by the 'MaxConnectionsPerProxy' (Maximum number of concurrent connections to the proxy server for non-WebSocket requests) and 'MaxConnectionsPerProxyForWebSocket' (Maximum number of concurrent connections to the proxy server for WebSocket requests) policies. When this policy is enabled, the effective upper limit can be randomized up to 2x the values configured by those policies.\n\nIf you enable this policy or don't configure it, Microsoft Edge enables socket pool size randomization for proxy connections.\n\nIf you disable this policy, Microsoft Edge disables socket pool size randomization for proxy connections. The values configured by 'MaxConnectionsPerProxy' and 'MaxConnectionsPerProxyForWebSocket' are used as the upper limits without randomization.",
+    "keywords": [
+      "AllowSocketPoolSizeRandomizationForProxies",
+      "Allow socket pool size randomization for proxies",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_downloadrestrictions",
     "settingName": "Allow download restrictions",
     "settingDescription": "Configures the type of downloads that Microsoft Edge completely blocks, without letting users override the security decision.\r\n\r\nSet 'Block dangerous downloads' (1) to allow all downloads except for those that carry Microsoft Defender SmartScreen warnings.\r\n\r\nSet 'Block potentially dangerous downloads' (2) to allow all downloads except for those that carry Microsoft Defender SmartScreen warnings of potentially dangerous downloads.\r\n\r\nSet 'Block all downloads' (3) to block all downloads.\r\n\r\nIf you don't configure this policy or set the 'No special restrictions' (0) option, the downloads go through the usual security restrictions based on Microsoft Defender SmartScreen analysis results.\r\n\r\nNote that these restrictions apply to downloads from web page content, as well as the 'download link...' context menu option. These restrictions don't apply to saving or downloading the currently displayed page, nor do they apply to the Save as PDF option from the printing options.\r\n\r\nSee https://go.microsoft.com/fwlink/?linkid=2094934 for more info on Microsoft Defender SmartScreen.\r\n\r\n* 0 = No special restrictions\r\n\r\n* 1 = Block dangerous downloads\r\n\r\n* 2 = Block potentially dangerous downloads\r\n\r\n* 3 = Block all downloads",
@@ -12622,20 +12732,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_dataurlinwebworkeropaqueoriginenabled",
-    "settingName": "Enable opaque origins for data URLs in Web Workers (User)",
-    "settingDescription": "This policy controls whether Web Workers created from data URLs are assigned\na unique opaque origin.\n\nWeb Workers can be created using a data URL that contains the worker script.\nPreviously, these workers inherited the origin of the page that created them,\nwhich allowed them to access the same origin-bound data, such as local\nstorage and cookies.\n\nStarting in Microsoft Edge version\n149, Web Workers created from data URLs are assigned a unique opaque origin\nby default. This behavior improves security and aligns with the HTML\nspecification by isolating these workers from the page that created them.\n\nIf you enable this policy or don't configure it, Web Workers created from\ndata URLs are assigned a unique opaque origin.\n\nIf you disable this policy, Web Workers created from data URLs inherit the\norigin of the page that created them. Use this setting only as a temporary\nmitigation for compatibility issues with internal applications that depend\non the legacy behavior.\n\nThis policy is temporary and will be removed in Microsoft Edge\nversion 157.",
-    "keywords": [
-      "DataUrlInWebWorkerOpaqueOriginEnabled",
-      "Enable opaque origins for data URLs in Web Workers",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.certificatetransparencyenforcementdisabledforcas",
     "settingName": "Disable Certificate Transparency enforcement for a list of subjectPublicKeyInfo hashes",
     "settingDescription": "Disables enforcement of Certificate Transparency requirements for a list of subjectPublicKeyInfo hashes.\n\nThis policy lets you disable Certificate Transparency disclosure requirements for certificate chains that contain certificates with one of the specified subjectPublicKeyInfo hashes. This allows certificates that would otherwise be untrusted because they weren't properly publicly disclosed to still be used for Enterprise hosts.\n\nTo disable Certificate Transparency enforcement when this policy is set, one of the following sets of conditions must be met:\n1. The hash is of the server certificate's subjectPublicKeyInfo.\n2. The hash is of a subjectPublicKeyInfo that appears in a CA certificate in the certificate chain, that CA certificate is constrained via the X.509v3 nameConstraints extension, one or more directoryName nameConstraints are present in the permittedSubtrees, and the directoryName contains an organizationName attribute.\n3. The hash is of a subjectPublicKeyInfo that appears in a CA certificate in the certificate chain, the CA certificate has one or more organizationName attributes in the certificate Subject, and the server's certificate contains the same number of organizationName attributes, in the same order, and with byte-for-byte identical values.\n\nA subjectPublicKeyInfo hash is specified by concatenating the hash algorithm name, the \"/\" character, and the Base64 encoding of that hash algorithm applied to the DER-encoded subjectPublicKeyInfo of the specified certificate. This Base64 encoding is the same format as an SPKI Fingerprint, as defined in RFC 7469, Section 2.4. Unrecognized hash algorithms are ignored. The only supported hash algorithm at this time is \"sha256\".\n\nIf you disable this policy or don't configure it, any certificate required to be disclosed via Certificate Transparency is treated as untrusted if not disclosed according to the Certificate Transparency policy.",
@@ -12812,6 +12908,20 @@
     "settingDescription": "The enhance images feature is deprecated and starting in Microsoft Edge version 122, this policy will be removed. Set whether Microsoft Edge can automatically enhance images to show you sharper images with better color, lighting, and contrast.\n\nIf you enable this policy or don't configure the policy, Microsoft Edge automatically enhances images on specific web applications.\n\nIf you disable this policy, Microsoft Edge doesn't enhance images.",
     "keywords": [
       "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_dataurlinwebworkeropaqueoriginenabled",
+    "settingName": "Enable opaque origins for data URLs in Web Workers (User)",
+    "settingDescription": "This policy controls whether Web Workers created from data URLs are assigned\na unique opaque origin.\n\nWeb Workers can be created using a data URL that contains the worker script.\nPreviously, these workers inherited the origin of the page that created them,\nwhich allowed them to access the same origin-bound data, such as local\nstorage and cookies.\n\nStarting in Microsoft Edge version\n149, Web Workers created from data URLs are assigned a unique opaque origin\nby default. This behavior improves security and aligns with the HTML\nspecification by isolating these workers from the page that created them.\n\nIf you enable this policy or don't configure it, Web Workers created from\ndata URLs are assigned a unique opaque origin.\n\nIf you disable this policy, Web Workers created from data URLs inherit the\norigin of the page that created them. Use this setting only as a temporary\nmitigation for compatibility issues with internal applications that depend\non the legacy behavior.\n\nThis policy is temporary and will be removed in Microsoft Edge\nversion 157.",
+    "keywords": [
+      "DataUrlInWebWorkerOpaqueOriginEnabled",
+      "Enable opaque origins for data URLs in Web Workers",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -13570,20 +13680,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_dataurlinwebworkeropaqueoriginenabled",
-    "settingName": "Enable opaque origins for data URLs in Web Workers",
-    "settingDescription": "This policy controls whether Web Workers created from data URLs are assigned\na unique opaque origin.\n\nWeb Workers can be created using a data URL that contains the worker script.\nPreviously, these workers inherited the origin of the page that created them,\nwhich allowed them to access the same origin-bound data, such as local\nstorage and cookies.\n\nStarting in Microsoft Edge version\n149, Web Workers created from data URLs are assigned a unique opaque origin\nby default. This behavior improves security and aligns with the HTML\nspecification by isolating these workers from the page that created them.\n\nIf you enable this policy or don't configure it, Web Workers created from\ndata URLs are assigned a unique opaque origin.\n\nIf you disable this policy, Web Workers created from data URLs inherit the\norigin of the page that created them. Use this setting only as a temporary\nmitigation for compatibility issues with internal applications that depend\non the legacy behavior.\n\nThis policy is temporary and will be removed in Microsoft Edge\nversion 157.",
-    "keywords": [
-      "DataUrlInWebWorkerOpaqueOriginEnabled",
-      "Enable opaque origins for data URLs in Web Workers",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsallday",
     "settingName": "Mute notifications all day",
     "settingDescription": null,
@@ -13833,6 +13929,20 @@
     "settingDescription": "This policy is obsolete and doesn't work in Microsoft Edge after version 109.\nThis policy was only provided temporarily to allow Enterprises to adapt to the new clamping behavior.\n\n   If you enable this policy, the JavaScript setTimeout() with a timeout of 0 ms is no longer fixed to 1 ms to schedule timer-based callbacks.\n   If you disable this policy, the JavaScript setTimeout() with a timeout of 0 ms is fixed to 1 ms to schedule timer-based callbacks.\n   If you don't configure this policy, use the browser's default behavior for setTimeout() function.\n\n   This is a web standards compliancy feature; however, it may change task ordering on a webpage, leading to unexpected behavior on sites that are dependent on a certain ordering.\n   It also affects sites with many setTimeout()s with a timeout of 0-ms usage, for example, increasing CPU load.\n\n   For users where this policy is unset, Microsoft Edge Stable rolls out the change gradually on the stable channel.",
     "keywords": [
       "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_dataurlinwebworkeropaqueoriginenabled",
+    "settingName": "Enable opaque origins for data URLs in Web Workers",
+    "settingDescription": "This policy controls whether Web Workers created from data URLs are assigned\na unique opaque origin.\n\nWeb Workers can be created using a data URL that contains the worker script.\nPreviously, these workers inherited the origin of the page that created them,\nwhich allowed them to access the same origin-bound data, such as local\nstorage and cookies.\n\nStarting in Microsoft Edge version\n149, Web Workers created from data URLs are assigned a unique opaque origin\nby default. This behavior improves security and aligns with the HTML\nspecification by isolating these workers from the page that created them.\n\nIf you enable this policy or don't configure it, Web Workers created from\ndata URLs are assigned a unique opaque origin.\n\nIf you disable this policy, Web Workers created from data URLs inherit the\norigin of the page that created them. Use this setting only as a temporary\nmitigation for compatibility issues with internal applications that depend\non the legacy behavior.\n\nThis policy is temporary and will be removed in Microsoft Edge\nversion 157.",
+    "keywords": [
+      "DataUrlInWebWorkerOpaqueOriginEnabled",
+      "Enable opaque origins for data URLs in Web Workers",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
   },
@@ -15817,20 +15927,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_copilotaddressbarsuggestionsenabled",
-    "settingName": "Enable Copilot address bar suggestions (User)",
-    "settingDescription": "This policy controls whether Copilot chat suggestions appear in the address bar of Microsoft Edge.\n\nIf you enable this policy or don't configure it, Copilot chat suggestions appear in the address bar.\n\nIf you disable this policy, Copilot chat suggestions don't appear in the address bar.",
-    "keywords": [
-      "CopilotAddressBarSuggestionsEnabled",
-      "Enable Copilot address bar suggestions",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsdaily_endtime",
     "settingName": "End time",
     "settingDescription": null,
@@ -16058,6 +16154,32 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_cpuperformancetieroverride_cpuperformancetieroverride",
+    "settingName": "Override for the CPU performance tier:",
+    "settingDescription": "",
+    "keywords": [
+      "CpuPerformanceTierOverride",
+      "Override for the CPU performance tier",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_copilotaddressbarsuggestionsenabled",
+    "settingName": "Enable Copilot address bar suggestions (User)",
+    "settingDescription": "This policy controls whether Copilot chat suggestions appear in the address bar of Microsoft Edge.\n\nIf you enable this policy or don't configure it, Copilot chat suggestions appear in the address bar.\n\nIf you disable this policy, Copilot chat suggestions don't appear in the address bar.",
+    "keywords": [
+      "CopilotAddressBarSuggestionsEnabled",
+      "Enable Copilot address bar suggestions",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_proactiveauthenabled",
     "settingName": "Enable Proactive Authentication (User)",
     "settingDescription": "Lets you configure whether to turn on Proactive Authentication.\r\n\r\nIf you enable this policy, Microsoft Edge tries to proactively authenticate the signed-in user with Microsoft services. At regular intervals, Microsoft Edge checks with an online service for an updated manifest that contains the configuration that governs how to do this.\r\n\r\nIf you disable this policy, Microsoft Edge doesn't try to proactively authenticate the signed-in user with Microsoft services. Microsoft Edge no longer checks with an online service for an updated manifest that contains the configuration for doing this.\r\n\r\nIf you don't configure this policy, Proactive Authentication is turned on.",
@@ -16209,6 +16331,20 @@
       "SSLErrorOverrideAllowed",
       "Allow users to proceed from the HTTPS warning page",
       "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_strictmimetypecheckforworkerscriptsenabled",
+    "settingName": "Enable strict MIME type checking for worker scripts (User)",
+    "settingDescription": "This policy controls whether strict MIME type checking is used for worker scripts.\n\nIf you enable or don't configure this policy, worker scripts use strict MIME type checking for JavaScript. Worker scripts that use legacy MIME types are rejected.\n\nIf you disable this policy, worker scripts use lax MIME type checking. This allows worker scripts that use legacy MIME types, such as text/ascii, to continue to load and run.\n\nBrowsers traditionally used lax MIME type checking, which allowed JavaScript resources to load with several legacy MIME types. This behavior can create security risks by allowing resources to load as scripts when they weren't intended to be used that way.\n\nMicrosoft Edge uses strict MIME type checking by default. Enabling this policy follows the default behavior. Disabling this policy lets admins temporarily retain the legacy behavior for compatibility.\n\nFor more information about JavaScript and ECMAScript media types, see https://html.spec.whatwg.org/multipage/scripting.html#scriptingLanguage.",
+    "keywords": [
+      "StrictMimetypeCheckForWorkerScriptsEnabled",
+      "Enable strict MIME type checking for worker scripts",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
       "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"

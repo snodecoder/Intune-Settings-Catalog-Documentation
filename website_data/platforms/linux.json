@@ -59,7 +59,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "passiveMode",
     "rootDefinitionId": "com.apple.managedclient.preferences_passivemode",
@@ -158,7 +158,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "enabled",
     "rootDefinitionId": "com.apple.managedclient.preferences_enabled",
@@ -254,7 +254,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "disableFtpParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disableftpparsing",
@@ -323,7 +323,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "tags",
     "rootDefinitionId": "linux_mdatp_managed_edr_tags",
@@ -371,7 +371,7 @@
       "value": 2
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "maximumOnDemandScanThreads",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_maximumondemandscanthreads",
@@ -379,6 +379,122 @@
     "definitionDescription": null,
     "dataType": null,
     "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_advancedsettings_memoryscan",
+    "settingName": "Memory scan (preview)",
+    "settingDescription": "Provides visibility in Passive/Realtime/OnDemand enforcement and protection requires behaviour monitoring to be enabled",
+    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "infoUrls": [],
+    "baseUri": "PayloadContent/advancedSettings",
+    "offsetUri": "memoryScan",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "linux_advancedsettings_memoryscan_disabled",
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [
+      {
+        "itemId": "linux_advancedsettings_memoryscan_disabled",
+        "description": null,
+        "helpText": null,
+        "name": "Disabled",
+        "displayName": "Disabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "disabled"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "linux_advancedsettings",
+            "parentSettingId": "linux_advancedsettings"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_advancedsettings_memoryscan_enabled",
+        "description": null,
+        "helpText": null,
+        "name": "Enabled",
+        "displayName": "Enabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "enabled"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "linux_advancedsettings",
+            "parentSettingId": "linux_advancedsettings"
+          }
+        ],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639210955061639801",
+    "helpText": null,
+    "name": "advancedSettings/memoryScan",
+    "rootDefinitionId": "linux_advancedsettings",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "linux_advancedsettings_memoryscan_disabled",
+        "description": null,
+        "helpText": null,
+        "name": "Disabled",
+        "displayName": "Disabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "disabled"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "linux_advancedsettings",
+            "parentSettingId": "linux_advancedsettings"
+          }
+        ],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_advancedsettings_memoryscan_enabled",
+        "description": null,
+        "helpText": null,
+        "name": "Enabled",
+        "displayName": "Enabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "enabled"
+        },
+        "dependentOn": [
+          {
+            "dependentOn": "linux_advancedsettings",
+            "parentSettingId": "linux_advancedsettings"
+          }
+        ],
+        "dependedOnBy": []
+      }
+    ],
     "dependencies": []
   },
   {
@@ -441,7 +557,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "passiveMode",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_passivemode",
@@ -521,7 +637,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "exclusions_item_extension",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_exclusions",
@@ -590,7 +706,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "scheduledScan/scanType",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_scantype",
@@ -667,7 +783,7 @@
       "value": 120
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "scheduledScan/weeklyConfiguration/timeOfDay",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_weeklytimeofday",
@@ -675,6 +791,384 @@
     "definitionDescription": null,
     "dataType": null,
     "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_platformupdatecontrols_schedule_months",
+    "settingName": "Platform Update Schedule Month",
+    "settingDescription": "Specifies in which months platform updates are allowed. Select 'Every Month' for no restriction, or choose a specific month.",
+    "categoryId": "20af2e37-4e39-4e47-ba5d-d1cadbfb4b0a",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Platform Update"
+    ],
+    "infoUrls": [
+      "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#platform-update-preferences"
+    ],
+    "baseUri": "PayloadContent/platformUpdateControls",
+    "offsetUri": "schedule/months",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_0",
+        "description": null,
+        "helpText": null,
+        "name": "January",
+        "displayName": "January",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "January"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_1",
+        "description": null,
+        "helpText": null,
+        "name": "February",
+        "displayName": "February",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "February"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_2",
+        "description": null,
+        "helpText": null,
+        "name": "March",
+        "displayName": "March",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "March"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_3",
+        "description": null,
+        "helpText": null,
+        "name": "April",
+        "displayName": "April",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "April"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_4",
+        "description": null,
+        "helpText": null,
+        "name": "May",
+        "displayName": "May",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "May"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_5",
+        "description": null,
+        "helpText": null,
+        "name": "June",
+        "displayName": "June",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "June"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_6",
+        "description": null,
+        "helpText": null,
+        "name": "July",
+        "displayName": "July",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "July"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_7",
+        "description": null,
+        "helpText": null,
+        "name": "August",
+        "displayName": "August",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "August"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_8",
+        "description": null,
+        "helpText": null,
+        "name": "September",
+        "displayName": "September",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "September"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_9",
+        "description": null,
+        "helpText": null,
+        "name": "October",
+        "displayName": "October",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "October"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_10",
+        "description": null,
+        "helpText": null,
+        "name": "November",
+        "displayName": "November",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "November"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_11",
+        "description": null,
+        "helpText": null,
+        "name": "December",
+        "displayName": "December",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "December"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639210955061639801",
+    "helpText": null,
+    "name": "schedule/months",
+    "rootDefinitionId": "linux_platformupdatecontrols_schedule_months",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_0",
+        "description": null,
+        "helpText": null,
+        "name": "January",
+        "displayName": "January",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "January"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_1",
+        "description": null,
+        "helpText": null,
+        "name": "February",
+        "displayName": "February",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "February"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_2",
+        "description": null,
+        "helpText": null,
+        "name": "March",
+        "displayName": "March",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "March"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_3",
+        "description": null,
+        "helpText": null,
+        "name": "April",
+        "displayName": "April",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "April"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_4",
+        "description": null,
+        "helpText": null,
+        "name": "May",
+        "displayName": "May",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "May"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_5",
+        "description": null,
+        "helpText": null,
+        "name": "June",
+        "displayName": "June",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "June"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_6",
+        "description": null,
+        "helpText": null,
+        "name": "July",
+        "displayName": "July",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "July"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_7",
+        "description": null,
+        "helpText": null,
+        "name": "August",
+        "displayName": "August",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "August"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_8",
+        "description": null,
+        "helpText": null,
+        "name": "September",
+        "displayName": "September",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "September"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_9",
+        "description": null,
+        "helpText": null,
+        "name": "October",
+        "displayName": "October",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "October"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_10",
+        "description": null,
+        "helpText": null,
+        "name": "November",
+        "displayName": "November",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "November"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_months_11",
+        "description": null,
+        "helpText": null,
+        "name": "December",
+        "displayName": "December",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "December"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
     "dependencies": []
   },
   {
@@ -715,7 +1209,7 @@
       "value": 60
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": "Allows to set the time interval at which the security intelligence updates will be downloaded on the endpoint from the cloud or local server if offline security intelligence is turned ON.",
     "name": "definitionUpdatesInterval",
     "rootDefinitionId": "linux_mdatp_managed_cloudservice_definitionupdatesinterval",
@@ -826,7 +1320,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "cloudBlockLevel",
     "rootDefinitionId": "linux_mdatp_managed_cloudservice_cloudblocklevel",
@@ -967,7 +1461,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "exclusionsMergePolicy",
     "rootDefinitionId": "com.apple.managedclient.preferences_exclusionsmergepolicy",
@@ -1079,7 +1573,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "enforcementLevel",
     "rootDefinitionId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine",
@@ -1173,7 +1667,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "exclusions_item_extension",
     "rootDefinitionId": "com.apple.managedclient.preferences_exclusions",
@@ -1256,7 +1750,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "automaticSampleSubmissionConsent",
     "rootDefinitionId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent",
@@ -1366,7 +1860,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "disableDnsParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disablednsparsing",
@@ -1492,7 +1986,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "enforcementLevel",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_enforcementlevel",
@@ -1561,8 +2055,8 @@
   },
   {
     "settingId": "linux_mdatp_managed_antivirusengine_behaviormonitoring",
-    "settingName": "Enable behavior monitoring",
-    "settingDescription": "Whether the antivirus engine runs behavior monitoring and blocking or not.",
+    "settingName": "Enable behavior monitoring (Requires Realtime/Audit Enforcement level)",
+    "settingDescription": "Detects and blocks malicious processes and suspicious behaviours",
     "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
     "categoryName": "Microsoft Defender",
     "keywords": [
@@ -1618,7 +2112,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "behaviorMonitoring",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_behaviormonitoring",
@@ -1696,7 +2190,7 @@
       "value": 90
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "scanResultsRetentionDays",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scanresultsretentiondays",
@@ -1747,7 +2241,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "exclusions_item_name",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_exclusions",
@@ -1914,7 +2408,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "scheduledScan/dayOfWeek",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_dayofweek",
@@ -2091,7 +2585,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "exclusions_item_path",
     "rootDefinitionId": "linux_mdatp_managed_exclusionsettings_exclusions",
@@ -2140,7 +2634,7 @@
       "value": 90
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "scanResultsRetentionDays",
     "rootDefinitionId": "com.apple.managedclient.preferences_scanresultsretentiondays",
@@ -2209,7 +2703,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "scanArchives",
     "rootDefinitionId": "com.apple.managedclient.preferences_scanarchives",
@@ -2335,7 +2829,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "threatTypeSettings_item_value",
     "rootDefinitionId": "com.apple.managedclient.preferences_threattypesettings",
@@ -2462,7 +2956,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "scanAfterDefinitionUpdate",
     "rootDefinitionId": "com.apple.managedclient.preferences_scanafterdefinitionupdate",
@@ -2558,7 +3052,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "disableRdpParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disablerdpparsing",
@@ -2637,7 +3131,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "tags_item_value",
     "rootDefinitionId": "linux_mdatp_managed_edr_tags",
@@ -2716,7 +3210,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": "Choose True to allow fallback to cloud update when offline update fails.",
     "name": "offlineDefinitionUpdateFallbackToCloud",
     "rootDefinitionId": "mde_managed_antivirusengine_offlinedefinitionupdate",
@@ -2808,7 +3302,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "disallowedThreatActions",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_disallowedthreatactions",
@@ -2877,7 +3371,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "scheduledScan/checkForDefinitionsUpdate",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_checkfordefinitionsupdate",
@@ -2975,7 +3469,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "scheduledScan/runScanWhenIdle",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_runscanwhenidle",
@@ -3007,6 +3501,916 @@
           "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
           "settingValueTemplateReference": null,
           "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_platformupdatecontrols_schedule_daysofmonth",
+    "settingName": "Platform Update Schedule Day of Month",
+    "settingDescription": "Specifies on which day of the month platform updates are allowed. Select 'Every Day' for no restriction, or choose a specific day (1-31).",
+    "categoryId": "20af2e37-4e39-4e47-ba5d-d1cadbfb4b0a",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Platform Update"
+    ],
+    "infoUrls": [
+      "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#platform-update-preferences"
+    ],
+    "baseUri": "PayloadContent/platformUpdateControls",
+    "offsetUri": "schedule/daysOfMonth",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_1",
+        "description": null,
+        "helpText": null,
+        "name": "1",
+        "displayName": "1",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_2",
+        "description": null,
+        "helpText": null,
+        "name": "2",
+        "displayName": "2",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 2
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_3",
+        "description": null,
+        "helpText": null,
+        "name": "3",
+        "displayName": "3",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 3
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_4",
+        "description": null,
+        "helpText": null,
+        "name": "4",
+        "displayName": "4",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 4
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_5",
+        "description": null,
+        "helpText": null,
+        "name": "5",
+        "displayName": "5",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 5
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_6",
+        "description": null,
+        "helpText": null,
+        "name": "6",
+        "displayName": "6",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 6
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_7",
+        "description": null,
+        "helpText": null,
+        "name": "7",
+        "displayName": "7",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 7
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_8",
+        "description": null,
+        "helpText": null,
+        "name": "8",
+        "displayName": "8",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 8
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_9",
+        "description": null,
+        "helpText": null,
+        "name": "9",
+        "displayName": "9",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 9
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_10",
+        "description": null,
+        "helpText": null,
+        "name": "10",
+        "displayName": "10",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 10
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_11",
+        "description": null,
+        "helpText": null,
+        "name": "11",
+        "displayName": "11",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 11
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_12",
+        "description": null,
+        "helpText": null,
+        "name": "12",
+        "displayName": "12",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 12
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_13",
+        "description": null,
+        "helpText": null,
+        "name": "13",
+        "displayName": "13",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 13
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_14",
+        "description": null,
+        "helpText": null,
+        "name": "14",
+        "displayName": "14",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 14
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_15",
+        "description": null,
+        "helpText": null,
+        "name": "15",
+        "displayName": "15",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 15
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_16",
+        "description": null,
+        "helpText": null,
+        "name": "16",
+        "displayName": "16",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 16
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_17",
+        "description": null,
+        "helpText": null,
+        "name": "17",
+        "displayName": "17",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 17
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_18",
+        "description": null,
+        "helpText": null,
+        "name": "18",
+        "displayName": "18",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 18
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_19",
+        "description": null,
+        "helpText": null,
+        "name": "19",
+        "displayName": "19",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 19
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_20",
+        "description": null,
+        "helpText": null,
+        "name": "20",
+        "displayName": "20",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 20
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_21",
+        "description": null,
+        "helpText": null,
+        "name": "21",
+        "displayName": "21",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 21
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_22",
+        "description": null,
+        "helpText": null,
+        "name": "22",
+        "displayName": "22",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 22
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_23",
+        "description": null,
+        "helpText": null,
+        "name": "23",
+        "displayName": "23",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 23
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_24",
+        "description": null,
+        "helpText": null,
+        "name": "24",
+        "displayName": "24",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 24
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_25",
+        "description": null,
+        "helpText": null,
+        "name": "25",
+        "displayName": "25",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 25
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_26",
+        "description": null,
+        "helpText": null,
+        "name": "26",
+        "displayName": "26",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 26
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_27",
+        "description": null,
+        "helpText": null,
+        "name": "27",
+        "displayName": "27",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 27
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_28",
+        "description": null,
+        "helpText": null,
+        "name": "28",
+        "displayName": "28",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 28
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_29",
+        "description": null,
+        "helpText": null,
+        "name": "29",
+        "displayName": "29",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 29
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_30",
+        "description": null,
+        "helpText": null,
+        "name": "30",
+        "displayName": "30",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 30
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_31",
+        "description": null,
+        "helpText": null,
+        "name": "31",
+        "displayName": "31",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 31
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639210955061639801",
+    "helpText": null,
+    "name": "schedule/daysOfMonth",
+    "rootDefinitionId": "linux_platformupdatecontrols_schedule_daysofmonth",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_1",
+        "description": null,
+        "helpText": null,
+        "name": "1",
+        "displayName": "1",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 1
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_2",
+        "description": null,
+        "helpText": null,
+        "name": "2",
+        "displayName": "2",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 2
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_3",
+        "description": null,
+        "helpText": null,
+        "name": "3",
+        "displayName": "3",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 3
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_4",
+        "description": null,
+        "helpText": null,
+        "name": "4",
+        "displayName": "4",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 4
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_5",
+        "description": null,
+        "helpText": null,
+        "name": "5",
+        "displayName": "5",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 5
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_6",
+        "description": null,
+        "helpText": null,
+        "name": "6",
+        "displayName": "6",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 6
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_7",
+        "description": null,
+        "helpText": null,
+        "name": "7",
+        "displayName": "7",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 7
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_8",
+        "description": null,
+        "helpText": null,
+        "name": "8",
+        "displayName": "8",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 8
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_9",
+        "description": null,
+        "helpText": null,
+        "name": "9",
+        "displayName": "9",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 9
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_10",
+        "description": null,
+        "helpText": null,
+        "name": "10",
+        "displayName": "10",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 10
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_11",
+        "description": null,
+        "helpText": null,
+        "name": "11",
+        "displayName": "11",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 11
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_12",
+        "description": null,
+        "helpText": null,
+        "name": "12",
+        "displayName": "12",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 12
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_13",
+        "description": null,
+        "helpText": null,
+        "name": "13",
+        "displayName": "13",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 13
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_14",
+        "description": null,
+        "helpText": null,
+        "name": "14",
+        "displayName": "14",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 14
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_15",
+        "description": null,
+        "helpText": null,
+        "name": "15",
+        "displayName": "15",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 15
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_16",
+        "description": null,
+        "helpText": null,
+        "name": "16",
+        "displayName": "16",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 16
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_17",
+        "description": null,
+        "helpText": null,
+        "name": "17",
+        "displayName": "17",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 17
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_18",
+        "description": null,
+        "helpText": null,
+        "name": "18",
+        "displayName": "18",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 18
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_19",
+        "description": null,
+        "helpText": null,
+        "name": "19",
+        "displayName": "19",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 19
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_20",
+        "description": null,
+        "helpText": null,
+        "name": "20",
+        "displayName": "20",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 20
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_21",
+        "description": null,
+        "helpText": null,
+        "name": "21",
+        "displayName": "21",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 21
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_22",
+        "description": null,
+        "helpText": null,
+        "name": "22",
+        "displayName": "22",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 22
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_23",
+        "description": null,
+        "helpText": null,
+        "name": "23",
+        "displayName": "23",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 23
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_24",
+        "description": null,
+        "helpText": null,
+        "name": "24",
+        "displayName": "24",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 24
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_25",
+        "description": null,
+        "helpText": null,
+        "name": "25",
+        "displayName": "25",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 25
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_26",
+        "description": null,
+        "helpText": null,
+        "name": "26",
+        "displayName": "26",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 26
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_27",
+        "description": null,
+        "helpText": null,
+        "name": "27",
+        "displayName": "27",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 27
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_28",
+        "description": null,
+        "helpText": null,
+        "name": "28",
+        "displayName": "28",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 28
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_29",
+        "description": null,
+        "helpText": null,
+        "name": "29",
+        "displayName": "29",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 29
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_30",
+        "description": null,
+        "helpText": null,
+        "name": "30",
+        "displayName": "30",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 30
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofmonth_31",
+        "description": null,
+        "helpText": null,
+        "name": "31",
+        "displayName": "31",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+          "settingValueTemplateReference": null,
+          "value": 31
         },
         "dependentOn": [],
         "dependedOnBy": []
@@ -3054,7 +4458,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "exclusions_item_name",
     "rootDefinitionId": "linux_mdatp_managed_exclusionsettings_exclusions",
@@ -3094,7 +4498,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "exclusions",
     "rootDefinitionId": "linux_mdatp_managed_exclusionsettings_exclusions",
@@ -3147,7 +4551,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "allowedThreats",
     "rootDefinitionId": "com.apple.managedclient.preferences_allowedthreats",
@@ -3225,7 +4629,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "threatTypeSettings_item_key",
     "rootDefinitionId": "com.apple.managedclient.preferences_threattypesettings",
@@ -3334,7 +4738,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "threatTypeSettingsMergePolicy",
     "rootDefinitionId": "com.apple.managedclient.preferences_threattypesettingsmergepolicy",
@@ -3432,7 +4836,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "enableFileHashComputation",
     "rootDefinitionId": "com.apple.managedclient.preferences_enablefilehashcomputation",
@@ -3513,7 +4917,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "unmonitoredFilesystems",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_unmonitoredfilesystems",
@@ -3583,7 +4987,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "threatTypeSettingsMergePolicy",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_threattypesettingsmergepolicy",
@@ -3663,7 +5067,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "exclusions_item_path",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_exclusions",
@@ -3732,7 +5136,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "scheduledScan/lowPriorityScheduledScan",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_lowpriorityscheduledscan",
@@ -3809,10 +5213,62 @@
       "value": 120
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "scheduledScan/dailyConfiguration/timeOfDay",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_timeofday",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_platformupdatecontrols_version_fixedvalue",
+    "settingName": "Platform Update Fixed Version",
+    "settingDescription": "Specify the exact platform version to pin to, e.g. 101.26021.0002",
+    "categoryId": "20af2e37-4e39-4e47-ba5d-d1cadbfb4b0a",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Platform Update"
+    ],
+    "infoUrls": [
+      "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#platform-update-preferences"
+    ],
+    "baseUri": "PayloadContent/platformUpdateControls",
+    "offsetUri": "version",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValueDefinition",
+      "format": "none",
+      "inputValidationSchema": "^\\d+\\.\\d+\\.\\d+$",
+      "maximumLength": 50,
+      "minimumLength": 1,
+      "isSecret": false,
+      "fileTypes": []
+    },
+    "defaultValue": {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+      "settingValueTemplateReference": null,
+      "value": ""
+    },
+    "accessTypes": "none",
+    "version": "639210955061639801",
+    "helpText": "101.26021.0002",
+    "name": "version_fixedValue",
+    "rootDefinitionId": "linux_platformupdatecontrols_version",
     "settingDefinitionId": null,
     "definitionDescription": null,
     "dataType": null,
@@ -3925,7 +5381,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "exclusions_item_$type",
     "rootDefinitionId": "com.apple.managedclient.preferences_exclusions",
@@ -4055,7 +5511,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "disallowedThreatActions",
     "rootDefinitionId": "com.apple.managedclient.preferences_disallowedthreatactions",
@@ -4125,7 +5581,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "exclusionsMergePolicy",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_exclusionsmergepolicy",
@@ -4195,10 +5651,48 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "threatTypeSettings",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_threattypesettings",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_advancedsettings",
+    "settingName": "Advanced settings",
+    "settingDescription": "Advanced antivirus engine settings.",
+    "categoryId": "13467142-14e7-4380-8573-4866e842c7f6",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "infoUrls": [],
+    "baseUri": "PayloadContent/advancedSettings",
+    "offsetUri": "",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639210955061639801",
+    "helpText": null,
+    "name": "advancedSettings",
+    "rootDefinitionId": "linux_advancedsettings",
     "settingDefinitionId": null,
     "definitionDescription": null,
     "dataType": null,
@@ -4273,7 +5767,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "exclusions_item_isDirectory",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_exclusions",
@@ -4390,7 +5884,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "offlineDefinitionUpdate",
     "rootDefinitionId": "mde_managed_antivirusengine_offlinedefinitionupdate",
@@ -4477,7 +5971,7 @@
       "value": 10000
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "scanHistoryMaximumItems",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scanhistorymaximumitems",
@@ -4518,7 +6012,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "exclusions",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_exclusions",
@@ -4587,7 +6081,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "enableFileHashComputation",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_enablefilehashcomputation",
@@ -4668,7 +6162,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": "Specify the location where security intelligence updates are served. This can either be a local server URL (e.g., http://172.22.199.67:8000/linux/production/) or an absolute directory path (e.g., /tmp/wdav-update/linux/production).",
     "name": "offlineDefinitionUpdateUrl",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate",
@@ -4737,7 +6231,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "scheduledScan/ignoreExclusions",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_ignoreexclusions",
@@ -4814,7 +6308,7 @@
       "value": 24
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "scheduledScan/interval",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_interval",
@@ -4822,6 +6316,1752 @@
     "definitionDescription": null,
     "dataType": null,
     "valueOptions": [],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_platformupdatecontrols_schedule_endtime",
+    "settingName": "Platform Update Window End Time",
+    "settingDescription": "Specifies the end of the allowed time window for platform updates (24-hour clock). Select 'All Day' for no restriction. Use together with start time to define an update window.",
+    "categoryId": "20af2e37-4e39-4e47-ba5d-d1cadbfb4b0a",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Platform Update"
+    ],
+    "infoUrls": [
+      "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#platform-update-preferences"
+    ],
+    "baseUri": "PayloadContent/platformUpdateControls",
+    "offsetUri": "schedule/endTime",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "linux_platformupdatecontrols_schedule_endtime_every",
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_every",
+        "description": null,
+        "helpText": null,
+        "name": "All Day",
+        "displayName": "All Day",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "every"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_0",
+        "description": null,
+        "helpText": null,
+        "name": "00:00",
+        "displayName": "00:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "00:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_1",
+        "description": null,
+        "helpText": null,
+        "name": "01:00",
+        "displayName": "01:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "01:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_2",
+        "description": null,
+        "helpText": null,
+        "name": "02:00",
+        "displayName": "02:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "02:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_3",
+        "description": null,
+        "helpText": null,
+        "name": "03:00",
+        "displayName": "03:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "03:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_4",
+        "description": null,
+        "helpText": null,
+        "name": "04:00",
+        "displayName": "04:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "04:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_5",
+        "description": null,
+        "helpText": null,
+        "name": "05:00",
+        "displayName": "05:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "05:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_6",
+        "description": null,
+        "helpText": null,
+        "name": "06:00",
+        "displayName": "06:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "06:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_7",
+        "description": null,
+        "helpText": null,
+        "name": "07:00",
+        "displayName": "07:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "07:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_8",
+        "description": null,
+        "helpText": null,
+        "name": "08:00",
+        "displayName": "08:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "08:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_9",
+        "description": null,
+        "helpText": null,
+        "name": "09:00",
+        "displayName": "09:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "09:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_10",
+        "description": null,
+        "helpText": null,
+        "name": "10:00",
+        "displayName": "10:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "10:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_11",
+        "description": null,
+        "helpText": null,
+        "name": "11:00",
+        "displayName": "11:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "11:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_12",
+        "description": null,
+        "helpText": null,
+        "name": "12:00",
+        "displayName": "12:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "12:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_13",
+        "description": null,
+        "helpText": null,
+        "name": "13:00",
+        "displayName": "13:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "13:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_14",
+        "description": null,
+        "helpText": null,
+        "name": "14:00",
+        "displayName": "14:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "14:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_15",
+        "description": null,
+        "helpText": null,
+        "name": "15:00",
+        "displayName": "15:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "15:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_16",
+        "description": null,
+        "helpText": null,
+        "name": "16:00",
+        "displayName": "16:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "16:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_17",
+        "description": null,
+        "helpText": null,
+        "name": "17:00",
+        "displayName": "17:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "17:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_18",
+        "description": null,
+        "helpText": null,
+        "name": "18:00",
+        "displayName": "18:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "18:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_19",
+        "description": null,
+        "helpText": null,
+        "name": "19:00",
+        "displayName": "19:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "19:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_20",
+        "description": null,
+        "helpText": null,
+        "name": "20:00",
+        "displayName": "20:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "20:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_21",
+        "description": null,
+        "helpText": null,
+        "name": "21:00",
+        "displayName": "21:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "21:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_22",
+        "description": null,
+        "helpText": null,
+        "name": "22:00",
+        "displayName": "22:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "22:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_23",
+        "description": null,
+        "helpText": null,
+        "name": "23:00",
+        "displayName": "23:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "23:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639210955061639801",
+    "helpText": null,
+    "name": "schedule/endTime",
+    "rootDefinitionId": "linux_platformupdatecontrols_schedule_endtime",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_every",
+        "description": null,
+        "helpText": null,
+        "name": "All Day",
+        "displayName": "All Day",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "every"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_0",
+        "description": null,
+        "helpText": null,
+        "name": "00:00",
+        "displayName": "00:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "00:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_1",
+        "description": null,
+        "helpText": null,
+        "name": "01:00",
+        "displayName": "01:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "01:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_2",
+        "description": null,
+        "helpText": null,
+        "name": "02:00",
+        "displayName": "02:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "02:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_3",
+        "description": null,
+        "helpText": null,
+        "name": "03:00",
+        "displayName": "03:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "03:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_4",
+        "description": null,
+        "helpText": null,
+        "name": "04:00",
+        "displayName": "04:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "04:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_5",
+        "description": null,
+        "helpText": null,
+        "name": "05:00",
+        "displayName": "05:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "05:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_6",
+        "description": null,
+        "helpText": null,
+        "name": "06:00",
+        "displayName": "06:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "06:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_7",
+        "description": null,
+        "helpText": null,
+        "name": "07:00",
+        "displayName": "07:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "07:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_8",
+        "description": null,
+        "helpText": null,
+        "name": "08:00",
+        "displayName": "08:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "08:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_9",
+        "description": null,
+        "helpText": null,
+        "name": "09:00",
+        "displayName": "09:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "09:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_10",
+        "description": null,
+        "helpText": null,
+        "name": "10:00",
+        "displayName": "10:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "10:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_11",
+        "description": null,
+        "helpText": null,
+        "name": "11:00",
+        "displayName": "11:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "11:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_12",
+        "description": null,
+        "helpText": null,
+        "name": "12:00",
+        "displayName": "12:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "12:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_13",
+        "description": null,
+        "helpText": null,
+        "name": "13:00",
+        "displayName": "13:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "13:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_14",
+        "description": null,
+        "helpText": null,
+        "name": "14:00",
+        "displayName": "14:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "14:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_15",
+        "description": null,
+        "helpText": null,
+        "name": "15:00",
+        "displayName": "15:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "15:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_16",
+        "description": null,
+        "helpText": null,
+        "name": "16:00",
+        "displayName": "16:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "16:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_17",
+        "description": null,
+        "helpText": null,
+        "name": "17:00",
+        "displayName": "17:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "17:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_18",
+        "description": null,
+        "helpText": null,
+        "name": "18:00",
+        "displayName": "18:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "18:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_19",
+        "description": null,
+        "helpText": null,
+        "name": "19:00",
+        "displayName": "19:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "19:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_20",
+        "description": null,
+        "helpText": null,
+        "name": "20:00",
+        "displayName": "20:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "20:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_21",
+        "description": null,
+        "helpText": null,
+        "name": "21:00",
+        "displayName": "21:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "21:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_22",
+        "description": null,
+        "helpText": null,
+        "name": "22:00",
+        "displayName": "22:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "22:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_endtime_23",
+        "description": null,
+        "helpText": null,
+        "name": "23:00",
+        "displayName": "23:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "23:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_platformupdatecontrols_schedule_starttime",
+    "settingName": "Platform Update Window Start Time",
+    "settingDescription": "Specifies the start of the allowed time window for platform updates (24-hour clock). Select 'All Day' for no restriction. Use together with end time to define an update window.",
+    "categoryId": "20af2e37-4e39-4e47-ba5d-d1cadbfb4b0a",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Platform Update"
+    ],
+    "infoUrls": [
+      "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#platform-update-preferences"
+    ],
+    "baseUri": "PayloadContent/platformUpdateControls",
+    "offsetUri": "schedule/startTime",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "linux_platformupdatecontrols_schedule_starttime_every",
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_every",
+        "description": null,
+        "helpText": null,
+        "name": "All Day",
+        "displayName": "All Day",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "every"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_0",
+        "description": null,
+        "helpText": null,
+        "name": "00:00",
+        "displayName": "00:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "00:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_1",
+        "description": null,
+        "helpText": null,
+        "name": "01:00",
+        "displayName": "01:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "01:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_2",
+        "description": null,
+        "helpText": null,
+        "name": "02:00",
+        "displayName": "02:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "02:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_3",
+        "description": null,
+        "helpText": null,
+        "name": "03:00",
+        "displayName": "03:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "03:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_4",
+        "description": null,
+        "helpText": null,
+        "name": "04:00",
+        "displayName": "04:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "04:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_5",
+        "description": null,
+        "helpText": null,
+        "name": "05:00",
+        "displayName": "05:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "05:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_6",
+        "description": null,
+        "helpText": null,
+        "name": "06:00",
+        "displayName": "06:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "06:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_7",
+        "description": null,
+        "helpText": null,
+        "name": "07:00",
+        "displayName": "07:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "07:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_8",
+        "description": null,
+        "helpText": null,
+        "name": "08:00",
+        "displayName": "08:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "08:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_9",
+        "description": null,
+        "helpText": null,
+        "name": "09:00",
+        "displayName": "09:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "09:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_10",
+        "description": null,
+        "helpText": null,
+        "name": "10:00",
+        "displayName": "10:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "10:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_11",
+        "description": null,
+        "helpText": null,
+        "name": "11:00",
+        "displayName": "11:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "11:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_12",
+        "description": null,
+        "helpText": null,
+        "name": "12:00",
+        "displayName": "12:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "12:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_13",
+        "description": null,
+        "helpText": null,
+        "name": "13:00",
+        "displayName": "13:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "13:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_14",
+        "description": null,
+        "helpText": null,
+        "name": "14:00",
+        "displayName": "14:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "14:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_15",
+        "description": null,
+        "helpText": null,
+        "name": "15:00",
+        "displayName": "15:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "15:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_16",
+        "description": null,
+        "helpText": null,
+        "name": "16:00",
+        "displayName": "16:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "16:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_17",
+        "description": null,
+        "helpText": null,
+        "name": "17:00",
+        "displayName": "17:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "17:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_18",
+        "description": null,
+        "helpText": null,
+        "name": "18:00",
+        "displayName": "18:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "18:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_19",
+        "description": null,
+        "helpText": null,
+        "name": "19:00",
+        "displayName": "19:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "19:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_20",
+        "description": null,
+        "helpText": null,
+        "name": "20:00",
+        "displayName": "20:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "20:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_21",
+        "description": null,
+        "helpText": null,
+        "name": "21:00",
+        "displayName": "21:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "21:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_22",
+        "description": null,
+        "helpText": null,
+        "name": "22:00",
+        "displayName": "22:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "22:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_23",
+        "description": null,
+        "helpText": null,
+        "name": "23:00",
+        "displayName": "23:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "23:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639210955061639801",
+    "helpText": null,
+    "name": "schedule/startTime",
+    "rootDefinitionId": "linux_platformupdatecontrols_schedule_starttime",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_every",
+        "description": null,
+        "helpText": null,
+        "name": "All Day",
+        "displayName": "All Day",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "every"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_0",
+        "description": null,
+        "helpText": null,
+        "name": "00:00",
+        "displayName": "00:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "00:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_1",
+        "description": null,
+        "helpText": null,
+        "name": "01:00",
+        "displayName": "01:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "01:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_2",
+        "description": null,
+        "helpText": null,
+        "name": "02:00",
+        "displayName": "02:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "02:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_3",
+        "description": null,
+        "helpText": null,
+        "name": "03:00",
+        "displayName": "03:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "03:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_4",
+        "description": null,
+        "helpText": null,
+        "name": "04:00",
+        "displayName": "04:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "04:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_5",
+        "description": null,
+        "helpText": null,
+        "name": "05:00",
+        "displayName": "05:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "05:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_6",
+        "description": null,
+        "helpText": null,
+        "name": "06:00",
+        "displayName": "06:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "06:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_7",
+        "description": null,
+        "helpText": null,
+        "name": "07:00",
+        "displayName": "07:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "07:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_8",
+        "description": null,
+        "helpText": null,
+        "name": "08:00",
+        "displayName": "08:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "08:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_9",
+        "description": null,
+        "helpText": null,
+        "name": "09:00",
+        "displayName": "09:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "09:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_10",
+        "description": null,
+        "helpText": null,
+        "name": "10:00",
+        "displayName": "10:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "10:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_11",
+        "description": null,
+        "helpText": null,
+        "name": "11:00",
+        "displayName": "11:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "11:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_12",
+        "description": null,
+        "helpText": null,
+        "name": "12:00",
+        "displayName": "12:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "12:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_13",
+        "description": null,
+        "helpText": null,
+        "name": "13:00",
+        "displayName": "13:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "13:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_14",
+        "description": null,
+        "helpText": null,
+        "name": "14:00",
+        "displayName": "14:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "14:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_15",
+        "description": null,
+        "helpText": null,
+        "name": "15:00",
+        "displayName": "15:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "15:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_16",
+        "description": null,
+        "helpText": null,
+        "name": "16:00",
+        "displayName": "16:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "16:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_17",
+        "description": null,
+        "helpText": null,
+        "name": "17:00",
+        "displayName": "17:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "17:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_18",
+        "description": null,
+        "helpText": null,
+        "name": "18:00",
+        "displayName": "18:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "18:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_19",
+        "description": null,
+        "helpText": null,
+        "name": "19:00",
+        "displayName": "19:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "19:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_20",
+        "description": null,
+        "helpText": null,
+        "name": "20:00",
+        "displayName": "20:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "20:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_21",
+        "description": null,
+        "helpText": null,
+        "name": "21:00",
+        "displayName": "21:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "21:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_22",
+        "description": null,
+        "helpText": null,
+        "name": "22:00",
+        "displayName": "22:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "22:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_starttime_23",
+        "description": null,
+        "helpText": null,
+        "name": "23:00",
+        "displayName": "23:00",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "23:00"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_features_platformupdatecontrols",
+    "settingName": "Platform Update Controls",
+    "settingDescription": "Enable or disable platform update controls. Must be set to Enabled for platform update settings to take effect.",
+    "categoryId": "20af2e37-4e39-4e47-ba5d-d1cadbfb4b0a",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Platform Update"
+    ],
+    "infoUrls": [
+      "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#platform-update-preferences"
+    ],
+    "baseUri": "PayloadContent/features",
+    "offsetUri": "platformUpdateControls",
+    "settingUsage": "configuration",
+    "uxBehavior": "toggle",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "linux_features_platformupdatecontrols_disabled",
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [
+      {
+        "itemId": "linux_features_platformupdatecontrols_enabled",
+        "description": null,
+        "helpText": null,
+        "name": "Enabled",
+        "displayName": "Enabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "enabled"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_features_platformupdatecontrols_disabled",
+        "description": null,
+        "helpText": null,
+        "name": "Disabled",
+        "displayName": "Disabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "disabled"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639210955061639801",
+    "helpText": null,
+    "name": "features/platformUpdateControls",
+    "rootDefinitionId": "linux_features_platformupdatecontrols",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "linux_features_platformupdatecontrols_enabled",
+        "description": null,
+        "helpText": null,
+        "name": "Enabled",
+        "displayName": "Enabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "enabled"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_features_platformupdatecontrols_disabled",
+        "description": null,
+        "helpText": null,
+        "name": "Disabled",
+        "displayName": "Disabled",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "disabled"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_platformupdatecontrols_version",
+    "settingName": "Platform Update Version",
+    "settingDescription": "Specifies the update channel for platform updates. 'N' is the latest version, 'N-1' is the previous version, 'N-2' is two versions back. Select 'Fixed' to pin to a specific version number.",
+    "categoryId": "20af2e37-4e39-4e47-ba5d-d1cadbfb4b0a",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Platform Update"
+    ],
+    "infoUrls": [
+      "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#platform-update-preferences"
+    ],
+    "baseUri": "PayloadContent/platformUpdateControls",
+    "offsetUri": "version",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": "linux_platformupdatecontrols_version_n",
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [
+      {
+        "itemId": "linux_platformupdatecontrols_version_n",
+        "description": null,
+        "helpText": null,
+        "name": "N",
+        "displayName": "N",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "n"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_version_n1",
+        "description": null,
+        "helpText": null,
+        "name": "N-1",
+        "displayName": "N-1",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "n-1"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_version_n2",
+        "description": null,
+        "helpText": null,
+        "name": "N-2",
+        "displayName": "N-2",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "n-2"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_version_fixed",
+        "description": null,
+        "helpText": null,
+        "name": "Fixed",
+        "displayName": "Fixed",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "fixed"
+        },
+        "dependentOn": [],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "linux_platformupdatecontrols_version_fixedvalue",
+            "required": true
+          }
+        ]
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639210955061639801",
+    "helpText": null,
+    "name": "version",
+    "rootDefinitionId": "linux_platformupdatecontrols_version",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "linux_platformupdatecontrols_version_n",
+        "description": null,
+        "helpText": null,
+        "name": "N",
+        "displayName": "N",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "n"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_version_n1",
+        "description": null,
+        "helpText": null,
+        "name": "N-1",
+        "displayName": "N-1",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "n-1"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_version_n2",
+        "description": null,
+        "helpText": null,
+        "name": "N-2",
+        "displayName": "N-2",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "n-2"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_version_fixed",
+        "description": null,
+        "helpText": null,
+        "name": "Fixed",
+        "displayName": "Fixed",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "fixed"
+        },
+        "dependentOn": [],
+        "dependedOnBy": [
+          {
+            "dependedOnBy": "linux_platformupdatecontrols_version_fixedvalue",
+            "required": true
+          }
+        ]
+      }
+    ],
     "dependencies": []
   },
   {
@@ -4884,7 +8124,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "enabled",
     "rootDefinitionId": "linux_mdatp_managed_cloudservice_enabled",
@@ -4983,7 +8223,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "automaticDefinitionUpdateEnabled",
     "rootDefinitionId": "linux_mdatp_managed_cloudservice_automaticdefinitionupdateenabled",
@@ -5053,7 +8293,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "threatTypeSettings",
     "rootDefinitionId": "com.apple.managedclient.preferences_threattypesettings",
@@ -5131,7 +8371,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "exclusions_item_isDirectory",
     "rootDefinitionId": "com.apple.managedclient.preferences_exclusions",
@@ -5222,7 +8462,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "proxy",
     "rootDefinitionId": "com.apple.managedclient.preferences_proxy",
@@ -5292,7 +8532,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "diagnosticLevel",
     "rootDefinitionId": "com.apple.managedclient.preferences_diagnosticlevel",
@@ -5369,7 +8609,7 @@
       "value": 7
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "definitionUpdateDue",
     "rootDefinitionId": "com.apple.managedclient.preferences_definitionupdatedue",
@@ -5436,7 +8676,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "disableSmtpParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disablesmtpparsing",
@@ -5523,7 +8763,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "tags_item_key",
     "rootDefinitionId": "linux_mdatp_managed_edr_tags",
@@ -5596,7 +8836,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "allowedThreats",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_allowedthreats",
@@ -5675,7 +8915,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": "Choose True to allow fallback to cloud update when offline security intelligence update fails.",
     "name": "offlineDefinitionUpdateFallbackToCloud",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate",
@@ -5792,7 +9032,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "threatTypeSettings_item_key",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_threattypesettings",
@@ -5900,7 +9140,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "scanArchives",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scanarchives",
@@ -5932,6 +9172,244 @@
           "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
           "settingValueTemplateReference": null,
           "value": "true"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "settingId": "linux_platformupdatecontrols_schedule_daysofweek",
+    "settingName": "Platform Update Schedule Day of Week",
+    "settingDescription": "Specifies on which day of the week platform updates are allowed. Select 'Every Day' for no restriction, or choose a specific weekday.",
+    "categoryId": "20af2e37-4e39-4e47-ba5d-d1cadbfb4b0a",
+    "categoryName": "Microsoft Defender",
+    "keywords": [
+      "Platform Update"
+    ],
+    "infoUrls": [
+      "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/linux-preferences#platform-update-preferences"
+    ],
+    "baseUri": "PayloadContent/platformUpdateControls",
+    "offsetUri": "schedule/daysOfWeek",
+    "settingUsage": "configuration",
+    "uxBehavior": "default",
+    "visibility": "settingsCatalog,template",
+    "riskLevel": "low",
+    "defaultOptionId": null,
+    "applicability": {
+      "description": null,
+      "platform": "linux",
+      "deviceMode": "none",
+      "technologies": "microsoftSense"
+    },
+    "options": [
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofweek_0",
+        "description": null,
+        "helpText": null,
+        "name": "Sunday",
+        "displayName": "Sunday",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "Sunday"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofweek_1",
+        "description": null,
+        "helpText": null,
+        "name": "Monday",
+        "displayName": "Monday",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "Monday"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofweek_2",
+        "description": null,
+        "helpText": null,
+        "name": "Tuesday",
+        "displayName": "Tuesday",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "Tuesday"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofweek_3",
+        "description": null,
+        "helpText": null,
+        "name": "Wednesday",
+        "displayName": "Wednesday",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "Wednesday"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofweek_4",
+        "description": null,
+        "helpText": null,
+        "name": "Thursday",
+        "displayName": "Thursday",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "Thursday"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofweek_5",
+        "description": null,
+        "helpText": null,
+        "name": "Friday",
+        "displayName": "Friday",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "Friday"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofweek_6",
+        "description": null,
+        "helpText": null,
+        "name": "Saturday",
+        "displayName": "Saturday",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "Saturday"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      }
+    ],
+    "referredSettingInformationList": [],
+    "valueDefinition": [],
+    "defaultValue": [],
+    "accessTypes": "none",
+    "version": "639210955061639801",
+    "helpText": null,
+    "name": "schedule/daysOfWeek",
+    "rootDefinitionId": "linux_platformupdatecontrols_schedule_daysofweek",
+    "settingDefinitionId": null,
+    "definitionDescription": null,
+    "dataType": null,
+    "valueOptions": [
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofweek_0",
+        "description": null,
+        "helpText": null,
+        "name": "Sunday",
+        "displayName": "Sunday",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "Sunday"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofweek_1",
+        "description": null,
+        "helpText": null,
+        "name": "Monday",
+        "displayName": "Monday",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "Monday"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofweek_2",
+        "description": null,
+        "helpText": null,
+        "name": "Tuesday",
+        "displayName": "Tuesday",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "Tuesday"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofweek_3",
+        "description": null,
+        "helpText": null,
+        "name": "Wednesday",
+        "displayName": "Wednesday",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "Wednesday"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofweek_4",
+        "description": null,
+        "helpText": null,
+        "name": "Thursday",
+        "displayName": "Thursday",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "Thursday"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofweek_5",
+        "description": null,
+        "helpText": null,
+        "name": "Friday",
+        "displayName": "Friday",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "Friday"
+        },
+        "dependentOn": [],
+        "dependedOnBy": []
+      },
+      {
+        "itemId": "linux_platformupdatecontrols_schedule_daysofweek_6",
+        "description": null,
+        "helpText": null,
+        "name": "Saturday",
+        "displayName": "Saturday",
+        "optionValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "Saturday"
         },
         "dependentOn": [],
         "dependedOnBy": []
@@ -6013,7 +9491,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "automaticSampleSubmissionConsent",
     "rootDefinitionId": "linux_mdatp_managed_cloudservice_automaticsamplesubmissionconsent",
@@ -6107,7 +9585,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "exclusions_item_path",
     "rootDefinitionId": "com.apple.managedclient.preferences_exclusions",
@@ -6155,7 +9633,7 @@
       "value": 2
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "maximumOnDemandScanThreads",
     "rootDefinitionId": "com.apple.managedclient.preferences_maximumondemandscanthreads",
@@ -6204,7 +9682,7 @@
       "value": 10000
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "scanHistoryMaximumItems",
     "rootDefinitionId": "com.apple.managedclient.preferences_scanhistorymaximumitems",
@@ -6273,7 +9751,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "offlineDefinitionUpdateFallbackToCloud",
     "rootDefinitionId": "com.apple.managedclient.preferences_offlinedefinitionupdatefallbacktocloud",
@@ -6372,7 +9850,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "automaticDefinitionUpdateEnabled",
     "rootDefinitionId": "com.apple.managedclient.preferences_automaticdefinitionupdateenabled",
@@ -6471,7 +9949,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "automaticSampleSubmission",
     "rootDefinitionId": "com.apple.managedclient.preferences_automaticsamplesubmission",
@@ -6567,7 +10045,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "disableHttpParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disablehttpparsing",
@@ -6712,7 +10190,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "exclusions_item_$type",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_exclusions",
@@ -6841,7 +10319,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": "Specify the location where security intelligence updates are served. This can either be a local server URL (e.g., http://172.22.199.67:8000/linux/production/) or an absolute directory path (e.g., /tmp/wdav-update/linux/production).",
     "name": "offlineDefinitionUpdateUrl",
     "rootDefinitionId": "mde_managed_antivirusengine_offlinedefinitionupdate",
@@ -6910,7 +10388,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "scanAfterDefinitionUpdate",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scanafterdefinitionupdate",
@@ -6987,7 +10465,7 @@
       "value": 0
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": "Sets the number of hours (0–23) by which the scan start time is randomized. 0 disables randomization.",
     "name": "scheduledScan/randomizeScanStartTime",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_scheduledscan_randomizescanstarttime",
@@ -7038,7 +10516,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "exclusions_item_name",
     "rootDefinitionId": "com.apple.managedclient.preferences_exclusions",
@@ -7149,7 +10627,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "cloudBlockLevel",
     "rootDefinitionId": "com.apple.managedclient.preferences_cloudblocklevel",
@@ -7268,7 +10746,7 @@
       "value": 28800
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "definitionUpdatesInterval",
     "rootDefinitionId": "com.apple.managedclient.preferences_definitionupdatesinterval",
@@ -7335,7 +10813,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "disableInboundConnectionFiltering",
     "rootDefinitionId": "com.apple.managedclient.preferences_disableinboundconnectionfiltering",
@@ -7431,7 +10909,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "disableIcmpParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disableicmpparsing",
@@ -7527,7 +11005,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "enableSetWarnToBlock",
     "rootDefinitionId": "com.apple.managedclient.preferences_enablesetwarntoblock",
@@ -7597,7 +11075,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "exclusions",
     "rootDefinitionId": "com.apple.managedclient.preferences_exclusions",
@@ -7649,7 +11127,7 @@
       "value": ""
     },
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "offlineDefinitionUpdateUrl",
     "rootDefinitionId": "com.apple.managedclient.preferences_offlinedefinitionupdateurl",
@@ -7716,7 +11194,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "disableDnsOverTcpParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disablednsovertcpparsing",
@@ -7812,7 +11290,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "disableSshParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disablesshparsing",
@@ -7911,7 +11389,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "enableRealTimeProtection",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_enablerealtimeprotection",
@@ -8018,7 +11496,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "offlineDefinitionUpdate",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_offlinedefinitionupdate",
@@ -8126,7 +11604,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "diagnosticLevel",
     "rootDefinitionId": "linux_mdatp_managed_cloudservice_diagnosticlevel",
@@ -8246,7 +11724,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "exclusions_item_$type",
     "rootDefinitionId": "linux_mdatp_managed_exclusionsettings_exclusions",
@@ -8376,7 +11854,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "exclusions_item_isDirectory",
     "rootDefinitionId": "linux_mdatp_managed_exclusionsettings_exclusions",
@@ -8498,7 +11976,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "enforcementLevel",
     "rootDefinitionId": "linux_mdatp_managed_networkprotection_enforcementlevel",
@@ -8611,7 +12089,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "enableRealTimeProtection",
     "rootDefinitionId": "com.apple.managedclient.preferences_enablerealtimeprotection",
@@ -8709,7 +12187,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "offlineDefinitionUpdate",
     "rootDefinitionId": "com.apple.managedclient.preferences_offlinedefinitionupdate",
@@ -8805,7 +12283,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "disableTlsParsing",
     "rootDefinitionId": "com.apple.managedclient.preferences_disabletlsparsing",
@@ -8916,7 +12394,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "enforcementLevel",
     "rootDefinitionId": "com.apple.managedclient.preferences_enforcementlevel",
@@ -9028,7 +12506,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "nonExecMountPolicy",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_nonexecmountpolicy",
@@ -9154,7 +12632,7 @@
     "valueDefinition": [],
     "defaultValue": [],
     "accessTypes": "none",
-    "version": "639199236441736374",
+    "version": "639210955061639801",
     "helpText": null,
     "name": "threatTypeSettings_item_value",
     "rootDefinitionId": "linux_mdatp_managed_antivirusengine_threattypesettings",
