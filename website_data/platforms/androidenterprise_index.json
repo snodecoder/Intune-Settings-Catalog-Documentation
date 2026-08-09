@@ -621,34 +621,6 @@
     "categoryName": "Device Restriction"
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.camerablockedaosp",
-    "settingName": "Block access to camera",
-    "settingDescription": "If 'True', prevents access to the camera on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow access to the camera. Intune only manages access to the device camera. It doesn't have access to pictures or videos.",
-    "keywords": [
-      "Block",
-      "Camera",
-      "Camera Block",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.enterprisedisplaynamevisibility",
-    "settingName": "Hide organization name",
-    "settingDescription": "If 'True', prevents the enterprise name from being displayed on the device (such as on the lock screen). If 'False', Intune doesn't change or update this setting. By default, the OS displays the enterprise name set during device setup. Available for fully managed, dedicated, and corporate-owned work profile devices.",
-    "keywords": [
-      "Company",
-      "company name",
-      "organization name",
-      "organization",
-      "brand",
-      "label",
-      "hide organization name",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.factoryresetblocked",
     "settingName": "Block factory reset",
     "settingDescription": "If 'True', prevents users from using the factory reset option in the device's settings. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to use this setting on the device. Available for fully managed and dedicated devices.",
@@ -691,6 +663,47 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.passwordrequiredtypeaosp",
+    "settingName": "Required password type",
+    "settingDescription": "Set the password’s complexity requirements. Additional password requirements will become available based on your selection. For more details, see the information provided in the ‘Learn More’ section below.",
+    "keywords": [
+      "Password",
+      "Passcode",
+      "Password type",
+      "Password required type",
+      "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.camerablockedaosp",
+    "settingName": "Block access to camera",
+    "settingDescription": "If 'True', prevents access to the camera on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow access to the camera. Intune only manages access to the device camera. It doesn't have access to pictures or videos.",
+    "keywords": [
+      "Block",
+      "Camera",
+      "Camera Block",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.enterprisedisplaynamevisibility",
+    "settingName": "Hide organization name",
+    "settingDescription": "If 'True', prevents the enterprise name from being displayed on the device (such as on the lock screen). If 'False', Intune doesn't change or update this setting. By default, the OS displays the enterprise name set during device setup. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "Company",
+      "company name",
+      "organization name",
+      "organization",
+      "brand",
+      "label",
+      "hide organization name",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordminimumnumericcharacters",
     "settingName": "Number of numeric characters required",
     "settingDescription": "Enter the number of numeric characters (1, 2, 3, and so on) the work profile password must have, between 1 and 16 characters. Available for corporate-owned work profile devices (at work profile level).",
@@ -713,19 +726,6 @@
       "Password",
       "Passcode",
       "Password Length",
-      "Device password"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.passwordrequiredtypeaosp",
-    "settingName": "Required password type",
-    "settingDescription": "Set the password’s complexity requirements. Additional password requirements will become available based on your selection. For more details, see the information provided in the ‘Learn More’ section below.",
-    "keywords": [
-      "Password",
-      "Passcode",
-      "Password type",
-      "Password required type",
       "Device password"
     ],
     "categoryName": "Device Restriction"

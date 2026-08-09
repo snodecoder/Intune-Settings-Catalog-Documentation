@@ -344,6 +344,33 @@
     "categoryName": "Microsoft Defender"
   },
   {
+    "settingId": "com.apple.managedclient.preferences_enablefilehashcomputation",
+    "settingName": "Enable file hash computation",
+    "settingDescription": "Enables or disables file hash computation feature. When this feature is enabled Windows defender will compute hashes for files it scans. This will help in improving the accuracy of Custom Indicator matches. However, enabling Enable file hash computation may impact device performance.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_timeofday",
+    "settingName": "Daily Schedule scan time",
+    "settingDescription": "Selects the time of day that the Defender daily scan should run. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120.",
+    "keywords": [
+      "Schedule Scan"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_platformupdatecontrols_version_fixedvalue",
+    "settingName": "Platform Update Fixed Version",
+    "settingDescription": "Specify the exact platform version to pin to, e.g. 101.26021.0002",
+    "keywords": [
+      "Platform Update"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
     "settingId": "com.apple.managedclient.preferences_allowedthreats",
     "settingName": "Allowed threats",
     "settingDescription": "List of threats (identified by their name) that are not blocked by the product and are instead allowed to run.",
@@ -369,15 +396,6 @@
     "settingDescription": "Specify the merge policy for threat type settings. This can be a combination of administrator-defined and user-defined settings (merge) or only administrator-defined settings (admin_only). This setting can be used to restrict local users from defining their own settings for different threat types.",
     "keywords": [
       "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_enablefilehashcomputation",
-    "settingName": "Enable file hash computation",
-    "settingDescription": "Enables or disables file hash computation feature. When this feature is enabled Windows defender will compute hashes for files it scans. This will help in improving the accuracy of Custom Indicator matches. However, enabling Enable file hash computation may impact device performance.",
-    "keywords": [
       "Antivirus engine"
     ],
     "categoryName": "Microsoft Defender"
@@ -417,24 +435,6 @@
     "settingDescription": "This policy setting allows you to enable or disable low CPU priority for scheduled scans. If you enable this setting, low CPU priority will be used during scheduled scans. If you disable or do not configure this setting, not changes will be made to CPU priority for scheduled scans.",
     "keywords": [
       "Schedule Scan"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_timeofday",
-    "settingName": "Daily Schedule scan time",
-    "settingDescription": "Selects the time of day that the Defender daily scan should run. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120.",
-    "keywords": [
-      "Schedule Scan"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_platformupdatecontrols_version_fixedvalue",
-    "settingName": "Platform Update Fixed Version",
-    "settingDescription": "Specify the exact platform version to pin to, e.g. 101.26021.0002",
-    "keywords": [
-      "Platform Update"
     ],
     "categoryName": "Microsoft Defender"
   },

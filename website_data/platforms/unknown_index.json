@@ -842,28 +842,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "ade_accountsettings_restrictediting",
-    "settingName": "Restrict editing",
-    "settingDescription": "Prevent the end user from editing the full name and account name",
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Account settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_accountsettings_createlocalprimary",
-    "settingName": "Create a local primary account",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Account settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_accountsettings_adminaccountpasswordrotation",
     "settingName": "Admin account password rotation period (days)",
     "settingDescription": null,
@@ -878,6 +856,161 @@
     "settingId": "ade_accountsettings_adminaccountfullname",
     "settingName": "Admin account full name",
     "settingDescription": "The full name for the administrator account. This field is to be defaulted to 'Admin'.",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Account settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_tvhomescreensync",
+    "settingName": "TV Home Screen Sync",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_watchmigration",
+    "settingName": "Watch migration",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsclockedout",
+    "settingName": "Mute notifications",
+    "settingDescription": "This will automatically mute Microsoft Teams notifications when managed account is in non-working time. Note: Configuring this setting will prevent end users from editing their global quiet time settings.",
+    "keywords": [
+      "Mute",
+      "Notifications",
+      "Teams",
+      "Outlook",
+      "Non-working time"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_skipexpress",
+    "settingName": "Hide privacy settings",
+    "settingDescription": "Specify whether to show privacy settings to users.",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "SkipExpress",
+      "Out-of-box experience settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "enrollment_autopilot_dpp_customerrormessage",
+    "settingName": "Custom error message",
+    "settingDescription": "This message will be displayed if an error occurs during deployment.",
+    "keywords": [
+      "Autopilot",
+      "Device Preparation",
+      "CustomErrorMessage",
+      "Out-of-box experience settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance",
+    "settingName": "Agent Governance",
+    "settingDescription": "Agent Governance policy for configuring AI agent containment settings.",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_laps_policies_automaticaccountmanagementenabled",
+    "settingName": "Automatic Account Management Enabled",
+    "settingDescription": "Use this setting to specify whether automatic account management is enabled.\n\nIf this setting is enabled, the target account will be automatically managed.\n\nIf this setting is disabled, the target account will not be automatically managed.\n\nIf not specified, this setting defaults to False.",
+    "keywords": [
+      "Automatic Account Management Enabled",
+      "LAPS"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_laps_policies_automaticaccountmanagementrandomizename",
+    "settingName": "Automatic Account Management Randomize Name",
+    "settingDescription": "Use this setting to configure whether the name of the automatically managed account uses a random numeric suffix each time the password is rotated.\n\nIf this setting is enabled, the name of the target account will use a random numeric suffix.\n\nIf this setting is disbled, the name of the target account will not use a random numeric suffix..\n\nIf not specified, this setting defaults to False.",
+    "keywords": [
+      "Automatic Account Management Randomize Name",
+      "LAPS"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_laps_policies_automaticaccountmanagementnameorprefix",
+    "settingName": "Automatic Account Management Name Or Prefix",
+    "settingDescription": "Use this setting to configure the name or prefix of the managed local administrator account.\n\nIf specified, the value will be used as the name or name prefix of the managed account.\n\nIf not specified, this setting will default to \"WLapsAdmin\".",
+    "keywords": [
+      "Automatic Account Management Name Or Prefix",
+      "LAPS"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_certificatepayloadwithreusablesetting",
+    "settingName": "Certificate",
+    "settingDescription": null,
+    "keywords": [
+      "Certificate",
+      "Elevation",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_internalname",
+    "settingName": "Internal name",
+    "settingDescription": null,
+    "keywords": [
+      "Internal Name",
+      "Elevation",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_certificatefileupload",
+    "settingName": "File upload",
+    "settingDescription": null,
+    "keywords": [
+      "Certificate",
+      "Elevation",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_accountsettings_restrictediting",
+    "settingName": "Restrict editing",
+    "settingDescription": "Prevent the end user from editing the full name and account name",
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Account settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_accountsettings_createlocalprimary",
+    "settingName": "Create a local primary account",
+    "settingDescription": null,
     "keywords": [
       "ADE profile",
       "enrollment",
@@ -1018,65 +1151,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "ade_setupassistant_tvhomescreensync",
-    "settingName": "TV Home Screen Sync",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_setupassistant_watchmigration",
-    "settingName": "Watch migration",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsclockedout",
-    "settingName": "Mute notifications",
-    "settingDescription": "This will automatically mute Microsoft Teams notifications when managed account is in non-working time. Note: Configuring this setting will prevent end users from editing their global quiet time settings.",
-    "keywords": [
-      "Mute",
-      "Notifications",
-      "Teams",
-      "Outlook",
-      "Non-working time"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "enrollment_autopilot_dpp_skipexpress",
-    "settingName": "Hide privacy settings",
-    "settingDescription": "Specify whether to show privacy settings to users.",
-    "keywords": [
-      "Autopilot",
-      "Device Preparation",
-      "SkipExpress",
-      "Out-of-box experience settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "enrollment_autopilot_dpp_customerrormessage",
-    "settingName": "Custom error message",
-    "settingDescription": "This message will be displayed if an error occurs during deployment.",
-    "keywords": [
-      "Autopilot",
-      "Device Preparation",
-      "CustomErrorMessage",
-      "Out-of-box experience settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "enrollment_autopilot_dpp_devicerenametemplate",
     "settingName": "Enter a name",
     "settingDescription": "Create a unique name for your devices. Names must be 63 characters or less once macros are expanded, and can contain letters (a-z, A-Z), numbers (0-9), and hyphens. Names must not contain only numbers. Names cannot include a blank space. Use the %SERIAL% macro to add a hardware-specific serial number. Alternatively, use the %RAND:x% macro to add a random string of numbers, where x equals the number of digits to add.",
@@ -1107,17 +1181,6 @@
       "Validation",
       "Privilege Management",
       "Privilege Management Elevation Client Settings"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "user_vendor_msft_agentgovernance",
-    "settingName": "Agent Governance",
-    "settingDescription": "Agent Governance policy for configuring AI agent containment settings.",
-    "keywords": [
-      "AgentGovernance",
-      "Agent Governance",
-      "Container Policy"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1208,36 +1271,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_laps_policies_automaticaccountmanagementenabled",
-    "settingName": "Automatic Account Management Enabled",
-    "settingDescription": "Use this setting to specify whether automatic account management is enabled.\n\nIf this setting is enabled, the target account will be automatically managed.\n\nIf this setting is disabled, the target account will not be automatically managed.\n\nIf not specified, this setting defaults to False.",
-    "keywords": [
-      "Automatic Account Management Enabled",
-      "LAPS"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_laps_policies_automaticaccountmanagementrandomizename",
-    "settingName": "Automatic Account Management Randomize Name",
-    "settingDescription": "Use this setting to configure whether the name of the automatically managed account uses a random numeric suffix each time the password is rotated.\n\nIf this setting is enabled, the name of the target account will use a random numeric suffix.\n\nIf this setting is disbled, the name of the target account will not use a random numeric suffix..\n\nIf not specified, this setting defaults to False.",
-    "keywords": [
-      "Automatic Account Management Randomize Name",
-      "LAPS"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_laps_policies_automaticaccountmanagementnameorprefix",
-    "settingName": "Automatic Account Management Name Or Prefix",
-    "settingDescription": "Use this setting to configure the name or prefix of the managed local administrator account.\n\nIf specified, the value will be used as the name or name prefix of the managed account.\n\nIf not specified, this setting will default to \"WLapsAdmin\".",
-    "keywords": [
-      "Automatic Account Management Name Or Prefix",
-      "LAPS"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_localusersandgroups_configure_groupconfiguration_accessgroup",
     "settingName": "access group",
     "settingDescription": "This Setting allows an administrator to manage local groups on a Device.                             Possible settings:                             1. Update Group Membership: Update a group and add and/or remove members though the 'U' action.                             When using Update, existing group members that are not specified in the policy remain untouched.                             2. Replace Group Membership: Restrict a group by replacing group membership through the 'R' action.                             When using Replace, existing group membership is replaced by the list of members specified in                             the add member section. This option works in the same way as a Restricted Group and any group                             members that are not specified in the policy are removed.                             Caution: If the same group is configured with both Replace and Update, then Replace will win.",
@@ -1256,39 +1289,6 @@
       "LocalUsersAndGroups",
       "Configure",
       "Local Users And Groups"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_certificatepayloadwithreusablesetting",
-    "settingName": "Certificate",
-    "settingDescription": null,
-    "keywords": [
-      "Certificate",
-      "Elevation",
-      "Privilege Management"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_internalname",
-    "settingName": "Internal name",
-    "settingDescription": null,
-    "keywords": [
-      "Internal Name",
-      "Elevation",
-      "Privilege Management"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_certificatefileupload",
-    "settingName": "File upload",
-    "settingDescription": null,
-    "keywords": [
-      "Certificate",
-      "Elevation",
-      "Privilege Management"
     ],
     "categoryName": "Uncategorized"
   },
