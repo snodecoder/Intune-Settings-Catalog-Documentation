@@ -196,6 +196,40 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.wipedataflag",
+    "settingName": "Remove all eSIMs during a device wipe",
+    "settingDescription": "If 'True', all eSIMs are removed when a device is wiped. If 'False', Intune doesn't change or update this setting. By default, eSIMs are not removed during a device wipe, except where required by the OS. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "eSIM",
+      "embedded SIM",
+      "SIM",
+      "SIM card",
+      "carrier profile",
+      "cellular",
+      "mobile network",
+      "wipe device",
+      "remove eSIM",
+      "managed eSIM",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.unifiedlocksettings",
+    "settingName": "Require separate work lock",
+    "settingDescription": "If 'True', requires a separate lock for the work profile, preventing use of a unified lock for both device and work profile. If set to 'False', Intune doesn't change or update this setting. By default, the OS might allow a common lock for the device and the work profile. Available for corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "One lock",
+      "Password",
+      "Passcode",
+      "PIN",
+      "Work profile",
+      "Unified lock",
+      "Work profile password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.screencaptureblocked",
     "settingName": "Block screen capture",
     "settingDescription": "If 'True', prevents screenshots or screen captures on the device. It also prevents the content from being shown on display devices that don't have a secure video output. If 'False', Intune doesn't change or update this setting. By default, the OS might let users capture the screen contents as an image. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
@@ -676,6 +710,23 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.stayonpluggedmodes",
+    "settingName": "Screen on while device plugged in",
+    "settingDescription": "Select the battery charging modes for which the device screen stays on while plugged in. When the device is connected using one of the selected power sources, the screen will not turn off automatically. 'AC' keeps the screen on when the device is charging over an AC adapter. 'USB' keeps the screen on when the device is charging over USB. 'Wireless' keeps the screen on when the device is charging wirelessly. When '0 selected' (no modes chosen), the device follows its default screen timeout behavior. When using this setting, it is recommended to clear the 'Time to lock screen' setting so that the device doesn't lock itself while it stays on. Available for fully managed and dedicated devices.",
+    "keywords": [
+      "StayOnPluggedModes",
+      "Screen on",
+      "Plugged in",
+      "Charging",
+      "Power",
+      "AC",
+      "USB",
+      "Wireless",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.camerablockedaosp",
     "settingName": "Block access to camera",
     "settingDescription": "If 'True', prevents access to the camera on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow access to the camera. Intune only manages access to the device camera. It doesn't have access to pictures or videos.",
@@ -727,6 +778,19 @@
       "Passcode",
       "Password Length",
       "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.maxdayswithworkoff",
+    "settingName": "Maximum days to turn off work profile",
+    "settingDescription": "Set the maximum number of days a work profile can be turned off before the work profile is removed. Value of 0 means no limit. Available for corporate-owned work profile (COPE) devices running Android 11+.",
+    "keywords": [
+      "MaxDaysWithWorkOff",
+      "Work",
+      "Personal",
+      "COPE",
+      "General"
     ],
     "categoryName": "Device Restriction"
   },
@@ -849,6 +913,20 @@
       "Require",
       "Unlock",
       "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.screentimeout",
+    "settingName": "Screen timeout",
+    "settingDescription": "Enter the number of seconds for the screen timeout duration. A value of 0 means there is no restriction. When configured, the device enforces this as the maximum screen timeout. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "Screen Timeout",
+      "Lockscreen",
+      "Go Dark",
+      "Screen Saver",
+      "Screen Duration",
+      "Power"
     ],
     "categoryName": "Device Restriction"
   },

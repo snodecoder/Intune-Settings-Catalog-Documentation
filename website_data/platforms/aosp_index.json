@@ -122,6 +122,25 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.wipedataflag",
+    "settingName": "Remove all eSIMs during a device wipe",
+    "settingDescription": "If 'True', all eSIMs are removed when a device is wiped. If 'False', Intune doesn't change or update this setting. By default, eSIMs are not removed during a device wipe, except where required by the OS. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "eSIM",
+      "embedded SIM",
+      "SIM",
+      "SIM card",
+      "carrier profile",
+      "cellular",
+      "mobile network",
+      "wipe device",
+      "remove eSIM",
+      "managed eSIM",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.screencaptureblocked",
     "settingName": "Block screen capture",
     "settingDescription": "If 'True', prevents screenshots or screen captures on the device. It also prevents the content from being shown on display devices that don't have a secure video output. If 'False', Intune doesn't change or update this setting. By default, the OS might let users capture the screen contents as an image. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
@@ -451,6 +470,19 @@
       "Passcode",
       "Password Length",
       "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.maxdayswithworkoff",
+    "settingName": "Maximum days to turn off work profile",
+    "settingDescription": "Set the maximum number of days a work profile can be turned off before the work profile is removed. Value of 0 means no limit. Available for corporate-owned work profile (COPE) devices running Android 11+.",
+    "keywords": [
+      "MaxDaysWithWorkOff",
+      "Work",
+      "Personal",
+      "COPE",
+      "General"
     ],
     "categoryName": "Device Restriction"
   },

@@ -1,5 +1,38 @@
 [
   {
+    "settingId": "device_vendor_msft_maintenancewindows_dayofmonth",
+    "settingName": "Day of month",
+    "settingDescription": "Specify the day of the month on which the maintenance window should run. Value must be between 1 and 28.",
+    "keywords": [
+      "Maintenance Window",
+      "Day of Month",
+      "Maintenance Windows"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_maintenancewindows_weekinmonth",
+    "settingName": "Week in Month",
+    "settingDescription": "Select the week of the month on which the maintenance window should run.",
+    "keywords": [
+      "Maintenance Window",
+      "Week in Month",
+      "Maintenance Windows"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_maintenancewindows_dayoftheweek",
+    "settingName": "Day of the week",
+    "settingDescription": "Select the day of the week on which the maintenance window should run.",
+    "keywords": [
+      "Maintenance Window",
+      "Day of the Week",
+      "Maintenance Windows"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_authenticationmethod",
     "settingName": "Intune authentication method",
     "settingDescription": "If your organization uses multifactor authentication, select Setup Assistant with modern authentication, which prompts users to authenticate based on settings in Entra.",
@@ -219,6 +252,28 @@
       "Recovery",
       "Configuration",
       "Win RE"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_maintenancewindows_startdate",
+    "settingName": "Start date",
+    "settingDescription": "Specify the start date for the maintenance window in YYYY-MM-DD format.",
+    "keywords": [
+      "Maintenance Window",
+      "Start Date",
+      "Maintenance Windows"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_maintenancewindows_enablemaintenancewindows",
+    "settingName": "Enable Maintenance windows",
+    "settingDescription": "Configure when devices receive specific updates. During the maintenance window, the selected update action runs on the assigned devices.",
+    "keywords": [
+      "Maintenance Window",
+      "Enable Maintenance Windows",
+      "Maintenance Windows"
     ],
     "categoryName": "Uncategorized"
   },
@@ -465,6 +520,39 @@
       "Rule type",
       "Privilege Management",
       "Business Justification"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_liquidglass",
+    "settingName": "Liquid Glass",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_maintenancewindows_monthlyscheduletype",
+    "settingName": "Monthly – Schedule type",
+    "settingDescription": "Select the type of monthly schedule for the maintenance window.",
+    "keywords": [
+      "Maintenance Window",
+      "Monthly Schedule Type",
+      "Maintenance Windows"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_maintenancewindows_updateaction",
+    "settingName": "Update action",
+    "settingDescription": "Select the update action to perform during the maintenance window.",
+    "keywords": [
+      "Maintenance Window",
+      "Update Action",
+      "Maintenance Windows"
     ],
     "categoryName": "Uncategorized"
   },
@@ -997,6 +1085,17 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "ade_setupassistant_accessibilityappearance",
+    "settingName": "Accessibility appearance",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_accountsettings_restrictediting",
     "settingName": "Restrict editing",
     "settingDescription": "Prevent the end user from editing the full name and account name",
@@ -1293,6 +1392,17 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "device_vendor_msft_maintenancewindows_duration",
+    "settingName": "Duration (hours)",
+    "settingDescription": "Specify the duration of the maintenance window in hours. Value must be between 2 and 24 hours.",
+    "keywords": [
+      "Maintenance Window",
+      "Duration",
+      "Maintenance Windows"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_accountsettings_primaryaccountfullname",
     "settingName": "Primary account full name",
     "settingDescription": "The full name for the account. Setup Assistant will user this value to prefill the Full Name field if 'Prefill account info' is set to 'Not configured'. This field is to be defaulted to the variable, {{username}}, for example, 'John Doe'.",
@@ -1578,6 +1688,28 @@
       "File Description",
       "Elevation",
       "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_maintenancewindows_weeklydayselection",
+    "settingName": "Weekly – Day selection",
+    "settingDescription": "Select the days of the week on which the maintenance window should repeat.",
+    "keywords": [
+      "Maintenance Window",
+      "Weekly Day Selection",
+      "Maintenance Windows"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_maintenancewindows_repeatschedule",
+    "settingName": "Repeat schedule",
+    "settingDescription": "Select how often the maintenance window repeats.",
+    "keywords": [
+      "Maintenance Window",
+      "Repeat Schedule",
+      "Maintenance Windows"
     ],
     "categoryName": "Uncategorized"
   },
@@ -2041,6 +2173,28 @@
       "Quick Machine Recovery",
       "Auto Remediation",
       "Win RE"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_maintenancewindows_starttime",
+    "settingName": "Start time",
+    "settingDescription": "Specify the start time for the maintenance window in HH:MM format (24-hour clock).",
+    "keywords": [
+      "Maintenance Window",
+      "Start Time",
+      "Maintenance Windows"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_maintenancewindows_workloadtype",
+    "settingName": "Workload type",
+    "settingDescription": "Select one or more workloads for the maintenance window.",
+    "keywords": [
+      "Maintenance Window",
+      "Workload Type",
+      "Maintenance Windows"
     ],
     "categoryName": "Uncategorized"
   },

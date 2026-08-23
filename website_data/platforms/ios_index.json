@@ -1,5 +1,23 @@
 [
   {
+    "settingId": "plugin_filter",
+    "settingName": "Filter",
+    "settingDescription": "Settings that control authentication.",
+    "keywords": [
+      "Web Content Filter"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "plugin_filter_packets",
+    "settingName": "Packets",
+    "settingDescription": "Settings that control the packet filter. If not present, the system doesn't use packet filtering.",
+    "keywords": [
+      "Web Content Filter"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_state",
     "settingName": "State",
     "settingDescription": "Controls whether an extension is allowed.\n* Allowed - The user is allowed to turn the extension on or off\n* AlwaysOn - The extension will always be on\n* AlwaysOff - The extension will always be off",
@@ -2902,6 +2920,33 @@
       "Security"
     ],
     "categoryName": "Security"
+  },
+  {
+    "settingId": "plugin_filter_packets_providercomposedidentifier",
+    "settingName": "Provider Composed Identifier",
+    "settingDescription": "The packet provider identifier. This string identifies the filter data provider when the filter starts running. Required when Enabled is true.\n\nThe identifier is a composed identifier. The format of the composed identifier is \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the provider. \"Designated-Requirement\" is the designated requirement string from the code signature of the provider. For example, \"com.example.app {anchor apple generic}\".",
+    "keywords": [
+      "Web Content Filter"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "plugin_filter_grade",
+    "settingName": "Grade",
+    "settingDescription": "The system uses this value to derive the relative order of content filters. Filters with a grade of `firewall` see network traffic before filters with a grade of `inspector`. However, the system doesn't define the order of filters within a grade.",
+    "keywords": [
+      "Web Content Filter"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "plugin_filter_packets_enabled",
+    "settingName": "Enabled",
+    "settingDescription": "If `true`, the system enables filtering network packets.",
+    "keywords": [
+      "Web Content Filter"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "extensionsettings_extensionsettings",
@@ -5879,6 +5924,33 @@
       "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "plugin_filter_browsers",
+    "settingName": "Browsers",
+    "settingDescription": "Settings that control the browser filter. If not present, the system doesn't use browser filtering.",
+    "keywords": [
+      "Web Content Filter"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "plugin_filter_sockets_enabled",
+    "settingName": "Enabled",
+    "settingDescription": "If `true`, enables the filtering of socket traffic.",
+    "keywords": [
+      "Web Content Filter"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "plugin_pluginbundleid",
+    "settingName": "Plugin Bundle ID",
+    "settingDescription": "The bundle ID of the plug-in that provides filtering service. Consult your filtering solution vendor to determine what to specify for this value.",
+    "keywords": [
+      "Web Content Filter"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "extensionsettings_managedextensions_generickey_privatebrowsing",
@@ -8925,6 +8997,15 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "plugin_plugin",
+    "settingName": "com.apple.configuration.webcontent-filter.plugin",
+    "settingDescription": "Synthetic Top Level Setting Group Collection",
+    "keywords": [
+      "Web Content Filter"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_denieddomains",
     "settingName": "Denied Domains",
     "settingDescription": "Controls the domains and sub-domains the extension is not allowed to access. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
@@ -10540,6 +10621,24 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "plugin_serveraddress",
+    "settingName": "Server Address",
+    "settingDescription": "The server address, which may be the IP address, hostname, or URL.",
+    "keywords": [
+      "Web Content Filter"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "dnsproxy_providercomposedidentifier",
+    "settingName": "Provider Composed Identifier",
+    "settingDescription": "The identifier of the provider to use for this configuration. Useful for apps that contain more than one DNS proxy extension.\n\nIn iOS and visionOS, the identifier is a bundle ID, for example, \"com.example.app\".\n\nIn macOS, the identifier is a composed identifier. The format of the composed identifier is either \"Bundle-ID\" or \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the provider. \"Designated-Requirement\" is the designated requirement string from the code signature of the provider. For example, \"com.example.app\" for the bundle ID format, or \"com.example.app {anchor apple generic}\" for the designated requirement format.",
+    "keywords": [
+      "DNS Proxy"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "com.apple.caldav.account_caldavport",
     "settingName": "Cal DAV Port",
     "settingDescription": "The server’s port.",
@@ -11919,6 +12018,42 @@
       "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "plugin_filter_sockets_providercomposedidentifier",
+    "settingName": "Provider Composed Identifier",
+    "settingDescription": "The data provider identifier. This string identifies the filter data provider when the filter starts running. Required when Enabled is true.\n\nIn iOS and visionOS, the identifier is a bundle ID, for example, \"com.example.app\".\n\nIn macOS, the identifier is a composed identifier. The format of the composed identifier is \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the provider. \"Designated-Requirement\" is the designated requirement string from the code signature of the provider. For example, \"com.example.app {anchor apple generic}\".",
+    "keywords": [
+      "Web Content Filter"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "plugin_filter_browsers_enabled",
+    "settingName": "Enabled",
+    "settingDescription": "If `true`, the system enables filtering WebKit traffic.",
+    "keywords": [
+      "Web Content Filter"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "plugin_filter_sockets",
+    "settingName": "Sockets",
+    "settingDescription": "Settings that control the socket filter. If not present, the system doesn't use socket filtering.",
+    "keywords": [
+      "Web Content Filter"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "dnsproxy_dnsproxy",
+    "settingName": "com.apple.configuration.network.dns-proxy",
+    "settingDescription": "Synthetic Top Level Setting Group Collection",
+    "keywords": [
+      "DNS Proxy"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "extensionsettings_managedextensions_generickey_alloweddomains",
@@ -14799,6 +14934,15 @@
       "Security"
     ],
     "categoryName": "Security"
+  },
+  {
+    "settingId": "plugin_organization",
+    "settingName": "Organization",
+    "settingDescription": "The organization string to pass to the third-party plug-in.",
+    "keywords": [
+      "Web Content Filter"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "extensionsettings_managedextensions_generickey_keytobereplaced",
@@ -19249,6 +19393,24 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "plugin_visiblename",
+    "settingName": "Visible Name",
+    "settingDescription": "The name of the web content filter that the system displays on the device.",
+    "keywords": [
+      "Web Content Filter"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "dnsproxy_appbundleidentifier",
+    "settingName": "App Bundle Identifier",
+    "settingDescription": "The bundle identifier of the app containing the DNS proxy network extension.",
+    "keywords": [
+      "DNS Proxy"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "settings_item_accessibilitysettings_boldtextenabled",
     "settingName": "Bold Text Enabled",
     "settingDescription": "If 'true', enables bold text.",
@@ -20809,6 +20971,15 @@
       "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "dnsproxy_visiblename",
+    "settingName": "Visible Name",
+    "settingDescription": "The name of the DNS proxy configuration that the system displays on the device.",
+    "keywords": [
+      "DNS Proxy"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "com.apple.caldav.account_caldavprincipalurl",

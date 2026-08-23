@@ -1,5 +1,27 @@
 [
   {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowstartdate",
+    "settingName": "Maintenance Window Start Date",
+    "settingDescription": "Configure the start date for the maintenance window in the format of YYYY-MM-DD (for example, 2025-12-16). This field will only be honored for a non-repeating maintenance window. Repeating maintenance windows will start on the earliest date that meets the configured schedule.",
+    "keywords": [
+      "Maintenance Window Start Date",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklythursday",
+    "settingName": "Maintenance Window Weekly Thursday",
+    "settingDescription": "If the maintenance window repeat schedule is set to weekly, configure whether Thursday is included in the weekly schedule.",
+    "keywords": [
+      "Maintenance Window Weekly Thursday",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.importsearchengine_recommended",
     "settingName": "Allow importing of search engine settings (users can override)",
     "settingDescription": "Allows users to import search engine settings from another browser into Microsoft Edge.\n\nIf you enable, this policy, the option to import search engine settings is automatically selected.\n\nIf you disable this policy, search engine settings aren't imported at first run, and users can't import them manually.\n\nIf you don't configure this policy, search engine settings are imported at first run, and users can choose whether to import this data manually during later browsing sessions.\n\nYou can set this policy as a recommendation. This option means that Microsoft Edge imports search engine settings on first run, but users can select or clear the **search engine** option during manual import.\n\n**Note**: This policy currently manages importing from Internet Explorer (on Windows 7, 8, and 10).",
@@ -52034,6 +52056,39 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowmonthlyschedule",
+    "settingName": "Maintenance Window Monthly Schedule",
+    "settingDescription": "If the maintenance window repeat schedule is set to monthly, configure whether to repeat on the same date each month (the 1st of every month), a day within a specific week (for example, the second Tuesday of every month), or on the last day of each month. 1=repeat on same date each month, 2=repeat on a day of a specific week, 3=repeat on the last day of each month.",
+    "keywords": [
+      "Maintenance Window Monthly Schedule",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowstarttime",
+    "settingName": "Maintenance Window Start Time",
+    "settingDescription": "Configure the start time for the maintenance window in HH:MM format (for example, 23:30).",
+    "keywords": [
+      "Maintenance Window Start Time",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowupdateactions",
+    "settingName": "Maintenance Window Update Actions",
+    "settingDescription": "Specifies which update operations are allowed only during the maintenance window, 1 = Download, install and restart, 2 = Install and restart, 3 = Restart only.",
+    "keywords": [
+      "Maintenance Window Update Actions",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.configurentpfeedtabvisibility",
     "settingName": "Configure whether the Discover or Work feed tabs are shown on the New Tab Page.",
     "settingDescription": "This policy configures whether the Discover or Work feed tabs are shown on the New Tab Page. By default, both Work and Discover tabs are enabled.\n\nIf you set this policy to 'EnableBothWorkDiscover' (0) or do not configure this policy, Microsoft Edge shows both the Work and Discover feed tabs on the new tab page.\n\nIf you set this policy to 'EnableOnlyWork' (1), Microsoft Edge shows only the Work feed tab on the new tab page.\n\nIf you set this policy to 'EnableOnlyDiscover' (2), Microsoft Edge shows only the Discover feed tab on the new tab page.\n\nThis policy works with the SetNTPDefaultFeedTab policy, which controls which feed tab is selected by default when both tabs are available.\n\nPolicy options mapping:\n\n* EnableBothWorkDiscover (0) = Enable both Work and Discover tabs\n\n* EnableOnlyWork (1) = Enable only Work tab\n\n* EnableOnlyDiscover (2) = Enable only Discover tab\n\nUse the preceding information when configuring this policy.",
@@ -89167,6 +89222,28 @@
     "categoryName": "Microsoft Word 2016"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowenabled",
+    "settingName": "Maintenance Window Enabled",
+    "settingDescription": "Specifies whether maintenance window is enabled.",
+    "keywords": [
+      "Maintenance Window Enabled",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklytuesday",
+    "settingName": "Maintenance Window Weekly Tuesday",
+    "settingDescription": "If the maintenance window repeat schedule is set to weekly, configure whether Tuesday is included in the weekly schedule.",
+    "keywords": [
+      "Maintenance Window Weekly Tuesday",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.loopbacknetworkblockedforurls",
     "settingName": "Block sites from making network requests to the local device.",
     "settingDescription": "Specifies a list of URL patterns for which requests initiated from matching origins to loopback addresses (127.0.0.1, ::1, localhost) are blocked from issuing Local Network Access requests.\n\nIf a requesting origin matches a URL pattern specified in this policy, requests to loopback addresses are blocked.\n\nFor origins not covered by this policy, the user's personal settings and local network access restrictions apply.\n\nMultiple policies can specify origins that affect requests to the local device. If an origin matches more than one of the following policies, they are applied in the following order of precedence:\n- LoopbackNetworkBlockedForUrls\n- LoopbackNetworkAllowedForUrls\n- LocalNetworkAccessBlockedForUrls\n- LocalNetworkAccessAllowedForUrls\n\nNote: This policy improves local network security by blocking specified public websites from accessing loopback addresses. It helps prevent unauthorized external sites from reaching local services running on the device unless explicitly permitted.\n\nFor more information about Local Network Access, see https://wicg.github.io/local-network-access/",
@@ -101816,6 +101893,39 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowrepeatscheduleoption",
+    "settingName": "Maintenance Window Repeat Schedule Option",
+    "settingDescription": "Configure whether and how often the maintenance window repeats, 1=no repeat, 2=daily, 3=weekly, 4=monthly. Daily/weekly/monthly schedule will be repeated every day/week/month.",
+    "keywords": [
+      "Maintenance Window Repeat Schedule Option",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowmonthlyweekbaseddayoftheweek",
+    "settingName": "Maintenance Window Monthly Week Based Day Of The Week",
+    "settingDescription": "If the maintenance window repeat schedule is set to monthly, and set to repeat on the a specific day of a specific week, configure the specific day of the week to repeat maintenance window occurrence: 1=Sunday, 2=Monday, 3=Tuesday, 4=Wednesday, 5=Thursday, 6=Friday, 7=Saturday",
+    "keywords": [
+      "Maintenance Window Monthly Week Based Day Of The Week",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklysunday",
+    "settingName": "Maintenance Window Weekly Sunday",
+    "settingDescription": "If the maintenance window repeat schedule is set to weekly, configure whether Sunday is included in the weekly schedule.",
+    "keywords": [
+      "Maintenance Window Weekly Sunday",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autolaunchprotocolsfromorigins",
@@ -127198,6 +127308,17 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowmonthlyweekbasedoccurrenceinmonth",
+    "settingName": "Maintenance Window Monthly Week Based Occurrence In Month",
+    "settingDescription": "If the maintenance window repeat schedule is set to monthly, and set to repeat on the a specific day of a specific week, configure the specific week to repeat maintenance window occurrence. 1=first week, 2=second week, 3=third week, 4=fourth week, 5=last week.",
+    "keywords": [
+      "Maintenance Window Monthly Week Based Occurrence In Month",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchprovidersearchurl",
@@ -179204,6 +179325,50 @@
     "categoryName": "Microsoft Word 2016"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowmonthlymonthbaseddayofmonth",
+    "settingName": "Maintenance Window Monthly Month Based Day Of Month",
+    "settingDescription": "If the maintenance window repeat schedule is set to monthly, and set to repeat on the same date each month, configure the day of the month to repeat maintenance window occurrence (for example, 2 = repeat on the 2nd day of the month). Maximum value is 28.",
+    "keywords": [
+      "Maintenance Window Monthly Month Based Day Of Month",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklysaturday",
+    "settingName": "Maintenance Window Weekly Saturday",
+    "settingDescription": "If the maintenance window repeat schedule is set to weekly, configure whether Saturday is included in the weekly schedule.",
+    "keywords": [
+      "Maintenance Window Weekly Saturday",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowdurationhours",
+    "settingName": "Maintenance Window Duration Hours",
+    "settingDescription": "Configure the duration of the maintenance window in hours. Minimum value is 2, maximum value is 24.",
+    "keywords": [
+      "Maintenance Window Duration Hours",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklymonday",
+    "settingName": "Maintenance Window Weekly Monday",
+    "settingDescription": "SIf the maintenance window repeat schedule is set to weekly, configure whether Monday is included in the weekly schedule.",
+    "keywords": [
+      "Maintenance Window Weekly Monday",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.adssettingforintrusiveadssites",
     "settingName": "Ads setting for sites with intrusive ads",
     "settingDescription": "Controls whether ads are blocked on sites with intrusive ads.\n\nPolicy options mapping:\n\n* AllowAds (1) = Allow ads on all sites\n\n* BlockAds (2) = Block ads on sites with intrusive ads. (Default value)\n\nUse the preceding information when configuring this policy.",
@@ -192258,6 +192423,28 @@
       "WSL container"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklywednesday",
+    "settingName": "Maintenance Window Weekly Wednesday",
+    "settingDescription": "If the maintenance window repeat schedule is set to weekly, configure whether Wednesday is included in the weekly schedule.",
+    "keywords": [
+      "Maintenance Window Weekly Wednesday",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklyfriday",
+    "settingName": "Maintenance Window Weekly Friday",
+    "settingDescription": "If the maintenance window repeat schedule is set to weekly, configure whether Friday is included in the weekly schedule.",
+    "keywords": [
+      "Maintenance Window Weekly Friday",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autolaunchprotocolscomponentenabled",
