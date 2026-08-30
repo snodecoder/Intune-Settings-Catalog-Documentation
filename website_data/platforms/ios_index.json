@@ -1,5 +1,15 @@
 [
   {
+    "settingId": "extensionsettings_managedextensions_generickey_state",
+    "settingName": "State",
+    "settingDescription": "Controls whether an extension is allowed.\n* Allowed - The user is allowed to turn the extension on or off\n* AlwaysOn - The extension will always be on\n* AlwaysOff - The extension will always be off",
+    "keywords": [
+      "Extension Settings",
+      "Safari Extension Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "plugin_filter",
     "settingName": "Filter",
     "settingDescription": "Settings that control authentication.",
@@ -14,16 +24,6 @@
     "settingDescription": "Settings that control the packet filter. If not present, the system doesn't use packet filtering.",
     "keywords": [
       "Web Content Filter"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "extensionsettings_managedextensions_generickey_state",
-    "settingName": "State",
-    "settingDescription": "Controls whether an extension is allowed.\n* Allowed - The user is allowed to turn the extension on or off\n* AlwaysOn - The extension will always be on\n* AlwaysOff - The extension will always be off",
-    "keywords": [
-      "Extension Settings",
-      "Safari Extension Settings"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -2922,6 +2922,30 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_addressbarclipboardsuggestenabled",
+    "settingName": "Enable clipboard suggestions in the address bar",
+    "settingDescription": "This policy controls whether suggestions based on clipboard content are shown in the address bar suggestion dropdown.\n\nIf you enable this policy or don't configure it, Microsoft Edge may show suggestions based on clipboard content in the address bar suggestion dropdown.\n\nIf you disable this policy, Microsoft Edge doesn't show suggestions based on clipboard content in the address bar suggestion dropdown.",
+    "keywords": [
+      "AddressBarClipboardSuggestEnabled",
+      "Enable clipboard suggestions in the address bar",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "extensionsettings_extensionsettings",
+    "settingName": "com.apple.configuration.safari.extensions.settings",
+    "settingDescription": "Synthetic Top Level Setting Group Collection",
+    "keywords": [
+      "Extension Settings",
+      "Safari Extension Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "plugin_filter_packets_providercomposedidentifier",
     "settingName": "Provider Composed Identifier",
     "settingDescription": "The packet provider identifier. This string identifies the filter data provider when the filter starts running. Required when Enabled is true.\n\nThe identifier is a composed identifier. The format of the composed identifier is \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the provider. \"Designated-Requirement\" is the designated requirement string from the code signature of the provider. For example, \"com.example.app {anchor apple generic}\".",
@@ -2945,16 +2969,6 @@
     "settingDescription": "If `true`, the system enables filtering network packets.",
     "keywords": [
       "Web Content Filter"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "extensionsettings_extensionsettings",
-    "settingName": "com.apple.configuration.safari.extensions.settings",
-    "settingDescription": "Synthetic Top Level Setting Group Collection",
-    "keywords": [
-      "Extension Settings",
-      "Safari Extension Settings"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -5926,6 +5940,16 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "extensionsettings_managedextensions_generickey_privatebrowsing",
+    "settingName": "Private Browsing",
+    "settingDescription": "Controls whether an extension is allowed in Private Browsing.\n* Allowed - The user is allowed to turn the extension on or off in Private Browsing\n* AlwaysOn - The extension will always be on in Private Browsing if the extension is on outside of Private Browsing\n* AlwaysOff - The extension will never be on in Private Browsing",
+    "keywords": [
+      "Extension Settings",
+      "Safari Extension Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "plugin_filter_browsers",
     "settingName": "Browsers",
     "settingDescription": "Settings that control the browser filter. If not present, the system doesn't use browser filtering.",
@@ -5949,16 +5973,6 @@
     "settingDescription": "The bundle ID of the plug-in that provides filtering service. Consult your filtering solution vendor to determine what to specify for this value.",
     "keywords": [
       "Web Content Filter"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "extensionsettings_managedextensions_generickey_privatebrowsing",
-    "settingName": "Private Browsing",
-    "settingDescription": "Controls whether an extension is allowed in Private Browsing.\n* Allowed - The user is allowed to turn the extension on or off in Private Browsing\n* AlwaysOn - The extension will always be on in Private Browsing if the extension is on outside of Private Browsing\n* AlwaysOff - The extension will never be on in Private Browsing",
-    "keywords": [
-      "Extension Settings",
-      "Safari Extension Settings"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -8997,15 +9011,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "plugin_plugin",
-    "settingName": "com.apple.configuration.webcontent-filter.plugin",
-    "settingDescription": "Synthetic Top Level Setting Group Collection",
-    "keywords": [
-      "Web Content Filter"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
     "settingId": "extensionsettings_managedextensions_generickey_denieddomains",
     "settingName": "Denied Domains",
     "settingDescription": "Controls the domains and sub-domains the extension is not allowed to access. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
@@ -9022,6 +9027,15 @@
     "keywords": [
       "Extension Settings",
       "Safari Extension Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "plugin_plugin",
+    "settingName": "com.apple.configuration.webcontent-filter.plugin",
+    "settingDescription": "Synthetic Top Level Setting Group Collection",
+    "keywords": [
+      "Web Content Filter"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -10630,15 +10644,6 @@
     "categoryName": "Declarative Device Management (DDM)"
   },
   {
-    "settingId": "dnsproxy_providercomposedidentifier",
-    "settingName": "Provider Composed Identifier",
-    "settingDescription": "The identifier of the provider to use for this configuration. Useful for apps that contain more than one DNS proxy extension.\n\nIn iOS and visionOS, the identifier is a bundle ID, for example, \"com.example.app\".\n\nIn macOS, the identifier is a composed identifier. The format of the composed identifier is either \"Bundle-ID\" or \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the provider. \"Designated-Requirement\" is the designated requirement string from the code signature of the provider. For example, \"com.example.app\" for the bundle ID format, or \"com.example.app {anchor apple generic}\" for the designated requirement format.",
-    "keywords": [
-      "DNS Proxy"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
     "settingId": "com.apple.caldav.account_caldavport",
     "settingName": "Cal DAV Port",
     "settingDescription": "The server’s port.",
@@ -10943,6 +10948,15 @@
     "settingDescription": "Synthetic Top Level Setting Group Collection",
     "keywords": [
       "Safari Browser"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "dnsproxy_providercomposedidentifier",
+    "settingName": "Provider Composed Identifier",
+    "settingDescription": "The identifier of the provider to use for this configuration. Useful for apps that contain more than one DNS proxy extension.\n\nIn iOS and visionOS, the identifier is a bundle ID, for example, \"com.example.app\".\n\nIn macOS, the identifier is a composed identifier. The format of the composed identifier is either \"Bundle-ID\" or \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the provider. \"Designated-Requirement\" is the designated requirement string from the code signature of the provider. For example, \"com.example.app\" for the bundle ID format, or \"com.example.app {anchor apple generic}\" for the designated requirement format.",
+    "keywords": [
+      "DNS Proxy"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -12020,6 +12034,44 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_processisolationenabled",
+    "settingName": "Enable Process Isolation",
+    "settingDescription": "This policy controls Process Isolation in Microsoft Edge.\n\nWhen this policy is enabled, Microsoft Edge uses Process Isolation to help improve browser security by preventing authorized applications on the device from reading or modifying the contents of Microsoft Edge's running processes. This also helps prevent other applications from accessing encrypted data used by Microsoft Edge.\n\nEnabling Process Isolation may cause incompatibilities with third party applications that rely on being able to inject or tamper with Microsoft Edge's processes, such as antivirus, screen reader or window manager applications.\n\nSetting the policy to Enabled turns on process isolation in Microsoft Edge.\n\nSetting the policy to Disabled turns off process isolation in Microsoft Edge.\n\nIf this policy is unset, Microsoft Edge will follow the default rollout process for the Process Isolation feature, which means that the feature will be gradually rolled out to an increasing number of users.\n\nNote: This policy is applied when Microsoft Edge starts. If the policy is changed while Microsoft Edge is running, the new setting will take effect on the next restart.",
+    "keywords": [
+      "ProcessIsolationEnabled",
+      "Enable Process Isolation",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_processisolationenabled",
+    "settingName": "Enable Process Isolation (User)",
+    "settingDescription": "This policy controls Process Isolation in Microsoft Edge.\n\nWhen this policy is enabled, Microsoft Edge uses Process Isolation to help improve browser security by preventing authorized applications on the device from reading or modifying the contents of Microsoft Edge's running processes. This also helps prevent other applications from accessing encrypted data used by Microsoft Edge.\n\nEnabling Process Isolation may cause incompatibilities with third party applications that rely on being able to inject or tamper with Microsoft Edge's processes, such as antivirus, screen reader or window manager applications.\n\nSetting the policy to Enabled turns on process isolation in Microsoft Edge.\n\nSetting the policy to Disabled turns off process isolation in Microsoft Edge.\n\nIf this policy is unset, Microsoft Edge will follow the default rollout process for the Process Isolation feature, which means that the feature will be gradually rolled out to an increasing number of users.\n\nNote: This policy is applied when Microsoft Edge starts. If the policy is changed while Microsoft Edge is running, the new setting will take effect on the next restart.",
+    "keywords": [
+      "ProcessIsolationEnabled",
+      "Enable Process Isolation",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "extensionsettings_managedextensions_generickey_alloweddomains",
+    "settingName": "Allowed Domains",
+    "settingDescription": "Controls the domains and sub-domains the extension is granted access to. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
+    "keywords": [
+      "Extension Settings",
+      "Safari Extension Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "plugin_filter_sockets_providercomposedidentifier",
     "settingName": "Provider Composed Identifier",
     "settingDescription": "The data provider identifier. This string identifies the filter data provider when the filter starts running. Required when Enabled is true.\n\nIn iOS and visionOS, the identifier is a bundle ID, for example, \"com.example.app\".\n\nIn macOS, the identifier is a composed identifier. The format of the composed identifier is \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the provider. \"Designated-Requirement\" is the designated requirement string from the code signature of the provider. For example, \"com.example.app {anchor apple generic}\".",
@@ -12043,25 +12095,6 @@
     "settingDescription": "Settings that control the socket filter. If not present, the system doesn't use socket filtering.",
     "keywords": [
       "Web Content Filter"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "dnsproxy_dnsproxy",
-    "settingName": "com.apple.configuration.network.dns-proxy",
-    "settingDescription": "Synthetic Top Level Setting Group Collection",
-    "keywords": [
-      "DNS Proxy"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "extensionsettings_managedextensions_generickey_alloweddomains",
-    "settingName": "Allowed Domains",
-    "settingDescription": "Controls the domains and sub-domains the extension is granted access to. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
-    "keywords": [
-      "Extension Settings",
-      "Safari Extension Settings"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -12798,6 +12831,15 @@
     "settingDescription": "If `false`, disables auto-correction.",
     "keywords": [
       "Keyboard Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "dnsproxy_dnsproxy",
+    "settingName": "com.apple.configuration.network.dns-proxy",
+    "settingDescription": "Synthetic Top Level Setting Group Collection",
+    "keywords": [
+      "DNS Proxy"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -14936,21 +14978,21 @@
     "categoryName": "Security"
   },
   {
-    "settingId": "plugin_organization",
-    "settingName": "Organization",
-    "settingDescription": "The organization string to pass to the third-party plug-in.",
-    "keywords": [
-      "Web Content Filter"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
     "settingId": "extensionsettings_managedextensions_generickey_keytobereplaced",
     "settingName": "Managed Extensions",
     "settingDescription": "Extensions being managed",
     "keywords": [
       "Extension Settings",
       "Safari Extension Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "plugin_organization",
+    "settingName": "Organization",
+    "settingDescription": "The organization string to pass to the third-party plug-in.",
+    "keywords": [
+      "Web Content Filter"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -17946,6 +17988,20 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_addressbarclipboardsuggestenabled",
+    "settingName": "Enable clipboard suggestions in the address bar (User)",
+    "settingDescription": "This policy controls whether suggestions based on clipboard content are shown in the address bar suggestion dropdown.\n\nIf you enable this policy or don't configure it, Microsoft Edge may show suggestions based on clipboard content in the address bar suggestion dropdown.\n\nIf you disable this policy, Microsoft Edge doesn't show suggestions based on clipboard content in the address bar suggestion dropdown.",
+    "keywords": [
+      "AddressBarClipboardSuggestEnabled",
+      "Enable clipboard suggestions in the address bar",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.apple.caldav.account_caldavusessl",
     "settingName": "Cal DAV Use SSL",
     "settingDescription": "If true, enables SSL.",
@@ -19393,20 +19449,39 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_edgereadingmodeservicebasedextractionenabled",
+    "settingName": "Enable service-based extraction for Reading Mode in Microsoft Edge (User)",
+    "settingDescription": "This policy controls whether Microsoft Edge can use the Microsoft online extraction service to improve Reading Mode rendering.\n\nIf you enable or don't configure this policy, Microsoft Edge can send the text of the page being read to the service for processing.\n\nIf you disable this policy, Microsoft Edge doesn't send the text of the page being read to the service. Reading Mode remains available, but extraction quality may be limited.",
+    "keywords": [
+      "EdgeReadingModeServiceBasedExtractionEnabled",
+      "Enable service-based extraction for Reading Mode in Microsoft Edge",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_edgereadingmodeservicebasedextractionenabled",
+    "settingName": "Enable service-based extraction for Reading Mode in Microsoft Edge",
+    "settingDescription": "This policy controls whether Microsoft Edge can use the Microsoft online extraction service to improve Reading Mode rendering.\n\nIf you enable or don't configure this policy, Microsoft Edge can send the text of the page being read to the service for processing.\n\nIf you disable this policy, Microsoft Edge doesn't send the text of the page being read to the service. Reading Mode remains available, but extraction quality may be limited.",
+    "keywords": [
+      "EdgeReadingModeServiceBasedExtractionEnabled",
+      "Enable service-based extraction for Reading Mode in Microsoft Edge",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "plugin_visiblename",
     "settingName": "Visible Name",
     "settingDescription": "The name of the web content filter that the system displays on the device.",
     "keywords": [
       "Web Content Filter"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "dnsproxy_appbundleidentifier",
-    "settingName": "App Bundle Identifier",
-    "settingDescription": "The bundle identifier of the app containing the DNS proxy network extension.",
-    "keywords": [
-      "DNS Proxy"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -19664,6 +19739,15 @@
       "Extensible Single Sign On (SSO)"
     ],
     "categoryName": "Authentication"
+  },
+  {
+    "settingId": "dnsproxy_appbundleidentifier",
+    "settingName": "App Bundle Identifier",
+    "settingDescription": "The bundle identifier of the app containing the DNS proxy network extension.",
+    "keywords": [
+      "DNS Proxy"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "softwareupdate_rapidsecurityresponse_enablerollback",
@@ -20973,15 +21057,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "dnsproxy_visiblename",
-    "settingName": "Visible Name",
-    "settingDescription": "The name of the DNS proxy configuration that the system displays on the device.",
-    "keywords": [
-      "DNS Proxy"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
     "settingId": "com.apple.caldav.account_caldavprincipalurl",
     "settingName": "Cal DAV Principal URL",
     "settingDescription": "The base URL to the user’s calendar.",
@@ -21422,6 +21497,15 @@
     "settingDescription": "If `false`, disables spell check.",
     "keywords": [
       "Keyboard Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "dnsproxy_visiblename",
+    "settingName": "Visible Name",
+    "settingDescription": "The name of the DNS proxy configuration that the system displays on the device.",
+    "keywords": [
+      "DNS Proxy"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },

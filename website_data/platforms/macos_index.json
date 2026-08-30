@@ -1,5 +1,15 @@
 [
   {
+    "settingId": "extensionsettings_managedextensions_generickey_state",
+    "settingName": "State",
+    "settingDescription": "Controls whether an extension is allowed.\n* Allowed - The user is allowed to turn the extension on or off\n* AlwaysOn - The extension will always be on\n* AlwaysOff - The extension will always be off",
+    "keywords": [
+      "Extension Settings",
+      "Safari Extension Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "plugin_filter",
     "settingName": "Filter",
     "settingDescription": "Settings that control authentication.",
@@ -14,52 +24,6 @@
     "settingDescription": "Settings that control the packet filter. If not present, the system doesn't use packet filtering.",
     "keywords": [
       "Web Content Filter"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_allowsharedcaching",
-    "settingName": "Allow Shared Caching",
-    "settingDescription": "If `true`, the system caches non-iCloud content, such as apps and software updates. Changes to this value don't have an immediate effect. Clients may take some time to react to changes.\n\n> Note:\n> At least one of the `AllowPersonalCaching` or `AllowSharedCaching` keys need to be `true`.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_logclientidentity",
-    "settingName": "Log Client Identity",
-    "settingDescription": "If `true`, the Content Cache logs the IP address and port number of the clients that request content.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_personalcachelimit",
-    "settingName": "Personal Cache Limit",
-    "settingDescription": "The maximum number of bytes of disk space to use for the personal content cache. The content cache limits the maximum value to the `CacheLimit` value. Set to `0` to use the overall `CacheLimit`.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_publicranges_item_last",
-    "settingName": "Last",
-    "settingDescription": "The last IP address in the range.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "extensionsettings_managedextensions_generickey_state",
-    "settingName": "State",
-    "settingDescription": "Controls whether an extension is allowed.\n* Allowed - The user is allowed to turn the extension on or off\n* AlwaysOn - The extension will always be on\n* AlwaysOff - The extension will always be off",
-    "keywords": [
-      "Extension Settings",
-      "Safari Extension Settings"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -1537,6 +1501,42 @@
     "settingDescription": "If `true`, forces On-Device Only Translation.",
     "keywords": [
       "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_allowsharedcaching",
+    "settingName": "Allow Shared Caching",
+    "settingDescription": "If `true`, the system caches non-iCloud content, such as apps and software updates. Changes to this value don't have an immediate effect. Clients may take some time to react to changes.\n\n> Note:\n> At least one of the `AllowPersonalCaching` or `AllowSharedCaching` keys need to be `true`.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_logclientidentity",
+    "settingName": "Log Client Identity",
+    "settingDescription": "If `true`, the Content Cache logs the IP address and port number of the clients that request content.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_personalcachelimit",
+    "settingName": "Personal Cache Limit",
+    "settingDescription": "The maximum number of bytes of disk space to use for the personal content cache. The content cache limits the maximum value to the `CacheLimit` value. Set to `0` to use the overall `CacheLimit`.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_publicranges_item_last",
+    "settingName": "Last",
+    "settingDescription": "The last IP address in the range.",
+    "keywords": [
+      "Content Cache Settings"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -6169,6 +6169,30 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_addressbarclipboardsuggestenabled",
+    "settingName": "Enable clipboard suggestions in the address bar",
+    "settingDescription": "This policy controls whether suggestions based on clipboard content are shown in the address bar suggestion dropdown.\n\nIf you enable this policy or don't configure it, Microsoft Edge may show suggestions based on clipboard content in the address bar suggestion dropdown.\n\nIf you disable this policy, Microsoft Edge doesn't show suggestions based on clipboard content in the address bar suggestion dropdown.",
+    "keywords": [
+      "AddressBarClipboardSuggestEnabled",
+      "Enable clipboard suggestions in the address bar",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "extensionsettings_extensionsettings",
+    "settingName": "com.apple.configuration.safari.extensions.settings",
+    "settingDescription": "Synthetic Top Level Setting Group Collection",
+    "keywords": [
+      "Extension Settings",
+      "Safari Extension Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "plugin_filter_packets_providercomposedidentifier",
     "settingName": "Provider Composed Identifier",
     "settingDescription": "The packet provider identifier. This string identifies the filter data provider when the filter starts running. Required when Enabled is true.\n\nThe identifier is a composed identifier. The format of the composed identifier is \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the provider. \"Designated-Requirement\" is the designated requirement string from the code signature of the provider. For example, \"com.example.app {anchor apple generic}\".",
@@ -6192,61 +6216,6 @@
     "settingDescription": "If `true`, the system enables filtering network packets.",
     "keywords": [
       "Web Content Filter"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_allowcachedelete",
-    "settingName": "Allow Cache Delete",
-    "settingDescription": "If `true`, the system purges content from the cache automatically when it needs disk space for other apps when free disk space runs low on the computer. Set to `false` to maximize effectiveness of Content Caching.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_denyactivation",
-    "settingName": "Deny Activation",
-    "settingDescription": "If `true`, the system disables Content Caching. This is the inverse of the `allowContentCaching` restriction in MDM. It overrides the `AutoActivation` key. Use this key to prevent launching the Content Caching service.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_peerlistenranges",
-    "settingName": "Peer Listen Ranges",
-    "settingDescription": "An array of dictionaries describing a range of peer IP addresses the content cache responds to. When `PeerListenRanges` is an empty array, the content cache responds with an error to all cache queries.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_publicranges_item_type",
-    "settingName": "Type",
-    "settingDescription": "The IP address type.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_autoenabletetheredcaching",
-    "settingName": "Auto Enable Tethered Caching",
-    "settingDescription": "If `true`, the system automatically enables Internet connection sharing when possible and prevent disabling Internet connection sharing. `DenyTetheredCaching` overrides `AutoEnableTetheredCaching`. Tethered caching requires Content Caching.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "extensionsettings_extensionsettings",
-    "settingName": "com.apple.configuration.safari.extensions.settings",
-    "settingDescription": "Synthetic Top Level Setting Group Collection",
-    "keywords": [
-      "Extension Settings",
-      "Safari Extension Settings"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -7902,6 +7871,51 @@
       "Firewall"
     ],
     "categoryName": "Networking"
+  },
+  {
+    "settingId": "contentcaching_allowcachedelete",
+    "settingName": "Allow Cache Delete",
+    "settingDescription": "If `true`, the system purges content from the cache automatically when it needs disk space for other apps when free disk space runs low on the computer. Set to `false` to maximize effectiveness of Content Caching.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_denyactivation",
+    "settingName": "Deny Activation",
+    "settingDescription": "If `true`, the system disables Content Caching. This is the inverse of the `allowContentCaching` restriction in MDM. It overrides the `AutoActivation` key. Use this key to prevent launching the Content Caching service.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_peerlistenranges",
+    "settingName": "Peer Listen Ranges",
+    "settingDescription": "An array of dictionaries describing a range of peer IP addresses the content cache responds to. When `PeerListenRanges` is an empty array, the content cache responds with an error to all cache queries.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_publicranges_item_type",
+    "settingName": "Type",
+    "settingDescription": "The IP address type.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_autoenabletetheredcaching",
+    "settingName": "Auto Enable Tethered Caching",
+    "settingDescription": "If `true`, the system automatically enables Internet connection sharing when possible and prevent disabling Internet connection sharing. `DenyTetheredCaching` overrides `AutoEnableTetheredCaching`. Tethered caching requires Content Caching.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "com.apple.managedclient.preferences_hidestatusmenuicon",
@@ -12668,6 +12682,16 @@
     "categoryName": "Privacy"
   },
   {
+    "settingId": "extensionsettings_managedextensions_generickey_privatebrowsing",
+    "settingName": "Private Browsing",
+    "settingDescription": "Controls whether an extension is allowed in Private Browsing.\n* Allowed - The user is allowed to turn the extension on or off in Private Browsing\n* AlwaysOn - The extension will always be on in Private Browsing if the extension is on outside of Private Browsing\n* AlwaysOff - The extension will never be on in Private Browsing",
+    "keywords": [
+      "Extension Settings",
+      "Safari Extension Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "plugin_filter_browsers",
     "settingName": "Browsers",
     "settingDescription": "Settings that control the browser filter. If not present, the system doesn't use browser filtering.",
@@ -12691,43 +12715,6 @@
     "settingDescription": "The bundle ID of the plug-in that provides filtering service. Consult your filtering solution vendor to determine what to specify for this value.",
     "keywords": [
       "Web Content Filter"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_keepawake",
-    "settingName": "Keep Awake",
-    "settingDescription": "If `true`, the system prevents the computer from sleeping as long as Content Caching is on (System Preferences > Sharing > Content Caching is on). Customers who want Content Caching to be as available as much as possible should turn this setting on.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_peerlistenranges_item_type",
-    "settingName": "Type",
-    "settingDescription": "The IP address type.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_declarativestatusinterval",
-    "settingName": "Declarative Status Interval",
-    "settingDescription": "The time interval in seconds the system uses to update the `StatusContentCacheInfo` declarative status item. The reporting interval can't be less than 60 (1 per minute) or larger than 86400 (1 per day), defaults to 0  (off)",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "extensionsettings_managedextensions_generickey_privatebrowsing",
-    "settingName": "Private Browsing",
-    "settingDescription": "Controls whether an extension is allowed in Private Browsing.\n* Allowed - The user is allowed to turn the extension on or off in Private Browsing\n* AlwaysOn - The extension will always be on in Private Browsing if the extension is on outside of Private Browsing\n* AlwaysOff - The extension will never be on in Private Browsing",
-    "keywords": [
-      "Extension Settings",
-      "Safari Extension Settings"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -14352,6 +14339,33 @@
     "settingDescription": "If `false`, disables Natural Language Editing in Calendar and Reminders.",
     "keywords": [
       "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_keepawake",
+    "settingName": "Keep Awake",
+    "settingDescription": "If `true`, the system prevents the computer from sleeping as long as Content Caching is on (System Preferences > Sharing > Content Caching is on). Customers who want Content Caching to be as available as much as possible should turn this setting on.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_peerlistenranges_item_type",
+    "settingName": "Type",
+    "settingDescription": "The IP address type.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_declarativestatusinterval",
+    "settingName": "Declarative Status Interval",
+    "settingDescription": "The time interval in seconds the system uses to update the `StatusContentCacheInfo` declarative status item. The reporting interval can't be less than 60 (1 per minute) or larger than 86400 (1 per day), defaults to 0  (off)",
+    "keywords": [
+      "Content Cache Settings"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -19343,33 +19357,6 @@
     "categoryName": "Privacy"
   },
   {
-    "settingId": "plugin_plugin",
-    "settingName": "com.apple.configuration.webcontent-filter.plugin",
-    "settingDescription": "Synthetic Top Level Setting Group Collection",
-    "keywords": [
-      "Web Content Filter"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_contentcaching",
-    "settingName": "com.apple.configuration.content-cache.settings",
-    "settingDescription": "Synthetic Top Level Setting Group Collection",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_peerlistenranges_item_last",
-    "settingName": "Last",
-    "settingDescription": "The last IP address in the range.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
     "settingId": "extensionsettings_managedextensions_generickey_denieddomains",
     "settingName": "Denied Domains",
     "settingDescription": "Controls the domains and sub-domains the extension is not allowed to access. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
@@ -19386,6 +19373,15 @@
     "keywords": [
       "Extension Settings",
       "Safari Extension Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "plugin_plugin",
+    "settingName": "com.apple.configuration.webcontent-filter.plugin",
+    "settingDescription": "Synthetic Top Level Setting Group Collection",
+    "keywords": [
+      "Web Content Filter"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -20267,6 +20263,24 @@
       "Firewall"
     ],
     "categoryName": "Networking"
+  },
+  {
+    "settingId": "contentcaching_contentcaching",
+    "settingName": "com.apple.configuration.content-cache.settings",
+    "settingDescription": "Synthetic Top Level Setting Group Collection",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_peerlistenranges_item_last",
+    "settingName": "Last",
+    "settingDescription": "The last IP address in the range.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "com.apple.mcx.timemachine_autobackup",
@@ -22777,24 +22791,6 @@
     "categoryName": "Declarative Device Management (DDM)"
   },
   {
-    "settingId": "contentcaching_autoactivation",
-    "settingName": "Auto Activation",
-    "settingDescription": "If `true`, the system automatically activates the content cache when possible and prevents disabling it. If `allowContentCaching` is `false`, `AutoActivation` is also `false`.\n\nRemoving a profile that set `AutoActivation` to `true` doesn't deactivate the Content Cache.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "dnsproxy_providercomposedidentifier",
-    "settingName": "Provider Composed Identifier",
-    "settingDescription": "The identifier of the provider to use for this configuration. Useful for apps that contain more than one DNS proxy extension.\n\nIn iOS and visionOS, the identifier is a bundle ID, for example, \"com.example.app\".\n\nIn macOS, the identifier is a composed identifier. The format of the composed identifier is either \"Bundle-ID\" or \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the provider. \"Designated-Requirement\" is the designated requirement string from the code signature of the provider. For example, \"com.example.app\" for the bundle ID format, or \"com.example.app {anchor apple generic}\" for the designated requirement format.",
-    "keywords": [
-      "DNS Proxy"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
     "settingId": "com.apple.mcx_enableguestaccount",
     "settingName": "Enable Guest Account",
     "settingDescription": "If true, enables the guest account.",
@@ -23482,6 +23478,15 @@
     "categoryName": "Declarative Device Management (DDM)"
   },
   {
+    "settingId": "contentcaching_autoactivation",
+    "settingName": "Auto Activation",
+    "settingDescription": "If `true`, the system automatically activates the content cache when possible and prevents disabling it. If `allowContentCaching` is `false`, `AutoActivation` is also `false`.\n\nRemoving a profile that set `AutoActivation` to `true` doesn't deactivate the Content Cache.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "com.apple.managedclient.preferences_consumerexperience",
     "settingName": "Control sign-in to consumer version",
     "settingDescription": "Specify whether users can sign into the consumer version of Microsoft Defender",
@@ -23849,6 +23854,15 @@
     "settingDescription": "Synthetic Top Level Setting Group Collection",
     "keywords": [
       "Safari Browser"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "dnsproxy_providercomposedidentifier",
+    "settingName": "Provider Composed Identifier",
+    "settingDescription": "The identifier of the provider to use for this configuration. Useful for apps that contain more than one DNS proxy extension.\n\nIn iOS and visionOS, the identifier is a bundle ID, for example, \"com.example.app\".\n\nIn macOS, the identifier is a composed identifier. The format of the composed identifier is either \"Bundle-ID\" or \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the provider. \"Designated-Requirement\" is the designated requirement string from the code signature of the provider. For example, \"com.example.app\" for the bundle ID format, or \"com.example.app {anchor apple generic}\" for the designated requirement format.",
+    "keywords": [
+      "DNS Proxy"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -25846,6 +25860,44 @@
     "categoryName": "Privacy"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_processisolationenabled",
+    "settingName": "Enable Process Isolation",
+    "settingDescription": "This policy controls Process Isolation in Microsoft Edge.\n\nWhen this policy is enabled, Microsoft Edge uses Process Isolation to help improve browser security by preventing authorized applications on the device from reading or modifying the contents of Microsoft Edge's running processes. This also helps prevent other applications from accessing encrypted data used by Microsoft Edge.\n\nEnabling Process Isolation may cause incompatibilities with third party applications that rely on being able to inject or tamper with Microsoft Edge's processes, such as antivirus, screen reader or window manager applications.\n\nSetting the policy to Enabled turns on process isolation in Microsoft Edge.\n\nSetting the policy to Disabled turns off process isolation in Microsoft Edge.\n\nIf this policy is unset, Microsoft Edge will follow the default rollout process for the Process Isolation feature, which means that the feature will be gradually rolled out to an increasing number of users.\n\nNote: This policy is applied when Microsoft Edge starts. If the policy is changed while Microsoft Edge is running, the new setting will take effect on the next restart.",
+    "keywords": [
+      "ProcessIsolationEnabled",
+      "Enable Process Isolation",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_processisolationenabled",
+    "settingName": "Enable Process Isolation (User)",
+    "settingDescription": "This policy controls Process Isolation in Microsoft Edge.\n\nWhen this policy is enabled, Microsoft Edge uses Process Isolation to help improve browser security by preventing authorized applications on the device from reading or modifying the contents of Microsoft Edge's running processes. This also helps prevent other applications from accessing encrypted data used by Microsoft Edge.\n\nEnabling Process Isolation may cause incompatibilities with third party applications that rely on being able to inject or tamper with Microsoft Edge's processes, such as antivirus, screen reader or window manager applications.\n\nSetting the policy to Enabled turns on process isolation in Microsoft Edge.\n\nSetting the policy to Disabled turns off process isolation in Microsoft Edge.\n\nIf this policy is unset, Microsoft Edge will follow the default rollout process for the Process Isolation feature, which means that the feature will be gradually rolled out to an increasing number of users.\n\nNote: This policy is applied when Microsoft Edge starts. If the policy is changed while Microsoft Edge is running, the new setting will take effect on the next restart.",
+    "keywords": [
+      "ProcessIsolationEnabled",
+      "Enable Process Isolation",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "extensionsettings_managedextensions_generickey_alloweddomains",
+    "settingName": "Allowed Domains",
+    "settingDescription": "Controls the domains and sub-domains the extension is granted access to. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
+    "keywords": [
+      "Extension Settings",
+      "Safari Extension Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "plugin_filter_sockets_providercomposedidentifier",
     "settingName": "Provider Composed Identifier",
     "settingDescription": "The data provider identifier. This string identifies the filter data provider when the filter starts running. Required when Enabled is true.\n\nIn iOS and visionOS, the identifier is a bundle ID, for example, \"com.example.app\".\n\nIn macOS, the identifier is a composed identifier. The format of the composed identifier is \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the provider. \"Designated-Requirement\" is the designated requirement string from the code signature of the provider. For example, \"com.example.app {anchor apple generic}\".",
@@ -25869,61 +25921,6 @@
     "settingDescription": "Settings that control the socket filter. If not present, the system doesn't use socket filtering.",
     "keywords": [
       "Web Content Filter"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_cachelimit",
-    "settingName": "Cache Limit",
-    "settingDescription": "The maximum number of bytes of disk space to use for the content cache. Set to `0` for unlimited disk space. Also serves as the upper bound to the `PersonalCacheLimit`.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_peerlocalsubnetsonly",
-    "settingName": "Peer Local Subnets Only",
-    "settingDescription": "If `true`, the content cache only peers with other content caches on the same immediate local network, rather than with content caches that use the same public IP address as the device. When `PeerLocalSubnetsOnly` is `true`, it overrides the configuration of `PeerFilterRanges` and `PeerListenRanges`. If the network changes, the local network peering restrictions update appropriately. If `false`, the content cache defers to `PeerFilterRanges` and `PeerListenRanges` for configuring the peering restrictions.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_port",
-    "settingName": "Port",
-    "settingDescription": "The TCP port number on which the content cache accepts requests for uploads or downloads. Set to `0` to pick a random, available port.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_publicranges_item_first",
-    "settingName": "First",
-    "settingDescription": "The first IP address in the range.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "dnsproxy_dnsproxy",
-    "settingName": "com.apple.configuration.network.dns-proxy",
-    "settingDescription": "Synthetic Top Level Setting Group Collection",
-    "keywords": [
-      "DNS Proxy"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "extensionsettings_managedextensions_generickey_alloweddomains",
-    "settingName": "Allowed Domains",
-    "settingDescription": "Controls the domains and sub-domains the extension is granted access to. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
-    "keywords": [
-      "Extension Settings",
-      "Safari Extension Settings"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -27411,6 +27408,42 @@
     "categoryName": "Declarative Device Management (DDM)"
   },
   {
+    "settingId": "contentcaching_cachelimit",
+    "settingName": "Cache Limit",
+    "settingDescription": "The maximum number of bytes of disk space to use for the content cache. Set to `0` for unlimited disk space. Also serves as the upper bound to the `PersonalCacheLimit`.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_peerlocalsubnetsonly",
+    "settingName": "Peer Local Subnets Only",
+    "settingDescription": "If `true`, the content cache only peers with other content caches on the same immediate local network, rather than with content caches that use the same public IP address as the device. When `PeerLocalSubnetsOnly` is `true`, it overrides the configuration of `PeerFilterRanges` and `PeerListenRanges`. If the network changes, the local network peering restrictions update appropriately. If `false`, the content cache defers to `PeerFilterRanges` and `PeerListenRanges` for configuring the peering restrictions.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_port",
+    "settingName": "Port",
+    "settingDescription": "The TCP port number on which the content cache accepts requests for uploads or downloads. Set to `0` to pick a random, available port.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_publicranges_item_first",
+    "settingName": "First",
+    "settingDescription": "The first IP address in the range.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "com.apple.familycontrols.contentfilter_filterdenylist",
     "settingName": "Filter Deny List",
     "settingDescription": "The array of URLs that defines a deny list. When `restrictWeb` and `useContentFilter` are enabled, no URLs in the deny list are available to the user.",
@@ -28161,6 +28194,15 @@
     "settingDescription": "If `false`, disables auto-correction.",
     "keywords": [
       "Keyboard Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "dnsproxy_dnsproxy",
+    "settingName": "com.apple.configuration.network.dns-proxy",
+    "settingDescription": "Synthetic Top Level Setting Group Collection",
+    "keywords": [
+      "DNS Proxy"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -32305,66 +32347,21 @@
     "categoryName": "Security"
   },
   {
-    "settingId": "plugin_organization",
-    "settingName": "Organization",
-    "settingDescription": "The organization string to pass to the third-party plug-in.",
-    "keywords": [
-      "Web Content Filter"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_displayalerts",
-    "settingName": "Display Alerts",
-    "settingDescription": "If `true`, Content Caching displays exceptional conditions (alerts) as system notifications in the upper corner of the screen.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_listenranges",
-    "settingName": "Listen Ranges",
-    "settingDescription": "An array of dictionaries that describe a range of client IP addresses to serve.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_peerfilterranges_item_last",
-    "settingName": "Last",
-    "settingDescription": "The last IP address in the range.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_listenranges_item_first",
-    "settingName": "First",
-    "settingDescription": "The first IP address in the range.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_listenwithpeersandparents",
-    "settingName": "Listen With Peers And Parents",
-    "settingDescription": "If `true`, the content cache provides content to the clients in the union of the `ListenRanges`, `PeerListenRanges` and `Parents`.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
     "settingId": "extensionsettings_managedextensions_generickey_keytobereplaced",
     "settingName": "Managed Extensions",
     "settingDescription": "Extensions being managed",
     "keywords": [
       "Extension Settings",
       "Safari Extension Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "plugin_organization",
+    "settingName": "Organization",
+    "settingDescription": "The organization string to pass to the third-party plug-in.",
+    "keywords": [
+      "Web Content Filter"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -34144,6 +34141,51 @@
     "settingDescription": "If `false`, disables Writing Tools.",
     "keywords": [
       "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_displayalerts",
+    "settingName": "Display Alerts",
+    "settingDescription": "If `true`, Content Caching displays exceptional conditions (alerts) as system notifications in the upper corner of the screen.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_listenranges",
+    "settingName": "Listen Ranges",
+    "settingDescription": "An array of dictionaries that describe a range of client IP addresses to serve.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_peerfilterranges_item_last",
+    "settingName": "Last",
+    "settingDescription": "The last IP address in the range.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_listenranges_item_first",
+    "settingName": "First",
+    "settingDescription": "The first IP address in the range.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_listenwithpeersandparents",
+    "settingName": "Listen With Peers And Parents",
+    "settingDescription": "If `true`, the content cache provides content to the clients in the union of the `ListenRanges`, `PeerListenRanges` and `Parents`.",
+    "keywords": [
+      "Content Cache Settings"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -39242,58 +39284,18 @@
     "categoryName": "Security"
   },
   {
-    "settingId": "contentcaching_listenranges_item_last",
-    "settingName": "Last",
-    "settingDescription": "The last IP address in the range.",
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_addressbarclipboardsuggestenabled",
+    "settingName": "Enable clipboard suggestions in the address bar (User)",
+    "settingDescription": "This policy controls whether suggestions based on clipboard content are shown in the address bar suggestion dropdown.\n\nIf you enable this policy or don't configure it, Microsoft Edge may show suggestions based on clipboard content in the address bar suggestion dropdown.\n\nIf you disable this policy, Microsoft Edge doesn't show suggestions based on clipboard content in the address bar suggestion dropdown.",
     "keywords": [
-      "Content Cache Settings"
+      "AddressBarClipboardSuggestEnabled",
+      "Enable clipboard suggestions in the address bar",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
     ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_listenranges_item_type",
-    "settingName": "Type",
-    "settingDescription": "The IP address type.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_localsubnetsonly",
-    "settingName": "Local Subnets Only",
-    "settingDescription": "If `true`, the content cache offers content to clients only on the same immediate local network only. The content cache offers no content to clients on other networks reachable by the content cache. If `LocalSubnetsOnly` is `true`, the system ignores `ListenRanges`.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_parentselectionpolicy",
-    "settingName": "Parent Selection Policy",
-    "settingDescription": "The policy to implement when choosing among more than one configured parent content cache. With every policy, the system skips parent caches that are temporarily unavailable. Allowed values:\n\n- `first-available`: Always use the first available parent in the Parents list. Use this policy to designate permanent primary, secondary, and subsequent parents.\n- `url-path-hash`: Hash the path part of the requested URL so that the same parent is always used for the same URL. This is useful for maximizing the size of the combined caches of     the parents.\n- `random`: Choose a parent at random. Use this policy for load balancing.\n- `round-robin`: Rotate through the parents in order. Use this policy for load balancing.\n- `sticky-available`: Use the first available parent in the Parents list until it becomes unavailable, then advance to the next one. Use this policy for designating floating primary, secondary, and subsequent parents.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_peerfilterranges_item_type",
-    "settingName": "Type",
-    "settingDescription": "The IP address type.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_peerlistenranges_item_first",
-    "settingName": "First",
-    "settingDescription": "The first IP address in the range.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.apple.mcx_disableguestaccount",
@@ -40133,6 +40135,60 @@
     "settingDescription": "If `false`, disables Safari Summary.",
     "keywords": [
       "Intelligence Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_listenranges_item_last",
+    "settingName": "Last",
+    "settingDescription": "The last IP address in the range.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_listenranges_item_type",
+    "settingName": "Type",
+    "settingDescription": "The IP address type.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_localsubnetsonly",
+    "settingName": "Local Subnets Only",
+    "settingDescription": "If `true`, the content cache offers content to clients only on the same immediate local network only. The content cache offers no content to clients on other networks reachable by the content cache. If `LocalSubnetsOnly` is `true`, the system ignores `ListenRanges`.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_parentselectionpolicy",
+    "settingName": "Parent Selection Policy",
+    "settingDescription": "The policy to implement when choosing among more than one configured parent content cache. With every policy, the system skips parent caches that are temporarily unavailable. Allowed values:\n\n- `first-available`: Always use the first available parent in the Parents list. Use this policy to designate permanent primary, secondary, and subsequent parents.\n- `url-path-hash`: Hash the path part of the requested URL so that the same parent is always used for the same URL. This is useful for maximizing the size of the combined caches of     the parents.\n- `random`: Choose a parent at random. Use this policy for load balancing.\n- `round-robin`: Rotate through the parents in order. Use this policy for load balancing.\n- `sticky-available`: Use the first available parent in the Parents list until it becomes unavailable, then advance to the next one. Use this policy for designating floating primary, secondary, and subsequent parents.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_peerfilterranges_item_type",
+    "settingName": "Type",
+    "settingDescription": "The IP address type.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_peerlistenranges_item_first",
+    "settingName": "First",
+    "settingDescription": "The first IP address in the range.",
+    "keywords": [
+      "Content Cache Settings"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -42575,47 +42631,39 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_edgereadingmodeservicebasedextractionenabled",
+    "settingName": "Enable service-based extraction for Reading Mode in Microsoft Edge (User)",
+    "settingDescription": "This policy controls whether Microsoft Edge can use the Microsoft online extraction service to improve Reading Mode rendering.\n\nIf you enable or don't configure this policy, Microsoft Edge can send the text of the page being read to the service for processing.\n\nIf you disable this policy, Microsoft Edge doesn't send the text of the page being read to the service. Reading Mode remains available, but extraction quality may be limited.",
+    "keywords": [
+      "EdgeReadingModeServiceBasedExtractionEnabled",
+      "Enable service-based extraction for Reading Mode in Microsoft Edge",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_edgereadingmodeservicebasedextractionenabled",
+    "settingName": "Enable service-based extraction for Reading Mode in Microsoft Edge",
+    "settingDescription": "This policy controls whether Microsoft Edge can use the Microsoft online extraction service to improve Reading Mode rendering.\n\nIf you enable or don't configure this policy, Microsoft Edge can send the text of the page being read to the service for processing.\n\nIf you disable this policy, Microsoft Edge doesn't send the text of the page being read to the service. Reading Mode remains available, but extraction quality may be limited.",
+    "keywords": [
+      "EdgeReadingModeServiceBasedExtractionEnabled",
+      "Enable service-based extraction for Reading Mode in Microsoft Edge",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "plugin_visiblename",
     "settingName": "Visible Name",
     "settingDescription": "The name of the web content filter that the system displays on the device.",
     "keywords": [
       "Web Content Filter"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_allowpersonalcaching",
-    "settingName": "Allow Personal Caching",
-    "settingDescription": "If `true`, the system caches the user's iCloud data. Changes to this value don't have an immediate effect. Clients may take some time to react to changes.\n\n> Note:\n> At least one of the `AllowPersonalCaching` or `AllowSharedCaching` keys need to be `true`.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_denytetheredcaching",
-    "settingName": "Deny Tethered Caching",
-    "settingDescription": "If `true`, the system disables tethered caching.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_listenrangesonly",
-    "settingName": "Listen Ranges Only",
-    "settingDescription": "If `true`, the content cache provides content to the clients in the `ListenRanges`.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "dnsproxy_appbundleidentifier",
-    "settingName": "App Bundle Identifier",
-    "settingDescription": "The bundle identifier of the app containing the DNS proxy network extension.",
-    "keywords": [
-      "DNS Proxy"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -43260,6 +43308,33 @@
     "categoryName": "Microsoft AutoUpdate (MAU)"
   },
   {
+    "settingId": "contentcaching_allowpersonalcaching",
+    "settingName": "Allow Personal Caching",
+    "settingDescription": "If `true`, the system caches the user's iCloud data. Changes to this value don't have an immediate effect. Clients may take some time to react to changes.\n\n> Note:\n> At least one of the `AllowPersonalCaching` or `AllowSharedCaching` keys need to be `true`.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_denytetheredcaching",
+    "settingName": "Deny Tethered Caching",
+    "settingDescription": "If `true`, the system disables tethered caching.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_listenrangesonly",
+    "settingName": "Listen Ranges Only",
+    "settingDescription": "If `true`, the content cache provides content to the clients in the `ListenRanges`.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "com.apple.familycontrols.contentfilter_usecontentfilter",
     "settingName": "Use Content Filter",
     "settingDescription": "If true, filters content automatically. ",
@@ -43558,6 +43633,15 @@
       "Dock"
     ],
     "categoryName": "User Experience"
+  },
+  {
+    "settingId": "dnsproxy_appbundleidentifier",
+    "settingName": "App Bundle Identifier",
+    "settingDescription": "The bundle identifier of the app containing the DNS proxy network extension.",
+    "keywords": [
+      "DNS Proxy"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "softwareupdate_rapidsecurityresponse_enablerollback",
@@ -45907,33 +45991,6 @@
     "categoryName": "Privacy"
   },
   {
-    "settingId": "contentcaching_parents",
-    "settingName": "Parents",
-    "settingDescription": "An array of the local IP addresses of other content caches that this cache should download from or upload to, instead of downloading from or uploading to Apple directly. The system ignores invalid addresses and addresses of computers that aren't content caches. The system skips Parent caches that become unavailable. If all parent content caches become unavailable, the content cache downloads from or uploads to Apple directly, until a parent content cache becomes available again.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_peerfilterranges_item_first",
-    "settingName": "First",
-    "settingDescription": "The first IP address in the range.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "dnsproxy_visiblename",
-    "settingName": "Visible Name",
-    "settingDescription": "The name of the DNS proxy configuration that the system displays on the device.",
-    "keywords": [
-      "DNS Proxy"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
     "settingId": "com.apple.caldav.account_caldavprincipalurl",
     "settingName": "Cal DAV Principal URL",
     "settingDescription": "The base URL to the user’s calendar.",
@@ -46702,6 +46759,24 @@
     "categoryName": "Declarative Device Management (DDM)"
   },
   {
+    "settingId": "contentcaching_parents",
+    "settingName": "Parents",
+    "settingDescription": "An array of the local IP addresses of other content caches that this cache should download from or upload to, instead of downloading from or uploading to Apple directly. The system ignores invalid addresses and addresses of computers that aren't content caches. The system skips Parent caches that become unavailable. If all parent content caches become unavailable, the content cache downloads from or uploads to Apple directly, until a parent content cache becomes available again.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_peerfilterranges_item_first",
+    "settingName": "First",
+    "settingDescription": "The first IP address in the range.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "com.apple.familycontrols.contentfilter_filterwhitelist",
     "settingName": "Filter Allowlist",
     "settingDescription": "The array of URLs that defines an allow list. When Restrict Web and Use Content Filter are enabled, only URLs in the allow list are available to the user.",
@@ -47133,6 +47208,15 @@
     "settingDescription": "If `false`, disables spell check.",
     "keywords": [
       "Keyboard Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "dnsproxy_visiblename",
+    "settingName": "Visible Name",
+    "settingDescription": "The name of the DNS proxy configuration that the system displays on the device.",
+    "keywords": [
+      "DNS Proxy"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -49174,33 +49258,6 @@
     "categoryName": "Security"
   },
   {
-    "settingId": "contentcaching_datapath",
-    "settingName": "Data Path",
-    "settingDescription": "The path to the directory used to store cached content. Changing this setting manually doesn't automatically move cached content from the old location to the new one. To move content automatically, use the Sharing preference's Content Caching pane. The value must be (or end with) `/Library/Application Support/Apple/AssetCache/Data`.\n\nThe system creates a directory and its intermediates for the given data path if it doesn't already exist. The directory is owned by `_assetcache:_assetcache` and has mode 0750. Its immediate parent directory (`.../Library/Application Support/Apple/AssetCache`) is owned by `_assetcache:_assetcache` and has mode `0755`.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_peerfilterranges",
-    "settingName": "Peer Filter Ranges",
-    "settingDescription": "An array of dictionaries describing a range of peer IP addresses that the content cache uses to filter its list of peers to query for content. The content cache only queries peers in `PeerFilterRanges`. When `PeerFilterRanges` is an empty array, the content cache doesn't query any peers.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "contentcaching_publicranges",
-    "settingName": "Public Ranges",
-    "settingDescription": "An array of dictionaries describing a range of public IP addresses that the cloud servers should use for matching clients to content caches.",
-    "keywords": [
-      "Content Cache Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
     "settingId": "extensionsettings_managedextensions",
     "settingName": "Managed Extensions",
     "settingDescription": "Extensions being managed",
@@ -49855,6 +49912,33 @@
       "Associated Domains"
     ],
     "categoryName": "App Management"
+  },
+  {
+    "settingId": "contentcaching_datapath",
+    "settingName": "Data Path",
+    "settingDescription": "The path to the directory used to store cached content. Changing this setting manually doesn't automatically move cached content from the old location to the new one. To move content automatically, use the Sharing preference's Content Caching pane. The value must be (or end with) `/Library/Application Support/Apple/AssetCache/Data`.\n\nThe system creates a directory and its intermediates for the given data path if it doesn't already exist. The directory is owned by `_assetcache:_assetcache` and has mode 0750. Its immediate parent directory (`.../Library/Application Support/Apple/AssetCache`) is owned by `_assetcache:_assetcache` and has mode `0755`.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_peerfilterranges",
+    "settingName": "Peer Filter Ranges",
+    "settingDescription": "An array of dictionaries describing a range of peer IP addresses that the content cache uses to filter its list of peers to query for content. The content cache only queries peers in `PeerFilterRanges`. When `PeerFilterRanges` is an empty array, the content cache doesn't query any peers.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "contentcaching_publicranges",
+    "settingName": "Public Ranges",
+    "settingDescription": "An array of dictionaries describing a range of public IP addresses that the cloud servers should use for matching clients to content caches.",
+    "keywords": [
+      "Content Cache Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "com.apple.mcx_cachedaccounts.expiry.delete.disusedseconds",

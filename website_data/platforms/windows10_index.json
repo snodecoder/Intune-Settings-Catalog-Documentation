@@ -1,25 +1,18 @@
 [
   {
-    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowstartdate",
-    "settingName": "Maintenance Window Start Date",
-    "settingDescription": "Configure the start date for the maintenance window in the format of YYYY-MM-DD (for example, 2025-12-16). This field will only be honored for a non-repeating maintenance window. Repeating maintenance windows will start on the earliest date that meets the configured schedule.",
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_addressbarclipboardsuggestenabled_recommended",
+    "settingName": "Enable clipboard suggestions in the address bar (User)",
+    "settingDescription": "This policy controls whether suggestions based on clipboard content are shown in the address bar suggestion dropdown.\n\nIf you enable this policy or don't configure it, Microsoft Edge may show suggestions based on clipboard content in the address bar suggestion dropdown.\n\nIf you disable this policy, Microsoft Edge doesn't show suggestions based on clipboard content in the address bar suggestion dropdown.",
     "keywords": [
-      "Maintenance Window Start Date",
-      "Update",
-      "Windows Update For Business"
+      "AddressBarClipboardSuggestEnabled_recommended",
+      "Enable clipboard suggestions in the address bar",
+      "\\Microsoft Edge - Default Settings (users can override)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge\\Recommended",
+      "AddressBarClipboardSuggestEnabled",
+      "Microsoft Edge - Default Settings (users can override)"
     ],
-    "categoryName": "Windows Update For Business"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklythursday",
-    "settingName": "Maintenance Window Weekly Thursday",
-    "settingDescription": "If the maintenance window repeat schedule is set to weekly, configure whether Thursday is included in the weekly schedule.",
-    "keywords": [
-      "Maintenance Window Weekly Thursday",
-      "Update",
-      "Windows Update For Business"
-    ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.importsearchengine_recommended",
@@ -25191,6 +25184,17 @@
     "categoryName": "Windows Update For Business"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowstartdate",
+    "settingName": "Maintenance Window Start Date",
+    "settingDescription": "Configure the start date for the maintenance window in the format of YYYY-MM-DD (for example, 2025-12-16). This field will only be honored for a non-repeating maintenance window. Repeating maintenance windows will start on the earliest date that meets the configured schedule.",
+    "keywords": [
+      "Maintenance Window Start Date",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_update_setpolicydrivenupdatesourcefordriverupdates",
     "settingName": "Set Policy Driven Update Source For Driver Updates",
     "settingDescription": "",
@@ -25273,6 +25277,17 @@
     "settingDescription": "Allows the IT Admin to specify the period for auto-restart reminder notifications. The default value is 15 (minutes).",
     "keywords": [
       "Auto Restart Notification Schedule",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklythursday",
+    "settingName": "Maintenance Window Weekly Thursday",
+    "settingDescription": "If the maintenance window repeat schedule is set to weekly, configure whether Thursday is included in the weekly schedule.",
+    "keywords": [
+      "Maintenance Window Weekly Thursday",
       "Update",
       "Windows Update For Business"
     ],
@@ -26267,6 +26282,20 @@
       "WSL container"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_addressbarclipboardsuggestenabled",
+    "settingName": "Enable clipboard suggestions in the address bar",
+    "settingDescription": "This policy controls whether suggestions based on clipboard content are shown in the address bar suggestion dropdown.\n\nIf you enable this policy or don't configure it, Microsoft Edge may show suggestions based on clipboard content in the address bar suggestion dropdown.\n\nIf you disable this policy, Microsoft Edge doesn't show suggestions based on clipboard content in the address bar suggestion dropdown.",
+    "keywords": [
+      "AddressBarClipboardSuggestEnabled",
+      "Enable clipboard suggestions in the address bar",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.cacertificateswithconstraints",
@@ -52056,39 +52085,6 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowmonthlyschedule",
-    "settingName": "Maintenance Window Monthly Schedule",
-    "settingDescription": "If the maintenance window repeat schedule is set to monthly, configure whether to repeat on the same date each month (the 1st of every month), a day within a specific week (for example, the second Tuesday of every month), or on the last day of each month. 1=repeat on same date each month, 2=repeat on a day of a specific week, 3=repeat on the last day of each month.",
-    "keywords": [
-      "Maintenance Window Monthly Schedule",
-      "Update",
-      "Windows Update For Business"
-    ],
-    "categoryName": "Windows Update For Business"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowstarttime",
-    "settingName": "Maintenance Window Start Time",
-    "settingDescription": "Configure the start time for the maintenance window in HH:MM format (for example, 23:30).",
-    "keywords": [
-      "Maintenance Window Start Time",
-      "Update",
-      "Windows Update For Business"
-    ],
-    "categoryName": "Windows Update For Business"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowupdateactions",
-    "settingName": "Maintenance Window Update Actions",
-    "settingDescription": "Specifies which update operations are allowed only during the maintenance window, 1 = Download, install and restart, 2 = Install and restart, 3 = Restart only.",
-    "keywords": [
-      "Maintenance Window Update Actions",
-      "Update",
-      "Windows Update For Business"
-    ],
-    "categoryName": "Windows Update For Business"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.configurentpfeedtabvisibility",
     "settingName": "Configure whether the Discover or Work feed tabs are shown on the New Tab Page.",
     "settingDescription": "This policy configures whether the Discover or Work feed tabs are shown on the New Tab Page. By default, both Work and Discover tabs are enabled.\n\nIf you set this policy to 'EnableBothWorkDiscover' (0) or do not configure this policy, Microsoft Edge shows both the Work and Discover feed tabs on the new tab page.\n\nIf you set this policy to 'EnableOnlyWork' (1), Microsoft Edge shows only the Work feed tab on the new tab page.\n\nIf you set this policy to 'EnableOnlyDiscover' (2), Microsoft Edge shows only the Discover feed tab on the new tab page.\n\nThis policy works with the SetNTPDefaultFeedTab policy, which controls which feed tab is selected by default when both tabs are available.\n\nPolicy options mapping:\n\n* EnableBothWorkDiscover (0) = Enable both Work and Discover tabs\n\n* EnableOnlyWork (1) = Enable only Work tab\n\n* EnableOnlyDiscover (2) = Enable only Discover tab\n\nUse the preceding information when configuring this policy.",
@@ -76007,6 +76003,28 @@
     "categoryName": "Windows Update For Business"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowmonthlyschedule",
+    "settingName": "Maintenance Window Monthly Schedule",
+    "settingDescription": "If the maintenance window repeat schedule is set to monthly, configure whether to repeat on the same date each month (the 1st of every month), a day within a specific week (for example, the second Tuesday of every month), or on the last day of each month. 1=repeat on same date each month, 2=repeat on a day of a specific week, 3=repeat on the last day of each month.",
+    "keywords": [
+      "Maintenance Window Monthly Schedule",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowstarttime",
+    "settingName": "Maintenance Window Start Time",
+    "settingDescription": "Configure the start time for the maintenance window in HH:MM format (for example, 23:30).",
+    "keywords": [
+      "Maintenance Window Start Time",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_update_pausefeatureupdates",
     "settingName": "Pause Feature Updates",
     "settingDescription": "Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.  Allows IT Admins to pause Feature Updates for up to 60 days.",
@@ -76034,6 +76052,17 @@
     "settingDescription": "Enables IT administrators to specify the product version associated with the target feature update they would like their device(s) to move to and/or stay on until they reach end of service or reconfigure the policy. For details about different Windows 10 versions, see Windows release information.",
     "keywords": [
       "Product Version",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowupdateactions",
+    "settingName": "Maintenance Window Update Actions",
+    "settingDescription": "Specifies which update operations are allowed only during the maintenance window, 1 = Download, install and restart, 2 = Install and restart, 3 = Restart only.",
+    "keywords": [
+      "Maintenance Window Update Actions",
       "Update",
       "Windows Update For Business"
     ],
@@ -82481,7 +82510,7 @@
   },
   {
     "settingId": "vendor_msft_defender_configuration_tamperprotection_options",
-    "settingName": "Controlled Configuration (Device)",
+    "settingName": "Configuration Protection (Device) (Preview)",
     "settingDescription": "This setting can be used to turn on controlled configuration or tamper protection to help protect important security features from unwanted changes and interference.\r\n\r\nIf the setting is configured to Tamper Protection (On), this turns on tamper protection to enforce tamper protected settings to their secure defaults. This includes real-time protection, behavior monitoring, and more. Settings are configured with an MDM solution, such as Intune and is available in Windows 10 Enterprise E5 or equivalent subscriptions.\r\n\r\nIf the setting is configured to Controlled Configuration (On), this turns on controlled configuration, which enforces the configuration coming from Intune exclusively and any non-configured settings to their secure defaults. Controlled configuration is applicable to Antivirus and Endpoint detection and response settings.\r\n\r\nIf the setting is configured to OFF, this turns off Controlled Configuration and Tamper Protection.",
     "keywords": [
       "TamperProtection (Device)",
@@ -89220,28 +89249,6 @@
       "Display"
     ],
     "categoryName": "Microsoft Word 2016"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowenabled",
-    "settingName": "Maintenance Window Enabled",
-    "settingDescription": "Specifies whether maintenance window is enabled.",
-    "keywords": [
-      "Maintenance Window Enabled",
-      "Update",
-      "Windows Update For Business"
-    ],
-    "categoryName": "Windows Update For Business"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklytuesday",
-    "settingName": "Maintenance Window Weekly Tuesday",
-    "settingDescription": "If the maintenance window repeat schedule is set to weekly, configure whether Tuesday is included in the weekly schedule.",
-    "keywords": [
-      "Maintenance Window Weekly Tuesday",
-      "Update",
-      "Windows Update For Business"
-    ],
-    "categoryName": "Windows Update For Business"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.loopbacknetworkblockedforurls",
@@ -101488,6 +101495,17 @@
     "categoryName": "Windows Update For Business"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowenabled",
+    "settingName": "Maintenance Window Enabled",
+    "settingDescription": "Specifies whether maintenance window is enabled.",
+    "keywords": [
+      "Maintenance Window Enabled",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_update_autorestartdeadlineperiodindays",
     "settingName": "Auto Restart Deadline Period In Days",
     "settingDescription": "For Quality Updates, this policy specifies the deadline in days before automatically executing a scheduled restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart is scheduled. The system will reboot on or after the specified deadline. The reboot is prioritized over any configured Active Hours and any existing system and user busy checks. Value type is integer. Default is 7 days. Supported values range: 2-30. Note that the PC must restart for certain updates to take effect. If you enable this policy, a restart will automatically occur the specified number of days after the restart was scheduled. If you disable or do not configure this policy, the PC will restart according to the default schedule. If any of the following two policies are enabled, this policy has no effect:No auto-restart with logged on users for scheduled automatic updates installations. Always automatically restart at scheduled time.",
@@ -101527,6 +101545,17 @@
     "settingDescription": "Number of days before feature updates are installed on devices automatically regardless of active hours. Before the deadline passes, users will be able to schedule restarts, and automatic restarts can happen outside of active hours. When set to 0, updates will download and install immediately, but might not finish within the day due to device availability and network connectivity.",
     "keywords": [
       "Configure Deadline For Feature Updates",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklytuesday",
+    "settingName": "Maintenance Window Weekly Tuesday",
+    "settingDescription": "If the maintenance window repeat schedule is set to weekly, configure whether Tuesday is included in the weekly schedule.",
+    "keywords": [
+      "Maintenance Window Weekly Tuesday",
       "Update",
       "Windows Update For Business"
     ],
@@ -101895,37 +101924,47 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowrepeatscheduleoption",
-    "settingName": "Maintenance Window Repeat Schedule Option",
-    "settingDescription": "Configure whether and how often the maintenance window repeats, 1=no repeat, 2=daily, 3=weekly, 4=monthly. Daily/weekly/monthly schedule will be repeated every day/week/month.",
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended_addressbarclipboardsuggestenabled_recommended",
+    "settingName": "Enable clipboard suggestions in the address bar",
+    "settingDescription": "This policy controls whether suggestions based on clipboard content are shown in the address bar suggestion dropdown.\n\nIf you enable this policy or don't configure it, Microsoft Edge may show suggestions based on clipboard content in the address bar suggestion dropdown.\n\nIf you disable this policy, Microsoft Edge doesn't show suggestions based on clipboard content in the address bar suggestion dropdown.",
     "keywords": [
-      "Maintenance Window Repeat Schedule Option",
-      "Update",
-      "Windows Update For Business"
+      "AddressBarClipboardSuggestEnabled_recommended",
+      "Enable clipboard suggestions in the address bar",
+      "\\Microsoft Edge - Default Settings (users can override)",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge\\Recommended",
+      "AddressBarClipboardSuggestEnabled",
+      "Microsoft Edge - Default Settings (users can override)"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Microsoft Edge - Default Settings (users can override)"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowmonthlyweekbaseddayoftheweek",
-    "settingName": "Maintenance Window Monthly Week Based Day Of The Week",
-    "settingDescription": "If the maintenance window repeat schedule is set to monthly, and set to repeat on the a specific day of a specific week, configure the specific day of the week to repeat maintenance window occurrence: 1=Sunday, 2=Monday, 3=Tuesday, 4=Wednesday, 5=Thursday, 6=Friday, 7=Saturday",
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_processisolationenabled",
+    "settingName": "Enable Process Isolation",
+    "settingDescription": "This policy controls Process Isolation in Microsoft Edge.\n\nWhen this policy is enabled, Microsoft Edge uses Process Isolation to help improve browser security by preventing authorized applications on the device from reading or modifying the contents of Microsoft Edge's running processes. This also helps prevent other applications from accessing encrypted data used by Microsoft Edge.\n\nEnabling Process Isolation may cause incompatibilities with third party applications that rely on being able to inject or tamper with Microsoft Edge's processes, such as antivirus, screen reader or window manager applications.\n\nSetting the policy to Enabled turns on process isolation in Microsoft Edge.\n\nSetting the policy to Disabled turns off process isolation in Microsoft Edge.\n\nIf this policy is unset, Microsoft Edge will follow the default rollout process for the Process Isolation feature, which means that the feature will be gradually rolled out to an increasing number of users.\n\nNote: This policy is applied when Microsoft Edge starts. If the policy is changed while Microsoft Edge is running, the new setting will take effect on the next restart.",
     "keywords": [
-      "Maintenance Window Monthly Week Based Day Of The Week",
-      "Update",
-      "Windows Update For Business"
+      "ProcessIsolationEnabled",
+      "Enable Process Isolation",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklysunday",
-    "settingName": "Maintenance Window Weekly Sunday",
-    "settingDescription": "If the maintenance window repeat schedule is set to weekly, configure whether Sunday is included in the weekly schedule.",
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_processisolationenabled",
+    "settingName": "Enable Process Isolation (User)",
+    "settingDescription": "This policy controls Process Isolation in Microsoft Edge.\n\nWhen this policy is enabled, Microsoft Edge uses Process Isolation to help improve browser security by preventing authorized applications on the device from reading or modifying the contents of Microsoft Edge's running processes. This also helps prevent other applications from accessing encrypted data used by Microsoft Edge.\n\nEnabling Process Isolation may cause incompatibilities with third party applications that rely on being able to inject or tamper with Microsoft Edge's processes, such as antivirus, screen reader or window manager applications.\n\nSetting the policy to Enabled turns on process isolation in Microsoft Edge.\n\nSetting the policy to Disabled turns off process isolation in Microsoft Edge.\n\nIf this policy is unset, Microsoft Edge will follow the default rollout process for the Process Isolation feature, which means that the feature will be gradually rolled out to an increasing number of users.\n\nNote: This policy is applied when Microsoft Edge starts. If the policy is changed while Microsoft Edge is running, the new setting will take effect on the next restart.",
     "keywords": [
-      "Maintenance Window Weekly Sunday",
-      "Update",
-      "Windows Update For Business"
+      "ProcessIsolationEnabled",
+      "Enable Process Isolation",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autolaunchprotocolsfromorigins",
@@ -126347,6 +126386,28 @@
     "categoryName": "Windows Update For Business"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowrepeatscheduleoption",
+    "settingName": "Maintenance Window Repeat Schedule Option",
+    "settingDescription": "Configure whether and how often the maintenance window repeats, 1=no repeat, 2=daily, 3=weekly, 4=monthly. Daily/weekly/monthly schedule will be repeated every day/week/month.",
+    "keywords": [
+      "Maintenance Window Repeat Schedule Option",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowmonthlyweekbaseddayoftheweek",
+    "settingName": "Maintenance Window Monthly Week Based Day Of The Week",
+    "settingDescription": "If the maintenance window repeat schedule is set to monthly, and set to repeat on the a specific day of a specific week, configure the specific day of the week to repeat maintenance window occurrence: 1=Sunday, 2=Monday, 3=Tuesday, 4=Wednesday, 5=Thursday, 6=Friday, 7=Saturday",
+    "keywords": [
+      "Maintenance Window Monthly Week Based Day Of The Week",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_update_scheduledinstallthirdweek",
     "settingName": "Scheduled Install Third Week",
     "settingDescription": "Enables the IT admin to schedule the update installation on the third week of the month. Value type is integer. Supported values:0 - no update in the schedule1 - update is scheduled every third week of the month",
@@ -126407,6 +126468,17 @@
     "settingDescription": "Allows the IT admin to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found at the UpdateServiceUrl location. This policy supports using WSUS for 3rd party software and patch distribution. Supported operations are Get and Replace. This policy is specific to desktop and local publishing via WSUS for 3rd party updates (binaries and updates not hosted on Microsoft Update) and allows IT to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found on an intranet Microsoft update service location.",
     "keywords": [
       "Allow Non Microsoft Signed Update",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklysunday",
+    "settingName": "Maintenance Window Weekly Sunday",
+    "settingDescription": "If the maintenance window repeat schedule is set to weekly, configure whether Sunday is included in the weekly schedule.",
+    "keywords": [
+      "Maintenance Window Weekly Sunday",
       "Update",
       "Windows Update For Business"
     ],
@@ -127308,17 +127380,6 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowmonthlyweekbasedoccurrenceinmonth",
-    "settingName": "Maintenance Window Monthly Week Based Occurrence In Month",
-    "settingDescription": "If the maintenance window repeat schedule is set to monthly, and set to repeat on the a specific day of a specific week, configure the specific week to repeat maintenance window occurrence. 1=first week, 2=second week, 3=third week, 4=fourth week, 5=last week.",
-    "keywords": [
-      "Maintenance Window Monthly Week Based Occurrence In Month",
-      "Update",
-      "Windows Update For Business"
-    ],
-    "categoryName": "Windows Update For Business"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchprovidersearchurl",
@@ -151809,6 +151870,17 @@
     "categoryName": "Windows Update For Business"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowmonthlyweekbasedoccurrenceinmonth",
+    "settingName": "Maintenance Window Monthly Week Based Occurrence In Month",
+    "settingDescription": "If the maintenance window repeat schedule is set to monthly, and set to repeat on the a specific day of a specific week, configure the specific week to repeat maintenance window occurrence. 1=first week, 2=second week, 3=third week, 4=fourth week, 5=last week.",
+    "keywords": [
+      "Maintenance Window Monthly Week Based Occurrence In Month",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_update_noupdatenotificationsduringactivehours",
     "settingName": "No Update Notifications During Active Hours",
     "settingDescription": "When enabled, notifications will only be disabled during active hours. Takes effect only if Update/UpdateNotificationLevel is configured to 1 or 2. To ensure that the device stays secure, a notification will still be shown if this option is selected once “Specify deadlines for automatic updates and restarts” deadline has been reached if configured, regardless of active hours.\r\n ",
@@ -152586,6 +152658,20 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_addressbarclipboardsuggestenabled",
+    "settingName": "Enable clipboard suggestions in the address bar (User)",
+    "settingDescription": "This policy controls whether suggestions based on clipboard content are shown in the address bar suggestion dropdown.\n\nIf you enable this policy or don't configure it, Microsoft Edge may show suggestions based on clipboard content in the address bar suggestion dropdown.\n\nIf you disable this policy, Microsoft Edge doesn't show suggestions based on clipboard content in the address bar suggestion dropdown.",
+    "keywords": [
+      "AddressBarClipboardSuggestEnabled",
+      "Enable clipboard suggestions in the address bar",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.extensioninstalltypeblocklist",
@@ -165791,6 +165877,34 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_edgereadingmodeservicebasedextractionenabled",
+    "settingName": "Enable service-based extraction for Reading Mode in Microsoft Edge (User)",
+    "settingDescription": "This policy controls whether Microsoft Edge can use the Microsoft online extraction service to improve Reading Mode rendering.\n\nIf you enable or don't configure this policy, Microsoft Edge can send the text of the page being read to the service for processing.\n\nIf you disable this policy, Microsoft Edge doesn't send the text of the page being read to the service. Reading Mode remains available, but extraction quality may be limited.",
+    "keywords": [
+      "EdgeReadingModeServiceBasedExtractionEnabled",
+      "Enable service-based extraction for Reading Mode in Microsoft Edge",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_edgereadingmodeservicebasedextractionenabled",
+    "settingName": "Enable service-based extraction for Reading Mode in Microsoft Edge",
+    "settingDescription": "This policy controls whether Microsoft Edge can use the Microsoft online extraction service to improve Reading Mode rendering.\n\nIf you enable or don't configure this policy, Microsoft Edge can send the text of the page being read to the service for processing.\n\nIf you disable this policy, Microsoft Edge doesn't send the text of the page being read to the service. Reading Mode remains available, but extraction quality may be limited.",
+    "keywords": [
+      "EdgeReadingModeServiceBasedExtractionEnabled",
+      "Enable service-based extraction for Reading Mode in Microsoft Edge",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchproviderkeyword_recommended",
@@ -179325,50 +179439,6 @@
     "categoryName": "Microsoft Word 2016"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowmonthlymonthbaseddayofmonth",
-    "settingName": "Maintenance Window Monthly Month Based Day Of Month",
-    "settingDescription": "If the maintenance window repeat schedule is set to monthly, and set to repeat on the same date each month, configure the day of the month to repeat maintenance window occurrence (for example, 2 = repeat on the 2nd day of the month). Maximum value is 28.",
-    "keywords": [
-      "Maintenance Window Monthly Month Based Day Of Month",
-      "Update",
-      "Windows Update For Business"
-    ],
-    "categoryName": "Windows Update For Business"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklysaturday",
-    "settingName": "Maintenance Window Weekly Saturday",
-    "settingDescription": "If the maintenance window repeat schedule is set to weekly, configure whether Saturday is included in the weekly schedule.",
-    "keywords": [
-      "Maintenance Window Weekly Saturday",
-      "Update",
-      "Windows Update For Business"
-    ],
-    "categoryName": "Windows Update For Business"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowdurationhours",
-    "settingName": "Maintenance Window Duration Hours",
-    "settingDescription": "Configure the duration of the maintenance window in hours. Minimum value is 2, maximum value is 24.",
-    "keywords": [
-      "Maintenance Window Duration Hours",
-      "Update",
-      "Windows Update For Business"
-    ],
-    "categoryName": "Windows Update For Business"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklymonday",
-    "settingName": "Maintenance Window Weekly Monday",
-    "settingDescription": "SIf the maintenance window repeat schedule is set to weekly, configure whether Monday is included in the weekly schedule.",
-    "keywords": [
-      "Maintenance Window Weekly Monday",
-      "Update",
-      "Windows Update For Business"
-    ],
-    "categoryName": "Windows Update For Business"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.adssettingforintrusiveadssites",
     "settingName": "Ads setting for sites with intrusive ads",
     "settingDescription": "Controls whether ads are blocked on sites with intrusive ads.\n\nPolicy options mapping:\n\n* AllowAds (1) = Allow ads on all sites\n\n* BlockAds (2) = Block ads on sites with intrusive ads. (Default value)\n\nUse the preceding information when configuring this policy.",
@@ -191931,6 +192001,50 @@
     "categoryName": "Windows Sandbox"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowmonthlymonthbaseddayofmonth",
+    "settingName": "Maintenance Window Monthly Month Based Day Of Month",
+    "settingDescription": "If the maintenance window repeat schedule is set to monthly, and set to repeat on the same date each month, configure the day of the month to repeat maintenance window occurrence (for example, 2 = repeat on the 2nd day of the month). Maximum value is 28.",
+    "keywords": [
+      "Maintenance Window Monthly Month Based Day Of Month",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklysaturday",
+    "settingName": "Maintenance Window Weekly Saturday",
+    "settingDescription": "If the maintenance window repeat schedule is set to weekly, configure whether Saturday is included in the weekly schedule.",
+    "keywords": [
+      "Maintenance Window Weekly Saturday",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowdurationhours",
+    "settingName": "Maintenance Window Duration Hours",
+    "settingDescription": "Configure the duration of the maintenance window in hours. Minimum value is 2, maximum value is 24.",
+    "keywords": [
+      "Maintenance Window Duration Hours",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklymonday",
+    "settingName": "Maintenance Window Weekly Monday",
+    "settingDescription": "SIf the maintenance window repeat schedule is set to weekly, configure whether Monday is included in the weekly schedule.",
+    "keywords": [
+      "Maintenance Window Weekly Monday",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_wirelessdisplay_allowmdnsdiscovery",
     "settingName": "Allow Mdns Discovery",
     "settingDescription": "This policy setting allows you to turn off discovering the display service advertised over multicast DNS by a Wireless Display receiver.",
@@ -192423,28 +192537,6 @@
       "WSL container"
     ],
     "categoryName": "Windows Subsystem For Linux"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklywednesday",
-    "settingName": "Maintenance Window Weekly Wednesday",
-    "settingDescription": "If the maintenance window repeat schedule is set to weekly, configure whether Wednesday is included in the weekly schedule.",
-    "keywords": [
-      "Maintenance Window Weekly Wednesday",
-      "Update",
-      "Windows Update For Business"
-    ],
-    "categoryName": "Windows Update For Business"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklyfriday",
-    "settingName": "Maintenance Window Weekly Friday",
-    "settingDescription": "If the maintenance window repeat schedule is set to weekly, configure whether Friday is included in the weekly schedule.",
-    "keywords": [
-      "Maintenance Window Weekly Friday",
-      "Update",
-      "Windows Update For Business"
-    ],
-    "categoryName": "Windows Update For Business"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autolaunchprotocolscomponentenabled",
@@ -205073,6 +205165,17 @@
     "categoryName": "Windows Update For Business"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklywednesday",
+    "settingName": "Maintenance Window Weekly Wednesday",
+    "settingDescription": "If the maintenance window repeat schedule is set to weekly, configure whether Wednesday is included in the weekly schedule.",
+    "keywords": [
+      "Maintenance Window Weekly Wednesday",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_update_engagedrestartdeadlineforfeatureupdates",
     "settingName": "Engaged Restart Deadline For Feature Updates",
     "settingDescription": "For Feature Updates, this policy specifies the deadline in days before automatically scheduling and executing a pending restart outside of active hours. The deadline can be set between 2 and 30 days from the time the restart becomes pending. If configured, the pending restart will transition from Auto-restart to Engaged restart (pending user schedule) to automatically executed, within the specified period. Value type is integer. Default is 14. Supported value range: 2 - 30. If no deadline is specified or deadline is set to 0, the restart will not be automatically executed and will remain Engaged restart (e. g. pending user scheduling). If you disable or do not configure this policy, the default behaviors will be used. If any of the following policies are configured, this policy has no effect:No auto-restart with logged on users for scheduled automatic updates installationsAlways automatically restart at scheduled timeSpecify deadline before auto-restart for update installation",
@@ -205133,6 +205236,17 @@
     "settingDescription": "For Feature Updates, this policy specifies the timing before transitioning from Auto restarts scheduled_outside of active hours to Engaged restart, which requires the user to schedule. The period can be set between 2 and 30 days from the time the restart becomes pending. Value type is integer. Default value is 7 days. Supported value range: 2 - 30. If you disable or do not configure this policy, the default behaviors will be used. If any of the following policies are configured, this policy has no effect:No auto-restart with logged on users for scheduled automatic updates installationsAlways automatically restart at scheduled timeSpecify deadline before auto-restart for update installation",
     "keywords": [
       "Engaged Restart Transition Schedule For Feature Updates",
+      "Update",
+      "Windows Update For Business"
+    ],
+    "categoryName": "Windows Update For Business"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklyfriday",
+    "settingName": "Maintenance Window Weekly Friday",
+    "settingDescription": "If the maintenance window repeat schedule is set to weekly, configure whether Friday is included in the weekly schedule.",
+    "keywords": [
+      "Maintenance Window Weekly Friday",
       "Update",
       "Windows Update For Business"
     ],

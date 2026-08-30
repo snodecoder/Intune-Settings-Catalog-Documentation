@@ -2118,6 +2118,20 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_addressbarclipboardsuggestenabled",
+    "settingName": "Enable clipboard suggestions in the address bar",
+    "settingDescription": "This policy controls whether suggestions based on clipboard content are shown in the address bar suggestion dropdown.\n\nIf you enable this policy or don't configure it, Microsoft Edge may show suggestions based on clipboard content in the address bar suggestion dropdown.\n\nIf you disable this policy, Microsoft Edge doesn't show suggestions based on clipboard content in the address bar suggestion dropdown.",
+    "keywords": [
+      "AddressBarClipboardSuggestEnabled",
+      "Enable clipboard suggestions in the address bar",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.sharedworkerbloburlfixenabled",
     "settingName": "Make SharedWorker blob URL behavior aligned with the specification",
     "settingDescription": "According to Service Worker specification\nhttps://w3c.github.io/ServiceWorker/#control-and-use-worker-client, workers\nshould inherit controllers for blob URLs. Currently, only DedicatedWorkers\ninherit the controller, while SharedWorkers do not.\n\nEnabled/Unset: Microsoft Edge inherits\nthe controller for SharedWorker blob URLs, aligning with the specification.\n\nDisabled: Behavior remains unchanged, not aligning with the specification.\n\nThis policy is temporary and will be removed in a future update.",
@@ -8516,6 +8530,34 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_processisolationenabled",
+    "settingName": "Enable Process Isolation",
+    "settingDescription": "This policy controls Process Isolation in Microsoft Edge.\n\nWhen this policy is enabled, Microsoft Edge uses Process Isolation to help improve browser security by preventing authorized applications on the device from reading or modifying the contents of Microsoft Edge's running processes. This also helps prevent other applications from accessing encrypted data used by Microsoft Edge.\n\nEnabling Process Isolation may cause incompatibilities with third party applications that rely on being able to inject or tamper with Microsoft Edge's processes, such as antivirus, screen reader or window manager applications.\n\nSetting the policy to Enabled turns on process isolation in Microsoft Edge.\n\nSetting the policy to Disabled turns off process isolation in Microsoft Edge.\n\nIf this policy is unset, Microsoft Edge will follow the default rollout process for the Process Isolation feature, which means that the feature will be gradually rolled out to an increasing number of users.\n\nNote: This policy is applied when Microsoft Edge starts. If the policy is changed while Microsoft Edge is running, the new setting will take effect on the next restart.",
+    "keywords": [
+      "ProcessIsolationEnabled",
+      "Enable Process Isolation",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_processisolationenabled",
+    "settingName": "Enable Process Isolation (User)",
+    "settingDescription": "This policy controls Process Isolation in Microsoft Edge.\n\nWhen this policy is enabled, Microsoft Edge uses Process Isolation to help improve browser security by preventing authorized applications on the device from reading or modifying the contents of Microsoft Edge's running processes. This also helps prevent other applications from accessing encrypted data used by Microsoft Edge.\n\nEnabling Process Isolation may cause incompatibilities with third party applications that rely on being able to inject or tamper with Microsoft Edge's processes, such as antivirus, screen reader or window manager applications.\n\nSetting the policy to Enabled turns on process isolation in Microsoft Edge.\n\nSetting the policy to Disabled turns off process isolation in Microsoft Edge.\n\nIf this policy is unset, Microsoft Edge will follow the default rollout process for the Process Isolation feature, which means that the feature will be gradually rolled out to an increasing number of users.\n\nNote: This policy is applied when Microsoft Edge starts. If the policy is changed while Microsoft Edge is running, the new setting will take effect on the next restart.",
+    "keywords": [
+      "ProcessIsolationEnabled",
+      "Enable Process Isolation",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autolaunchprotocolsfromorigins",
     "settingName": "Define a list of protocols that can launch an external application from listed origins without prompting the user",
     "settingDescription": "Allows you to set a list of protocols, and for each protocol an associated list of allowed origin patterns, that can launch an external application without prompting the user. The trailing separator shouldn't be included when listing the protocol and the protocol should be all lower case. For example, list \"skype\" instead of \"skype:\", \"skype://\" or \"Skype\".\n\nIf you configure this policy, a protocol is only permitted to launch an external application without prompting by policy if:\n\n- the protocol is listed\n\n- the origin of the site trying to launch the protocol matches one of the origin patterns in that protocol's allowed_origins list.\n\nIf either condition is false, the external protocol launch prompt isn't omitted, by policy.\n\nIf you don't configure this policy, no protocols can launch without a prompt. Users can opt out of prompts on a per-protocol/per-site basis unless the \"ExternalProtocolDialogShowAlwaysOpenCheckbox\" policy is set to Disabled. This policy has no impact on per-protocol/per-site prompt exemptions set by users.\n\nThe origin-matching patterns use a similar format to those for the \"URLBlocklist\" policy, which are documented at <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n\nHowever, origin-matching patterns for this policy can't contain \"/path\" or \"@query\" elements. Any pattern that contains a \"/path\" or \"@query\" element is ignored.\n\nThis policy doesn't work as expected with file://* wildcards.",
@@ -12732,6 +12774,20 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_addressbarclipboardsuggestenabled",
+    "settingName": "Enable clipboard suggestions in the address bar (User)",
+    "settingDescription": "This policy controls whether suggestions based on clipboard content are shown in the address bar suggestion dropdown.\n\nIf you enable this policy or don't configure it, Microsoft Edge may show suggestions based on clipboard content in the address bar suggestion dropdown.\n\nIf you disable this policy, Microsoft Edge doesn't show suggestions based on clipboard content in the address bar suggestion dropdown.",
+    "keywords": [
+      "AddressBarClipboardSuggestEnabled",
+      "Enable clipboard suggestions in the address bar",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.certificatetransparencyenforcementdisabledforcas",
     "settingName": "Disable Certificate Transparency enforcement for a list of subjectPublicKeyInfo hashes",
     "settingDescription": "Disables enforcement of Certificate Transparency requirements for a list of subjectPublicKeyInfo hashes.\n\nThis policy lets you disable Certificate Transparency disclosure requirements for certificate chains that contain certificates with one of the specified subjectPublicKeyInfo hashes. This allows certificates that would otherwise be untrusted because they weren't properly publicly disclosed to still be used for Enterprise hosts.\n\nTo disable Certificate Transparency enforcement when this policy is set, one of the following sets of conditions must be met:\n1. The hash is of the server certificate's subjectPublicKeyInfo.\n2. The hash is of a subjectPublicKeyInfo that appears in a CA certificate in the certificate chain, that CA certificate is constrained via the X.509v3 nameConstraints extension, one or more directoryName nameConstraints are present in the permittedSubtrees, and the directoryName contains an organizationName attribute.\n3. The hash is of a subjectPublicKeyInfo that appears in a CA certificate in the certificate chain, the CA certificate has one or more organizationName attributes in the certificate Subject, and the server's certificate contains the same number of organizationName attributes, in the same order, and with byte-for-byte identical values.\n\nA subjectPublicKeyInfo hash is specified by concatenating the hash algorithm name, the \"/\" character, and the Base64 encoding of that hash algorithm applied to the DER-encoded subjectPublicKeyInfo of the specified certificate. This Base64 encoding is the same format as an SPKI Fingerprint, as defined in RFC 7469, Section 2.4. Unrecognized hash algorithms are ignored. The only supported hash algorithm at this time is \"sha256\".\n\nIf you disable this policy or don't configure it, any certificate required to be disclosed via Certificate Transparency is treated as untrusted if not disclosed according to the Certificate Transparency policy.",
@@ -13675,6 +13731,34 @@
       "EdgeFollowEnabled",
       "Enable Follow service in Microsoft Edge",
       "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_edgereadingmodeservicebasedextractionenabled",
+    "settingName": "Enable service-based extraction for Reading Mode in Microsoft Edge (User)",
+    "settingDescription": "This policy controls whether Microsoft Edge can use the Microsoft online extraction service to improve Reading Mode rendering.\n\nIf you enable or don't configure this policy, Microsoft Edge can send the text of the page being read to the service for processing.\n\nIf you disable this policy, Microsoft Edge doesn't send the text of the page being read to the service. Reading Mode remains available, but extraction quality may be limited.",
+    "keywords": [
+      "EdgeReadingModeServiceBasedExtractionEnabled",
+      "Enable service-based extraction for Reading Mode in Microsoft Edge",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_edgereadingmodeservicebasedextractionenabled",
+    "settingName": "Enable service-based extraction for Reading Mode in Microsoft Edge",
+    "settingDescription": "This policy controls whether Microsoft Edge can use the Microsoft online extraction service to improve Reading Mode rendering.\n\nIf you enable or don't configure this policy, Microsoft Edge can send the text of the page being read to the service for processing.\n\nIf you disable this policy, Microsoft Edge doesn't send the text of the page being read to the service. Reading Mode remains available, but extraction quality may be limited.",
+    "keywords": [
+      "EdgeReadingModeServiceBasedExtractionEnabled",
+      "Enable service-based extraction for Reading Mode in Microsoft Edge",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
       "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
