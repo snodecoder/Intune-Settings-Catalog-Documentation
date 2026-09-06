@@ -311,6 +311,96 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories_accesslevel",
+    "settingName": "Access level",
+    "settingDescription": "Level of filesystem access granted for this directory. Subdirectories inherit the same access level unless they have their own rule.",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser_userprofile",
+    "settingName": "Identity profile",
+    "settingDescription": "The Entra user profile (UPN or SID) to run the agent as.",
+    "keywords": [
+      "AgentGovernance",
+      "Agent Governance",
+      "Container Policy"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_installwindowsdefenderapplicationguard",
+    "settingName": "Install Windows defender application guard",
+    "settingDescription": "Initiates remote installation of Application Guard feature.",
+    "keywords": [
+      "Install",
+      "WindowsDefenderApplicationGuard",
+      "Microsoft Defender Application Guard"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_settings_allowwindowsdefenderapplicationguard",
+    "settingName": "Turn on Microsoft Defender Application Guard",
+    "settingDescription": "This policy setting enables application isolation through Microsoft Defender Application Guard.",
+    "keywords": [
+      "Allow Windows Defender Application Guard",
+      "Windows Defender Application Guard",
+      "Microsoft Defender Application Guard"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_maintenancewindows_enablemaintenancewindows",
+    "settingName": "Enable Maintenance windows",
+    "settingDescription": "Configure when devices receive specific updates. During the maintenance window, the selected update action runs on the assigned devices.",
+    "keywords": [
+      "Maintenance Window",
+      "Enable Maintenance Windows",
+      "Maintenance Windows"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_name",
+    "settingName": "Rule name",
+    "settingDescription": null,
+    "keywords": [
+      "Name",
+      "Elevation",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_productname",
+    "settingName": "Product name",
+    "settingDescription": null,
+    "keywords": [
+      "Product Name",
+      "Elevation",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_ruletype_userconfirmeduservalidation_2",
+    "settingName": "Additional Validation Requirements",
+    "settingDescription": "",
+    "keywords": [
+      "Elevation type",
+      "Elevation",
+      "Rule type",
+      "Privilege Management",
+      "Business Justification"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_quiettime_rangesettings_endtime",
     "settingName": "End",
     "settingDescription": null,
@@ -370,55 +460,11 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories_accesslevel",
-    "settingName": "Access level",
-    "settingDescription": "Level of filesystem access granted for this directory. Subdirectories inherit the same access level unless they have their own rule.",
-    "keywords": [
-      "AgentGovernance",
-      "Agent Governance",
-      "Container Policy"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_agentuser_userprofile",
-    "settingName": "Identity profile",
-    "settingDescription": "The Entra user profile (UPN or SID) to run the agent as.",
-    "keywords": [
-      "AgentGovernance",
-      "Agent Governance",
-      "Container Policy"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_windowsdefenderapplicationguard_settings_clipboardsettings",
     "settingName": "Clipboard behavior settings",
     "settingDescription": "This policy setting allows you to decide how the clipboard behaves while in Microsoft Defender Application Guard.",
     "keywords": [
       "Clipboard Settings",
-      "Windows Defender Application Guard",
-      "Microsoft Defender Application Guard"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_installwindowsdefenderapplicationguard",
-    "settingName": "Install Windows defender application guard",
-    "settingDescription": "Initiates remote installation of Application Guard feature.",
-    "keywords": [
-      "Install",
-      "WindowsDefenderApplicationGuard",
-      "Microsoft Defender Application Guard"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_settings_allowwindowsdefenderapplicationguard",
-    "settingName": "Turn on Microsoft Defender Application Guard",
-    "settingDescription": "This policy setting enables application isolation through Microsoft Defender Application Guard.",
-    "keywords": [
-      "Allow Windows Defender Application Guard",
       "Windows Defender Application Guard",
       "Microsoft Defender Application Guard"
     ],
@@ -456,34 +502,12 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_maintenancewindows_enablemaintenancewindows",
-    "settingName": "Enable Maintenance windows",
-    "settingDescription": "Configure when devices receive specific updates. During the maintenance window, the selected update action runs on the assigned devices.",
-    "keywords": [
-      "Maintenance Window",
-      "Enable Maintenance Windows",
-      "Maintenance Windows"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_userapplicabilitytype",
     "settingName": "User applicability",
     "settingDescription": "Specifies which users this system setting rule applies to.",
     "keywords": [
       "User Applicability",
       "System Setting",
-      "Privilege Management"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_name",
-    "settingName": "Rule name",
-    "settingDescription": null,
-    "keywords": [
-      "Name",
-      "Elevation",
       "Privilege Management"
     ],
     "categoryName": "Uncategorized"
@@ -496,30 +520,6 @@
       "File Name",
       "Elevation",
       "Privilege Management"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_productname",
-    "settingName": "Product name",
-    "settingDescription": null,
-    "keywords": [
-      "Product Name",
-      "Elevation",
-      "Privilege Management"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_elevationrules_{elevationrulename}_ruletype_userconfirmeduservalidation_2",
-    "settingName": "Additional Validation Requirements",
-    "settingDescription": "",
-    "keywords": [
-      "Elevation type",
-      "Elevation",
-      "Rule type",
-      "Privilege Management",
-      "Business Justification"
     ],
     "categoryName": "Uncategorized"
   },

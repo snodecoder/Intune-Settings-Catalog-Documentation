@@ -121,16 +121,6 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "com.apple.managedclient.preferences_exclusionsmergepolicy",
-    "settingName": "Exclusions merge",
-    "settingDescription": "Specify the merge policy for exclusions. This can be a combination of administrator-defined and user-defined exclusions (merge) or only administrator-defined exclusions (admin_only). This setting can be used to restrict local users from defining their own exclusions.",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
     "settingId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine",
     "settingName": "Enforcement level",
     "settingDescription": "Antivirus engine enforcement mode",
@@ -150,24 +140,6 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent",
-    "settingName": "Automatic sample submission Consent",
-    "settingDescription": "Sends sample files to Microsoft to help protect device users and your organization from potential threats",
-    "keywords": [
-      "Cloud delivered protection preferences"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_disablednsparsing",
-    "settingName": "Disable DNS parsing",
-    "settingDescription": "Disables parsing of DNS traffic",
-    "keywords": [
-      "Network protection"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
     "settingId": "linux_mdatp_managed_antivirusengine_enforcementlevel",
     "settingName": "Enforcement Level",
     "settingDescription": "Specifies the enforcement preference of antivirus engine. Real-time: Real-time protection (scan files as they're modified) is enabled. On-demand: Files are scanned only on demand and real-time protection is turned off. Passive: Runs the antivirus engine in passive mode. Audit: Similar to on-demand but logs detections without taking action.",
@@ -181,16 +153,6 @@
     "settingName": "Enable behavior monitoring (Requires Realtime/Audit Enforcement level)",
     "settingDescription": "Detects and blocks malicious processes and suspicious behaviours",
     "keywords": [
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_scanresultsretentiondays",
-    "settingName": "Scan results retention",
-    "settingDescription": "Specify the number of days that results are retained in the scan history on the device. Old scan results are removed from the history. Old quarantined files that are also removed from the disk.",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
     "categoryName": "Microsoft Defender"
@@ -220,6 +182,44 @@
     "settingDescription": "Path to exclude, wildcards are NOT supported",
     "keywords": [
       "Exclusion Settings"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_exclusionsmergepolicy",
+    "settingName": "Exclusions merge",
+    "settingDescription": "Specify the merge policy for exclusions. This can be a combination of administrator-defined and user-defined exclusions (merge) or only administrator-defined exclusions (admin_only). This setting can be used to restrict local users from defining their own exclusions.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_automaticsamplesubmissionconsent",
+    "settingName": "Automatic sample submission Consent",
+    "settingDescription": "Sends sample files to Microsoft to help protect device users and your organization from potential threats",
+    "keywords": [
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disablednsparsing",
+    "settingName": "Disable DNS parsing",
+    "settingDescription": "Disables parsing of DNS traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scanresultsretentiondays",
+    "settingName": "Scan results retention",
+    "settingDescription": "Specify the number of days that results are retained in the scan history on the device. Old scan results are removed from the history. Old quarantined files that are also removed from the disk.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
     ],
     "categoryName": "Microsoft Defender"
   },
