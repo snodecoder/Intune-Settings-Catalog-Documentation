@@ -196,6 +196,18 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.workaccountsetupconfig",
+    "settingName": "Require users to authenticate with a Google Workspace account",
+    "settingDescription": "If 'True', users must authenticate with a managed Google Workspace account during setup on Android Enterprise devices. After authentication, the Google Workspace account can’t be changed or removed unless the device is unenrolled - even if the admin later marks the setting as 'False'. If 'False', Intune doesn’t change or update this setting. Applies to fully managed, and corporate-owned work profile devices.",
+    "keywords": [
+      "Work Account Setup",
+      "managed Google Workspace account",
+      "Google Workspace",
+      "Users and Accounts"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.screencaptureblocked",
     "settingName": "Block screen capture",
     "settingDescription": "If 'True', prevents screenshots or screen captures on the device. It also prevents the content from being shown on display devices that don't have a secure video output. If 'False', Intune doesn't change or update this setting. By default, the OS might let users capture the screen contents as an image. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
@@ -710,6 +722,26 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.keyguarddisabledfeatures",
+    "settingName": "Disabled lock screen features",
+    "settingDescription": "When the device is locked, choose the features that can't be used. These features are accessible to users when the device is locked; users will not be able to see or access the features that are disabled. When this setting is configured by more than one assigned policy, the selected features are merged (union) across those policies.",
+    "keywords": [
+      "Keyguard",
+      "Lock screen",
+      "Secure lock screen",
+      "Disabled lock screen features",
+      "Camera",
+      "Notifications",
+      "Trust agents",
+      "Fingerprint",
+      "Biometrics",
+      "Face",
+      "Iris",
+      "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.camerablockedaosp",
     "settingName": "Block access to camera",
     "settingDescription": "If 'True', prevents access to the camera on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow access to the camera. Intune only manages access to the device camera. It doesn't have access to pictures or videos.",
@@ -778,6 +810,19 @@
       "Passcode",
       "Password Length",
       "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.volumeblockadjustmentaosp",
+    "settingName": "Block volume changes",
+    "settingDescription": "If 'True', prevents users from adjusting the device's volume settings and also mutes the master volume. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to modify the volume level. Available for AOSP user-based and userless devices.",
+    "keywords": [
+      "Volume Change",
+      "Volume",
+      "Volume configuration",
+      "Loudness",
+      "General"
     ],
     "categoryName": "Device Restriction"
   },
@@ -1316,6 +1361,21 @@
       "Expiration",
       "Days",
       "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.datetimeconfigurationblockedaosp",
+    "settingName": "Block date and time changes",
+    "settingDescription": "If 'True', prevents users from configuring the date, time, and timezone through Settings. If 'False', the effective false policy clears the restriction. Available for AOSP user-based and userless devices.",
+    "keywords": [
+      "Date",
+      "Time",
+      "Timezone",
+      "Date and time",
+      "Configuration",
+      "Block",
+      "General"
     ],
     "categoryName": "Device Restriction"
   },

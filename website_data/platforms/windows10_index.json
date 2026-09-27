@@ -1,5 +1,31 @@
 [
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge_webview2~policy~microsoft_edge_webview2~webview2loaderoverridesettings_downgradeversion_downgradeversiondesc",
+    "settingName": "Set value name to the Application User Model ID or the executable file name. Set value to the target full 4-part version string (for example, 151.0.2178.0).",
+    "settingDescription": "",
+    "keywords": [
+      "DowngradeVersion",
+      "Configure per-application WebView2 downgrade version",
+      "\\Microsoft Edge WebView2\\Loader Override Settings",
+      "Microsoft Edge WebView2\\Loader Override Settings",
+      "Loader Override Settings"
+    ],
+    "categoryName": "Microsoft Edge Web View2"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge_webview2~policy~microsoft_edge_webview2~webview2loaderoverridesettings_downgradeversion_downgradeversiondesc_value",
+    "settingName": "Value",
+    "settingDescription": "",
+    "keywords": [
+      "DowngradeVersion",
+      "Configure per-application WebView2 downgrade version",
+      "\\Microsoft Edge WebView2\\Loader Override Settings",
+      "Microsoft Edge WebView2\\Loader Override Settings",
+      "Loader Override Settings"
+    ],
+    "categoryName": "Microsoft Edge Web View2"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.importsearchengine_recommended",
     "settingName": "Allow importing of search engine settings (users can override)",
     "settingDescription": "Allows users to import search engine settings from another browser into Microsoft Edge.\n\nIf you enable, this policy, the option to import search engine settings is automatically selected.\n\nIf you disable this policy, search engine settings aren't imported at first run, and users can't import them manually.\n\nIf you don't configure this policy, search engine settings are imported at first run, and users can choose whether to import this data manually during later browsing sessions.\n\nYou can set this policy as a recommendation. This option means that Microsoft Edge imports search engine settings on first run, but users can select or clear the **search engine** option during manual import.\n\n**Note**: This policy currently manages importing from Internet Explorer (on Windows 7, 8, and 10).",
@@ -190,8 +216,8 @@
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.edgeentracopilotpagecontext",
-    "settingName": "Control Copilot access to Microsoft Edge page content for Entra account user profiles when using Copilot in the Microsoft Edge sidepane",
-    "settingDescription": "This policy controls whether Copilot in the Microsoft Edge side pane can access page content. This includes page summarization and other contextual queries.\n\nThis policy applies only to users who are signed in to Microsoft Edge with a Microsoft Entra account and are using Copilot in the side pane. It applies to Copilot experiences in the side pane, including Microsoft 365 Copilot Business Chat and Microsoft Copilot with enterprise data protection (EDP).\n\nIf you enable this policy, Copilot can access page content when users submit contextual queries in the side pane.\n\nIf you disable this policy, Copilot can't access page content. This also disables the M365LinksAutoOpenCopilotEnabled feature, because Copilot requires page content access to provide contextual insights for Microsoft 365 links.\n\nIf you don't configure this policy:\n- Access is enabled by default in non-EU regions.\n- Access is disabled by default in EU regions.\n- Users can turn this setting on or off in Microsoft Edge settings.\n\nCopilot can't access page content on pages protected by data loss prevention (DLP) policies, even if this policy is enabled.\n\nFor more information about Copilot data usage and consent, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2288056\">https://go.microsoft.com/fwlink/?linkid=2288056</a>",
+    "settingName": "Control Copilot access to Microsoft Edge page content and browsing history for Entra account user profiles when using Copilot in the Microsoft Edge sidepane",
+    "settingDescription": "This policy controls whether Copilot in the Microsoft Edge side pane can access page content and browsing history. This includes page summarization and other contextual queries.\n\nThis policy applies only to users who are signed in to Microsoft Edge with a Microsoft Entra account and are using Copilot in the side pane. It applies to Copilot experiences in the side pane, including Microsoft 365 Copilot Business Chat and Microsoft Copilot with enterprise data protection (EDP).\n\nIf you enable this policy, Copilot can access page content and browsing history when users initiate contextual queries in the side pane or from Edge.\n\nIf you disable this policy, Copilot can't access page content or browsing history. This also disables the M365LinksAutoOpenCopilotEnabled feature, because Copilot requires page content access to provide contextual insights for Microsoft 365 links.\n\nIf you don't configure this policy:\n- Access is enabled by default in non-EU regions.\n- Access is disabled by default in EU regions.\n- Users can turn this setting on or off in Microsoft Edge settings.\n\nCopilot can't access page content on pages protected by data loss prevention (DLP) policies, even if this policy is enabled.\n\nFor more information about Copilot data usage and consent, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2288056\">https://go.microsoft.com/fwlink/?linkid=2288056</a>",
     "keywords": [
       "Uncategorized"
     ],
@@ -280,8 +306,8 @@
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.setntpdefaultfeedtab",
-    "settingName": "Set the default New Tab Page feed tab to Work or Discover",
-    "settingDescription": "This policy sets the default feed tab on the New Tab Page to Work or Discover.\n\nIf you set this policy to 'Work' (0) or don't configure this policy, Microsoft Edge sets the default feed tab to Work.\n\nIf you set this policy to 'Discover' (1), Microsoft Edge sets the default feed tab to Discover.\n\nThis policy only takes effect when \"ConfigureNTPFeedTabVisibility\" is set to 'EnableBothWorkDiscover' (0) or is not configured. If only one tab is visible, this policy has no effect.\n\nPolicy options mapping:\n\n* NTPDefaultFeedTabWork (0) = Work\n\n* NTPDefaultFeedTabDiscover (1) = Discover\n\nUse the preceding information when configuring this policy.",
+    "settingName": "Set the default Copilot new tab page feed tab to Work or Discover",
+    "settingDescription": "This policy sets the default feed tab on the Copilot new tab page to Work or Discover.\n\nIf you set this policy to 'Work' (0) or don't configure this policy, Microsoft Edge sets the default feed tab to Work.\n\nIf you set this policy to 'Discover' (1), Microsoft Edge sets the default feed tab to Discover.\n\nThis policy only takes effect when \"ConfigureNTPFeedTabVisibility\" is set to 'EnableBothWorkDiscover' (0) or isn't configured. If only one feed tab is visible, this policy has no effect.\n\nPolicy options mapping:\n\n* NTPDefaultFeedTabWork (0) = Work\n\n* NTPDefaultFeedTabDiscover (1) = Discover\n\nUse the preceding information when configuring this policy.",
     "keywords": [
       "Startup, home page and new tab page"
     ],
@@ -20779,8 +20805,8 @@
   },
   {
     "settingId": "device_vendor_msft_policy_config_onedrivengsc~policy~onedrivengsc_addedfolderharddeleteonunmount",
-    "settingName": "Hard-delete the contents of an added folder when unmounted",
-    "settingDescription": "This setting determines the behavior of the Sync client when encounters a request to unmount an added folder.\n\nIf admins enable this setting (value 1), when an unmount of an Added Folder is received, the Sync client will hard-delete all the contents of the folder.\n\nIf admins disable (value 0) or do not configure this setting, Sync will by default move the contents of the unmounted folder to the recycle-bin.\n      ",
+    "settingName": "Hard-delete the contents of a folder shortcut when unmounted",
+    "settingDescription": "This setting determines the behavior of the Sync client when it encounters a request to unmount a folder shortcut (a folder added to OneDrive via \"Add shortcut to OneDrive\").\n\nIf you enable this setting, when an unmount of a folder shortcut is received, the Sync client will hard-delete all the contents of the folder.\n\nIf you disable or do not configure this setting, Sync will by default move the contents of the unmounted folder to the recycle bin.\n      ",
     "keywords": [
       "AddedFolderHardDeleteOnUnmount",
       "Hard-delete the contents of an added folder when unmounted",
@@ -26284,6 +26310,20 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_onedrivengsc~policy~onedrivengsc_disabledefaultodignorelist",
+    "settingName": "Disable the default ignored extension list",
+    "settingDescription": "This setting lets you disable the default list of file extensions that are excluded from being uploaded to OneDrive or SharePoint.\n\nIf you enable this setting, the sync app will not load the default ignored extension list. Any existing files that were previously ignored due to the default ignored extension list will start syncing.The OneDrive sync app must be restarted after this setting is enabled for the setting to take effect.\n\nIf you disable or do not configure this setting, the sync app will load the default ignored extension list and continue to ignore files based on the default rules.",
+    "keywords": [
+      "DisableDefaultODIgnoreList",
+      "Disable the default ignored extension list",
+      "\\OneDrive",
+      "Machine",
+      "SOFTWARE\\Policies\\Microsoft\\OneDrive",
+      "OneDrive"
+    ],
+    "categoryName": "OneDrive"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.typosquattingallowlistdomains",
     "settingName": "Configure the list of domains for which Microsoft Edge  Website Typo Protection won't trigger warnings",
     "settingDescription": "Configures the list of Microsoft Edge Website Typo Protection trusted domains. This means:\nMicrosoft Edge Website Typo Protection won't check for potentially malicious typosquatting websites.\n\nIf you enable this policy, Microsoft Edge Website Typo Protection trusts these domains.\nIf you disable or don't set this policy, default Microsoft Edge Website Typo Protection protection is applied to all resources.\n\nThis only takes effect when TyposquattingCheckerEnabled policy isn't set or is set to enabled.\n\nThis policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10/11 Pro; or Enterprise instances that enrolled for device management; or macOS instances that are that are managed via MDM or joined to a domain via MCX.\nThis policy doesn't apply if your organization has enabled Microsoft Defender for Endpoint. You must configure your allowlists and blocklists in Microsoft 365 Defender portal using Indicators (Settings > Endpoints > Indicators).",
@@ -26367,7 +26407,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.serviceworkerautopreloadenabled",
     "settingName": "Allow ServiceWorker to dispatch navigation requests without waiting for its startup",
-    "settingDescription": "This policy controls whether Microsoft Edge enables the ServiceWorkerAutoPreload feature.\n\nIf you enable or don't configure this policy, Microsoft Edge can initiate the main resource network request concurrently with the Service Worker bootstrap process. This can improve performance in scenarios where the Service Worker isn't already running.\n\nIf you disable this policy, Microsoft Edge will wait to dispatch the navigation request until after the Service Worker starts.\n\nThis is a temporary policy and is removed in version 144 of Microsoft Edge.\n\nFor more information on the feature, see https://github.com/WICG/service-worker-auto-preload.",
+    "settingDescription": "This policy controls whether Microsoft Edge enables the ServiceWorkerAutoPreload feature.\n\nIf you enable or don't configure this policy, Microsoft Edge can initiate the main resource network request concurrently with the Service Worker bootstrap process. This can improve performance in scenarios where the Service Worker isn't already running.\n\nIf you disable this policy, Microsoft Edge will wait to dispatch the navigation request until after the Service Worker starts.\n\nThis is a temporary policy and is removed in version 154 of Microsoft Edge.\n\nFor more information on the feature, see https://github.com/WICG/service-worker-auto-preload.",
     "keywords": [
       "Uncategorized"
     ],
@@ -38730,6 +38770,28 @@
     "categoryName": "Microsoft Word 2016"
   },
   {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.edgereadingmodeservicebasedextractionenabled",
+    "settingName": "Enable service-based extraction for Reading Mode in Microsoft Edge",
+    "settingDescription": "This policy controls whether Microsoft Edge can use the Microsoft online extraction service to improve Reading Mode rendering.\n\nIf you enable or don't configure this policy, Microsoft Edge can send the text of the page being read to the service for processing.\n\nIf you disable this policy, Microsoft Edge doesn't send the text of the page being read to the service. Reading Mode remains available, but extraction quality may be limited.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge_webview2~policy~microsoft_edge_webview2~webview2loaderoverridesettings_downgradeversion_downgradeversiondesc",
+    "settingName": "Set value name to the Application User Model ID or the executable file name. Set value to the target full 4-part version string (for example, 151.0.2178.0). (User)",
+    "settingDescription": "",
+    "keywords": [
+      "DowngradeVersion",
+      "Configure per-application WebView2 downgrade version",
+      "\\Microsoft Edge WebView2\\Loader Override Settings",
+      "Microsoft Edge WebView2\\Loader Override Settings",
+      "Loader Override Settings"
+    ],
+    "categoryName": "Microsoft Edge Web View2"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.cacertificateswithconstraints",
     "settingName": "TLS certificates that should be trusted by Microsoft Edge for server authentication with constraints",
     "settingDescription": "This policy enables a list of TLS certificates that should be trusted by Microsoft Edge for server authentication, with constraints added outside the certificate. If no constraint of a certain type is present, then any name of that type is allowed.\nCertificates should be base64-encoded. At least one constraint must be specified for each certificate.\n\nThe permitted_dns_names field is a list of DNS names that are allowed for the certificate. If the DNS name in the certificate request doesn't match one of the specified DNS names, the certificate isn't trusted.\n\nThe permitted_cidrs field is a list of CIDR (Classless Inter-Domain Routing) ranges that will be allowed for the certificate. If the IP address in the certificate request doesn't fall within one of the permitted CIDR ranges, the certificate isn't trusted.",
@@ -38768,7 +38830,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.urlblocklist",
     "settingName": "Block access to a list of URLs",
-    "settingDescription": "Defines a list of sites, based on URL patterns, that are blocked (your users can't load them).\n\nFormat the URL pattern according to <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n\nYou can define exceptions in the \"URLAllowlist\" policy. These policies are limited to 1000 entries; subsequent entries are ignored.\n\nBlocking internal 'edge://*' URLs isn't recommended - this may lead to unexpected errors.\n\nThis policy doesn't prevent the page from updating dynamically through JavaScript. For example, if you block 'contoso.com/abc', users can visit 'contoso.com' and select on a link to visit 'contoso.com/abc', as long as the page doesn't refresh.\n\nIf you don't configure this policy, no URLs are blocked.\n\nThis policy doesn't work as expected with file://* wildcards.",
+    "settingDescription": "Defines a list of sites, based on URL patterns, that are blocked (your users can't load them).\n\nFormat the URL pattern according to <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n\nYou can define exceptions in the \"URLAllowlist\" policy. These policies are limited to 1000 entries; subsequent entries are ignored.\n\nBlocking internal 'edge://*' and 'chrome-untrusted://*' URLs isn't recommended - this may lead to unexpected errors.\n\nThis policy doesn't prevent the page from updating dynamically through JavaScript. For example, if you block 'contoso.com/abc', users can visit 'contoso.com' and select on a link to visit 'contoso.com/abc', as long as the page doesn't refresh.\n\nIf you don't configure this policy, no URLs are blocked.\n\nThis policy doesn't work as expected with file://* wildcards.",
     "keywords": [
       "Uncategorized"
     ],
@@ -38967,7 +39029,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.onbulkdataentryenterpriseconnector",
     "settingName": "Configuration policy for bulk data entry for Microsoft Edge for Business Data Loss Prevention Connectors",
-    "settingDescription": "List of Microsoft Edge for Business Data Loss Prevention Connectors services settings to be applied when data is entered in Microsoft Edge from the clipboard or by drag and dropping web content.\n\nConnector Fields\n\n1. url_list,\ntags,\nenable,\ndisable\nThese fields determine whether the connector sends data for analysis when content is entered on a specific page, and which tags to include in the analysis request.\nA tag associated with an enable pattern is included in the request if the page URL matches the pattern—unless a corresponding disable pattern also matches.\nAnalysis is triggered if at least one tag is included in the request.\n\n2. service_provider\nIdentifies the analysis service provider the configuration applies to.\n\n3. block_until_verdict\nIf set to 1, Microsoft Edge waits for a response from the analysis service before giving the page access to the data.\nAny other integer value allows the page to access the data immediately.\n\n4. default_action\nIf set to block, Microsoft Edge denies page access to the data if an error occurs while contacting the analysis service.\nAny other value permits the page to access the data.\n\n5. minimum_data_size\nSpecifies the minimum size (in bytes) that the entered data must meet or exceed to be scanned.\nDefault: 100 bytes if the field isn't set.\n\nThis policy requires further setup to take effect. For configuration guidance, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2320413\">https://go.microsoft.com/fwlink/?linkid=2320413</a>.",
+    "settingDescription": "Specifies the list of Microsoft Edge for Business Data Loss Prevention Connector service settings that apply when users paste data from the clipboard or drag and drop web content into Microsoft Edge.\n\nConnector Fields\n\n1. url_list,\ntags,\nenable,\ndisable\nThese fields determine whether the connector sends data for analysis when content is entered on a specific page, and which tags to include in the analysis request.\nA tag associated with an enable pattern is included in the request if the page URL matches the pattern—unless a corresponding disable pattern also matches.\nAnalysis is triggered if at least one tag is included in the request.\n\n2. service_provider\nIdentifies the analysis service provider the configuration applies to.\n\n3. block_until_verdict\nIf set to 1, Microsoft Edge waits for a response from the analysis service before giving the page access to the data.\nAny other integer value allows the page to access the data immediately.\n\n4. default_action\nIf set to block, Microsoft Edge denies page access to the data if an error occurs while contacting the analysis service.\nAny other value permits the page to access the data.\n\n5. minimum_data_size\nSpecifies the minimum size (in bytes) that the entered data must meet or exceed to be scanned.\nDefault: 100 bytes if the field isn't set.\n\nThis policy requires further setup to take effect. For configuration guidance, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2320413\">https://go.microsoft.com/fwlink/?linkid=2320413</a>.",
     "keywords": [
       "Uncategorized"
     ],
@@ -52085,9 +52147,49 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_copilotcoworktoolactionsenabled",
+    "settingName": "Allow Cowork to take actions on your behalf (User)",
+    "settingDescription": "This policy controls whether Cowork is allowed to take actions on behalf of the user in Microsoft Edge.\n\nIf you enable this policy, Cowork can take actions on behalf of the user, and users can't change this setting on the Settings page.\n\nIf you disable this policy, Cowork can't take actions on behalf of the user, and users can't change this setting on the Settings page.\n\nIf you don't configure this policy, users can turn this setting on or off on the Settings page.",
+    "keywords": [
+      "CopilotCoworkToolActionsEnabled",
+      "Allow Cowork to take actions on your behalf",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge_webview2~policy~microsoft_edge_webview2~webview2loaderoverridesettings_downgradeversion_downgradeversiondesc_value",
+    "settingName": "Value",
+    "settingDescription": "",
+    "keywords": [
+      "DowngradeVersion",
+      "Configure per-application WebView2 downgrade version",
+      "\\Microsoft Edge WebView2\\Loader Override Settings",
+      "Microsoft Edge WebView2\\Loader Override Settings",
+      "Loader Override Settings"
+    ],
+    "categoryName": "Microsoft Edge Web View2"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge_webview2~policy~microsoft_edge_webview2~webview2loaderoverridesettings_downgradeversion_downgradeversiondesc_key",
+    "settingName": "Name",
+    "settingDescription": "",
+    "keywords": [
+      "DowngradeVersion",
+      "Configure per-application WebView2 downgrade version",
+      "\\Microsoft Edge WebView2\\Loader Override Settings",
+      "Microsoft Edge WebView2\\Loader Override Settings",
+      "Loader Override Settings"
+    ],
+    "categoryName": "Microsoft Edge Web View2"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.configurentpfeedtabvisibility",
-    "settingName": "Configure whether the Discover or Work feed tabs are shown on the New Tab Page.",
-    "settingDescription": "This policy configures whether the Discover or Work feed tabs are shown on the New Tab Page. By default, both Work and Discover tabs are enabled.\n\nIf you set this policy to 'EnableBothWorkDiscover' (0) or do not configure this policy, Microsoft Edge shows both the Work and Discover feed tabs on the new tab page.\n\nIf you set this policy to 'EnableOnlyWork' (1), Microsoft Edge shows only the Work feed tab on the new tab page.\n\nIf you set this policy to 'EnableOnlyDiscover' (2), Microsoft Edge shows only the Discover feed tab on the new tab page.\n\nThis policy works with the SetNTPDefaultFeedTab policy, which controls which feed tab is selected by default when both tabs are available.\n\nPolicy options mapping:\n\n* EnableBothWorkDiscover (0) = Enable both Work and Discover tabs\n\n* EnableOnlyWork (1) = Enable only Work tab\n\n* EnableOnlyDiscover (2) = Enable only Discover tab\n\nUse the preceding information when configuring this policy.",
+    "settingName": "Configure whether the Discover or Work feed tabs are shown on the Copilot new tab page.",
+    "settingDescription": "This policy configures whether the Discover or Work feed tabs are shown on the Copilot new tab page. By default, both Work and Discover tabs are enabled.\n\nIf you set this policy to 'EnableBothWorkDiscover' (0) or don't configure this policy, Microsoft Edge shows both the Work and Discover feed tabs on the Copilot new tab page.\n\nIf you set this policy to 'EnableOnlyWork' (1), Microsoft Edge shows only the Work feed tab on the Copilot new tab page.\n\nIf you set this policy to 'EnableOnlyDiscover' (2), Microsoft Edge shows only the Discover feed tab on the Copilot new tab page.\n\nPolicy options mapping:\n\n* EnableBothWorkDiscover (0) = Enable both Work and Discover tabs\n\n* EnableOnlyWork (1) = Enable only Work tab\n\n* EnableOnlyDiscover (2) = Enable only Discover tab\n\nUse the preceding information when configuring this policy.",
     "keywords": [
       "Startup, home page and new tab page"
     ],
@@ -52240,7 +52342,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.localnetworkaccessrestrictionstemporaryoptout",
     "settingName": "Specifies whether to opt out of Local Network Access restrictions",
-    "settingDescription": "This policy allows for opting out of restrictions on requests to local network endpoints.\n\nIf you enable this policy, Local Network Access requests will only display warnings in Edge DevTools when Local Network Access checks fail.\n\nIf you disable or don't configure this policy, Local Network Access requests follow the default handling behavior.\n\nFor more information about Local Network Access restrictions, see Local Network Access.\n\nTo allow specific URL patterns that should automatically be granted Local Network Access permission, use the LocalNetworkAccessAllowedForUrls policy.\n\nNote: This opt-out policy is temporary and will be removed after Microsoft Edge version 152.",
+    "settingDescription": "This policy allows for opting out of restrictions on requests to local network endpoints.\n\nIf you enable this policy, Local Network Access requests will only display warnings in Edge DevTools when Local Network Access checks fail.\n\nIf you disable or don't configure this policy, Local Network Access requests follow the default handling behavior.\n\nFor more information about Local Network Access restrictions, see Local Network Access.\n\nTo allow specific URL patterns that should automatically be granted Local Network Access permission, use the LocalNetworkAccessAllowedForUrls policy.\n\nNote: This opt-out policy is temporary and will be removed after Microsoft Edge version 156.",
     "keywords": [
       "Network settings"
     ],
@@ -76838,6 +76940,32 @@
     "categoryName": "Microsoft Word 2016"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge_webview2~policy~microsoft_edge_webview2~webview2loaderoverridesettings_downgradeversion",
+    "settingName": "Configure per-application WebView2 downgrade version (User)",
+    "settingDescription": "This policy lets you specify the exact 4-part version of the WebView2 Runtime that specific applications should use in enterprise downgrade scenarios.\n\nConfigure the policy by setting the value name to the Application User Model ID or the executable file name (for example, teams.exe). Set the value to the target full version string using the 4-part numeric format (for example, 151.0.2178.0).\n\nMajor-only values (for example, 151), wildcard values (for example, 151.*), and values that are not exact 4-part numeric versions are not supported.\n\nThe WebView2 loader resolves the runtime installation directory only when a folder that exactly matches the configured full version exists (for example, 151.0.2178.0 must match 151.0.2178.0 exactly). If no exact matching folder is found, the policy has no effect and the runtime defaults to the BrowserExecutableFolder policy or the Evergreen runtime (the default auto-updating runtime).\n\nExample value:\n\nName: teams.exe, Value: 151.0.2178.0\nName: outlook.exe, Value: 152.0.2164.0",
+    "keywords": [
+      "DowngradeVersion",
+      "Configure per-application WebView2 downgrade version",
+      "\\Microsoft Edge WebView2\\Loader Override Settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge\\WebView2",
+      "Loader Override Settings"
+    ],
+    "categoryName": "Microsoft Edge Web View2"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_onedrivengsc~policy~onedrivengsc_enableodignorefolderlistfromgpo_enableodignorefolderlistfromgpolistbox",
+    "settingName": "Keywords:",
+    "settingDescription": "",
+    "keywords": [
+      "EnableODIgnoreFolderListFromGPO",
+      "Exclude specific kinds of folders from being uploaded",
+      "\\OneDrive",
+      "OneDrive"
+    ],
+    "categoryName": "OneDrive"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.managedsearchengines_recommended",
     "settingName": "Manage Search Engines (users can override)",
     "settingDescription": "Lets you configure a list of up to 10 search engines, one of which must be marked as the default search engine. With Microsoft Edge version 100, you can configure up to 100 engines.\n\nYou don't need to specify the encoding. With Microsoft Edge version 80, the suggest_url and image_search_url parameters are optional. The optional parameter, image_search_post_params (consists of comma-separated name/value pairs), is available starting in Microsoft Edge version 80.\n\nWith Microsoft Edge version 83, you can enable search engine discovery with the optional allow_search_engine_discovery parameter. This parameter must be the first item in the list. If allow_search_engine_discovery isn't specified, search engine discovery is disabled by default. With Microsoft Edge version 84, you can set this policy as a recommended policy to allow search provider discovery. You don't need to add the optional allow_search_engine_discovery parameter. With Microsoft Edge version 100, setting this policy as a recommended policy also allows users to manually add new search engines from their Microsoft Edge settings.\n\nIf you enable this policy, users can't add, remove, or change any search engine in the list. Users can set their default search engine to any search engine in the list.\n\nIf you disable or don't configure this policy, users can modify the search engines list as desired.\n\nIf the \"DefaultSearchProviderSearchURL\" policy is set, this policy (ManagedSearchEngines) is ignored. The user must restart their browser to finish applying this policy.",
@@ -76876,7 +77004,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.onsecurityevententerpriseconnector",
     "settingName": "Configuration policy for Microsoft Edge for Business Reporting Connectors",
-    "settingDescription": "Defines the Microsoft Edge for Business Reporting Connectors service settings that apply when a security event occurs in Microsoft Edge. These events include negative verdicts from Data Loss Prevention Connectors, password reuse, navigation to unsafe pages, and other security-sensitive actions.\n\nThe service_provider field specifies the reporting service provider. The enabled_event_names field lists the security events enabled for that provider.\n\nThis policy requires additional setup to take effect. For configuration guidance, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2325446\">https://go.microsoft.com/fwlink/?linkid=2325446</a>.",
+    "settingDescription": "Defines the Microsoft Edge for Business Reporting Connectors service settings that apply when a security event occurs in Microsoft Edge. These events include negative verdicts from Data Loss Prevention Connectors, password reuse, navigation to unsafe pages, and other security-sensitive actions.\n\nThe service_provider field specifies the reporting service provider. The enabled_event_names field lists the security events enabled for that provider.\n\nThis policy can only be configured through the Microsoft 365 Admin Center. It requires additional setup to take effect. For configuration guidance, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2325446\">https://go.microsoft.com/fwlink/?linkid=2325446</a>.",
     "keywords": [
       "Uncategorized"
     ],
@@ -77056,7 +77184,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsensorssetting",
     "settingName": "Default sensors setting",
-    "settingDescription": "Set whether websites can access and use sensors such as motion and light sensors. You can completely block or allow websites to get access to sensors.\n\nSetting the policy to 1 lets websites access and use sensors. Setting the policy to 2 denies access to sensors.\n\nYou can override this policy for specific URL patterns by using the \"SensorsAllowedForUrls\" and \"SensorsBlockedForUrls\" policies.\n\nIf you don't configure this policy, websites can access and use sensors, and users can change this setting. This setting is the global default for \"SensorsAllowedForUrls\" and \"SensorsBlockedForUrls\".\n\nPolicy options mapping:\n\n* AllowSensors (1) = Allow sites to access sensors\n\n* BlockSensors (2) = Do not allow any site to access sensors\n\nUse the preceding information when configuring this policy.",
+    "settingDescription": "Set whether websites can access and use sensors such as motion and light sensors. You can completely block or allow websites to get access to sensors.\n\nSetting the policy to 1 lets websites access and use sensors. Setting the policy to 2 denies access to sensors. Setting the policy to 3 is intended to prompt the user when a site requests access to sensors, but this option isn't yet supported; if you select it, websites can still access and use sensors.\n\nYou can override this policy for specific URL patterns by using the \"SensorsAllowedForUrls\" and \"SensorsBlockedForUrls\" policies.\n\nIf you don't configure this policy, websites can access and use sensors, and users can change this setting. This setting is the global default for \"SensorsAllowedForUrls\" and \"SensorsBlockedForUrls\".\n\nPolicy options mapping:\n\n* AllowSensors (1) = Allow sites to access sensors\n\n* BlockSensors (2) = Do not allow any site to access sensors\n\n* AskSensors (3) = Ask whenever a site wants to access sensors (This policy is not yet supported)\n\nUse the preceding information when configuring this policy.",
     "keywords": [
       "Uncategorized"
     ],
@@ -82513,6 +82641,7 @@
     "settingName": "Configuration Protection (Device) (Preview)",
     "settingDescription": "This setting can be used to turn on controlled configuration or tamper protection to help protect important security features from unwanted changes and interference.\r\n\r\nIf the setting is configured to Tamper Protection (On), this turns on tamper protection to enforce tamper protected settings to their secure defaults. This includes real-time protection, behavior monitoring, and more. Settings are configured with an MDM solution, such as Intune and is available in Windows 10 Enterprise E5 or equivalent subscriptions.\r\n\r\nIf the setting is configured to Controlled Configuration (On), this turns on controlled configuration, which enforces the configuration coming from Intune exclusively and any non-configured settings to their secure defaults. Controlled configuration is applicable to Antivirus and Endpoint detection and response settings.\r\n\r\nIf the setting is configured to OFF, this turns off Controlled Configuration and Tamper Protection.",
     "keywords": [
+      "Controlled Config (Device) (Preview)",
       "TamperProtection (Device)",
       "Defender"
     ],
@@ -86602,8 +86731,8 @@
   },
   {
     "settingId": "device_vendor_msft_policy_config_onedrivengsc~policy~onedrivengsc_addedfolderunmountonpermissionsloss",
-    "settingName": "Hard-delete the contents of an added folder when user loses permissions to the folder",
-    "settingDescription": "This setting determines the behavior of the Sync client when the user loses  permissions to an added folder.\n\nIf admins enable this setting (value 1), when the Sync client detects that the user lost permissions to an Added Folder, the Sync client will hard-delete all the contents of the folder and the folder itself.\n\nIf admins disable (value 0) or do not configure this setting, Sync will by default mark the folder in error and prompt the user to remove it. When the user confirms the removals, the contents of the folder are moved to the recycle-bin.\n      ",
+    "settingName": "Hard-delete the contents of a folder shortcut when user loses permissions to the folder",
+    "settingDescription": "This setting determines the behavior of the Sync client when the user loses permissions to a folder shortcut (a folder added to OneDrive via \"Add shortcut to OneDrive\").\n\nIf you enable this setting, when the Sync client detects that the user lost permissions to a folder shortcut, the Sync client will hard-delete all the contents of the folder and the folder itself.\n\nIf you disable or do not configure this setting, Sync will by default mark the folder in error and prompt the user to remove it. When the user confirms the removal, the contents of the folder are moved to the recycle bin.\n      ",
     "keywords": [
       "AddedFolderUnmountOnPermissionsLoss",
       "Hard-delete the contents of an added folder when user loses permissions to the folder",
@@ -89251,6 +89380,15 @@
     "categoryName": "Microsoft Word 2016"
   },
   {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.restrictbackgroundfetchfromserviceworkerenabled",
+    "settingName": "Restrict Background Fetch API when called from a Service Worker",
+    "settingDescription": "This policy controls whether background fetch requests from Service Workers are restricted. If a feature that downloads files in the background is affected, this policy may be relevant.\n\nIf you enable this policy or don't configure it, the restriction is active, and background fetch requests from Service Worker contexts may be blocked.\n\nIf you disable this policy, the restriction is bypassed, allowing Service Workers to make background fetch requests.\n\nThis policy is temporary and will be removed after Microsoft Edge version 152.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.loopbacknetworkblockedforurls",
     "settingName": "Block sites from making network requests to the local device.",
     "settingDescription": "Specifies a list of URL patterns for which requests initiated from matching origins to loopback addresses (127.0.0.1, ::1, localhost) are blocked from issuing Local Network Access requests.\n\nIf a requesting origin matches a URL pattern specified in this policy, requests to loopback addresses are blocked.\n\nFor origins not covered by this policy, the user's personal settings and local network access restrictions apply.\n\nMultiple policies can specify origins that affect requests to the local device. If an origin matches more than one of the following policies, they are applied in the following order of precedence:\n- LoopbackNetworkBlockedForUrls\n- LoopbackNetworkAllowedForUrls\n- LocalNetworkAccessBlockedForUrls\n- LocalNetworkAccessAllowedForUrls\n\nNote: This policy improves local network security by blocking specified public websites from accessing loopback addresses. It helps prevent unauthorized external sites from reaching local services running on the device unless explicitly permitted.\n\nFor more information about Local Network Access, see https://wicg.github.io/local-network-access/",
@@ -89631,7 +89769,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.allowbrowsingwithcopilot",
     "settingName": "Controls the availability of browsing with Copilot in Microsoft Edge.",
-    "settingDescription": "When browsing with Copilot is enabled, users can explicitly invoke it for a query. It isn't invoked automatically.\n\nBrowsing with Copilot is available only on domains specified in the \"BrowsingWithCopilotAllowList\" policy and is blocked on domains specified in the \"BrowsingWithCopilotBlockList\" policy. If no domains are configured in the allow list, browsing with Copilot is effectively disabled.\n\nThis feature is available only to users with an active Microsoft 365 Copilot subscription.\n\nFor more information about configuring browsing with Copilot, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2346300\">https://go.microsoft.com/fwlink/?linkid=2346300</a>.\n\nIf you enable this policy, browsing with Copilot is turned on for all users who receive the policy, and users can't turn it off.\n\nIf you disable this policy, browsing with Copilot is turned off for all users who receive the policy, and users can't turn it on.\n\nIf you don't configure this policy, browsing with Copilot is off by default, and users can turn it on.",
+    "settingDescription": "When browsing with Copilot is enabled, users can explicitly invoke it for a query. It isn't invoked automatically.\n\nBrowsing with Copilot is available only on domains specified in the \"BrowsingWithCopilotAllowList\" policy and is blocked on domains specified in the \"BrowsingWithCopilotBlockList\" policy. If no domains are configured in the allow list, browsing with Copilot is effectively disabled.\n\nThis feature is available only to users with an active Microsoft 365 Copilot subscription.\n\nFor more information about configuring browsing with Copilot, see https://go.microsoft.com/fwlink/?LinkId=2341535.\n\nIf you enable this policy, browsing with Copilot is turned on for all users who receive the policy, and users can't turn it off.\n\nIf you disable this policy, browsing with Copilot is turned off for all users who receive the policy, and users can't turn it on.\n\nIf you don't configure this policy, browsing with Copilot is off by default, and users can turn it on.",
     "keywords": [
       "Uncategorized"
     ],
@@ -101924,6 +102062,62 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_launchedgeonwindowsstartupenabled",
+    "settingName": "Launch Microsoft Edge on Windows startup (User)",
+    "settingDescription": "Setting the policy lets you control whether Microsoft Edge automatically launches visibly when Windows starts.\n\nIf you enable this policy, Microsoft Edge will launch visibly automatically when Windows starts.\n\nIf you disable this policy, Microsoft Edge will never launch visibly automatically when Windows starts.\n\nIf you don't configure this policy, users will have an option to select whether or not they want Microsoft Edge to launch automatically when Windows starts.",
+    "keywords": [
+      "LaunchEdgeOnWindowsStartupEnabled",
+      "Launch Microsoft Edge on Windows startup",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_backforwardcacheforwebsocketsallowed",
+    "settingName": "Allow Back/Forward Cache for WebSockets",
+    "settingDescription": "This policy controls whether active WebSocket connections are disconnected when a page enters back/forward cache. Active WebSocket connections previously prevented a page from being stored in back/forward cache, but Microsoft Edge has changed this behavior to disconnect the WebSockets instead, allowing the page to be cached and restoring it in a disconnected state.\n\nIf this policy is set to Enabled or left unset, WebSockets are disconnected when a page enters back/forward cache.\n\nIf this policy is set to Disabled, WebSockets will not be disconnected when a page enters back/forward cache. Since back/forward cache does not support active WebSockets, this means pages with active WebSockets will not be cached.\n\nThis policy is intended to be temporary and will be removed in the future.",
+    "keywords": [
+      "BackForwardCacheForWebSocketsAllowed",
+      "Allow Back/Forward Cache for WebSockets",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge_webview2~policy~microsoft_edge_webview2~webview2loaderoverridesettings_downgradeversion",
+    "settingName": "Configure per-application WebView2 downgrade version",
+    "settingDescription": "This policy lets you specify the exact 4-part version of the WebView2 Runtime that specific applications should use in enterprise downgrade scenarios.\n\nConfigure the policy by setting the value name to the Application User Model ID or the executable file name (for example, teams.exe). Set the value to the target full version string using the 4-part numeric format (for example, 151.0.2178.0).\n\nMajor-only values (for example, 151), wildcard values (for example, 151.*), and values that are not exact 4-part numeric versions are not supported.\n\nThe WebView2 loader resolves the runtime installation directory only when a folder that exactly matches the configured full version exists (for example, 151.0.2178.0 must match 151.0.2178.0 exactly). If no exact matching folder is found, the policy has no effect and the runtime defaults to the BrowserExecutableFolder policy or the Evergreen runtime (the default auto-updating runtime).\n\nExample value:\n\nName: teams.exe, Value: 151.0.2178.0\nName: outlook.exe, Value: 152.0.2164.0",
+    "keywords": [
+      "DowngradeVersion",
+      "Configure per-application WebView2 downgrade version",
+      "\\Microsoft Edge WebView2\\Loader Override Settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge\\WebView2",
+      "Loader Override Settings"
+    ],
+    "categoryName": "Microsoft Edge Web View2"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_onedrivengsc~policy~onedrivengsc_enableodignorefolderlistfromgpo",
+    "settingName": "Exclude specific kinds of folders from being uploaded",
+    "settingDescription": "This setting lets you enter keywords to prevent the OneDrive sync app (OneDrive.exe) from uploading certain folders to OneDrive or SharePoint. You can only enter complete names, such as \"PowerShell\".\n\nIf you enable this setting, the sync app doesn't upload new folders that match the keywords you specified. New files in existing folders that match the keywords won't be uploaded.\n\nNo errors appear for the skipped folders, and the folders remain in the local OneDrive folder. \n\nThe OneDrive sync app must be restarted after this setting is enabled for the setting to take effect.\n\nIf you disable or do not configure this setting, the sync app uploads all supported folders.",
+    "keywords": [
+      "EnableODIgnoreFolderListFromGPO",
+      "Exclude specific kinds of folders from being uploaded",
+      "\\OneDrive",
+      "Machine",
+      "SOFTWARE\\Policies\\Microsoft\\OneDrive",
+      "OneDrive"
+    ],
+    "categoryName": "OneDrive"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autolaunchprotocolsfromorigins",
     "settingName": "Define a list of protocols that can launch an external application from listed origins without prompting the user",
     "settingDescription": "Allows you to set a list of protocols, and for each protocol an associated list of allowed origin patterns, that can launch an external application without prompting the user. The trailing separator shouldn't be included when listing the protocol and the protocol should be all lower case. For example, list \"skype\" instead of \"skype:\", \"skype://\" or \"Skype\".\n\nIf you configure this policy, a protocol is only permitted to launch an external application without prompting by policy if:\n\n- the protocol is listed\n\n- the origin of the site trying to launch the protocol matches one of the origin patterns in that protocol's allowed_origins list.\n\nIf either condition is false, the external protocol launch prompt isn't omitted, by policy.\n\nIf you don't configure this policy, no protocols can launch without a prompt. Users can opt out of prompts on a per-protocol/per-site basis unless the \"ExternalProtocolDialogShowAlwaysOpenCheckbox\" policy is set to Disabled. This policy has no impact on per-protocol/per-site prompt exemptions set by users.\n\nThe origin-matching patterns use a similar format to those for the \"URLBlocklist\" policy, which are documented at <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n\nHowever, origin-matching patterns for this policy can't contain \"/path\" or \"@query\" elements. Any pattern that contains a \"/path\" or \"@query\" element is ignored.\n\nThis policy doesn't work as expected with file://* wildcards.",
@@ -102519,8 +102713,8 @@
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.setntpdefaultfeedtab_recommended",
-    "settingName": "Set the default New Tab Page feed tab to Work or Discover (users can override)",
-    "settingDescription": "This policy sets the default feed tab on the New Tab Page to Work or Discover.\n\nIf you set this policy to 'Work' (0) or don't configure this policy, Microsoft Edge sets the default feed tab to Work.\n\nIf you set this policy to 'Discover' (1), Microsoft Edge sets the default feed tab to Discover.\n\nThis policy only takes effect when \"ConfigureNTPFeedTabVisibility\" is set to 'EnableBothWorkDiscover' (0) or is not configured. If only one tab is visible, this policy has no effect.\n\nPolicy options mapping:\n\n* NTPDefaultFeedTabWork (0) = Work\n\n* NTPDefaultFeedTabDiscover (1) = Discover\n\nUse the preceding information when configuring this policy.",
+    "settingName": "Set the default Copilot new tab page feed tab to Work or Discover (users can override)",
+    "settingDescription": "This policy sets the default feed tab on the Copilot new tab page to Work or Discover.\n\nIf you set this policy to 'Work' (0) or don't configure this policy, Microsoft Edge sets the default feed tab to Work.\n\nIf you set this policy to 'Discover' (1), Microsoft Edge sets the default feed tab to Discover.\n\nThis policy only takes effect when \"ConfigureNTPFeedTabVisibility\" is set to 'EnableBothWorkDiscover' (0) or isn't configured. If only one feed tab is visible, this policy has no effect.\n\nPolicy options mapping:\n\n* NTPDefaultFeedTabWork (0) = Work\n\n* NTPDefaultFeedTabDiscover (1) = Discover\n\nUse the preceding information when configuring this policy.",
     "keywords": [
       "Startup, home page and new tab page"
     ],
@@ -127382,6 +127576,65 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.addressbarclipboardsuggestenabled_recommended",
+    "settingName": "Enable clipboard suggestions in the address bar (users can override)",
+    "settingDescription": "This policy controls whether suggestions based on clipboard content are shown in the address bar suggestion dropdown.\n\nIf you enable this policy or don't configure it, Microsoft Edge may show suggestions based on clipboard content in the address bar suggestion dropdown.\n\nIf you disable this policy, Microsoft Edge doesn't show suggestions based on clipboard content in the address bar suggestion dropdown.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.strictmimetypecheckforworkerscriptsenabled",
+    "settingName": "Enable strict MIME type checking for worker scripts",
+    "settingDescription": "This policy controls whether strict MIME type checking is used for worker scripts.\n\nIf you enable or don't configure this policy, worker scripts use strict MIME type checking for JavaScript. Worker scripts that use legacy MIME types are rejected.\n\nIf you disable this policy, worker scripts use lax MIME type checking. This allows worker scripts that use legacy MIME types, such as text/ascii, to continue to load and run.\n\nBrowsers traditionally used lax MIME type checking, which allowed JavaScript resources to load with several legacy MIME types. This behavior can create security risks by allowing resources to load as scripts when they weren't intended to be used that way.\n\nMicrosoft Edge uses strict MIME type checking by default. Enabling this policy follows the default behavior. Disabling this policy lets admins temporarily retain the legacy behavior for compatibility.\n\nFor more information about JavaScript and ECMAScript media types, see https://html.spec.whatwg.org/multipage/scripting.html#scriptingLanguage.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_copilotcoworktoolactionsenabled",
+    "settingName": "Allow Cowork to take actions on your behalf",
+    "settingDescription": "This policy controls whether Cowork is allowed to take actions on behalf of the user in Microsoft Edge.\n\nIf you enable this policy, Cowork can take actions on behalf of the user, and users can't change this setting on the Settings page.\n\nIf you disable this policy, Cowork can't take actions on behalf of the user, and users can't change this setting on the Settings page.\n\nIf you don't configure this policy, users can turn this setting on or off on the Settings page.",
+    "keywords": [
+      "CopilotCoworkToolActionsEnabled",
+      "Allow Cowork to take actions on your behalf",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge_webview2~policy~microsoft_edge_webview2~webview2loaderoverridesettings_downgradeversion_downgradeversiondesc_key",
+    "settingName": "Name",
+    "settingDescription": "",
+    "keywords": [
+      "DowngradeVersion",
+      "Configure per-application WebView2 downgrade version",
+      "\\Microsoft Edge WebView2\\Loader Override Settings",
+      "Microsoft Edge WebView2\\Loader Override Settings",
+      "Loader Override Settings"
+    ],
+    "categoryName": "Microsoft Edge Web View2"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update~policy~cat_edgeupdate~cat_applications~cat_microsoftcopilot_pol_targetchannelmicrosoftcopilot",
+    "settingName": "Target Channel override",
+    "settingDescription": "Specifies which Copilot update channel to use.\n\nThis policy controls which update channel Copilot will follow.\n\nIf you enable this policy, Copilot will be updated to the channel you configure:\nStable: Updated to the latest stable version.\nBeta: Updated to the latest beta version.\n\nIf you disable or don't configure this policy, Copilot will update to the latest version available for the stable channel.\n\nThis policy is supported only on Windows devices that are joined to a Microsoft® Active Directory® domain.",
+    "keywords": [
+      "Pol_TargetChannelMicrosoftCopilot",
+      "Target Channel override",
+      "\\Microsoft Edge Update\\Applications\\Microsoft Copilot",
+      "Machine",
+      "Software\\Policies\\Microsoft\\EdgeUpdate",
+      "Microsoft Copilot"
+    ],
+    "categoryName": "Microsoft Edge Update"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchprovidersearchurl",
     "settingName": "Default search provider search URL",
     "settingDescription": "Specifies the URL of the search engine used for a default search. The URL contains the string '{searchTerms}', which is replaced at query time by the terms the user is searching for.\n\nSpecify Bing's search URL as:\n\n'{bing:baseURL}search?q={searchTerms}'.\n\nSpecify Google's search URL as: '{google:baseURL}search?q={searchTerms}&{google:RLZ}{google:originalQueryForSuggestion}{google:assistedQueryStats}{google:searchFieldtrialParameter}{google:searchClient}{google:sourceId}ie={inputEncoding}'.\n\nThis policy is required when you enable the \"DefaultSearchProviderEnabled\" policy; if you don't enable the latter policy, this policy is ignored.\n\nStarting in Microsoft Edge 84, you can set this policy as a recommended policy. If the user has already set a default search provider, the default search provider configured by this recommended policy won't be added to the list of search providers the user can choose from. If this is the desired behavior, use the \"ManagedSearchEngines\" policy.",
@@ -127825,7 +128078,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.onprintenterpriseconnector",
     "settingName": "Configuration policy for print for Microsoft Edge for Business Data Loss Prevention Connectors",
-    "settingDescription": "List of Microsoft Edge for Business Data Loss Prevention Connectors services settings to be applied when a page or file is printed from Microsoft Edge.\n\nConnector Fields\n\n1. url_list,\ntags,\nenable,\ndisable\nThese fields determine whether the connector sends data for analysis when content is entered on a specific page, and which tags to include in the analysis request.\nA tag associated with an enable pattern is included in the request if the page URL matches the pattern—unless a corresponding disable pattern also matches.\nAnalysis is triggered if at least one tag is included in the request.\n\n2. service_provider\nIdentifies the analysis service provider the configuration applies to.\n\n3. block_until_verdict\nIf set to 1, Microsoft Edge waits for a response from the analysis service before giving the page access to the data.\nAny other integer value allows the page to access the data immediately.\n\n4. default_action\nIf set to block, Microsoft Edge denies page access to the data if an error occurs while contacting the analysis service.\nAny other value permits the page to access the data.\n\nThis policy requires additional setup to take effect. For configuration guidance, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2320413\">https://go.microsoft.com/fwlink/?linkid=2320413</a>.",
+    "settingDescription": "Specifies the list of Microsoft Edge for Business Data Loss Prevention Connectors service settings that apply when users print a page or file from Microsoft Edge.\n\nConnector Fields\n\n1. url_list,\ntags,\nenable,\ndisable\nThese fields determine whether the connector sends data for analysis when content is entered on a specific page, and which tags to include in the analysis request.\nA tag associated with an enable pattern is included in the request if the page URL matches the pattern—unless a corresponding disable pattern also matches.\nAnalysis is triggered if at least one tag is included in the request.\n\n2. service_provider\nIdentifies the analysis service provider the configuration applies to.\n\n3. block_until_verdict\nIf set to 1, Microsoft Edge waits for a response from the analysis service before giving the page access to the data.\nAny other integer value allows the page to access the data immediately.\n\n4. default_action\nIf set to block, Microsoft Edge denies page access to the data if an error occurs while contacting the analysis service.\nAny other value permits the page to access the data.\n\nThis policy requires additional setup to take effect. For configuration guidance, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2320413\">https://go.microsoft.com/fwlink/?linkid=2320413</a>.",
     "keywords": [
       "Uncategorized"
     ],
@@ -127960,7 +128213,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.allowbrowsingwithcopilot_recommended",
     "settingName": "Controls the availability of browsing with Copilot in Microsoft Edge. (users can override)",
-    "settingDescription": "When browsing with Copilot is enabled, users can explicitly invoke it for a query. It isn't invoked automatically.\n\nBrowsing with Copilot is available only on domains specified in the \"BrowsingWithCopilotAllowList\" policy and is blocked on domains specified in the \"BrowsingWithCopilotBlockList\" policy. If no domains are configured in the allow list, browsing with Copilot is effectively disabled.\n\nThis feature is available only to users with an active Microsoft 365 Copilot subscription.\n\nFor more information about configuring browsing with Copilot, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2346300\">https://go.microsoft.com/fwlink/?linkid=2346300</a>.\n\nIf you enable this policy, browsing with Copilot is turned on for all users who receive the policy, and users can't turn it off.\n\nIf you disable this policy, browsing with Copilot is turned off for all users who receive the policy, and users can't turn it on.\n\nIf you don't configure this policy, browsing with Copilot is off by default, and users can turn it on.",
+    "settingDescription": "When browsing with Copilot is enabled, users can explicitly invoke it for a query. It isn't invoked automatically.\n\nBrowsing with Copilot is available only on domains specified in the \"BrowsingWithCopilotAllowList\" policy and is blocked on domains specified in the \"BrowsingWithCopilotBlockList\" policy. If no domains are configured in the allow list, browsing with Copilot is effectively disabled.\n\nThis feature is available only to users with an active Microsoft 365 Copilot subscription.\n\nFor more information about configuring browsing with Copilot, see https://go.microsoft.com/fwlink/?LinkId=2341535.\n\nIf you enable this policy, browsing with Copilot is turned on for all users who receive the policy, and users can't turn it off.\n\nIf you disable this policy, browsing with Copilot is turned off for all users who receive the policy, and users can't turn it on.\n\nIf you don't configure this policy, browsing with Copilot is off by default, and users can turn it on.",
     "keywords": [
       "Uncategorized"
     ],
@@ -152660,6 +152913,34 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_launchedgeonwindowsstartupenabled",
+    "settingName": "Launch Microsoft Edge on Windows startup",
+    "settingDescription": "Setting the policy lets you control whether Microsoft Edge automatically launches visibly when Windows starts.\n\nIf you enable this policy, Microsoft Edge will launch visibly automatically when Windows starts.\n\nIf you disable this policy, Microsoft Edge will never launch visibly automatically when Windows starts.\n\nIf you don't configure this policy, users will have an option to select whether or not they want Microsoft Edge to launch automatically when Windows starts.",
+    "keywords": [
+      "LaunchEdgeOnWindowsStartupEnabled",
+      "Launch Microsoft Edge on Windows startup",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_backforwardcacheforwebsocketsallowed",
+    "settingName": "Allow Back/Forward Cache for WebSockets (User)",
+    "settingDescription": "This policy controls whether active WebSocket connections are disconnected when a page enters back/forward cache. Active WebSocket connections previously prevented a page from being stored in back/forward cache, but Microsoft Edge has changed this behavior to disconnect the WebSockets instead, allowing the page to be cached and restoring it in a disconnected state.\n\nIf this policy is set to Enabled or left unset, WebSockets are disconnected when a page enters back/forward cache.\n\nIf this policy is set to Disabled, WebSockets will not be disconnected when a page enters back/forward cache. Since back/forward cache does not support active WebSockets, this means pages with active WebSockets will not be cached.\n\nThis policy is intended to be temporary and will be removed in the future.",
+    "keywords": [
+      "BackForwardCacheForWebSocketsAllowed",
+      "Allow Back/Forward Cache for WebSockets",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.extensioninstalltypeblocklist",
     "settingName": "Blocklist for extension install types",
     "settingDescription": "The blocklist controls which extension install types are disallowed.\n\nSetting the \"command_line\" will block an extension from being loaded from command line.\n\nPolicy options mapping:\n\n* command_line (command_line) = Blocks extensions from being loaded from command line\n\nUse the preceding information when configuring this policy.",
@@ -165879,14 +166160,27 @@
     "categoryName": "Windows Subsystem For Linux"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_experience_disableinlinecompose",
-    "settingName": "Disable Inline Compose",
-    "settingDescription": "This policy controls whether users can compose a message directly in the Share sheet after selecting Outlook. If the policy is enabled, Windows hides the message entry field and users must complete message composition within Outlook. If the policy is disabled or not configured, Windows may display a message entry field in the Share sheet.",
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.addressbarclipboardsuggestenabled",
+    "settingName": "Enable clipboard suggestions in the address bar",
+    "settingDescription": "This policy controls whether suggestions based on clipboard content are shown in the address bar suggestion dropdown.\n\nIf you enable this policy or don't configure it, Microsoft Edge may show suggestions based on clipboard content in the address bar suggestion dropdown.\n\nIf you disable this policy, Microsoft Edge doesn't show suggestions based on clipboard content in the address bar suggestion dropdown.",
     "keywords": [
-      "Disable Inline Compose",
-      "Experience"
+      "Uncategorized"
     ],
-    "categoryName": "Experience"
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_onedrivengsc~policy~onedrivengsc_disablechangestoodignorelist",
+    "settingName": "Prevent users at your organization from changing the ignore list",
+    "settingDescription": "This setting prevents users from modifying the list of files/folders that are excluded from being uploaded to OneDrive or SharePoint.\n\nIf you enable this setting, The UI that allows users to add or remove keywords from the ignore list will be hidden. Existing GPO ignore rules and default rules will be visible but uneditable. The OneDrive sync app must be restarted after this setting is enabled for the setting to take effect.\n\nIf you disable or do not configure this setting, the UI that allows users to add or remove keywords from the ignore list will be visible and users can choose to add or remove ignore rules with the exception that GPO rules remain uneditable.",
+    "keywords": [
+      "DisableChangesToODIgnoreList",
+      "Prevent users at your organization from changing the ignore list",
+      "\\OneDrive",
+      "Machine",
+      "SOFTWARE\\Policies\\Microsoft\\OneDrive",
+      "OneDrive"
+    ],
+    "categoryName": "OneDrive"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchproviderkeyword_recommended",
@@ -165900,7 +166194,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.precisegeolocationallowedforurls",
     "settingName": "Allow precise geolocation on these sites",
-    "settingDescription": "This policy lets you specify a list of URL patterns for sites that are allowed to access the user's high-accuracy geolocation without prompting for permission.\n\nIf you leave this policy unset, DefaultGeolocationSetting applies to all sites (if configured). Otherwise, the user's personal setting is used.\n\nFor information about valid url patterns, see https://learn.microsoft.com/deployedge/edge-learnmmore-url-list-filter%20format. Wildcards (*) are supported.",
+    "settingDescription": "This policy lets you specify a list of URL patterns for sites that are allowed to access the user's high-accuracy geolocation without prompting for permission.\n\nIf you leave this policy unset, DefaultGeolocationSetting applies to all sites (if configured). Otherwise, the user's personal setting is used.\n\nFor information about valid url patterns, see https://learn.microsoft.com/deployedge/edge-learnmmore-url-list-filter-format. Wildcards (*) are supported.",
     "keywords": [
       "Content settings"
     ],
@@ -172658,6 +172952,16 @@
       "disablefrompowerbidatasetorganizationname"
     ],
     "categoryName": "Microsoft Excel 2016"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_experience_disableinlinecompose",
+    "settingName": "Disable Inline Compose",
+    "settingDescription": "This policy controls whether users can compose a message directly in the Share sheet after selecting Outlook. If the policy is enabled, Windows hides the message entry field and users must complete message composition within Outlook. If the policy is disabled or not configured, Windows may display a message entry field in the Share sheet.",
+    "keywords": [
+      "Disable Inline Compose",
+      "Experience"
+    ],
+    "categoryName": "Experience"
   },
   {
     "settingId": "device_vendor_msft_policy_config_fslogixv1~policy~fslogix~odfc_odfcodfcenabled",
@@ -179449,6 +179753,19 @@
     "categoryName": "Microsoft Word 2016"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_update~policy~cat_edgeupdate~cat_applications~cat_microsoftcopilot_pol_targetchannelmicrosoftcopilot_part_targetchannel",
+    "settingName": "Target Channel",
+    "settingDescription": "",
+    "keywords": [
+      "Pol_TargetChannelMicrosoftCopilot",
+      "Target Channel override",
+      "\\Microsoft Edge Update\\Applications\\Microsoft Copilot",
+      "Microsoft Edge Update\\Applications\\Microsoft Copilot",
+      "Microsoft Copilot"
+    ],
+    "categoryName": "Microsoft Edge Update"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.adssettingforintrusiveadssites",
     "settingName": "Ads setting for sites with intrusive ads",
     "settingDescription": "Controls whether ads are blocked on sites with intrusive ads.\n\nPolicy options mapping:\n\n* AllowAds (1) = Allow ads on all sites\n\n* BlockAds (2) = Block ads on sites with intrusive ads. (Default value)\n\nUse the preceding information when configuring this policy.",
@@ -179577,7 +179894,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.geolocationblockedforurls",
     "settingName": "Block geolocation on these sites",
-    "settingDescription": "Use this policy to define a list of URL patterns for sites that are blocked from accessing the user's geolocation. These sites also can't prompt the user for location permissions.\n\nIf you enable this policy, the list you provide determines which sites are blocked from requesting or accessing geolocation.\n\nIf you disable or don't configure this policy, DefaultGeolocationSetting applies to all sites, if configured. If it's not configured, the user’s personal browser setting is used.\n\nFor detailed information on valid url patterns, see the documentation on pattern formats: https://learn.microsoft.com/deployedge/edge-learnmmore-url-list-filter%20format.",
+    "settingDescription": "Use this policy to define a list of URL patterns for sites that are blocked from accessing the user's geolocation. These sites also can't prompt the user for location permissions.\n\nIf you enable this policy, the list you provide determines which sites are blocked from requesting or accessing geolocation.\n\nIf you disable or don't configure this policy, DefaultGeolocationSetting applies to all sites, if configured. If it's not configured, the user’s personal browser setting is used.\n\nFor detailed information on valid url patterns, see the documentation on pattern formats: https://learn.microsoft.com/deployedge/edge-learnmmore-url-list-filter-format.",
     "keywords": [
       "Content settings"
     ],
@@ -179721,7 +180038,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.insecureprivatenetworkrequestsallowedforurls",
     "settingName": "Allow the listed sites to make requests to more-private network endpoints from in an insecure manner (Obsolete)",
-    "settingDescription": "List of URL patterns. Requests initiated from websites served by matching origins aren't subject to Private Network Access checks.\n\nIf this policy isn't set, this policy behaves as if set to the empty list.\n\nFor origins not covered by the patterns specified here, the global default value is used either from the \"InsecurePrivateNetworkRequestsAllowed\" policy, if it's set, or the user's personal configuration otherwise.\n\nFor detailed information on valid URL patterns, see [Filter format for URL list-based policies](/DeployEdge/edge-learnmmore-url-list-filter%20format).\n\nThis policy is obsolete. The previous blanket override has been replaced by the permission-based Local Network Access model, which blocks cross-space requests until users grant explicit consent.",
+    "settingDescription": "List of URL patterns. Requests initiated from websites served by matching origins aren't subject to Private Network Access checks.\n\nIf this policy isn't set, this policy behaves as if set to the empty list.\n\nFor origins not covered by the patterns specified here, the global default value is used either from the \"InsecurePrivateNetworkRequestsAllowed\" policy, if it's set, or the user's personal configuration otherwise.\n\nFor detailed information on valid URL patterns, see [Filter format for URL list-based policies](/DeployEdge/edge-learnmmore-url-list-filter-format).\n\nThis policy is obsolete. The previous blanket override has been replaced by the permission-based Local Network Access model, which blocks cross-space requests until users grant explicit consent.",
     "keywords": [
       "Private Network Request Settings"
     ],
@@ -192695,7 +193012,7 @@
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.onfileattachedenterpriseconnector",
     "settingName": "Configuration policy for files attached for Microsoft Edge for Business Data Loss Prevention Connectors",
-    "settingDescription": "List of Microsoft Edge for Business Data Loss Prevention Connectors services settings to be applied when a file is attached to Microsoft Edge.\n\nConnector Fields\n\n1. url_list,\ntags,\nenable,\ndisable\nThese fields determine whether the connector sends data for analysis when content is entered on a specific page, and which tags to include in the analysis request.\nA tag associated with an enable pattern is included in the request if the page URL matches the pattern—unless a corresponding disable pattern also matches.\nAnalysis is triggered if at least one tag is included in the request.\n\n2. service_provider\nIdentifies the analysis service provider the configuration applies to.\n\n3. block_until_verdict\nIf set to 1, Microsoft Edge waits for a response from the analysis service before giving the page access to the data.\nAny other integer value allows the page to access the data immediately.\n\n4. default_action\nIf set to block, Microsoft Edge denies page access to the data if an error occurs while contacting the analysis service.\nAny other value permits the page to access the data.\n\nThis policy requires additional setup to take effect. For configuration guidance, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2320413\">https://go.microsoft.com/fwlink/?linkid=2320413</a>.",
+    "settingDescription": "Specifies the list of Microsoft Edge for Business Data Loss Prevention Connectors service settings that apply when users attach files in Microsoft Edge.\n\nConnector Fields\n\n1. url_list,\ntags,\nenable,\ndisable\nThese fields determine whether the connector sends data for analysis when content is entered on a specific page, and which tags to include in the analysis request.\nA tag associated with an enable pattern is included in the request if the page URL matches the pattern—unless a corresponding disable pattern also matches.\nAnalysis is triggered if at least one tag is included in the request.\n\n2. service_provider\nIdentifies the analysis service provider the configuration applies to.\n\n3. block_until_verdict\nIf set to 1, Microsoft Edge waits for a response from the analysis service before giving the page access to the data.\nAny other integer value allows the page to access the data immediately.\n\n4. default_action\nIf set to block, Microsoft Edge denies page access to the data if an error occurs while contacting the analysis service.\nAny other value permits the page to access the data.\n\nThis policy requires additional setup to take effect. For configuration guidance, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2320413\">https://go.microsoft.com/fwlink/?linkid=2320413</a>.",
     "keywords": [
       "Uncategorized"
     ],

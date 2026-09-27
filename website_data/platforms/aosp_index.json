@@ -434,6 +434,26 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.keyguarddisabledfeatures",
+    "settingName": "Disabled lock screen features",
+    "settingDescription": "When the device is locked, choose the features that can't be used. These features are accessible to users when the device is locked; users will not be able to see or access the features that are disabled. When this setting is configured by more than one assigned policy, the selected features are merged (union) across those policies.",
+    "keywords": [
+      "Keyguard",
+      "Lock screen",
+      "Secure lock screen",
+      "Disabled lock screen features",
+      "Camera",
+      "Notifications",
+      "Trust agents",
+      "Fingerprint",
+      "Biometrics",
+      "Face",
+      "Iris",
+      "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.camerablockedaosp",
     "settingName": "Block access to camera",
     "settingDescription": "If 'True', prevents access to the camera on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow access to the camera. Intune only manages access to the device camera. It doesn't have access to pictures or videos.",
@@ -470,6 +490,19 @@
       "Passcode",
       "Password Length",
       "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.volumeblockadjustmentaosp",
+    "settingName": "Block volume changes",
+    "settingDescription": "If 'True', prevents users from adjusting the device's volume settings and also mutes the master volume. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to modify the volume level. Available for AOSP user-based and userless devices.",
+    "keywords": [
+      "Volume Change",
+      "Volume",
+      "Volume configuration",
+      "Loudness",
+      "General"
     ],
     "categoryName": "Device Restriction"
   },
@@ -796,6 +829,21 @@
       "Expiration",
       "Days",
       "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.datetimeconfigurationblockedaosp",
+    "settingName": "Block date and time changes",
+    "settingDescription": "If 'True', prevents users from configuring the date, time, and timezone through Settings. If 'False', the effective false policy clears the restriction. Available for AOSP user-based and userless devices.",
+    "keywords": [
+      "Date",
+      "Time",
+      "Timezone",
+      "Date and time",
+      "Configuration",
+      "Block",
+      "General"
     ],
     "categoryName": "Device Restriction"
   },

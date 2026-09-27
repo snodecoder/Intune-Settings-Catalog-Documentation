@@ -1,5 +1,53 @@
 [
   {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries",
+    "settingName": "Tool override entries",
+    "settingDescription": "Override the default behavior for specific tools. Tools not listed here use the default settings above.",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Tool-specific overrides"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolpermission_toolrunmode_containersettingsreference",
+    "settingName": "Container settings",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Tool-specific overrides"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolpermission_argumentlist_argumentmatch",
+    "settingName": "Match",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Tool-specific overrides"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolname",
+    "settingName": "Name",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Tool-specific overrides"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_authenticationmethod",
     "settingName": "Intune authentication method",
     "settingDescription": "If your organization uses multifactor authentication, select Setup Assistant with modern authentication, which prompts users to authenticate based on settings in Entra.",
@@ -401,6 +449,30 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_defaulttoolpermission_defaulttoolrunmode",
+    "settingName": "Run tools in a container by default",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Default tool behavior"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_defaulttoolpermission",
+    "settingName": "Allow agent(s) to use tools by default",
+    "settingDescription": "Set the default behavior for agent-launched tools. Tool-specific settings take precedence over these defaults.",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Default tool behavior"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_quiettime_rangesettings_endtime",
     "settingName": "End",
     "settingDescription": null,
@@ -520,6 +592,18 @@
       "File Name",
       "Elevation",
       "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolpermission_toolrunmode",
+    "settingName": "Run",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Tool-specific overrides"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1085,6 +1169,18 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolpermission_argumentlist",
+    "settingName": "Add arguments",
+    "settingDescription": "Add command-line arguments to use when this tool runs. Each argument is appended to the end of the command in the order listed.",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Tool-specific overrides"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_accountsettings_restrictediting",
     "settingName": "Restrict editing",
     "settingDescription": "Prevent the end user from editing the full name and account name",
@@ -1393,6 +1489,64 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "ade_setupassistant_devicefeaturestour",
+    "settingName": "Device Features Tour",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolsource",
+    "settingName": "Source",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Tool-specific overrides"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_defaulttoolpermission_defaulttoolrunmode_defaultcontainersettingsreference",
+    "settingName": "Default container settings",
+    "settingDescription": "Reusable settings describing the properties of Microsoft Execution Containers.",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Default tool behavior"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution",
+    "settingName": "Agent execution",
+    "settingDescription": "These settings control how AI agents use local tools and run code on managed Windows devices. Policies can apply to all Microsoft Executable Container (MXC)-capable agents or to a specific MXC-capable agent. Policies assigned to a specific agent override policies assigned to all agents. Tool-specific settings override default policy behavior. This feature is in preview. Availability depends on Windows platform capabilities and may vary by device. Settings and behavior are subject to change.",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_policyscope_entraidentityprofile",
+    "settingName": "Entra identity profile",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "General"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_accountsettings_primaryaccountfullname",
     "settingName": "Primary account full name",
     "settingDescription": "The full name for the account. Setup Assistant will user this value to prefill the Full Name field if 'Prefill account info' is set to 'Not configured'. This field is to be defaulted to the variable, {{username}}, for example, 'John Doe'.",
@@ -1693,6 +1847,40 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_policyscope_clientid",
+    "settingName": "Client ID",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_policyscope_targetedagent",
+    "settingName": "Targeted agent",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "General"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_policyscope_pfn",
+    "settingName": "Package family name",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_accountsettings_createlocaladmin",
     "settingName": "Create a local admin account",
     "settingDescription": null,
@@ -1901,6 +2089,30 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolpermission",
+    "settingName": "Permission",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Tool-specific overrides"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolpermission_additionalargumentsmode",
+    "settingName": "Allow or block arguments",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Tool-specific overrides"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "enrollment_autopilot_dpp_skipeula",
     "settingName": "Hide Microsoft Software License Terms",
     "settingDescription": "Specify whether to show the end-user license agreement to users.",
@@ -1940,6 +2152,18 @@
     "keywords": [
       "Password Expiration Protection Enabled",
       "LAPS"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_policyscope",
+    "settingName": "Policy scope",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "General"
     ],
     "categoryName": "Uncategorized"
   },
@@ -2308,6 +2532,18 @@
       "Maintenance Window",
       "Workload Type",
       "Maintenance Windows"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolpermission_argumentlist_argument",
+    "settingName": "Argument",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Tool-specific overrides"
     ],
     "categoryName": "Uncategorized"
   },

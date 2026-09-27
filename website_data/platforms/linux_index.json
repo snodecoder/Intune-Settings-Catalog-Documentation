@@ -121,6 +121,16 @@
     "categoryName": "Microsoft Defender"
   },
   {
+    "settingId": "linux_safedeploymentplan_siuupdatewindow",
+    "settingName": "SIU Update Window",
+    "settingDescription": "Defines a maintenance window (in minutes, 0-1440) during which Security Intelligence Update (SIU) updates can be installed, giving control over when updates land. 0 disables the window (updates any time).",
+    "keywords": [
+      "Safe Deployment Plan",
+      "Defender Safe Deployment Plan"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
     "settingId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine",
     "settingName": "Enforcement level",
     "settingDescription": "Antivirus engine enforcement mode",
@@ -435,6 +445,16 @@
     "settingDescription": "This policy setting allows you to enable or disable low CPU priority for scheduled scans. If you enable this setting, low CPU priority will be used during scheduled scans. If you disable or do not configure this setting, not changes will be made to CPU priority for scheduled scans.",
     "keywords": [
       "Schedule Scan"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_safedeploymentplan_channel",
+    "settingName": "SDP Channel Assignment",
+    "settingDescription": "Assigns the device to a Safe Deployment Plan channel for phased rollout of Defender updates. 'Validation' sources pre-Production content for early validation. 'Release' sources Production content at one of three velocities: 'Release - Early' is the first Production wave, 'Release - Fast' follows after early dwell and health, and 'Release - Broad' follows after fast dwell and health. 'Delayed' sources the Production artifact after additional dwell.",
+    "keywords": [
+      "Safe Deployment Plan",
+      "Defender Safe Deployment Plan"
     ],
     "categoryName": "Microsoft Defender"
   },
@@ -842,6 +862,16 @@
     "settingDescription": "Only applicable for daily quick scans or weekly quick/full scans. Randomize the start time of the scan by up to specified number of hours. For example, if a scan is scheduled for 2 p.m and randomizeScanStartTime is set to 2, the scan commences at a random time between 2 p.m and 4 p.m. Set to 0 to disable randomization.",
     "keywords": [
       "Schedule Scan"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_safedeploymentplan_minsiupackageage",
+    "settingName": "Minimum SIU Package Age",
+    "settingDescription": "Sets a minimum age for Security Intelligence Update (SIU) packages before they are applied, providing a buffer against early-stage issues. 'Real-time' applies packages as soon as they are available; '4 hours', '16 hours', and '24 hours' require the package to have aged at least that long before it is applied.",
+    "keywords": [
+      "Safe Deployment Plan",
+      "Defender Safe Deployment Plan"
     ],
     "categoryName": "Microsoft Defender"
   },
