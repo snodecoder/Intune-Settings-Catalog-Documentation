@@ -1,53 +1,5 @@
 [
   {
-    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries",
-    "settingName": "Tool override entries",
-    "settingDescription": "Override the default behavior for specific tools. Tools not listed here use the default settings above.",
-    "keywords": [
-      "Agent execution",
-      "Agent Governance",
-      "AI agents",
-      "Tool-specific overrides"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolpermission_toolrunmode_containersettingsreference",
-    "settingName": "Container settings",
-    "settingDescription": "",
-    "keywords": [
-      "Agent execution",
-      "Agent Governance",
-      "AI agents",
-      "Tool-specific overrides"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolpermission_argumentlist_argumentmatch",
-    "settingName": "Match",
-    "settingDescription": "",
-    "keywords": [
-      "Agent execution",
-      "Agent Governance",
-      "AI agents",
-      "Tool-specific overrides"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolname",
-    "settingName": "Name",
-    "settingDescription": "",
-    "keywords": [
-      "Agent execution",
-      "Agent Governance",
-      "AI agents",
-      "Tool-specific overrides"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_authenticationmethod",
     "settingName": "Intune authentication method",
     "settingDescription": "If your organization uses multifactor authentication, select Setup Assistant with modern authentication, which prompts users to authenticate based on settings in Entra.",
@@ -136,6 +88,54 @@
       "Default Elevation Response",
       "Privilege Management",
       "Privilege Management Elevation Client Settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries",
+    "settingName": "Tool override entries",
+    "settingDescription": "Override the default behavior for specific tools. Tools not listed here use the default settings above.",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Tool-specific overrides"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolpermission_toolrunmode_containersettingsreference",
+    "settingName": "Container settings",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Tool-specific overrides"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolpermission_argumentlist_argumentmatch",
+    "settingName": "Match",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Tool-specific overrides"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolname",
+    "settingName": "Name",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Tool-specific overrides"
     ],
     "categoryName": "Uncategorized"
   },
@@ -449,30 +449,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "user_vendor_msft_agentgovernance_agentexecution_defaulttoolpermission_defaulttoolrunmode",
-    "settingName": "Run tools in a container by default",
-    "settingDescription": "",
-    "keywords": [
-      "Agent execution",
-      "Agent Governance",
-      "AI agents",
-      "Default tool behavior"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "user_vendor_msft_agentgovernance_agentexecution_defaulttoolpermission",
-    "settingName": "Allow agent(s) to use tools by default",
-    "settingDescription": "Set the default behavior for agent-launched tools. Tool-specific settings take precedence over these defaults.",
-    "keywords": [
-      "Agent execution",
-      "Agent Governance",
-      "AI agents",
-      "Default tool behavior"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_quiettime_rangesettings_endtime",
     "settingName": "End",
     "settingDescription": null,
@@ -528,6 +504,30 @@
       "Automatically detect elevations",
       "Privilege Management",
       "Privilege management elevation client settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_defaulttoolpermission_defaulttoolrunmode",
+    "settingName": "Run tools in a container by default",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Default tool behavior"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_defaulttoolpermission",
+    "settingName": "Allow agent(s) to use tools by default",
+    "settingDescription": "Set the default behavior for agent-launched tools. Tool-specific settings take precedence over these defaults.",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Default tool behavior"
     ],
     "categoryName": "Uncategorized"
   },
@@ -592,18 +592,6 @@
       "File Name",
       "Elevation",
       "Privilege Management"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolpermission_toolrunmode",
-    "settingName": "Run",
-    "settingDescription": "",
-    "keywords": [
-      "Agent execution",
-      "Agent Governance",
-      "AI agents",
-      "Tool-specific overrides"
     ],
     "categoryName": "Uncategorized"
   },
@@ -792,6 +780,18 @@
     "keywords": [
       "Retries",
       "Linux Custom Configuration"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolpermission_toolrunmode",
+    "settingName": "Run",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Tool-specific overrides"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1096,8 +1096,8 @@
   },
   {
     "settingId": "user_vendor_msft_agentgovernance",
-    "settingName": "Agent Governance",
-    "settingDescription": "Agent Governance policy for configuring AI agent containment settings.",
+    "settingName": "Agent Governance (Windows Insiders only)",
+    "settingDescription": "Agent Governance policy for configuring AI agent containment settings.\r\n This setting is only available to Windows Insiders",
     "keywords": [
       "AgentGovernance",
       "Agent Governance",
@@ -1165,18 +1165,6 @@
       "Certificate",
       "Elevation",
       "Privilege Management"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolpermission_argumentlist",
-    "settingName": "Add arguments",
-    "settingDescription": "Add command-line arguments to use when this tool runs. Each argument is appended to the end of the command in the order listed.",
-    "keywords": [
-      "Agent execution",
-      "Agent Governance",
-      "AI agents",
-      "Tool-specific overrides"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1381,6 +1369,18 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolpermission_argumentlist",
+    "settingName": "Add arguments",
+    "settingDescription": "Add command-line arguments to use when this tool runs. Each argument is appended to the end of the command in the order listed.",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Tool-specific overrides"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allowedfilesystemdirectories",
     "settingName": "Allowed filesystem directories",
     "settingDescription": "Specifies filesystem directories the contained agent can access. If no directories are configured, filesystem access is denied by default.",
@@ -1489,64 +1489,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "ade_setupassistant_devicefeaturestour",
-    "settingName": "Device Features Tour",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolsource",
-    "settingName": "Source",
-    "settingDescription": "",
-    "keywords": [
-      "Agent execution",
-      "Agent Governance",
-      "AI agents",
-      "Tool-specific overrides"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "user_vendor_msft_agentgovernance_agentexecution_defaulttoolpermission_defaulttoolrunmode_defaultcontainersettingsreference",
-    "settingName": "Default container settings",
-    "settingDescription": "Reusable settings describing the properties of Microsoft Execution Containers.",
-    "keywords": [
-      "Agent execution",
-      "Agent Governance",
-      "AI agents",
-      "Default tool behavior"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "user_vendor_msft_agentgovernance_agentexecution",
-    "settingName": "Agent execution",
-    "settingDescription": "These settings control how AI agents use local tools and run code on managed Windows devices. Policies can apply to all Microsoft Executable Container (MXC)-capable agents or to a specific MXC-capable agent. Policies assigned to a specific agent override policies assigned to all agents. Tool-specific settings override default policy behavior. This feature is in preview. Availability depends on Windows platform capabilities and may vary by device. Settings and behavior are subject to change.",
-    "keywords": [
-      "Agent execution",
-      "Agent Governance",
-      "AI agents"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "user_vendor_msft_agentgovernance_agentexecution_policyscope_entraidentityprofile",
-    "settingName": "Entra identity profile",
-    "settingDescription": "",
-    "keywords": [
-      "Agent execution",
-      "Agent Governance",
-      "AI agents",
-      "General"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_accountsettings_primaryaccountfullname",
     "settingName": "Primary account full name",
     "settingDescription": "The full name for the account. Setup Assistant will user this value to prefill the Full Name field if 'Prefill account info' is set to 'Not configured'. This field is to be defaulted to the variable, {{username}}, for example, 'John Doe'.",
@@ -1554,6 +1496,17 @@
       "ADE profile",
       "enrollment",
       "Account settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_devicefeaturestour",
+    "settingName": "Device Features Tour",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1739,6 +1692,53 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolsource",
+    "settingName": "Source",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Tool-specific overrides"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_defaulttoolpermission_defaulttoolrunmode_defaultcontainersettingsreference",
+    "settingName": "Default container settings",
+    "settingDescription": "Reusable settings describing the properties of Microsoft Execution Containers.",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Default tool behavior"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution",
+    "settingName": "Agent execution",
+    "settingDescription": "These settings control how AI agents use local tools and run code on managed Windows devices. Policies can apply to all Microsoft Executable Container (MXC)-capable agents or to a specific MXC-capable agent. Policies assigned to a specific agent override policies assigned to all agents. Tool-specific settings override default policy behavior. This feature is in preview. Availability depends on Windows platform capabilities and may vary by device. Settings and behavior are subject to change.",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_policyscope_entraidentityprofile",
+    "settingName": "Entra identity profile",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "General"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_id",
     "settingName": "ID",
     "settingDescription": "GUID, a unique ID, represents the policy and will be used in the reporting and troubleshooting.",
@@ -1847,40 +1847,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "user_vendor_msft_agentgovernance_agentexecution_policyscope_clientid",
-    "settingName": "Client ID",
-    "settingDescription": "",
-    "keywords": [
-      "Agent execution",
-      "Agent Governance",
-      "AI agents"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "user_vendor_msft_agentgovernance_agentexecution_policyscope_targetedagent",
-    "settingName": "Targeted agent",
-    "settingDescription": "",
-    "keywords": [
-      "Agent execution",
-      "Agent Governance",
-      "AI agents",
-      "General"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "user_vendor_msft_agentgovernance_agentexecution_policyscope_pfn",
-    "settingName": "Package family name",
-    "settingDescription": "",
-    "keywords": [
-      "Agent execution",
-      "Agent Governance",
-      "AI agents"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_accountsettings_createlocaladmin",
     "settingName": "Create a local admin account",
     "settingDescription": null,
@@ -1925,39 +1891,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "ade_setupassistant_accessibility",
-    "settingName": "Accessibility",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_setupassistant_privacy",
-    "settingName": "Privacy",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "ade_setupassistant_restorecompleted",
-    "settingName": "Restore completed",
-    "settingDescription": null,
-    "keywords": [
-      "ADE profile",
-      "enrollment",
-      "Setup Assistant"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_policy_config_quiettime_rangesettings_starttime",
     "settingName": "Start",
     "settingDescription": null,
@@ -1992,6 +1925,116 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_policyscope_pfn",
+    "settingName": "Package family name",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_platformstatus",
+    "settingName": "Platform status",
+    "settingDescription": "Applies to Microsoft Office/Generic platform. Returns bitmask that indicates status of Application Guard platform installation and prerequisites on the device.  Bit 0 - Set to 1 when Application Guard is enabled into enterprise manage mode. Bit 1 - Set to 1 when the client machine is Hyper-V capable. Bit 2 - Reserved for Microsoft. Bit 3 - Set to 1 when Application Guard is installed on the client machine. Bit 4 - Reserved for Microsoft. Bit 5 - Set to 1 when the client machine meets minimum hardware requirements.",
+    "keywords": [
+      "PlatformStatus",
+      "WindowsDefenderApplicationGuard",
+      "Microsoft Defender Application Guard"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_laps_policies_passphraselength",
+    "settingName": "Passphrase Length",
+    "settingDescription": "Use this setting to configure the number of passphrase words.\n\nIf not specified, this setting will default to 6 words\n\nThis setting has a minimum allowed value of 3 words.\n\nThis setting has a maximum allowed value of 10 words.",
+    "keywords": [
+      "Passphrase Length",
+      "LAPS"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_maintenancewindows_weeklydayselection",
+    "settingName": "Weekly – Day selection",
+    "settingDescription": "Select the days of the week on which the maintenance window should repeat.",
+    "keywords": [
+      "Maintenance Window",
+      "Weekly Day Selection",
+      "Maintenance Windows"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_elevationaction",
+    "settingName": "Elevation action",
+    "settingDescription": "Specifies the elevation action for this system setting rule.",
+    "keywords": [
+      "Elevation Action",
+      "System Setting",
+      "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_accessibility",
+    "settingName": "Accessibility",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_privacy",
+    "settingName": "Privacy",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "ade_setupassistant_restorecompleted",
+    "settingName": "Restore completed",
+    "settingDescription": null,
+    "keywords": [
+      "ADE profile",
+      "enrollment",
+      "Setup Assistant"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_policyscope_clientid",
+    "settingName": "Client ID",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_policyscope_targetedagent",
+    "settingName": "Targeted agent",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "General"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "user_vendor_msft_agentgovernance_{profileid}_resourcepolicy_allowagenttoolexecution_allownetworkaccess",
     "settingName": "Allow network access",
     "settingDescription": "Controls whether the contained agent is allowed to access the network. 0=blocked, 1=allowed.",
@@ -2014,32 +2057,11 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_windowsdefenderapplicationguard_platformstatus",
-    "settingName": "Platform status",
-    "settingDescription": "Applies to Microsoft Office/Generic platform. Returns bitmask that indicates status of Application Guard platform installation and prerequisites on the device.  Bit 0 - Set to 1 when Application Guard is enabled into enterprise manage mode. Bit 1 - Set to 1 when the client machine is Hyper-V capable. Bit 2 - Reserved for Microsoft. Bit 3 - Set to 1 when Application Guard is installed on the client machine. Bit 4 - Reserved for Microsoft. Bit 5 - Set to 1 when the client machine meets minimum hardware requirements.",
-    "keywords": [
-      "PlatformStatus",
-      "WindowsDefenderApplicationGuard",
-      "Microsoft Defender Application Guard"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_laps_policies_backupdirectory",
     "settingName": "Backup Directory ",
     "settingDescription": "Use this setting to configure which directory the local admin account password is backed up to.\n\nThe allowable settings are:\n\n0=Disabled (password will not be backed up)\n1=Backup the password to Microsoft Entra ID only\n2=Backup the password to Active Directory only\n\nIf not specified, this setting will default to 0.\r\n",
     "keywords": [
       "Backup Directory",
-      "LAPS"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_laps_policies_passphraselength",
-    "settingName": "Passphrase Length",
-    "settingDescription": "Use this setting to configure the number of passphrase words.\n\nIf not specified, this setting will default to 6 words\n\nThis setting has a minimum allowed value of 3 words.\n\nThis setting has a maximum allowed value of 10 words.",
-    "keywords": [
-      "Passphrase Length",
       "LAPS"
     ],
     "categoryName": "Uncategorized"
@@ -2056,17 +2078,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_maintenancewindows_weeklydayselection",
-    "settingName": "Weekly – Day selection",
-    "settingDescription": "Select the days of the week on which the maintenance window should repeat.",
-    "keywords": [
-      "Maintenance Window",
-      "Weekly Day Selection",
-      "Maintenance Windows"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "device_vendor_msft_maintenancewindows_repeatschedule",
     "settingName": "Repeat schedule",
     "settingDescription": "Select how often the maintenance window repeats.",
@@ -2074,41 +2085,6 @@
       "Maintenance Window",
       "Repeat Schedule",
       "Maintenance Windows"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_privilegemanagement_systemsettingrules_{systemsettingrulename}_elevationaction",
-    "settingName": "Elevation action",
-    "settingDescription": "Specifies the elevation action for this system setting rule.",
-    "keywords": [
-      "Elevation Action",
-      "System Setting",
-      "Privilege Management"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolpermission",
-    "settingName": "Permission",
-    "settingDescription": "",
-    "keywords": [
-      "Agent execution",
-      "Agent Governance",
-      "AI agents",
-      "Tool-specific overrides"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolpermission_additionalargumentsmode",
-    "settingName": "Allow or block arguments",
-    "settingDescription": "",
-    "keywords": [
-      "Agent execution",
-      "Agent Governance",
-      "AI agents",
-      "Tool-specific overrides"
     ],
     "categoryName": "Uncategorized"
   },
@@ -2146,24 +2122,36 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolpermission",
+    "settingName": "Permission",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Tool-specific overrides"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolpermission_additionalargumentsmode",
+    "settingName": "Allow or block arguments",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Tool-specific overrides"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "device_vendor_msft_laps_policies_passwordexpirationprotectionenabled",
     "settingName": "Password Expiration Protection Enabled ",
     "settingDescription": "Use this setting to configure additional enforcement of maximum password age for the managed local administrator account.\n\nWhen this setting is enabled, planned password expiration that would result in a password age greater than that dictated by \"PasswordAgeDays\" policy is NOT allowed. When such expiration is detected, the password is changed immediately and the new password expiration date is set according to policy.\n\nIf not specified, this setting defaults to True.\r\n ",
     "keywords": [
       "Password Expiration Protection Enabled",
       "LAPS"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "user_vendor_msft_agentgovernance_agentexecution_policyscope",
-    "settingName": "Policy scope",
-    "settingDescription": "",
-    "keywords": [
-      "Agent execution",
-      "Agent Governance",
-      "AI agents",
-      "General"
     ],
     "categoryName": "Uncategorized"
   },
@@ -2254,6 +2242,18 @@
       "Device Preparation",
       "SkipKeyboard",
       "Out-of-box experience settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_policyscope",
+    "settingName": "Policy scope",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "General"
     ],
     "categoryName": "Uncategorized"
   },
@@ -2536,18 +2536,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolpermission_argumentlist_argument",
-    "settingName": "Argument",
-    "settingDescription": "",
-    "keywords": [
-      "Agent execution",
-      "Agent Governance",
-      "AI agents",
-      "Tool-specific overrides"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_accountsettings_hideusersgroups",
     "settingName": "Hide in Users and Groups",
     "settingDescription": "Make the admin account hidden in the login window and Users & Groups.",
@@ -2633,6 +2621,18 @@
       "Elevation",
       "Privilege Management",
       "Privilege Management Elevation Client Settings"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "user_vendor_msft_agentgovernance_agentexecution_tooloverrideentries_toolpermission_argumentlist_argument",
+    "settingName": "Argument",
+    "settingDescription": "",
+    "keywords": [
+      "Agent execution",
+      "Agent Governance",
+      "AI agents",
+      "Tool-specific overrides"
     ],
     "categoryName": "Uncategorized"
   },

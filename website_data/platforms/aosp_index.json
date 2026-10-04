@@ -434,26 +434,6 @@
     "categoryName": "Device Restriction"
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.keyguarddisabledfeatures",
-    "settingName": "Disabled lock screen features",
-    "settingDescription": "When the device is locked, choose the features that can't be used. These features are accessible to users when the device is locked; users will not be able to see or access the features that are disabled. When this setting is configured by more than one assigned policy, the selected features are merged (union) across those policies.",
-    "keywords": [
-      "Keyguard",
-      "Lock screen",
-      "Secure lock screen",
-      "Disabled lock screen features",
-      "Camera",
-      "Notifications",
-      "Trust agents",
-      "Fingerprint",
-      "Biometrics",
-      "Face",
-      "Iris",
-      "Device password"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.camerablockedaosp",
     "settingName": "Block access to camera",
     "settingDescription": "If 'True', prevents access to the camera on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow access to the camera. Intune only manages access to the device camera. It doesn't have access to pictures or videos.",
@@ -489,6 +469,26 @@
       "Password",
       "Passcode",
       "Password Length",
+      "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.keyguarddisabledfeatures",
+    "settingName": "Disabled lock screen features",
+    "settingDescription": "When the device is locked, choose the features that can't be used. These features are accessible to users when the device is locked; users will not be able to see or access the features that are disabled. When this setting is configured by more than one assigned policy, the selected features are merged (union) across those policies.",
+    "keywords": [
+      "Keyguard",
+      "Lock screen",
+      "Secure lock screen",
+      "Disabled lock screen features",
+      "Camera",
+      "Notifications",
+      "Trust agents",
+      "Fingerprint",
+      "Biometrics",
+      "Face",
+      "Iris",
       "Device password"
     ],
     "categoryName": "Device Restriction"
@@ -626,34 +626,6 @@
     "categoryName": "Device Restriction"
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.printingpolicy",
-    "settingName": "Block printing",
-    "settingDescription": "If 'True', the device is prevented from printing documents. If 'False', Intune doesn't change or update this setting. By default, the OS follows the default printing behavior. Available for fully managed, dedicated, and corporate-owned work profile devices.",
-    "keywords": [
-      "print",
-      "printing",
-      "block printing",
-      "disable printing",
-      "document",
-      "documents",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.appsdefaultpermissionpolicy",
-    "settingName": "Default permission policy (work profile-level)",
-    "settingDescription": "Define the default permission policy for requests for runtime permissions. Available for fully managed, dedicated and corporate-owned work profile (at work profile level) devices.",
-    "keywords": [
-      "Apps",
-      "Default",
-      "Permission",
-      "Policy",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.storageblockusbfiletransferaosp",
     "settingName": "Block USB file transfer",
     "settingDescription": "If 'True', prevents users from transferring files over USB. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to transfer files.",
@@ -688,6 +660,34 @@
       "Symbol",
       "Characters",
       "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.printingpolicy",
+    "settingName": "Block printing",
+    "settingDescription": "If 'True', the device is prevented from printing documents. If 'False', Intune doesn't change or update this setting. By default, the OS follows the default printing behavior. Available for fully managed, dedicated, and corporate-owned work profile devices.",
+    "keywords": [
+      "print",
+      "printing",
+      "block printing",
+      "disable printing",
+      "document",
+      "documents",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.appsdefaultpermissionpolicy",
+    "settingName": "Default permission policy (work profile-level)",
+    "settingDescription": "Define the default permission policy for requests for runtime permissions. Available for fully managed, dedicated and corporate-owned work profile (at work profile level) devices.",
+    "keywords": [
+      "Apps",
+      "Default",
+      "Permission",
+      "Policy",
+      "General"
     ],
     "categoryName": "Device Restriction"
   },
@@ -833,21 +833,6 @@
     "categoryName": "Device Restriction"
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.datetimeconfigurationblockedaosp",
-    "settingName": "Block date and time changes",
-    "settingDescription": "If 'True', prevents users from configuring the date, time, and timezone through Settings. If 'False', the effective false policy clears the restriction. Available for AOSP user-based and userless devices.",
-    "keywords": [
-      "Date",
-      "Time",
-      "Timezone",
-      "Date and time",
-      "Configuration",
-      "Block",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.locationmode",
     "settingName": "Location",
     "settingDescription": "Select how location services are managed. 'Device Default' lets users turn location services on or off. 'Location enabled' requires location services to be on and prevents end users from turning it off. 'Location disabled' requires location services to be off and prevents end users from turning it on. When 'Location disabled' is configured, then any other setting that depends on the device location is affected, including the Locate device remote action that admins use. For corporate-owned work profile devices, this setting will only apply to devices running Android 10 or earlier. Available for fully managed, dedicated, and corporate-owned work profile devices.",
@@ -880,6 +865,21 @@
       "Block",
       "Bluetooth",
       "Bluetooth Configuration",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.datetimeconfigurationblockedaosp",
+    "settingName": "Block date and time changes",
+    "settingDescription": "If 'True', prevents users from configuring the date, time, and timezone through Settings. If 'False', the effective false policy clears the restriction. Available for AOSP user-based and userless devices.",
+    "keywords": [
+      "Date",
+      "Time",
+      "Timezone",
+      "Date and time",
+      "Configuration",
+      "Block",
       "General"
     ],
     "categoryName": "Device Restriction"

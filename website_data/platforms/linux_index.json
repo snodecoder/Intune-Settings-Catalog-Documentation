@@ -121,16 +121,6 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "linux_safedeploymentplan_siuupdatewindow",
-    "settingName": "SIU Update Window",
-    "settingDescription": "Defines a maintenance window (in minutes, 0-1440) during which Security Intelligence Update (SIU) updates can be installed, giving control over when updates land. 0 disables the window (updates any time).",
-    "keywords": [
-      "Safe Deployment Plan",
-      "Defender Safe Deployment Plan"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
     "settingId": "com.apple.managedclient.preferences_enforcementlevel_antivirusengine",
     "settingName": "Enforcement level",
     "settingDescription": "Antivirus engine enforcement mode",
@@ -192,6 +182,16 @@
     "settingDescription": "Path to exclude, wildcards are NOT supported",
     "keywords": [
       "Exclusion Settings"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_safedeploymentplan_siuupdatewindow",
+    "settingName": "SIU Update Window",
+    "settingDescription": "Defines a maintenance window (in minutes, 0-1440) during which Security Intelligence Update (SIU) updates can be installed, giving control over when updates land. 0 disables the window (updates any time).",
+    "keywords": [
+      "Safe Deployment Plan",
+      "Defender Safe Deployment Plan"
     ],
     "categoryName": "Microsoft Defender"
   },
@@ -449,16 +449,6 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "linux_safedeploymentplan_channel",
-    "settingName": "SDP Channel Assignment",
-    "settingDescription": "Assigns the device to a Safe Deployment Plan channel for phased rollout of Defender updates. 'Validation' sources pre-Production content for early validation. 'Release' sources Production content at one of three velocities: 'Release - Early' is the first Production wave, 'Release - Fast' follows after early dwell and health, and 'Release - Broad' follows after fast dwell and health. 'Delayed' sources the Production artifact after additional dwell.",
-    "keywords": [
-      "Safe Deployment Plan",
-      "Defender Safe Deployment Plan"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
     "settingId": "com.apple.managedclient.preferences_exclusions_item_$type",
     "settingName": "Type",
     "settingDescription": null,
@@ -639,50 +629,22 @@
     "categoryName": "Microsoft Defender"
   },
   {
+    "settingId": "linux_safedeploymentplan_channel",
+    "settingName": "SDP Channel Assignment",
+    "settingDescription": "Assigns the device to a Safe Deployment Plan channel for phased rollout of Defender updates. 'Validation' sources pre-Production content for early validation. 'Release' sources Production content at one of three velocities: 'Release - Early' is the first Production wave, 'Release - Fast' follows after early dwell and health, and 'Release - Broad' follows after fast dwell and health. 'Delayed' sources the Production artifact after additional dwell.",
+    "keywords": [
+      "Safe Deployment Plan",
+      "Defender Safe Deployment Plan"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
     "settingId": "com.apple.managedclient.preferences_threattypesettings",
     "settingName": "Threat type settings",
     "settingDescription": "The threatTypeSettings preference in the antivirus engine is used to control how certain threat types are handled by the product.",
     "keywords": [
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_exclusions_item_isdirectory",
-    "settingName": "Directory (selected) or file (not selected)",
-    "settingDescription": "Directory if selected, or file if not selected",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_proxy",
-    "settingName": "Set proxy for MDE communication",
-    "settingDescription": "Configure proxy for all MDE cloud communication. If not set, the system-wide proxy is used.",
-    "keywords": [
-      "Cloud delivered protection preferences"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_diagnosticlevel",
-    "settingName": "Diagnostic collection level",
-    "settingDescription": "Diagnostic data is used to keep Microsoft Defender ATP secure and up-to-date, detect, diagnose and fix problems, and also make product improvements. This setting determines the level of diagnostics sent by the product to Microsoft.",
-    "keywords": [
-      "Microsoft Defender - Cloud delivered protection preferences",
-      "Cloud delivered protection preferences"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_definitionupdatedue",
-    "settingName": "Security intelligence update due (in days)",
-    "settingDescription": "Determines the number of days after which the last installed security intelligence updates are considered outdated.",
-    "keywords": [
-      "Cloud delivered protection preferences"
     ],
     "categoryName": "Microsoft Defender"
   },
@@ -730,6 +692,44 @@
     "keywords": [
       "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_exclusions_item_isdirectory",
+    "settingName": "Directory (selected) or file (not selected)",
+    "settingDescription": "Directory if selected, or file if not selected",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_proxy",
+    "settingName": "Set proxy for MDE communication",
+    "settingDescription": "Configure proxy for all MDE cloud communication. If not set, the system-wide proxy is used.",
+    "keywords": [
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_diagnosticlevel",
+    "settingName": "Diagnostic collection level",
+    "settingDescription": "Diagnostic data is used to keep Microsoft Defender ATP secure and up-to-date, detect, diagnose and fix problems, and also make product improvements. This setting determines the level of diagnostics sent by the product to Microsoft.",
+    "keywords": [
+      "Microsoft Defender - Cloud delivered protection preferences",
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_definitionupdatedue",
+    "settingName": "Security intelligence update due (in days)",
+    "settingDescription": "Determines the number of days after which the last installed security intelligence updates are considered outdated.",
+    "keywords": [
+      "Cloud delivered protection preferences"
     ],
     "categoryName": "Microsoft Defender"
   },
@@ -866,16 +866,6 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "linux_safedeploymentplan_minsiupackageage",
-    "settingName": "Minimum SIU Package Age",
-    "settingDescription": "Sets a minimum age for Security Intelligence Update (SIU) packages before they are applied, providing a buffer against early-stage issues. 'Real-time' applies packages as soon as they are available; '4 hours', '16 hours', and '24 hours' require the package to have aged at least that long before it is applied.",
-    "keywords": [
-      "Safe Deployment Plan",
-      "Defender Safe Deployment Plan"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
     "settingId": "com.apple.managedclient.preferences_exclusions_item_name",
     "settingName": "Name",
     "settingDescription": "Process name, either or full path or file name, wildcards supported",
@@ -927,6 +917,16 @@
     "settingDescription": "Converts warn determinations into blocks",
     "keywords": [
       "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_safedeploymentplan_minsiupackageage",
+    "settingName": "Minimum SIU Package Age",
+    "settingDescription": "Sets a minimum age for Security Intelligence Update (SIU) packages before they are applied, providing a buffer against early-stage issues. 'Real-time' applies packages as soon as they are available; '4 hours', '16 hours', and '24 hours' require the package to have aged at least that long before it is applied.",
+    "keywords": [
+      "Safe Deployment Plan",
+      "Defender Safe Deployment Plan"
     ],
     "categoryName": "Microsoft Defender"
   },
