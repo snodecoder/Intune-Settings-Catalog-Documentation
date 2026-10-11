@@ -1,20 +1,5 @@
 [
   {
-    "settingId": "com.android.devicerestrictionpolicy.appsrecommendskippingfirstusehints",
-    "settingName": "Skip first use hints",
-    "settingDescription": "If 'True', hides or skips suggestions from apps that step through tutorials, or hints when the app starts. If 'False', Intune doesn't change or update this setting. By default, the OS might show these suggestions when the app starts. Available for fully managed and dedicated devices.",
-    "keywords": [
-      "Apps",
-      "Recommend",
-      "Skipping",
-      "First",
-      "Use",
-      "Hints",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.securityallowdebuggingfeaturesaosp",
     "settingName": "Allow users to turn on debugging features",
     "settingDescription": "If 'True', permits users to access the debugging features on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might prevent users from using the debugging features on the device.",
@@ -53,6 +38,86 @@
       "mobile network",
       "add SIM",
       "network profile",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordrequiredtype",
+    "settingName": "Required password type",
+    "settingDescription": "Set the work profile password’s complexity requirements. Additional password requirements will become available based on your selection. Available for corporate-owned work profile devices (at work profile level). For more details, see the information provided in the ‘Learn More’ section below.",
+    "keywords": [
+      "Work Profile Password",
+      "Passcode",
+      "Password type",
+      "Password required type"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.passwordminimumlowercasecharacters",
+    "settingName": "Number of lowercase characters required",
+    "settingDescription": "Enter the number of lowercase characters the password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Password",
+      "Minimum",
+      "Lower",
+      "Case",
+      "Characters",
+      "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.passwordsigninfailurecountbeforefactoryreset",
+    "settingName": "Number of sign-in failures before wiping device",
+    "settingDescription": "Enter the number of wrong passwords allowed before the device is wiped, from 4-11. If the value is blank, Intune doesn't change or update this setting. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
+    "keywords": [
+      "Password",
+      "Passcode",
+      "SignIn Failure",
+      "SignIn Failure Count Before Factory Reset",
+      "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.passwordblockkeyguard",
+    "settingName": "Disable lock screen",
+    "settingDescription": "If 'True', blocks all Keyguard lock screen features from being used. If 'False', Intune doesn't change or update this setting. By default, when the device is in lock screen, the OS might allow all the Keyguard features, such as camera, fingerprint unlock, and more. Available for fully managed and dedicated devices.",
+    "keywords": [
+      "Password",
+      "Block",
+      "Keyguard",
+      "Device password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.securitycommoncriteriamodeenabled",
+    "settingName": "Require Common Criteria mode​",
+    "settingDescription": "If 'True', enables an elevated set of security standards on the device most often used in highly sensitive organizations, such as government establishments. If 'False', Intune doesn't change or update this setting. Available for fully managed, dedicated and corporate-owned work profile devices.",
+    "keywords": [
+      "Security",
+      "Common",
+      "Criteria",
+      "Mode",
+      "Enabled",
+      "System Security"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.appsrecommendskippingfirstusehints",
+    "settingName": "Skip first use hints",
+    "settingDescription": "If 'True', hides or skips suggestions from apps that step through tutorials, or hints when the app starts. If 'False', Intune doesn't change or update this setting. By default, the OS might show these suggestions when the app starts. Available for fully managed and dedicated devices.",
+    "keywords": [
+      "Apps",
+      "Recommend",
+      "Skipping",
+      "First",
+      "Use",
+      "Hints",
       "General"
     ],
     "categoryName": "Device Restriction"
@@ -112,18 +177,6 @@
     "categoryName": "Device Restriction"
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordrequiredtype",
-    "settingName": "Required password type",
-    "settingDescription": "Set the work profile password’s complexity requirements. Additional password requirements will become available based on your selection. Available for corporate-owned work profile devices (at work profile level). For more details, see the information provided in the ‘Learn More’ section below.",
-    "keywords": [
-      "Work Profile Password",
-      "Passcode",
-      "Password type",
-      "Password required type"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.workprofilepasswordsigninfailurecountbeforefactoryreset",
     "settingName": "Number of sign-in failures before wiping device",
     "settingDescription": "Enter the number of wrong passwords allowed before the work profile is wiped, from 4-11. If the value is blank, Intune doesn't change or update this setting. Available for corporate-owned work profile devices (at work profile level).",
@@ -139,59 +192,6 @@
       "Factory",
       "Reset",
       "Work profile password"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.passwordminimumlowercasecharacters",
-    "settingName": "Number of lowercase characters required",
-    "settingDescription": "Enter the number of lowercase characters the password must have, between 1 and 16 characters. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "Password",
-      "Minimum",
-      "Lower",
-      "Case",
-      "Characters",
-      "Device password"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.passwordsigninfailurecountbeforefactoryreset",
-    "settingName": "Number of sign-in failures before wiping device",
-    "settingDescription": "Enter the number of wrong passwords allowed before the device is wiped, from 4-11. If the value is blank, Intune doesn't change or update this setting. Available for fully managed, dedicated and corporate-owned work profile devices (at work profile level).",
-    "keywords": [
-      "Password",
-      "Passcode",
-      "SignIn Failure",
-      "SignIn Failure Count Before Factory Reset",
-      "Device password"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.passwordblockkeyguard",
-    "settingName": "Disable lock screen",
-    "settingDescription": "If 'True', blocks all Keyguard lock screen features from being used. If 'False', Intune doesn't change or update this setting. By default, when the device is in lock screen, the OS might allow all the Keyguard features, such as camera, fingerprint unlock, and more. Available for fully managed and dedicated devices.",
-    "keywords": [
-      "Password",
-      "Block",
-      "Keyguard",
-      "Device password"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.securitycommoncriteriamodeenabled",
-    "settingName": "Require Common Criteria mode​",
-    "settingDescription": "If 'True', enables an elevated set of security standards on the device most often used in highly sensitive organizations, such as government establishments. If 'False', Intune doesn't change or update this setting. Available for fully managed, dedicated and corporate-owned work profile devices.",
-    "keywords": [
-      "Security",
-      "Common",
-      "Criteria",
-      "Mode",
-      "Enabled",
-      "System Security"
     ],
     "categoryName": "Device Restriction"
   },
@@ -468,19 +468,6 @@
     "categoryName": "Device Restriction"
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.networkescapehatchallowed",
-    "settingName": "Allow network escape hatch",
-    "settingDescription": "If 'True', allows users to turn on the network escape hatch feature. If a network connection can't be made at boot time, the escape hatch prompts the user to temporarily connect to a network in order to refresh the device policy. After applying policy, the temporary network will be forgotten and the device will continue booting. This prevents being unable to connect to a network if there is no suitable network in the last policy and the device boots into an app in lock task mode, or the user is otherwise unable to reach device settings. If 'False', Intune doesn't change or update this setting. By default, the OS might prevent users from turning on the network escape hatch feature on the device. Available for fully managed and dedicated devices.",
-    "keywords": [
-      "Network",
-      "Escape",
-      "Hatch",
-      "Allowed",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.camerablocked",
     "settingName": "Block access to camera (work profile-level)",
     "settingDescription": "If 'True', prevents access to the camera on the device. If 'False', Intune doesn't change or update this setting. By default, the OS might allow access to the camera. Intune only manages access to the device camera. It doesn't have access to pictures or videos. Available for fully managed, dedicated and corporate-owned work profile (at work profile level) devices. ",
@@ -488,19 +475,6 @@
       "Block",
       "Camera",
       "Camera Block",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.nfcblockoutgoingbeam",
-    "settingName": "Block beaming data from apps using NFC (work profile-level)",
-    "settingDescription": "If 'True', prevents using the Near Field Communication (NFC) technology to beam data from apps. If 'False', Intune doesn't change or update this setting. By default, the OS might allow using NFC to share data between devices. Available for fully managed, dedicated and corporate-owned work profile (at work profile level) devices.",
-    "keywords": [
-      "Nfc",
-      "Block",
-      "Outgoing",
-      "Beam",
       "General"
     ],
     "categoryName": "Device Restriction"
@@ -526,18 +500,6 @@
       "Block",
       "Bluetooth",
       "Bluetooth Configuration Aosp",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurationsaosp",
-    "settingName": "Block Wi-Fi setting changes",
-    "settingDescription": "If 'True', prevents users from creating or changing any Wi-Fi configurations. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to change the Wi-Fi settings on the device.",
-    "keywords": [
-      "Block",
-      "Wifi",
-      "Wifi Configuration",
       "General"
     ],
     "categoryName": "Device Restriction"
@@ -613,6 +575,57 @@
     "categoryName": "Device Restriction"
   },
   {
+    "settingId": "com.android.devicerestrictionpolicy.securityrequireverifyapps",
+    "settingName": "Require threat scan on apps",
+    "settingDescription": "If 'True', enables Google Play Protect to scan apps before and after they're installed. If it detects a threat, it might warn users to remove the app from the device. If 'False', Intune doesn't change or update this setting. By default, the OS might not enable or run Google Play Protect to scan apps. Available for fully managed, dedicated and corporate-owned work profile devices.",
+    "keywords": [
+      "Security",
+      "Require",
+      "Verify",
+      "Apps",
+      "System Security"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.networkescapehatchallowed",
+    "settingName": "Allow network escape hatch",
+    "settingDescription": "If 'True', allows users to turn on the network escape hatch feature. If a network connection can't be made at boot time, the escape hatch prompts the user to temporarily connect to a network in order to refresh the device policy. After applying policy, the temporary network will be forgotten and the device will continue booting. This prevents being unable to connect to a network if there is no suitable network in the last policy and the device boots into an app in lock task mode, or the user is otherwise unable to reach device settings. If 'False', Intune doesn't change or update this setting. By default, the OS might prevent users from turning on the network escape hatch feature on the device. Available for fully managed and dedicated devices.",
+    "keywords": [
+      "Network",
+      "Escape",
+      "Hatch",
+      "Allowed",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.nfcblockoutgoingbeam",
+    "settingName": "Block beaming data from apps using NFC (work profile-level)",
+    "settingDescription": "If 'True', prevents using the Near Field Communication (NFC) technology to beam data from apps. If 'False', Intune doesn't change or update this setting. By default, the OS might allow using NFC to share data between devices. Available for fully managed, dedicated and corporate-owned work profile (at work profile level) devices.",
+    "keywords": [
+      "Nfc",
+      "Block",
+      "Outgoing",
+      "Beam",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.wifiblockeditconfigurationsaosp",
+    "settingName": "Block Wi-Fi setting changes",
+    "settingDescription": "If 'True', prevents users from creating or changing any Wi-Fi configurations. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to change the Wi-Fi settings on the device.",
+    "keywords": [
+      "Block",
+      "Wifi",
+      "Wifi Configuration",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
     "settingId": "com.android.devicerestrictionpolicy.passwordminutesofinactivitybeforescreentimeoutaosp",
     "settingName": "Maximum minutes of inactivity until screen locks",
     "settingDescription": "Enter the maximum length of time, from 1 minute to 1 hour, that devices can be idle before the screen is automatically locked. Users must enter their credentials to regain access. For example, enter 5 to lock the device after 5 minutes of inactivity. Ignored by device if new time is longer than what's currently set on device. If set to Immediately, devices will use the minimum possible value per device.",
@@ -635,19 +648,6 @@
       "Password required type",
       "Android Enterprise",
       "Device password"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.securityrequireverifyapps",
-    "settingName": "Require threat scan on apps",
-    "settingDescription": "If 'True', enables Google Play Protect to scan apps before and after they're installed. If it detects a threat, it might warn users to remove the app from the device. If 'False', Intune doesn't change or update this setting. By default, the OS might not enable or run Google Play Protect to scan apps. Available for fully managed, dedicated and corporate-owned work profile devices.",
-    "keywords": [
-      "Security",
-      "Require",
-      "Verify",
-      "Apps",
-      "System Security"
     ],
     "categoryName": "Device Restriction"
   },
@@ -827,19 +827,6 @@
     "categoryName": "Device Restriction"
   },
   {
-    "settingId": "com.android.devicerestrictionpolicy.maxdayswithworkoff",
-    "settingName": "Maximum days to turn off work profile",
-    "settingDescription": "Set the maximum number of days a work profile can be turned off before the work profile is removed. Value of 0 means no limit. Available for corporate-owned work profile (COPE) devices running Android 11+.",
-    "keywords": [
-      "MaxDaysWithWorkOff",
-      "Work",
-      "Personal",
-      "COPE",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
     "settingId": "com.android.devicerestrictionpolicy.privatespacepolicy",
     "settingName": "Block private space",
     "settingDescription": "If 'True', prevents users from creating or using private spaces on the device, ensuring that all data is stored within the corporate profile. All existing private spaces will be deleted. If 'False', Intune doesn't change or update this setting. By default, the OS might allow the creation of private spaces for personal data. Available for corporate-owned work profile devices (at work profile level).",
@@ -860,21 +847,6 @@
       "Block",
       "Bluetooth",
       "Bluetooth Block",
-      "General"
-    ],
-    "categoryName": "Device Restriction"
-  },
-  {
-    "settingId": "com.android.devicerestrictionpolicy.wifiblockeditpolicydefinedconfigurations",
-    "settingName": "Block Wi-Fi setting changes",
-    "settingDescription": "If 'True', prevents users from changing Wi-Fi settings created by the device owner. Users can create their own Wi-Fi configurations. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to change the Wi-Fi settings on the device. Available for fully managed and dedicated devices.",
-    "keywords": [
-      "Wifi",
-      "Block",
-      "Edit",
-      "Policy",
-      "Defined",
-      "Configurations",
       "General"
     ],
     "categoryName": "Device Restriction"
@@ -918,6 +890,34 @@
       "Expiration",
       "Days",
       "Work profile password"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.maxdayswithworkoff",
+    "settingName": "Maximum days to turn off work profile",
+    "settingDescription": "Set the maximum number of days a work profile can be turned off before the work profile is removed. Value of 0 means no limit. Available for corporate-owned work profile (COPE) devices running Android 11+.",
+    "keywords": [
+      "MaxDaysWithWorkOff",
+      "Work",
+      "Personal",
+      "COPE",
+      "General"
+    ],
+    "categoryName": "Device Restriction"
+  },
+  {
+    "settingId": "com.android.devicerestrictionpolicy.wifiblockeditpolicydefinedconfigurations",
+    "settingName": "Block Wi-Fi setting changes",
+    "settingDescription": "If 'True', prevents users from changing Wi-Fi settings created by the device owner. Users can create their own Wi-Fi configurations. If 'False', Intune doesn't change or update this setting. By default, the OS might allow users to change the Wi-Fi settings on the device. Available for fully managed and dedicated devices.",
+    "keywords": [
+      "Wifi",
+      "Block",
+      "Edit",
+      "Policy",
+      "Defined",
+      "Configurations",
+      "General"
     ],
     "categoryName": "Device Restriction"
   },

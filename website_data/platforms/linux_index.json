@@ -1,34 +1,5 @@
 [
   {
-    "settingId": "com.apple.managedclient.preferences_passivemode",
-    "settingName": "Enable passive mode (deprecated)",
-    "settingDescription": "Whether the antivirus engine runs in passive mode or not.",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_enabled",
-    "settingName": "Enable / disable cloud delivered protection",
-    "settingDescription": "Whether cloud delivered protection is enabled on the device or not. To improve the security of your services, we recommend keeping this feature turned on.",
-    "keywords": [
-      "Microsoft Defender - Cloud delivered protection preferences",
-      "Cloud delivered protection preferences"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_disableftpparsing",
-    "settingName": "Disable FTP parsing",
-    "settingDescription": "Disables parsing of FTP traffic",
-    "keywords": [
-      "Network protection"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
     "settingId": "linux_mdatp_managed_edr_tags",
     "settingName": "Device tags",
     "settingDescription": null,
@@ -47,25 +18,6 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "linux_advancedsettings_memoryscan",
-    "settingName": "Memory scan (preview)",
-    "settingDescription": "Provides visibility in Passive/Realtime/OnDemand enforcement and protection requires behaviour monitoring to be enabled",
-    "keywords": [
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_passivemode",
-    "settingName": "Enable passive mode (deprecated)",
-    "settingDescription": "Whether the antivirus engine runs in passive mode or not.",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
     "settingId": "linux_mdatp_managed_antivirusengine_exclusions_item_extension",
     "settingName": "File extension",
     "settingDescription": null,
@@ -79,15 +31,6 @@
     "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_scantype",
     "settingName": "Weekly Scheduled scan type",
     "settingDescription": "Selects whether to perform a quick scan or full scan. Quick scan checks the most likely locations where malware could be registered to start with the system. Full scan checks all files and running programs on your hard disk.",
-    "keywords": [
-      "Schedule Scan"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_weeklytimeofday",
-    "settingName": "Weekly Schedule scan time",
-    "settingDescription": "Selects the time of day that the Defender weekly scan should run. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120.",
     "keywords": [
       "Schedule Scan"
     ],
@@ -117,6 +60,63 @@
     "settingDescription": "Determines how aggressive Defender for Endpoint is in blocking and scanning suspicious files.",
     "keywords": [
       "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_passivemode",
+    "settingName": "Enable passive mode (deprecated)",
+    "settingDescription": "Whether the antivirus engine runs in passive mode or not.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_enabled",
+    "settingName": "Enable / disable cloud delivered protection",
+    "settingDescription": "Whether cloud delivered protection is enabled on the device or not. To improve the security of your services, we recommend keeping this feature turned on.",
+    "keywords": [
+      "Microsoft Defender - Cloud delivered protection preferences",
+      "Cloud delivered protection preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disableftpparsing",
+    "settingName": "Disable FTP parsing",
+    "settingDescription": "Disables parsing of FTP traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_advancedsettings_memoryscan",
+    "settingName": "Memory scan (preview)",
+    "settingDescription": "Provides visibility in Passive/Realtime/OnDemand enforcement and protection requires behaviour monitoring to be enabled",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_passivemode",
+    "settingName": "Enable passive mode (deprecated)",
+    "settingDescription": "Whether the antivirus engine runs in passive mode or not.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scheduledscan_weeklytimeofday",
+    "settingName": "Weekly Schedule scan time",
+    "settingDescription": "Selects the time of day that the Defender weekly scan should run. For example, a value of 0=12:00AM, a value of 60=1:00AM, a value of 120=2:00, and so on, up to a value of 1380=11:00PM. The default value is 120.",
+    "keywords": [
+      "Schedule Scan"
     ],
     "categoryName": "Microsoft Defender"
   },
@@ -234,6 +234,52 @@
     "categoryName": "Microsoft Defender"
   },
   {
+    "settingId": "com.apple.managedclient.preferences_scanafterdefinitionupdate",
+    "settingName": "Run a scan after definitions are updated",
+    "settingDescription": "Specifies whether to start a process scan after new security intelligence updates are downloaded on the device. Enabling this setting will trigger an antivirus scan on the running processes of the device.",
+    "keywords": [
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disablerdpparsing",
+    "settingName": "Disable RDP parsing",
+    "settingDescription": "Disables parsing of RDP traffic",
+    "keywords": [
+      "Network protection"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_edr_tags_item_value",
+    "settingName": "Value of tag",
+    "settingDescription": "Only one value per tag type can be set. Type of tags are unique, and should not be repeated in the same configuration profile.",
+    "keywords": [
+      " EDR preferences"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_disallowedthreatactions",
+    "settingName": "Disallowed threat actions",
+    "settingDescription": "Restricts the actions that the local user of a device can take when threats are detected. The actions included in this list are not displayed in the user interface.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_exclusionsettings_exclusions",
+    "settingName": "Global Exclusions",
+    "settingDescription": "Global exclusions apply to both Antivirus and Endpoint detection and response to exclude at a much lower level closer to sensors. Usage: Tackling performance issues. Risk: Significantly risks protection",
+    "keywords": [
+      "Exclusion Settings"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
     "settingId": "com.apple.managedclient.preferences_scanresultsretentiondays",
     "settingName": "Scan results retention",
     "settingDescription": "Specify the number of days that results are retained in the scan history on the device. Old scan results are removed from the history. Old quarantined files that are also removed from the disk.",
@@ -263,47 +309,10 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "com.apple.managedclient.preferences_scanafterdefinitionupdate",
-    "settingName": "Run a scan after definitions are updated",
-    "settingDescription": "Specifies whether to start a process scan after new security intelligence updates are downloaded on the device. Enabling this setting will trigger an antivirus scan on the running processes of the device.",
-    "keywords": [
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_disablerdpparsing",
-    "settingName": "Disable RDP parsing",
-    "settingDescription": "Disables parsing of RDP traffic",
-    "keywords": [
-      "Network protection"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_edr_tags_item_value",
-    "settingName": "Value of tag",
-    "settingDescription": "Only one value per tag type can be set. Type of tags are unique, and should not be repeated in the same configuration profile.",
-    "keywords": [
-      " EDR preferences"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
     "settingId": "mde_managed_antivirusengine_offlinedefinitionupdatefallbacktocloud",
     "settingName": "Offline Definition Update Fallback To Cloud",
     "settingDescription": "Whether to fall back to cloud updates if offline updates fail.",
     "keywords": [
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_disallowedthreatactions",
-    "settingName": "Disallowed threat actions",
-    "settingDescription": "Restricts the actions that the local user of a device can take when threats are detected. The actions included in this list are not displayed in the user interface.",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
     "categoryName": "Microsoft Defender"
@@ -339,15 +348,6 @@
     "settingId": "linux_mdatp_managed_exclusionsettings_exclusions_item_name",
     "settingName": "Process name",
     "settingDescription": "Process name, either or full path or file name, wildcards NOT supported",
-    "keywords": [
-      "Exclusion Settings"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_exclusionsettings_exclusions",
-    "settingName": "Global Exclusions",
-    "settingDescription": "Global exclusions apply to both Antivirus and Endpoint detection and response to exclude at a much lower level closer to sensors. Usage: Tackling performance issues. Risk: Significantly risks protection",
     "keywords": [
       "Exclusion Settings"
     ],
@@ -449,46 +449,6 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "com.apple.managedclient.preferences_exclusions_item_$type",
-    "settingName": "Type",
-    "settingDescription": null,
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "com.apple.managedclient.preferences_disallowedthreatactions",
-    "settingName": "Disallowed threat actions",
-    "settingDescription": "Restricts the actions that the local user of a device can take when threats are detected. The actions included in this list are not displayed in the user interface.",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_exclusionsmergepolicy",
-    "settingName": "Exclusions merge",
-    "settingDescription": "Specify the merge policy for exclusions. This can be a combination of administrator-defined and user-defined exclusions (merge) or only administrator-defined exclusions (admin_only). This setting can be used to restrict local users from defining their own exclusions.",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_threattypesettings",
-    "settingName": "Threat type settings",
-    "settingDescription": "The threatTypeSettings preference in the antivirus engine is used to control how certain threat types are handled by the product.",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
     "settingId": "linux_advancedsettings",
     "settingName": "Advanced settings",
     "settingDescription": "Advanced antivirus engine settings.",
@@ -498,30 +458,10 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "linux_mdatp_managed_antivirusengine_exclusions_item_isdirectory",
-    "settingName": "Is directory",
-    "settingDescription": "Directory if selected, or file if not selected",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
     "settingId": "mde_managed_antivirusengine_offlinedefinitionupdate",
     "settingName": "Enable offline definition update",
     "settingDescription": "Determines whether offline definition updates are enabled for antivirus.",
     "keywords": [
-      "Antivirus engine"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_mdatp_managed_antivirusengine_scanhistorymaximumitems",
-    "settingName": "Scan history size",
-    "settingDescription": "Specify the maximum number of entries to keep in the scan history. Entries include all on-demand scans performed in the past and all antivirus detections.",
-    "keywords": [
-      "Microsoft Defender - Antivirus engine",
       "Antivirus engine"
     ],
     "categoryName": "Microsoft Defender"
@@ -582,27 +522,9 @@
     "categoryName": "Microsoft Defender"
   },
   {
-    "settingId": "linux_platformupdatecontrols_schedule_starttime",
-    "settingName": "Platform Update Window Start Time",
-    "settingDescription": "Specifies the start of the allowed time window for platform updates (24-hour clock). Select 'All Day' for no restriction. Use together with end time to define an update window.",
-    "keywords": [
-      "Platform Update"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
     "settingId": "linux_features_platformupdatecontrols",
     "settingName": "Platform Update Controls",
     "settingDescription": "Enable or disable platform update controls. Must be set to Enabled for platform update settings to take effect.",
-    "keywords": [
-      "Platform Update"
-    ],
-    "categoryName": "Microsoft Defender"
-  },
-  {
-    "settingId": "linux_platformupdatecontrols_version",
-    "settingName": "Platform Update Version",
-    "settingDescription": "Specifies the update channel for platform updates. 'N' is the latest version, 'N-1' is the previous version, 'N-2' is two versions back. Select 'Fixed' to pin to a specific version number.",
     "keywords": [
       "Platform Update"
     ],
@@ -635,6 +557,84 @@
     "keywords": [
       "Safe Deployment Plan",
       "Defender Safe Deployment Plan"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_exclusions_item_$type",
+    "settingName": "Type",
+    "settingDescription": null,
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "com.apple.managedclient.preferences_disallowedthreatactions",
+    "settingName": "Disallowed threat actions",
+    "settingDescription": "Restricts the actions that the local user of a device can take when threats are detected. The actions included in this list are not displayed in the user interface.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_exclusionsmergepolicy",
+    "settingName": "Exclusions merge",
+    "settingDescription": "Specify the merge policy for exclusions. This can be a combination of administrator-defined and user-defined exclusions (merge) or only administrator-defined exclusions (admin_only). This setting can be used to restrict local users from defining their own exclusions.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_threattypesettings",
+    "settingName": "Threat type settings",
+    "settingDescription": "The threatTypeSettings preference in the antivirus engine is used to control how certain threat types are handled by the product.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_exclusions_item_isdirectory",
+    "settingName": "Is directory",
+    "settingDescription": "Directory if selected, or file if not selected",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_mdatp_managed_antivirusengine_scanhistorymaximumitems",
+    "settingName": "Scan history size",
+    "settingDescription": "Specify the maximum number of entries to keep in the scan history. Entries include all on-demand scans performed in the past and all antivirus detections.",
+    "keywords": [
+      "Microsoft Defender - Antivirus engine",
+      "Antivirus engine"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_platformupdatecontrols_schedule_starttime",
+    "settingName": "Platform Update Window Start Time",
+    "settingDescription": "Specifies the start of the allowed time window for platform updates (24-hour clock). Select 'All Day' for no restriction. Use together with end time to define an update window.",
+    "keywords": [
+      "Platform Update"
+    ],
+    "categoryName": "Microsoft Defender"
+  },
+  {
+    "settingId": "linux_platformupdatecontrols_version",
+    "settingName": "Platform Update Version",
+    "settingDescription": "Specifies the update channel for platform updates. 'N' is the latest version, 'N-1' is the previous version, 'N-2' is two versions back. Select 'Fixed' to pin to a specific version number.",
+    "keywords": [
+      "Platform Update"
     ],
     "categoryName": "Microsoft Defender"
   },
