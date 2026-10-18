@@ -2878,6 +2878,47 @@
     "categoryName": "Privacy"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~proxy_pacmyipaddressipv4probeaddress_pacmyipaddressipv4probeaddress",
+    "settingName": "Set the IPv4 route-probe address for PAC scripts (User)",
+    "settingDescription": "",
+    "keywords": [
+      "PacMyIpAddressIPv4ProbeAddress",
+      "Set the IPv4 route-probe address for PAC scripts",
+      "\\Microsoft Edge\\Proxy server",
+      "Microsoft Edge\\Proxy server",
+      "Proxy server"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~network_httpheaderinjection",
+    "settingName": "Configure HTTP Header Injection for specific URL patterns (User)",
+    "settingDescription": "This policy lets you define rules that inject custom HTTP headers into web requests matching specific URL patterns. Headers injected by this policy take precedence over headers already present in the request and over modifications made by users or extensions.\n\nA common use case for this policy is enforcing tenant access controls by injecting custom headers (for example, X-Tenant-ID).\n\nThe policy accepts a list of Rules. Each Rule contains:\n\n* patterns: A list of URL patterns to match. For information about URL pattern format, see https://go.microsoft.com/fwlink/?linkid=2095322.\n\n* headers: A list of header objects to inject. Each object contains:\n\n* name: The name of the header to inject.\n\n* value: The value of the header to inject.\n\nIf multiple rules match a request, headers from all matching rules are applied. If multiple matching rules specify the same header name, the header from the most specific URL pattern is applied. If multiple matching patterns are equally specific, the header from the rule that appears last in the list is applied.\n\nHeader names must comply with RFC 2616 (https://www.rfc-editor.org/rfc/rfc2616). Header values must not contain NUL, CR, or LF characters. Individual headers can't exceed 8 KB. Invalid headers and URL patterns are ignored.\n\nThis policy supports a maximum of 500 URL patterns across all rules. Each rule can contain up to 20 headers. URL patterns and headers that exceed these limits are ignored.\n\nExample value:\n\n[\n  {\n    \"patterns\": [\n      \"example.com\",\n      \".example.org\"\n    ],\n    \"headers\": [\n      {\n        \"name\": \"X-Tenant-ID\",\n        \"value\": \"123456\"\n      },\n      {\n        \"name\": \"X-Custom-Header\",\n        \"value\": \"CustomValue\"\n      }\n    ]\n  }\n]",
+    "keywords": [
+      "HttpHeaderInjection",
+      "Configure HTTP Header Injection for specific URL patterns",
+      "\\Microsoft Edge\\Network settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Network settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~proxy_pacmyipaddressipv4probeaddress",
+    "settingName": "Set the IPv4 route-probe address for PAC scripts",
+    "settingDescription": "This policy sets the IPv4 destination that Microsoft Edge uses to determine the local network address or addresses returned to PAC scripts by the myIpAddress() and myIpAddressEx() helper functions. The route probe sends no application data.\n\nThis policy applies only when Microsoft Edge uses its built-in proxy resolver to evaluate PAC scripts. It doesn't apply when a native or system resolver is used.\n\nIf you configure this policy, set it to a valid IPv4 address literal. Host names, malformed values, IPv6 addresses, loopback addresses, link-local addresses, and multicast addresses are rejected. Addresses in 0.0.0.0/8, the reserved 240.0.0.0/4 range, and the limited broadcast address are also rejected. Private addresses are supported.\n\nIf you don't configure this policy or configure it with an empty string, Microsoft Edge uses its built-in default IPv4 destination. The built-in destination can change between versions.\n\nA browser restart is required for changes to take effect.\n\nExample value: 192.0.2.1",
+    "keywords": [
+      "PacMyIpAddressIPv4ProbeAddress",
+      "Set the IPv4 route-probe address for PAC scripts",
+      "\\Microsoft Edge\\Proxy server",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Proxy server"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_state",
     "settingName": "State",
     "settingDescription": "Controls whether an extension is allowed.\n* Allowed - The user is allowed to turn the extension on or off\n* AlwaysOn - The extension will always be on\n* AlwaysOff - The extension will always be off",
@@ -6177,6 +6218,18 @@
       "Security"
     ],
     "categoryName": "Security"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_autofillsettings_autofillsettings",
+    "settingName": "Block AutoFill data types for specific sites (User)",
+    "settingDescription": "",
+    "keywords": [
+      "AutofillSettings",
+      "Block AutoFill data types for specific sites",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "plugin_filter_packets_providercomposedidentifier",
@@ -15998,6 +16051,34 @@
     "categoryName": "Privacy"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~proxy_pacmyipaddressipv4probeaddress",
+    "settingName": "Set the IPv4 route-probe address for PAC scripts (User)",
+    "settingDescription": "This policy sets the IPv4 destination that Microsoft Edge uses to determine the local network address or addresses returned to PAC scripts by the myIpAddress() and myIpAddressEx() helper functions. The route probe sends no application data.\n\nThis policy applies only when Microsoft Edge uses its built-in proxy resolver to evaluate PAC scripts. It doesn't apply when a native or system resolver is used.\n\nIf you configure this policy, set it to a valid IPv4 address literal. Host names, malformed values, IPv6 addresses, loopback addresses, link-local addresses, and multicast addresses are rejected. Addresses in 0.0.0.0/8, the reserved 240.0.0.0/4 range, and the limited broadcast address are also rejected. Private addresses are supported.\n\nIf you don't configure this policy or configure it with an empty string, Microsoft Edge uses its built-in default IPv4 destination. The built-in destination can change between versions.\n\nA browser restart is required for changes to take effect.\n\nExample value: 192.0.2.1",
+    "keywords": [
+      "PacMyIpAddressIPv4ProbeAddress",
+      "Set the IPv4 route-probe address for PAC scripts",
+      "\\Microsoft Edge\\Proxy server",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Proxy server"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~network_httpheaderinjection",
+    "settingName": "Configure HTTP Header Injection for specific URL patterns",
+    "settingDescription": "This policy lets you define rules that inject custom HTTP headers into web requests matching specific URL patterns. Headers injected by this policy take precedence over headers already present in the request and over modifications made by users or extensions.\n\nA common use case for this policy is enforcing tenant access controls by injecting custom headers (for example, X-Tenant-ID).\n\nThe policy accepts a list of Rules. Each Rule contains:\n\n* patterns: A list of URL patterns to match. For information about URL pattern format, see https://go.microsoft.com/fwlink/?linkid=2095322.\n\n* headers: A list of header objects to inject. Each object contains:\n\n* name: The name of the header to inject.\n\n* value: The value of the header to inject.\n\nIf multiple rules match a request, headers from all matching rules are applied. If multiple matching rules specify the same header name, the header from the most specific URL pattern is applied. If multiple matching patterns are equally specific, the header from the rule that appears last in the list is applied.\n\nHeader names must comply with RFC 2616 (https://www.rfc-editor.org/rfc/rfc2616). Header values must not contain NUL, CR, or LF characters. Individual headers can't exceed 8 KB. Invalid headers and URL patterns are ignored.\n\nThis policy supports a maximum of 500 URL patterns across all rules. Each rule can contain up to 20 headers. URL patterns and headers that exceed these limits are ignored.\n\nExample value:\n\n[\n  {\n    \"patterns\": [\n      \"example.com\",\n      \".example.org\"\n    ],\n    \"headers\": [\n      {\n        \"name\": \"X-Tenant-ID\",\n        \"value\": \"123456\"\n      },\n      {\n        \"name\": \"X-Custom-Header\",\n        \"value\": \"CustomValue\"\n      }\n    ]\n  }\n]",
+    "keywords": [
+      "HttpHeaderInjection",
+      "Configure HTTP Header Injection for specific URL patterns",
+      "\\Microsoft Edge\\Network settings",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Network settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_privatebrowsing",
     "settingName": "Private Browsing",
     "settingDescription": "Controls whether an extension is allowed in Private Browsing.\n* Allowed - The user is allowed to turn the extension on or off in Private Browsing\n* AlwaysOn - The extension will always be on in Private Browsing if the extension is on outside of Private Browsing\n* AlwaysOff - The extension will never be on in Private Browsing",
@@ -19407,6 +19488,33 @@
       "Privacy"
     ],
     "categoryName": "Privacy"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~network_httpheaderinjection_httpheaderinjection",
+    "settingName": "Configure HTTP Header Injection for specific URL patterns (User)",
+    "settingDescription": "",
+    "keywords": [
+      "HttpHeaderInjection",
+      "Configure HTTP Header Injection for specific URL patterns",
+      "\\Microsoft Edge\\Network settings",
+      "Microsoft Edge\\Network settings",
+      "Network settings"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~proxy_pacmyipaddressipv6probeaddress",
+    "settingName": "Set the IPv6 route-probe address for PAC scripts",
+    "settingDescription": "This policy sets the IPv6 destination that Microsoft Edge uses to determine the local network address or addresses returned to PAC scripts by the myIpAddress() and myIpAddressEx() helper functions. The route probe sends no application data.\n\nThis policy applies only when Microsoft Edge uses its built-in proxy resolver to evaluate PAC scripts. It doesn't apply when a native or system resolver is used.\n\nIf you configure this policy, set it to a valid IPv6 address literal. Host names, malformed values, IPv4 addresses, loopback addresses, link-local addresses, and multicast addresses are rejected. IPv4-mapped IPv6 addresses and the unspecified address are also rejected. Private addresses are supported.\n\nIf you don't configure this policy or configure it with an empty string, Microsoft Edge uses its built-in default IPv6 destination. The built-in destination can change between versions.\n\nA browser restart is required for changes to take effect.\n\nExample value: 2001:db8::1",
+    "keywords": [
+      "PacMyIpAddressIPv6ProbeAddress",
+      "Set the IPv6 route-probe address for PAC scripts",
+      "\\Microsoft Edge\\Proxy server",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Proxy server"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "extensionsettings_managedextensions_generickey_denieddomains",
@@ -22853,6 +22961,20 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~proxy_pacmyipaddressipv6probeaddress",
+    "settingName": "Set the IPv6 route-probe address for PAC scripts (User)",
+    "settingDescription": "This policy sets the IPv6 destination that Microsoft Edge uses to determine the local network address or addresses returned to PAC scripts by the myIpAddress() and myIpAddressEx() helper functions. The route probe sends no application data.\n\nThis policy applies only when Microsoft Edge uses its built-in proxy resolver to evaluate PAC scripts. It doesn't apply when a native or system resolver is used.\n\nIf you configure this policy, set it to a valid IPv6 address literal. Host names, malformed values, IPv4 addresses, loopback addresses, link-local addresses, and multicast addresses are rejected. IPv4-mapped IPv6 addresses and the unspecified address are also rejected. Private addresses are supported.\n\nIf you don't configure this policy or configure it with an empty string, Microsoft Edge uses its built-in default IPv6 destination. The built-in destination can change between versions.\n\nA browser restart is required for changes to take effect.\n\nExample value: 2001:db8::1",
+    "keywords": [
+      "PacMyIpAddressIPv6ProbeAddress",
+      "Set the IPv6 route-probe address for PAC scripts",
+      "\\Microsoft Edge\\Proxy server",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Proxy server"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "plugin_serveraddress",
     "settingName": "Server Address",
     "settingDescription": "The server address, which may be the IP address, hostname, or URL.",
@@ -25947,6 +26069,20 @@
       "Privacy"
     ],
     "categoryName": "Privacy"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_autofillsettings",
+    "settingName": "Block AutoFill data types for specific sites (User)",
+    "settingDescription": "Setting this policy allows you to specify which AutoFill data types are blocked on specific URL patterns.\n\nThe policy is structured as a list of dictionaries. Each dictionary must contain:\n* \"url_pattern\": A content setting URL pattern for the main frame (for example, \"https://[*.]example.com\").\n* \"blocked_types\": A list of strings representing the categories of AutoFill data to block.\n\nThe supported values for \"blocked_types\" are:\n* \"contact_info\": Blocks filling and saving of contact information.\n* \"payments\": Blocks filling and saving of credit cards and payment methods.\n* \"identity_docs\": Blocks filling and saving of identity documents (for example, passports, driver's licenses, and national IDs).\n* \"travel\": Blocks filling and saving of travel information (for example, flight reservations and vehicle registrations).\n* \"shopping\": Blocks filling and saving of shopping information (for example, online orders and shipments).\n* \"all\": Blocks filling and saving of all AutoFill data types.\n\nIf a data type is blocked for a site, both the generation of suggestions and the prompt to save or import new data of that type are disabled on that site.\n\nIf a URL matches multiple pattern entries in the list, the blocked types from all matching entries are combined. Invalid URL patterns in the list are ignored.\n\nIf you don't configure this policy, no AutoFill data types are blocked by domain.\n\nFor detailed information on valid URL patterns, see https://go.microsoft.com/fwlink/?linkid=2095322. The wildcard * is supported and matches any URL with any scheme, port, and path.\n\nExample value:\n\n[\n  {\n    \"url_pattern\": \"https://[*.]example.com\",\n    \"blocked_types\": [\n      \"contact_info\",\n      \"payments\"\n    ]\n  },\n  {\n    \"url_pattern\": \"https://another-example.com\",\n    \"blocked_types\": [\n      \"payments\"\n    ]\n  },\n  {\n    \"url_pattern\": \"*\",\n    \"blocked_types\": [\n      \"identity_docs\"\n    ]\n  }\n]",
+    "keywords": [
+      "AutofillSettings",
+      "Block AutoFill data types for specific sites",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "plugin_filter_browsers_enabled",
@@ -29301,6 +29437,20 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_autofillsettings",
+    "settingName": "Block AutoFill data types for specific sites",
+    "settingDescription": "Setting this policy allows you to specify which AutoFill data types are blocked on specific URL patterns.\n\nThe policy is structured as a list of dictionaries. Each dictionary must contain:\n* \"url_pattern\": A content setting URL pattern for the main frame (for example, \"https://[*.]example.com\").\n* \"blocked_types\": A list of strings representing the categories of AutoFill data to block.\n\nThe supported values for \"blocked_types\" are:\n* \"contact_info\": Blocks filling and saving of contact information.\n* \"payments\": Blocks filling and saving of credit cards and payment methods.\n* \"identity_docs\": Blocks filling and saving of identity documents (for example, passports, driver's licenses, and national IDs).\n* \"travel\": Blocks filling and saving of travel information (for example, flight reservations and vehicle registrations).\n* \"shopping\": Blocks filling and saving of shopping information (for example, online orders and shipments).\n* \"all\": Blocks filling and saving of all AutoFill data types.\n\nIf a data type is blocked for a site, both the generation of suggestions and the prompt to save or import new data of that type are disabled on that site.\n\nIf a URL matches multiple pattern entries in the list, the blocked types from all matching entries are combined. Invalid URL patterns in the list are ignored.\n\nIf you don't configure this policy, no AutoFill data types are blocked by domain.\n\nFor detailed information on valid URL patterns, see https://go.microsoft.com/fwlink/?linkid=2095322. The wildcard * is supported and matches any URL with any scheme, port, and path.\n\nExample value:\n\n[\n  {\n    \"url_pattern\": \"https://[*.]example.com\",\n    \"blocked_types\": [\n      \"contact_info\",\n      \"payments\"\n    ]\n  },\n  {\n    \"url_pattern\": \"https://another-example.com\",\n    \"blocked_types\": [\n      \"payments\"\n    ]\n  },\n  {\n    \"url_pattern\": \"*\",\n    \"blocked_types\": [\n      \"identity_docs\"\n    ]\n  }\n]",
+    "keywords": [
+      "AutofillSettings",
+      "Block AutoFill data types for specific sites",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_alloweddomains",
     "settingName": "Allowed Domains",
     "settingDescription": "Controls the domains and sub-domains the extension is granted access to. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
@@ -31017,7 +31167,7 @@
   {
     "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_launchedgeonwindowsstartupenabled",
     "settingName": "Launch Microsoft Edge on Windows startup (User)",
-    "settingDescription": "Setting the policy lets you control whether Microsoft Edge automatically launches visibly when Windows starts.\n\nIf you enable this policy, Microsoft Edge will launch visibly automatically when Windows starts.\n\nIf you disable this policy, Microsoft Edge will never launch visibly automatically when Windows starts.\n\nIf you don't configure this policy, users will have an option to select whether or not they want Microsoft Edge to launch automatically when Windows starts.",
+    "settingDescription": "Setting the policy lets you control whether Microsoft Edge automatically launches visibly when Windows starts.\n\nIf you enable this policy, Microsoft Edge will launch visibly automatically when Windows starts.\n\nIf you disable this policy, Microsoft Edge will never launch visibly automatically when Windows starts.\n\nIf you don't configure this policy, Microsoft Edge won't launch automatically when Windows starts by default. Users are periodically shown an opt-in banner to turn it on, and can enable or disable automatic launch anytime from settings.",
     "keywords": [
       "LaunchEdgeOnWindowsStartupEnabled",
       "Launch Microsoft Edge on Windows startup",
@@ -32471,6 +32621,19 @@
       "Privacy"
     ],
     "categoryName": "Privacy"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~proxy_pacmyipaddressipv4probeaddress_pacmyipaddressipv4probeaddress",
+    "settingName": "Set the IPv4 route-probe address for PAC scripts",
+    "settingDescription": "",
+    "keywords": [
+      "PacMyIpAddressIPv4ProbeAddress",
+      "Set the IPv4 route-probe address for PAC scripts",
+      "\\Microsoft Edge\\Proxy server",
+      "Microsoft Edge\\Proxy server",
+      "Proxy server"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "extensionsettings_managedextensions_generickey_keytobereplaced",
@@ -41359,7 +41522,7 @@
   {
     "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_launchedgeonwindowsstartupenabled",
     "settingName": "Launch Microsoft Edge on Windows startup",
-    "settingDescription": "Setting the policy lets you control whether Microsoft Edge automatically launches visibly when Windows starts.\n\nIf you enable this policy, Microsoft Edge will launch visibly automatically when Windows starts.\n\nIf you disable this policy, Microsoft Edge will never launch visibly automatically when Windows starts.\n\nIf you don't configure this policy, users will have an option to select whether or not they want Microsoft Edge to launch automatically when Windows starts.",
+    "settingDescription": "Setting the policy lets you control whether Microsoft Edge automatically launches visibly when Windows starts.\n\nIf you enable this policy, Microsoft Edge will launch visibly automatically when Windows starts.\n\nIf you disable this policy, Microsoft Edge will never launch visibly automatically when Windows starts.\n\nIf you don't configure this policy, Microsoft Edge won't launch automatically when Windows starts by default. Users are periodically shown an opt-in banner to turn it on, and can enable or disable automatic launch anytime from settings.",
     "keywords": [
       "LaunchEdgeOnWindowsStartupEnabled",
       "Launch Microsoft Edge on Windows startup",
@@ -42842,6 +43005,19 @@
       "Security"
     ],
     "categoryName": "Security"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~proxy_pacmyipaddressipv6probeaddress_pacmyipaddressipv6probeaddress",
+    "settingName": "Set the IPv6 route-probe address for PAC scripts (User)",
+    "settingDescription": "",
+    "keywords": [
+      "PacMyIpAddressIPv6ProbeAddress",
+      "Set the IPv6 route-probe address for PAC scripts",
+      "\\Microsoft Edge\\Proxy server",
+      "Microsoft Edge\\Proxy server",
+      "Proxy server"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "plugin_visiblename",
@@ -46211,6 +46387,44 @@
       "Privacy"
     ],
     "categoryName": "Privacy"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~proxy_pacmyipaddressipv6probeaddress_pacmyipaddressipv6probeaddress",
+    "settingName": "Set the IPv6 route-probe address for PAC scripts",
+    "settingDescription": "",
+    "keywords": [
+      "PacMyIpAddressIPv6ProbeAddress",
+      "Set the IPv6 route-probe address for PAC scripts",
+      "\\Microsoft Edge\\Proxy server",
+      "Microsoft Edge\\Proxy server",
+      "Proxy server"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_autofillsettings_autofillsettings",
+    "settingName": "Block AutoFill data types for specific sites",
+    "settingDescription": "",
+    "keywords": [
+      "AutofillSettings",
+      "Block AutoFill data types for specific sites",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~network_httpheaderinjection_httpheaderinjection",
+    "settingName": "Configure HTTP Header Injection for specific URL patterns",
+    "settingDescription": "",
+    "keywords": [
+      "HttpHeaderInjection",
+      "Configure HTTP Header Injection for specific URL patterns",
+      "\\Microsoft Edge\\Network settings",
+      "Microsoft Edge\\Network settings",
+      "Network settings"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.apple.caldav.account_caldavprincipalurl",
