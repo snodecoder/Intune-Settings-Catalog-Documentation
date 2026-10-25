@@ -2118,18 +2118,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_autofillsettings_autofillsettings",
-    "settingName": "Block AutoFill data types for specific sites (User)",
-    "settingDescription": "",
-    "keywords": [
-      "AutofillSettings",
-      "Block AutoFill data types for specific sites",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.searchfiltersenabled_recommended",
     "settingName": "Search Filters Enabled (users can override)",
     "settingDescription": "Lets you filter your autosuggestions by selecting a filter from the search filters ribbon. For example, if you select the \"Favorites\" filter, only favorites suggestions are shown.\n\nIf you enable or don't configure this policy, the autosuggestion dropdown defaults to displaying the ribbon of available filters.\n\nIf you disable this policy, the autosuggestion dropdown can't display the ribbon of available filters.",
@@ -2348,6 +2336,18 @@
     "keywords": [
       "EditFavoritesEnabled",
       "Allows users to edit favorites",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_autofillsettings_autofillsettings",
+    "settingName": "Block AutoFill data types for specific sites (User)",
+    "settingDescription": "",
+    "keywords": [
+      "AutofillSettings",
+      "Block AutoFill data types for specific sites",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],
@@ -8574,20 +8574,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_autofillsettings",
-    "settingName": "Block AutoFill data types for specific sites (User)",
-    "settingDescription": "Setting this policy allows you to specify which AutoFill data types are blocked on specific URL patterns.\n\nThe policy is structured as a list of dictionaries. Each dictionary must contain:\n* \"url_pattern\": A content setting URL pattern for the main frame (for example, \"https://[*.]example.com\").\n* \"blocked_types\": A list of strings representing the categories of AutoFill data to block.\n\nThe supported values for \"blocked_types\" are:\n* \"contact_info\": Blocks filling and saving of contact information.\n* \"payments\": Blocks filling and saving of credit cards and payment methods.\n* \"identity_docs\": Blocks filling and saving of identity documents (for example, passports, driver's licenses, and national IDs).\n* \"travel\": Blocks filling and saving of travel information (for example, flight reservations and vehicle registrations).\n* \"shopping\": Blocks filling and saving of shopping information (for example, online orders and shipments).\n* \"all\": Blocks filling and saving of all AutoFill data types.\n\nIf a data type is blocked for a site, both the generation of suggestions and the prompt to save or import new data of that type are disabled on that site.\n\nIf a URL matches multiple pattern entries in the list, the blocked types from all matching entries are combined. Invalid URL patterns in the list are ignored.\n\nIf you don't configure this policy, no AutoFill data types are blocked by domain.\n\nFor detailed information on valid URL patterns, see https://go.microsoft.com/fwlink/?linkid=2095322. The wildcard * is supported and matches any URL with any scheme, port, and path.\n\nExample value:\n\n[\n  {\n    \"url_pattern\": \"https://[*.]example.com\",\n    \"blocked_types\": [\n      \"contact_info\",\n      \"payments\"\n    ]\n  },\n  {\n    \"url_pattern\": \"https://another-example.com\",\n    \"blocked_types\": [\n      \"payments\"\n    ]\n  },\n  {\n    \"url_pattern\": \"*\",\n    \"blocked_types\": [\n      \"identity_docs\"\n    ]\n  }\n]",
-    "keywords": [
-      "AutofillSettings",
-      "Block AutoFill data types for specific sites",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autolaunchprotocolsfromorigins",
     "settingName": "Define a list of protocols that can launch an external application from listed origins without prompting the user",
     "settingDescription": "Allows you to set a list of protocols, and for each protocol an associated list of allowed origin patterns, that can launch an external application without prompting the user. The trailing separator shouldn't be included when listing the protocol and the protocol should be all lower case. For example, list \"skype\" instead of \"skype:\", \"skype://\" or \"Skype\".\n\nIf you configure this policy, a protocol is only permitted to launch an external application without prompting by policy if:\n\n- the protocol is listed\n\n- the origin of the site trying to launch the protocol matches one of the origin patterns in that protocol's allowed_origins list.\n\nIf either condition is false, the external protocol launch prompt isn't omitted, by policy.\n\nIf you don't configure this policy, no protocols can launch without a prompt. Users can opt out of prompts on a per-protocol/per-site basis unless the \"ExternalProtocolDialogShowAlwaysOpenCheckbox\" policy is set to Disabled. This policy has no impact on per-protocol/per-site prompt exemptions set by users.\n\nThe origin-matching patterns use a similar format to those for the \"URLBlocklist\" policy, which are documented at <a href=\"https://go.microsoft.com/fwlink/?linkid=2095322\">https://go.microsoft.com/fwlink/?linkid=2095322</a>.\n\nHowever, origin-matching patterns for this policy can't contain \"/path\" or \"@query\" elements. Any pattern that contains a \"/path\" or \"@query\" element is ignored.\n\nThis policy doesn't work as expected with file://* wildcards.",
@@ -8998,6 +8984,20 @@
       "DeveloperToolsAvailability",
       "Control where developer tools can be used",
       "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_autofillsettings",
+    "settingName": "Block AutoFill data types for specific sites (User)",
+    "settingDescription": "Setting this policy allows you to specify which AutoFill data types are blocked on specific URL patterns.\n\nThe policy is structured as a list of dictionaries. Each dictionary must contain:\n* \"url_pattern\": A content setting URL pattern for the main frame (for example, \"https://[*.]example.com\").\n* \"blocked_types\": A list of strings representing the categories of AutoFill data to block.\n\nThe supported values for \"blocked_types\" are:\n* \"contact_info\": Blocks filling and saving of contact information.\n* \"payments\": Blocks filling and saving of credit cards and payment methods.\n* \"identity_docs\": Blocks filling and saving of identity documents (for example, passports, driver's licenses, and national IDs).\n* \"travel\": Blocks filling and saving of travel information (for example, flight reservations and vehicle registrations).\n* \"shopping\": Blocks filling and saving of shopping information (for example, online orders and shipments).\n* \"all\": Blocks filling and saving of all AutoFill data types.\n\nIf a data type is blocked for a site, both the generation of suggestions and the prompt to save or import new data of that type are disabled on that site.\n\nIf a URL matches multiple pattern entries in the list, the blocked types from all matching entries are combined. Invalid URL patterns in the list are ignored.\n\nIf you don't configure this policy, no AutoFill data types are blocked by domain.\n\nFor detailed information on valid URL patterns, see https://go.microsoft.com/fwlink/?linkid=2095322. The wildcard * is supported and matches any URL with any scheme, port, and path.\n\nExample value:\n\n[\n  {\n    \"url_pattern\": \"https://[*.]example.com\",\n    \"blocked_types\": [\n      \"contact_info\",\n      \"payments\"\n    ]\n  },\n  {\n    \"url_pattern\": \"https://another-example.com\",\n    \"blocked_types\": [\n      \"payments\"\n    ]\n  },\n  {\n    \"url_pattern\": \"*\",\n    \"blocked_types\": [\n      \"identity_docs\"\n    ]\n  }\n]",
+    "keywords": [
+      "AutofillSettings",
+      "Block AutoFill data types for specific sites",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
       "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
@@ -9697,20 +9697,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_autofillsettings",
-    "settingName": "Block AutoFill data types for specific sites",
-    "settingDescription": "Setting this policy allows you to specify which AutoFill data types are blocked on specific URL patterns.\n\nThe policy is structured as a list of dictionaries. Each dictionary must contain:\n* \"url_pattern\": A content setting URL pattern for the main frame (for example, \"https://[*.]example.com\").\n* \"blocked_types\": A list of strings representing the categories of AutoFill data to block.\n\nThe supported values for \"blocked_types\" are:\n* \"contact_info\": Blocks filling and saving of contact information.\n* \"payments\": Blocks filling and saving of credit cards and payment methods.\n* \"identity_docs\": Blocks filling and saving of identity documents (for example, passports, driver's licenses, and national IDs).\n* \"travel\": Blocks filling and saving of travel information (for example, flight reservations and vehicle registrations).\n* \"shopping\": Blocks filling and saving of shopping information (for example, online orders and shipments).\n* \"all\": Blocks filling and saving of all AutoFill data types.\n\nIf a data type is blocked for a site, both the generation of suggestions and the prompt to save or import new data of that type are disabled on that site.\n\nIf a URL matches multiple pattern entries in the list, the blocked types from all matching entries are combined. Invalid URL patterns in the list are ignored.\n\nIf you don't configure this policy, no AutoFill data types are blocked by domain.\n\nFor detailed information on valid URL patterns, see https://go.microsoft.com/fwlink/?linkid=2095322. The wildcard * is supported and matches any URL with any scheme, port, and path.\n\nExample value:\n\n[\n  {\n    \"url_pattern\": \"https://[*.]example.com\",\n    \"blocked_types\": [\n      \"contact_info\",\n      \"payments\"\n    ]\n  },\n  {\n    \"url_pattern\": \"https://another-example.com\",\n    \"blocked_types\": [\n      \"payments\"\n    ]\n  },\n  {\n    \"url_pattern\": \"*\",\n    \"blocked_types\": [\n      \"identity_docs\"\n    ]\n  }\n]",
-    "keywords": [
-      "AutofillSettings",
-      "Block AutoFill data types for specific sites",
-      "\\Microsoft Edge",
-      "Both",
-      "Software\\Policies\\Microsoft\\Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.smartactionsblocklist_recommended",
     "settingName": "Block smart actions for a list of services (users can override)",
     "settingDescription": "List specific services, such as PDFs, and websites that don't show smart actions. (Smart actions are actions like \"define\" which are available in full and mini context menus in Microsoft Edge.)\n\nIf you enable the policy:\n   - The smart action in the mini and full context menu is disabled for all profiles for services that match the given list.\n   - Users won't see the smart action in the mini and full context menu on text selection for services that match the given list.\n   - In Microsoft Edge settings, the smart action in the mini and full context menu is disabled for services that match the given list.\n\nIf you disable or don't configure this policy:\n   - The smart action in the mini and full context menu is enabled for all profiles.\n   - Users will see the smart action in the mini and full context menu on text selection.\n   - In Microsoft Edge settings, the smart action in the mini and full context menu is enabled.\n\nPolicy options mapping:\n\n* smart_actions (smart_actions) = Smart actions in pdfs and on websites\n\n* smart_actions_website (smart_actions_website) = Smart actions on websites\n\n* smart_actions_pdf (smart_actions_pdf) = Smart actions in PDF\n\nUse the preceding information when configuring this policy.",
@@ -9999,6 +9985,20 @@
       "ImportAutofillFormData",
       "Allow importing of autofill form data",
       "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_autofillsettings",
+    "settingName": "Block AutoFill data types for specific sites",
+    "settingDescription": "Setting this policy allows you to specify which AutoFill data types are blocked on specific URL patterns.\n\nThe policy is structured as a list of dictionaries. Each dictionary must contain:\n* \"url_pattern\": A content setting URL pattern for the main frame (for example, \"https://[*.]example.com\").\n* \"blocked_types\": A list of strings representing the categories of AutoFill data to block.\n\nThe supported values for \"blocked_types\" are:\n* \"contact_info\": Blocks filling and saving of contact information.\n* \"payments\": Blocks filling and saving of credit cards and payment methods.\n* \"identity_docs\": Blocks filling and saving of identity documents (for example, passports, driver's licenses, and national IDs).\n* \"travel\": Blocks filling and saving of travel information (for example, flight reservations and vehicle registrations).\n* \"shopping\": Blocks filling and saving of shopping information (for example, online orders and shipments).\n* \"all\": Blocks filling and saving of all AutoFill data types.\n\nIf a data type is blocked for a site, both the generation of suggestions and the prompt to save or import new data of that type are disabled on that site.\n\nIf a URL matches multiple pattern entries in the list, the blocked types from all matching entries are combined. Invalid URL patterns in the list are ignored.\n\nIf you don't configure this policy, no AutoFill data types are blocked by domain.\n\nFor detailed information on valid URL patterns, see https://go.microsoft.com/fwlink/?linkid=2095322. The wildcard * is supported and matches any URL with any scheme, port, and path.\n\nExample value:\n\n[\n  {\n    \"url_pattern\": \"https://[*.]example.com\",\n    \"blocked_types\": [\n      \"contact_info\",\n      \"payments\"\n    ]\n  },\n  {\n    \"url_pattern\": \"https://another-example.com\",\n    \"blocked_types\": [\n      \"payments\"\n    ]\n  },\n  {\n    \"url_pattern\": \"*\",\n    \"blocked_types\": [\n      \"identity_docs\"\n    ]\n  }\n]",
+    "keywords": [
+      "AutofillSettings",
+      "Block AutoFill data types for specific sites",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
       "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
@@ -15212,18 +15212,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_autofillsettings_autofillsettings",
-    "settingName": "Block AutoFill data types for specific sites",
-    "settingDescription": "",
-    "keywords": [
-      "AutofillSettings",
-      "Block AutoFill data types for specific sites",
-      "\\Microsoft Edge",
-      "Microsoft Edge"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.adssettingforintrusiveadssites",
     "settingName": "Ads setting for sites with intrusive ads",
     "settingDescription": "Controls whether ads are blocked on sites with intrusive ads.\n\nPolicy options mapping:\n\n* AllowAds (1) = Allow ads on all sites\n\n* BlockAds (2) = Block ads on sites with intrusive ads. (Default value)\n\nUse the preceding information when configuring this policy.",
@@ -15428,6 +15416,18 @@
     "keywords": [
       "ImportSavedPasswords",
       "Allow importing of saved passwords",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_autofillsettings_autofillsettings",
+    "settingName": "Block AutoFill data types for specific sites",
+    "settingDescription": "",
+    "keywords": [
+      "AutofillSettings",
+      "Block AutoFill data types for specific sites",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],
