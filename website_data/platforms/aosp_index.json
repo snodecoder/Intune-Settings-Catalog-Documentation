@@ -476,7 +476,7 @@
   {
     "settingId": "com.android.devicerestrictionpolicy.keyguarddisabledfeatures",
     "settingName": "Disabled lock screen features",
-    "settingDescription": "When the device is locked, choose the features that can't be used. These features are accessible to users when the device is locked; users will not be able to see or access the features that are disabled. When this setting is configured by more than one assigned policy, the selected features are merged (union) across those policies.",
+    "settingDescription": "When the device is locked, choose the features that can't be used. These features are accessible to users when the device is locked; users will not be able to see or access the features that are disabled. When this setting is configured by more than one assigned policy, the selected features are merged (union) across those policies. Options marked '(fully managed or dedicated)' apply only to fully managed and dedicated devices; options marked '(work profile-level)' apply at the work profile level on corporate-owned work profile devices.",
     "keywords": [
       "Keyguard",
       "Lock screen",

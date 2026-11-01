@@ -605,7 +605,7 @@
   },
   {
     "settingId": "com.apple.applicationaccess.new_familycontrolsenabled",
-    "settingName": "Family Controls Enabled",
+    "settingName": "Family Controls Enabled (deprecated)",
     "settingDescription": "If true, enables app access restrictions.",
     "keywords": [
       "Parental Controls Application Restrictions"
@@ -614,7 +614,7 @@
   },
   {
     "settingId": "com.apple.applicationaccess.new_com.apple.applicationaccess.new",
-    "settingName": "Top Level Setting Group Collection",
+    "settingName": "Top Level Setting Group Collection (deprecated)",
     "settingDescription": "Synthetic Top Level Setting Group Collection",
     "keywords": [
       "Parental Controls Application Restrictions"
@@ -933,7 +933,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_listenrangesonly",
-    "settingName": "Listen Ranges Only",
+    "settingName": "Listen Ranges Only (deprecated)",
     "settingDescription": "If true, the content cache provides content to the clients in the Listen Ranges.",
     "keywords": [
       "Content Caching"
@@ -942,7 +942,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_peerfilterranges_item_type",
-    "settingName": "IP Address Type",
+    "settingName": "IP Address Type (deprecated)",
     "settingDescription": "The IP address type.",
     "keywords": [
       "Content Caching"
@@ -951,7 +951,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_keepawake",
-    "settingName": "Keep Awake",
+    "settingName": "Keep Awake (deprecated)",
     "settingDescription": "If true, prevents the computer from sleeping as long as Content Caching is on (System Preferences > Sharing > Content Caching is on). Customers who want Content Caching to be as available as musch as possible should turn this setting on.\r\nAvailable in macOS 10.15 and later.",
     "keywords": [
       "Content Caching"
@@ -1042,7 +1042,7 @@
   },
   {
     "settingId": "com.apple.dnssettings.managed_ondemandrules",
-    "settingName": "On Demand Rules",
+    "settingName": "On Demand Rules (deprecated)",
     "settingDescription": "An array of rules defining the DNS settings. If rules are not present, the system always applies the DNS settings. These rules are identical to the OnDemandRules array in VPN payloads.",
     "keywords": [
       "DNS Settings"
@@ -1051,7 +1051,7 @@
   },
   {
     "settingId": "com.apple.dnssettings.managed_prohibitdisablement",
-    "settingName": "Prohibit Disablement",
+    "settingName": "Prohibit Disablement (deprecated)",
     "settingDescription": "If true, prohibits users from disabling DNS settings. This key is only available on supervised devices.",
     "keywords": [
       "DNS Settings"
@@ -1060,7 +1060,7 @@
   },
   {
     "settingId": "com.apple.dnssettings.managed_dnssettings_dnsprotocol",
-    "settingName": "DNS Protocol",
+    "settingName": "DNS Protocol (deprecated)",
     "settingDescription": "The encrypted transport protocol used to communicate with the DNS server.",
     "keywords": [
       "DNS Settings"
@@ -2878,6 +2878,24 @@
     "categoryName": "Privacy"
   },
   {
+    "settingId": "dnssettings_dnssettings_dnsprotocol",
+    "settingName": "DNS Protocol",
+    "settingDescription": "The encrypted transport protocol used to communicate with the DNS server.",
+    "keywords": [
+      "DNS Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "dnssettings_dnssettings_serveraddresses",
+    "settingName": "Server Addresses",
+    "settingDescription": "An unordered list of DNS server IP address strings. These IP addresses can be a mixture of IPv4 and IPv6 addresses.",
+    "keywords": [
+      "DNS Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_state",
     "settingName": "State",
     "settingDescription": "Controls whether an extension is allowed.\n* Allowed - The user is allowed to turn the extension on or off\n* AlwaysOn - The extension will always be on\n* AlwaysOff - The extension will always be off",
@@ -3860,7 +3878,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_logclientidentity",
-    "settingName": "Log Client Identity",
+    "settingName": "Log Client Identity (deprecated)",
     "settingDescription": "If true, the Content Cache logs the IP address and port number of the clients that request content. ",
     "keywords": [
       "Content Caching"
@@ -3869,7 +3887,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_publicranges_item_last",
-    "settingName": "Last",
+    "settingName": "Last (deprecated)",
     "settingDescription": "The last IP address in the range.",
     "keywords": [
       "Content Caching"
@@ -3896,7 +3914,7 @@
   },
   {
     "settingId": "com.apple.mobiledevice.passwordpolicy_mincomplexchars",
-    "settingName": "Min Complex Characters",
+    "settingName": "Min Complex Characters (deprecated)",
     "settingDescription": "The minimum number of complex characters that a passcode must contain. A complex character is a character other than a number or a letter, such as & % $ #. This property is ignored for User Enrollments.",
     "keywords": [
       "Passcode"
@@ -3905,7 +3923,7 @@
   },
   {
     "settingId": "com.apple.mobiledevice.passwordpolicy_customregex_passwordcontentdescription_generickey",
-    "settingName": "Description",
+    "settingName": "Description (deprecated)",
     "settingDescription": "A localized description.",
     "keywords": [
       "Passcode"
@@ -3971,7 +3989,7 @@
   },
   {
     "settingId": "com.apple.dnssettings.managed_ondemandrules_item_actionparameters",
-    "settingName": "Action Parameters",
+    "settingName": "Action Parameters (deprecated)",
     "settingDescription": "A dictionary that provides per-connection rules.",
     "keywords": [
       "DNS Settings"
@@ -3980,7 +3998,7 @@
   },
   {
     "settingId": "com.apple.dnssettings.managed_dnssettings_serveraddresses",
-    "settingName": "Server Addresses",
+    "settingName": "Server Addresses (deprecated)",
     "settingDescription": "An unordered list of DNS server IP address strings. These IP addresses can be a mixture of IPv4 and IPv6 addresses.",
     "keywords": [
       "DNS Settings"
@@ -7277,7 +7295,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_port",
-    "settingName": "Port",
+    "settingName": "Port (deprecated)",
     "settingDescription": "The TCP port number on which the content cache accepts requests for uploads or downloads. Set the port to 0 to pick a random, available port.",
     "keywords": [
       "Content Caching"
@@ -7286,7 +7304,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_peerfilterranges_item_last",
-    "settingName": "Last",
+    "settingName": "Last (deprecated)",
     "settingDescription": "The last IP address in the range.",
     "keywords": [
       "Content Caching"
@@ -7295,7 +7313,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_cachelimit",
-    "settingName": "Cache Limit",
+    "settingName": "Cache Limit (deprecated)",
     "settingDescription": "The maximum number of bytes of disk space that will be used for the content cache. A value of 0 means unlimited disk space.",
     "keywords": [
       "Content Caching"
@@ -7304,7 +7322,7 @@
   },
   {
     "settingId": "com.apple.mobiledevice.passwordpolicy_minutesuntilfailedloginreset",
-    "settingName": "Minutes Until Failed Login Reset",
+    "settingName": "Minutes Until Failed Login Reset (deprecated)",
     "settingDescription": "The number of minutes before the login is reset after the maximum number of unsuccessful login attempts is reached. This key requires setting Max Failed Attempts. Available in macOS 10.10 and later.",
     "keywords": [
       "Passcode"
@@ -7423,7 +7441,7 @@
   },
   {
     "settingId": "com.apple.dnssettings.managed_ondemandrules_item_dnsserveraddressmatch",
-    "settingName": "DNS Server Address Match",
+    "settingName": "DNS Server Address Match (deprecated)",
     "settingDescription": "An array of IP addresses. This rule matches if any of the network’s specified DNS servers match any entry in the array.",
     "keywords": [
       "DNS Settings"
@@ -9608,6 +9626,15 @@
     "categoryName": "Privacy"
   },
   {
+    "settingId": "dnssettings_dnssettings_servername",
+    "settingName": "Server Name",
+    "settingDescription": "The hostname of a DNS-over-TLS server used to validate the server certificate, as defined in RFC 7858. If no `ServerAddresses` are provided, the system uses the hostname to determine the server addresses. This key must be present only if the DNSProtocol is `TLS`.",
+    "keywords": [
+      "DNS Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "extensionsettings_extensionsettings",
     "settingName": "com.apple.configuration.safari.extensions.settings",
     "settingDescription": "Synthetic Top Level Setting Group Collection",
@@ -10731,7 +10758,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_listenranges_item_first",
-    "settingName": "First",
+    "settingName": "First (deprecated)",
     "settingDescription": "The first IP address in the range.",
     "keywords": [
       "Content Caching"
@@ -10740,7 +10767,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_autoenabletetheredcaching",
-    "settingName": "Auto Enable Tethered Caching",
+    "settingName": "Auto Enable Tethered Caching (deprecated)",
     "settingDescription": "Automatically enable Internet connection sharing when possible and prevent disabling Internet connection sharing. Deny Tethered Caching overrides Auto Enable Tethered Caching. Tethered caching requires Content Caching. Available in macOS 10.15.4 and later.",
     "keywords": [
       "Content Caching"
@@ -10776,7 +10803,7 @@
   },
   {
     "settingId": "com.apple.mobiledevice.passwordpolicy_pinhistory",
-    "settingName": "PIN History",
+    "settingName": "PIN History (deprecated)",
     "settingDescription": "This value defines N, where the new passcode must be unique within the last N entries in the passcode history. ",
     "keywords": [
       "Passcode"
@@ -10822,7 +10849,7 @@
   },
   {
     "settingId": "com.apple.dnssettings.managed_dnssettings_supplementalmatchdomains",
-    "settingName": "Supplemental Match Domains",
+    "settingName": "Supplemental Match Domains (deprecated)",
     "settingDescription": "A list of domain strings used to determine which DNS queries will use the DNS server. If this array is not provided, all domains will use the DNS server.",
     "keywords": [
       "DNS Settings"
@@ -12773,6 +12800,24 @@
     "categoryName": "Privacy"
   },
   {
+    "settingId": "dnssettings_visiblename",
+    "settingName": "Visible Name",
+    "settingDescription": "The name of the DNS settings that the system displays on the device.",
+    "keywords": [
+      "DNS Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "dnssettings_dnssettings_supplementalmatchdomains",
+    "settingName": "Supplemental Match Domains",
+    "settingDescription": "A list of domain strings used to determine which DNS queries use the DNS server. If not set, all domains use the DNS server.\n\nThe system supports a single wildcard (`*`) prefix, but it's not required. For example, both `*.example.com` and `example.com` match against `mydomain.example.com` and `your.domain.example.com`, but don't match against `mydomain-example.com`.",
+    "keywords": [
+      "DNS Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "com.apple.carddav.account_carddavhostname",
     "settingName": "Card DAV Host Name",
     "settingDescription": "The server’s address.",
@@ -13452,7 +13497,7 @@
   },
   {
     "settingId": "intelligencesettings_allowvisualintelligencesummary",
-    "settingName": "Allow Visual Intelligence Summary",
+    "settingName": "Allow Visual Intelligence Summary (deprecated)",
     "settingDescription": "If `false`, disables Visual Intelligence Summary.",
     "keywords": [
       "Intelligence Settings"
@@ -13707,7 +13752,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_listenranges",
-    "settingName": "Listen Ranges",
+    "settingName": "Listen Ranges (deprecated)",
     "settingDescription": "The range of client IP addresses to serve.",
     "keywords": [
       "Content Caching"
@@ -13716,7 +13761,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_listenwithpeersandparents",
-    "settingName": "Listen With Peers And Parents",
+    "settingName": "Listen With Peers And Parents (deprecated)",
     "settingDescription": "If true, the content cache provides content to the clients in the union of the Listen Ranges, Peer Listen Ranges and Parents.",
     "keywords": [
       "Content Caching"
@@ -13725,7 +13770,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_datapath",
-    "settingName": "Data Path",
+    "settingName": "Data Path (deprecated)",
     "settingDescription": "The path to the directory used to store cached content. Changing this setting manually doesn't automatically move cached content from the old location to the new one. To move content automatically, use the Sharing preference's Content Caching pane. The value must be (or end with) /Library/Application Support/Apple/AssetCache/Data.\r\nA directory and its intermediates are created for the given data path if it doesn't already exist. The directory is owned by _assetcache:_assetcache and has mode 0750. Its immediate parent directory (.../Library/Application Support/Apple/AssetCache) is owned by _assetcache:_assetcache and has mode 0755. ",
     "keywords": [
       "Content Caching"
@@ -13734,7 +13779,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_parentselectionpolicy",
-    "settingName": "Parent Selection Policy",
+    "settingName": "Parent Selection Policy (deprecated)",
     "settingDescription": "The policy to implement when choosing among more than one configured parent content cache. With every policy, parent caches that are temporarily unavailable are skipped.\r\nfirst-available: Always use the first available parent in the Parents list. Use this policy to designate permanent primary, secondary, and subsequent parents.\r\n\r\nurl-path-hash: Hash the path part of the requested URL so that the same parent is always used for the same URL. This is useful for maximizing the size of the combined caches of the parents.\r\n\r\nrandom: Choose a parent at random. Use this policy for load balancing.\r\n\r\nround-robin: Rotate through the parents in order. Use this policy for load balancing.\r\n\r\nsticky-available: Use the first available parent that is available in the Parents list until it becomes unavailable, then advance to the next one. Use this policy for designating floating primary, secondary, and subsequent parents. ",
     "keywords": [
       "Content Caching"
@@ -13743,7 +13788,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_listenranges_item_type",
-    "settingName": "IP Address Type",
+    "settingName": "IP Address Type (deprecated)",
     "settingDescription": "The IP address type.",
     "keywords": [
       "Content Caching"
@@ -13770,7 +13815,7 @@
   },
   {
     "settingId": "com.apple.mobiledevice.passwordpolicy_forcepin",
-    "settingName": "Force PIN",
+    "settingName": "Force PIN (deprecated)",
     "settingDescription": "If true, forces the user to enter a PIN.",
     "keywords": [
       "Passcode"
@@ -13779,7 +13824,7 @@
   },
   {
     "settingId": "com.apple.mobiledevice.passwordpolicy_customregex",
-    "settingName": "Custom Regex",
+    "settingName": "Custom Regex (deprecated)",
     "settingDescription": "Specifies a regular expression, and its description, used to enforce password compliance. Use the simpler passcode restrictions whenever possible, and rely on regular expression matching only when necessary. Mistakes in regular expressions can lead to frustrating user experiences, such as unsatisfiable passcode policies, or policy descriptions that don't match the enforced policy.\n\nAvailable in macOS 14 and later.",
     "keywords": [
       "Passcode"
@@ -13788,7 +13833,7 @@
   },
   {
     "settingId": "com.apple.mobiledevice.passwordpolicy_maxfailedattempts",
-    "settingName": "Max Failed Attempts",
+    "settingName": "Max Failed Attempts (deprecated)",
     "settingDescription": "The number of allowed failed attempts to enter the passcode at the device's lock screen. After six failed attempts, a time delay is imposed before a passcode can be entered again. The delay increases with each attempt. In macOS, set Minutes Until Failed Login Reset to define a delay before the next passcode can be entered. When this number is exceeded in macOS, the device is locked; in iOS, the device is wiped.",
     "keywords": [
       "Passcode"
@@ -13871,7 +13916,7 @@
   },
   {
     "settingId": "com.apple.dnssettings.managed_com.apple.dnssettings.managed",
-    "settingName": "Top Level Setting Group Collection",
+    "settingName": "Top Level Setting Group Collection (deprecated)",
     "settingDescription": "Synthetic Top Level Setting Group Collection",
     "keywords": [
       "DNS Settings"
@@ -17080,7 +17125,7 @@
   },
   {
     "settingId": "com.apple.applicationaccess_blockedappbundleids",
-    "settingName": "Blocked App Bundle IDs",
+    "settingName": "Blocked App Bundle IDs (deprecated)",
     "settingDescription": "If present, prevents bundle IDs listed in the array from being shown or launchable. Include the value com.apple.webapp to restrict all webclips. Requires a supervised device. Available in iOS 9.3 and later.",
     "keywords": [
       "Restrictions"
@@ -17296,7 +17341,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_peerlocalsubnetsonly",
-    "settingName": "Peer Local Subnets Only",
+    "settingName": "Peer Local Subnets Only (deprecated)",
     "settingDescription": "If true, the content cache only peers with other content caches on the same immediate local network, rather than with content caches that use the same public IP address as the device. When Peer Local Subnets Only is true, it overrides the configuration of Peer Filter Ranges and Peer Listen Ranges. If the network changes, the local network peering restrictions update appropriately. If false, the content cache defers to Peer Filter Ranges and Peer Listen Ranges for configuring the peering restrictions.",
     "keywords": [
       "Content Caching"
@@ -17444,7 +17489,7 @@
   },
   {
     "settingId": "com.apple.dnssettings.managed_dnssettings_serverurl",
-    "settingName": "Server URL",
+    "settingName": "Server URL (deprecated)",
     "settingDescription": "The URI template of a DNS-over-HTTPS server, as defined in RFC 8484. This URL must use the https:// scheme, and the hostname or address in the URL will be used to validate the server certificate. If no ServerAddresses are provided, the hostname or address in the URL will be used to determine the server addresses. This key must be present only if the DNSProtocol is HTTPS.",
     "keywords": [
       "DNS Settings"
@@ -20606,7 +20651,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_allowcachedelete",
-    "settingName": "Allow Cache Delete",
+    "settingName": "Allow Cache Delete (deprecated)",
     "settingDescription": "Allow the system to purge content from the cache automatically when it needs disk space for other apps (i.e. when free disk space runs low on the computer). Customers who want Content Caching to be as effective as possible should turn this setting off.\r\nAvailable in macOS 10.15 and later.",
     "keywords": [
       "Content Caching"
@@ -20680,7 +20725,7 @@
   },
   {
     "settingId": "com.apple.dnssettings.managed_dnssettings",
-    "settingName": "DNS Settings",
+    "settingName": "DNS Settings (deprecated)",
     "settingDescription": "A dictionary that defines a configuration for an encrypted DNS server.",
     "keywords": [
       "DNS Settings"
@@ -22961,6 +23006,15 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "dnssettings_dnssettings",
+    "settingName": "DNS Settings",
+    "settingDescription": "A dictionary that defines a configuration for an encrypted DNS server.",
+    "keywords": [
+      "DNS Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "plugin_serveraddress",
     "settingName": "Server Address",
     "settingDescription": "The server address, which may be the IP address, hostname, or URL.",
@@ -23892,7 +23946,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_publicranges_item_first",
-    "settingName": "First",
+    "settingName": "First (deprecated)",
     "settingDescription": "The first IP address in the range.",
     "keywords": [
       "Content Caching"
@@ -23901,7 +23955,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_denytetheredcaching",
-    "settingName": "Deny Tethered Caching",
+    "settingName": "Deny Tethered Caching (deprecated)",
     "settingDescription": "If true, disables tethered caching.",
     "keywords": [
       "Content Caching"
@@ -23937,7 +23991,7 @@
   },
   {
     "settingId": "com.apple.mobiledevice.passwordpolicy_changeatnextauth",
-    "settingName": "Change At Next Auth",
+    "settingName": "Change At Next Auth (deprecated)",
     "settingDescription": "If true, causes a password reset to occur the next time the user tries to authenticate. If this key is set in a device profile, the setting takes effect for all users, and admin authentications may fail until the admin user password is also reset. Available in macOS 10.13 and later.",
     "keywords": [
       "Passcode"
@@ -27110,7 +27164,7 @@
   },
   {
     "settingId": "com.apple.dnssettings.managed_ondemandrules_item_dnsdomainmatch",
-    "settingName": "DNS Domain Match",
+    "settingName": "DNS Domain Match (deprecated)",
     "settingDescription": "An array of domain names. This rule matches if any of the domain names in the specified list matches any domain in the device’s search domains list.",
     "keywords": [
       "DNS Settings"
@@ -29437,6 +29491,15 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "dnssettings_dnssettings_allowfailover",
+    "settingName": "Allow Failover",
+    "settingDescription": "If `true`, the device allows failover to the default system DNS resolver.",
+    "keywords": [
+      "DNS Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_alloweddomains",
     "settingName": "Allowed Domains",
     "settingDescription": "Controls the domains and sub-domains the extension is granted access to. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
@@ -30398,7 +30461,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_parents",
-    "settingName": "Parents",
+    "settingName": "Parents (deprecated)",
     "settingDescription": "An array of the local IP addresses of other content caches that this cache should download from or upload to, instead of downloading from or uploading to Apple directly. Invalid addresses and addresses of computers that aren't content caches are ignored. Parent caches that become unavailable are skipped. If all parent content caches become unavailable, the content cache downloads from or uploads to Apple directly, until a parent content cache becomes available again.",
     "keywords": [
       "Content Caching"
@@ -30407,7 +30470,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_localsubnetsonly",
-    "settingName": "Local Subnets Only",
+    "settingName": "Local Subnets Only (deprecated)",
     "settingDescription": "If true, the content cache offers content to clients only on the same immediate local network only. No content is offered to clients on other networks reachable by the content cache. If LocalSubnetsOnly is set to true, ListenRanges will be ignored.",
     "keywords": [
       "Content Caching"
@@ -30416,7 +30479,7 @@
   },
   {
     "settingId": "com.apple.mobiledevice.passwordpolicy_allowsimple",
-    "settingName": "Allow Simple Passcode",
+    "settingName": "Allow Simple Passcode (deprecated)",
     "settingDescription": "If true, allows a simple passcode. A simple passcode contains repeated characters, or increasing or decreasing characters (such as 123 or CBA). Setting this value to false has the same result as setting Min Complex Characters to 1.",
     "keywords": [
       "Passcode"
@@ -30556,7 +30619,7 @@
   },
   {
     "settingId": "com.apple.dnssettings.managed_ondemandrules_item_ssidmatch",
-    "settingName": "SSID Match",
+    "settingName": "SSID Match (deprecated)",
     "settingDescription": "An array of SSIDs to match against the current network. If the network is not a Wi-Fi network or if the SSID does not appear in this array, the match fails. Omit this key and the corresponding array to match against any SSID.",
     "keywords": [
       "DNS Settings"
@@ -33842,7 +33905,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_peerlistenranges_item_first",
-    "settingName": "First",
+    "settingName": "First (deprecated)",
     "settingDescription": "The first IP address in the range.",
     "keywords": [
       "Content Caching"
@@ -33851,7 +33914,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_publicranges_item_type",
-    "settingName": "IP Address Type",
+    "settingName": "IP Address Type (deprecated)",
     "settingDescription": "The IP address type.",
     "keywords": [
       "Content Caching"
@@ -33869,7 +33932,7 @@
   },
   {
     "settingId": "com.apple.mobiledevice.passwordpolicy_requirealphanumeric",
-    "settingName": "Require Alphanumeric Passcode",
+    "settingName": "Require Alphanumeric Passcode (deprecated)",
     "settingDescription": "If true, requires alphabetic characters (abcd) instead of only numeric characters.",
     "keywords": [
       "Passcode"
@@ -33979,7 +34042,7 @@
   },
   {
     "settingId": "com.apple.dnssettings.managed_ondemandrules_item_actionparameters_item_domainaction",
-    "settingName": "Domain Action",
+    "settingName": "Domain Action (deprecated)",
     "settingDescription": "The DNS settings behavior for the specified domains. Allowed values:\n\n* 'NeverConnect': Don't use the DNS Settings for the specified domains.\n* 'ConnectIfNeeded': Allow using the DNS Settings for the specified domains.",
     "keywords": [
       "DNS Settings"
@@ -37431,7 +37494,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_peerlistenranges",
-    "settingName": "Peer Listen Ranges",
+    "settingName": "Peer Listen Ranges (deprecated)",
     "settingDescription": "The ranges of peer IP addresses the content cache responds to. When Peer Listen Ranges is an empty array, the content cache responds with an error to all cache queries.",
     "keywords": [
       "Content Caching"
@@ -37440,7 +37503,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_peerfilterranges_item_first",
-    "settingName": "First",
+    "settingName": "First (deprecated)",
     "settingDescription": "The first IP address in the range.",
     "keywords": [
       "Content Caching"
@@ -37449,7 +37512,7 @@
   },
   {
     "settingId": "com.apple.mobiledevice.passwordpolicy_minlength",
-    "settingName": "Min Length",
+    "settingName": "Min Length (deprecated)",
     "settingDescription": "The minimum overall length of the passcode. This parameter is independent of the also optional Min Complex Characters argument.",
     "keywords": [
       "Passcode"
@@ -39632,6 +39695,33 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "dnssettings_toplevel",
+    "settingName": "com.apple.configuration.network.dns-settings",
+    "settingDescription": "Synthetic Top Level Setting Group Collection",
+    "keywords": [
+      "DNS Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.copilotcoworktoolactionsenabled",
+    "settingName": "Allow Cowork to take actions on your behalf",
+    "settingDescription": "This policy controls whether Cowork is allowed to take actions on behalf of the user in Microsoft Edge.\n\nIf you enable this policy, Cowork can take actions on behalf of the user, and users can't change this setting on the Settings page.\n\nIf you disable this policy, Cowork can't take actions on behalf of the user, and users can't change this setting on the Settings page.\n\nIf you don't configure this policy, users can turn this setting on or off on the Settings page.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.backforwardcacheforwebsocketsallowed",
+    "settingName": "Allow Back/Forward Cache for WebSockets",
+    "settingDescription": "This policy controls whether active WebSocket connections are disconnected when a page enters back/forward cache. Active WebSocket connections previously prevented a page from being stored in back/forward cache, but Microsoft Edge has changed this behavior to disconnect the WebSockets instead, allowing the page to be cached and restoring it in a disconnected state.\n\nIf this policy is set to Enabled or left unset, WebSockets are disconnected when a page enters back/forward cache.\n\nIf this policy is set to Disabled, WebSockets will not be disconnected when a page enters back/forward cache. Since back/forward cache does not support active WebSockets, this means pages with active WebSockets will not be cached.\n\nThis policy is intended to be temporary and will be removed in the future.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.apple.mcx_disableguestaccount",
     "settingName": "Disable Guest Account",
     "settingDescription": "If true, disables the guest account. This property has no effect if Enable Guest Account is true.",
@@ -40791,7 +40881,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_allowsharedcaching",
-    "settingName": "Allow Shared Caching",
+    "settingName": "Allow Shared Caching (deprecated)",
     "settingDescription": "If true, caches non-iCloud content, such as apps and software updates. Clients may take some time (hours, days) to react to changes to this setting; it does not have an immediate effect.\r\nAt least one of the Allow Personal Caching or Allow Shared Caching settings must be true. ",
     "keywords": [
       "Content Caching"
@@ -40800,7 +40890,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_peerfilterranges",
-    "settingName": "Peer Filter Ranges",
+    "settingName": "Peer Filter Ranges (deprecated)",
     "settingDescription": "The ranges of peer IP addresses that the content cache uses to filter its list of peers to query for content. The content cache only queries peers in Peer Filter Ranges. When Peer Filter Ranges is an empty array, the content cache doesn't query any peers.",
     "keywords": [
       "Content Caching"
@@ -40809,7 +40899,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_peerlistenranges_item_type",
-    "settingName": "IP Address Type",
+    "settingName": "IP Address Type (deprecated)",
     "settingDescription": "The IP address type.",
     "keywords": [
       "Content Caching"
@@ -40836,7 +40926,7 @@
   },
   {
     "settingId": "com.apple.mobiledevice.passwordpolicy_com.apple.mobiledevice.passwordpolicy",
-    "settingName": "Top Level Setting Group Collection",
+    "settingName": "Top Level Setting Group Collection (deprecated)",
     "settingDescription": "Synthetic Top Level Setting Group Collection",
     "keywords": [
       "Passcode"
@@ -40845,7 +40935,7 @@
   },
   {
     "settingId": "com.apple.mobiledevice.passwordpolicy_maxpinageindays",
-    "settingName": "Max PIN Age In Days",
+    "settingName": "Max PIN Age In Days (deprecated)",
     "settingDescription": "The number of days for which the passcode can remain unchanged. After this number of days, the user is forced to change the passcode before the device is unlocked.",
     "keywords": [
       "Passcode"
@@ -40854,7 +40944,7 @@
   },
   {
     "settingId": "com.apple.mobiledevice.passwordpolicy_customregex_passwordcontentdescription",
-    "settingName": "Password Content Description",
+    "settingName": "Password Content Description (deprecated)",
     "settingDescription": "Contains a dictionary of keys for supported OS language IDs (for example, \"en-US\"), and whose values represent a localized description of the policy enforced by the regular expression. Use the special `default` key can for languages that aren't contained in the dictionary.",
     "keywords": [
       "Passcode"
@@ -43891,7 +43981,7 @@
   },
   {
     "settingId": "com.apple.mobiledevice.passwordpolicy_customregex_passwordcontentregex",
-    "settingName": "Password Content Regex",
+    "settingName": "Password Content Regex (deprecated)",
     "settingDescription": "A regular expression string that they system matches against the password to determine whether it complies with a policy. The regular expression uses the ICU syntax (<https://unicode-org.github.io/icu/userguide/strings/regexp.html>). The string must not exceed 2048 characters in length.",
     "keywords": [
       "Passcode"
@@ -47285,7 +47375,7 @@
   },
   {
     "settingId": "com.apple.applicationaccess_allowlistedappbundleids",
-    "settingName": "Allow Listed App Bundle IDs",
+    "settingName": "Allow Listed App Bundle IDs (deprecated)",
     "settingDescription": "If present, this property allows only bundle IDs listed in the array to be shown or launchable. Include the value com.apple.webapp to allow all webclips. Requires a supervised device. Available in iOS 9.3 and later.",
     "keywords": [
       "Restrictions"
@@ -47411,7 +47501,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_com.apple.assetcache.managed",
-    "settingName": "Top Level Setting Group Collection",
+    "settingName": "Top Level Setting Group Collection (deprecated)",
     "settingDescription": "com.apple.AssetCache.managed",
     "keywords": [
       "Content Caching"
@@ -47420,7 +47510,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_publicranges",
-    "settingName": "Public Ranges",
+    "settingName": "Public Ranges (deprecated)",
     "settingDescription": "The ranges of public IP addresses that the cloud servers should use for matching clients to content caches.",
     "keywords": [
       "Content Caching"
@@ -47429,7 +47519,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_peerlistenranges_item_last",
-    "settingName": "Last",
+    "settingName": "Last (deprecated)",
     "settingDescription": "The last IP address in the range.",
     "keywords": [
       "Content Caching"
@@ -47438,7 +47528,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_listenranges_item_last",
-    "settingName": "Last",
+    "settingName": "Last (deprecated)",
     "settingDescription": "The last IP address in the range.",
     "keywords": [
       "Content Caching"
@@ -47557,7 +47647,7 @@
   },
   {
     "settingId": "com.apple.dnssettings.managed_ondemandrules_item_urlstringprobe",
-    "settingName": "URL String Probe",
+    "settingName": "URL String Probe (deprecated)",
     "settingDescription": "A URL to probe. If this URL is successfully fetched (returning a 200 HTTP status code) without redirection, this rule matches.",
     "keywords": [
       "DNS Settings"
@@ -47566,7 +47656,7 @@
   },
   {
     "settingId": "com.apple.dnssettings.managed_dnssettings_servername",
-    "settingName": "Server Name",
+    "settingName": "Server Name (deprecated)",
     "settingDescription": "The hostname of a DNS-over-TLS server used to validate the server certificate, as defined in RFC 7858. If no ServerAddresses are provided, the hostname will be used to determine the server addresses. This key must be present only if the DNSProtocol is TLS.",
     "keywords": [
       "DNS Settings"
@@ -49704,6 +49794,24 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "dnssettings_dnssettings_serverurl",
+    "settingName": "Server URL",
+    "settingDescription": "The URI template of a DNS-over-HTTPS server, as defined in RFC 8484. This URL needs to use the `https://` scheme, and the system uses the hostname or address in the URL to validate the server certificate. If no `ServerAddresses` are provided, the system uses the hostname or address in the URL to determine the server addresses. Required if `DNSProtocol` is `HTTPS`.",
+    "keywords": [
+      "DNS Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "dnssettings_prohibitdisablement",
+    "settingName": "Prohibit Disablement",
+    "settingDescription": "If `true`, the system prohibits users from disabling DNS settings.",
+    "keywords": [
+      "DNS Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "extensionsettings_managedextensions",
     "settingName": "Managed Extensions",
     "settingDescription": "Extensions being managed",
@@ -50641,7 +50749,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_autoactivation",
-    "settingName": "Auto Activation",
+    "settingName": "Auto Activation (deprecated)",
     "settingDescription": "If true, automatically activates the content cache when possible and prevents it from being disabled. If the Allow Content Caching restriction is set to false, Auto Activation is also false.\r\nRemoving a profile that set Auto Activation to true does not deactivate the Content Cache.",
     "keywords": [
       "Content Caching"
@@ -50650,7 +50758,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_displayalerts",
-    "settingName": "Display Alerts",
+    "settingName": "Display Alerts (deprecated)",
     "settingDescription": "If true, Content Caching displays exceptional conditions (alerts) as system notifications in the upper corner of the screen. Alerts were automatically displayed starting in macOS 10.13. In macOS 10.15 the alerts are off by default, but still available via this setting.\r\nAvailable in macOS 10.15 and later.",
     "keywords": [
       "Content Caching"
@@ -50659,7 +50767,7 @@
   },
   {
     "settingId": "com.apple.assetcache.managed_allowpersonalcaching",
-    "settingName": "Allow Personal Caching",
+    "settingName": "Allow Personal Caching (deprecated)",
     "settingDescription": "If true, caches the user's iCloud data. Clients may take some time (hours or days) to react to changes to this setting; it doesn't have an immediate effect.\r\nAt least one of the Allow Personal Caching or Allow Shared Caching settings must be true.",
     "keywords": [
       "Content Caching"
@@ -50695,7 +50803,7 @@
   },
   {
     "settingId": "com.apple.mobiledevice.passwordpolicy_maxgraceperiod",
-    "settingName": "Max Grace Period",
+    "settingName": "Max Grace Period (deprecated)",
     "settingDescription": "The maximum grace period, in minutes, to unlock the phone without entering a passcode. The default is 0, which is no grace period and requires a passcode immediately. In macOS, this grace period value is translated to screen-saver settings.",
     "keywords": [
       "Passcode"
@@ -50704,7 +50812,7 @@
   },
   {
     "settingId": "com.apple.mobiledevice.passwordpolicy_customregex_passwordcontentdescription_generickey_keytobereplaced",
-    "settingName": "Password Content Description",
+    "settingName": "Password Content Description (deprecated)",
     "settingDescription": "Contains a dictionary of keys for supported OS language IDs (for example, \"en-US\"), and whose values represent a localized description of the policy enforced by the regular expression. Use the special `default` key can for languages that aren't contained in the dictionary.",
     "keywords": [
       "Passcode"
@@ -50713,7 +50821,7 @@
   },
   {
     "settingId": "com.apple.mobiledevice.passwordpolicy_maxinactivity",
-    "settingName": "Max Inactivity",
+    "settingName": "Max Inactivity (deprecated)",
     "settingDescription": "The maximum number of minutes for which the device can be idle, without being unlocked by the user, before it gets locked by the system. When this limit is reached, the device is locked and the passcode must be entered. The user can edit this setting, but the value cannot exceed the Max Inactivity value. In macOS, this inactivity value is translated to screen-saver settings.",
     "keywords": [
       "Passcode"
@@ -50785,7 +50893,7 @@
   },
   {
     "settingId": "com.apple.dnssettings.managed_ondemandrules_item_actionparameters_item_domains",
-    "settingName": "Domains",
+    "settingName": "Domains (deprecated)",
     "settingDescription": "The domains for which this evaluation applies.",
     "keywords": [
       "DNS Settings"
@@ -50794,7 +50902,7 @@
   },
   {
     "settingId": "com.apple.dnssettings.managed_ondemandrules_item_action",
-    "settingName": "Action",
+    "settingName": "Action (deprecated)",
     "settingDescription": "The action to take if this dictionary matches the current network.",
     "keywords": [
       "DNS Settings"
@@ -50803,7 +50911,7 @@
   },
   {
     "settingId": "com.apple.dnssettings.managed_ondemandrules_item_interfacetypematch",
-    "settingName": "Interface Type Match",
+    "settingName": "Interface Type Match (deprecated)",
     "settingDescription": "An interface type. If specified, this rule matches only if the primary network interface hardware matches the specified type.",
     "keywords": [
       "DNS Settings"

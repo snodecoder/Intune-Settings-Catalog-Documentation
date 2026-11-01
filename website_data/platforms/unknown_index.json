@@ -169,6 +169,18 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_winre_pointintimerestore_allowusertoinitiatepointintimerestore",
+    "settingName": "Allow user to initiate point-in-time restore",
+    "settingDescription": "",
+    "keywords": [
+      "WinRE",
+      "Recovery",
+      "Point-in-Time Restore",
+      "Win RE"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_authenticationmethod",
     "settingName": "Intune authentication method",
     "settingDescription": "If your organization uses multifactor authentication, select Setup Assistant with modern authentication, which prompts users to authenticate based on settings in Entra.",
@@ -826,6 +838,18 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_winre_pointintimerestore_allowpointintimerestore",
+    "settingName": "Allow point-in-time restore",
+    "settingDescription": "",
+    "keywords": [
+      "WinRE",
+      "Recovery",
+      "Point-in-Time Restore",
+      "Win RE"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_setupassistant_liquidglass",
     "settingName": "Liquid Glass",
     "settingDescription": null,
@@ -1169,6 +1193,19 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_winre_pointintimerestore_restorepointretention",
+    "settingName": "Restore point retention",
+    "settingDescription": "",
+    "keywords": [
+      "WinRE",
+      "Recovery",
+      "Point-in-Time Restore",
+      "Retention",
+      "Win RE"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_accountsettings_restrictediting",
     "settingName": "Restrict editing",
     "settingDescription": "Prevent the end user from editing the full name and account name",
@@ -1485,6 +1522,19 @@
       "LocalUsersAndGroups",
       "Configure",
       "Local Users And Groups"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_winre_pointintimerestore_restorepointfrequency",
+    "settingName": "Restore point frequency",
+    "settingDescription": "",
+    "keywords": [
+      "WinRE",
+      "Recovery",
+      "Point-in-Time Restore",
+      "Frequency",
+      "Win RE"
     ],
     "categoryName": "Uncategorized"
   },
@@ -2085,6 +2135,19 @@
       "Maintenance Window",
       "Repeat Schedule",
       "Maintenance Windows"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_winre_pointintimerestore_restorepointdiskusage",
+    "settingName": "Restore point disk usage",
+    "settingDescription": "",
+    "keywords": [
+      "WinRE",
+      "Recovery",
+      "Point-in-Time Restore",
+      "Disk Usage",
+      "Win RE"
     ],
     "categoryName": "Uncategorized"
   },

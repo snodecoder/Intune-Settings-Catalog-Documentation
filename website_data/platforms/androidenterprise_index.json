@@ -407,7 +407,7 @@
   },
   {
     "settingId": "com.android.devicerestrictionpolicy.unifiedlocksettings",
-    "settingName": "Require separate work lock",
+    "settingName": "Require separate locks for work and personal profiles",
     "settingDescription": "If 'True', requires a separate lock for the work profile, preventing use of a unified lock for both device and work profile. If set to 'False', Intune doesn't change or update this setting. By default, the OS might allow a common lock for the device and the work profile. Available for corporate-owned work profile devices (at work profile level).",
     "keywords": [
       "One lock",
@@ -796,7 +796,7 @@
   {
     "settingId": "com.android.devicerestrictionpolicy.keyguarddisabledfeatures",
     "settingName": "Disabled lock screen features",
-    "settingDescription": "When the device is locked, choose the features that can't be used. These features are accessible to users when the device is locked; users will not be able to see or access the features that are disabled. When this setting is configured by more than one assigned policy, the selected features are merged (union) across those policies.",
+    "settingDescription": "When the device is locked, choose the features that can't be used. These features are accessible to users when the device is locked; users will not be able to see or access the features that are disabled. When this setting is configured by more than one assigned policy, the selected features are merged (union) across those policies. Options marked '(fully managed or dedicated)' apply only to fully managed and dedicated devices; options marked '(work profile-level)' apply at the work profile level on corporate-owned work profile devices.",
     "keywords": [
       "Keyguard",
       "Lock screen",
