@@ -169,18 +169,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_winre_pointintimerestore_allowusertoinitiatepointintimerestore",
-    "settingName": "Allow user to initiate point-in-time restore",
-    "settingDescription": "",
-    "keywords": [
-      "WinRE",
-      "Recovery",
-      "Point-in-Time Restore",
-      "Win RE"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_authenticationmethod",
     "settingName": "Intune authentication method",
     "settingDescription": "If your organization uses multifactor authentication, select Setup Assistant with modern authentication, which prompts users to authenticate based on settings in Entra.",
@@ -312,6 +300,18 @@
       "child process",
       "Elevation",
       "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_winre_pointintimerestore_allowusertoinitiatepointintimerestore",
+    "settingName": "Allow user to initiate point-in-time restore",
+    "settingDescription": "",
+    "keywords": [
+      "WinRE",
+      "Recovery",
+      "Point-in-Time Restore",
+      "Win RE"
     ],
     "categoryName": "Uncategorized"
   },
@@ -838,18 +838,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_winre_pointintimerestore_allowpointintimerestore",
-    "settingName": "Allow point-in-time restore",
-    "settingDescription": "",
-    "keywords": [
-      "WinRE",
-      "Recovery",
-      "Point-in-Time Restore",
-      "Win RE"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "ade_setupassistant_liquidglass",
     "settingName": "Liquid Glass",
     "settingDescription": null,
@@ -1027,6 +1015,18 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_winre_pointintimerestore_allowpointintimerestore",
+    "settingName": "Allow point-in-time restore",
+    "settingDescription": "",
+    "keywords": [
+      "WinRE",
+      "Recovery",
+      "Point-in-Time Restore",
+      "Win RE"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "ade_accountsettings_adminaccountname",
     "settingName": "Admin account username",
     "settingDescription": "The account name for the administrator account. This field is to be defaulted to 'Admin'. For macOS ADE enrollment policies without user device affinity, we recommend configuring {{serialNumber}} as the unique identifier of userless devices.",
@@ -1189,19 +1189,6 @@
       "Certificate",
       "Elevation",
       "Privilege Management"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
-    "settingId": "device_vendor_msft_policy_config_winre_pointintimerestore_restorepointretention",
-    "settingName": "Restore point retention",
-    "settingDescription": "",
-    "keywords": [
-      "WinRE",
-      "Recovery",
-      "Point-in-Time Restore",
-      "Retention",
-      "Win RE"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1526,14 +1513,14 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_winre_pointintimerestore_restorepointfrequency",
-    "settingName": "Restore point frequency",
+    "settingId": "device_vendor_msft_policy_config_winre_pointintimerestore_restorepointretention",
+    "settingName": "Restore point retention",
     "settingDescription": "",
     "keywords": [
       "WinRE",
       "Recovery",
       "Point-in-Time Restore",
-      "Frequency",
+      "Retention",
       "Win RE"
     ],
     "categoryName": "Uncategorized"
@@ -1702,6 +1689,19 @@
       "File Hash",
       "Elevation",
       "Privilege Management"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_winre_pointintimerestore_restorepointfrequency",
+    "settingName": "Restore point frequency",
+    "settingDescription": "",
+    "keywords": [
+      "WinRE",
+      "Recovery",
+      "Point-in-Time Restore",
+      "Frequency",
+      "Win RE"
     ],
     "categoryName": "Uncategorized"
   },
@@ -2139,19 +2139,6 @@
     "categoryName": "Uncategorized"
   },
   {
-    "settingId": "device_vendor_msft_policy_config_winre_pointintimerestore_restorepointdiskusage",
-    "settingName": "Restore point disk usage",
-    "settingDescription": "",
-    "keywords": [
-      "WinRE",
-      "Recovery",
-      "Point-in-Time Restore",
-      "Disk Usage",
-      "Win RE"
-    ],
-    "categoryName": "Uncategorized"
-  },
-  {
     "settingId": "enrollment_autopilot_dpp_skipeula",
     "settingName": "Hide Microsoft Software License Terms",
     "settingDescription": "Specify whether to show the end-user license agreement to users.",
@@ -2215,6 +2202,19 @@
     "keywords": [
       "Password Expiration Protection Enabled",
       "LAPS"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_winre_pointintimerestore_restorepointdiskusage",
+    "settingName": "Restore point disk usage",
+    "settingDescription": "",
+    "keywords": [
+      "WinRE",
+      "Recovery",
+      "Point-in-Time Restore",
+      "Disk Usage",
+      "Win RE"
     ],
     "categoryName": "Uncategorized"
   },

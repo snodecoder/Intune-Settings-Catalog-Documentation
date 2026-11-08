@@ -1303,24 +1303,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "dnssettings_dnssettings_dnsprotocol",
-    "settingName": "DNS Protocol",
-    "settingDescription": "The encrypted transport protocol used to communicate with the DNS server.",
-    "keywords": [
-      "DNS Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "dnssettings_dnssettings_serveraddresses",
-    "settingName": "Server Addresses",
-    "settingDescription": "An unordered list of DNS server IP address strings. These IP addresses can be a mixture of IPv4 and IPv6 addresses.",
-    "keywords": [
-      "DNS Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
     "settingId": "extensionsettings_managedextensions_generickey_state",
     "settingName": "State",
     "settingDescription": "Controls whether an extension is allowed.\n* Allowed - The user is allowed to turn the extension on or off\n* AlwaysOn - The extension will always be on\n* AlwaysOff - The extension will always be off",
@@ -1374,6 +1356,24 @@
       "Font"
     ],
     "categoryName": "System Configuration"
+  },
+  {
+    "settingId": "dnssettings_dnssettings_dnsprotocol",
+    "settingName": "DNS Protocol",
+    "settingDescription": "The encrypted transport protocol used to communicate with the DNS server.",
+    "keywords": [
+      "DNS Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "dnssettings_dnssettings_serveraddresses",
+    "settingName": "Server Addresses",
+    "settingDescription": "An unordered list of DNS server IP address strings. These IP addresses can be a mixture of IPv4 and IPv6 addresses.",
+    "keywords": [
+      "DNS Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "com.apple.cellular_attachapn",
@@ -4713,15 +4713,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "dnssettings_dnssettings_servername",
-    "settingName": "Server Name",
-    "settingDescription": "The hostname of a DNS-over-TLS server used to validate the server certificate, as defined in RFC 7858. If no `ServerAddresses` are provided, the system uses the hostname to determine the server addresses. This key must be present only if the DNSProtocol is `TLS`.",
-    "keywords": [
-      "DNS Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
     "settingId": "extensionsettings_extensionsettings",
     "settingName": "com.apple.configuration.safari.extensions.settings",
     "settingDescription": "Synthetic Top Level Setting Group Collection",
@@ -4839,6 +4830,15 @@
       "Personal Hotspot"
     ],
     "categoryName": "Managed Settings"
+  },
+  {
+    "settingId": "dnssettings_dnssettings_servername",
+    "settingName": "Server Name",
+    "settingDescription": "The hostname of a DNS-over-TLS server used to validate the server certificate, as defined in RFC 7858. If no `ServerAddresses` are provided, the system uses the hostname to determine the server addresses. This key must be present only if the DNSProtocol is `TLS`.",
+    "keywords": [
+      "DNS Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "com.apple.domains_safaripasswordautofilldomains",
@@ -5988,24 +5988,6 @@
     "categoryName": "Microsoft Edge"
   },
   {
-    "settingId": "dnssettings_visiblename",
-    "settingName": "Visible Name",
-    "settingDescription": "The name of the DNS settings that the system displays on the device.",
-    "keywords": [
-      "DNS Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "dnssettings_dnssettings_supplementalmatchdomains",
-    "settingName": "Supplemental Match Domains",
-    "settingDescription": "A list of domain strings used to determine which DNS queries use the DNS server. If not set, all domains use the DNS server.\n\nThe system supports a single wildcard (`*`) prefix, but it's not required. For example, both `*.example.com` and `example.com` match against `mydomain.example.com` and `your.domain.example.com`, but don't match against `mydomain-example.com`.",
-    "keywords": [
-      "DNS Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
     "settingId": "com.apple.carddav.account_carddavhostname",
     "settingName": "Card DAV Host Name",
     "settingDescription": "The server’s address.",
@@ -6049,6 +6031,24 @@
       "Personal Hotspot"
     ],
     "categoryName": "Managed Settings"
+  },
+  {
+    "settingId": "dnssettings_visiblename",
+    "settingName": "Visible Name",
+    "settingDescription": "The name of the DNS settings that the system displays on the device.",
+    "keywords": [
+      "DNS Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "dnssettings_dnssettings_supplementalmatchdomains",
+    "settingName": "Supplemental Match Domains",
+    "settingDescription": "A list of domain strings used to determine which DNS queries use the DNS server. If not set, all domains use the DNS server.\n\nThe system supports a single wildcard (`*`) prefix, but it's not required. For example, both `*.example.com` and `example.com` match against `mydomain.example.com` and `your.domain.example.com`, but don't match against `mydomain-example.com`.",
+    "keywords": [
+      "DNS Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "com.apple.cellular_attachapn_authenticationtype",
@@ -10715,15 +10715,6 @@
     "categoryName": "Security"
   },
   {
-    "settingId": "dnssettings_dnssettings",
-    "settingName": "DNS Settings",
-    "settingDescription": "A dictionary that defines a configuration for an encrypted DNS server.",
-    "keywords": [
-      "DNS Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
     "settingId": "plugin_serveraddress",
     "settingName": "Server Address",
     "settingDescription": "The server address, which may be the IP address, hostname, or URL.",
@@ -10765,6 +10756,15 @@
     "settingDescription": "If `false`, disables the Live Recognition accessibility feature.",
     "keywords": [
       "Accessibility"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "dnssettings_dnssettings",
+    "settingName": "DNS Settings",
+    "settingDescription": "A dictionary that defines a configuration for an encrypted DNS server.",
+    "keywords": [
+      "DNS Settings"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -13671,15 +13671,6 @@
     "categoryName": "Security"
   },
   {
-    "settingId": "dnssettings_dnssettings_allowfailover",
-    "settingName": "Allow Failover",
-    "settingDescription": "If `true`, the device allows failover to the default system DNS resolver.",
-    "keywords": [
-      "DNS Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
     "settingId": "extensionsettings_managedextensions_generickey_alloweddomains",
     "settingName": "Allowed Domains",
     "settingDescription": "Controls the domains and sub-domains the extension is granted access to. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
@@ -13723,6 +13714,15 @@
     "settingDescription": "The target build version to update the device to by the appropriate time, for example, `20A242`. Use the build version for testing during seeding periods. The build version can include a supplemental version identifier, for example, `20A242a`.",
     "keywords": [
       "Software Update"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "dnssettings_dnssettings_allowfailover",
+    "settingName": "Allow Failover",
+    "settingDescription": "If `true`, the device allows failover to the default system DNS resolver.",
+    "keywords": [
+      "DNS Settings"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -18219,33 +18219,6 @@
     "categoryName": "Security"
   },
   {
-    "settingId": "dnssettings_toplevel",
-    "settingName": "com.apple.configuration.network.dns-settings",
-    "settingDescription": "Synthetic Top Level Setting Group Collection",
-    "keywords": [
-      "DNS Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.copilotcoworktoolactionsenabled",
-    "settingName": "Allow Cowork to take actions on your behalf",
-    "settingDescription": "This policy controls whether Cowork is allowed to take actions on behalf of the user in Microsoft Edge.\n\nIf you enable this policy, Cowork can take actions on behalf of the user, and users can't change this setting on the Settings page.\n\nIf you disable this policy, Cowork can't take actions on behalf of the user, and users can't change this setting on the Settings page.\n\nIf you don't configure this policy, users can turn this setting on or off on the Settings page.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
-    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.backforwardcacheforwebsocketsallowed",
-    "settingName": "Allow Back/Forward Cache for WebSockets",
-    "settingDescription": "This policy controls whether active WebSocket connections are disconnected when a page enters back/forward cache. Active WebSocket connections previously prevented a page from being stored in back/forward cache, but Microsoft Edge has changed this behavior to disconnect the WebSockets instead, allowing the page to be cached and restoring it in a disconnected state.\n\nIf this policy is set to Enabled or left unset, WebSockets are disconnected when a page enters back/forward cache.\n\nIf this policy is set to Disabled, WebSockets will not be disconnected when a page enters back/forward cache. Since back/forward cache does not support active WebSockets, this means pages with active WebSockets will not be cached.\n\nThis policy is intended to be temporary and will be removed in the future.",
-    "keywords": [
-      "Uncategorized"
-    ],
-    "categoryName": "Microsoft Edge"
-  },
-  {
     "settingId": "com.apple.caldav.account_caldavusessl",
     "settingName": "Cal DAV Use SSL",
     "settingDescription": "If true, enables SSL.",
@@ -18332,6 +18305,15 @@
     "settingDescription": "The local date time value that specifies when to force install the software update. If the user doesn’t trigger the software update before this time, the device force installs it",
     "keywords": [
       "Software Update"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "dnssettings_toplevel",
+    "settingName": "com.apple.configuration.network.dns-settings",
+    "settingDescription": "Synthetic Top Level Setting Group Collection",
+    "keywords": [
+      "DNS Settings"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
@@ -18861,6 +18843,15 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.copilotcoworktoolactionsenabled",
+    "settingName": "Allow Cowork to take actions on your behalf",
+    "settingDescription": "This policy controls whether Cowork is allowed to take actions on behalf of the user in Microsoft Edge.\n\nIf you enable this policy, Cowork can take actions on behalf of the user, and users can't change this setting on the Settings page.\n\nIf you disable this policy, Cowork can't take actions on behalf of the user, and users can't change this setting on the Settings page.\n\nIf you don't configure this policy, users can turn this setting on or off on the Settings page.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.configureshare",
     "settingName": "Configure the Share experience",
     "settingDescription": "If you set this policy to 'ShareAllowed' (the default), users can access the Share experience from the Settings and More Menu in Microsoft Edge to share with other apps on the system.\n\nIf you set this policy to 'ShareDisallowed', users can't access the Share experience. If the Share button is on the toolbar, it's hidden as well.\n\nPolicy options mapping:\n\n* ShareAllowed (0) = Allow using the Share experience\n\n* ShareDisallowed (1) = Don't allow using the Share experience\n\nUse the preceding information when configuring this policy.",
@@ -18873,6 +18864,15 @@
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.customhelplink",
     "settingName": "Specify custom help link",
     "settingDescription": "Specify a link for the Help menu or the F1 key.\n\nIf you enable this policy, an admin can specify a link for the Help menu or the F1 key.\n\nIf you disable or don't configure this policy, the default link for the Help menu or the F1 key is used.\n\nThis policy is available only on Windows instances that are joined to a Microsoft Active Directory domain, Windows 10 Pro or Enterprise instances that enrolled for device management, or macOS instances that are that are managed via MDM or joined to a domain via MCX.",
+    "keywords": [
+      "Uncategorized"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "com.microsoft.edge.mamedgeappconfigsettings.backforwardcacheforwebsocketsallowed",
+    "settingName": "Allow Back/Forward Cache for WebSockets",
+    "settingDescription": "This policy controls whether active WebSocket connections are disconnected when a page enters back/forward cache. Active WebSocket connections previously prevented a page from being stored in back/forward cache, but Microsoft Edge has changed this behavior to disconnect the WebSockets instead, allowing the page to be cached and restoring it in a disconnected state.\n\nIf this policy is set to Enabled or left unset, WebSockets are disconnected when a page enters back/forward cache.\n\nIf this policy is set to Disabled, WebSockets will not be disconnected when a page enters back/forward cache. Since back/forward cache does not support active WebSockets, this means pages with active WebSockets will not be cached.\n\nThis policy is intended to be temporary and will be removed in the future.",
     "keywords": [
       "Uncategorized"
     ],
@@ -22870,24 +22870,6 @@
     "categoryName": "Security"
   },
   {
-    "settingId": "dnssettings_dnssettings_serverurl",
-    "settingName": "Server URL",
-    "settingDescription": "The URI template of a DNS-over-HTTPS server, as defined in RFC 8484. This URL needs to use the `https://` scheme, and the system uses the hostname or address in the URL to validate the server certificate. If no `ServerAddresses` are provided, the system uses the hostname or address in the URL to determine the server addresses. Required if `DNSProtocol` is `HTTPS`.",
-    "keywords": [
-      "DNS Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
-    "settingId": "dnssettings_prohibitdisablement",
-    "settingName": "Prohibit Disablement",
-    "settingDescription": "If `true`, the system prohibits users from disabling DNS settings.",
-    "keywords": [
-      "DNS Settings"
-    ],
-    "categoryName": "Declarative Device Management (DDM)"
-  },
-  {
     "settingId": "extensionsettings_managedextensions",
     "settingName": "Managed Extensions",
     "settingDescription": "Extensions being managed",
@@ -22976,6 +22958,24 @@
     "settingDescription": "A dictionary that describes when the device automatically unpairs temporarily paired audio accessories.",
     "keywords": [
       "Audio Accessory"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "dnssettings_dnssettings_serverurl",
+    "settingName": "Server URL",
+    "settingDescription": "The URI template of a DNS-over-HTTPS server, as defined in RFC 8484. This URL needs to use the `https://` scheme, and the system uses the hostname or address in the URL to validate the server certificate. If no `ServerAddresses` are provided, the system uses the hostname or address in the URL to determine the server addresses. Required if `DNSProtocol` is `HTTPS`.",
+    "keywords": [
+      "DNS Settings"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "dnssettings_prohibitdisablement",
+    "settingName": "Prohibit Disablement",
+    "settingDescription": "If `true`, the system prohibits users from disabling DNS settings.",
+    "keywords": [
+      "DNS Settings"
     ],
     "categoryName": "Declarative Device Management (DDM)"
   },
