@@ -39,7 +39,7 @@
   {
     "settingId": "settings_item_wallpaper",
     "settingName": "Wallpaper",
-    "settingDescription": "A dictionary that contains wallpaper settings. This setting doesn't support user enrollment. Available in iOS 8 and later. Starting in iOS 16 and iPadOS 17, when setting the wallpaper for the first time, both locations update. After that, you can set either location separately.",
+    "settingDescription": "A dictionary that contains wallpaper settings. This setting doesn't support user enrollment. Starting in iOS 16 and iPadOS 17, when setting the wallpaper for the first time, both locations update. After that, you can set either location separately.",
     "keywords": [
       "Wallpaper"
     ],
@@ -312,6 +312,15 @@
     "settingDescription": "Keys and values to pass to the app extension.",
     "keywords": [
       "Extensible Single Sign On",
+      "Extensible Single Sign On (SSO)"
+    ],
+    "categoryName": "Authentication"
+  },
+  {
+    "settingId": "com.apple.extensiblesso_platformsso_alwaysuseloginui",
+    "settingName": "Always Use Login UI",
+    "settingDescription": "If `true`, the system uses the Platform SSO login UI at the Login Window, screensaver unlock, and FileVault unlock for every configuration that supports it.\nIf `false`, the system uses the Platform SSO login UI only when `AuthenticationMethod` is set to `OpenID`, or when `LoginPolicy`, `UnlockPolicy` or `FileVaultPolicy` are set to `RequireTouchID` or `RequireTouchIDOrWatch`.",
+    "keywords": [
       "Extensible Single Sign On (SSO)"
     ],
     "categoryName": "Authentication"
@@ -1303,6 +1312,32 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_blueprintgwaavailability_blueprintgwaavailability",
+    "settingName": "Control Blueprint GWA availability (User)",
+    "settingDescription": "",
+    "keywords": [
+      "BlueprintGWAAvailability",
+      "Control Blueprint GWA availability",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_blueprintgwaavailability",
+    "settingName": "Control Blueprint GWA availability (User)",
+    "settingDescription": "This policy controls whether users can send tab content to Copilot to create apps with GenerateWebApp (GWA) in Microsoft Edge.\n\nIf you set this policy to 0 ('Unavailable'), GWA entry points are hidden and users can't use this feature.\n\nIf you set this policy to 1 ('Available'), GWA is available when the feature is enabled and the user's profile is eligible.\n\nIf you don't configure this policy or set it to an unsupported value, GWA follows the Connected Feature Control (CFC) policies. It remains available when EdgeConnectedFeatureControl is unconfigured or set to Off (0), Basic (1), or Balanced (2). It is unavailable when EdgeConnectedFeatureControlStrict is enabled.\n\nA supported, explicitly configured value for this policy takes precedence over CFC for GWA. This policy doesn't override feature availability or sign-in requirements and doesn't control the Remix toolbar button.\n\n* 0 = GenerateWebApp (GWA) is unavailable\n\n* 1 = GenerateWebApp (GWA) is available for eligible users\n\nPolicy options mapping:\n\n* BlueprintGWAUnavailable (0) = GenerateWebApp (GWA) is unavailable\n\n* BlueprintGWAAvailable (1) = GenerateWebApp (GWA) is available for eligible users\n\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "BlueprintGWAAvailability",
+      "Control Blueprint GWA availability",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_state",
     "settingName": "State",
     "settingDescription": "Controls whether an extension is allowed.\n* Allowed - The user is allowed to turn the extension on or off\n* AlwaysOn - The extension will always be on\n* AlwaysOff - The extension will always be off",
@@ -1648,6 +1683,15 @@
       "DNS Settings"
     ],
     "categoryName": "Networking"
+  },
+  {
+    "settingId": "extsso_platformsso_additionalhttpheaders",
+    "settingName": "Additional HTTP Headers",
+    "settingDescription": "A dictionary with keys and values that are strings. The keys are HTTP header names, and the values are HTTP header values. The device adds these headers to nonce, pre-authentication, login, key and key exchange requests for Platform SSO. The device limits the number of headers to 20, the length of the header name to 128 characters, and the length of the header value to 2048 characters.",
+    "keywords": [
+      "Extensible SSO"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "softwareupdate_deferrals_majorperiodindays",
@@ -2942,7 +2986,7 @@
   {
     "settingId": "plugin_filter_packets_providercomposedidentifier",
     "settingName": "Provider Composed Identifier",
-    "settingDescription": "The packet provider identifier. This string identifies the filter data provider when the filter starts running. Required when Enabled is true.\n\nThe identifier is a composed identifier. The format of the composed identifier is \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the provider. \"Designated-Requirement\" is the designated requirement string from the code signature of the provider. For example, \"com.example.app {anchor apple generic}\".",
+    "settingDescription": "The packet provider identifier. This string identifies the filter data provider when the filter starts running. Required when Enabled is true.\n\nThe identifier is a composed identifier. The format of the composed identifier is \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the provider. \"Designated-Requirement\" is the designated requirement string the device uses to match the code signature of the provider. For example, \"com.example.app {anchor apple generic}\".",
     "keywords": [
       "Web Content Filter"
     ],
@@ -3185,7 +3229,7 @@
   {
     "settingId": "app_allowed_alwaysallowmanagedapps",
     "settingName": "Always Allow Managed Apps",
-    "settingDescription": "If `true`, the device implicitly includes managed apps in the effective allow list when `AllowedApps` or `AllowedBinaries` is present.",
+    "settingDescription": "If `true`, the device implicitly includes managed apps in the effective allow list when `AllowedBinaries` is present.",
     "keywords": [
       "App Settings"
     ],
@@ -3212,7 +3256,7 @@
   {
     "settingId": "app_privacy_permissiondefaults_generickey_keytobereplaced",
     "settingName": "Permission Defaults",
-    "settingDescription": "The dictionary of app privacy permission defaults. Each key in the dictionary is an app identifier. The dictionary values represent the permission defaults that the device applies for each matching app.\n\nIn iOS, the app identifier is a bundle ID, for example, \"com.example.app\".\n\nIn macOS, the app identifier is a composed identifier. The format of the composed identifier is either \"Bundle-ID\", \"Bundle-ID (Team-ID)\", or \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the app. \"Team-ID\" is the team identifier from the app's code signature. \"Designated-Requirement\" is the designated requirement string from the code signature of the app. For example, \"com.example.app\" for the bundle ID format, \"com.example.app (ABCD1234)\" for the team ID format, or \"com.example.app {anchor apple generic}\" for the designated requirement format. The device only applies defaults for an app if its code signature matches the composed identifier.",
+    "settingDescription": "In iOS, the app identifier is a bundle ID, for example, \"com.example.app\". In macOS, the app identifier is a composed identifier. The format of the composed identifier is either \"Bundle-ID\", \"Bundle-ID (Team-ID)\", or \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the app. \"Team-ID\" is the team identifier from the app's code signature. \"Designated-Requirement\" is the designated requirement string from the code signature of the app. For example, \"com.example.app\" for the bundle ID format, \"com.example.app (ABCD1234)\" for the team ID format, or \"com.example.app {anchor apple generic}\" for the designated requirement format. The device only applies defaults for an app if its code signature matches the composed identifier.",
     "keywords": [
       "App Settings"
     ],
@@ -4825,7 +4869,7 @@
   {
     "settingId": "settings_item_personalhotspot",
     "settingName": "Personal Hotspot",
-    "settingDescription": "A dictionary that contains Personal Hotspot settings. This setting requires the Network Information access right, and doesn't support user enrollment. Available in iOS 5 and later.",
+    "settingDescription": "A dictionary that contains Personal Hotspot settings. This setting requires the Network Information access right, and doesn't support user enrollment.",
     "keywords": [
       "Personal Hotspot"
     ],
@@ -4993,6 +5037,15 @@
       "Passcode"
     ],
     "categoryName": "Security"
+  },
+  {
+    "settingId": "com.apple.extensiblesso_platformsso_additionalhttpheaders_generickey",
+    "settingName": "ANY",
+    "settingDescription": "Keys and values to pass as HTTP headers to the identity provider.",
+    "keywords": [
+      "Extensible Single Sign On (SSO)"
+    ],
+    "categoryName": "Authentication"
   },
   {
     "settingId": "com.apple.extensiblesso_platformsso_allowdeviceidentifiersinattestation",
@@ -5988,6 +6041,20 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_cloudmanagementenrollmenttoken",
+    "settingName": "The enrollment token of cloud policy (User)",
+    "settingDescription": "This policy lets you specify the enrollment token that Microsoft Edge uses to register with the Microsoft Edge management service and download the policies associated with that enrollment.\n\nMicrosoft Edge management service in the Microsoft 365 admin center provides a cloud-based management experience for configuring and deploying Microsoft Edge policies to managed users and devices.\n\nIf you enable this policy, Microsoft Edge attempts to use the specified enrollment token to register with the Microsoft Edge management service and download the published policies. The registration is performed for the device, so the downloaded policies apply to the browser without requiring a user to sign in.\n\nIf you disable or don't configure this policy, Microsoft Edge doesn't register with the Microsoft Edge management service. This prevents new registrations only. Browsers that already registered stay enrolled and continue to download policies, because the credential issued during registration takes precedence over the enrollment token.\n\nTo stop managing a browser that's already enrolled, remove or reset its device record in the Microsoft Edge management service. If the device record is removed, the browser stops downloading policies and doesn't register again on its own. If the device record is reset, the browser registers again the next time it starts, as long as this policy is still set to a valid enrollment token.\n\nChanges to this policy take effect only after Microsoft Edge is restarted.\n\nThis policy can only be set as a platform policy.\n\nExample value: AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAh",
+    "keywords": [
+      "CloudManagementEnrollmentToken",
+      "The enrollment token of cloud policy",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.apple.carddav.account_carddavhostname",
     "settingName": "Card DAV Host Name",
     "settingDescription": "The server’s address.",
@@ -6044,7 +6111,7 @@
   {
     "settingId": "dnssettings_dnssettings_supplementalmatchdomains",
     "settingName": "Supplemental Match Domains",
-    "settingDescription": "A list of domain strings used to determine which DNS queries use the DNS server. If not set, all domains use the DNS server.\n\nThe system supports a single wildcard (`*`) prefix, but it's not required. For example, both `*.example.com` and `example.com` match against `mydomain.example.com` and `your.domain.example.com`, but don't match against `mydomain-example.com`.",
+    "settingDescription": "A list of domain strings used to determine which DNS queries use the DNS server. If not set, all domains use the DNS server.\n\nThe system supports a single wildcard (`\\*`) prefix, but it's not required. For example, both `\\*.example.com` and `example.com` match against `mydomain.example.com` and `your.domain.example.com`, but don't match against `mydomain-example.com`.",
     "keywords": [
       "DNS Settings"
     ],
@@ -6098,7 +6165,7 @@
   {
     "settingId": "intelligencesettings_allowvisualintelligencesummary",
     "settingName": "Allow Visual Intelligence Summary (deprecated)",
-    "settingDescription": "If `false`, disables Visual Intelligence Summary.",
+    "settingDescription": "If `false`, disables Visual Intelligence Summary.\n\nDeprecated: use the `AllowVisualIntelligence` key.",
     "keywords": [
       "Intelligence Settings"
     ],
@@ -6289,7 +6356,7 @@
   {
     "settingId": "com.apple.mobiledevice.passwordpolicy_customregex",
     "settingName": "Custom Regex (deprecated)",
-    "settingDescription": "Specifies a regular expression, and its description, used to enforce password compliance. Use the simpler passcode restrictions whenever possible, and rely on regular expression matching only when necessary. Mistakes in regular expressions can lead to frustrating user experiences, such as unsatisfiable passcode policies, or policy descriptions that don't match the enforced policy.\n\nAvailable in macOS 14 and later.",
+    "settingDescription": "Specifies a regular expression, and its description, used to enforce password compliance. Use the simpler passcode restrictions whenever possible, and rely on regular expression matching only when necessary. Mistakes in regular expressions can lead to frustrating user experiences, such as unsatisfiable passcode policies, or policy descriptions that don't match the enforced policy.",
     "keywords": [
       "Passcode"
     ],
@@ -6316,7 +6383,7 @@
   {
     "settingId": "com.apple.extensiblesso_extensiondata_useplatformssotgt_kerberos",
     "settingName": "Use Platform SSOTGT",
-    "settingDescription": "If `true`, the system requires this configuration uses a TGT from Platform SSO instead of requesting a new one. Available in macOS 13 and later.",
+    "settingDescription": "If `true`, the system requires this configuration uses a TGT from Platform SSO instead of requesting a new one.",
     "keywords": [
       "Extensible Single Sign On Kerberos"
     ],
@@ -6404,6 +6471,15 @@
       "DNS Settings"
     ],
     "categoryName": "Networking"
+  },
+  {
+    "settingId": "extsso_extensioncomposedidentifier",
+    "settingName": "Extension Composed Identifier",
+    "settingDescription": "The identifier of the provider to use for this configuration. Useful for apps that contain more than one DNS proxy extension.\n\nIn iOS and visionOS, the identifier is a bundle ID, for example, \"com.example.app.sso-extension\".\n\nIn macOS, the identifier is a composed identifier. The format of the composed identifier is \"Bundle-ID (Team-ID)\". \"Bundle-ID\" is the bundle identifier string of the app extension. \"Team-ID\" is the team identifier from the app extension's code signature. For example, \"com.example.app.sso-extension (ABCD1234)\".",
+    "keywords": [
+      "Extensible SSO"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "safari_allowsummary",
@@ -7893,7 +7969,7 @@
   {
     "settingId": "app_allowed_allowedbinaries_item_cdhash",
     "settingName": "CD Hash",
-    "settingDescription": "The code signature code directory hash of the binary.",
+    "settingDescription": "The 40 character code signature code directory hash of the binary.",
     "keywords": [
       "App Settings"
     ],
@@ -9091,6 +9167,18 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_cloudmanagementenrollmenttoken_cloudmanagementenrollmenttoken",
+    "settingName": "The enrollment token of cloud policy",
+    "settingDescription": "",
+    "keywords": [
+      "CloudManagementEnrollmentToken",
+      "The enrollment token of cloud policy",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_denieddomains",
     "settingName": "Denied Domains",
     "settingDescription": "Controls the domains and sub-domains the extension is not allowed to access. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
@@ -9366,7 +9454,7 @@
   {
     "settingId": "settings_item_dataroaming",
     "settingName": "Data Roaming",
-    "settingDescription": "A dictionary that contains data roaming settings. This setting requires the Network Information access right, and doesn't support user enrollment. Available in iOS 5 and later.",
+    "settingDescription": "A dictionary that contains data roaming settings. This setting requires the Network Information access right, and doesn't support user enrollment.",
     "keywords": [
       "Data Roaming"
     ],
@@ -9384,7 +9472,7 @@
   {
     "settingId": "com.apple.extensiblesso_extensiondata_requiretlsforldap_kerberos",
     "settingName": "Require TLS For LDAP",
-    "settingDescription": "Require that LDAP connections use TLS. Available in macOS 11 and later.",
+    "settingDescription": "Require that LDAP connections use TLS.",
     "keywords": [
       "Extensible Single Sign On Kerberos"
     ],
@@ -10715,6 +10803,32 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_cloudmanagementenrollmenttoken_cloudmanagementenrollmenttoken",
+    "settingName": "The enrollment token of cloud policy (User)",
+    "settingDescription": "",
+    "keywords": [
+      "CloudManagementEnrollmentToken",
+      "The enrollment token of cloud policy",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_cloudmanagementenrollmenttoken",
+    "settingName": "The enrollment token of cloud policy",
+    "settingDescription": "This policy lets you specify the enrollment token that Microsoft Edge uses to register with the Microsoft Edge management service and download the policies associated with that enrollment.\n\nMicrosoft Edge management service in the Microsoft 365 admin center provides a cloud-based management experience for configuring and deploying Microsoft Edge policies to managed users and devices.\n\nIf you enable this policy, Microsoft Edge attempts to use the specified enrollment token to register with the Microsoft Edge management service and download the published policies. The registration is performed for the device, so the downloaded policies apply to the browser without requiring a user to sign in.\n\nIf you disable or don't configure this policy, Microsoft Edge doesn't register with the Microsoft Edge management service. This prevents new registrations only. Browsers that already registered stay enrolled and continue to download policies, because the credential issued during registration takes precedence over the enrollment token.\n\nTo stop managing a browser that's already enrolled, remove or reset its device record in the Microsoft Edge management service. If the device record is removed, the browser stops downloading policies and doesn't register again on its own. If the device record is reset, the browser registers again the next time it starts, as long as this policy is still set to a valid enrollment token.\n\nChanges to this policy take effect only after Microsoft Edge is restarted.\n\nThis policy can only be set as a platform policy.\n\nExample value: AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAh",
+    "keywords": [
+      "CloudManagementEnrollmentToken",
+      "The enrollment token of cloud policy",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "plugin_serveraddress",
     "settingName": "Server Address",
     "settingDescription": "The server address, which may be the IP address, hostname, or URL.",
@@ -10942,7 +11056,7 @@
   {
     "settingId": "app_allowed_deniedbinaries_item_teamid",
     "settingName": "Team ID",
-    "settingDescription": "The code signature team identifier of the binary. Use the value \"*APPLE*\" instead of an empty string for Apple binaries with an empty team identifier.",
+    "settingDescription": "The code signature team identifier of the binary. Use the value \"\\*APPLE\\*\" instead of an empty string for Apple binaries with an empty team identifier.",
     "keywords": [
       "App Settings"
     ],
@@ -11041,6 +11155,24 @@
     "categoryName": "Cellular Private Network"
   },
   {
+    "settingId": "extsso_platformsso_policies",
+    "settingName": "Policies",
+    "settingDescription": "Policies for login, unlock, and FileVault behavior.",
+    "keywords": [
+      "Extensible SSO"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "extsso_platformsso_policies_alwaysuseloginui",
+    "settingName": "Always Use Login UI",
+    "settingDescription": "If `true`, the system uses the Platform SSO login UI at the Login Window, screensaver unlock, and FileVault unlock for every configuration that supports it.\nIf `false`, the system uses the Platform SSO login UI only when `AuthenticationMethod` is set to `OpenID`, or when `LoginPolicy`, `UnlockPolicy` or `FileVaultPolicy` are set to `RequireTouchID` or `RequireTouchIDOrWatch`.",
+    "keywords": [
+      "Extensible SSO"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "safari_safari",
     "settingName": "com.apple.configuration.safari.settings",
     "settingDescription": "Synthetic Top Level Setting Group Collection",
@@ -11052,7 +11184,7 @@
   {
     "settingId": "dnsproxy_providercomposedidentifier",
     "settingName": "Provider Composed Identifier",
-    "settingDescription": "The identifier of the provider to use for this configuration. Useful for apps that contain more than one DNS proxy extension.\n\nIn iOS and visionOS, the identifier is a bundle ID, for example, \"com.example.app\".\n\nIn macOS, the identifier is a composed identifier. The format of the composed identifier is either \"Bundle-ID\" or \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the provider. \"Designated-Requirement\" is the designated requirement string from the code signature of the provider. For example, \"com.example.app\" for the bundle ID format, or \"com.example.app {anchor apple generic}\" for the designated requirement format.",
+    "settingDescription": "The identifier of the provider to use for this configuration. Useful for apps that contain more than one DNS proxy extension.\n\nIn iOS and visionOS, the identifier is a bundle ID, for example, \"com.example.app\".\n\nIn macOS, the identifier is a composed identifier. The format of the composed identifier is either \"Bundle-ID\" or \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the provider. \"Designated-Requirement\" is the designated requirement string the device uses to match the code signature of the provider. For example, \"com.example.app\" for the bundle ID format, or \"com.example.app {anchor apple generic}\" for the designated requirement format.",
     "keywords": [
       "DNS Proxy"
     ],
@@ -12251,7 +12383,7 @@
   {
     "settingId": "settings_item_softwareupdatesettings_recommendationcadence",
     "settingName": "Recommendation Cadence (Deprecated)",
-    "settingDescription": "This value defines how the system presents software updates to the user. When there's more than one available update for the user, the system behaves as follows:\n\n- `0`: Presents both options to the user.\n- `1`: Presents the lower numbered (oldest) software update version.\n- `2`: Presents only the highest numbered (most recent) release available for the device.\n\nThis value has no effect when there's only one available update; the system shows the single available update to the user regardless of the value of this setting.\n\nAvailable in iOS 14.5 and later.",
+    "settingDescription": "This value defines how the system presents software updates to the user. When there's more than one available update for the user, the system behaves as follows:\n\n- `0`: Presents both options to the user.\n- `1`: Presents the lower numbered (oldest) software update version.\n- `2`: Presents only the highest numbered (most recent) release available for the device.\n\nThis value has no effect when there's only one available update; the system shows the single available update to the user regardless of the value of this setting.",
     "keywords": [
       "Software Update Settings"
     ],
@@ -12486,7 +12618,7 @@
   {
     "settingId": "safari_privacy_permissiondefaults",
     "settingName": "Permission Defaults",
-    "settingDescription": "The dictionary of website permission defaults. Each key in the dictionary represents a single website, or a website and its sub-domains. The dictionary values represent the permission defaults that Safari applies for each website that matches the key.\n\nSafari supports the following patterns for the website key:\n\n- A specific domain such as \"example.com\" or \"www.example.com\". The permission defaults apply to that website only.\n- A wildcard domain that uses a single \"\\*\" character as a prefix for the domain, such as \"\\*example.com\". The permission defaults apply to both the exact domain \"example.com\", and any sub-domains such as \"www.example.com\". It won't match other domains with a similar string suffix such as \"myexample.com\".\n\nWhen multiple patterns match a website, Safari uses the most precise pattern. For example, for the website \"www.example.com\", if rules \"www.example.com\" and \"*example.com\" match, Safari uses the former.",
+    "settingDescription": "The dictionary of website permission defaults. Each key in the dictionary represents a single website, or a website and its sub-domains. The dictionary values represent the permission defaults that Safari applies for each website that matches the key.\n\nSafari supports the following patterns for the website key:\n\n- A specific domain such as \"example.com\" or \"www.example.com\". The permission defaults apply to that website only.\n- A wildcard domain that uses a single \"\\*\" character as a prefix for the domain, such as \"\\*example.com\". The permission defaults apply to both the exact domain \"example.com\", and any sub-domains such as \"www.example.com\". It won't match other domains with a similar string suffix such as \"myexample.com\".\n\nWhen multiple patterns match a website, Safari uses the most precise pattern. For example, for the website \"www.example.com\", if rules \"www.example.com\" and \"\\*example.com\" match, Safari uses the former.",
     "keywords": [
       "Safari Browser"
     ],
@@ -13671,6 +13803,20 @@
     "categoryName": "Security"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_blueprintgwaavailability",
+    "settingName": "Control Blueprint GWA availability",
+    "settingDescription": "This policy controls whether users can send tab content to Copilot to create apps with GenerateWebApp (GWA) in Microsoft Edge.\n\nIf you set this policy to 0 ('Unavailable'), GWA entry points are hidden and users can't use this feature.\n\nIf you set this policy to 1 ('Available'), GWA is available when the feature is enabled and the user's profile is eligible.\n\nIf you don't configure this policy or set it to an unsupported value, GWA follows the Connected Feature Control (CFC) policies. It remains available when EdgeConnectedFeatureControl is unconfigured or set to Off (0), Basic (1), or Balanced (2). It is unavailable when EdgeConnectedFeatureControlStrict is enabled.\n\nA supported, explicitly configured value for this policy takes precedence over CFC for GWA. This policy doesn't override feature availability or sign-in requirements and doesn't control the Remix toolbar button.\n\n* 0 = GenerateWebApp (GWA) is unavailable\n\n* 1 = GenerateWebApp (GWA) is available for eligible users\n\nPolicy options mapping:\n\n* BlueprintGWAUnavailable (0) = GenerateWebApp (GWA) is unavailable\n\n* BlueprintGWAAvailable (1) = GenerateWebApp (GWA) is available for eligible users\n\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "BlueprintGWAAvailability",
+      "Control Blueprint GWA availability",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "extensionsettings_managedextensions_generickey_alloweddomains",
     "settingName": "Allowed Domains",
     "settingDescription": "Controls the domains and sub-domains the extension is granted access to. Any non-prefixed domains take precedence over prefixed domains, and DeniedDomains takes precedence over AllowedDomains. Any domains not specified in AllowedDomains or DeniedDomains are configurable by the user.",
@@ -13683,7 +13829,7 @@
   {
     "settingId": "plugin_filter_sockets_providercomposedidentifier",
     "settingName": "Provider Composed Identifier",
-    "settingDescription": "The data provider identifier. This string identifies the filter data provider when the filter starts running. Required when Enabled is true.\n\nIn iOS and visionOS, the identifier is a bundle ID, for example, \"com.example.app\".\n\nIn macOS, the identifier is a composed identifier. The format of the composed identifier is \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the provider. \"Designated-Requirement\" is the designated requirement string from the code signature of the provider. For example, \"com.example.app {anchor apple generic}\".",
+    "settingDescription": "The data provider identifier. This string identifies the filter data provider when the filter starts running. Required when Enabled is true.\n\nIn iOS and visionOS, the identifier is a bundle ID, for example, \"com.example.app\".\n\nIn macOS, the identifier is a composed identifier. The format of the composed identifier is \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the provider. \"Designated-Requirement\" is the designated requirement string the device uses to match the code signature of the provider. For example, \"com.example.app {anchor apple generic}\".",
     "keywords": [
       "Web Content Filter"
     ],
@@ -14072,6 +14218,15 @@
       "Cellular Private Network"
     ],
     "categoryName": "Cellular Private Network"
+  },
+  {
+    "settingId": "extsso_platformsso_additionalhttpheaders_generickey",
+    "settingName": "ANY",
+    "settingDescription": "Keys and values to pass as HTTP headers to the identity provider.",
+    "keywords": [
+      "Extensible SSO"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "safari_allowpopups",
@@ -14546,8 +14701,8 @@
   },
   {
     "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_backforwardcacheforwebsocketsallowed",
-    "settingName": "Allow Back/Forward Cache for WebSockets",
-    "settingDescription": "This policy controls whether active WebSocket connections are disconnected when a page enters back/forward cache. Active WebSocket connections previously prevented a page from being stored in back/forward cache, but Microsoft Edge has changed this behavior to disconnect the WebSockets instead, allowing the page to be cached and restoring it in a disconnected state.\n\nIf this policy is set to Enabled or left unset, WebSockets are disconnected when a page enters back/forward cache.\n\nIf this policy is set to Disabled, WebSockets will not be disconnected when a page enters back/forward cache. Since back/forward cache does not support active WebSockets, this means pages with active WebSockets will not be cached.\n\nThis policy is intended to be temporary and will be removed in the future.",
+    "settingName": "Allow Back/Forward Cache for WebSockets (deprecated)",
+    "settingDescription": "DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.\n\nThis policy controls whether active WebSocket connections are disconnected when a page enters back/forward cache. Active WebSocket connections previously prevented a page from being stored in back/forward cache, but Microsoft Edge has changed this behavior to disconnect the WebSockets instead, allowing the page to be cached and restoring it in a disconnected state.\n\nIf this policy is set to Enabled or left unset, WebSockets are disconnected when a page enters back/forward cache.\n\nIf this policy is set to Disabled, WebSockets will not be disconnected when a page enters back/forward cache. Since back/forward cache does not support active WebSockets, this means pages with active WebSockets will not be cached.\n\nThis policy is deprecated starting in Microsoft Edge version 157 because it was intended to be temporary. It will be removed starting in Microsoft Edge version 167. There is no replacement policy; organizations should stop configuring it before then.",
     "keywords": [
       "BackForwardCacheForWebSocketsAllowed",
       "Allow Back/Forward Cache for WebSockets",
@@ -15216,7 +15371,7 @@
   {
     "settingId": "settings_item_softwareupdatesettings",
     "settingName": "Software Update Settings (Deprecated)",
-    "settingDescription": "A dictionary that contains software update settings. This setting doesn't support user enrollment. Available in iOS 14.5 and later.",
+    "settingDescription": "A dictionary that contains software update settings. This setting doesn't support user enrollment.\n\nRemoved: use the declarative management `com.apple.configuration.softwareupdate.settings` configuration.",
     "keywords": [
       "Software Update Settings"
     ],
@@ -15252,7 +15407,7 @@
   {
     "settingId": "com.apple.domains_crosssitetrackingpreventionrelaxedapps",
     "settingName": "Cross Site Tracking Prevention Relaxed Apps",
-    "settingDescription": "An array of up to 10 strings representing app bundle-ids. Apps matching the bundle-ids listed here have relaxed enforcement of cross-site tracking prevention for the domains listed in `CrossSiteTrackingPreventionRelaxedDomains`.\n\nAvailable in iOS 18 and later and macOS 15 and later.",
+    "settingDescription": "An array of up to 10 strings representing app bundle-ids. Apps matching the bundle-ids listed here have relaxed enforcement of cross-site tracking prevention for the domains listed in `CrossSiteTrackingPreventionRelaxedDomains`.",
     "keywords": [
       "Domains"
     ],
@@ -15522,7 +15677,7 @@
   {
     "settingId": "com.apple.extensiblesso_extensiondata_allowplatformssoauthfallback_kerberos",
     "settingName": "Allow Platform SSO OAuth Fallback",
-    "settingDescription": "If `true` and `usePlatformSSOTGT` is `true`, the system allows the user to manually sign in. Available in macOS 13 and later.",
+    "settingDescription": "If `true` and `usePlatformSSOTGT` is `true`, the system allows the user to manually sign in.",
     "keywords": [
       "Extensible Single Sign On Kerberos"
     ],
@@ -16901,7 +17056,7 @@
   {
     "settingId": "settings_item_voiceroaming",
     "settingName": "Voice Roaming",
-    "settingDescription": "A dictionary that contains voice roaming settings. This setting requires the Network Information access right, and doesn't support user enrollment. Available in iOS 5 and later.",
+    "settingDescription": "A dictionary that contains voice roaming settings. This setting requires the Network Information access right, and doesn't support user enrollment.",
     "keywords": [
       "Voice Roaming"
     ],
@@ -17187,6 +17342,24 @@
       "DNS Settings"
     ],
     "categoryName": "Networking"
+  },
+  {
+    "settingId": "extsso_platformsso",
+    "settingName": "Platform SSO",
+    "settingDescription": "The dictionary to configure Platform SSO.",
+    "keywords": [
+      "Extensible SSO"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "extsso_type",
+    "settingName": "Type",
+    "settingDescription": "The type of SSO.",
+    "keywords": [
+      "Extensible SSO"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
   },
   {
     "settingId": "safari_allowhistoryclearing",
@@ -18257,7 +18430,7 @@
   {
     "settingId": "settings_item_accessibilitysettings",
     "settingName": "Accessibility Settings",
-    "settingDescription": "A dictionary that contains accessibility settings. Available in iOS 16 and later.",
+    "settingDescription": "A dictionary that contains accessibility settings.",
     "keywords": [
       "Accessibility Settings"
     ],
@@ -18266,7 +18439,7 @@
   {
     "settingId": "settings_item_mdmoptions",
     "settingName": "MDM Options",
-    "settingDescription": "A dictionary that contains settings related to the MDM protocol. This setting doesn't support user enrollment. Available in iOS 7 and later, macOS 10.15 and later, and visionOS 2 and later.",
+    "settingDescription": "A dictionary that contains settings related to the MDM protocol. This setting doesn't support user enrollment.",
     "keywords": [
       "MDM Options"
     ],
@@ -18527,7 +18700,7 @@
   {
     "settingId": "app_privacy_permissiondefaults",
     "settingName": "Permission Defaults",
-    "settingDescription": "The dictionary of app privacy permission defaults. Each key in the dictionary is an app identifier. The dictionary values represent the permission defaults that the device applies for each matching app.\n\nIn iOS, the app identifier is a bundle ID, for example, \"com.example.app\".\n\nIn macOS, the app identifier is a composed identifier. The format of the composed identifier is either \"Bundle-ID\", \"Bundle-ID (Team-ID)\", or \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the app. \"Team-ID\" is the team identifier from the app's code signature. \"Designated-Requirement\" is the designated requirement string from the code signature of the app. For example, \"com.example.app\" for the bundle ID format, \"com.example.app (ABCD1234)\" for the team ID format, or \"com.example.app {anchor apple generic}\" for the designated requirement format. The device only applies defaults for an app if its code signature matches the composed identifier.",
+    "settingDescription": "The dictionary of app privacy permission defaults. Each key in the dictionary is an app identifier. The dictionary values represent the permission defaults that the device applies for each matching app.\n\nIn iOS, the app identifier is a bundle ID, for example, \"com.example.app\".\n\nIn macOS, the app identifier is a composed identifier. The format of the composed identifier is \"Bundle-ID {Designated-Requirement}\". \"Bundle-ID\" is the bundle identifier string of the app. \"Designated-Requirement\" is the designated requirement string the device uses to match the code signature of the app. For example, \"com.example.app {anchor apple generic}\". The device only applies defaults for an app if its code signature matches the composed identifier.",
     "keywords": [
       "App Settings"
     ],
@@ -18545,7 +18718,7 @@
   {
     "settingId": "app_allowed_deniedbinaries_item_cdhash",
     "settingName": "CD Hash",
-    "settingDescription": "The code signature code directory hash of the binary.",
+    "settingDescription": "The 40 character code signature code directory hash of the binary.",
     "keywords": [
       "App Settings"
     ],
@@ -18958,8 +19131,8 @@
   },
   {
     "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_backforwardcacheforwebsocketsallowed",
-    "settingName": "Allow Back/Forward Cache for WebSockets (User)",
-    "settingDescription": "This policy controls whether active WebSocket connections are disconnected when a page enters back/forward cache. Active WebSocket connections previously prevented a page from being stored in back/forward cache, but Microsoft Edge has changed this behavior to disconnect the WebSockets instead, allowing the page to be cached and restoring it in a disconnected state.\n\nIf this policy is set to Enabled or left unset, WebSockets are disconnected when a page enters back/forward cache.\n\nIf this policy is set to Disabled, WebSockets will not be disconnected when a page enters back/forward cache. Since back/forward cache does not support active WebSockets, this means pages with active WebSockets will not be cached.\n\nThis policy is intended to be temporary and will be removed in the future.",
+    "settingName": "Allow Back/Forward Cache for WebSockets (deprecated) (User)",
+    "settingDescription": "DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.\n\nThis policy controls whether active WebSocket connections are disconnected when a page enters back/forward cache. Active WebSocket connections previously prevented a page from being stored in back/forward cache, but Microsoft Edge has changed this behavior to disconnect the WebSockets instead, allowing the page to be cached and restoring it in a disconnected state.\n\nIf this policy is set to Enabled or left unset, WebSockets are disconnected when a page enters back/forward cache.\n\nIf this policy is set to Disabled, WebSockets will not be disconnected when a page enters back/forward cache. Since back/forward cache does not support active WebSockets, this means pages with active WebSockets will not be cached.\n\nThis policy is deprecated starting in Microsoft Edge version 157 because it was intended to be temporary. It will be removed starting in Microsoft Edge version 167. There is no replacement policy; organizations should stop configuring it before then.",
     "keywords": [
       "BackForwardCacheForWebSocketsAllowed",
       "Allow Back/Forward Cache for WebSockets",
@@ -19733,6 +19906,18 @@
       "Security"
     ],
     "categoryName": "Security"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_blueprintgwaavailability_blueprintgwaavailability",
+    "settingName": "Control Blueprint GWA availability",
+    "settingDescription": "",
+    "keywords": [
+      "BlueprintGWAAvailability",
+      "Control Blueprint GWA availability",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "plugin_visiblename",
@@ -21381,7 +21566,7 @@
   {
     "settingId": "settings_item_bluetooth",
     "settingName": "Bluetooth",
-    "settingDescription": "A dictionary that contains Bluetooth settings. This setting requires the Network Information access right, doesn't support user enrollment, and is available only on supervised devices. Available in iOS 11.3 and later, and macOS 10.13.4 and later.",
+    "settingDescription": "A dictionary that contains Bluetooth settings. This setting requires the Network Information access right, doesn't support user enrollment, and is available only on supervised devices.",
     "keywords": [
       "Bluetooth"
     ],
@@ -21417,7 +21602,7 @@
   {
     "settingId": "settings_item_timezone",
     "settingName": "Time Zone",
-    "settingDescription": "A dictionary that contains time zone settings. This setting is available only on supervised devices and doesn't support user enrollment. Available in iOS 14 and later, tvOS 14 and later, and visionOS 2 and later.",
+    "settingDescription": "A dictionary that contains time zone settings. This setting is available only on supervised devices and doesn't support user enrollment.",
     "keywords": [
       "Time Zone"
     ],
@@ -21751,6 +21936,24 @@
     "categoryName": "Authentication"
   },
   {
+    "settingId": "com.apple.extensiblesso_platformsso_additionalhttpheaders",
+    "settingName": "Additional HTTP Headers",
+    "settingDescription": "A dictionary with keys and values that are strings. The keys are HTTP header names, and the values are HTTP header values. The device adds these headers to nonce, pre-authentication, login, key and key exchange requests for Platform SSO. The device limits the number of headers to 20, the length of the header name to 128 characters, and the length of the header value to 2048 characters.",
+    "keywords": [
+      "Extensible Single Sign On (SSO)"
+    ],
+    "categoryName": "Authentication"
+  },
+  {
+    "settingId": "com.apple.extensiblesso_platformsso_additionalhttpheaders_generickey_keytobereplaced",
+    "settingName": "Additional HTTP Headers",
+    "settingDescription": "A dictionary with keys and values that are strings. The keys are HTTP header names, and the values are HTTP header values. The device adds these headers to nonce, pre-authentication, login, key and key exchange requests for Platform SSO. The device limits the number of headers to 20, the length of the header name to 128 characters, and the length of the header value to 2048 characters.",
+    "keywords": [
+      "Extensible Single Sign On (SSO)"
+    ],
+    "categoryName": "Authentication"
+  },
+  {
     "settingId": "com.apple.dnssettings.managed_ondemandrules_item_urlstringprobe",
     "settingName": "URL String Probe (deprecated)",
     "settingDescription": "A URL to probe. If this URL is successfully fetched (returning a 200 HTTP status code) without redirection, this rule matches.",
@@ -21778,9 +21981,27 @@
     "categoryName": "Cellular Private Network"
   },
   {
+    "settingId": "extsso_extensiblesso",
+    "settingName": "com.apple.configuration.extensible-sso",
+    "settingDescription": "Synthetic Top Level Setting Group Collection",
+    "keywords": [
+      "Extensible SSO"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
+    "settingId": "extsso_platformsso_additionalhttpheaders_generickey_keytobereplaced",
+    "settingName": "Additional HTTP Headers",
+    "settingDescription": "A dictionary with keys and values that are strings. The keys are HTTP header names, and the values are HTTP header values. The device adds these headers to nonce, pre-authentication, login, key and key exchange requests for Platform SSO. The device limits the number of headers to 20, the length of the header name to 128 characters, and the length of the header value to 2048 characters.",
+    "keywords": [
+      "Extensible SSO"
+    ],
+    "categoryName": "Declarative Device Management (DDM)"
+  },
+  {
     "settingId": "safari_privacy_permissiondefaults_generickey_keytobereplaced",
     "settingName": "Permission Defaults",
-    "settingDescription": "The dictionary of website permission defaults. Each key in the dictionary represents a single website, or a website and its sub-domains. The dictionary values represent the permission defaults that Safari applies for each website that matches the key.\n\nSafari supports the following patterns for the website key:\n\n- A specific domain such as \"example.com\" or \"www.example.com\". The permission defaults apply to that website only.\n- A wildcard domain that uses a single \"\\*\" character as a prefix for the domain, such as \"\\*example.com\". The permission defaults apply to both the exact domain \"example.com\", and any sub-domains such as \"www.example.com\". It won't match other domains with a similar string suffix such as \"myexample.com\".\n\nWhen multiple patterns match a website, Safari uses the most precise pattern. For example, for the website \"www.example.com\", if rules \"www.example.com\" and \"*example.com\" match, Safari uses the former.",
+    "settingDescription": "The dictionary of website permission defaults. Each key in the dictionary represents a single website, or a website and its sub-domains. The dictionary values represent the permission defaults that Safari applies for each website that matches the key.\n\nSafari supports the following patterns for the website key:\n\n- A specific domain such as \"example.com\" or \"www.example.com\". The permission defaults apply to that website only.\n- A wildcard domain that uses a single \"\\*\" character as a prefix for the domain, such as \"\\*example.com\". The permission defaults apply to both the exact domain \"example.com\", and any sub-domains such as \"www.example.com\". It won't match other domains with a similar string suffix such as \"myexample.com\".\n\nWhen multiple patterns match a website, Safari uses the most precise pattern. For example, for the website \"www.example.com\", if rules \"www.example.com\" and \"\\*example.com\" match, Safari uses the former.",
     "keywords": [
       "Safari Browser"
     ],
@@ -23162,7 +23383,7 @@
   {
     "settingId": "app_allowed_allowedbinaries_item_teamid",
     "settingName": "Team ID",
-    "settingDescription": "The code signature team identifier of the binary. Use the value \"*APPLE*\" instead of an empty string for Apple binaries with an empty team identifier.",
+    "settingDescription": "The code signature team identifier of the binary. Use the value \"\\*APPLE\\*\" instead of an empty string for Apple binaries with an empty team identifier.",
     "keywords": [
       "App Settings"
     ],

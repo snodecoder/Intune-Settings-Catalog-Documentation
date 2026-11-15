@@ -544,6 +544,16 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "device_vendor_msft_appupdate_sources_{sourceid}_sourcehandler",
+    "settingName": "Source Handler (Windows Insiders only)",
+    "settingDescription": "Handler responsible for retrieving app updates from the source.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Source Handler",
+      "App Update"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "device_vendor_msft_windowsdefenderapplicationguard_settings_clipboardsettings",
     "settingName": "Clipboard behavior settings",
     "settingDescription": "This policy setting allows you to decide how the clipboard behaves while in Microsoft Defender Application Guard.",
@@ -734,6 +744,16 @@
     "keywords": [
       "Application Control",
       "App Control for Business"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_appupdate_apps_{appid}_sourceid",
+    "settingName": "Source Id (Windows Insiders only)",
+    "settingDescription": "GUID referencing an app update source, with or without braces. An invalid or unavailable explicit binding blocks the affected content without fallback to another source.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Source Id",
+      "App Update"
     ],
     "categoryName": "Uncategorized"
   },
@@ -934,6 +954,36 @@
     "keywords": [
       "Application Control",
       "App Control for Business"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_appupdate_sources_{sourceid}_sourcetype",
+    "settingName": "Source Type (Windows Insiders only)",
+    "settingDescription": "Protocol used to communicate with the source.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Source Type",
+      "App Update"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_appupdate_apps_{appid}_pausestart",
+    "settingName": "Pause Start (Windows Insiders only)",
+    "settingDescription": "Inclusive app update pause start in UTC (YYYY-MM-DDTHH:MM:SSZ, optionally with fractional seconds before Z, ignored at whole-second precision). A start alone pauses for 90 days. A valid end limits the interval to the earlier of PauseEnd and 90 days after PauseStart. An end earlier than the start is ignored. Values may be written independently.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Pause Start",
+      "App Update"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_appupdate_apps_{appid}_ensureversioncompliance",
+    "settingName": "Ensure Version Compliance (Windows Insiders only)",
+    "settingDescription": "When enabled with MinimumRequiredVersion, activate version compliance and bypass deferral only while the installed version is below the handler-native minimum. Equality satisfies the minimum, and selected targets must meet it. An incomplete pair does not activate compliance or alter ordinary update selection. Global disable, per-app disable and pause remain effective. Update CSP execution dispatch is separate and is not implemented here.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Ensure Version Compliance",
+      "App Update"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1371,7 +1421,7 @@
   },
   {
     "settingId": "linux_mdatp_managed_advancedsettings_memoryscan",
-    "settingName": "Memory scan (preview) (Requires Behavior Monitoring for protection)",
+    "settingName": "Memory scan (Requires Behavior Monitoring for protection)",
     "settingDescription": "Detects and blocks fileless and in-memory threats at runtime",
     "keywords": [
       "Advanced Protection",
@@ -1422,6 +1472,16 @@
     "keywords": [
       "Application Control",
       "App Control for Business"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_appupdate_deferralindays",
+    "settingName": "Deferral In Days (Windows Insiders only)",
+    "settingDescription": "Number of whole days to defer a verified update, from 0 to 28. Trustworthy handler publication or availability time is preferred; otherwise verified client first discovery is used. Deferral ages independently of per-app pause or enablement.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Deferral In Days",
+      "App Update"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1613,6 +1673,65 @@
       "Agent Governance",
       "AI agents",
       "Default tool behavior"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_appupdate_sources_{sourceid}_acceptsourceagreements",
+    "settingName": "Accept Source Agreements (Windows Insiders only)",
+    "settingDescription": "Authorizes Windows Package Manager to accept source agreements when AAU connects to this configured catalog source, including newly registered sources. Set to 1 only when the administrator has approved the source agreements. A value of 0, or an absent value, does not authorize acceptance; connection requiring acceptance fails without prompting. This setting does not accept package agreements or revoke agreements already accepted by Windows Package Manager.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Accept Source Agreements",
+      "App Update"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_appupdate_apps_{appid}_appid",
+    "settingName": null,
+    "settingDescription": null,
+    "keywords": [
+      "App Update"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_appupdate_sources_{sourceid}",
+    "settingName": " Source Id (Windows Insiders only)",
+    "settingDescription": "App update source GUID.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      " Source Id",
+      "App Update"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_appupdate_apps_{appid}_contentid",
+    "settingName": "Content Id (Windows Insiders only)",
+    "settingDescription": "Handler-native identifier for app content in the selected source.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Content Id",
+      "App Update"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_appupdate_sources_{sourceid}_sourceuri",
+    "settingName": "Source URI (Windows Insiders only)",
+    "settingDescription": "App update source location.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Source URI",
+      "App Update"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_appupdate_sources_{sourceid}_sourcecatalogid",
+    "settingName": "Source Catalog Id (Windows Insiders only)",
+    "settingDescription": "Handler-native catalog identifier.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Source Catalog Id",
+      "App Update"
     ],
     "categoryName": "Uncategorized"
   },
@@ -1843,7 +1962,7 @@
   },
   {
     "settingId": "user_vendor_msft_agentgovernance_agentexecution",
-    "settingName": "Agent execution",
+    "settingName": "Agent containment",
     "settingDescription": "These settings control how AI agents use local tools and run code on managed Windows devices. Policies can apply to all Microsoft Executable Container (MXC)-capable agents or to a specific MXC-capable agent. Policies assigned to a specific agent override policies assigned to all agents. Tool-specific settings override default policy behavior. This feature is in preview. Availability depends on Windows platform capabilities and may vary by device. Settings and behavior are subject to change.",
     "keywords": [
       "Agent execution",
@@ -1986,6 +2105,26 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "device_vendor_msft_appupdate_apps_{appid}_automaticupdateenabled",
+    "settingName": "Automatic Update Enabled (Windows Insiders only)",
+    "settingDescription": "Per-app update override: 0 disables updates and 1 opts in unless globally disabled. Absence follows the global opt-in or opt-out mode.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Automatic Update Enabled",
+      "App Update"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_appupdate_automaticappupdateoptions",
+    "settingName": "Automatic App Update Options (Windows Insiders only)",
+    "settingDescription": "Global automatic app update mode: 0 disables scanning and deployment, 1 enables updates except per-app opt-outs, and 2 enables updates only for per-app opt-ins. An absent value defaults to 0. Per-app settings cannot override global disable.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Automatic App Update Options",
+      "App Update"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "device_vendor_msft_windowsdefenderapplicationguard_platformstatus",
     "settingName": "Platform status",
     "settingDescription": "Applies to Microsoft Office/Generic platform. Returns bitmask that indicates status of Application Guard platform installation and prerequisites on the device.  Bit 0 - Set to 1 when Application Guard is enabled into enterprise manage mode. Bit 1 - Set to 1 when the client machine is Hyper-V capable. Bit 2 - Reserved for Microsoft. Bit 3 - Set to 1 when Application Guard is installed on the client machine. Bit 4 - Reserved for Microsoft. Bit 5 - Set to 1 when the client machine meets minimum hardware requirements.",
@@ -2096,6 +2235,16 @@
     "categoryName": "Uncategorized"
   },
   {
+    "settingId": "device_vendor_msft_appupdate_apps_{appid}_minimumrequiredversion",
+    "settingName": "Minimum Required Version (Windows Insiders only)",
+    "settingDescription": "Handler-native minimum compliant app version, active only with EnsureVersionCompliance enabled. Equality satisfies the minimum. When compliance is active, targets below this floor are excluded; native comparison errors are not interpreted as below-floor versions. A minimum without an enabled compliance request does not alter ordinary automatic updates.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Minimum Required Version",
+      "App Update"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
     "settingId": "device_vendor_msft_defender_configuration_devicecontrol_policyrules_{ruleid}_ruledata_entry_sid",
     "settingName": "Sid",
     "settingDescription": "Local user Sid or user Sid group or the Sid of the AD object, defines whether to apply this policy over a specific user or user group; one entry can have a maximum of one Sid and an entry without any Sid means applying the policy over the machine.",
@@ -2192,6 +2341,26 @@
       "Agent Governance",
       "AI agents",
       "Tool-specific overrides"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_appupdate_apps_{appid}",
+    "settingName": " App Id (Windows Insiders only)",
+    "settingDescription": "App management GUID.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      " App Id",
+      "App Update"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_appupdate_apps_{appid}_pauseend",
+    "settingName": "Pause End (Windows Insiders only)",
+    "settingDescription": "Exclusive app update pause end in UTC (YYYY-MM-DDTHH:MM:SSZ, optionally with fractional seconds before Z, ignored at whole-second precision). An end without a start is inactive. An end earlier than the start is ignored. The effective end is never later than 90 days after PauseStart. Values may be written independently.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Pause End",
+      "App Update"
     ],
     "categoryName": "Uncategorized"
   },
@@ -2317,6 +2486,25 @@
       "Agent Governance",
       "AI agents",
       "General"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_appupdate_sources_{sourceid}_sourceid",
+    "settingName": null,
+    "settingDescription": null,
+    "keywords": [
+      "App Update"
+    ],
+    "categoryName": "Uncategorized"
+  },
+  {
+    "settingId": "device_vendor_msft_appupdate_sources_{sourceid}_sourcetrustlevel",
+    "settingName": "Source Trust Level (Windows Insiders only)",
+    "settingDescription": "Source trust level matching Windows Package Manager: 0 is None and 1 is Trusted. The default is None.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Source Trust Level",
+      "App Update"
     ],
     "categoryName": "Uncategorized"
   },

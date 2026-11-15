@@ -8937,8 +8937,8 @@
   },
   {
     "settingId": "device_vendor_msft_policy_config_newsandinterests_disablewidgetsonlockscreen",
-    "settingName": "Disable Widgets On Lock Screen",
-    "settingDescription": "Disable widgets on lock screen",
+    "settingName": "Widgets on the lock screen",
+    "settingDescription": "Widgets on the lock screen",
     "keywords": [
       "Disable Widgets On Lock Screen",
       "News And Interests"
@@ -12807,9 +12807,10 @@
     "keywords": [
       "Set Policy Driven Update Source For Feature Updates",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_configuredeadlinenoautorebootforfeatureupdates",
@@ -12818,9 +12819,10 @@
     "keywords": [
       "Configure Deadline No Auto Reboot For Feature Updates",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_autorestartdeadlineperiodindaysforfeatureupdates",
@@ -12829,9 +12831,10 @@
     "keywords": [
       "Auto Restart Deadline Period In Days For Feature Updates",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_setpolicydrivenupdatesourcefordriverupdates",
@@ -12840,9 +12843,10 @@
     "keywords": [
       "Set Policy Driven Update Source For Driver Updates",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_scheduledinstallfirstweek",
@@ -12851,9 +12855,10 @@
     "keywords": [
       "Scheduled Install First Week",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_disablewufbsafeguards_v2",
@@ -12862,9 +12867,10 @@
     "keywords": [
       "Disable WUfB Safeguards",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_ignoremoappdownloadlimit",
@@ -12873,9 +12879,10 @@
     "keywords": [
       "Ignore MO App Download Limit",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_autorestartrequirednotificationdismissal",
@@ -12884,9 +12891,10 @@
     "keywords": [
       "Auto Restart Required Notification Dismissal",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_requireupdateapproval",
@@ -12895,9 +12903,10 @@
     "keywords": [
       "Require Update Approval",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_schedulerestartwarning",
@@ -12906,9 +12915,10 @@
     "keywords": [
       "Schedule Restart Warning",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_configuredeadlinenoautoreboot",
@@ -12917,9 +12927,10 @@
     "keywords": [
       "Configure Deadline No Auto Reboot",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_wordoptions~l_security~l_trustcenter~l_fileblocksettings_l_word6pt0binarydocumentsandtemplates_l_word6pt0binarydocumentsandtemplatesdropid",
@@ -13401,6 +13412,32 @@
       "WSL container"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_blueprintgwaavailability_blueprintgwaavailability",
+    "settingName": "Control Blueprint GWA availability (User)",
+    "settingDescription": "",
+    "keywords": [
+      "BlueprintGWAAvailability",
+      "Control Blueprint GWA availability",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_blueprintgwaavailability",
+    "settingName": "Control Blueprint GWA availability (User)",
+    "settingDescription": "This policy controls whether users can send tab content to Copilot to create apps with GenerateWebApp (GWA) in Microsoft Edge.\n\nIf you set this policy to 0 ('Unavailable'), GWA entry points are hidden and users can't use this feature.\n\nIf you set this policy to 1 ('Available'), GWA is available when the feature is enabled and the user's profile is eligible.\n\nIf you don't configure this policy or set it to an unsupported value, GWA follows the Connected Feature Control (CFC) policies. It remains available when EdgeConnectedFeatureControl is unconfigured or set to Off (0), Basic (1), or Balanced (2). It is unavailable when EdgeConnectedFeatureControlStrict is enabled.\n\nA supported, explicitly configured value for this policy takes precedence over CFC for GWA. This policy doesn't override feature availability or sign-in requirements and doesn't control the Remix toolbar button.\n\n* 0 = GenerateWebApp (GWA) is unavailable\n\n* 1 = GenerateWebApp (GWA) is available for eligible users\n\nPolicy options mapping:\n\n* BlueprintGWAUnavailable (0) = GenerateWebApp (GWA) is unavailable\n\n* BlueprintGWAAvailable (1) = GenerateWebApp (GWA) is available for eligible users\n\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "BlueprintGWAAvailability",
+      "Control Blueprint GWA availability",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.importsearchengine_recommended",
@@ -22487,8 +22524,8 @@
   },
   {
     "settingId": "device_vendor_msft_policy_config_newsandinterests_disablewidgetsboard",
-    "settingName": "Disable Widgets Board",
-    "settingDescription": "Disable widgets board",
+    "settingName": "Widgets board",
+    "settingDescription": "Widgets board",
     "keywords": [
       "Disable Widgets Board",
       "News And Interests"
@@ -26161,9 +26198,10 @@
     "keywords": [
       "Phone Update Restrictions",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_automaticmaintenancewakeup",
@@ -26172,9 +26210,10 @@
     "keywords": [
       "Automatic Maintenance Wake Up",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_maintenancewindowstartdate",
@@ -26183,9 +26222,22 @@
     "keywords": [
       "Maintenance Window Start Date",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_configuredeadlinenoautorebootforappupdates",
+    "settingName": "Configure Deadline No Auto Reboot For App Updates (Windows Insiders only)",
+    "settingDescription": "When enabled, devices will not automatically restart outside of active hours until the deadline and grace period have expired for app updates, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForAppUpdates is configured.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Configure Deadline No Auto Reboot For App Updates",
+      "Update",
+      "Windows Update For Business",
+      "Windows update client policy"
+    ],
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_pausequalityupdates",
@@ -26194,9 +26246,10 @@
     "keywords": [
       "Pause Quality Updates",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_allowautowindowsupdatedownloadovermeterednetwork",
@@ -26205,9 +26258,10 @@
     "keywords": [
       "Allow Auto Windows Update Download Over Metered Network",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_autorestartnotificationschedule",
@@ -26216,9 +26270,10 @@
     "keywords": [
       "Auto Restart Notification Schedule",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklythursday",
@@ -26227,9 +26282,22 @@
     "keywords": [
       "Maintenance Window Weekly Thursday",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_configuredeadlineforappupdates",
+    "settingName": "Configure Deadline For App Updates (Windows Insiders only)",
+    "settingDescription": "Number of days before app updates are installed on devices automatically regardless of active hours. Before the deadline passes, users will be able to schedule restarts, and automatic restarts can happen outside of active hours. When set to 0, updates will download and install immediately, but might not finish within the day due to device availability and network connectivity.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Configure Deadline For App Updates",
+      "Update",
+      "Windows Update For Business",
+      "Windows update client policy"
+    ],
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "vendor_msft_wirelessnetworkpreference_connectionprofiles_{connectionprofileid}_wirelesstype",
@@ -30463,7 +30531,7 @@
   },
   {
     "settingId": "device_vendor_msft_policy_config_audit_accountlogonlogoff_auditipsecmainmode",
-    "settingName": "Account Logon Logoff Audit I Psec Main Mode",
+    "settingName": "Account Logon Logoff Audit IPsec Main Mode",
     "settingDescription": "This policy setting allows you to audit events generated by Internet Key Exchange protocol (IKE) and Authenticated Internet Protocol (AuthIP) during Main Mode negotiations.  If you configure this policy setting, an audit event is generated during an IPsec Main Mode negotiation. Success audits record successful attempts and Failure audits record unsuccessful attempts. If you do not configure this policy setting, no audit event is generated during an IPsec Main Mode negotiation.",
     "keywords": [
       "Account Logon Logoff Audit I Psec Main Mode",
@@ -30496,7 +30564,7 @@
   },
   {
     "settingId": "device_vendor_msft_policy_config_audit_accountlogonlogoff_auditipsecextendedmode",
-    "settingName": "Account Logon Logoff Audit I Psec Extended Mode",
+    "settingName": "Account Logon Logoff Audit IPsec Extended Mode",
     "settingDescription": "This policy setting allows you to audit events generated by Internet Key Exchange protocol (IKE) and Authenticated Internet Protocol (AuthIP) during Extended Mode negotiations.  If you configure this policy setting, an audit event is generated during an IPsec Extended Mode negotiation. Success audits record successful attempts and Failure audits record unsuccessful attempts. If you do not configure this policy setting, no audit event is generated during an IPsec Extended Mode negotiation.",
     "keywords": [
       "Account Logon Logoff Audit I Psec Extended Mode",
@@ -35437,7 +35505,7 @@
   },
   {
     "settingId": "user_vendor_msft_policy_config_notifications_disableaccountnotifications",
-    "settingName": "Disable Account Notifications (User)",
+    "settingName": "Account notifications",
     "settingDescription": "This policy allows you to prevent Windows from displaying notifications to Microsoft account (MSA) and local users in Start (user tile). Notifications include getting users to: reauthenticate; backup their device; manage cloud storage quotas as well as manage their Microsoft 365 or XBOX subscription. If you enable this policy setting, Windows will not send account related notifications for local and MSA users to the user tile in Start.\r\n ",
     "keywords": [
       "Disable Account Notifications",
@@ -38962,9 +39030,10 @@
     "keywords": [
       "Configure Feature Update Uninstall Period",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_allowoptionalcontent",
@@ -38973,9 +39042,10 @@
     "keywords": [
       "Allow Optional Content",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_ignoremoupdatedownloadlimit",
@@ -38984,9 +39054,10 @@
     "keywords": [
       "Ignore MO Update Download Limit",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_detectionfrequency",
@@ -38995,9 +39066,10 @@
     "keywords": [
       "Detection Frequency",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_pausedeferrals",
@@ -39006,9 +39078,10 @@
     "keywords": [
       "Pause Deferrals",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "vendor_msft_wirelessnetworkpreference_connectionprofiles_{connectionprofileid}",
@@ -52398,9 +52471,10 @@
     "keywords": [
       "Set Disable Pause UX Access",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_branchreadinesslevel",
@@ -52409,9 +52483,10 @@
     "keywords": [
       "Branch Readiness Level",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_setedurestart",
@@ -52420,9 +52495,10 @@
     "keywords": [
       "Set EDU Restart",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_scheduledinstalleveryweek",
@@ -52431,9 +52507,10 @@
     "keywords": [
       "Scheduled Install Every Week",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_deferfeatureupdatesperiodindays",
@@ -52442,9 +52519,10 @@
     "keywords": [
       "Defer Feature Updates Period In Days",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_wirelessdisplay_allowmdnsadvertisement",
@@ -52870,6 +52948,20 @@
       "WSL container"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_cloudmanagementenrollmenttoken",
+    "settingName": "The enrollment token of cloud policy (User)",
+    "settingDescription": "This policy lets you specify the enrollment token that Microsoft Edge uses to register with the Microsoft Edge management service and download the policies associated with that enrollment.\n\nMicrosoft Edge management service in the Microsoft 365 admin center provides a cloud-based management experience for configuring and deploying Microsoft Edge policies to managed users and devices.\n\nIf you enable this policy, Microsoft Edge attempts to use the specified enrollment token to register with the Microsoft Edge management service and download the published policies. The registration is performed for the device, so the downloaded policies apply to the browser without requiring a user to sign in.\n\nIf you disable or don't configure this policy, Microsoft Edge doesn't register with the Microsoft Edge management service. This prevents new registrations only. Browsers that already registered stay enrolled and continue to download policies, because the credential issued during registration takes precedence over the enrollment token.\n\nTo stop managing a browser that's already enrolled, remove or reset its device record in the Microsoft Edge management service. If the device record is removed, the browser stops downloading policies and doesn't register again on its own. If the device record is reset, the browser registers again the next time it starts, as long as this policy is still set to a valid enrollment token.\n\nChanges to this policy take effect only after Microsoft Edge is restarted.\n\nThis policy can only be set as a platform policy.\n\nExample value: AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAh",
+    "keywords": [
+      "CloudManagementEnrollmentToken",
+      "The enrollment token of cloud policy",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.screencaptureallowedbyorigins",
@@ -65268,9 +65360,10 @@
     "keywords": [
       "Set Disable UXWU Access",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_maintenancewindowmonthlyschedule",
@@ -65279,9 +65372,10 @@
     "keywords": [
       "Maintenance Window Monthly Schedule",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_deferupdateperiod",
@@ -65290,9 +65384,10 @@
     "keywords": [
       "Defer Update Period",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_productversion",
@@ -65301,9 +65396,10 @@
     "keywords": [
       "Product Version",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_allowautoupdate",
@@ -65312,9 +65408,10 @@
     "keywords": [
       "Allow Auto Update",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "vendor_msft_wirelessnetworkpreference_parameters_cellularparameters_preferredprofilewakeconnectiontimerinseconds",
@@ -77412,9 +77509,10 @@
     "keywords": [
       "Maintenance Window Start Time",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_pausefeatureupdates",
@@ -77423,9 +77521,10 @@
     "keywords": [
       "Pause Feature Updates",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_maintenancewindowupdateactions",
@@ -77434,9 +77533,10 @@
     "keywords": [
       "Maintenance Window Update Actions",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_wirelessdisplay_allowprojectionfrompc",
@@ -77938,6 +78038,18 @@
       "Advanced"
     ],
     "categoryName": "Microsoft Word 2016"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_cloudmanagementenrollmenttoken_cloudmanagementenrollmenttoken",
+    "settingName": "The enrollment token of cloud policy",
+    "settingDescription": "",
+    "keywords": [
+      "CloudManagementEnrollmentToken",
+      "The enrollment token of cloud policy",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.managedsearchengines_recommended",
@@ -90122,9 +90234,10 @@
     "keywords": [
       "Set Policy Driven Update Source For Other Updates",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_configuredeadlineforqualityupdates",
@@ -90134,9 +90247,10 @@
       "ConfigureDeadlineForQualityUpdates",
       "Update",
       "Quality update deadline period (days)",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_scheduleimminentrestartwarning",
@@ -90145,9 +90259,10 @@
     "keywords": [
       "Schedule Imminent Restart Warning",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_engagedrestartdeadline",
@@ -90156,9 +90271,10 @@
     "keywords": [
       "Engaged Restart Deadline",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_wirelessdisplay_allowprojectionfrompcoverinfrastructure",
@@ -90629,6 +90745,32 @@
       "Display"
     ],
     "categoryName": "Microsoft Word 2016"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_cloudmanagementenrollmenttoken_cloudmanagementenrollmenttoken",
+    "settingName": "The enrollment token of cloud policy (User)",
+    "settingDescription": "",
+    "keywords": [
+      "CloudManagementEnrollmentToken",
+      "The enrollment token of cloud policy",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_cloudmanagementenrollmenttoken",
+    "settingName": "The enrollment token of cloud policy",
+    "settingDescription": "This policy lets you specify the enrollment token that Microsoft Edge uses to register with the Microsoft Edge management service and download the policies associated with that enrollment.\n\nMicrosoft Edge management service in the Microsoft 365 admin center provides a cloud-based management experience for configuring and deploying Microsoft Edge policies to managed users and devices.\n\nIf you enable this policy, Microsoft Edge attempts to use the specified enrollment token to register with the Microsoft Edge management service and download the published policies. The registration is performed for the device, so the downloaded policies apply to the browser without requiring a user to sign in.\n\nIf you disable or don't configure this policy, Microsoft Edge doesn't register with the Microsoft Edge management service. This prevents new registrations only. Browsers that already registered stay enrolled and continue to download policies, because the credential issued during registration takes precedence over the enrollment token.\n\nTo stop managing a browser that's already enrolled, remove or reset its device record in the Microsoft Edge management service. If the device record is removed, the browser stops downloading policies and doesn't register again on its own. If the device record is reset, the browser registers again the next time it starts, as long as this policy is still set to a valid enrollment token.\n\nChanges to this policy take effect only after Microsoft Edge is restarted.\n\nThis policy can only be set as a platform policy.\n\nExample value: AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAh",
+    "keywords": [
+      "CloudManagementEnrollmentToken",
+      "The enrollment token of cloud policy",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.loopbacknetworkblockedforurls",
@@ -102974,9 +103116,10 @@
     "keywords": [
       "Scheduled Install Time",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_scheduledinstallfourthweek",
@@ -102985,9 +103128,10 @@
     "keywords": [
       "Scheduled Install Fourth Week",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_maintenancewindowenabled",
@@ -102996,9 +103140,10 @@
     "keywords": [
       "Maintenance Window Enabled",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_autorestartdeadlineperiodindays",
@@ -103007,9 +103152,10 @@
     "keywords": [
       "Auto Restart Deadline Period In Days",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_deferqualityupdatesperiodindays",
@@ -103019,9 +103165,10 @@
       "DeferQualityUpdatesPeriodInDays",
       "Update",
       "Defer Quality Updates Period",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_donotenforceenterprisetlscertpinningforupdatedetection",
@@ -103030,9 +103177,10 @@
     "keywords": [
       "Do Not Enforce Enterprise TLS Cert Pinning For Update Detection",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_configuredeadlineforfeatureupdates",
@@ -103041,9 +103189,10 @@
     "keywords": [
       "Configure Deadline For Feature Updates",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklytuesday",
@@ -103052,9 +103201,10 @@
     "keywords": [
       "Maintenance Window Weekly Tuesday",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_wirelessdisplay_allowprojectiontopcoverinfrastructure",
@@ -103417,6 +103567,20 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~httpauthentication_allhttpauthschemesallowedforproxies",
+    "settingName": "List of proxy servers that allow all HTTP authentication schemes",
+    "settingDescription": "Set this policy to specify which proxy servers allow all the HTTP authentication schemes Microsoft Edge supports, regardless of the 'AuthSchemes' (Supported authentication schemes) policy.\n\nFormat the proxy server pattern according to the URL blocklist filter format (https://go.microsoft.com/fwlink/?linkid=2095322). Up to 1,000 exceptions can be defined. Invalid patterns are ignored.\nWildcards are allowed for the host component (for example, '*:8080' matches all proxies on port 8080). A hostname (for example, 'proxy.example.com') also matches its subdomains. To match a host exactly and exclude its subdomains, prepend it with a dot (for example, '.proxy.example.com').\n\nIf you configure this policy with an empty list, no exceptions apply to proxy authentication.\n\nIf you don't configure this policy, in versions earlier than 161, exceptions in 'AllHttpAuthSchemesAllowedForOrigins' (List of origins that allow all HTTP authentication) also apply to proxy authentication. Starting in version 161, those exceptions don't apply to proxy authentication.\n\nFor proxy servers that match an applicable exception, all supported HTTP authentication schemes are allowed. For proxy servers that don't match an applicable exception, only the schemes specified in 'AuthSchemes' are supported. If that policy isn't configured, the default schemes are supported instead.\n\nExample value:\n\nhttps://proxy.example.com:8443\nproxy.example.com:8080\n*.corp.example.com:8080",
+    "keywords": [
+      "AllHttpAuthSchemesAllowedForProxies",
+      "List of proxy servers that allow all HTTP authentication schemes",
+      "\\Microsoft Edge\\HTTP authentication",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "HTTP authentication"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autolaunchprotocolsfromorigins",
@@ -115857,9 +116021,10 @@
     "keywords": [
       "Configure Deadline Grace Period For Feature Updates",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_engagedrestartsnoozescheduleforfeatureupdates",
@@ -115868,9 +116033,10 @@
     "keywords": [
       "Engaged Restart Snooze Schedule For Feature Updates",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_pausequalityupdatesstarttime",
@@ -115879,9 +116045,22 @@
     "keywords": [
       "Pause Quality Updates Start Time",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_configuredeadlinegraceperiodforappupdates",
+    "settingName": "Configure Deadline Grace Period For App Updates (Windows Insiders only)",
+    "settingDescription": "Minimum number of days from update installation until restarts occur automatically for app updates. This policy only takes effect when the respective provider ID has been specified in the Update/ConfigureAllowedDeadlineProvidersForAppUpdates policy and Update/ConfigureDeadlineForAppUpdates is configured. If the provider ID is specified in Update/ConfigureAllowedDeadlineProvidersForAppUpdates and Update/ConfigureDeadlineForAppUpdates is configured but this policy is not, then the default value of 5 days will take effect.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Configure Deadline Grace Period For App Updates",
+      "Update",
+      "Windows Update For Business",
+      "Windows update client policy"
+    ],
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_scheduledinstallthirdweek",
@@ -115890,9 +116069,10 @@
     "keywords": [
       "Scheduled Install Third Week",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_updateserviceurlalternate",
@@ -115901,9 +116081,10 @@
     "keywords": [
       "Update Service Url Alternate",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_excludewudriversinqualityupdate",
@@ -115912,9 +116093,10 @@
     "keywords": [
       "Exclude WU Drivers In Quality Update",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_activehoursstart",
@@ -115923,9 +116105,10 @@
     "keywords": [
       "Active Hours Start",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_allownonmicrosoftsignedupdate",
@@ -115934,9 +116117,10 @@
     "keywords": [
       "Allow Non Microsoft Signed Update",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "vendor_msft_wirelessnetworkpreference_parameters_cellularparameters_screenoffdurationtotriggernetworkdiscoveryinminutes",
@@ -116416,6 +116600,20 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_blueprintgwaavailability",
+    "settingName": "Control Blueprint GWA availability",
+    "settingDescription": "This policy controls whether users can send tab content to Copilot to create apps with GenerateWebApp (GWA) in Microsoft Edge.\n\nIf you set this policy to 0 ('Unavailable'), GWA entry points are hidden and users can't use this feature.\n\nIf you set this policy to 1 ('Available'), GWA is available when the feature is enabled and the user's profile is eligible.\n\nIf you don't configure this policy or set it to an unsupported value, GWA follows the Connected Feature Control (CFC) policies. It remains available when EdgeConnectedFeatureControl is unconfigured or set to Off (0), Basic (1), or Balanced (2). It is unavailable when EdgeConnectedFeatureControlStrict is enabled.\n\nA supported, explicitly configured value for this policy takes precedence over CFC for GWA. This policy doesn't override feature availability or sign-in requirements and doesn't control the Remix toolbar button.\n\n* 0 = GenerateWebApp (GWA) is unavailable\n\n* 1 = GenerateWebApp (GWA) is available for eligible users\n\nPolicy options mapping:\n\n* BlueprintGWAUnavailable (0) = GenerateWebApp (GWA) is unavailable\n\n* BlueprintGWAAvailable (1) = GenerateWebApp (GWA) is available for eligible users\n\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "BlueprintGWAAvailability",
+      "Control Blueprint GWA availability",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.smartactionsblocklist_recommended",
@@ -124025,8 +124223,8 @@
   },
   {
     "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_backforwardcacheforwebsocketsallowed",
-    "settingName": "Allow Back/Forward Cache for WebSockets",
-    "settingDescription": "This policy controls whether active WebSocket connections are disconnected when a page enters back/forward cache. Active WebSocket connections previously prevented a page from being stored in back/forward cache, but Microsoft Edge has changed this behavior to disconnect the WebSockets instead, allowing the page to be cached and restoring it in a disconnected state.\n\nIf this policy is set to Enabled or left unset, WebSockets are disconnected when a page enters back/forward cache.\n\nIf this policy is set to Disabled, WebSockets will not be disconnected when a page enters back/forward cache. Since back/forward cache does not support active WebSockets, this means pages with active WebSockets will not be cached.\n\nThis policy is intended to be temporary and will be removed in the future.",
+    "settingName": "Allow Back/Forward Cache for WebSockets (deprecated)",
+    "settingDescription": "DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.\n\nThis policy controls whether active WebSocket connections are disconnected when a page enters back/forward cache. Active WebSocket connections previously prevented a page from being stored in back/forward cache, but Microsoft Edge has changed this behavior to disconnect the WebSockets instead, allowing the page to be cached and restoring it in a disconnected state.\n\nIf this policy is set to Enabled or left unset, WebSockets are disconnected when a page enters back/forward cache.\n\nIf this policy is set to Disabled, WebSockets will not be disconnected when a page enters back/forward cache. Since back/forward cache does not support active WebSockets, this means pages with active WebSockets will not be cached.\n\nThis policy is deprecated starting in Microsoft Edge version 157 because it was intended to be temporary. It will be removed starting in Microsoft Edge version 167. There is no replacement policy; organizations should stop configuring it before then.",
     "keywords": [
       "BackForwardCacheForWebSocketsAllowed",
       "Allow Back/Forward Cache for WebSockets",
@@ -128802,9 +129000,10 @@
     "keywords": [
       "Schedule Imminent Restart Warning",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_engagedrestarttransitionschedule",
@@ -128813,9 +129012,10 @@
     "keywords": [
       "Engaged Restart Transition Schedule",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_ignorewindowsupdategrouppolicies",
@@ -128824,9 +129024,10 @@
     "keywords": [
       "Ignore Windows Update Group Policies",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_configuredeadlinegraceperiod",
@@ -128835,9 +129036,10 @@
     "keywords": [
       "Configure Deadline Grace Period",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_requiredeferupgrade",
@@ -128846,9 +129048,10 @@
     "keywords": [
       "Require Defer Upgrade",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_allowtemporaryenterprisefeaturecontrol",
@@ -128857,9 +129060,10 @@
     "keywords": [
       "Allow Temporary Enterprise Feature Control",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_maintenancewindowrepeatscheduleoption",
@@ -128868,9 +129072,10 @@
     "keywords": [
       "Maintenance Window Repeat Schedule Option",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_maintenancewindowmonthlyweekbaseddayoftheweek",
@@ -128879,9 +129084,10 @@
     "keywords": [
       "Maintenance Window Monthly Week Based Day Of The Week",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_activehoursend",
@@ -128890,9 +129096,10 @@
     "keywords": [
       "Active Hours End",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_setmaxpausedays",
@@ -128901,9 +129108,10 @@
     "keywords": [
       "Set Max Pause Days",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklysunday",
@@ -128912,9 +129120,10 @@
     "keywords": [
       "Maintenance Window Weekly Sunday",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_wirelessdisplay_requirepinforpairing",
@@ -141647,9 +141856,10 @@
     "keywords": [
       "Target Release Version",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_configuredeadlinenoautorebootforqualityupdates",
@@ -141658,9 +141868,10 @@
     "keywords": [
       "Configure Deadline No Auto Reboot For Quality Updates",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_scheduledinstallsecondweek",
@@ -141669,9 +141880,10 @@
     "keywords": [
       "Scheduled Install Second Week",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_noupdatenotificationsduringactivehours",
@@ -141680,9 +141892,10 @@
     "keywords": [
       "No Update Notifications During Active Hours",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_updateserviceurl",
@@ -141691,9 +141904,10 @@
     "keywords": [
       "Update Service Url",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "user_vendor_msft_policy_config_word16v2~policy~l_microsoftofficeword~l_miscellaneous178_l_listofmanagedaddins_l_listofmanagedaddins2",
@@ -154529,15 +154743,28 @@
     "categoryName": "Windows Defender Security Center"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_update_configurealloweddeadlineprovidersforappupdates",
+    "settingName": "Configure Allowed Deadline Providers For App Updates (Windows Insiders only)",
+    "settingDescription": "Specifies the list of first-party providers for which the app updates policies will be applicable.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Configure Allowed Deadline Providers For App Updates",
+      "Update",
+      "Windows Update For Business",
+      "Windows update client policy"
+    ],
+    "categoryName": "Windows update client policy"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_update_engagedrestartsnoozeschedule",
     "settingName": "Engaged Restart Snooze Schedule",
     "settingDescription": "For Quality Updates, this policy specifies the number of days a user can snooze Engaged restart reminder notifications. The snooze period can be set between 1 and 3 days. Value type is integer. Default is 3 days. Supported value range: 1 - 3. If you disable or do not configure this policy, the default behaviors will be used. If any of the following policies are configured, this policy has no effect:No auto-restart with logged on users for scheduled automatic updates installationsAlways automatically restart at scheduled timeSpecify deadline before auto-restart for update installation",
     "keywords": [
       "Engaged Restart Snooze Schedule",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_activehoursmaxrange",
@@ -154546,9 +154773,22 @@
     "keywords": [
       "Active Hours Max Range",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_update_appsdeadlineenabled",
+    "settingName": "Apps Deadline Enabled (Windows Insiders only)",
+    "settingDescription": "Specifies whether app update compliance deadline policies are enabled.\r\n This setting is only available to Windows Insiders",
+    "keywords": [
+      "Apps Deadline Enabled",
+      "Update",
+      "Windows Update For Business",
+      "Windows update client policy"
+    ],
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_maintenancewindowmonthlyweekbasedoccurrenceinmonth",
@@ -154557,9 +154797,10 @@
     "keywords": [
       "Maintenance Window Monthly Week Based Occurrence In Month",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_setproxybehaviorforupdatedetection",
@@ -154568,9 +154809,10 @@
     "keywords": [
       "Set Proxy Behavior For Update Detection",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_disabledualscan",
@@ -154579,9 +154821,10 @@
     "keywords": [
       "Disable Dual Scan",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "vendor_msft_wirelessnetworkpreference_parameters_cellularparameters_networkdiscoveryoption",
@@ -154994,6 +155237,19 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~httpauthentication_allhttpauthschemesallowedforproxies_allhttpauthschemesallowedforproxiesdesc",
+    "settingName": "List of proxy servers that allow all HTTP authentication schemes",
+    "settingDescription": "",
+    "keywords": [
+      "AllHttpAuthSchemesAllowedForProxies",
+      "List of proxy servers that allow all HTTP authentication schemes",
+      "\\Microsoft Edge\\HTTP authentication",
+      "Microsoft Edge\\HTTP authentication",
+      "HTTP authentication"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.extensioninstalltypeblocklist",
@@ -159351,7 +159607,7 @@
   },
   {
     "settingId": "device_vendor_msft_policy_config_audit_accountlogonlogoff_auditipsecquickmode",
-    "settingName": "Account Logon Logoff Audit I Psec Quick Mode",
+    "settingName": "Account Logon Logoff Audit IPsec Quick Mode",
     "settingDescription": "This policy setting allows you to audit events generated by Internet Key Exchange protocol (IKE) and Authenticated Internet Protocol (AuthIP) during Quick Mode negotiations.  If you configure this policy setting, an audit event is generated during an IPsec Quick Mode negotiation. Success audits record successful attempts and Failure audits record unsuccessful attempts.If  you do not configure this policy setting, no audit event is generated during an IPsec Quick Mode negotiation.",
     "keywords": [
       "Account Logon Logoff Audit I Psec Quick Mode",
@@ -162740,8 +162996,8 @@
   },
   {
     "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_backforwardcacheforwebsocketsallowed",
-    "settingName": "Allow Back/Forward Cache for WebSockets (User)",
-    "settingDescription": "This policy controls whether active WebSocket connections are disconnected when a page enters back/forward cache. Active WebSocket connections previously prevented a page from being stored in back/forward cache, but Microsoft Edge has changed this behavior to disconnect the WebSockets instead, allowing the page to be cached and restoring it in a disconnected state.\n\nIf this policy is set to Enabled or left unset, WebSockets are disconnected when a page enters back/forward cache.\n\nIf this policy is set to Disabled, WebSockets will not be disconnected when a page enters back/forward cache. Since back/forward cache does not support active WebSockets, this means pages with active WebSockets will not be cached.\n\nThis policy is intended to be temporary and will be removed in the future.",
+    "settingName": "Allow Back/Forward Cache for WebSockets (deprecated) (User)",
+    "settingDescription": "DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.\n\nThis policy controls whether active WebSocket connections are disconnected when a page enters back/forward cache. Active WebSocket connections previously prevented a page from being stored in back/forward cache, but Microsoft Edge has changed this behavior to disconnect the WebSockets instead, allowing the page to be cached and restoring it in a disconnected state.\n\nIf this policy is set to Enabled or left unset, WebSockets are disconnected when a page enters back/forward cache.\n\nIf this policy is set to Disabled, WebSockets will not be disconnected when a page enters back/forward cache. Since back/forward cache does not support active WebSockets, this means pages with active WebSockets will not be cached.\n\nThis policy is deprecated starting in Microsoft Edge version 157 because it was intended to be temporary. It will be removed starting in Microsoft Edge version 167. There is no replacement policy; organizations should stop configuring it before then.",
     "keywords": [
       "BackForwardCacheForWebSocketsAllowed",
       "Allow Back/Forward Cache for WebSockets",
@@ -168089,9 +168345,10 @@
     "keywords": [
       "Auto Restart Notification Schedule",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "vendor_msft_wirelessnetworkpreference_prefercellularoverwifi",
@@ -168505,6 +168762,18 @@
       "Windows Subsystem For Linux"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_blueprintgwaavailability_blueprintgwaavailability",
+    "settingName": "Control Blueprint GWA availability",
+    "settingDescription": "",
+    "keywords": [
+      "BlueprintGWAAvailability",
+      "Control Blueprint GWA availability",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.defaultsearchproviderkeyword_recommended",
@@ -172689,7 +172958,7 @@
   },
   {
     "settingId": "device_vendor_msft_policy_config_audit_system_auditipsecdriver",
-    "settingName": "System Audit I Psec Driver",
+    "settingName": "System Audit IPsec Driver",
     "settingDescription": "This policy setting allows you to audit events generated by the IPsec filter driver such as the following:     Startup and shutdown of the IPsec services.     Network packets dropped due to integrity check failure.     Network packets dropped due to replay check failure.     Network packets dropped due to being in plaintext.     Network packets received with incorrect Security Parameter Index (SPI). This may indicate that either the network card is not working correctly or the driver needs to be updated.     Inability to process IPsec filters.  If you configure this policy setting, an audit event is generated on an IPsec filter driver operation. Success audits record successful attempts and Failure audits record unsuccessful attempts. If you do not configure this policy setting, no audit event is generated on an IPSec filter driver operation.",
     "keywords": [
       "System Audit I Psec Driver",
@@ -181877,9 +182146,10 @@
     "keywords": [
       "Set Auto Restart Notification Disable",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_updatenotificationlevel",
@@ -181888,9 +182158,10 @@
     "keywords": [
       "Update Notification Level",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_allowmuupdateservice",
@@ -181899,9 +182170,10 @@
     "keywords": [
       "Allow MU Update Service",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_fillemptycontenturls",
@@ -181910,9 +182182,10 @@
     "keywords": [
       "Fill Empty Content Urls",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_managepreviewbuilds",
@@ -181921,9 +182194,10 @@
     "keywords": [
       "Manage Preview Builds",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "user_vendor_msft_policy_config_word16v11~policy~l_microsoftofficeword~l_wordoptions~l_optionsgeneral_l_alternateclplabelcontentmarkanchoringoption",
@@ -182304,6 +182578,29 @@
       "Advanced"
     ],
     "categoryName": "Microsoft Word 2016"
+  },
+  {
+    "settingId": "device_vendor_msft_defender_configuration_promptevidencecollection",
+    "settingName": "Prompt Evidence Collection",
+    "settingDescription": "Controls collection of AI prompt and inference-response evidence. Managed device policy takes precedence over the tenant-wide preference. Collection also requires MDE P2 and Agent 365 entitlement.",
+    "keywords": [
+      "Prompt Evidence Collection",
+      "Defender"
+    ],
+    "categoryName": "Defender"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~httpauthentication_allhttpauthschemesallowedforproxies_allhttpauthschemesallowedforproxiesdesc",
+    "settingName": "List of proxy servers that allow all HTTP authentication schemes (User)",
+    "settingDescription": "",
+    "keywords": [
+      "AllHttpAuthSchemesAllowedForProxies",
+      "List of proxy servers that allow all HTTP authentication schemes",
+      "\\Microsoft Edge\\HTTP authentication",
+      "Microsoft Edge\\HTTP authentication",
+      "HTTP authentication"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.adssettingforintrusiveadssites",
@@ -195086,9 +195383,10 @@
     "keywords": [
       "Maintenance Window Monthly Month Based Day Of Month",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklysaturday",
@@ -195097,9 +195395,10 @@
     "keywords": [
       "Maintenance Window Weekly Saturday",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_maintenancewindowdurationhours",
@@ -195108,20 +195407,22 @@
     "keywords": [
       "Maintenance Window Duration Hours",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklymonday",
     "settingName": "Maintenance Window Weekly Monday",
-    "settingDescription": "SIf the maintenance window repeat schedule is set to weekly, configure whether Monday is included in the weekly schedule.",
+    "settingDescription": "If the maintenance window repeat schedule is set to weekly, configure whether Monday is included in the weekly schedule.",
     "keywords": [
       "Maintenance Window Weekly Monday",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_wirelessdisplay_allowmdnsdiscovery",
@@ -195616,6 +195917,20 @@
       "WSL container"
     ],
     "categoryName": "Windows Subsystem For Linux"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~httpauthentication_allhttpauthschemesallowedforproxies",
+    "settingName": "List of proxy servers that allow all HTTP authentication schemes (User)",
+    "settingDescription": "Set this policy to specify which proxy servers allow all the HTTP authentication schemes Microsoft Edge supports, regardless of the 'AuthSchemes' (Supported authentication schemes) policy.\n\nFormat the proxy server pattern according to the URL blocklist filter format (https://go.microsoft.com/fwlink/?linkid=2095322). Up to 1,000 exceptions can be defined. Invalid patterns are ignored.\nWildcards are allowed for the host component (for example, '*:8080' matches all proxies on port 8080). A hostname (for example, 'proxy.example.com') also matches its subdomains. To match a host exactly and exclude its subdomains, prepend it with a dot (for example, '.proxy.example.com').\n\nIf you configure this policy with an empty list, no exceptions apply to proxy authentication.\n\nIf you don't configure this policy, in versions earlier than 161, exceptions in 'AllHttpAuthSchemesAllowedForOrigins' (List of origins that allow all HTTP authentication) also apply to proxy authentication. Starting in version 161, those exceptions don't apply to proxy authentication.\n\nFor proxy servers that match an applicable exception, all supported HTTP authentication schemes are allowed. For proxy servers that don't match an applicable exception, only the schemes specified in 'AuthSchemes' are supported. If that policy isn't configured, the default schemes are supported instead.\n\nExample value:\n\nhttps://proxy.example.com:8443\nproxy.example.com:8080\n*.corp.example.com:8080",
+    "keywords": [
+      "AllHttpAuthSchemesAllowedForProxies",
+      "List of proxy servers that allow all HTTP authentication schemes",
+      "\\Microsoft Edge\\HTTP authentication",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "HTTP authentication"
+    ],
+    "categoryName": "Microsoft Edge"
   },
   {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.autolaunchprotocolscomponentenabled",
@@ -208416,9 +208731,10 @@
     "keywords": [
       "Set Policy Driven Update Source For Quality Updates",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklywednesday",
@@ -208427,9 +208743,10 @@
     "keywords": [
       "Maintenance Window Weekly Wednesday",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_engagedrestartdeadlineforfeatureupdates",
@@ -208438,9 +208755,10 @@
     "keywords": [
       "Engaged Restart Deadline For Feature Updates",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_pausefeatureupdatesstarttime",
@@ -208449,9 +208767,10 @@
     "keywords": [
       "Pause Feature Updates Start Time",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_scheduledinstallday",
@@ -208460,9 +208779,10 @@
     "keywords": [
       "Scheduled Install Day",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_allowupdateservice",
@@ -208471,9 +208791,10 @@
     "keywords": [
       "Allow Update Service",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_deferupgradeperiod",
@@ -208482,9 +208803,10 @@
     "keywords": [
       "Defer Upgrade Period",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_engagedrestarttransitionscheduleforfeatureupdates",
@@ -208493,9 +208815,10 @@
     "keywords": [
       "Engaged Restart Transition Schedule For Feature Updates",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_update_maintenancewindowweeklyfriday",
@@ -208504,9 +208827,10 @@
     "keywords": [
       "Maintenance Window Weekly Friday",
       "Update",
-      "Windows Update For Business"
+      "Windows Update For Business",
+      "Windows update client policy"
     ],
-    "categoryName": "Windows Update For Business"
+    "categoryName": "Windows update client policy"
   },
   {
     "settingId": "device_vendor_msft_policy_config_wirelessdisplay_allowprojectiontopc",

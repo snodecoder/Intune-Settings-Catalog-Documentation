@@ -866,6 +866,32 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_blueprintgwaavailability_blueprintgwaavailability",
+    "settingName": "Control Blueprint GWA availability (User)",
+    "settingDescription": "",
+    "keywords": [
+      "BlueprintGWAAvailability",
+      "Control Blueprint GWA availability",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_blueprintgwaavailability",
+    "settingName": "Control Blueprint GWA availability (User)",
+    "settingDescription": "This policy controls whether users can send tab content to Copilot to create apps with GenerateWebApp (GWA) in Microsoft Edge.\n\nIf you set this policy to 0 ('Unavailable'), GWA entry points are hidden and users can't use this feature.\n\nIf you set this policy to 1 ('Available'), GWA is available when the feature is enabled and the user's profile is eligible.\n\nIf you don't configure this policy or set it to an unsupported value, GWA follows the Connected Feature Control (CFC) policies. It remains available when EdgeConnectedFeatureControl is unconfigured or set to Off (0), Basic (1), or Balanced (2). It is unavailable when EdgeConnectedFeatureControlStrict is enabled.\n\nA supported, explicitly configured value for this policy takes precedence over CFC for GWA. This policy doesn't override feature availability or sign-in requirements and doesn't control the Remix toolbar button.\n\n* 0 = GenerateWebApp (GWA) is unavailable\n\n* 1 = GenerateWebApp (GWA) is available for eligible users\n\nPolicy options mapping:\n\n* BlueprintGWAUnavailable (0) = GenerateWebApp (GWA) is unavailable\n\n* BlueprintGWAAvailable (1) = GenerateWebApp (GWA) is available for eligible users\n\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "BlueprintGWAAvailability",
+      "Control Blueprint GWA availability",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsdaily_daysoftheweek",
     "settingName": "Days of the week",
     "settingDescription": null,
@@ -4314,6 +4340,20 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_cloudmanagementenrollmenttoken",
+    "settingName": "The enrollment token of cloud policy (User)",
+    "settingDescription": "This policy lets you specify the enrollment token that Microsoft Edge uses to register with the Microsoft Edge management service and download the policies associated with that enrollment.\n\nMicrosoft Edge management service in the Microsoft 365 admin center provides a cloud-based management experience for configuring and deploying Microsoft Edge policies to managed users and devices.\n\nIf you enable this policy, Microsoft Edge attempts to use the specified enrollment token to register with the Microsoft Edge management service and download the published policies. The registration is performed for the device, so the downloaded policies apply to the browser without requiring a user to sign in.\n\nIf you disable or don't configure this policy, Microsoft Edge doesn't register with the Microsoft Edge management service. This prevents new registrations only. Browsers that already registered stay enrolled and continue to download policies, because the credential issued during registration takes precedence over the enrollment token.\n\nTo stop managing a browser that's already enrolled, remove or reset its device record in the Microsoft Edge management service. If the device record is removed, the browser stops downloading policies and doesn't register again on its own. If the device record is reset, the browser registers again the next time it starts, as long as this policy is still set to a valid enrollment token.\n\nChanges to this policy take effect only after Microsoft Edge is restarted.\n\nThis policy can only be set as a platform policy.\n\nExample value: AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAh",
+    "keywords": [
+      "CloudManagementEnrollmentToken",
+      "The enrollment token of cloud policy",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "device_vendor_msft_policy_config_quiettime_mutenotificationsdaily",
     "settingName": "Mute notifications daily",
     "settingDescription": null,
@@ -6343,6 +6383,18 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_cloudmanagementenrollmenttoken_cloudmanagementenrollmenttoken",
+    "settingName": "The enrollment token of cloud policy",
+    "settingDescription": "",
+    "keywords": [
+      "CloudManagementEnrollmentToken",
+      "The enrollment token of cloud policy",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.managedsearchengines_recommended",
     "settingName": "Manage Search Engines (users can override)",
     "settingDescription": "Lets you configure a list of up to 10 search engines, one of which must be marked as the default search engine. With Microsoft Edge version 100, you can configure up to 100 engines.\n\nYou don't need to specify the encoding. With Microsoft Edge version 80, the suggest_url and image_search_url parameters are optional. The optional parameter, image_search_post_params (consists of comma-separated name/value pairs), is available starting in Microsoft Edge version 80.\n\nWith Microsoft Edge version 83, you can enable search engine discovery with the optional allow_search_engine_discovery parameter. This parameter must be the first item in the list. If allow_search_engine_discovery isn't specified, search engine discovery is disabled by default. With Microsoft Edge version 84, you can set this policy as a recommended policy to allow search provider discovery. You don't need to add the optional allow_search_engine_discovery parameter. With Microsoft Edge version 100, setting this policy as a recommended policy also allows users to manually add new search engines from their Microsoft Edge settings.\n\nIf you enable this policy, users can't add, remove, or change any search engine in the list. Users can set their default search engine to any search engine in the list.\n\nIf you disable or don't configure this policy, users can modify the search engines list as desired.\n\nIf the \"DefaultSearchProviderSearchURL\" policy is set, this policy (ManagedSearchEngines) is ignored. The user must restart their browser to finish applying this policy.",
@@ -7515,6 +7567,32 @@
       "EnhanceSecurityMode",
       "Enhance the security state in Microsoft Edge",
       "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_cloudmanagementenrollmenttoken_cloudmanagementenrollmenttoken",
+    "settingName": "The enrollment token of cloud policy (User)",
+    "settingDescription": "",
+    "keywords": [
+      "CloudManagementEnrollmentToken",
+      "The enrollment token of cloud policy",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_cloudmanagementenrollmenttoken",
+    "settingName": "The enrollment token of cloud policy",
+    "settingDescription": "This policy lets you specify the enrollment token that Microsoft Edge uses to register with the Microsoft Edge management service and download the policies associated with that enrollment.\n\nMicrosoft Edge management service in the Microsoft 365 admin center provides a cloud-based management experience for configuring and deploying Microsoft Edge policies to managed users and devices.\n\nIf you enable this policy, Microsoft Edge attempts to use the specified enrollment token to register with the Microsoft Edge management service and download the published policies. The registration is performed for the device, so the downloaded policies apply to the browser without requiring a user to sign in.\n\nIf you disable or don't configure this policy, Microsoft Edge doesn't register with the Microsoft Edge management service. This prevents new registrations only. Browsers that already registered stay enrolled and continue to download policies, because the credential issued during registration takes precedence over the enrollment token.\n\nTo stop managing a browser that's already enrolled, remove or reset its device record in the Microsoft Edge management service. If the device record is removed, the browser stops downloading policies and doesn't register again on its own. If the device record is reset, the browser registers again the next time it starts, as long as this policy is still set to a valid enrollment token.\n\nChanges to this policy take effect only after Microsoft Edge is restarted.\n\nThis policy can only be set as a platform policy.\n\nExample value: AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAh",
+    "keywords": [
+      "CloudManagementEnrollmentToken",
+      "The enrollment token of cloud policy",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
       "Microsoft Edge"
     ],
     "categoryName": "Microsoft Edge"
@@ -9697,6 +9775,20 @@
     "categoryName": "Microsoft Edge"
   },
   {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_blueprintgwaavailability",
+    "settingName": "Control Blueprint GWA availability",
+    "settingDescription": "This policy controls whether users can send tab content to Copilot to create apps with GenerateWebApp (GWA) in Microsoft Edge.\n\nIf you set this policy to 0 ('Unavailable'), GWA entry points are hidden and users can't use this feature.\n\nIf you set this policy to 1 ('Available'), GWA is available when the feature is enabled and the user's profile is eligible.\n\nIf you don't configure this policy or set it to an unsupported value, GWA follows the Connected Feature Control (CFC) policies. It remains available when EdgeConnectedFeatureControl is unconfigured or set to Off (0), Basic (1), or Balanced (2). It is unavailable when EdgeConnectedFeatureControlStrict is enabled.\n\nA supported, explicitly configured value for this policy takes precedence over CFC for GWA. This policy doesn't override feature availability or sign-in requirements and doesn't control the Remix toolbar button.\n\n* 0 = GenerateWebApp (GWA) is unavailable\n\n* 1 = GenerateWebApp (GWA) is available for eligible users\n\nPolicy options mapping:\n\n* BlueprintGWAUnavailable (0) = GenerateWebApp (GWA) is unavailable\n\n* BlueprintGWAAvailable (1) = GenerateWebApp (GWA) is available for eligible users\n\nUse the preceding information when configuring this policy.",
+    "keywords": [
+      "BlueprintGWAAvailability",
+      "Control Blueprint GWA availability",
+      "\\Microsoft Edge",
+      "Both",
+      "Software\\Policies\\Microsoft\\Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
     "settingId": "com.microsoft.edge.mamedgeappconfigsettings.smartactionsblocklist_recommended",
     "settingName": "Block smart actions for a list of services (users can override)",
     "settingDescription": "List specific services, such as PDFs, and websites that don't show smart actions. (Smart actions are actions like \"define\" which are available in full and mini context menus in Microsoft Edge.)\n\nIf you enable the policy:\n   - The smart action in the mini and full context menu is disabled for all profiles for services that match the given list.\n   - Users won't see the smart action in the mini and full context menu on text selection for services that match the given list.\n   - In Microsoft Edge settings, the smart action in the mini and full context menu is disabled for services that match the given list.\n\nIf you disable or don't configure this policy:\n   - The smart action in the mini and full context menu is enabled for all profiles.\n   - Users will see the smart action in the mini and full context menu on text selection.\n   - In Microsoft Edge settings, the smart action in the mini and full context menu is enabled.\n\nPolicy options mapping:\n\n* smart_actions (smart_actions) = Smart actions in pdfs and on websites\n\n* smart_actions_website (smart_actions_website) = Smart actions on websites\n\n* smart_actions_pdf (smart_actions_pdf) = Smart actions in PDF\n\nUse the preceding information when configuring this policy.",
@@ -10077,8 +10169,8 @@
   },
   {
     "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_backforwardcacheforwebsocketsallowed",
-    "settingName": "Allow Back/Forward Cache for WebSockets",
-    "settingDescription": "This policy controls whether active WebSocket connections are disconnected when a page enters back/forward cache. Active WebSocket connections previously prevented a page from being stored in back/forward cache, but Microsoft Edge has changed this behavior to disconnect the WebSockets instead, allowing the page to be cached and restoring it in a disconnected state.\n\nIf this policy is set to Enabled or left unset, WebSockets are disconnected when a page enters back/forward cache.\n\nIf this policy is set to Disabled, WebSockets will not be disconnected when a page enters back/forward cache. Since back/forward cache does not support active WebSockets, this means pages with active WebSockets will not be cached.\n\nThis policy is intended to be temporary and will be removed in the future.",
+    "settingName": "Allow Back/Forward Cache for WebSockets (deprecated)",
+    "settingDescription": "DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.\n\nThis policy controls whether active WebSocket connections are disconnected when a page enters back/forward cache. Active WebSocket connections previously prevented a page from being stored in back/forward cache, but Microsoft Edge has changed this behavior to disconnect the WebSockets instead, allowing the page to be cached and restoring it in a disconnected state.\n\nIf this policy is set to Enabled or left unset, WebSockets are disconnected when a page enters back/forward cache.\n\nIf this policy is set to Disabled, WebSockets will not be disconnected when a page enters back/forward cache. Since back/forward cache does not support active WebSockets, this means pages with active WebSockets will not be cached.\n\nThis policy is deprecated starting in Microsoft Edge version 157 because it was intended to be temporary. It will be removed starting in Microsoft Edge version 167. There is no replacement policy; organizations should stop configuring it before then.",
     "keywords": [
       "BackForwardCacheForWebSocketsAllowed",
       "Allow Back/Forward Cache for WebSockets",
@@ -13147,8 +13239,8 @@
   },
   {
     "settingId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_backforwardcacheforwebsocketsallowed",
-    "settingName": "Allow Back/Forward Cache for WebSockets (User)",
-    "settingDescription": "This policy controls whether active WebSocket connections are disconnected when a page enters back/forward cache. Active WebSocket connections previously prevented a page from being stored in back/forward cache, but Microsoft Edge has changed this behavior to disconnect the WebSockets instead, allowing the page to be cached and restoring it in a disconnected state.\n\nIf this policy is set to Enabled or left unset, WebSockets are disconnected when a page enters back/forward cache.\n\nIf this policy is set to Disabled, WebSockets will not be disconnected when a page enters back/forward cache. Since back/forward cache does not support active WebSockets, this means pages with active WebSockets will not be cached.\n\nThis policy is intended to be temporary and will be removed in the future.",
+    "settingName": "Allow Back/Forward Cache for WebSockets (deprecated) (User)",
+    "settingDescription": "DEPRECATED: This policy is deprecated. It is currently supported but will become obsolete in a future release.\n\nThis policy controls whether active WebSocket connections are disconnected when a page enters back/forward cache. Active WebSocket connections previously prevented a page from being stored in back/forward cache, but Microsoft Edge has changed this behavior to disconnect the WebSockets instead, allowing the page to be cached and restoring it in a disconnected state.\n\nIf this policy is set to Enabled or left unset, WebSockets are disconnected when a page enters back/forward cache.\n\nIf this policy is set to Disabled, WebSockets will not be disconnected when a page enters back/forward cache. Since back/forward cache does not support active WebSockets, this means pages with active WebSockets will not be cached.\n\nThis policy is deprecated starting in Microsoft Edge version 157 because it was intended to be temporary. It will be removed starting in Microsoft Edge version 167. There is no replacement policy; organizations should stop configuring it before then.",
     "keywords": [
       "BackForwardCacheForWebSocketsAllowed",
       "Allow Back/Forward Cache for WebSockets",
@@ -13908,6 +14000,18 @@
     "keywords": [
       "EdgeFollowEnabled",
       "Enable Follow service in Microsoft Edge",
+      "\\Microsoft Edge",
+      "Microsoft Edge"
+    ],
+    "categoryName": "Microsoft Edge"
+  },
+  {
+    "settingId": "device_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_blueprintgwaavailability_blueprintgwaavailability",
+    "settingName": "Control Blueprint GWA availability",
+    "settingDescription": "",
+    "keywords": [
+      "BlueprintGWAAvailability",
+      "Control Blueprint GWA availability",
       "\\Microsoft Edge",
       "Microsoft Edge"
     ],
